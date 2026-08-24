@@ -1,0 +1,4317 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
+<title>Logbook — Sporting Events Watched</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/npm/dexie@3.2.4/dist/dexie.min.js"></script>
+<script>
+  if (typeof Dexie === "undefined") {
+    document.write('<scr' + 'ipt src="https://unpkg.com/dexie@3.2.4/dist/dexie.min.js"></scr' + 'ipt>');
+  }
+</script>
+<style>
+/* ============ TOKENS ============ */
+:root {
+  --ink: #12141a;
+  --ink-raised: #191c24;
+  --ink-card: #1e222b;
+  --ink-border: #2c313d;
+  --parchment: #e8e6df;
+  --parchment-dim: #a3a396;
+  --parchment-faint: #5f6169;
+  --brass: #c9a468;
+  --brass-bright: #e0bd82;
+  --football: #3ecf8e;
+  --f1: #e6534a;
+  --darts: #f4a341;
+  --cricket: #4a9fd8;
+  --tennis: #c9d84a;
+  --golf: #6fae5c;
+  --boxing: #b04ad8;
+  --stamp-red: #c0392b;
+  --status-unwatched: #c0392b;
+  --status-partial: #e8973a;
+  --status-watched: #3ecf8e;
+  --radius-s: 6px;
+  --radius-m: 12px;
+  --radius-l: 20px;
+  --shadow-card: 0 1px 0 rgba(255,255,255,0.03) inset, 0 8px 20px -8px rgba(0,0,0,0.5);
+  --safe-bottom: env(safe-area-inset-bottom, 0px);
+}
+
+* { box-sizing: border-box; -webkit-tap-highlight-color: transparent; }
+html, body { height: 100%; }
+body {
+  margin: 0;
+  background: var(--ink);
+  color: var(--parchment);
+  font-family: 'Inter', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  overscroll-behavior-y: none;
+}
+h1, h2, h3, .display {
+  font-family: 'Fraunces', serif;
+  font-weight: 600;
+  letter-spacing: -0.01em;
+  color: var(--parchment);
+}
+.mono { font-family: 'JetBrains Mono', monospace; }
+
+button { font-family: inherit; color: inherit; cursor: pointer; }
+input, textarea { font-family: inherit; }
+
+::-webkit-scrollbar { width: 0; height: 0; }
+
+/* ============ APP SHELL ============ */
+#app {
+  max-width: 560px;
+  margin: 0 auto;
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.topbar {
+  position: sticky;
+  top: 0;
+  z-index: 20;
+  background: linear-gradient(180deg, var(--ink) 70%, transparent);
+  padding: 18px 20px 10px;
+}
+.topbar-title {
+  font-size: 26px;
+  color: var(--parchment);
+  display: flex;
+  align-items: baseline;
+  gap: 8px;
+}
+.topbar-title .sub {
+  font-family: 'Inter', sans-serif;
+  font-weight: 500;
+  font-size: 12px;
+  color: var(--brass);
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+
+/* ============ TABS ============ */
+.tabbar {
+  position: sticky;
+  bottom: 0;
+  z-index: 30;
+  display: flex;
+  background: rgba(18,20,26,0.92);
+  backdrop-filter: blur(16px);
+  border-top: 1px solid var(--ink-border);
+  padding-bottom: var(--safe-bottom);
+}
+.tab {
+  flex: 1;
+  background: none;
+  border: none;
+  color: var(--parchment-faint);
+  padding: 12px 4px 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  transition: color 0.15s;
+}
+.tab.active { color: var(--brass-bright); }
+.tab svg { width: 22px; height: 22px; }
+
+.screen { display: none; flex: 1; flex-direction: column; padding-bottom: 90px; }
+.screen.active { display: flex; }
+
+/* ============ SEARCH ============ */
+/* ============ MODE TOGGLE (Search vs Tournament Archive) ============ */
+.mode-toggle {
+  display: flex;
+  gap: 6px;
+  padding: 0 20px 12px;
+}
+.mode-toggle-btn {
+  flex: 1;
+  padding: 9px 8px;
+  border-radius: 10px;
+  border: 1px solid var(--ink-border);
+  background: var(--ink-card);
+  color: var(--parchment-dim);
+  font-size: 13px;
+  font-weight: 600;
+}
+.mode-toggle-btn.active {
+  background: var(--brass);
+  color: #241a0c;
+  border-color: var(--brass);
+}
+
+/* ============ TOURNAMENT ARCHIVE ============ */
+.tournament-row {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 12px 4px;
+  border-bottom: 1px solid var(--ink-border);
+  background: none; border: none;
+  width: 100%; text-align: left;
+  color: var(--parchment);
+}
+.tournament-row:active { background: var(--ink-raised); }
+.tournament-icon {
+  width: 38px; height: 38px; border-radius: 10px;
+  display: flex; align-items: center; justify-content: center;
+  font-size: 17px; flex-shrink: 0;
+  background: var(--ink-card); border: 1px solid var(--ink-border);
+}
+.tournament-name { font-size: 15px; font-weight: 500; }
+.tournament-meta { font-size: 12px; color: var(--parchment-faint); margin-top: 1px; }
+.tournament-watched-badge {
+  font-size: 10px; font-weight: 700; letter-spacing: 0.04em;
+  color: var(--ink); background: var(--brass-bright);
+  padding: 2px 6px; border-radius: 4px; text-transform: uppercase;
+  margin-left: auto; flex-shrink: 0;
+}
+
+.archive-hero {
+  padding: 4px 20px 18px;
+}
+.archive-summary-card {
+  background: var(--ink-card);
+  border: 1px solid var(--ink-border);
+  border-radius: 16px;
+  padding: 18px;
+  margin-bottom: 18px;
+}
+.archive-watched-toggle {
+  width: 100%;
+  padding: 14px;
+  border-radius: 12px;
+  border: none;
+  background: var(--brass-bright);
+  color: #241a0c;
+  font-size: 15px;
+  font-weight: 700;
+  margin-bottom: 4px;
+  display: flex; align-items: center; justify-content: center; gap: 8px;
+}
+.archive-watched-toggle.active-state {
+  background: var(--ink-raised);
+  color: var(--brass-bright);
+  border: 1px solid var(--brass);
+}
+.archive-field-group { margin-top: 14px; }
+.archive-estimate-row {
+  display: flex; align-items: center; gap: 10px;
+}
+.archive-estimate-row input[type=range] { flex: 1; accent-color: var(--brass); }
+.archive-estimate-value {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 14px; font-weight: 600; color: var(--brass-bright);
+  min-width: 34px; text-align: right;
+}
+
+.memorable-section { padding: 4px 20px 20px; }
+.memorable-event-row {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 11px 4px;
+  border-bottom: 1px solid var(--ink-border);
+  width: 100%; background: none; border-top: none; border-left: none; border-right: none;
+  text-align: left; color: var(--parchment);
+}
+.memorable-checkbox {
+  width: 22px; height: 22px; border-radius: 6px;
+  border: 1.5px solid var(--ink-border);
+  flex-shrink: 0;
+  display: flex; align-items: center; justify-content: center;
+  background: var(--ink-card);
+}
+.memorable-checkbox.checked {
+  background: var(--football);
+  border-color: var(--football);
+}
+.memorable-checkbox svg { width: 13px; height: 13px; opacity: 0; }
+.memorable-checkbox.checked svg { opacity: 1; }
+.memorable-event-title { font-size: 14.5px; font-weight: 500; }
+.memorable-event-meta { font-size: 11.5px; color: var(--parchment-faint); margin-top: 1px; }
+
+.search-wrap {
+  padding: 0 20px 14px;
+}
+.add-event-link {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  background: none;
+  border: none;
+  color: var(--parchment-faint);
+  font-size: 12.5px;
+  font-weight: 500;
+  padding: 10px 2px 0;
+}
+.add-event-link:active { color: var(--brass-bright); }
+.dashboard-footer-link-wrap {
+  padding: 30px 20px 20px;
+  text-align: center;
+}
+.dashboard-footer-link {
+  background: none;
+  border: none;
+  color: var(--parchment-faint);
+  font-size: 11px;
+  opacity: 0.55;
+  padding: 6px;
+}
+
+/* Pending events (manual entries awaiting reconciliation) */
+.pending-event-row {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  padding: 13px 4px;
+  border-bottom: 1px solid var(--ink-border);
+  width: 100%;
+  background: none; border: none;
+  text-align: left; color: var(--parchment);
+}
+.pending-event-row:active { background: var(--ink-raised); }
+.pending-event-icon {
+  width: 34px; height: 34px;
+  border-radius: 9px;
+  display: flex; align-items: center; justify-content: center;
+  font-size: 16px;
+  flex-shrink: 0;
+  background: var(--ink-card);
+  border: 1px solid var(--ink-border);
+  margin-top: 1px;
+}
+.pending-event-title { font-size: 14.5px; font-weight: 500; }
+.pending-event-meta { font-size: 12px; color: var(--parchment-faint); margin-top: 2px; }
+.pending-status-badge {
+  font-size: 10px; font-weight: 700; letter-spacing: 0.03em;
+  padding: 3px 8px; border-radius: 20px; text-transform: uppercase;
+  margin-top: 5px; display: inline-block;
+}
+.pending-status-badge.pending { background: var(--ink-card); border: 1px solid var(--ink-border); color: var(--parchment-faint); }
+.pending-status-badge.needs_review { background: #4a2020; color: #e8a0a0; }
+.pending-status-badge.matched { background: #1a3a2a; color: #8fd8ae; }
+.copy-for-review-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 7px;
+  width: 100%;
+  padding: 11px;
+  border-radius: 10px;
+  border: 1px solid var(--ink-border);
+  background: var(--ink-card);
+  color: var(--parchment-dim);
+  font-size: 13px;
+  font-weight: 600;
+  margin-bottom: 6px;
+}
+.copy-for-review-btn:active { background: var(--ink-raised); }
+.copy-for-review-btn.copied { color: var(--football); border-color: var(--football); }
+.search-box {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background: var(--ink-raised);
+  border: 1px solid var(--ink-border);
+  border-radius: 14px;
+  padding: 12px 14px;
+}
+.search-box svg { flex-shrink: 0; opacity: 0.5; }
+.search-box input {
+  flex: 1;
+  background: none;
+  border: none;
+  outline: none;
+  color: var(--parchment);
+  font-size: 16px;
+}
+.search-box input::placeholder { color: var(--parchment-faint); }
+.search-clear {
+  background: none; border: none; color: var(--parchment-faint);
+  font-size: 18px; line-height: 1; padding: 2px 4px; display: none;
+}
+
+.results-scroll { flex: 1; overflow-y: auto; padding: 0 20px; }
+
+.section-label {
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--parchment-faint);
+  margin: 18px 0 8px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.section-label::after {
+  content: "";
+  flex: 1;
+  height: 1px;
+  background: var(--ink-border);
+}
+.today-sport-heading {
+  font-family: 'Fraunces', serif;
+  font-size: 14.5px;
+  font-weight: 600;
+  color: var(--parchment);
+  margin: 14px 4px 4px;
+  display: flex;
+  align-items: center;
+  gap: 7px;
+}
+
+/* Entity result rows */
+.entity-row {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 11px 4px;
+  border-bottom: 1px solid var(--ink-border);
+  background: none;
+  border-left: none; border-right: none; border-top: none;
+  width: 100%;
+  text-align: left;
+  color: var(--parchment);
+}
+.entity-row:active { background: var(--ink-raised); }
+.entity-icon {
+  width: 34px; height: 34px;
+  border-radius: 9px;
+  display: flex; align-items: center; justify-content: center;
+  font-size: 16px;
+  flex-shrink: 0;
+  background: var(--ink-card);
+  border: 1px solid var(--ink-border);
+}
+.entity-name { font-size: 15px; font-weight: 500; }
+.entity-meta { font-size: 12px; color: var(--parchment-faint); margin-top: 1px; }
+.entity-chevron { margin-left: auto; opacity: 0.35; }
+
+/* Event result rows */
+.event-row {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+  padding: 13px 4px;
+  border-bottom: 1px solid var(--ink-border);
+  background: none; border: none;
+  width: 100%; text-align: left;
+  color: var(--parchment);
+  position: relative;
+}
+.event-row:active { background: var(--ink-raised); }
+.event-row-top { display: flex; align-items: center; gap: 8px; }
+.sport-dot { width: 8px; height: 8px; border-radius: 50%; flex-shrink: 0; }
+.event-title { font-size: 15px; font-weight: 500; flex: 1; }
+.watched-badge {
+  font-size: 10px; font-weight: 700; letter-spacing: 0.04em;
+  color: var(--ink); background: var(--brass-bright);
+  padding: 2px 6px; border-radius: 4px; text-transform: uppercase;
+  flex-shrink: 0;
+}
+.event-meta { font-size: 12.5px; color: var(--parchment-dim); padding-left: 16px; }
+.event-meta .comp { color: var(--parchment-faint); }
+
+.empty-state {
+  text-align: center;
+  padding: 60px 30px;
+  color: var(--parchment-faint);
+}
+.empty-state .glyph { font-size: 36px; margin-bottom: 12px; opacity: 0.6; }
+.empty-state p { font-size: 14px; line-height: 1.5; margin: 4px 0; }
+.empty-state .hint { font-size: 12.5px; color: var(--parchment-faint); margin-top: 8px;}
+
+/* ============ ENTITY DETAIL (events for a team/player) ============ */
+.detail-header {
+  padding: 8px 20px 16px;
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+.back-btn {
+  background: var(--ink-raised); border: 1px solid var(--ink-border);
+  width: 36px; height: 36px; border-radius: 10px;
+  display: flex; align-items: center; justify-content: center;
+  color: var(--parchment); flex-shrink: 0;
+}
+.detail-header h2 { font-size: 21px; margin: 0; }
+.detail-header .detail-sub { font-size: 12.5px; color: var(--parchment-faint); margin-top: 2px; }
+
+/* ============ MODAL (event detail) ============ */
+.modal-backdrop {
+  position: fixed; inset: 0; z-index: 100;
+  background: rgba(8,9,12,0.7);
+  backdrop-filter: blur(3px);
+  display: none;
+  align-items: flex-end;
+  justify-content: center;
+}
+.modal-backdrop.open { display: flex; }
+.modal-sheet {
+  width: 100%;
+  max-width: 560px;
+  max-height: 88vh;
+  background: var(--ink-raised);
+  border-radius: 24px 24px 0 0;
+  border-top: 1px solid var(--ink-border);
+  overflow-y: auto;
+  padding-bottom: calc(24px + var(--safe-bottom));
+  animation: sheet-up 0.28s cubic-bezier(.2,.9,.3,1);
+  position: relative;
+}
+@keyframes sheet-up {
+  from { transform: translateY(24px); opacity: 0; }
+  to { transform: translateY(0); opacity: 1; }
+}
+.sheet-handle {
+  width: 36px; height: 4px; background: var(--ink-border);
+  border-radius: 3px; margin: 10px auto 4px;
+}
+.sheet-close {
+  position: absolute; top: 14px; right: 16px;
+  background: var(--ink-card); border: 1px solid var(--ink-border);
+  width: 30px; height: 30px; border-radius: 50%;
+  display: flex; align-items: center; justify-content: center;
+  color: var(--parchment-dim); font-size: 15px;
+}
+
+.event-hero {
+  padding: 22px 24px 18px;
+  border-bottom: 1px solid var(--ink-border);
+  position: relative;
+}
+.event-hero .comp-label {
+  font-size: 11px; font-weight: 700; text-transform: uppercase;
+  letter-spacing: 0.08em; margin-bottom: 8px; display: flex; align-items: center; gap: 6px;
+}
+.event-hero h2 {
+  font-size: 24px; line-height: 1.15; margin: 0 0 10px;
+  color: var(--parchment);
+}
+.event-hero .event-datetime {
+  font-size: 13.5px; color: var(--parchment-dim);
+  display: flex; align-items: center; gap: 6px;
+}
+.event-hero .event-extra {
+  font-size: 13px; color: var(--parchment-faint); margin-top: 8px; line-height: 1.5;
+}
+
+.stamp-wrap {
+  position: absolute; top: 20px; right: 60px;
+  width: 64px; height: 64px;
+  pointer-events: none;
+  opacity: 0;
+  transform: rotate(-18deg) scale(1.4);
+  transition: none;
+}
+.stamp-wrap.show {
+  animation: stamp-hit 0.5s cubic-bezier(.2,1.4,.4,1) forwards;
+}
+@keyframes stamp-hit {
+  0% { opacity: 0; transform: rotate(-18deg) scale(2.2); }
+  55% { opacity: 1; transform: rotate(-18deg) scale(0.92); }
+  75% { transform: rotate(-18deg) scale(1.05); }
+  100% { opacity: 1; transform: rotate(-18deg) scale(1); }
+}
+.stamp-wrap svg { width: 100%; height: 100%; }
+
+.sheet-body { padding: 20px 24px 8px; }
+
+.action-primary {
+  width: 100%;
+  padding: 15px;
+  border-radius: 14px;
+  border: none;
+  background: var(--brass-bright);
+  color: #241a0c;
+  font-size: 15.5px;
+  font-weight: 700;
+  display: flex; align-items: center; justify-content: center; gap: 8px;
+  margin-bottom: 10px;
+}
+.action-primary.watched-state {
+  background: var(--ink-card);
+  color: var(--brass-bright);
+  border: 1px solid var(--brass);
+}
+.action-primary svg { width: 18px; height: 18px; }
+
+.field-group { margin-bottom: 16px; }
+.field-label {
+  font-size: 11.5px; font-weight: 700; text-transform: uppercase;
+  letter-spacing: 0.06em; color: var(--parchment-faint); margin-bottom: 8px;
+  display: block;
+}
+.segmented {
+  display: flex; gap: 6px;
+}
+.segmented button {
+  flex: 1;
+  padding: 9px 6px;
+  border-radius: 9px;
+  border: 1px solid var(--ink-border);
+  background: var(--ink-card);
+  color: var(--parchment-dim);
+  font-size: 13px; font-weight: 600;
+}
+.segmented button.selected {
+  background: var(--brass); color: #241a0c; border-color: var(--brass);
+}
+.stars { display: flex; gap: 6px; }
+.stars button {
+  background: none; border: none; font-size: 26px; color: var(--ink-border);
+  padding: 0; line-height: 1;
+}
+.stars button.selected { color: var(--brass-bright); }
+.session-checklist {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+.session-chip {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  padding: 8px 12px;
+  border-radius: 20px;
+  border: 1px solid var(--ink-border);
+  background: var(--ink-card);
+  color: var(--parchment-dim);
+  font-size: 13px;
+  font-weight: 500;
+}
+.session-chip.selected {
+  background: var(--f1);
+  border-color: var(--f1);
+  color: #2a0805;
+  font-weight: 600;
+}
+.session-chip-dot {
+  width: 7px; height: 7px; border-radius: 50%;
+  border: 1.5px solid var(--parchment-faint);
+  flex-shrink: 0;
+}
+.session-chip.selected .session-chip-dot {
+  background: #2a0805; border-color: #2a0805;
+}
+.date-input, textarea.notes-input {
+  width: 100%;
+  background: var(--ink-card);
+  border: 1px solid var(--ink-border);
+  border-radius: 10px;
+  padding: 11px 12px;
+  color: var(--parchment);
+  font-size: 14.5px;
+  outline: none;
+}
+textarea.notes-input { resize: vertical; min-height: 70px; line-height: 1.4; }
+.date-input:focus, textarea.notes-input:focus { border-color: var(--brass); }
+
+.duration-input-row { display: flex; gap: 10px; }
+.duration-field {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background: var(--ink-card);
+  border: 1px solid var(--ink-border);
+  border-radius: 10px;
+  padding: 9px 12px;
+}
+.duration-field:focus-within { border-color: var(--brass); }
+.duration-number {
+  width: 100%;
+  background: none;
+  border: none;
+  outline: none;
+  color: var(--parchment);
+  font-size: 16px;
+  font-family: 'JetBrains Mono', monospace;
+  -moz-appearance: textfield;
+}
+.duration-number::-webkit-outer-spin-button,
+.duration-number::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+.duration-unit {
+  font-size: 12.5px;
+  color: var(--parchment-faint);
+  flex-shrink: 0;
+}
+.field-error {
+  font-size: 12px;
+  color: var(--status-unwatched);
+  margin-top: 7px;
+}
+.session-duration-row {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 8px 4px;
+  border-bottom: 1px solid var(--ink-border);
+}
+.session-duration-row:last-child { border-bottom: none; }
+.session-duration-label {
+  flex: 1;
+  font-size: 13px;
+  color: var(--parchment-dim);
+}
+.session-duration-inputs {
+  display: flex;
+  gap: 6px;
+  flex-shrink: 0;
+}
+.session-duration-inputs .duration-field {
+  padding: 6px 9px;
+  width: 64px;
+}
+.session-duration-inputs .duration-number { font-size: 14px; }
+
+.save-btn {
+  width: 100%; padding: 14px; border-radius: 12px; border: none;
+  background: var(--football); color: #06251a; font-weight: 700; font-size: 15px;
+  margin-top: 4px;
+}
+.remove-btn {
+  width: 100%; padding: 12px; border-radius: 12px; border: 1px solid var(--ink-border);
+  background: none; color: var(--parchment-faint); font-weight: 600; font-size: 13.5px;
+  margin-top: 8px;
+}
+
+/* ============ DASHBOARD ============ */
+.history-stats {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  padding: 0 20px 4px;
+  margin-top: 4px;
+}
+.history-stats.stats-2col { grid-template-columns: repeat(2, 1fr); }
+.history-stats.stats-4col { grid-template-columns: repeat(2, 1fr); }
+.stat-card {
+  background: var(--ink-card);
+  border: 1px solid var(--ink-border);
+  border-radius: 14px;
+  padding: 14px 10px;
+  text-align: center;
+}
+.stat-card .num { font-family: 'Fraunces', serif; font-size: 26px; font-weight: 600; color: var(--brass-bright); line-height: 1; }
+.stat-card .num.num-text { font-size: 19px; }
+.stat-card .lbl { font-size: 10.5px; color: var(--parchment-faint); margin-top: 5px; text-transform: uppercase; letter-spacing: 0.05em; }
+
+.dash-section { padding: 22px 20px 4px; }
+.dash-section-header {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  font-family: 'Fraunces', serif;
+  font-size: 16.5px;
+  font-weight: 600;
+  color: var(--parchment);
+  margin-bottom: 12px;
+}
+.dash-streak-count {
+  font-family: 'Inter', sans-serif;
+  font-size: 11.5px;
+  font-weight: 600;
+  color: var(--brass-bright);
+  text-transform: none;
+}
+.see-all-link {
+  font-family: 'Inter', sans-serif;
+  font-size: 12.5px;
+  font-weight: 600;
+  color: var(--brass-bright);
+  text-transform: none;
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+}
+
+/* Activity — monthly heatmap strip (last 12 months, one cell per month) */
+.month-grid {
+  display: flex;
+  align-items: flex-end;
+  gap: 6px;
+  width: 100%;
+}
+.month-cell-wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
+  flex: 1;
+  min-width: 0;
+  position: relative;
+}
+.month-cell-wrap.year-boundary {
+  margin-left: 10px;
+}
+.month-cell-wrap.year-boundary::before {
+  content: "";
+  position: absolute;
+  left: -8px;
+  top: 0;
+  bottom: 22px;
+  width: 1px;
+  background: var(--ink-border);
+}
+.month-year-label {
+  position: absolute;
+  left: -8px;
+  top: -16px;
+  font-size: 9.5px;
+  color: var(--parchment-faint);
+  white-space: nowrap;
+  transform: translateX(-50%);
+}
+.month-cell {
+  width: 100%;
+  aspect-ratio: 1;
+  border-radius: 6px;
+  background: var(--ink-card);
+  border: 1px solid var(--ink-border);
+}
+.month-cell.level-1 { background: #2c4a3a; border-color: #2c4a3a; }
+.month-cell.level-2 { background: #3ecf8e55; border-color: #3ecf8e55; }
+.month-cell.level-3 { background: var(--football); border-color: var(--football); }
+.month-cell-label {
+  font-size: 10.5px;
+  color: var(--parchment-faint);
+  font-weight: 600;
+  letter-spacing: 0.02em;
+}
+
+/* Sport breakdown bars (clickable — drills into watched history for that sport) */
+.sport-bar-row {
+  display: flex; align-items: center; gap: 10px; margin-bottom: 10px;
+  width: 100%; background: none; border: none; padding: 4px 0; text-align: left;
+  color: inherit; cursor: pointer;
+}
+.sport-bar-row:last-child { margin-bottom: 0; }
+.sport-bar-row:active { opacity: 0.7; }
+.sport-bar-icon { width: 22px; font-size: 15px; text-align: center; flex-shrink: 0; }
+.sport-bar-name { font-size: 13.5px; font-weight: 500; color: var(--parchment); width: 66px; flex-shrink: 0; }
+.sport-bar-track {
+  flex: 1; height: 8px; background: var(--ink-card);
+  border-radius: 5px; overflow: hidden; border: 1px solid var(--ink-border);
+}
+.sport-bar-fill { height: 100%; border-radius: 5px; transition: width 0.4s ease; }
+.sport-bar-count {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 12.5px; color: var(--parchment-dim); width: 28px; text-align: right; flex-shrink: 0;
+}
+
+/* Most watched list (clickable — drills into watched history for that team/player) */
+.mostwatched-row {
+  display: flex; align-items: center; gap: 12px;
+  padding: 9px 0;
+  border-bottom: 1px solid var(--ink-border);
+  width: 100%; background: none; border-top: none; border-left: none; border-right: none;
+  text-align: left; color: inherit; cursor: pointer;
+}
+.mostwatched-row:last-child { border-bottom: none; }
+.mostwatched-row:active { background: var(--ink-raised); }
+.mostwatched-rank {
+  font-family: 'Fraunces', serif; font-weight: 600; font-size: 14px;
+  color: var(--parchment-faint); width: 18px; flex-shrink: 0;
+}
+.mostwatched-icon {
+  width: 30px; height: 30px; border-radius: 8px;
+  display: flex; align-items: center; justify-content: center;
+  font-size: 14px; flex-shrink: 0;
+  background: var(--ink-card); border: 1px solid var(--ink-border);
+}
+.mostwatched-name { flex: 1; font-size: 14px; font-weight: 500; }
+.mostwatched-count {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 12.5px; color: var(--brass-bright); font-weight: 600;
+}
+
+.dash-empty-inline {
+  font-size: 13px; color: var(--parchment-faint); padding: 4px 0 8px;
+}
+
+.history-item {
+  display: flex; gap: 12px; padding: 12px 0;
+  border-bottom: 1px solid var(--ink-border);
+  color: var(--parchment);
+}
+.history-item:active { background: var(--ink-raised); }
+.history-stamp-icon {
+  width: 38px; height: 38px; border-radius: 50%;
+  border: 2px solid var(--stamp-red);
+  display: flex; align-items: center; justify-content: center;
+  flex-shrink: 0; margin-top: 1px;
+}
+.history-stamp-icon svg { width: 18px; height: 18px; }
+.history-content { flex: 1; min-width: 0; }
+.history-title { font-size: 14.5px; font-weight: 500; color: var(--parchment); }
+.history-sub { font-size: 12px; color: var(--parchment-faint); margin-top: 2px; }
+.history-rating { color: var(--brass-bright); font-size: 12px; margin-top: 3px; }
+.history-sessions { color: var(--brass-bright); font-size: 11.5px; margin-top: 3px; font-weight: 500; }
+
+/* ============ TOAST ============ */
+.toast {
+  position: fixed; bottom: 90px; left: 50%; transform: translateX(-50%) translateY(10px);
+  background: var(--ink-card); border: 1px solid var(--ink-border);
+  color: var(--parchment); padding: 11px 18px; border-radius: 30px;
+  font-size: 13.5px; font-weight: 500;
+  box-shadow: 0 10px 30px -8px rgba(0,0,0,0.6);
+  z-index: 200; opacity: 0; pointer-events: none;
+  transition: opacity 0.2s, transform 0.2s;
+  display: flex; align-items: center; gap: 8px;
+}
+.toast.show { opacity: 1; transform: translateX(-50%) translateY(0); }
+
+/* Sport color helpers */
+.c-football { color: var(--football); } .bg-football { background: var(--football); }
+.c-f1 { color: var(--f1); } .bg-f1 { background: var(--f1); }
+.c-darts { color: var(--darts); } .bg-darts { background: var(--darts); }
+.c-cricket { color: var(--cricket); } .bg-cricket { background: var(--cricket); }
+
+@media (max-width: 380px) {
+  .topbar-title { font-size: 22px; }
+}
+</style>
+</head>
+<body>
+
+<div id="app">
+
+  <!-- ============ DASHBOARD (HOME) SCREEN ============ -->
+  <div class="screen active" id="screen-dashboard">
+    <div class="topbar">
+      <div class="topbar-title">Logbook <span class="sub">Archive</span></div>
+    </div>
+    <div class="results-scroll" id="dashboard-scroll">
+
+      <div class="history-stats stats-4col" id="history-stats"></div>
+
+      <div class="dash-section" id="dash-activity-section">
+        <div class="dash-section-header">
+          <span>Activity</span>
+        </div>
+        <div class="month-grid" id="month-grid"></div>
+      </div>
+
+      <div class="dash-section" id="dash-sportmix-section">
+        <div class="dash-section-header">
+          <span>By sport</span>
+          <button class="see-all-link" id="sport-breakdown-see-all">See all →</button>
+        </div>
+        <div id="sport-breakdown"></div>
+      </div>
+
+      <div class="dash-section" id="dash-mostwatched-section">
+        <div class="dash-section-header">
+          <span>Most watched</span>
+          <button class="see-all-link" id="most-watched-see-all">See all →</button>
+        </div>
+        <div id="most-watched-list"></div>
+      </div>
+
+      <div class="dashboard-footer-link-wrap">
+        <button class="dashboard-footer-link" id="pending-events-open-btn">Pending events</button>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- ============ FULL "BY SPORT" BREAKDOWN SCREEN ============ -->
+  <div class="screen" id="screen-sport-breakdown-full">
+    <div class="topbar">
+      <div class="detail-header">
+        <button class="back-btn" id="sport-breakdown-full-back">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"/></svg>
+        </button>
+        <div>
+          <h2>By sport</h2>
+          <div class="detail-sub">Full breakdown</div>
+        </div>
+      </div>
+    </div>
+    <div class="results-scroll" id="sport-breakdown-full-list" style="padding: 22px 20px 4px;"></div>
+  </div>
+
+  <!-- ============ FULL "MOST WATCHED" BREAKDOWN SCREEN ============ -->
+  <div class="screen" id="screen-mostwatched-full">
+    <div class="topbar">
+      <div class="detail-header">
+        <button class="back-btn" id="mostwatched-full-back">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"/></svg>
+        </button>
+        <div>
+          <h2>Most watched</h2>
+          <div class="detail-sub">Full breakdown</div>
+        </div>
+      </div>
+    </div>
+    <div class="results-scroll" id="mostwatched-full-list" style="padding: 4px 20px 4px;"></div>
+  </div>
+
+  <!-- ============ SPORT WATCHED HISTORY SCREEN (drill-down from Dashboard "By sport") ============ -->
+  <div class="screen" id="screen-watched-history">
+    <div class="topbar">
+      <div class="detail-header">
+        <button class="back-btn" id="watched-history-back">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"/></svg>
+        </button>
+        <div>
+          <h2 id="watched-history-name"></h2>
+          <div class="detail-sub" id="watched-history-sub"></div>
+        </div>
+      </div>
+    </div>
+    <div class="history-stats stats-2col" id="sport-watched-stats"></div>
+    <div class="results-scroll" id="watched-history-list"></div>
+  </div>
+
+  <!-- ============ SEARCH SCREEN ============ -->
+  <div class="screen" id="screen-search">
+    <div class="topbar">
+      <div class="topbar-title">Add a sport <span class="sub" id="search-mode-label">Search</span></div>
+    </div>
+    <div class="mode-toggle">
+      <button class="mode-toggle-btn active" data-mode="search">Search</button>
+      <button class="mode-toggle-btn" data-mode="archive">Tournament Archive</button>
+    </div>
+    <div class="search-wrap" id="search-mode-wrap">
+      <div class="search-box">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+        <input id="search-input" type="text" placeholder="Search teams, players, competitions…" autocomplete="off" />
+        <button class="search-clear" id="search-clear">×</button>
+      </div>
+      <button class="add-event-link" id="add-event-open-btn">
+        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+        Can't find a match? Add it manually
+      </button>
+    </div>
+    <div class="results-scroll" id="search-results"></div>
+
+    <div class="search-wrap" id="archive-mode-wrap" style="display:none;">
+      <div class="search-box">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+        <input id="archive-search-input" type="text" placeholder="Search tournaments (e.g. World Cup 2022)…" autocomplete="off" />
+        <button class="search-clear" id="archive-search-clear">×</button>
+      </div>
+    </div>
+    <div class="results-scroll" id="archive-results" style="display:none;"></div>
+  </div>
+
+  <!-- ============ ADD EVENT SCREEN (manual entry for unlisted matches) ============ -->
+  <div class="screen" id="screen-add-event">
+    <div class="topbar">
+      <div class="detail-header">
+        <button class="back-btn" id="add-event-back">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"/></svg>
+        </button>
+        <div>
+          <h2 id="add-event-heading">Add event</h2>
+          <div class="detail-sub" id="add-event-subheading">Not in the archive yet</div>
+        </div>
+      </div>
+    </div>
+    <div class="results-scroll" style="padding: 20px;">
+      <div style="font-size:12.5px; color:var(--parchment-faint); margin-bottom:18px; line-height:1.5;" id="add-event-intro-text">
+        For a match that isn't in the database. This gets added to a review list rather than straight into your history, since the details haven't been checked against an official source yet.
+      </div>
+
+      <div class="field-group">
+        <label class="field-label">Sport</label>
+        <div class="session-checklist" id="add-event-sport-segmented"></div>
+      </div>
+
+      <div class="field-group">
+        <label class="field-label">Event title</label>
+        <input type="text" class="date-input" id="add-event-title" placeholder="e.g. Leeds vs Sunderland, or Sunday charity match" />
+      </div>
+
+      <div class="field-group">
+        <label class="field-label">Event date</label>
+        <input type="datetime-local" class="date-input" id="add-event-date" />
+      </div>
+
+      <div class="field-group">
+        <label class="field-label">Time watched</label>
+        <div class="duration-input-row">
+          <div class="duration-field">
+            <input type="number" class="duration-number" id="add-event-hours" min="0" max="99" placeholder="0" />
+            <span class="duration-unit">hrs</span>
+          </div>
+          <div class="duration-field">
+            <input type="number" class="duration-number" id="add-event-minutes" min="0" max="59" placeholder="0" />
+            <span class="duration-unit">mins</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="field-group">
+        <label class="field-label">Coverage</label>
+        <div class="segmented" id="add-event-coverage-segmented">
+          <button data-val="full" class="selected">Full</button>
+          <button data-val="partial">Partial</button>
+        </div>
+        <div class="field-error" id="add-event-duration-error" style="display:none;">Enter how long you watched — required for partial coverage.</div>
+      </div>
+
+      <div class="field-group">
+        <label class="field-label">Rating <span style="opacity:0.6; text-transform:none; font-weight:400;">(optional)</span></label>
+        <div class="stars" id="add-event-rating-stars">
+          <button data-val="1">★</button><button data-val="2">★</button><button data-val="3">★</button><button data-val="4">★</button><button data-val="5">★</button>
+        </div>
+      </div>
+
+      <div class="field-group">
+        <label class="field-label">Notes <span style="opacity:0.6; text-transform:none; font-weight:400;">(optional)</span></label>
+        <textarea class="notes-input" id="add-event-notes" placeholder="What stood out…"></textarea>
+      </div>
+
+      <div class="field-error" id="add-event-form-error" style="display:none;">Add a sport, title, and date before saving.</div>
+      <button class="save-btn" id="add-event-save-btn">Add for review</button>
+      <button class="remove-btn" id="add-event-delete-btn" style="display:none;">Delete this pending event</button>
+    </div>
+  </div>
+
+  <!-- ============ PENDING EVENTS SCREEN (intermediary review list) ============ -->
+  <div class="screen" id="screen-pending-events">
+    <div class="topbar">
+      <div class="detail-header">
+        <button class="back-btn" id="pending-events-back">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"/></svg>
+        </button>
+        <div>
+          <h2>Pending events</h2>
+          <div class="detail-sub">Manually added, not yet matched to real fixtures</div>
+        </div>
+      </div>
+    </div>
+    <div style="padding: 4px 20px 0;">
+      <button class="copy-for-review-btn" id="copy-pending-events-btn">
+        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>
+        Copy for review
+      </button>
+    </div>
+    <div class="results-scroll" id="pending-events-list" style="padding: 8px 20px;"></div>
+  </div>
+
+  <!-- ============ TOURNAMENT ARCHIVE DETAIL SCREEN ============ -->
+  <div class="screen" id="screen-tournament">
+    <div class="topbar">
+      <div class="detail-header">
+        <button class="back-btn" id="tournament-back">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"/></svg>
+        </button>
+        <div>
+          <h2 id="tournament-name"></h2>
+          <div class="detail-sub" id="tournament-sub"></div>
+        </div>
+      </div>
+    </div>
+    <div class="results-scroll" id="tournament-body"></div>
+  </div>
+
+  <!-- ============ ENTITY DETAIL SCREEN ============ -->
+  <div class="screen" id="screen-entity">
+    <div class="topbar">
+      <div class="detail-header">
+        <button class="back-btn" id="entity-back">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"/></svg>
+        </button>
+        <div>
+          <h2 id="entity-name"></h2>
+          <div class="detail-sub" id="entity-sub"></div>
+        </div>
+      </div>
+    </div>
+    <div class="mode-toggle" id="entity-view-toggle">
+      <button class="mode-toggle-btn active" data-entity-view="fixtures">Fixtures</button>
+      <button class="mode-toggle-btn" data-entity-view="watched">Watched</button>
+    </div>
+    <div class="history-stats stats-2col" id="entity-watched-stats" style="display:none;"></div>
+    <div class="results-scroll" id="entity-events"></div>
+  </div>
+
+  <!-- ============ TAB BAR ============ -->
+  <div class="tabbar">
+    <button class="tab active" data-tab="dashboard">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="7" height="9" rx="1.5"/><rect x="14" y="3" width="7" height="5" rx="1.5"/><rect x="14" y="12" width="7" height="9" rx="1.5"/><rect x="3" y="16" width="7" height="5" rx="1.5"/></svg>
+      Dashboard
+    </button>
+    <button class="tab" data-tab="search">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+      Add sport
+    </button>
+  </div>
+</div>
+
+<!-- ============ EVENT MODAL ============ -->
+<div class="modal-backdrop" id="modal-backdrop">
+  <div class="modal-sheet" id="modal-sheet">
+    <div class="sheet-handle"></div>
+    <button class="sheet-close" id="modal-close">×</button>
+    <div class="event-hero" id="event-hero">
+      <div class="stamp-wrap" id="stamp-wrap">
+        <svg viewBox="0 0 100 100">
+          <circle cx="50" cy="50" r="44" fill="none" stroke="#c0392b" stroke-width="4"/>
+          <circle cx="50" cy="50" r="36" fill="none" stroke="#c0392b" stroke-width="1.5"/>
+          <text x="50" y="46" text-anchor="middle" fill="#c0392b" font-family="'JetBrains Mono', monospace" font-size="12" font-weight="700" letter-spacing="1">WATCHED</text>
+          <text x="50" y="62" text-anchor="middle" fill="#c0392b" font-family="'JetBrains Mono', monospace" font-size="9" id="stamp-date-text">--</text>
+        </svg>
+      </div>
+      <div class="comp-label" id="event-comp-label"></div>
+      <h2 id="event-title"></h2>
+      <div class="event-datetime" id="event-datetime"></div>
+      <div class="event-extra" id="event-extra"></div>
+    </div>
+    <div class="sheet-body">
+      <button class="action-primary" id="mark-watched-btn">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+        <span id="mark-watched-label">Mark as watched</span>
+      </button>
+
+      <div id="viewing-form" style="display:none;">
+        <div class="field-group" id="whole-event-duration-group">
+          <label class="field-label" id="whole-event-duration-label">Time watched</label>
+          <div class="duration-input-row">
+            <div class="duration-field">
+              <input type="number" class="duration-number" id="watched-hours" min="0" max="99" placeholder="0" />
+              <span class="duration-unit">hrs</span>
+            </div>
+            <div class="duration-field">
+              <input type="number" class="duration-number" id="watched-minutes" min="0" max="59" placeholder="0" />
+              <span class="duration-unit">mins</span>
+            </div>
+          </div>
+          <div class="field-error" id="whole-event-duration-error" style="display:none;">Enter how long you watched — required for partial coverage.</div>
+        </div>
+        <div class="field-group">
+          <label class="field-label">Coverage</label>
+          <div class="segmented" id="coverage-segmented">
+            <button data-val="full" class="selected">Full</button>
+            <button data-val="partial">Partial</button>
+          </div>
+        </div>
+        <div class="field-group" id="sessions-group" style="display:none;">
+          <label class="field-label" id="sessions-group-label">Sessions watched <span style="opacity:0.6; text-transform:none; font-weight:400;">(optional)</span></label>
+          <div class="session-checklist" id="sessions-checklist"></div>
+          <div id="session-durations-list"></div>
+        </div>
+        <div class="field-group">
+          <label class="field-label">Rating <span style="opacity:0.6; text-transform:none; font-weight:400;">(optional)</span></label>
+          <div class="stars" id="rating-stars">
+            <button data-val="1">★</button><button data-val="2">★</button><button data-val="3">★</button><button data-val="4">★</button><button data-val="5">★</button>
+          </div>
+        </div>
+        <div class="field-group">
+          <label class="field-label">Notes <span style="opacity:0.6; text-transform:none; font-weight:400;">(optional)</span></label>
+          <textarea class="notes-input" id="notes-input" placeholder="What stood out…"></textarea>
+        </div>
+        <button class="save-btn" id="save-viewing-btn">Save to history</button>
+        <button class="remove-btn" id="remove-viewing-btn" style="display:none;">Remove from history</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="toast" id="toast"></div>
+
+<script>
+// SportLog V1 seed data
+// Sourced from web search (Premier League official site, Wikipedia, ESPN, Sky Sports,
+// CalendarF1, live-darts.com) on 18 Aug 2026. Mix of completed (dataQuality: "verified")
+// past events and confirmed upcoming fixtures.
+
+const SEED_SPORTS = [
+  { id: "football", name: "Football", icon: "⚽" },
+  { id: "f1", name: "Formula 1", icon: "🏎️" },
+  { id: "darts", name: "Darts", icon: "🎯" },
+  { id: "cricket", name: "Cricket", icon: "🏏" },
+];
+
+const SEED_COMPETITIONS = [
+  { id: "epl", sportId: "football", name: "Premier League", shortName: "EPL" },
+  { id: "f1champ", sportId: "f1", name: "FIA Formula One World Championship", shortName: "F1" },
+  { id: "pdc_wc", sportId: "darts", name: "PDC World Darts Championship", shortName: "World Championship" },
+  { id: "pdc_matchplay", sportId: "darts", name: "Betfred World Matchplay", shortName: "World Matchplay" },
+  { id: "pdc_premier", sportId: "darts", name: "Premier League Darts", shortName: "Premier League Darts" },
+  { id: "pdc_masters", sportId: "darts", name: "Winmau World Masters", shortName: "World Masters" },
+  { id: "pdc_ukopen", sportId: "darts", name: "PDC UK Open", shortName: "UK Open" },
+  { id: "cricket_test_eng_nz", sportId: "cricket", name: "England v New Zealand Test Series", shortName: "ENG v NZ Tests" },
+  { id: "t20_world_cup", sportId: "cricket", name: "ICC Men's T20 World Cup", shortName: "T20 World Cup" },
+  { id: "pdc_grandprix", sportId: "darts", name: "PDC World Grand Prix", shortName: "World Grand Prix" },
+  { id: "pdc_euro", sportId: "darts", name: "PDC European Championship", shortName: "European Championship" },
+  { id: "pdc_grandslam", sportId: "darts", name: "Grand Slam of Darts", shortName: "Grand Slam" },
+];
+
+const SEED_SEASONS = [
+  { id: "epl_2025_26", competitionId: "epl", label: "2025/26" },
+  { id: "epl_2026_27", competitionId: "epl", label: "2026/27" },
+  { id: "f1_2026", competitionId: "f1champ", label: "2026" },
+  { id: "pdc_2025_26", competitionId: "pdc_wc", label: "2025/26" },
+  { id: "pdc_2026_27", competitionId: "pdc_wc", label: "2026/27" },
+  { id: "pdc_matchplay_2026", competitionId: "pdc_matchplay", label: "2026" },
+  { id: "pdc_premier_2026", competitionId: "pdc_premier", label: "2026" },
+  { id: "pdc_masters_2026", competitionId: "pdc_masters", label: "2026" },
+  { id: "pdc_ukopen_2026", competitionId: "pdc_ukopen", label: "2026" },
+  { id: "pdc_grandprix_2026", competitionId: "pdc_grandprix", label: "2026" },
+  { id: "pdc_euro_2026", competitionId: "pdc_euro", label: "2026" },
+  { id: "pdc_grandslam_2026", competitionId: "pdc_grandslam", label: "2026" },
+  { id: "cricket_test_eng_nz_2026", competitionId: "cricket_test_eng_nz", label: "2026" },
+  { id: "t20_world_cup_2026", competitionId: "t20_world_cup", label: "2026" },
+];
+
+// ---- TEAMS (cricket — international sides) ----
+const CRICKET_TEAM_NAMES = [
+  "England", "New Zealand", "Netherlands", "Pakistan", "West Indies", "Scotland", "India",
+  "United States of America", "Afghanistan", "Nepal", "Sri Lanka", "Ireland", "Italy", "Oman",
+  "Zimbabwe", "South Africa", "Canada", "Namibia", "United Arab Emirates", "Australia",
+];
+function cricketTeamId(name) { return `cricket_team_${slug(name)}`; }
+const CRICKET_TEAMS = CRICKET_TEAM_NAMES.map((name) => ({
+  id: cricketTeamId(name), sportId: "cricket", name,
+}));
+
+// ---- TEAMS (football) ----
+const PL_TEAMS = [
+  "Arsenal", "Aston Villa", "Brentford", "Brighton & Hove Albion", "Chelsea",
+  "Crystal Palace", "Everton", "Fulham", "Leeds United", "Liverpool",
+  "Manchester City", "Manchester United", "Newcastle United", "Nottingham Forest",
+  "Sunderland", "Tottenham Hotspur", "AFC Bournemouth", "Hull City",
+  "Coventry City", "Ipswich Town",
+];
+
+const SEED_TEAMS = PL_TEAMS.map((name) => ({
+  id: `team_${slug(name)}`,
+  sportId: "football",
+  name,
+})).concat(CRICKET_TEAMS);
+
+// ---- PLAYERS (F1 drivers, darts players) ----
+const SEED_PLAYERS = [
+  // F1 drivers relevant to seeded races
+  { id: "player_russell", sportId: "f1", name: "George Russell" },
+  { id: "player_antonelli", sportId: "f1", name: "Andrea Kimi Antonelli" },
+  { id: "player_hamilton", sportId: "f1", name: "Lewis Hamilton" },
+  { id: "player_leclerc", sportId: "f1", name: "Charles Leclerc" },
+  { id: "player_norris", sportId: "f1", name: "Lando Norris" },
+  { id: "player_verstappen", sportId: "f1", name: "Max Verstappen" },
+  // Darts players
+  { id: "player_littler", sportId: "darts", name: "Luke Littler" },
+  { id: "player_vangerwen", sportId: "darts", name: "Michael van Gerwen" },
+  { id: "player_price", sportId: "darts", name: "Gerwyn Price" },
+  { id: "player_humphries", sportId: "darts", name: "Luke Humphries" },
+  { id: "player_vanveen", sportId: "darts", name: "Gian van Veen" },
+  { id: "player_bunting", sportId: "darts", name: "Stephen Bunting" },
+  { id: "player_wright", sportId: "darts", name: "Peter Wright" },
+  { id: "player_dobey", sportId: "darts", name: "Chris Dobey" },
+  { id: "player_clayton", sportId: "darts", name: "Jonny Clayton" },
+  { id: "player_anderson", sportId: "darts", name: "Gary Anderson" },
+  { id: "player_wade", sportId: "darts", name: "James Wade" },
+  { id: "player_vanduijvenbode", sportId: "darts", name: "Dirk van Duijvenbode" },
+  { id: "player_cross", sportId: "darts", name: "Rob Cross" },
+  { id: "player_aspinall", sportId: "darts", name: "Nathan Aspinall" },
+  // World Matchplay 2026 field (additional players beyond the ones above)
+  { id: "player_josh_rock", sportId: "darts", name: "Josh Rock" },
+  { id: "player_luke_woodhouse", sportId: "darts", name: "Luke Woodhouse" },
+  { id: "player_niels_zonneveld", sportId: "darts", name: "Niels Zonneveld" },
+  { id: "player_niko_springer", sportId: "darts", name: "Niko Springer" },
+  { id: "player_joe_cullen", sportId: "darts", name: "Joe Cullen" },
+  { id: "player_ryan_joyce", sportId: "darts", name: "Ryan Joyce" },
+  { id: "player_andrew_gilding", sportId: "darts", name: "Andrew Gilding" },
+  { id: "player_damon_heta", sportId: "darts", name: "Damon Heta" },
+  { id: "player_ryan_searle", sportId: "darts", name: "Ryan Searle" },
+  { id: "player_william_oconnor", sportId: "darts", name: "William O'Connor" },
+  { id: "player_jermaine_wattimena", sportId: "darts", name: "Jermaine Wattimena" },
+  { id: "player_krzysztof_ratajski", sportId: "darts", name: "Krzysztof Ratajski" },
+  { id: "player_wessel_nijman", sportId: "darts", name: "Wessel Nijman" },
+  { id: "player_dave_chisnall", sportId: "darts", name: "Dave Chisnall" },
+  { id: "player_cameron_menzies", sportId: "darts", name: "Cameron Menzies" },
+  { id: "player_martin_schindler", sportId: "darts", name: "Martin Schindler" },
+  { id: "player_danny_noppert", sportId: "darts", name: "Danny Noppert" },
+  { id: "player_kevin_doets", sportId: "darts", name: "Kevin Doets" },
+  { id: "player_ross_smith", sportId: "darts", name: "Ross Smith" },
+];
+
+function slug(s) {
+  return s.toLowerCase().replace(/&/g, "and").replace(/[^a-z0-9]+/g, "_").replace(/^_|_$/g, "");
+}
+
+function teamId(name) {
+  return `team_${slug(name)}`;
+}
+
+// ---- EVENTS ----
+let evCounter = 1;
+function evId() {
+  return `evt_${String(evCounter++).padStart(3, "0")}`;
+}
+
+const SEED_EVENTS = [];
+
+// --- F1: 2026 completed races (verified results) ---
+// --- F1 2026: real per-session dates/times sourced from formulaonehistory.com
+// (UK times) and Sky Sports (remaining season). Round numbers match the
+// official 2026 calendar, which leaves rounds 4/5 unused rather than
+// renumbering after Bahrain and Saudi Arabia were both cancelled due to
+// Middle East conflict — neither race happened, so neither is seeded.
+const F1_2026_SESSIONS = {
+  "Australian Grand Prix": { fp1: "2026-03-06T01:30:00Z", fp2: "2026-03-06T05:00:00Z", fp3: "2026-03-07T01:30:00Z", qualifying: "2026-03-07T05:00:00Z", race: "2026-03-08T04:00:00Z" },
+  "Chinese Grand Prix": { fp1: "2026-03-13T03:30:00Z", sprint_quali: "2026-03-13T07:30:00Z", sprint: "2026-03-14T03:00:00Z", qualifying: "2026-03-14T07:00:00Z", race: "2026-03-15T07:00:00Z" },
+  "Japanese Grand Prix": { fp1: "2026-03-27T02:30:00Z", fp2: "2026-03-27T06:00:00Z", fp3: "2026-03-28T02:30:00Z", qualifying: "2026-03-28T06:00:00Z", race: "2026-03-29T06:00:00Z" },
+  "Miami Grand Prix": { fp1: "2026-05-01T17:30:00Z", sprint_quali: "2026-05-01T21:30:00Z", sprint: "2026-05-02T17:00:00Z", qualifying: "2026-05-02T21:00:00Z", race: "2026-05-03T21:00:00Z" },
+  "Canadian Grand Prix": { fp1: "2026-05-22T17:30:00Z", sprint_quali: "2026-05-22T21:30:00Z", sprint: "2026-05-23T17:00:00Z", qualifying: "2026-05-23T21:00:00Z", race: "2026-05-24T21:00:00Z" },
+  "Monaco Grand Prix": { fp1: "2026-06-05T12:30:00Z", fp2: "2026-06-05T16:00:00Z", fp3: "2026-06-06T11:30:00Z", qualifying: "2026-06-06T15:00:00Z", race: "2026-06-07T14:00:00Z" },
+  "Spanish Grand Prix": { fp1: "2026-06-12T12:30:00Z", fp2: "2026-06-12T16:00:00Z", fp3: "2026-06-13T11:30:00Z", qualifying: "2026-06-13T15:00:00Z", race: "2026-06-14T14:00:00Z" },
+  "Austrian Grand Prix": { fp1: "2026-06-26T12:30:00Z", fp2: "2026-06-26T16:00:00Z", fp3: "2026-06-27T11:30:00Z", qualifying: "2026-06-27T15:00:00Z", race: "2026-06-28T14:00:00Z" },
+  "British Grand Prix": { fp1: "2026-07-03T12:30:00Z", sprint_quali: "2026-07-03T16:30:00Z", sprint: "2026-07-04T12:00:00Z", qualifying: "2026-07-04T16:00:00Z", race: "2026-07-05T15:00:00Z" },
+  "Belgian Grand Prix": { fp1: "2026-07-17T12:30:00Z", fp2: "2026-07-17T16:00:00Z", fp3: "2026-07-18T11:30:00Z", qualifying: "2026-07-18T15:00:00Z", race: "2026-07-19T14:00:00Z" },
+  "Hungarian Grand Prix": { fp1: "2026-07-24T12:30:00Z", fp2: "2026-07-24T16:00:00Z", fp3: "2026-07-25T11:30:00Z", qualifying: "2026-07-25T15:00:00Z", race: "2026-07-26T14:00:00Z" },
+  "Dutch Grand Prix": { fp1: "2026-08-21T11:30:00Z", sprint_quali: "2026-08-21T15:30:00Z", sprint: "2026-08-22T11:00:00Z", qualifying: "2026-08-22T15:00:00Z", race: "2026-08-23T14:00:00Z" },
+  "Italian Grand Prix": { fp1: "2026-09-04T11:30:00Z", fp2: "2026-09-04T15:00:00Z", fp3: "2026-09-05T11:30:00Z", qualifying: "2026-09-05T15:00:00Z", race: "2026-09-06T14:00:00Z" },
+  "Madrid Grand Prix": { fp1: "2026-09-11T12:30:00Z", fp2: "2026-09-11T16:00:00Z", fp3: "2026-09-12T11:30:00Z", qualifying: "2026-09-12T15:00:00Z", race: "2026-09-13T14:00:00Z" },
+  "Azerbaijan Grand Prix": { fp1: "2026-09-24T09:30:00Z", fp2: "2026-09-24T13:00:00Z", fp3: "2026-09-25T09:30:00Z", qualifying: "2026-09-25T13:00:00Z", race: "2026-09-26T12:00:00Z" },
+  "Singapore Grand Prix": { fp1: "2026-10-09T09:30:00Z", sprint_quali: "2026-10-09T13:30:00Z", sprint: "2026-10-10T10:00:00Z", qualifying: "2026-10-10T14:00:00Z", race: "2026-10-11T13:00:00Z" },
+  "United States Grand Prix": { fp1: "2026-10-23T18:30:00Z", fp2: "2026-10-23T22:00:00Z", fp3: "2026-10-24T18:30:00Z", qualifying: "2026-10-24T22:00:00Z", race: "2026-10-25T20:00:00Z" },
+  "Mexican Grand Prix": { fp1: "2026-10-30T18:30:00Z", fp2: "2026-10-30T22:00:00Z", fp3: "2026-10-31T17:30:00Z", qualifying: "2026-10-31T21:00:00Z", race: "2026-11-01T20:00:00Z" },
+  "Brazilian Grand Prix": { fp1: "2026-11-06T15:30:00Z", fp2: "2026-11-06T19:00:00Z", fp3: "2026-11-07T14:30:00Z", qualifying: "2026-11-07T18:00:00Z", race: "2026-11-08T17:00:00Z" },
+  "Las Vegas Grand Prix": { fp1: "2026-11-20T00:30:00Z", fp2: "2026-11-20T04:00:00Z", fp3: "2026-11-21T00:30:00Z", qualifying: "2026-11-21T04:00:00Z", race: "2026-11-22T04:00:00Z" },
+  "Qatar Grand Prix": { fp1: "2026-11-27T13:30:00Z", fp2: "2026-11-27T17:00:00Z", fp3: "2026-11-28T14:30:00Z", qualifying: "2026-11-28T18:00:00Z", race: "2026-11-29T16:00:00Z" },
+  "Abu Dhabi Grand Prix": { fp1: "2026-12-04T09:30:00Z", fp2: "2026-12-04T13:00:00Z", fp3: "2026-12-05T10:30:00Z", qualifying: "2026-12-05T14:00:00Z", race: "2026-12-06T13:00:00Z" },
+};
+
+const completedRaces = [
+  { round: 1, name: "Australian Grand Prix", date: "2026-03-08T04:00:00Z", winner: "player_russell" },
+  { round: 2, name: "Chinese Grand Prix", date: "2026-03-15T07:00:00Z", winner: "player_antonelli" },
+  { round: 3, name: "Japanese Grand Prix", date: "2026-03-29T06:00:00Z", winner: "player_antonelli" },
+  { round: 6, name: "Miami Grand Prix", date: "2026-05-03T21:00:00Z", winner: "player_antonelli" },
+  { round: 7, name: "Canadian Grand Prix", date: "2026-05-24T21:00:00Z", winner: "player_antonelli" },
+  { round: 8, name: "Monaco Grand Prix", date: "2026-06-07T14:00:00Z", winner: "player_antonelli" },
+  { round: 9, name: "Spanish Grand Prix", date: "2026-06-14T14:00:00Z", winner: "player_hamilton" },
+  { round: 10, name: "Austrian Grand Prix", date: "2026-06-28T14:00:00Z", winner: "player_russell" },
+  { round: 11, name: "British Grand Prix", date: "2026-07-05T15:00:00Z", winner: "player_leclerc" },
+  { round: 12, name: "Belgian Grand Prix", date: "2026-07-19T14:00:00Z", winner: "player_antonelli" },
+  { round: 13, name: "Hungarian Grand Prix", date: "2026-07-26T14:00:00Z", winner: "player_norris" },
+];
+
+completedRaces.forEach(({ round, name, date, winner }) => {
+  SEED_EVENTS.push({
+    id: evId(), sportId: "f1", competitionId: "f1champ", seasonId: "f1_2026",
+    date, title: name,
+    participants: [winner],
+    sportData: { round, winner, sessions: F1_2026_SESSIONS[name] },
+    dataQuality: "verified", externalIds: {},
+  });
+});
+
+// --- F1: 2026 upcoming races ---
+const upcomingRaces = [
+  { round: 14, name: "Dutch Grand Prix", date: "2026-08-23T14:00:00Z" },
+  { round: 15, name: "Italian Grand Prix", date: "2026-09-06T14:00:00Z" },
+  { round: 16, name: "Madrid Grand Prix", date: "2026-09-13T14:00:00Z" },
+  { round: 17, name: "Azerbaijan Grand Prix", date: "2026-09-26T12:00:00Z" },
+  { round: 18, name: "Singapore Grand Prix", date: "2026-10-11T13:00:00Z" },
+  { round: 19, name: "United States Grand Prix", date: "2026-10-25T20:00:00Z" },
+  { round: 20, name: "Mexican Grand Prix", date: "2026-11-01T20:00:00Z" },
+  { round: 21, name: "Brazilian Grand Prix", date: "2026-11-08T17:00:00Z" },
+  { round: 22, name: "Las Vegas Grand Prix", date: "2026-11-22T04:00:00Z" },
+  { round: 23, name: "Qatar Grand Prix", date: "2026-11-29T16:00:00Z" },
+  { round: 24, name: "Abu Dhabi Grand Prix", date: "2026-12-06T13:00:00Z" },
+];
+
+upcomingRaces.forEach(({ round, name, date }) => {
+  SEED_EVENTS.push({
+    id: evId(), sportId: "f1", competitionId: "f1champ", seasonId: "f1_2026",
+    date, title: name,
+    participants: [],
+    sportData: { round, winner: null, sessions: F1_2026_SESSIONS[name] },
+    dataQuality: "verified", externalIds: {},
+  });
+});
+
+
+// --- Darts: 2026 World Championship (completed Jan 2026) ---
+SEED_EVENTS.push(
+  {
+    id: evId(), sportId: "darts", competitionId: "pdc_wc", seasonId: "pdc_2025_26",
+    date: "2026-01-03T19:00:00Z", title: "Luke Littler vs Michael van Gerwen",
+    participants: ["player_littler", "player_vangerwen"],
+    sportData: { round: "Final", result: "7-3", note: "Littler retained his world title." },
+    dataQuality: "verified", externalIds: {},
+  },
+  {
+    id: evId(), sportId: "darts", competitionId: "pdc_wc", seasonId: "pdc_2025_26",
+    date: "2026-01-01T19:00:00Z", title: "Chris Dobey vs Michael van Gerwen",
+    participants: ["player_dobey", "player_vangerwen"],
+    sportData: { round: "Semi-Final", result: "1-6" },
+    dataQuality: "verified", externalIds: {},
+  },
+  {
+    id: evId(), sportId: "darts", competitionId: "pdc_wc", seasonId: "pdc_2025_26",
+    date: "2026-01-01T19:00:00Z", title: "Stephen Bunting vs Luke Littler",
+    participants: ["player_bunting", "player_littler"],
+    sportData: { round: "Semi-Final", result: "1-6" },
+    dataQuality: "verified", externalIds: {},
+  },
+  {
+    id: evId(), sportId: "darts", competitionId: "pdc_wc", seasonId: "pdc_2025_26",
+    date: "2025-12-30T19:00:00Z", title: "Luke Humphries vs Peter Wright",
+    participants: ["player_humphries", "player_wright"],
+    sportData: { round: "Fourth Round", result: "1-4", note: "Defending champion Humphries eliminated." },
+    dataQuality: "verified", externalIds: {},
+  },
+);
+
+// --- Darts: World Matchplay 2026 (completed 18-26 July, Blackpool) ---
+// Full 31-match bracket, source: Sky Sports session-by-session results.
+const matchplay2026Matches = [
+  // Round One
+  ["2026-07-18T19:00:00Z", "Josh Rock", "Luke Woodhouse", "10-4"],
+  ["2026-07-18T19:00:00Z", "Stephen Bunting", "Niels Zonneveld", "13-12"],
+  ["2026-07-18T19:00:00Z", "Luke Littler", "Niko Springer", "10-6"],
+  ["2026-07-18T19:00:00Z", "Nathan Aspinall", "Joe Cullen", "10-5"],
+  ["2026-07-19T19:00:00Z", "Chris Dobey", "Dirk van Duijvenbode", "11-13"],
+  ["2026-07-19T19:00:00Z", "Gary Anderson", "Ryan Joyce", "10-2"],
+  ["2026-07-19T19:00:00Z", "Michael van Gerwen", "Andrew Gilding", "10-6"],
+  ["2026-07-19T19:00:00Z", "Jonny Clayton", "Damon Heta", "10-7"],
+  ["2026-07-19T20:30:00Z", "Ryan Searle", "William O'Connor", "10-6"],
+  ["2026-07-19T20:30:00Z", "James Wade", "Jermaine Wattimena", "10-7"],
+  ["2026-07-19T20:30:00Z", "Gian van Veen", "Krzysztof Ratajski", "10-6"],
+  ["2026-07-19T20:30:00Z", "Wessel Nijman", "Dave Chisnall", "10-5"],
+  ["2026-07-20T19:00:00Z", "Cameron Menzies", "Luke Humphries", "10-7"],
+  ["2026-07-20T19:00:00Z", "Gerwyn Price", "Martin Schindler", "11-9"],
+  ["2026-07-20T19:00:00Z", "Rob Cross", "Danny Noppert", "10-3"],
+  ["2026-07-20T19:00:00Z", "Ross Smith", "Kevin Doets", "10-6"],
+  // Round Two
+  ["2026-07-21T19:00:00Z", "Gary Anderson", "Jonny Clayton", "11-7"],
+  ["2026-07-21T19:00:00Z", "Dirk van Duijvenbode", "Michael van Gerwen", "14-12"],
+  ["2026-07-21T19:00:00Z", "Luke Littler", "Nathan Aspinall", "11-8"],
+  ["2026-07-21T19:00:00Z", "Josh Rock", "Stephen Bunting", "11-6"],
+  ["2026-07-22T19:00:00Z", "Ross Smith", "Cameron Menzies", "0-0", "Menzies withdrew through illness"],
+  ["2026-07-22T19:00:00Z", "Gian van Veen", "Wessel Nijman", "14-12"],
+  ["2026-07-22T19:00:00Z", "Rob Cross", "Gerwyn Price", "5-1", "Cross led before Price fought back to win"],
+  ["2026-07-22T19:00:00Z", "James Wade", "Ryan Searle", "11-8"],
+  // Quarter-finals
+  ["2026-07-23T19:00:00Z", "Luke Littler", "Josh Rock", "16-7"],
+  ["2026-07-23T19:00:00Z", "Dirk van Duijvenbode", "Gary Anderson", "16-13"],
+  ["2026-07-24T19:00:00Z", "Gian van Veen", "James Wade", "16-13"],
+  ["2026-07-24T19:00:00Z", "Gerwyn Price", "Ross Smith", "16-12"],
+  // Semi-finals
+  ["2026-07-25T19:00:00Z", "Gerwyn Price", "Gian van Veen", "17-10"],
+  ["2026-07-25T20:30:00Z", "Luke Littler", "Dirk van Duijvenbode", "17-5"],
+  // Final
+  ["2026-07-26T19:30:00Z", "Luke Littler", "Gerwyn Price", "18-9"],
+];
+
+const roundLabelForMatchplayIndex = (i) => {
+  if (i < 16) return "Round One";
+  if (i < 24) return "Round Two";
+  if (i < 28) return "Quarter-Final";
+  if (i < 30) return "Semi-Final";
+  return "Final";
+};
+
+// Players already seeded earlier (under short-form IDs from the original build)
+// need to resolve to those exact IDs rather than the full-name-slug scheme used
+// for players newly added for this bracket, or references would silently break.
+const matchplayExistingPlayerIds = {
+  "Luke Littler": "player_littler", "Michael van Gerwen": "player_vangerwen", "Gerwyn Price": "player_price",
+  "Luke Humphries": "player_humphries", "Gian van Veen": "player_vanveen", "Stephen Bunting": "player_bunting",
+  "Peter Wright": "player_wright", "Chris Dobey": "player_dobey", "Jonny Clayton": "player_clayton",
+  "Gary Anderson": "player_anderson", "James Wade": "player_wade", "Dirk van Duijvenbode": "player_vanduijvenbode",
+  "Rob Cross": "player_cross", "Nathan Aspinall": "player_aspinall",
+};
+function matchplayPlayerId(name) {
+  return matchplayExistingPlayerIds[name] || `player_${name.toLowerCase().replace(/'/g, "").replace(/\s+/g, "_")}`;
+}
+
+matchplay2026Matches.forEach(([date, p1, p2, score, note], i) => {
+  SEED_EVENTS.push({
+    id: evId(), sportId: "darts", competitionId: "pdc_matchplay", seasonId: "pdc_matchplay_2026",
+    date, title: `${p1} vs ${p2}`,
+    participants: [matchplayPlayerId(p1), matchplayPlayerId(p2)],
+    sportData: { round: roundLabelForMatchplayIndex(i), result: score, note: note || undefined },
+    dataQuality: "verified", externalIds: {},
+  });
+});
+
+// --- Darts: upcoming 2026 events ---
+SEED_EVENTS.push(
+  {
+    id: evId(), sportId: "darts", competitionId: "pdc_grandprix", seasonId: "pdc_grandprix_2026",
+    date: "2026-09-28T19:00:00Z", title: "PDC World Grand Prix – Day 1",
+    participants: [],
+    sportData: { round: "Round One", venue: "Leisureland, Salthill, Galway" },
+    dataQuality: "verified", externalIds: {},
+  },
+  {
+    id: evId(), sportId: "darts", competitionId: "pdc_euro", seasonId: "pdc_euro_2026",
+    date: "2026-10-25T19:00:00Z", title: "PDC European Championship – Final",
+    participants: [],
+    sportData: { round: "Final", venue: "Westfalenhalle, Dortmund" },
+    dataQuality: "verified", externalIds: {},
+  },
+  {
+    id: evId(), sportId: "darts", competitionId: "pdc_grandslam", seasonId: "pdc_grandslam_2026",
+    date: "2026-11-22T19:00:00Z", title: "Grand Slam of Darts – Final",
+    participants: [],
+    sportData: { round: "Final", venue: "Ryder Arena, Wolverhampton" },
+    dataQuality: "verified", externalIds: {},
+  },
+  {
+    id: evId(), sportId: "darts", competitionId: "pdc_wc", seasonId: "pdc_2026_27",
+    date: "2026-12-10T19:00:00Z", title: "PDC World Darts Championship – Opening Night",
+    participants: [],
+    sportData: { round: "First Round", venue: "Alexandra Palace, London" },
+    dataQuality: "verified", externalIds: {},
+  },
+  {
+    id: evId(), sportId: "darts", competitionId: "pdc_wc", seasonId: "pdc_2026_27",
+    date: "2027-01-03T19:00:00Z", title: "PDC World Darts Championship – Final",
+    participants: [],
+    sportData: { round: "Final", venue: "Alexandra Palace, London" },
+    dataQuality: "verified", externalIds: {},
+  },
+);
+
+// ---------------------------------------------------------------
+// CRICKET: England v New Zealand Test series, summer 2026
+// Source: ESPNcricinfo match schedule/results.
+// Scheduled as 5-day Tests; 1st Test finished early (4 days) as results show.
+// ---------------------------------------------------------------
+SEED_EVENTS.push(
+  {
+    id: evId(), sportId: "cricket", competitionId: "cricket_test_eng_nz", seasonId: "cricket_test_eng_nz_2026",
+    date: "2026-06-04T10:00:00Z", title: "England vs New Zealand — 1st Test",
+    participants: ["cricket_team_england", "cricket_team_new_zealand"],
+    sportData: {
+      round: "1st Test", venue: "Lord's, London",
+      scheduledDays: 5, actualDays: 4,
+      result: "England won by 115 runs",
+      scorecard: "England 140 & 226, New Zealand 113 & 138",
+    },
+    dataQuality: "verified", externalIds: {},
+  },
+  {
+    id: evId(), sportId: "cricket", competitionId: "cricket_test_eng_nz", seasonId: "cricket_test_eng_nz_2026",
+    date: "2026-06-17T10:00:00Z", title: "England vs New Zealand — 2nd Test",
+    participants: ["cricket_team_england", "cricket_team_new_zealand"],
+    sportData: {
+      round: "2nd Test", venue: "The Oval, London",
+      scheduledDays: 5, actualDays: 5,
+      result: "New Zealand won by 253 runs",
+      scorecard: "New Zealand 391 & 362, England 291 & 209",
+    },
+    dataQuality: "verified", externalIds: {},
+  },
+  {
+    id: evId(), sportId: "cricket", competitionId: "cricket_test_eng_nz", seasonId: "cricket_test_eng_nz_2026",
+    date: "2026-06-25T10:00:00Z", title: "England vs New Zealand — 3rd Test",
+    participants: ["cricket_team_england", "cricket_team_new_zealand"],
+    sportData: {
+      round: "3rd Test", venue: "Trent Bridge, Nottingham",
+      scheduledDays: 5, actualDays: 5,
+      result: "New Zealand won by 160 runs",
+      scorecard: "New Zealand 438 & 288/9d, England 354 & 212",
+    },
+    dataQuality: "verified", externalIds: {},
+  },
+);
+
+// ---------------------------------------------------------------
+// CRICKET: ICC Men's T20 World Cup 2026 (7 Feb – 8 Mar, India & Sri Lanka)
+// Full 55-match tournament: 40 group-stage, 12 Super Eight, 2 semi-finals, 1 final.
+// T20s are single-session matches (no multi-day breakdown, unlike Test cricket).
+// Source: ESPNcricinfo match schedule/results, Wikipedia, ICC match reports.
+// ---------------------------------------------------------------
+function ct(name) { return cricketTeamId(name); }
+
+const t20wc2026GroupMatches = [
+  // Group A
+  ["2026-02-07", "Netherlands", "Pakistan", "Pakistan won by 3 wickets (with 3 balls remaining)", "Group A"],
+  ["2026-02-07", "India", "United States of America", "India won by 29 runs", "Group A"],
+  ["2026-02-10", "Pakistan", "United States of America", "Pakistan won by 32 runs", "Group A"],
+  ["2026-02-10", "Namibia", "Netherlands", "Netherlands won by 7 wickets (with 12 balls remaining)", "Group A"],
+  ["2026-02-12", "India", "Namibia", "India won by 93 runs", "Group A"],
+  ["2026-02-13", "United States of America", "Netherlands", "U.S.A. won by 93 runs", "Group A"],
+  ["2026-02-15", "India", "Pakistan", "India won by 61 runs", "Group A"],
+  ["2026-02-15", "United States of America", "Namibia", "U.S.A. won by 31 runs", "Group A"],
+  ["2026-02-18", "India", "Netherlands", "India won by 5 wickets", "Group A"],
+  ["2026-02-18", "Namibia", "Pakistan", "Pakistan won by 102 runs", "Group A"],
+  // Group B
+  ["2026-02-08", "Sri Lanka", "Ireland", "Sri Lanka won by 20 runs", "Group B"],
+  ["2026-02-09", "Oman", "Zimbabwe", "Zimbabwe won by 8 wickets (with 39 balls remaining)", "Group B"],
+  ["2026-02-11", "Australia", "Ireland", "Australia won by 67 runs", "Group B"],
+  ["2026-02-12", "Sri Lanka", "Oman", "Sri Lanka won by 105 runs", "Group B"],
+  ["2026-02-13", "Zimbabwe", "Australia", "Zimbabwe won by 23 runs", "Group B"],
+  ["2026-02-14", "Ireland", "Oman", "Ireland won by 96 runs", "Group B"],
+  ["2026-02-16", "Australia", "Sri Lanka", "Sri Lanka won by 8 wickets (with 12 balls remaining)", "Group B"],
+  ["2026-02-19", "Sri Lanka", "Zimbabwe", "Sri Lanka won", "Group B"],
+  ["2026-02-20", "Australia", "Oman", "Australia won by 9 wickets (with 62 balls remaining)", "Group B"],
+  ["2026-02-19", "Ireland", "West Indies", "West Indies won", "Group B"],
+  // Group C
+  ["2026-02-07", "West Indies", "Scotland", "West Indies won by 35 runs", "Group C"],
+  ["2026-02-08", "England", "Nepal", "England won by 4 runs", "Group C"],
+  ["2026-02-09", "Scotland", "Italy", "Scotland won by 73 runs", "Group C"],
+  ["2026-02-11", "West Indies", "England", "West Indies won by 30 runs", "Group C"],
+  ["2026-02-12", "Nepal", "Italy", "Italy won by 10 wickets (with 44 balls remaining)", "Group C"],
+  ["2026-02-14", "Scotland", "England", "England won by 5 wickets (with 10 balls remaining)", "Group C"],
+  ["2026-02-15", "Nepal", "West Indies", "West Indies won by 9 wickets (with 28 balls remaining)", "Group C"],
+  ["2026-02-16", "England", "Italy", "England won by 24 runs", "Group C"],
+  ["2026-02-17", "Scotland", "Nepal", "Nepal won", "Group C"],
+  ["2026-02-19", "Italy", "West Indies", "West Indies won", "Group C"],
+  // Group D
+  ["2026-02-08", "Afghanistan", "New Zealand", "New Zealand won by 5 wickets (with 13 balls remaining)", "Group D"],
+  ["2026-02-09", "South Africa", "Canada", "South Africa won by 57 runs", "Group D"],
+  ["2026-02-10", "United Arab Emirates", "New Zealand", "New Zealand won by 10 wickets (with 28 balls remaining)", "Group D"],
+  ["2026-02-11", "South Africa", "Afghanistan", "Match tied (South Africa won the 2nd Super Over)", "Group D"],
+  ["2026-02-13", "Canada", "United Arab Emirates", "U.A.E. won by 5 wickets (with 2 balls remaining)", "Group D"],
+  ["2026-02-14", "New Zealand", "South Africa", "South Africa won by 7 wickets (with 17 balls remaining)", "Group D"],
+  ["2026-02-16", "United Arab Emirates", "Afghanistan", "Afghanistan won by 5 wickets (with 4 balls remaining)", "Group D"],
+  ["2026-02-17", "Canada", "New Zealand", "New Zealand won by 8 wickets (with 29 balls remaining)", "Group D"],
+  ["2026-02-18", "South Africa", "United Arab Emirates", "South Africa won", "Group D"],
+  ["2026-02-19", "Afghanistan", "Canada", "Afghanistan won", "Group D"],
+];
+
+t20wc2026GroupMatches.forEach(([date, home, away, result, round]) => {
+  SEED_EVENTS.push({
+    id: evId(), sportId: "cricket", competitionId: "t20_world_cup", seasonId: "t20_world_cup_2026",
+    date: `${date}T14:00:00Z`, title: `${home} vs ${away}`,
+    participants: [ct(home), ct(away)],
+    sportData: { round, result },
+    dataQuality: "verified", externalIds: {},
+  });
+});
+
+const t20wc2026SuperEight = [
+  ["2026-02-21", "Pakistan", "New Zealand", "No result (abandoned)", "Super Eights, Group 2"],
+  ["2026-02-22", "England", "Sri Lanka", "England won by 51 runs", "Super Eights, Group 2"],
+  ["2026-02-22", "South Africa", "India", "South Africa won by 76 runs", "Super Eights, Group 1"],
+  ["2026-02-23", "West Indies", "Zimbabwe", "West Indies won by 107 runs", "Super Eights, Group 1"],
+  ["2026-02-24", "Pakistan", "England", "England won by 2 wickets (with 5 balls remaining)", "Super Eights, Group 2"],
+  ["2026-02-25", "Sri Lanka", "New Zealand", "New Zealand won by 61 runs", "Super Eights, Group 2"],
+  ["2026-02-26", "West Indies", "South Africa", "South Africa won by 9 wickets", "Super Eights, Group 1"],
+  ["2026-02-26", "India", "Zimbabwe", "India won by 72 runs", "Super Eights, Group 1"],
+  ["2026-02-27", "England", "New Zealand", "New Zealand won", "Super Eights, Group 2"],
+  ["2026-02-28", "Sri Lanka", "Pakistan", "Pakistan won", "Super Eights, Group 2"],
+  ["2026-03-01", "South Africa", "Zimbabwe", "South Africa won by 5 wickets", "Super Eights, Group 1"],
+  ["2026-03-01", "India", "West Indies", "India won by 5 wickets", "Super Eights, Group 1"],
+];
+
+t20wc2026SuperEight.forEach(([date, home, away, result, round]) => {
+  SEED_EVENTS.push({
+    id: evId(), sportId: "cricket", competitionId: "t20_world_cup", seasonId: "t20_world_cup_2026",
+    date: `${date}T14:00:00Z`, title: `${home} vs ${away}`,
+    participants: [ct(home), ct(away)],
+    sportData: { round, result },
+    dataQuality: "verified", externalIds: {},
+  });
+});
+
+SEED_EVENTS.push(
+  {
+    id: evId(), sportId: "cricket", competitionId: "t20_world_cup", seasonId: "t20_world_cup_2026",
+    date: "2026-03-04T13:30:00Z", title: "South Africa vs New Zealand — Semi-Final",
+    participants: [ct("South Africa"), ct("New Zealand")],
+    sportData: { round: "Semi-Final", venue: "Eden Gardens, Kolkata", result: "New Zealand won" },
+    dataQuality: "verified", externalIds: {},
+  },
+  {
+    id: evId(), sportId: "cricket", competitionId: "t20_world_cup", seasonId: "t20_world_cup_2026",
+    date: "2026-03-05T13:30:00Z", title: "India vs England — Semi-Final",
+    participants: [ct("India"), ct("England")],
+    sportData: { round: "Semi-Final", venue: "Wankhede Stadium, Mumbai", result: "India won by 7 runs" },
+    dataQuality: "verified", externalIds: {},
+  },
+  {
+    id: evId(), sportId: "cricket", competitionId: "t20_world_cup", seasonId: "t20_world_cup_2026",
+    date: "2026-03-08T13:30:00Z", title: "India vs New Zealand — Final",
+    participants: [ct("India"), ct("New Zealand")],
+    sportData: {
+      round: "Final", venue: "Narendra Modi Stadium, Ahmedabad",
+      result: "India won by 96 runs",
+      scorecard: "India 255/5, New Zealand 159 all out",
+      note: "India became the first team to win three T20 World Cup titles and the first host nation to win the tournament.",
+    },
+    dataQuality: "verified", externalIds: {},
+  },
+);
+
+// ============================================================
+// ARCHIVE SEED DATA
+// Real, sourced tournament data for the Tournament Archive feature.
+// Sourced from: thesoccerworldcups.com (2022 WC), ESPN (Euro 2024),
+// Wikipedia/BBC/PDC.tv (World Darts Championships), formula1.com official (F1 2022-2025)
+// ============================================================
+
+const ARCHIVE_COMPETITIONS = [
+  { id: "fifa_wc", sportId: "football", name: "FIFA World Cup", shortName: "World Cup" },
+  { id: "uefa_euro", sportId: "football", name: "UEFA European Championship", shortName: "Euros" },
+];
+
+// No archive-only players needed: World Matchplay 2026 (the darts entry in
+// the archive) lives in the main seed data, along with any extra players it needs.
+const ARCHIVE_PLAYERS = [];
+
+const ARCHIVE_SEASONS = [
+  { id: "wc_2022", competitionId: "fifa_wc", label: "2022" },
+  { id: "euro_2024", competitionId: "uefa_euro", label: "2024" },
+  // pdc_matchplay_2026 already exists in main seed data
+  { id: "f1_2022", competitionId: "f1champ", label: "2022" },
+  { id: "f1_2023", competitionId: "f1champ", label: "2023" },
+  { id: "f1_2024", competitionId: "f1champ", label: "2024" },
+  { id: "f1_2025", competitionId: "f1champ", label: "2025" },
+];
+
+// Extra national teams needed for World Cup / Euros not already in SEED_TEAMS (which is PL clubs)
+const ARCHIVE_NATIONAL_TEAMS_RAW = [
+  "Qatar","Ecuador","Senegal","Netherlands","England","Iran","USA","Wales","Argentina","Saudi Arabia",
+  "Denmark","Tunisia","Mexico","Poland","France","Australia","Morocco","Croatia","Germany","Japan",
+  "Spain","Costa Rica","Belgium","Canada","Switzerland","Cameroon","Uruguay","South Korea","Portugal","Ghana",
+  "Brazil","Serbia",
+  // Euro 2024 extras not already covered
+  "Scotland","Hungary","Albania","Italy","Slovenia","Romania","Ukraine","Slovakia","Austria","Turkey",
+  "Georgia","Czechia",
+];
+
+function slugify(s) {
+  return s.toLowerCase().replace(/&/g, "and").replace(/[^a-z0-9]+/g, "_").replace(/^_|_$/g, "");
+}
+function natTeamId(name) { return `natteam_${slugify(name)}`; }
+
+const ARCHIVE_TEAMS = ARCHIVE_NATIONAL_TEAMS_RAW.map((name) => ({
+  id: natTeamId(name),
+  sportId: "football",
+  name: `${name}`,
+  isNationalTeam: true,
+}));
+
+let archEvCounter = 1;
+function archEvId(prefix) { return `${prefix}_${String(archEvCounter++).padStart(3, "0")}`; }
+
+const ARCHIVE_EVENTS = [];
+
+// ---------------------------------------------------------------
+// 2022 FIFA WORLD CUP — all 64 matches (source: thesoccerworldcups.com)
+// ---------------------------------------------------------------
+const wc2022Matches = [
+  ["2022-11-20","Qatar","Ecuador","0-2","Group A"],
+  ["2022-11-21","England","Iran","6-2","Group B"],
+  ["2022-11-21","Senegal","Netherlands","0-2","Group A"],
+  ["2022-11-21","USA","Wales","1-1","Group B"],
+  ["2022-11-22","Argentina","Saudi Arabia","1-2","Group C"],
+  ["2022-11-22","Denmark","Tunisia","0-0","Group D"],
+  ["2022-11-22","Mexico","Poland","0-0","Group C"],
+  ["2022-11-22","France","Australia","4-1","Group D"],
+  ["2022-11-23","Morocco","Croatia","0-0","Group F"],
+  ["2022-11-23","Germany","Japan","1-2","Group E"],
+  ["2022-11-23","Spain","Costa Rica","7-0","Group E"],
+  ["2022-11-23","Belgium","Canada","1-0","Group F"],
+  ["2022-11-24","Switzerland","Cameroon","1-0","Group G"],
+  ["2022-11-24","Uruguay","South Korea","0-0","Group H"],
+  ["2022-11-24","Portugal","Ghana","3-2","Group H"],
+  ["2022-11-24","Brazil","Serbia","2-0","Group G"],
+  ["2022-11-25","Wales","Iran","0-2","Group B"],
+  ["2022-11-25","Qatar","Senegal","1-3","Group A"],
+  ["2022-11-25","Netherlands","Ecuador","1-1","Group A"],
+  ["2022-11-25","England","USA","0-0","Group B"],
+  ["2022-11-26","Tunisia","Australia","0-1","Group D"],
+  ["2022-11-26","Poland","Saudi Arabia","2-0","Group C"],
+  ["2022-11-26","France","Denmark","2-1","Group D"],
+  ["2022-11-26","Argentina","Mexico","2-0","Group C"],
+  ["2022-11-27","Japan","Costa Rica","0-1","Group E"],
+  ["2022-11-27","Belgium","Morocco","0-2","Group F"],
+  ["2022-11-27","Croatia","Canada","4-1","Group F"],
+  ["2022-11-27","Spain","Germany","1-1","Group E"],
+  ["2022-11-28","Cameroon","Serbia","3-3","Group G"],
+  ["2022-11-28","South Korea","Ghana","2-3","Group H"],
+  ["2022-11-28","Brazil","Switzerland","1-0","Group G"],
+  ["2022-11-28","Portugal","Uruguay","2-0","Group H"],
+  ["2022-11-29","Netherlands","Qatar","2-0","Group A"],
+  ["2022-11-29","Ecuador","Senegal","1-2","Group A"],
+  ["2022-11-29","Wales","England","0-3","Group B"],
+  ["2022-11-29","Iran","USA","0-1","Group B"],
+  ["2022-11-30","Australia","Denmark","1-0","Group D"],
+  ["2022-11-30","Tunisia","France","1-0","Group D"],
+  ["2022-11-30","Saudi Arabia","Mexico","1-2","Group C"],
+  ["2022-11-30","Poland","Argentina","0-2","Group C"],
+  ["2022-12-01","Croatia","Belgium","0-0","Group F"],
+  ["2022-12-01","Canada","Morocco","1-2","Group F"],
+  ["2022-12-01","Japan","Spain","2-1","Group E"],
+  ["2022-12-01","Costa Rica","Germany","2-4","Group E"],
+  ["2022-12-02","Ghana","Uruguay","0-2","Group H"],
+  ["2022-12-02","South Korea","Portugal","2-1","Group H"],
+  ["2022-12-02","Serbia","Switzerland","2-3","Group G"],
+  ["2022-12-02","Cameroon","Brazil","1-0","Group G"],
+  ["2022-12-03","Netherlands","USA","3-1","Round of 16"],
+  ["2022-12-03","Argentina","Australia","2-1","Round of 16"],
+  ["2022-12-04","England","Senegal","3-0","Round of 16"],
+  ["2022-12-04","France","Poland","3-1","Round of 16"],
+  ["2022-12-05","Japan","Croatia","1-1 (Croatia won 3-1 pens)","Round of 16"],
+  ["2022-12-05","Brazil","South Korea","4-1","Round of 16"],
+  ["2022-12-06","Morocco","Spain","0-0 (Morocco won 3-0 pens)","Round of 16"],
+  ["2022-12-06","Portugal","Switzerland","6-1","Round of 16"],
+  ["2022-12-09","Croatia","Brazil","1-1 (Croatia won 4-2 pens)","Quarter-final"],
+  ["2022-12-09","Netherlands","Argentina","2-2 (Argentina won 4-3 pens)","Quarter-final"],
+  ["2022-12-10","Morocco","Portugal","1-0","Quarter-final"],
+  ["2022-12-10","England","France","1-2","Quarter-final"],
+  ["2022-12-13","Argentina","Croatia","3-0","Semi-final"],
+  ["2022-12-14","France","Morocco","2-0","Semi-final"],
+  ["2022-12-17","Croatia","Morocco","2-1","Third place"],
+  ["2022-12-18","Argentina","France","3-3 (Argentina won 4-2 pens)","Final"],
+];
+
+wc2022Matches.forEach(([date, home, away, score, round]) => {
+  ARCHIVE_EVENTS.push({
+    id: archEvId("evt_wc22"), sportId: "football", competitionId: "fifa_wc", seasonId: "wc_2022",
+    date: `${date}T15:00:00Z`, title: `${home} vs ${away}`,
+    participants: [natTeamId(home), natTeamId(away)],
+    sportData: { homeTeam: natTeamId(home), awayTeam: natTeamId(away), result: score, round, venue: "Qatar" },
+    dataQuality: "verified", externalIds: {},
+  });
+});
+
+// ---------------------------------------------------------------
+// EURO 2024 — all 51 matches (source: ESPN)
+// ---------------------------------------------------------------
+const euro2024Matches = [
+  ["2024-06-14","Germany","Scotland","5-1","Group A"],
+  ["2024-06-15","Hungary","Switzerland","1-3","Group A"],
+  ["2024-06-15","Spain","Croatia","3-0","Group B"],
+  ["2024-06-15","Italy","Albania","2-1","Group B"],
+  ["2024-06-16","Poland","Netherlands","1-2","Group D"],
+  ["2024-06-16","Slovenia","Denmark","1-1","Group C"],
+  ["2024-06-16","Serbia","England","0-1","Group C"],
+  ["2024-06-17","Romania","Ukraine","3-0","Group E"],
+  ["2024-06-17","Belgium","Slovakia","0-1","Group E"],
+  ["2024-06-17","Austria","France","0-1","Group D"],
+  ["2024-06-18","Turkey","Georgia","3-1","Group F"],
+  ["2024-06-18","Portugal","Czechia","2-1","Group F"],
+  ["2024-06-19","Croatia","Albania","2-2","Group B"],
+  ["2024-06-19","Germany","Hungary","2-0","Group A"],
+  ["2024-06-19","Scotland","Switzerland","1-1","Group A"],
+  ["2024-06-20","Slovenia","Serbia","1-1","Group C"],
+  ["2024-06-20","Denmark","England","1-1","Group C"],
+  ["2024-06-20","Spain","Italy","1-0","Group B"],
+  ["2024-06-21","Slovakia","Ukraine","1-2","Group E"],
+  ["2024-06-21","Poland","Austria","1-3","Group D"],
+  ["2024-06-21","Netherlands","France","0-0","Group D"],
+  ["2024-06-22","Georgia","Czechia","1-1","Group F"],
+  ["2024-06-22","Turkey","Portugal","0-3","Group F"],
+  ["2024-06-22","Belgium","Romania","2-0","Group E"],
+  ["2024-06-23","Switzerland","Germany","1-1","Group A"],
+  ["2024-06-23","Scotland","Hungary","0-1","Group A"],
+  ["2024-06-24","Albania","Spain","0-1","Group B"],
+  ["2024-06-24","Croatia","Italy","1-1","Group B"],
+  ["2024-06-25","France","Poland","1-1","Group D"],
+  ["2024-06-25","Netherlands","Austria","2-3","Group D"],
+  ["2024-06-25","England","Slovenia","0-0","Group C"],
+  ["2024-06-25","Denmark","Serbia","0-0","Group C"],
+  ["2024-06-26","Ukraine","Belgium","0-0","Group E"],
+  ["2024-06-26","Slovakia","Romania","1-1","Group E"],
+  ["2024-06-26","Czechia","Turkey","1-2","Group F"],
+  ["2024-06-26","Georgia","Portugal","2-0","Group F"],
+  ["2024-06-29","Switzerland","Italy","2-0","Round of 16"],
+  ["2024-06-29","Germany","Denmark","2-0","Round of 16"],
+  ["2024-06-30","England","Slovakia","2-1 (aet)","Round of 16"],
+  ["2024-06-30","Spain","Georgia","4-1","Round of 16"],
+  ["2024-07-01","France","Belgium","1-0","Round of 16"],
+  ["2024-07-01","Portugal","Slovenia","0-0 (Portugal won 3-0 pens)","Round of 16"],
+  ["2024-07-02","Romania","Netherlands","0-3","Round of 16"],
+  ["2024-07-02","Austria","Turkey","1-2","Round of 16"],
+  ["2024-07-05","Spain","Germany","2-1 (aet)","Quarter-final"],
+  ["2024-07-05","Portugal","France","0-0 (France won 5-3 pens)","Quarter-final"],
+  ["2024-07-06","England","Switzerland","1-1 (England won 5-3 pens)","Quarter-final"],
+  ["2024-07-06","Netherlands","Turkey","2-1","Quarter-final"],
+  ["2024-07-09","Spain","France","2-1","Semi-final"],
+  ["2024-07-10","Netherlands","England","1-2","Semi-final"],
+  ["2024-07-14","Spain","England","2-1","Final"],
+];
+
+euro2024Matches.forEach(([date, home, away, score, round]) => {
+  ARCHIVE_EVENTS.push({
+    id: archEvId("evt_euro24"), sportId: "football", competitionId: "uefa_euro", seasonId: "euro_2024",
+    date: `${date}T18:00:00Z`, title: `${home} vs ${away}`,
+    participants: [natTeamId(home), natTeamId(away)],
+    sportData: { homeTeam: natTeamId(home), awayTeam: natTeamId(away), result: score, round, venue: "Germany" },
+    dataQuality: "verified", externalIds: {},
+  });
+});
+
+// ---------------------------------------------------------------
+// PDC WORLD DARTS CHAMPIONSHIP 2022, 2023, 2024
+// ---------------------------------------------------------------
+// PDC WORLD DARTS CHAMPIONSHIP archive coverage was scoped down: the 2026
+// edition expanded to a 128-player/127-match field with no cleanly
+// verifiable full bracket available, and partial 2022-2024 editions were
+// too constraining for genuine "pick any match you remember" browsing.
+// The World Matchplay 2026 (32-player, full 31-match bracket, fully
+// sourced) in the main seed data serves as the darts tournament for the
+// archive feature instead — see matchplay2026Matches in the main seed
+// data block above.
+// ---------------------------------------------------------------
+
+// ---------------------------------------------------------------
+// F1 2022-2025 — full race-by-race (source: formula1.com official)
+// ---------------------------------------------------------------
+const f1DriverIds = {
+  "Verstappen": "player_verstappen", "Leclerc": "player_leclerc", "Sainz": "f1p_sainz", "Hamilton": "player_hamilton",
+  "Perez": "f1p_perez", "Russell": "player_russell", "Norris": "player_norris", "Piastri": "f1p_piastri",
+  "Antonelli": "player_antonelli",
+};
+const F1_EXTRA_DRIVERS = ["Sainz", "Perez", "Piastri"].map((short) => {
+  const names = { Sainz: "Carlos Sainz", Perez: "Sergio Pérez", Piastri: "Oscar Piastri" };
+  return { id: f1DriverIds[short], sportId: "f1", name: names[short] };
+});
+
+function f1Id(shortName) { return f1DriverIds[shortName] || `f1p_${slugify(shortName)}`; }
+
+// [round, name, date, winnerShortName]
+const f1Seasons = {
+  f1_2022: [
+    [1,"Bahrain Grand Prix","2022-03-20",null],
+    [2,"Saudi Arabian Grand Prix","2022-03-27","Verstappen"],
+    [3,"Australian Grand Prix","2022-04-10","Leclerc"],
+    [4,"Emilia Romagna Grand Prix","2022-04-24","Verstappen"],
+    [5,"Miami Grand Prix","2022-05-08","Verstappen"],
+    [6,"Spanish Grand Prix","2022-05-22","Verstappen"],
+    [7,"Monaco Grand Prix","2022-05-29","Perez"],
+    [8,"Azerbaijan Grand Prix","2022-06-12","Verstappen"],
+    [9,"Canadian Grand Prix","2022-06-19","Verstappen"],
+    [10,"British Grand Prix","2022-07-03","Sainz"],
+    [11,"Austrian Grand Prix","2022-07-10","Leclerc"],
+    [12,"French Grand Prix","2022-07-24","Verstappen"],
+    [13,"Hungarian Grand Prix","2022-07-31","Verstappen"],
+    [14,"Belgian Grand Prix","2022-08-28","Verstappen"],
+    [15,"Dutch Grand Prix","2022-09-04","Verstappen"],
+    [16,"Italian Grand Prix","2022-09-11","Verstappen"],
+    [17,"Singapore Grand Prix","2022-10-02","Perez"],
+    [18,"Japanese Grand Prix","2022-10-09","Verstappen"],
+    [19,"United States Grand Prix","2022-10-23","Verstappen"],
+    [20,"Mexico City Grand Prix","2022-10-30","Verstappen"],
+    [21,"São Paulo Grand Prix","2022-11-13","Russell"],
+    [22,"Abu Dhabi Grand Prix","2022-11-20","Verstappen"],
+  ],
+  f1_2023: [
+    [1,"Bahrain Grand Prix","2023-03-05","Verstappen"],
+    [2,"Saudi Arabian Grand Prix","2023-03-19","Perez"],
+    [3,"Australian Grand Prix","2023-04-02","Verstappen"],
+    [4,"Azerbaijan Grand Prix","2023-04-30","Perez"],
+    [5,"Miami Grand Prix","2023-05-07","Verstappen"],
+    [7,"Monaco Grand Prix","2023-05-28","Verstappen"],
+    [8,"Spanish Grand Prix","2023-06-04","Verstappen"],
+    [9,"Canadian Grand Prix","2023-06-18","Verstappen"],
+    [10,"Austrian Grand Prix","2023-07-02","Verstappen"],
+    [11,"British Grand Prix","2023-07-09","Verstappen"],
+    [12,"Hungarian Grand Prix","2023-07-23","Verstappen"],
+    [13,"Belgian Grand Prix","2023-07-30","Verstappen"],
+    [14,"Dutch Grand Prix","2023-08-27","Verstappen"],
+    [15,"Italian Grand Prix","2023-09-03","Verstappen"],
+    [16,"Singapore Grand Prix","2023-09-17","Sainz"],
+    [17,"Japanese Grand Prix","2023-09-24","Verstappen"],
+    [18,"Qatar Grand Prix","2023-10-08","Verstappen"],
+    [19,"United States Grand Prix","2023-10-22","Verstappen"],
+    [20,"Mexico City Grand Prix","2023-10-29","Verstappen"],
+    [21,"São Paulo Grand Prix","2023-11-05","Verstappen"],
+    [22,"Las Vegas Grand Prix","2023-11-18","Verstappen"],
+    [23,"Abu Dhabi Grand Prix","2023-11-26","Verstappen"],
+  ],
+  f1_2024: [
+    [1,"Bahrain Grand Prix","2024-03-02","Verstappen"],
+    [2,"Saudi Arabian Grand Prix","2024-03-09","Verstappen"],
+    [3,"Australian Grand Prix","2024-03-24","Sainz"],
+    [4,"Japanese Grand Prix","2024-04-07","Verstappen"],
+    [5,"Chinese Grand Prix","2024-04-21","Verstappen"],
+    [6,"Miami Grand Prix","2024-05-05","Norris"],
+    [7,"Emilia Romagna Grand Prix","2024-05-19","Verstappen"],
+    [8,"Monaco Grand Prix","2024-05-26","Leclerc"],
+    [9,"Canadian Grand Prix","2024-06-09","Verstappen"],
+    [10,"Spanish Grand Prix","2024-06-23","Verstappen"],
+    [11,"Austrian Grand Prix","2024-06-30","Russell"],
+    [12,"British Grand Prix","2024-07-07","Hamilton"],
+    [13,"Hungarian Grand Prix","2024-07-21","Piastri"],
+    [14,"Belgian Grand Prix","2024-07-28","Hamilton"],
+    [15,"Dutch Grand Prix","2024-08-25","Norris"],
+    [16,"Italian Grand Prix","2024-09-01","Leclerc"],
+    [17,"Azerbaijan Grand Prix","2024-09-15","Piastri"],
+    [18,"Singapore Grand Prix","2024-09-22","Norris"],
+    [19,"United States Grand Prix","2024-10-20","Leclerc"],
+    [20,"Mexico City Grand Prix","2024-10-27","Sainz"],
+    [21,"São Paulo Grand Prix","2024-11-03","Verstappen"],
+    [22,"Las Vegas Grand Prix","2024-11-23","Russell"],
+    [23,"Qatar Grand Prix","2024-12-01","Verstappen"],
+    [24,"Abu Dhabi Grand Prix","2024-12-08","Norris"],
+  ],
+  f1_2025: [
+    [1,"Australian Grand Prix","2025-03-16","Norris"],
+    [2,"Chinese Grand Prix","2025-03-23","Piastri"],
+    [3,"Japanese Grand Prix","2025-04-06","Verstappen"],
+    [4,"Bahrain Grand Prix","2025-04-13","Piastri"],
+    [5,"Saudi Arabian Grand Prix","2025-04-20","Piastri"],
+    [6,"Miami Grand Prix","2025-05-04","Piastri"],
+    [7,"Emilia Romagna Grand Prix","2025-05-18","Verstappen"],
+    [8,"Monaco Grand Prix","2025-05-25","Norris"],
+    [9,"Spanish Grand Prix","2025-06-01","Piastri"],
+    [10,"Canadian Grand Prix","2025-06-15","Russell"],
+    [11,"Austrian Grand Prix","2025-06-29","Norris"],
+    [12,"British Grand Prix","2025-07-06","Norris"],
+    [13,"Belgian Grand Prix","2025-07-27","Piastri"],
+    [14,"Hungarian Grand Prix","2025-08-03","Norris"],
+    [15,"Dutch Grand Prix","2025-08-31","Piastri"],
+    [16,"Italian Grand Prix","2025-09-07","Verstappen"],
+    [17,"Azerbaijan Grand Prix","2025-09-21","Verstappen"],
+    [18,"Singapore Grand Prix","2025-10-05","Russell"],
+    [19,"United States Grand Prix","2025-10-19","Verstappen"],
+    [20,"Mexico City Grand Prix","2025-10-26","Norris"],
+    [21,"São Paulo Grand Prix","2025-11-09","Norris"],
+    [22,"Las Vegas Grand Prix","2025-11-22","Verstappen"],
+    [23,"Qatar Grand Prix","2025-11-30","Verstappen"],
+    [24,"Abu Dhabi Grand Prix","2025-12-07","Verstappen"],
+  ],
+};
+
+Object.entries(f1Seasons).forEach(([seasonId, races]) => {
+  races.forEach(([round, name, date, winnerShort]) => {
+    ARCHIVE_EVENTS.push({
+      id: archEvId("evt_f1"), sportId: "f1", competitionId: "f1champ", seasonId,
+      date: `${date}T14:00:00Z`, title: name,
+      participants: winnerShort ? [f1Id(winnerShort)] : [],
+      sportData: { round, winner: winnerShort ? f1Id(winnerShort) : null },
+      dataQuality: "verified", externalIds: {},
+    });
+  });
+});
+
+
+// ============================================================
+// sportData.kind discriminant
+// ------------------------------------------------------------
+// sportData was previously an undocumented grab-bag: which fields existed
+// depended entirely on which code happened to build a given event, so a
+// football match silently carried `undefined` for cricket-only fields and
+// vice versa. This pass tags every event with an explicit `kind` (derived
+// from sportId + competitionId, since "cricket" alone isn't enough — Test
+// matches and T20s are structurally different) and asserts each event's
+// sportData actually matches that kind's expected shape, so a future bad
+// seed entry fails loudly here instead of silently reaching the UI as a
+// blank field or a wrongly-shown day/session checklist.
+//
+// This does NOT change how events are stored or queried at runtime — still
+// one flat array/lookup, since most of the app (search, entity pages,
+// dashboard) is deliberately sport-agnostic and needs to iterate all events
+// together. It only makes each event's own sportData self-describing.
+// ============================================================
+
+const SPORT_DATA_KINDS = {
+  football_match: { required: ["homeTeam", "awayTeam"], optional: ["venue", "result", "round", "note"] },
+  f1_race: { required: ["round"], optional: ["winner", "sessions"] },
+  darts_match: { required: ["round"], optional: ["result", "venue", "note"] },
+  cricket_test: { required: ["round", "scheduledDays", "actualDays"], optional: ["venue", "result", "scorecard"] },
+  cricket_t20: { required: ["round"], optional: ["venue", "result", "scorecard", "note"] },
+};
+
+function sportDataKindFor(event) {
+  if (event.sportId === "football") return "football_match";
+  if (event.sportId === "f1") return "f1_race";
+  if (event.sportId === "darts") return "darts_match";
+  if (event.sportId === "cricket") {
+    return event.competitionId === "cricket_test_eng_nz" ? "cricket_test" : "cricket_t20";
+  }
+  return null;
+}
+
+function normalizeSeedEvents(events) {
+  const unknownSportIds = new Set();
+  events.forEach(event => {
+    const kind = sportDataKindFor(event);
+    if (!kind) {
+      unknownSportIds.add(event.sportId);
+      return;
+    }
+    event.sportData = event.sportData || {};
+    event.sportData.kind = kind;
+
+    const shape = SPORT_DATA_KINDS[kind];
+    const missing = shape.required.filter(f => event.sportData[f] === undefined);
+    if (missing.length) {
+      console.warn(`[seed data] ${event.id} (${kind}) missing required sportData field(s): ${missing.join(", ")}`);
+    }
+    const known = new Set([...shape.required, ...shape.optional, "kind"]);
+    Object.keys(event.sportData).forEach(f => {
+      if (!known.has(f)) console.warn(`[seed data] ${event.id} (${kind}) has unexpected sportData field: "${f}"`);
+    });
+  });
+  if (unknownSportIds.size) {
+    console.warn(`[seed data] event(s) with unrecognized sportId, no kind assigned: ${[...unknownSportIds].join(", ")}`);
+  }
+  return events;
+}
+
+// EPL event data now lives in data/epl-events.json rather than inline here —
+// this is the file a scheduled script (see scripts/update-epl.js) fetches
+// real fixture data and updates. Fetched here at load time and merged in
+// alongside the events still defined inline for other sports. If the fetch
+// fails (e.g. opening index.html directly from disk, where relative fetch
+// can be blocked by the browser's file:// origin restrictions), the app
+// still works — it just falls back to whatever EPL data was last inlined
+// before the JSON split, which for a fresh checkout is nothing, so EPL
+// would show no events until served over http(s). This is expected for a
+// GitHub Pages–hosted app and is noted in the README.
+async function loadExternalEplEvents() {
+  try {
+    const res = await fetch("data/epl-events.json");
+    if (!res.ok) throw new Error(`EPL events fetch failed: ${res.status}`);
+    const events = await res.json();
+    if (!Array.isArray(events)) throw new Error("EPL events JSON was not an array");
+    return events;
+  } catch (err) {
+    console.warn("[epl-events.json] could not load external EPL data:", err.message);
+    return [];
+  }
+}
+
+window.__SEED_READY__ = (async () => {
+  const eplEvents = await loadExternalEplEvents();
+  window.__SEED__ = {
+    SEED_SPORTS,
+    SEED_COMPETITIONS: [...SEED_COMPETITIONS, ...ARCHIVE_COMPETITIONS],
+    SEED_SEASONS: [...SEED_SEASONS, ...ARCHIVE_SEASONS],
+    SEED_TEAMS: [...SEED_TEAMS, ...ARCHIVE_TEAMS],
+    SEED_PLAYERS: [...SEED_PLAYERS, ...ARCHIVE_PLAYERS, ...F1_EXTRA_DRIVERS],
+    SEED_EVENTS: normalizeSeedEvents([...SEED_EVENTS, ...eplEvents, ...ARCHIVE_EVENTS]),
+  };
+})();
+
+</script>
+<script>
+// ============================================================
+// SportLog V1 — app.js
+// Dexie-backed local-first personal sports viewing archive.
+// ============================================================
+
+if (typeof Dexie === "undefined") {
+  document.body.innerHTML = `
+    <div style="padding:40px 24px; font-family: sans-serif; color:#e8e6df; background:#12141a; min-height:100vh;">
+      <h2 style="font-family: sans-serif;">Couldn't load the database library</h2>
+      <p>This app loads Dexie.js from a CDN (cdn.jsdelivr.net). It looks like that request failed — check your internet connection, or whether a browser extension/network is blocking jsdelivr.net.</p>
+      <p>Try reloading, or opening this file in a different browser.</p>
+    </div>`;
+  throw new Error("Dexie failed to load from CDN");
+}
+
+const db = new Dexie("SportLogDB");
+db.version(1).stores({
+  sports: "id",
+  competitions: "id, sportId",
+  seasons: "id, competitionId",
+  teams: "id, sportId, name",
+  players: "id, sportId, name",
+  events: "id, sportId, competitionId, seasonId, date",
+  viewings: "id, eventId, watchedAt",
+});
+db.version(2).stores({
+  sports: "id",
+  competitions: "id, sportId",
+  seasons: "id, competitionId",
+  teams: "id, sportId, name",
+  players: "id, sportId, name",
+  events: "id, sportId, competitionId, seasonId, date",
+  viewings: "id, eventId, watchedAt",
+  tournamentWatches: "id, seasonId",
+});
+db.version(3).stores({
+  sports: "id",
+  competitions: "id, sportId",
+  seasons: "id, competitionId",
+  teams: "id, sportId, name",
+  players: "id, sportId, name",
+  events: "id, sportId, competitionId, seasonId, date",
+  viewings: "id, eventId, watchedAt",
+  tournamentWatches: "id, seasonId",
+  pendingEvents: "id, status, sportId, date",
+});
+
+// The specific competitions/season ranges the Tournament Archive feature covers.
+// Kept as an explicit allowlist so the archive search never surfaces regular
+// club-football seasons (e.g. Premier League) that don't belong in "tournament" mode.
+const ARCHIVE_COMPETITION_IDS = new Set(["fifa_wc", "uefa_euro", "pdc_matchplay", "f1champ"]);
+const ARCHIVE_SEASON_IDS = new Set([
+  "wc_2022", "euro_2024",
+  "pdc_matchplay_2026",
+  "f1_2022", "f1_2023", "f1_2024", "f1_2025", "f1_2026",
+]);
+
+// Real F1 sprint-weekend calendar, sourced per season (2022: Emilia Romagna,
+// Austria, São Paulo; 2023: Azerbaijan, Austria, Belgium, Qatar, USA, Brazil;
+// 2024: China, Miami, Austria, USA, Brazil, Qatar; 2025: China, Miami,
+// Belgium, USA, Brazil, Qatar; 2026: China, Miami, Canada, Great Britain,
+// Netherlands, Singapore). Keyed by seasonId -> Set of race titles that ran
+// the sprint format that year, since the same Grand Prix can be a sprint
+// weekend in one season and a standard weekend in another.
+const F1_SPRINT_WEEKENDS = {
+  f1_2022: new Set(["Emilia Romagna Grand Prix", "Austrian Grand Prix", "São Paulo Grand Prix"]),
+  f1_2023: new Set(["Azerbaijan Grand Prix", "Austrian Grand Prix", "Belgian Grand Prix", "Qatar Grand Prix", "United States Grand Prix", "São Paulo Grand Prix"]),
+  f1_2024: new Set(["Chinese Grand Prix", "Miami Grand Prix", "Austrian Grand Prix", "United States Grand Prix", "São Paulo Grand Prix", "Qatar Grand Prix"]),
+  f1_2025: new Set(["Chinese Grand Prix", "Miami Grand Prix", "Belgian Grand Prix", "United States Grand Prix", "São Paulo Grand Prix", "Qatar Grand Prix"]),
+  f1_2026: new Set(["Chinese Grand Prix", "Miami Grand Prix", "Canadian Grand Prix", "British Grand Prix", "Dutch Grand Prix", "Singapore Grand Prix"]),
+};
+
+function isF1SprintWeekend(event) {
+  if (event.sportId !== "f1") return false;
+  return !!F1_SPRINT_WEEKENDS[event.seasonId]?.has(event.title);
+}
+
+// The sessions selectable for an F1 event, in weekend order. Sprint weekends
+// swap FP2/FP3 for Sprint Qualifying/Sprint — matches the real modern sprint
+// format (one practice session, then sprint quali, sprint, quali, race).
+// Real per-session dates are attached from event.sportData.sessions when
+// available (currently the 2026 season only — see F1_2026_SESSIONS); older
+// seasons fall back to labels only, since exact session times weren't
+// gathered for them and a derived/estimated time would misrepresent real
+// broadcast data.
+function f1SessionsForEvent(event) {
+  const realSessions = event.sportData?.sessions;
+  const withDate = (id, label) => ({ id, label, date: realSessions?.[id] || null });
+
+  if (isF1SprintWeekend(event)) {
+    return [
+      withDate("fp1", "Practice 1"),
+      withDate("sprint_quali", "Sprint Qualifying"),
+      withDate("sprint", "Sprint"),
+      withDate("qualifying", "Qualifying"),
+      withDate("race", "Race"),
+    ];
+  }
+  return [
+    withDate("fp1", "Practice 1"),
+    withDate("fp2", "Practice 2"),
+    withDate("fp3", "Practice 3"),
+    withDate("qualifying", "Qualifying"),
+    withDate("race", "Race"),
+  ];
+}
+
+// The days selectable for a cricket Test match, each with a real derived
+// date (the event's start date + N days — Test days are always consecutive
+// calendar days, so this is an exact calculation, not an estimate). Uses the
+// event's actual scheduled length (5-day Test by default) rather than
+// hardcoding 5, since a Test that finished early (like the 2026 Lord's Test,
+// which ended on Day 4) still only offers the days that were actually
+// played. T20/ODI cricket is a single-session format and never gets a day
+// breakdown — gated on the event actually carrying day-count data, not just
+// being cricket generally.
+function cricketSessionsForEvent(event) {
+  if (event.sportData?.scheduledDays == null && event.sportData?.actualDays == null) return [];
+  const days = event.sportData?.actualDays || event.sportData?.scheduledDays || 5;
+  const startDate = new Date(event.date);
+  return Array.from({ length: days }, (_, i) => {
+    const dayDate = new Date(startDate);
+    dayDate.setDate(dayDate.getDate() + i);
+    return { id: `day${i + 1}`, label: `Day ${i + 1}`, date: dayDate.toISOString() };
+  });
+}
+
+// Sport-agnostic dispatcher used by the "Sessions watched" checklist in the
+// viewing form — returns [] for sports with no sub-event breakdown, so the
+// checklist UI can stay generic across sports without per-sport branching
+// scattered through the render/save logic.
+function sessionsForEvent(event) {
+  if (!event) return [];
+  if (event.sportId === "f1") return f1SessionsForEvent(event);
+  if (event.sportId === "cricket") return cricketSessionsForEvent(event);
+  return [];
+}
+
+// Default duration (in minutes) applied when Full coverage is marked but no
+// time was entered. For events with sub-parts (F1 sessions, cricket Test
+// days), pass the specific session id to get that part's own default —
+// e.g. an F1 race defaults to 2h while every other session defaults to 1h.
+// Events without a listed default (currently football) have none: the field
+// simply stays optional and blank rather than silently implying a duration
+// that was never actually researched.
+function defaultDurationMinutes(event, sessionId) {
+  if (!event) return null;
+  if (event.sportId === "football") return 2 * 60;
+  if (event.sportId === "darts") return 30;
+  if (event.sportId === "cricket") {
+    if (event.competitionId === "cricket_test_eng_nz") return 8 * 60; // per Test day
+    return 3 * 60 + 30; // T20 — single-session
+  }
+  if (event.sportId === "f1") {
+    return sessionId === "race" ? 2 * 60 : 60;
+  }
+  if (event.sportId === "tennis") return 2 * 60;
+  if (event.sportId === "golf") return 4 * 60;
+  if (event.sportId === "boxing") return 60;
+  return null;
+}
+
+const SPORT_COLORS = { football: "var(--football)", f1: "var(--f1)", darts: "var(--darts)", cricket: "var(--cricket)", tennis: "var(--tennis)", golf: "var(--golf)", boxing: "var(--boxing)" };
+const SPORT_ICONS = { football: "⚽", f1: "🏎️", darts: "🎯", cricket: "🏏", tennis: "🎾", golf: "⛳", boxing: "🥊" };
+const MANUAL_ENTRY_SPORTS = [
+  { id: "football", name: "Football" },
+  { id: "f1", name: "Formula 1" },
+  { id: "darts", name: "Darts" },
+  { id: "cricket", name: "Cricket" },
+  { id: "tennis", name: "Tennis" },
+  { id: "golf", name: "Golf" },
+  { id: "boxing", name: "Boxing" },
+];
+
+let STATE = {
+  sportsById: {},
+  competitionsById: {},
+  seasonsById: {},
+  teamsById: {},
+  playersById: {},
+  eventsById: {},
+  viewingsByEventId: {}, // eventId -> array of viewing records
+  tournamentWatchesBySeasonId: {}, // seasonId -> tournament watch record
+  pendingEventsById: {}, // id -> pending event (user-submitted, not yet reconciled)
+  currentEntity: null, // { type: 'team'|'player'|'competition', id }
+  currentEntityView: "fixtures", // "fixtures" | "watched" — which tab is active on the entity screen
+  currentEventId: null,
+  currentTournamentSeasonId: null,
+  searchMode: "search", // "search" | "archive"
+};
+
+// ---------- INIT / SEEDING ----------
+async function init() {
+  await window.__SEED_READY__; // wait for data/epl-events.json to be fetched and merged in
+  const sportCount = await db.sports.count();
+  if (sportCount === 0) {
+    // First ever launch: seed everything.
+    await seedDatabase();
+  } else {
+    // Every subsequent launch: sync in any new/updated reference data (teams,
+    // players, competitions, seasons, events) added in app updates since the
+    // person's local database was first created. Uses put (upsert) so it's
+    // always safe to re-run, and never touches the person's own viewing
+    // records or tournament-watch records.
+    await syncReferenceData();
+  }
+  await loadAllIntoMemory();
+  bindGlobalUI();
+  renderSearchEmpty();
+  renderHistory();
+}
+
+async function seedDatabase() {
+  const seed = window.__SEED__;
+  await db.transaction("rw", db.sports, db.competitions, db.seasons, db.teams, db.players, db.events, async () => {
+    await db.sports.bulkAdd(seed.SEED_SPORTS);
+    await db.competitions.bulkAdd(seed.SEED_COMPETITIONS);
+    await db.seasons.bulkAdd(seed.SEED_SEASONS);
+    await db.teams.bulkAdd(seed.SEED_TEAMS);
+    await db.players.bulkAdd(seed.SEED_PLAYERS);
+    await db.events.bulkAdd(seed.SEED_EVENTS);
+  });
+}
+
+async function syncReferenceData() {
+  const seed = window.__SEED__;
+  await db.transaction("rw", db.sports, db.competitions, db.seasons, db.teams, db.players, db.events, async () => {
+    await db.sports.bulkPut(seed.SEED_SPORTS);
+    await db.competitions.bulkPut(seed.SEED_COMPETITIONS);
+    await db.seasons.bulkPut(seed.SEED_SEASONS);
+    await db.teams.bulkPut(seed.SEED_TEAMS);
+    await db.players.bulkPut(seed.SEED_PLAYERS);
+    await db.events.bulkPut(seed.SEED_EVENTS);
+  });
+}
+
+async function loadAllIntoMemory() {
+  const [sports, comps, seasons, teams, players, events, viewings, tournamentWatches, pendingEvents] = await Promise.all([
+    db.sports.toArray(), db.competitions.toArray(), db.seasons.toArray(),
+    db.teams.toArray(), db.players.toArray(), db.events.toArray(), db.viewings.toArray(),
+    db.tournamentWatches.toArray(), db.pendingEvents.toArray(),
+  ]);
+  STATE.sportsById = Object.fromEntries(sports.map(s => [s.id, s]));
+  STATE.competitionsById = Object.fromEntries(comps.map(c => [c.id, c]));
+  STATE.seasonsById = Object.fromEntries(seasons.map(s => [s.id, s]));
+  STATE.teamsById = Object.fromEntries(teams.map(t => [t.id, t]));
+  STATE.playersById = Object.fromEntries(players.map(p => [p.id, p]));
+  STATE.eventsById = Object.fromEntries(events.map(e => [e.id, e]));
+  STATE.viewingsByEventId = {};
+  viewings.forEach(v => {
+    if (!STATE.viewingsByEventId[v.eventId]) STATE.viewingsByEventId[v.eventId] = [];
+    STATE.viewingsByEventId[v.eventId].push(v);
+  });
+  STATE.tournamentWatchesBySeasonId = Object.fromEntries(tournamentWatches.map(t => [t.seasonId, t]));
+  STATE.pendingEventsById = Object.fromEntries(pendingEvents.map(p => [p.id, p]));
+}
+
+function entityName(type, id) {
+  if (type === "team") return STATE.teamsById[id]?.name || "?";
+  if (type === "player") return STATE.playersById[id]?.name || "?";
+  return "?";
+}
+
+// Resolves an ID to a display name without needing to know whether it's a team or player.
+// Used for sportData fields like `winner` that reference a participant by ID only.
+function participantName(id) {
+  if (!id) return null;
+  return STATE.teamsById[id]?.name || STATE.playersById[id]?.name || null;
+}
+
+function isWatched(eventId) {
+  return !!(STATE.viewingsByEventId[eventId] && STATE.viewingsByEventId[eventId].length);
+}
+
+// Watch-status color for the small dot on event rows: red = not watched,
+// orange = watched but marked partial coverage, green = watched in full.
+// Purely a status indicator — separate from each sport's own accent color.
+function watchStatusColor(eventId) {
+  const viewing = STATE.viewingsByEventId[eventId]?.[0];
+  if (!viewing) return "var(--status-unwatched)";
+  if (viewing.coverage === "partial") return "var(--status-partial)";
+  return "var(--status-watched)";
+}
+
+// ---------- SEARCH ----------
+function normalize(s) { return (s || "").toLowerCase().trim(); }
+
+function searchAll(query) {
+  const q = normalize(query);
+  if (!q) return { teams: [], players: [], competitions: [], events: [] };
+
+  const teams = Object.values(STATE.teamsById).filter(t => normalize(t.name).includes(q)).slice(0, 8);
+  const players = Object.values(STATE.playersById).filter(p => normalize(p.name).includes(q)).slice(0, 8);
+  const competitions = Object.values(STATE.competitionsById).filter(c => normalize(c.name).includes(q) || normalize(c.shortName).includes(q)).slice(0, 6);
+  const events = Object.values(STATE.eventsById)
+    .filter(e => normalize(e.title).includes(q))
+    .sort((a, b) => new Date(a.date) - new Date(b.date))
+    .slice(0, 10);
+
+  return { teams, players, competitions, events };
+}
+
+// Returns true if an event itself is happening today, or — for events with
+// real per-session/per-day sub-schedules (F1 sessions, cricket Test days) —
+// if any of those sub-parts fall on today's calendar date. A Grand Prix
+// weekend showing as "today" because qualifying is on but the race itself
+// is tomorrow is exactly the case this exists for.
+function isEventToday(event) {
+  const startOfToday = new Date();
+  startOfToday.setHours(0, 0, 0, 0);
+  const startOfTomorrow = new Date(startOfToday);
+  startOfTomorrow.setDate(startOfTomorrow.getDate() + 1);
+
+  const isToday = (d) => d >= startOfToday && d < startOfTomorrow;
+
+  if (isToday(new Date(event.date))) return true;
+
+  const subSessions = sessionsForEvent(event);
+  return subSessions.some(s => s.date && isToday(new Date(s.date)));
+}
+
+function todaysEventsBySport() {
+  const grouped = {};
+  Object.values(STATE.eventsById).forEach(e => {
+    if (!isEventToday(e)) return;
+    if (!grouped[e.sportId]) grouped[e.sportId] = [];
+    grouped[e.sportId].push(e);
+  });
+  Object.values(grouped).forEach(list => list.sort((a, b) => new Date(a.date) - new Date(b.date)));
+  return grouped;
+}
+
+function renderSearchEmpty() {
+  const el = document.getElementById("search-results");
+  const grouped = todaysEventsBySport();
+  const sportIds = Object.keys(grouped);
+
+  let todayHtml = "";
+  if (sportIds.length) {
+    // Sort sports by whichever has the earliest event today, so the most
+    // imminent sport's section leads.
+    sportIds.sort((a, b) => new Date(grouped[a][0].date) - new Date(grouped[b][0].date));
+    todayHtml += `<div class="section-label">Today</div>`;
+    sportIds.forEach(sportId => {
+      const sport = STATE.sportsById[sportId];
+      todayHtml += `<div class="today-sport-heading"><span>${SPORT_ICONS[sportId] || "🏅"}</span> ${escapeHtml(sport?.name || sportId)}</div>`;
+      grouped[sportId].forEach(e => { todayHtml += eventRowHtml(e); });
+    });
+  }
+
+  el.innerHTML = todayHtml + `
+    <div class="empty-state">
+      <div class="glyph">🔎</div>
+      <p>Search for a team, player, or competition.</p>
+      <p class="hint">Try "Leeds", "Littler", or "Verstappen".</p>
+    </div>`;
+
+  el.querySelectorAll("[data-event-id]").forEach(row => {
+    row.addEventListener("click", () => openEventModal(row.getAttribute("data-event-id")));
+  });
+}
+
+function renderSearchResults(query) {
+  const el = document.getElementById("search-results");
+  const { teams, players, competitions, events } = searchAll(query);
+  const totalCount = teams.length + players.length + competitions.length + events.length;
+
+  if (totalCount === 0) {
+    el.innerHTML = `
+      <div class="empty-state">
+        <div class="glyph">🕳️</div>
+        <p>No matches for "${escapeHtml(query)}".</p>
+        <p class="hint">Try a different team, player, or competition name.</p>
+      </div>`;
+    return;
+  }
+
+  let html = "";
+
+  if (teams.length) {
+    html += `<div class="section-label">Teams</div>`;
+    teams.forEach(t => { html += entityRowHtml("team", t.id, t.name, STATE.sportsById[t.sportId]?.name || "", t.sportId); });
+  }
+  if (players.length) {
+    html += `<div class="section-label">Players / Drivers</div>`;
+    players.forEach(p => { html += entityRowHtml("player", p.id, p.name, STATE.sportsById[p.sportId]?.name || "", p.sportId); });
+  }
+  if (competitions.length) {
+    html += `<div class="section-label">Competitions</div>`;
+    competitions.forEach(c => { html += entityRowHtml("competition", c.id, c.name, STATE.sportsById[c.sportId]?.name || "", c.sportId); });
+  }
+  if (events.length) {
+    html += `<div class="section-label">Events</div>`;
+    events.forEach(e => { html += eventRowHtml(e); });
+  }
+
+  el.innerHTML = html;
+
+  el.querySelectorAll("[data-entity-type]").forEach(row => {
+    row.addEventListener("click", () => {
+      const type = row.getAttribute("data-entity-type");
+      const id = row.getAttribute("data-entity-id");
+      if (type === "competition") openCompetitionDetail(id);
+      else openEntityDetail(type, id);
+    });
+  });
+  el.querySelectorAll("[data-event-id]").forEach(row => {
+    row.addEventListener("click", () => openEventModal(row.getAttribute("data-event-id")));
+  });
+}
+
+function entityRowHtml(type, id, name, sportName, sportId) {
+  const icon = SPORT_ICONS[sportId] || "🏅";
+  return `
+    <button class="entity-row" data-entity-type="${type}" data-entity-id="${id}">
+      <div class="entity-icon">${icon}</div>
+      <div>
+        <div class="entity-name">${escapeHtml(name)}</div>
+        <div class="entity-meta">${escapeHtml(sportName)}</div>
+      </div>
+      <svg class="entity-chevron" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg>
+    </button>`;
+}
+
+function eventRowHtml(e) {
+  const watched = isWatched(e.id);
+  const comp = STATE.competitionsById[e.competitionId];
+  const dateStr = formatEventDate(e.date);
+  const statusColor = watchStatusColor(e.id);
+  return `
+    <button class="event-row" data-event-id="${e.id}">
+      <div class="event-row-top">
+        <span class="sport-dot" style="background:${statusColor}"></span>
+        <span class="event-title">${escapeHtml(e.title)}</span>
+        ${watched ? '<span class="watched-badge">Watched</span>' : ''}
+      </div>
+      <div class="event-meta"><span class="comp">${escapeHtml(comp?.shortName || '')}</span> · ${dateStr}</div>
+    </button>`;
+}
+
+function formatEventDate(iso) {
+  const d = new Date(iso);
+  const now = new Date();
+  const opts = { day: "numeric", month: "short", year: d.getFullYear() !== now.getFullYear() ? "numeric" : undefined };
+  const dateFmt = d.toLocaleDateString("en-GB", opts);
+  const timeFmt = d.toLocaleTimeString("en-GB", { hour: "2-digit", minute: "2-digit" });
+  return `${dateFmt}, ${timeFmt}`;
+}
+
+function escapeHtml(s) {
+  if (s == null) return "";
+  return String(s).replace(/[&<>"']/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]));
+}
+
+// ============================================================
+// TOURNAMENT ARCHIVE
+// A separate search mode for logging whole tournaments/seasons you watched
+// long ago and don't remember match-by-match, with an optional "memorable
+// events" checklist. Memorable events reuse the normal viewing-record system
+// (STATE.viewingsByEventId) so there is one source of truth for "watched" —
+// they're just tagged with source:"archive" instead of "direct" so the
+// distinction is preserved without a parallel data model.
+// ============================================================
+
+function archiveSeasonsList() {
+  return Object.values(STATE.seasonsById)
+    .filter(s => ARCHIVE_SEASON_IDS.has(s.id))
+    .map(s => {
+      const comp = STATE.competitionsById[s.competitionId];
+      const events = Object.values(STATE.eventsById).filter(e => e.seasonId === s.id);
+      return { season: s, comp, eventCount: events.length };
+    })
+    .sort((a, b) => b.season.label.localeCompare(a.season.label));
+}
+
+function renderArchiveEmpty() {
+  const el = document.getElementById("archive-results");
+  const grouped = {};
+  archiveSeasonsList().forEach(({ season, comp, eventCount }) => {
+    const key = comp.name;
+    if (!grouped[key]) grouped[key] = [];
+    grouped[key].push({ season, comp, eventCount });
+  });
+
+  let html = "";
+  Object.entries(grouped).forEach(([compName, items]) => {
+    html += `<div class="section-label">${escapeHtml(compName)}</div>`;
+    items.forEach(({ season, comp, eventCount }) => { html += tournamentRowHtml(season, comp, eventCount); });
+  });
+  if (!html) {
+    html = `<div class="empty-state"><div class="glyph">🏆</div><p>No tournaments in the archive yet.</p></div>`;
+  }
+  el.innerHTML = html;
+  bindTournamentRows(el);
+}
+
+function renderArchiveResults(query) {
+  const el = document.getElementById("archive-results");
+  const q = normalize(query);
+  const matches = archiveSeasonsList().filter(({ season, comp }) =>
+    normalize(comp.name).includes(q) || normalize(comp.shortName).includes(q) || normalize(season.label).includes(q) ||
+    normalize(`${comp.name} ${season.label}`).includes(q)
+  );
+
+  if (!matches.length) {
+    el.innerHTML = `<div class="empty-state"><div class="glyph">🕳️</div><p>No tournaments match "${escapeHtml(query)}".</p></div>`;
+    return;
+  }
+  el.innerHTML = matches.map(({ season, comp, eventCount }) => tournamentRowHtml(season, comp, eventCount)).join("");
+  bindTournamentRows(el);
+}
+
+function tournamentRowHtml(season, comp, eventCount) {
+  const watched = !!STATE.tournamentWatchesBySeasonId[season.id];
+  const icon = SPORT_ICONS[comp.sportId] || "🏆";
+  return `
+    <button class="tournament-row" data-season-id="${season.id}">
+      <div class="tournament-icon">${icon}</div>
+      <div>
+        <div class="tournament-name">${escapeHtml(comp.shortName)} ${escapeHtml(season.label)}</div>
+        <div class="tournament-meta">${eventCount} event${eventCount === 1 ? '' : 's'} in archive</div>
+      </div>
+      ${watched ? '<span class="tournament-watched-badge">Watched</span>' : ''}
+    </button>`;
+}
+
+function bindTournamentRows(container) {
+  container.querySelectorAll("[data-season-id]").forEach(row => {
+    row.addEventListener("click", () => openTournamentDetail(row.getAttribute("data-season-id")));
+  });
+}
+
+function setSearchMode(mode) {
+  STATE.searchMode = mode;
+  document.querySelectorAll(".mode-toggle-btn").forEach(b => b.classList.toggle("active", b.getAttribute("data-mode") === mode));
+  document.getElementById("search-mode-label").textContent = mode === "search" ? "Search" : "Tournament Archive";
+
+  const isSearch = mode === "search";
+  document.getElementById("search-mode-wrap").style.display = isSearch ? "block" : "none";
+  document.getElementById("search-results").style.display = isSearch ? "block" : "none";
+  document.getElementById("archive-mode-wrap").style.display = isSearch ? "none" : "block";
+  document.getElementById("archive-results").style.display = isSearch ? "none" : "block";
+
+  if (!isSearch) renderArchiveEmpty();
+}
+
+function openTournamentDetail(seasonId) {
+  STATE.currentTournamentSeasonId = seasonId;
+  const season = STATE.seasonsById[seasonId];
+  const comp = STATE.competitionsById[season.competitionId];
+
+  document.getElementById("tournament-name").textContent = `${comp.shortName} ${season.label}`;
+  document.getElementById("tournament-sub").textContent = STATE.sportsById[comp.sportId]?.name || "";
+
+  renderTournamentBody();
+  switchScreen("tournament");
+}
+
+function renderTournamentBody() {
+  const seasonId = STATE.currentTournamentSeasonId;
+  const season = STATE.seasonsById[seasonId];
+  const comp = STATE.competitionsById[season.competitionId];
+
+  const watch = STATE.tournamentWatchesBySeasonId[seasonId] || null;
+  const memorableEventIds = watch?.memorableEventIds || [];
+
+  const el = document.getElementById("tournament-body");
+  el.innerHTML = `
+    <div class="archive-hero">
+      <div class="archive-summary-card">
+        <button class="archive-watched-toggle ${watch ? 'active-state' : ''}" id="archive-watched-toggle">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+          ${watch ? "I watched this tournament" : "I watched this tournament"}
+        </button>
+
+        <div class="archive-field-group">
+          <label class="field-label">Roughly how many events did you watch?</label>
+          <div class="archive-estimate-row">
+            <input type="range" id="archive-estimate-slider" min="0" max="${getSeasonEventCount(seasonId)}" value="${watch?.estimatedEventsWatched ?? Math.min(3, getSeasonEventCount(seasonId))}" />
+            <span class="archive-estimate-value" id="archive-estimate-value">${watch?.estimatedEventsWatched ?? Math.min(3, getSeasonEventCount(seasonId))}</span>
+          </div>
+        </div>
+
+        <div class="archive-field-group">
+          <label class="field-label">Notes <span style="opacity:0.6; text-transform:none; font-weight:400;">(optional)</span></label>
+          <textarea class="notes-input" id="archive-notes-input" placeholder="What do you remember about watching this…">${escapeHtml(watch?.notes || "")}</textarea>
+        </div>
+
+        <button class="save-btn" id="archive-save-btn" style="margin-top:14px;">Save</button>
+      </div>
+    </div>
+
+    <div class="memorable-section">
+      <div class="dash-section-header"><span>Memorable events</span></div>
+      <div style="font-size:12.5px; color:var(--parchment-faint); margin-bottom:10px;">
+        Search for a team, player, or specific match/race and tick the ones you clearly remember watching.
+      </div>
+      <div class="search-box" style="margin-bottom:10px;">
+        <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+        <input id="memorable-search-input" type="text" placeholder="e.g. Leeds, Littler, Dutch Grand Prix…" autocomplete="off" />
+        <button class="search-clear" id="memorable-search-clear">×</button>
+      </div>
+      <div id="memorable-search-results"></div>
+
+      <div id="memorable-selected-wrap" style="${memorableEventIds.length ? '' : 'display:none;'}">
+        <div class="dash-section-header" style="margin-top:18px; font-size:14px;"><span>Selected (${memorableEventIds.length})</span></div>
+        <div id="memorable-selected-list">
+          ${memorableEventIds.map(id => STATE.eventsById[id]).filter(Boolean)
+            .sort((a, b) => new Date(a.date) - new Date(b.date))
+            .map(e => memorableEventRowHtml(e, true)).join("")}
+        </div>
+      </div>
+    </div>
+  `;
+
+  document.getElementById("archive-watched-toggle").addEventListener("click", saveTournamentWatch);
+  document.getElementById("archive-save-btn").addEventListener("click", saveTournamentWatch);
+
+  const slider = document.getElementById("archive-estimate-slider");
+  const sliderValue = document.getElementById("archive-estimate-value");
+  slider.addEventListener("input", () => { sliderValue.textContent = slider.value; });
+
+  const memSearchInput = document.getElementById("memorable-search-input");
+  const memSearchClear = document.getElementById("memorable-search-clear");
+  memSearchInput.addEventListener("input", () => {
+    const q = memSearchInput.value;
+    memSearchClear.style.display = q ? "block" : "none";
+    renderMemorableSearchResults(q);
+  });
+  memSearchClear.addEventListener("click", () => {
+    memSearchInput.value = "";
+    memSearchClear.style.display = "none";
+    renderMemorableSearchResults("");
+    memSearchInput.focus();
+  });
+
+  bindMemorableEventRows(el);
+}
+
+function getSeasonEventCount(seasonId) {
+  return Object.values(STATE.eventsById).filter(e => e.seasonId === seasonId).length;
+}
+
+// Searches within the current tournament's events only, matching on event
+// title (covers F1 race names) as well as participant team/player names
+// (covers football teams and darts players) — so "Leeds", "Littler", or
+// "Dutch Grand Prix" all work as expected.
+function renderMemorableSearchResults(query) {
+  const seasonId = STATE.currentTournamentSeasonId;
+  const resultsEl = document.getElementById("memorable-search-results");
+  const q = normalize(query);
+
+  if (!q) { resultsEl.innerHTML = ""; return; }
+
+  const watch = STATE.tournamentWatchesBySeasonId[seasonId];
+  const memorableIds = new Set(watch?.memorableEventIds || []);
+
+  const seasonEvents = Object.values(STATE.eventsById).filter(e => e.seasonId === seasonId);
+  const matches = seasonEvents.filter(e => {
+    if (normalize(e.title).includes(q)) return true;
+    return e.participants.some(pid => normalize(participantName(pid) || "").includes(q));
+  }).sort((a, b) => new Date(a.date) - new Date(b.date)).slice(0, 20);
+
+  if (!matches.length) {
+    resultsEl.innerHTML = `<div class="dash-empty-inline">No matches for "${escapeHtml(query)}".</div>`;
+    return;
+  }
+
+  resultsEl.innerHTML = matches.map(e => memorableEventRowHtml(e, memorableIds.has(e.id))).join("");
+  bindMemorableEventRows(resultsEl);
+}
+
+function bindMemorableEventRows(container) {
+  container.querySelectorAll("[data-memorable-event-id]").forEach(row => {
+    row.addEventListener("click", () => toggleMemorableEvent(row.getAttribute("data-memorable-event-id")));
+  });
+}
+
+function memorableEventRowHtml(e, isChecked) {
+  const comp = STATE.competitionsById[e.competitionId];
+  const dateStr = formatEventDate(e.date);
+  let extra = "";
+  if (e.sportData?.round != null) extra = e.sportId === "f1" ? `Round ${e.sportData.round}` : String(e.sportData.round);
+  return `
+    <button class="memorable-event-row" data-memorable-event-id="${e.id}">
+      <div class="memorable-checkbox ${isChecked ? 'checked' : ''}">
+        <svg viewBox="0 0 24 24" fill="none" stroke="#06251a" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+      </div>
+      <div>
+        <div class="memorable-event-title">${escapeHtml(e.title)}</div>
+        <div class="memorable-event-meta">${extra ? escapeHtml(extra) + ' · ' : ''}${dateStr}</div>
+      </div>
+    </button>`;
+}
+
+async function toggleMemorableEvent(eventId) {
+  const seasonId = STATE.currentTournamentSeasonId;
+  let watch = STATE.tournamentWatchesBySeasonId[seasonId];
+
+  // Toggling a memorable event implicitly confirms the tournament was watched,
+  // since flagging a specific memory only makes sense in that context.
+  if (!watch) {
+    watch = await createOrGetTournamentWatch(seasonId);
+  }
+
+  const memorableIds = new Set(watch.memorableEventIds || []);
+  const nowChecked = !memorableIds.has(eventId);
+  if (nowChecked) memorableIds.add(eventId); else memorableIds.delete(eventId);
+  watch.memorableEventIds = Array.from(memorableIds);
+
+  await db.tournamentWatches.put(watch);
+  STATE.tournamentWatchesBySeasonId[seasonId] = watch;
+
+  // Mirror the memorable flag into the normal viewing-record system so this
+  // event shows as "Watched" everywhere else in the app (search, entity pages,
+  // history) — single source of truth for "have I watched this event".
+  if (nowChecked) {
+    const existing = STATE.viewingsByEventId[eventId]?.[0];
+    if (!existing) {
+      const event = STATE.eventsById[eventId];
+      const record = {
+        id: `watch_${Date.now()}_${Math.random().toString(36).slice(2,7)}`,
+        eventId,
+        watchedAt: event.date,
+        finishedAt: null,
+        mode: "live",
+        coverage: "full",
+        rating: null,
+        notes: "",
+        source: "archive",
+        createdAt: new Date().toISOString(),
+      };
+      await db.viewings.put(record);
+      STATE.viewingsByEventId[eventId] = [record];
+    }
+  } else {
+    const existing = STATE.viewingsByEventId[eventId]?.[0];
+    // Only remove the viewing record if it was created via the archive flow —
+    // never silently delete a viewing the person logged directly.
+    if (existing && existing.source === "archive") {
+      await db.viewings.delete(existing.id);
+      delete STATE.viewingsByEventId[eventId];
+    }
+  }
+
+  refreshMemorableUI();
+  renderHistory();
+}
+
+// Re-renders just the pieces of the tournament screen that can change from
+// toggling a memorable event (the checkbox states in search results, the
+// selected list, and the estimate slider's live-count context) without
+// rebuilding the whole screen — so the person's search query and scroll
+// position are preserved while they tick multiple matches in a row.
+function refreshMemorableUI() {
+  const seasonId = STATE.currentTournamentSeasonId;
+  if (!seasonId) return;
+
+  const watch = STATE.tournamentWatchesBySeasonId[seasonId];
+  const memorableEventIds = watch?.memorableEventIds || [];
+
+  // Update the watched-toggle button's visual state
+  const toggleBtn = document.getElementById("archive-watched-toggle");
+  if (toggleBtn) toggleBtn.classList.toggle("active-state", !!watch);
+
+  // Re-render current search results so checkbox states reflect the new selection
+  const searchInput = document.getElementById("memorable-search-input");
+  if (searchInput) renderMemorableSearchResults(searchInput.value);
+
+  // Re-render the "Selected" list
+  const selectedWrap = document.getElementById("memorable-selected-wrap");
+  const selectedList = document.getElementById("memorable-selected-list");
+  if (selectedWrap && selectedList) {
+    selectedWrap.style.display = memorableEventIds.length ? "" : "none";
+    const header = selectedWrap.querySelector(".dash-section-header span");
+    if (header) header.textContent = `Selected (${memorableEventIds.length})`;
+    selectedList.innerHTML = memorableEventIds.map(id => STATE.eventsById[id]).filter(Boolean)
+      .sort((a, b) => new Date(a.date) - new Date(b.date))
+      .map(e => memorableEventRowHtml(e, true)).join("");
+    bindMemorableEventRows(selectedList);
+  }
+}
+
+async function createOrGetTournamentWatch(seasonId) {
+  let watch = STATE.tournamentWatchesBySeasonId[seasonId];
+  if (watch) return watch;
+  watch = {
+    id: `tw_${seasonId}`,
+    seasonId,
+    estimatedEventsWatched: 0,
+    notes: "",
+    memorableEventIds: [],
+    createdAt: new Date().toISOString(),
+  };
+  await db.tournamentWatches.put(watch);
+  STATE.tournamentWatchesBySeasonId[seasonId] = watch;
+  return watch;
+}
+
+async function saveTournamentWatch() {
+  const seasonId = STATE.currentTournamentSeasonId;
+  const slider = document.getElementById("archive-estimate-slider");
+  const notesInput = document.getElementById("archive-notes-input");
+
+  const watch = await createOrGetTournamentWatch(seasonId);
+  watch.estimatedEventsWatched = parseInt(slider.value, 10) || 0;
+  watch.notes = notesInput.value.trim();
+
+  await db.tournamentWatches.put(watch);
+  STATE.tournamentWatchesBySeasonId[seasonId] = watch;
+
+  showToast("Tournament saved");
+  renderTournamentBody();
+  renderHistory();
+  if (STATE.searchMode === "archive") {
+    const q = document.getElementById("archive-search-input").value;
+    if (q.trim()) renderArchiveResults(q); else renderArchiveEmpty();
+  }
+}
+
+// ---------- ENTITY DETAIL (team / player events) ----------
+function openEntityDetail(type, id, initialView) {
+  STATE.currentEntity = { type, id };
+  STATE.currentEntityView = initialView || "fixtures";
+  const name = entityName(type, id);
+  const sportId = type === "team" ? STATE.teamsById[id]?.sportId : STATE.playersById[id]?.sportId;
+
+  document.getElementById("entity-name").textContent = name;
+  document.getElementById("entity-sub").textContent = STATE.sportsById[sportId]?.name || "";
+
+  setEntityView(STATE.currentEntityView);
+  switchScreen("entity");
+}
+
+function openCompetitionDetail(competitionId, initialView) {
+  const comp = STATE.competitionsById[competitionId];
+  STATE.currentEntity = { type: "competition", id: competitionId };
+  STATE.currentEntityView = initialView || "fixtures";
+  document.getElementById("entity-name").textContent = comp.name;
+  document.getElementById("entity-sub").textContent = STATE.sportsById[comp.sportId]?.name || "";
+
+  setEntityView(STATE.currentEntityView);
+  switchScreen("entity");
+}
+
+// Switches between "Fixtures" (every event this team/player/competition is
+// part of, upcoming and past, regardless of whether it's been watched — the
+// original search-driven view) and "Watched" (only events actually logged as
+// watched, most recent first — the dashboard drill-down view). Both are
+// reached through the same screen now, toggleable from either entry point.
+function setEntityView(view) {
+  STATE.currentEntityView = view;
+  document.querySelectorAll("#entity-view-toggle .mode-toggle-btn").forEach(b => {
+    b.classList.toggle("active", b.getAttribute("data-entity-view") === view);
+  });
+
+  const entity = STATE.currentEntity;
+  if (!entity) return;
+
+  if (view === "fixtures") {
+    document.getElementById("entity-watched-stats").style.display = "none";
+    // renderEntityFixtures does its own chronological sort (upcoming and
+    // past both earliest-first), so no need to pre-sort here.
+    renderEntityFixtures(getEntityEvents(entity));
+  } else {
+    const viewings = getEntityWatchedViewings(entity).sort((a, b) => new Date(b.watchedAt) - new Date(a.watchedAt));
+    renderWatchedSummaryStats("entity-watched-stats", viewings);
+    renderEntityWatched(viewings);
+  }
+}
+
+function getEntityEvents(entity) {
+  if (entity.type === "competition") {
+    return Object.values(STATE.eventsById).filter(e => e.competitionId === entity.id);
+  }
+  return Object.values(STATE.eventsById).filter(e => e.participants.includes(entity.id));
+}
+
+function getEntityWatchedViewings(entity) {
+  const allViewings = Object.values(STATE.viewingsByEventId).flat();
+  if (entity.type === "competition") {
+    return allViewings.filter(v => STATE.eventsById[v.eventId]?.competitionId === entity.id);
+  }
+  return allViewings.filter(v => STATE.eventsById[v.eventId]?.participants.includes(entity.id));
+}
+
+function renderEntityFixtures(events) {
+  const el = document.getElementById("entity-events");
+  if (!events.length) {
+    el.innerHTML = `<div class="empty-state"><div class="glyph">📭</div><p>No events found.</p></div>`;
+    return;
+  }
+
+  // Calendar-day boundaries (not rolling time windows): "Today" is anything
+  // on today's date regardless of time of day; "Recent" is the two calendar
+  // days immediately before today (yesterday and the day before); "Upcoming"
+  // is anything after today; "Past" is everything older than Recent.
+  const startOfToday = new Date();
+  startOfToday.setHours(0, 0, 0, 0);
+  const startOfTomorrow = new Date(startOfToday);
+  startOfTomorrow.setDate(startOfTomorrow.getDate() + 1);
+  const startOfRecentWindow = new Date(startOfToday);
+  startOfRecentWindow.setDate(startOfRecentWindow.getDate() - 2);
+
+  const today = [];
+  const recent = [];
+  const upcoming = [];
+  const past = [];
+  events.forEach(e => {
+    const d = new Date(e.date);
+    if (d >= startOfToday && d < startOfTomorrow) today.push(e);
+    else if (d >= startOfRecentWindow && d < startOfToday) recent.push(e);
+    else if (d >= startOfTomorrow) upcoming.push(e);
+    else past.push(e);
+  });
+
+  // Chronological throughout: each section earliest-first, so scrolling the
+  // list reads as a timeline rather than jumping between sort directions.
+  today.sort((a, b) => new Date(a.date) - new Date(b.date));
+  recent.sort((a, b) => new Date(a.date) - new Date(b.date));
+  upcoming.sort((a, b) => new Date(a.date) - new Date(b.date));
+  past.sort((a, b) => new Date(a.date) - new Date(b.date));
+
+  let html = "";
+  if (today.length) {
+    html += `<div class="section-label">Today</div>`;
+    today.forEach(e => html += eventRowHtml(e));
+  }
+  if (recent.length) {
+    html += `<div class="section-label">Recent</div>`;
+    recent.forEach(e => html += eventRowHtml(e));
+  }
+  if (upcoming.length) {
+    html += `<div class="section-label">Upcoming</div>`;
+    upcoming.forEach(e => html += eventRowHtml(e));
+  }
+  if (past.length) {
+    html += `<div class="section-label">Past</div>`;
+    past.forEach(e => html += eventRowHtml(e));
+  }
+  el.innerHTML = html;
+  el.querySelectorAll("[data-event-id]").forEach(row => {
+    row.addEventListener("click", () => openEventModal(row.getAttribute("data-event-id")));
+  });
+}
+
+function sessionsSummaryHtml(v, ev) {
+  if (!v.sessionsWatched || !v.sessionsWatched.length) return "";
+  const sessions = sessionsForEvent(ev);
+  if (!sessions.length) return "";
+  const labelById = Object.fromEntries(sessions.map(s => [s.id, s.label]));
+  const labels = v.sessionsWatched.map(id => labelById[id] || id).join(", ");
+  return `<div class="history-sessions">${escapeHtml(labels)}</div>`;
+}
+
+// Formats a viewing record's logged duration as "1h 30m" / "45m" / "2h".
+// Returns "" if no duration was recorded, so callers can omit it cleanly.
+function formatDuration(minutes) {
+  if (!minutes) return "";
+  const h = Math.floor(minutes / 60);
+  const m = minutes % 60;
+  if (h && m) return `${h}h ${m}m`;
+  if (h) return `${h}h`;
+  return `${m}m`;
+}
+
+// Renders a small two-box summary (events watched, total time watched) into
+// the given element — same visual style as the dashboard's stat cards, used
+// at the top of any watched-history list (a team/player/competition's
+// Watched tab, or a sport's watched-history page) so the totals are visible
+// before scrolling the list itself.
+function renderWatchedSummaryStats(elId, viewings) {
+  const el = document.getElementById(elId);
+  if (!el) return;
+  if (!viewings.length) {
+    el.style.display = "none";
+    return;
+  }
+  el.style.display = "grid";
+  const totalMinutes = viewings.reduce((sum, v) => sum + (v.durationMinutes || 0), 0);
+  const timeLabel = totalMinutes ? formatDuration(totalMinutes) : "—";
+  el.innerHTML = `
+    <div class="stat-card"><div class="num">${viewings.length}</div><div class="lbl">Watched</div></div>
+    <div class="stat-card"><div class="num num-text">${timeLabel}</div><div class="lbl">Time Watched</div></div>
+  `;
+}
+
+function renderEntityWatched(viewings) {
+  const el = document.getElementById("entity-events");
+  if (!viewings.length) {
+    el.innerHTML = `
+      <div class="empty-state">
+        <div class="glyph">📭</div>
+        <p>No watch history.</p>
+      </div>`;
+    return;
+  }
+
+  el.innerHTML = viewings.map(v => {
+    const ev = STATE.eventsById[v.eventId];
+    if (!ev) return "";
+    const comp = STATE.competitionsById[ev.competitionId];
+    const d = new Date(v.watchedAt);
+    const dateStr = d.toLocaleDateString("en-GB", { day: "numeric", month: "short", year: "numeric" });
+    const durationStr = formatDuration(v.durationMinutes);
+    const coverageLabel = v.coverage === "full" ? "Full" : "Partial";
+    const stars = v.rating ? "★".repeat(v.rating) + "☆".repeat(5 - v.rating) : "";
+    return `
+      <button class="history-item" data-event-id="${ev.id}" style="width:100%; border:none; background:none; cursor:pointer; padding-left:20px; padding-right:20px;">
+        <div class="history-stamp-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="var(--stamp-red)" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+        </div>
+        <div class="history-content">
+          <div class="history-title">${escapeHtml(ev.title)}</div>
+          <div class="history-sub">${escapeHtml(comp?.shortName || '')} · ${dateStr}${durationStr ? ' · ' + durationStr + ' watched' : ''} · ${coverageLabel}</div>
+          ${sessionsSummaryHtml(v, ev)}
+          ${stars ? `<div class="history-rating">${stars}</div>` : ''}
+        </div>
+      </button>`;
+  }).join("");
+
+  el.querySelectorAll("[data-event-id]").forEach(row => {
+    row.addEventListener("click", () => openEventModal(row.getAttribute("data-event-id")));
+  });
+}
+
+// ============================================================
+// ADD EVENT (manual entry) + PENDING EVENTS (intermediary review)
+// ------------------------------------------------------------
+// For matches that aren't in the seeded/archived database. Submitting here
+// never writes into the normal events/viewings tables directly — it creates
+// a "pending event" that sits in a separate review list until it's
+// reconciled against a real, verified source. This keeps unverified
+// user-typed data from silently mixing into search results, most-watched
+// stats, or the trustworthy-data guarantee the rest of the app relies on.
+//
+// Status lifecycle: "pending" (just submitted, not yet checked) ->
+// "matched" (confirmed to map to a real event) or "needs_review" (no clean
+// single match found). The matching/reconciliation step itself is a
+// separate future task — this only builds the submission form and the
+// review list showing where things stand.
+// ============================================================
+
+let addEventSelectedSport = null;
+let addEventSelectedCoverage = "full";
+let addEventSelectedRating = 0;
+let editingPendingEventId = null; // set when opening the form to edit an existing pending event
+
+function pendingEventDatetimeInputValue(iso) {
+  const d = new Date(iso);
+  const pad = n => String(n).padStart(2, "0");
+  return `${d.getFullYear()}-${pad(d.getMonth()+1)}-${pad(d.getDate())}T${pad(d.getHours())}:${pad(d.getMinutes())}`;
+}
+
+// Opens the Add Event form. With no argument, it's a blank "add new" form.
+// Passed an existing pending record, it opens in edit mode — same form,
+// prefilled, saving back to that same record instead of creating a new one.
+function openAddEventForm(existing) {
+  editingPendingEventId = existing ? existing.id : null;
+
+  const heading = document.getElementById("add-event-heading");
+  const subheading = document.getElementById("add-event-subheading");
+  const introText = document.getElementById("add-event-intro-text");
+  const saveBtn = document.getElementById("add-event-save-btn");
+  const deleteBtn = document.getElementById("add-event-delete-btn");
+
+  if (existing) {
+    heading.textContent = "Edit pending event";
+    const statusLabel = { pending: "Pending", needs_review: "Needs review", matched: "Matched" };
+    subheading.textContent = statusLabel[existing.status] || existing.status;
+    introText.textContent = "Update the details below — still held for review until it's matched against a real fixture.";
+    saveBtn.textContent = "Save changes";
+    deleteBtn.style.display = "block";
+
+    addEventSelectedSport = existing.sportId;
+    addEventSelectedCoverage = existing.coverage || "full";
+    addEventSelectedRating = existing.rating || 0;
+
+    document.getElementById("add-event-title").value = existing.title || "";
+    document.getElementById("add-event-date").value = pendingEventDatetimeInputValue(existing.date);
+    const mins = existing.durationMinutes || 0;
+    document.getElementById("add-event-hours").value = mins ? Math.floor(mins / 60) : "";
+    document.getElementById("add-event-minutes").value = mins ? mins % 60 : "";
+    document.getElementById("add-event-notes").value = existing.notes || "";
+  } else {
+    heading.textContent = "Add event";
+    subheading.textContent = "Not in the archive yet";
+    introText.textContent = "For a match that isn't in the database. This gets added to a review list rather than straight into your history, since the details haven't been checked against an official source yet.";
+    saveBtn.textContent = "Add for review";
+    deleteBtn.style.display = "none";
+
+    addEventSelectedSport = null;
+    addEventSelectedCoverage = "full";
+    addEventSelectedRating = 0;
+
+    document.getElementById("add-event-title").value = "";
+    document.getElementById("add-event-date").value = "";
+    document.getElementById("add-event-hours").value = "";
+    document.getElementById("add-event-minutes").value = "";
+    document.getElementById("add-event-notes").value = "";
+  }
+
+  document.getElementById("add-event-duration-error").style.display = "none";
+  document.getElementById("add-event-form-error").style.display = "none";
+  updateSegmented("add-event-coverage-segmented", addEventSelectedCoverage);
+  renderAddEventStars();
+  renderAddEventSportChips();
+
+  switchScreen("add-event");
+}
+
+function renderAddEventSportChips() {
+  const el = document.getElementById("add-event-sport-segmented");
+  el.innerHTML = MANUAL_ENTRY_SPORTS.map(s => `
+    <button class="session-chip ${addEventSelectedSport === s.id ? 'selected' : ''}" data-sport-choice="${s.id}">
+      <span class="session-chip-dot"></span>${SPORT_ICONS[s.id] || ""} ${s.name}
+    </button>`).join("");
+  el.querySelectorAll("[data-sport-choice]").forEach(chip => {
+    chip.addEventListener("click", () => {
+      addEventSelectedSport = chip.getAttribute("data-sport-choice");
+      renderAddEventSportChips();
+    });
+  });
+}
+
+function renderAddEventStars() {
+  document.querySelectorAll("#add-event-rating-stars button").forEach(b => {
+    b.classList.toggle("selected", parseInt(b.getAttribute("data-val")) <= addEventSelectedRating);
+  });
+}
+
+async function saveAddEvent() {
+  const title = document.getElementById("add-event-title").value.trim();
+  const dateVal = document.getElementById("add-event-date").value;
+  const formErrorEl = document.getElementById("add-event-form-error");
+  const durationErrorEl = document.getElementById("add-event-duration-error");
+  formErrorEl.style.display = "none";
+  durationErrorEl.style.display = "none";
+
+  if (!addEventSelectedSport || !title || !dateVal) {
+    formErrorEl.style.display = "block";
+    return;
+  }
+
+  const hoursVal = parseInt(document.getElementById("add-event-hours").value, 10);
+  const minutesVal = parseInt(document.getElementById("add-event-minutes").value, 10);
+  const hasEnteredValue = !isNaN(hoursVal) || !isNaN(minutesVal);
+  const hours = isNaN(hoursVal) ? 0 : Math.max(0, hoursVal);
+  const minutes = isNaN(minutesVal) ? 0 : Math.max(0, Math.min(59, minutesVal));
+  const entered = (hours * 60) + minutes;
+
+  if (addEventSelectedCoverage === "partial" && !hasEnteredValue) {
+    durationErrorEl.style.display = "block";
+    return;
+  }
+  const durationMinutes = hasEnteredValue ? entered : (defaultDurationMinutes({ sportId: addEventSelectedSport }) || null);
+
+  const notes = document.getElementById("add-event-notes").value.trim();
+  const watchedAt = new Date(dateVal).toISOString();
+
+  const existing = editingPendingEventId ? STATE.pendingEventsById[editingPendingEventId] : null;
+
+  const record = {
+    id: existing ? existing.id : `pending_${Date.now()}_${Math.random().toString(36).slice(2,7)}`,
+    status: existing ? existing.status : "pending", // editing details doesn't itself change review status
+    sportId: addEventSelectedSport,
+    title,
+    date: watchedAt,
+    watchedAt,
+    durationMinutes: durationMinutes || null,
+    coverage: addEventSelectedCoverage,
+    rating: addEventSelectedRating || null,
+    notes: notes || "",
+    matchedEventId: existing ? existing.matchedEventId || null : null,
+    createdAt: existing ? existing.createdAt : new Date().toISOString(),
+  };
+
+  await db.pendingEvents.put(record);
+  STATE.pendingEventsById[record.id] = record;
+
+  showToast(existing ? "Pending event updated" : "Added for review");
+  editingPendingEventId = null;
+  goBackScreen("dashboard");
+  syncTabHighlightToScreen();
+  if (document.querySelector(".screen.active")?.id === "screen-pending-events") {
+    renderPendingEventsList();
+  }
+}
+
+async function deletePendingEvent() {
+  if (!editingPendingEventId) return;
+  await db.pendingEvents.delete(editingPendingEventId);
+  delete STATE.pendingEventsById[editingPendingEventId];
+  editingPendingEventId = null;
+
+  showToast("Pending event deleted");
+  goBackScreen("dashboard");
+  syncTabHighlightToScreen();
+  if (document.querySelector(".screen.active")?.id === "screen-pending-events") {
+    renderPendingEventsList();
+  }
+}
+
+function openPendingEventsList() {
+  renderPendingEventsList();
+  switchScreen("pending-events");
+}
+
+// Builds a compact JSON export of pending events for the person to paste
+// into a chat with Claude for manual reconciliation (Tier 2 matching — no
+// in-app scraping/fetching is possible from a static page, so this is the
+// hand-off point). Deliberately includes only what's useful for finding and
+// verifying the real fixture; excludes internal-only fields like id/status/
+// createdAt that don't help with matching and just add noise.
+function buildPendingEventsExport() {
+  const items = Object.values(STATE.pendingEventsById)
+    .filter(p => p.status === "pending" || p.status === "needs_review")
+    .sort((a, b) => new Date(a.date) - new Date(b.date));
+
+  return items.map(p => ({
+    sport: STATE.sportsById[p.sportId]?.name || MANUAL_ENTRY_SPORTS.find(s => s.id === p.sportId)?.name || p.sportId,
+    title: p.title,
+    date: p.date,
+    durationWatchedMinutes: p.durationMinutes || null,
+    coverage: p.coverage,
+    rating: p.rating || null,
+    notes: p.notes || "",
+  }));
+}
+
+async function copyPendingEventsForReview() {
+  const items = buildPendingEventsExport();
+  const btn = document.getElementById("copy-pending-events-btn");
+
+  if (!items.length) {
+    showToast("Nothing pending to copy");
+    return;
+  }
+
+  const json = JSON.stringify(items, null, 2);
+  try {
+    await navigator.clipboard.writeText(json);
+    btn.classList.add("copied");
+    const originalHtml = btn.innerHTML;
+    btn.innerHTML = "Copied — paste it into your chat with Claude";
+    showToast(`Copied ${items.length} pending event${items.length === 1 ? "" : "s"}`);
+    setTimeout(() => {
+      btn.classList.remove("copied");
+      btn.innerHTML = originalHtml;
+    }, 2200);
+  } catch (err) {
+    showToast("Couldn't copy — clipboard access blocked");
+  }
+}
+
+function renderPendingEventsList() {
+  const el = document.getElementById("pending-events-list");
+  const items = Object.values(STATE.pendingEventsById).sort((a, b) => new Date(b.createdAt) - new Date(a.createdAt));
+
+  if (!items.length) {
+    el.innerHTML = `
+      <div class="empty-state">
+        <div class="glyph">📋</div>
+        <p>No pending events.</p>
+        <p class="hint">Manually added matches waiting to be matched against real fixtures will show up here.</p>
+      </div>`;
+    return;
+  }
+
+  const statusLabel = { pending: "Pending", needs_review: "Needs review", matched: "Matched" };
+
+  el.innerHTML = items.map(p => {
+    const d = new Date(p.date);
+    const dateStr = d.toLocaleDateString("en-GB", { day: "numeric", month: "short", year: "numeric" });
+    return `
+      <button class="pending-event-row" data-pending-event-id="${p.id}">
+        <div class="pending-event-icon">${SPORT_ICONS[p.sportId] || "🏅"}</div>
+        <div>
+          <div class="pending-event-title">${escapeHtml(p.title)}</div>
+          <div class="pending-event-meta">${dateStr}</div>
+          <span class="pending-status-badge ${p.status}">${statusLabel[p.status] || p.status}</span>
+        </div>
+      </button>`;
+  }).join("");
+
+  el.querySelectorAll("[data-pending-event-id]").forEach(row => {
+    row.addEventListener("click", () => {
+      const id = row.getAttribute("data-pending-event-id");
+      openAddEventForm(STATE.pendingEventsById[id]);
+    });
+  });
+}
+
+
+// ---------- EVENT MODAL ----------
+let selectedCoverage = "full";
+let selectedRating = 0;
+let selectedSessions = []; // which sub-parts (F1 sessions, cricket Test days) were watched
+let selectedSessionDurations = {}; // sessionId -> minutes, only for ticked sessions
+
+function openEventModal(eventId) {
+  const e = STATE.eventsById[eventId];
+  if (!e) return;
+  STATE.currentEventId = eventId;
+
+  const comp = STATE.competitionsById[e.competitionId];
+  const statusColor = watchStatusColor(e.id);
+
+  document.getElementById("event-comp-label").innerHTML = `<span style="color:${statusColor}">●</span> ${escapeHtml(comp?.name || '')}`;
+  document.getElementById("event-comp-label").style.color = "var(--parchment-dim)";
+  document.getElementById("event-title").textContent = e.title;
+  document.getElementById("event-datetime").innerHTML = `🗓 ${formatEventDate(e.date)}`;
+
+  let extra = "";
+  if (e.sportData) {
+    if (e.sportData.venue) extra += e.sportData.venue;
+    if (e.sportData.round) extra += (extra ? " · " : "") + e.sportData.round;
+    if (e.sportData.result) extra += (extra ? " · " : "") + `Result: ${e.sportData.result}`;
+    if (e.sportData.scorecard) extra += (extra ? "<br>" : "") + e.sportData.scorecard;
+    if (e.sportData.winner) {
+      const winnerName = participantName(e.sportData.winner);
+      if (winnerName) extra += (extra ? " · " : "") + `Winner: ${winnerName}`;
+    }
+    if (e.sportData.note) extra += (extra ? "<br>" : "") + e.sportData.note;
+    if (isF1SprintWeekend(e)) extra += (extra ? " · " : "") + "Sprint weekend";
+  }
+  document.getElementById("event-extra").innerHTML = extra;
+
+  const existing = STATE.viewingsByEventId[eventId]?.[0] || null;
+  resetViewingForm(existing, e);
+
+  document.getElementById("modal-backdrop").classList.add("open");
+}
+
+function resetViewingForm(existing, event) {
+  const form = document.getElementById("viewing-form");
+  const markBtn = document.getElementById("mark-watched-btn");
+  const markLabel = document.getElementById("mark-watched-label");
+  const stampWrap = document.getElementById("stamp-wrap");
+  const removeBtn = document.getElementById("remove-viewing-btn");
+  const errorEl = document.getElementById("whole-event-duration-error");
+
+  stampWrap.classList.remove("show");
+  errorEl.style.display = "none";
+
+  if (existing) {
+    markBtn.classList.add("watched-state");
+    markLabel.textContent = "Watched — edit details";
+    form.style.display = "block";
+    removeBtn.style.display = "block";
+
+    const d = new Date(existing.watchedAt);
+    selectedSessions = existing.sessionsWatched || [];
+    selectedSessionDurations = { ...(existing.sessionDurations || {}) };
+
+    // Whole-event fields only matter when there are no ticked sub-parts;
+    // renderSessionsChecklist below will hide/show them and populate the
+    // per-session inputs as appropriate, but seed the whole-event fields
+    // from the saved total in case this event has no sub-parts at all.
+    const totalMinutes = existing.durationMinutes || 0;
+    document.getElementById("watched-hours").value = totalMinutes ? Math.floor(totalMinutes / 60) : "";
+    document.getElementById("watched-minutes").value = totalMinutes ? totalMinutes % 60 : "";
+    selectedCoverage = existing.coverage || "full";
+    selectedRating = existing.rating || 0;
+    document.getElementById("notes-input").value = existing.notes || "";
+
+    document.getElementById("stamp-date-text").textContent = d.toLocaleDateString("en-GB", { day: "numeric", month: "short", year: "numeric" }).toUpperCase();
+    void stampWrap.offsetWidth;
+    stampWrap.classList.add("show");
+  } else {
+    markBtn.classList.remove("watched-state");
+    markLabel.textContent = "Mark as watched";
+    form.style.display = "none";
+    removeBtn.style.display = "none";
+
+    document.getElementById("watched-hours").value = "";
+    document.getElementById("watched-minutes").value = "";
+    selectedCoverage = "full";
+    selectedRating = 0;
+    selectedSessions = [];
+    selectedSessionDurations = {};
+    document.getElementById("notes-input").value = "";
+  }
+
+  updateSegmented("coverage-segmented", selectedCoverage);
+  updateStars(selectedRating);
+  renderSessionsChecklist(event);
+}
+
+// Shows the session checklist (Practice, Qualifying, Sprint, Race, etc) only
+// for F1 events — other sports don't have this weekend structure. Sessions
+// are purely descriptive: ticking them never changes the "1 event watched"
+// count or feeds into any other stat, exactly like the notes field.
+function renderSessionsChecklist(event) {
+  const group = document.getElementById("sessions-group");
+  const checklist = document.getElementById("sessions-checklist");
+  const label = document.getElementById("sessions-group-label");
+  const durationsList = document.getElementById("session-durations-list");
+
+  const sessions = sessionsForEvent(event);
+  if (!sessions.length) {
+    group.style.display = "none";
+    checklist.innerHTML = "";
+    durationsList.innerHTML = "";
+    setWholeEventDurationVisible(true);
+    return;
+  }
+  group.style.display = "block";
+  label.innerHTML = (event.sportId === "cricket" ? "Days watched" : "Sessions watched") +
+    ' <span style="opacity:0.6; text-transform:none; font-weight:400;">(optional)</span>';
+
+  checklist.innerHTML = sessions.map(s => `
+    <button class="session-chip ${selectedSessions.includes(s.id) ? 'selected' : ''}" data-session-id="${s.id}">
+      <span class="session-chip-dot"></span>${s.label}
+    </button>`).join("");
+
+  checklist.querySelectorAll("[data-session-id]").forEach(chip => {
+    chip.addEventListener("click", () => {
+      const id = chip.getAttribute("data-session-id");
+      if (selectedSessions.includes(id)) {
+        selectedSessions = selectedSessions.filter(s => s !== id);
+        delete selectedSessionDurations[id];
+      } else {
+        selectedSessions.push(id);
+      }
+      chip.classList.toggle("selected");
+      renderSessionDurations(event, sessions);
+    });
+  });
+
+  renderSessionDurations(event, sessions);
+}
+
+// Per-session/day duration inputs — only rendered for sub-parts that are
+// actually ticked (per the design decision: unticked sessions show no
+// duration field at all, since there's nothing to log time against). Each
+// defaults to that specific part's typical length (e.g. an F1 race defaults
+// to 2h while other sessions default to 1h) but is freely editable. When at
+// least one sub-part is ticked, the whole-event duration field is hidden —
+// the per-part entries are the duration record instead, summed on save.
+function renderSessionDurations(event, sessions) {
+  const durationsList = document.getElementById("session-durations-list");
+  const ticked = sessions.filter(s => selectedSessions.includes(s.id));
+
+  setWholeEventDurationVisible(ticked.length === 0);
+
+  if (!ticked.length) {
+    durationsList.innerHTML = "";
+    return;
+  }
+
+  durationsList.innerHTML = ticked.map(s => {
+    const existing = selectedSessionDurations[s.id];
+    const mins = existing != null ? existing : defaultDurationMinutes(event, s.id);
+    if (selectedSessionDurations[s.id] == null) selectedSessionDurations[s.id] = mins;
+    const h = Math.floor(mins / 60);
+    const m = mins % 60;
+    return `
+      <div class="session-duration-row">
+        <div class="session-duration-label">${escapeHtml(s.label)}</div>
+        <div class="session-duration-inputs">
+          <div class="duration-field">
+            <input type="number" class="duration-number" min="0" max="99" data-session-duration-hours="${s.id}" value="${h || ''}" placeholder="0" />
+            <span class="duration-unit">h</span>
+          </div>
+          <div class="duration-field">
+            <input type="number" class="duration-number" min="0" max="59" data-session-duration-minutes="${s.id}" value="${m || ''}" placeholder="0" />
+            <span class="duration-unit">m</span>
+          </div>
+        </div>
+      </div>`;
+  }).join("");
+
+  durationsList.querySelectorAll("[data-session-duration-hours], [data-session-duration-minutes]").forEach(input => {
+    input.addEventListener("input", () => {
+      const sid = input.getAttribute("data-session-duration-hours") || input.getAttribute("data-session-duration-minutes");
+      const hInput = durationsList.querySelector(`[data-session-duration-hours="${sid}"]`);
+      const mInput = durationsList.querySelector(`[data-session-duration-minutes="${sid}"]`);
+      const h = parseInt(hInput.value, 10) || 0;
+      const m = parseInt(mInput.value, 10) || 0;
+      selectedSessionDurations[sid] = (h * 60) + m;
+    });
+  });
+}
+
+function setWholeEventDurationVisible(visible) {
+  document.getElementById("whole-event-duration-group").style.display = visible ? "block" : "none";
+}
+
+function updateSegmented(groupId, val) {
+  document.querySelectorAll(`#${groupId} button`).forEach(b => {
+    b.classList.toggle("selected", b.getAttribute("data-val") === val);
+  });
+}
+function updateStars(rating) {
+  document.querySelectorAll("#rating-stars button").forEach(b => {
+    b.classList.toggle("selected", parseInt(b.getAttribute("data-val")) <= rating);
+  });
+}
+
+function closeModal() {
+  document.getElementById("modal-backdrop").classList.remove("open");
+  STATE.currentEventId = null;
+}
+
+async function saveViewing() {
+  const eventId = STATE.currentEventId;
+  if (!eventId) return;
+
+  const event = STATE.eventsById[eventId];
+  // Watched-on date/time is silently the event's own scheduled date/time —
+  // this records live viewing, so there's no separate "when did you watch
+  // it" to ask; the match's own date is that date.
+  const watchedAt = event ? event.date : new Date().toISOString();
+
+  const hasTickedSessions = selectedSessions.length > 0;
+  const errorEl = document.getElementById("whole-event-duration-error");
+  errorEl.style.display = "none";
+
+  let durationMinutes;
+  let sessionDurations;
+
+  if (hasTickedSessions) {
+    // Sum of each ticked sub-part's duration. Partial coverage requires every
+    // ticked part to have an actual entered value (not just its default) —
+    // if any is blank/zero, block save rather than silently record 0 for a
+    // part the person explicitly said they only partially watched.
+    if (selectedCoverage === "partial") {
+      const missing = selectedSessions.some(id => !selectedSessionDurations[id]);
+      if (missing) {
+        errorEl.textContent = "Enter how long you watched for each ticked session/day — required for partial coverage.";
+        errorEl.style.display = "block";
+        return;
+      }
+    }
+    sessionDurations = { ...selectedSessionDurations };
+    durationMinutes = Object.values(sessionDurations).reduce((sum, m) => sum + (m || 0), 0);
+  } else {
+    const hoursVal = parseInt(document.getElementById("watched-hours").value, 10);
+    const minutesVal = parseInt(document.getElementById("watched-minutes").value, 10);
+    const hasEnteredValue = !isNaN(hoursVal) || !isNaN(minutesVal);
+    const hours = isNaN(hoursVal) ? 0 : Math.max(0, hoursVal);
+    const minutes = isNaN(minutesVal) ? 0 : Math.max(0, Math.min(59, minutesVal));
+    const entered = (hours * 60) + minutes;
+
+    if (selectedCoverage === "partial" && !hasEnteredValue) {
+      errorEl.style.display = "block";
+      return;
+    }
+
+    // Full coverage with nothing entered falls back to the sport's default
+    // duration; partial coverage always uses exactly what was entered.
+    durationMinutes = hasEnteredValue ? entered : (defaultDurationMinutes(event) || null);
+    sessionDurations = undefined;
+  }
+
+  const notes = document.getElementById("notes-input").value.trim();
+
+  const existing = STATE.viewingsByEventId[eventId]?.[0];
+  const record = {
+    id: existing ? existing.id : `watch_${Date.now()}_${Math.random().toString(36).slice(2,7)}`,
+    eventId,
+    watchedAt,
+    durationMinutes: durationMinutes || null,
+    sessionDurations,
+    coverage: selectedCoverage,
+    rating: selectedRating || null,
+    notes: notes || "",
+    sessionsWatched: selectedSessions.length ? [...selectedSessions] : undefined,
+    createdAt: existing ? existing.createdAt : new Date().toISOString(),
+  };
+
+  await db.viewings.put(record);
+  STATE.viewingsByEventId[eventId] = [record];
+
+  showToast(existing ? "Viewing updated" : "Marked as watched");
+  resetViewingForm(record, STATE.eventsById[eventId]);
+  renderHistory();
+  refreshCurrentListViews();
+}
+
+async function removeViewing() {
+  const eventId = STATE.currentEventId;
+  if (!eventId) return;
+  const existing = STATE.viewingsByEventId[eventId]?.[0];
+  if (!existing) return;
+
+  await db.viewings.delete(existing.id);
+  delete STATE.viewingsByEventId[eventId];
+
+  showToast("Removed from history");
+  resetViewingForm(null, STATE.eventsById[eventId]);
+  renderHistory();
+  refreshCurrentListViews();
+}
+
+function refreshCurrentListViews() {
+  // Re-render whichever list is currently visible so watched badges/status
+  // dots update live after marking something watched or removing a viewing —
+  // covers the search results list, the Today quick-select (which has no
+  // query typed, so isn't caught by the searchQuery branch below), and an
+  // open entity/team/player page.
+  const searchQuery = document.getElementById("search-input").value;
+  if (searchQuery) {
+    renderSearchResults(searchQuery);
+  } else if (STATE.searchMode === "search") {
+    renderSearchEmpty();
+  }
+  if (STATE.currentEntity) {
+    setEntityView(STATE.currentEntityView);
+  }
+}
+
+// ---------- HISTORY ----------
+function renderHistory() {
+  const allViewings = Object.values(STATE.viewingsByEventId).flat()
+    .sort((a, b) => new Date(b.watchedAt) - new Date(a.watchedAt));
+
+  // Synthetic "estimated" contributions from Tournament Archive records: evenly
+  // spaced pseudo-viewings across each tournament's real date span, standing in
+  // for the matches the person watched but didn't pick individually. These only
+  // ever feed the streak/timeline and the sport/total counts — never most-watched
+  // (no event participants to credit) and never a specific-event list (they
+  // aren't real events, so there's nothing to open or link to).
+  const estimatedViewings = buildEstimatedTournamentViewings();
+  const combinedForCounts = allViewings.concat(estimatedViewings);
+
+  // ---- top stat row (includes estimated tournament matches) ----
+  const sportsWatched = new Set();
+  const compsWatched = new Set();
+  let totalMinutes = 0;
+  combinedForCounts.forEach(v => {
+    const sportId = v.sportId || STATE.eventsById[v.eventId]?.sportId;
+    const compId = v.competitionId || STATE.eventsById[v.eventId]?.competitionId;
+    if (sportId) sportsWatched.add(sportId);
+    if (compId) compsWatched.add(compId);
+    totalMinutes += v.durationMinutes || 0;
+  });
+  const timeLabel = totalMinutes ? formatDuration(totalMinutes) : "—";
+  document.getElementById("history-stats").innerHTML = `
+    <div class="stat-card"><div class="num">${combinedForCounts.length}</div><div class="lbl">Watched</div></div>
+    <div class="stat-card"><div class="num num-text">${timeLabel}</div><div class="lbl">Time Watched</div></div>
+    <div class="stat-card"><div class="num">${sportsWatched.size}</div><div class="lbl">Sports</div></div>
+    <div class="stat-card"><div class="num">${compsWatched.size}</div><div class="lbl">Competitions</div></div>
+  `;
+
+  renderMonthGrid(combinedForCounts);
+  renderSportBreakdown(combinedForCounts, undefined, 3);
+  renderMostWatched(allViewings, undefined, 3); // real viewings only — memorable matches already included via STATE.viewingsByEventId
+}
+
+// Builds evenly-spaced synthetic viewing-like records for the "estimated" portion
+// of each Tournament Archive record (estimatedEventsWatched minus however many
+// memorable events were individually ticked, so the two never double-count).
+function buildEstimatedTournamentViewings() {
+  const results = [];
+  Object.values(STATE.tournamentWatchesBySeasonId).forEach(watch => {
+    const estimated = watch.estimatedEventsWatched || 0;
+    const memorableCount = (watch.memorableEventIds || []).length;
+    const extraCount = Math.max(0, estimated - memorableCount);
+    if (extraCount === 0) return;
+
+    const season = STATE.seasonsById[watch.seasonId];
+    if (!season) return;
+    const comp = STATE.competitionsById[season.competitionId];
+    if (!comp) return;
+
+    const seasonEvents = Object.values(STATE.eventsById).filter(e => e.seasonId === watch.seasonId);
+    if (!seasonEvents.length) return;
+    const dates = seasonEvents.map(e => new Date(e.date).getTime());
+    const spanStart = Math.min(...dates);
+    const spanEnd = Math.max(...dates);
+
+    for (let i = 0; i < extraCount; i++) {
+      // Evenly spaced across the tournament's real date span. With extraCount=1,
+      // lands at the midpoint; otherwise spread from start to end inclusive.
+      const t = extraCount === 1 ? 0.5 : i / (extraCount - 1);
+      const timestamp = spanStart + t * (spanEnd - spanStart);
+      results.push({
+        id: `estimated_${watch.id}_${i}`,
+        watchedAt: new Date(timestamp).toISOString(),
+        sportId: comp.sportId,
+        competitionId: comp.id,
+        synthetic: true,
+      });
+    }
+  });
+  return results;
+}
+
+// ---- Activity / streak grid (last ~12 weeks, GitHub-contribution style) ----
+function renderMonthGrid(allViewings) {
+  const wrap = document.getElementById("month-grid");
+  const section = document.getElementById("dash-activity-section");
+
+  if (!allViewings.length) {
+    wrap.innerHTML = "";
+    section.style.display = "none";
+    return;
+  }
+  section.style.display = "block";
+
+  // Count watched events per calendar month (YYYY-MM key)
+  const monthCounts = {};
+  allViewings.forEach(v => {
+    const d = new Date(v.watchedAt);
+    const key = `${d.getFullYear()}-${String(d.getMonth() + 1).padStart(2, "0")}`;
+    monthCounts[key] = (monthCounts[key] || 0) + 1;
+  });
+
+  // Last 12 calendar months ending with the current month (e.g. run in Aug 2026
+  // -> Sep 2025 through Aug 2026), oldest to newest, left to right.
+  const now = new Date();
+  const months = [];
+  for (let i = 11; i >= 0; i--) {
+    const d = new Date(now.getFullYear(), now.getMonth() - i, 1);
+    months.push(d);
+  }
+
+  const MONTH_SHORT_NAMES = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
+  const max = Math.max(...months.map(d => {
+    const key = `${d.getFullYear()}-${String(d.getMonth() + 1).padStart(2, "0")}`;
+    return monthCounts[key] || 0;
+  }), 1);
+
+  let html = "";
+  months.forEach((d, i) => {
+    const key = `${d.getFullYear()}-${String(d.getMonth() + 1).padStart(2, "0")}`;
+    const count = monthCounts[key] || 0;
+    let level = 0;
+    if (count > 0) {
+      const ratio = count / max;
+      if (ratio >= 0.66) level = 3; else if (ratio >= 0.33) level = 2; else level = 1;
+    }
+    const monthShort = MONTH_SHORT_NAMES[d.getMonth()];
+
+    // Soft year boundary: whenever a cell's month is January (and it isn't the
+    // very first cell in the strip), mark it as a year boundary and label the
+    // new year — derived from the actual date, never hardcoded.
+    const isYearBoundary = i > 0 && d.getMonth() === 0;
+    const yearLabel = isYearBoundary ? `<span class="month-year-label">${d.getFullYear()}</span>` : "";
+
+    html += `
+      <div class="month-cell-wrap ${isYearBoundary ? 'year-boundary' : ''}">
+        ${yearLabel}
+        <div class="month-cell ${level ? 'level-' + level : ''}" title="${monthShort} ${d.getFullYear()}: ${count} watched"></div>
+        <div class="month-cell-label">${monthShort}</div>
+      </div>`;
+  });
+
+  wrap.innerHTML = html;
+}
+
+// ---- Sport breakdown bars ----
+// limit caps how many rows render (dashboard preview = 3, full page = no cap).
+function renderSportBreakdown(allViewings, targetElId, limit) {
+  const el = document.getElementById(targetElId || "sport-breakdown");
+  const section = document.getElementById("dash-sportmix-section");
+  if (targetElId === undefined && !allViewings.length) { section.style.display = "none"; return; }
+  if (targetElId === undefined) section.style.display = "block";
+
+  const counts = {};
+  allViewings.forEach(v => {
+    const sportId = v.sportId || STATE.eventsById[v.eventId]?.sportId;
+    if (sportId) counts[sportId] = (counts[sportId] || 0) + 1;
+  });
+  const max = Math.max(...Object.values(counts), 1);
+  let sportOrder = Object.keys(counts).sort((a, b) => counts[b] - counts[a]);
+  if (limit) sportOrder = sportOrder.slice(0, limit);
+
+  if (!sportOrder.length) {
+    el.innerHTML = `<div class="dash-empty-inline">No sports tracked yet.</div>`;
+    return;
+  }
+
+  el.innerHTML = sportOrder.map(sportId => {
+    const sport = STATE.sportsById[sportId];
+    const count = counts[sportId];
+    const pct = Math.round((count / max) * 100);
+    const colorVar = SPORT_COLORS[sportId] || "var(--brass)";
+    return `
+      <button class="sport-bar-row" data-sport-id="${sportId}">
+        <div class="sport-bar-icon">${SPORT_ICONS[sportId] || "🏅"}</div>
+        <div class="sport-bar-name">${escapeHtml(sport?.name || sportId)}</div>
+        <div class="sport-bar-track"><div class="sport-bar-fill" style="width:${pct}%; background:${colorVar}"></div></div>
+        <div class="sport-bar-count">${count}</div>
+      </button>`;
+  }).join("");
+
+  el.querySelectorAll("[data-sport-id]").forEach(row => {
+    row.addEventListener("click", () => openSportWatchedHistory(row.getAttribute("data-sport-id")));
+  });
+}
+
+function openSportBreakdownFull() {
+  const allViewings = Object.values(STATE.viewingsByEventId).flat().concat(buildEstimatedTournamentViewings());
+  renderSportBreakdown(allViewings, "sport-breakdown-full-list", null);
+  switchScreen("sport-breakdown-full");
+}
+
+// ---- Most watched teams/players ----
+// limit caps how many rows render (dashboard preview = 3, full page = no cap).
+function renderMostWatched(allViewings, targetElId, limit) {
+  const el = document.getElementById(targetElId || "most-watched-list");
+  const section = document.getElementById("dash-mostwatched-section");
+  if (targetElId === undefined && !allViewings.length) { section.style.display = "none"; return; }
+  if (targetElId === undefined) section.style.display = "block";
+
+  const counts = {}; // participantId -> count
+  allViewings.forEach(v => {
+    const ev = STATE.eventsById[v.eventId];
+    if (!ev) return;
+    ev.participants.forEach(pid => { counts[pid] = (counts[pid] || 0) + 1; });
+  });
+
+  let ranked = Object.entries(counts).sort((a, b) => b[1] - a[1]);
+  if (limit) ranked = ranked.slice(0, limit);
+
+  if (!ranked.length) {
+    el.innerHTML = `<div class="dash-empty-inline">No teams or players tracked yet.</div>`;
+    return;
+  }
+
+  el.innerHTML = ranked.map(([id, count], i) => {
+    const team = STATE.teamsById[id];
+    const player = STATE.playersById[id];
+    const name = team?.name || player?.name || "?";
+    const sportId = team?.sportId || player?.sportId;
+    const icon = SPORT_ICONS[sportId] || "🏅";
+    const entityType = team ? "team" : "player";
+    return `
+      <button class="mostwatched-row" data-entity-type="${entityType}" data-entity-id="${id}">
+        <div class="mostwatched-rank">${i + 1}</div>
+        <div class="mostwatched-icon">${icon}</div>
+        <div class="mostwatched-name">${escapeHtml(name)}</div>
+        <div class="mostwatched-count">${count}×</div>
+      </button>`;
+  }).join("");
+
+  el.querySelectorAll("[data-entity-id]").forEach(row => {
+    // Opens the same entity screen reachable from Search, pre-set to the
+    // "Watched" tab — the person can toggle to "Fixtures" from there.
+    row.addEventListener("click", () => openEntityDetail(
+      row.getAttribute("data-entity-type"),
+      row.getAttribute("data-entity-id"),
+      "watched"
+    ));
+  });
+}
+
+function openMostWatchedFull() {
+  const allViewings = Object.values(STATE.viewingsByEventId).flat();
+  renderMostWatched(allViewings, "mostwatched-full-list", null);
+  switchScreen("mostwatched-full");
+}
+
+// Sport bars drill into a simple watched-only list (there's no single
+// "entity" representing a whole sport, so this doesn't merge into the
+// Fixtures/Watched toggle the way team/player/competition pages do).
+function openSportWatchedHistory(sportId) {
+  const sport = STATE.sportsById[sportId];
+  const allViewings = Object.values(STATE.viewingsByEventId).flat()
+    .filter(v => STATE.eventsById[v.eventId]?.sportId === sportId)
+    .sort((a, b) => new Date(b.watchedAt) - new Date(a.watchedAt));
+
+  document.getElementById("watched-history-name").textContent = sport?.name || sportId;
+  document.getElementById("watched-history-sub").textContent = `${allViewings.length} watched`;
+  renderWatchedSummaryStats("sport-watched-stats", allViewings);
+  renderWatchedHistoryList(allViewings);
+  switchScreen("watched-history");
+}
+
+function renderWatchedHistoryList(viewings) {
+  const listEl = document.getElementById("watched-history-list");
+  if (!viewings.length) {
+    listEl.innerHTML = `
+      <div class="empty-state">
+        <div class="glyph">📭</div>
+        <p>Nothing watched here yet.</p>
+      </div>`;
+    return;
+  }
+
+  listEl.innerHTML = viewings.map(v => {
+    const ev = STATE.eventsById[v.eventId];
+    if (!ev) return "";
+    const comp = STATE.competitionsById[ev.competitionId];
+    const d = new Date(v.watchedAt);
+    const dateStr = d.toLocaleDateString("en-GB", { day: "numeric", month: "short", year: "numeric" });
+    const durationStr = formatDuration(v.durationMinutes);
+    const coverageLabel = v.coverage === "full" ? "Full" : "Partial";
+    const stars = v.rating ? "★".repeat(v.rating) + "☆".repeat(5 - v.rating) : "";
+    return `
+      <button class="history-item" data-event-id="${ev.id}" style="width:100%; border:none; background:none; cursor:pointer; padding-left:20px; padding-right:20px;">
+        <div class="history-stamp-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="var(--stamp-red)" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+        </div>
+        <div class="history-content">
+          <div class="history-title">${escapeHtml(ev.title)}</div>
+          <div class="history-sub">${escapeHtml(comp?.shortName || '')} · ${dateStr}${durationStr ? ' · ' + durationStr + ' watched' : ''} · ${coverageLabel}</div>
+          ${sessionsSummaryHtml(v, ev)}
+          ${stars ? `<div class="history-rating">${stars}</div>` : ''}
+        </div>
+      </button>`;
+  }).join("");
+
+  listEl.querySelectorAll("[data-event-id]").forEach(row => {
+    row.addEventListener("click", () => openEventModal(row.getAttribute("data-event-id")));
+  });
+}
+
+// ---------- TOAST ----------
+let toastTimer = null;
+function showToast(msg) {
+  const el = document.getElementById("toast");
+  el.textContent = msg;
+  el.classList.add("show");
+  clearTimeout(toastTimer);
+  toastTimer = setTimeout(() => el.classList.remove("show"), 2200);
+}
+
+// ---------- TAB / SCREEN NAV ----------
+// A simple back-stack of screen names, so every "back" button returns to
+// wherever the person actually came from (search results, dashboard,
+// another entity page, etc.) rather than a single hardcoded destination.
+// Tab-bar taps reset the stack, since switching tabs is a fresh start, not
+// a "back" action.
+let screenHistory = [];
+
+function switchScreen(name, opts) {
+  const push = opts?.push !== false; // default true
+  const current = document.querySelector(".screen.active")?.id?.replace(/^screen-/, "");
+  if (push && current && current !== name) {
+    screenHistory.push(current);
+  }
+  document.querySelectorAll(".screen").forEach(s => s.classList.remove("active"));
+  document.getElementById(`screen-${name}`).classList.add("active");
+}
+
+function goBackScreen(fallback) {
+  const previous = screenHistory.pop();
+  switchScreen(previous || fallback, { push: false });
+}
+
+// After a back-navigation lands on a screen, highlight whichever tab that
+// screen conceptually belongs under (search/entity/tournament screens live
+// under the Search tab; dashboard and its drill-downs live under Dashboard).
+function syncTabHighlightToScreen() {
+  const current = document.querySelector(".screen.active")?.id?.replace(/^screen-/, "");
+  const searchGroup = new Set(["search", "entity", "tournament", "add-event"]);
+  const dashboardGroup = new Set(["dashboard", "watched-history", "sport-breakdown-full", "mostwatched-full", "pending-events"]);
+  let tabName = null;
+  if (searchGroup.has(current)) tabName = "search";
+  else if (dashboardGroup.has(current)) tabName = "dashboard";
+  if (!tabName) return;
+  document.querySelectorAll(".tab").forEach(t => t.classList.toggle("active", t.getAttribute("data-tab") === tabName));
+}
+
+// ---------- BIND UI ----------
+function bindGlobalUI() {
+  const searchInput = document.getElementById("search-input");
+  const clearBtn = document.getElementById("search-clear");
+
+  searchInput.addEventListener("input", () => {
+    const q = searchInput.value;
+    clearBtn.style.display = q ? "block" : "none";
+    if (q.trim()) renderSearchResults(q); else renderSearchEmpty();
+  });
+  clearBtn.addEventListener("click", () => {
+    searchInput.value = "";
+    clearBtn.style.display = "none";
+    renderSearchEmpty();
+    searchInput.focus();
+  });
+
+  document.querySelectorAll(".mode-toggle-btn").forEach(btn => {
+    btn.addEventListener("click", () => setSearchMode(btn.getAttribute("data-mode")));
+  });
+
+  const archiveSearchInput = document.getElementById("archive-search-input");
+  const archiveClearBtn = document.getElementById("archive-search-clear");
+  archiveSearchInput.addEventListener("input", () => {
+    const q = archiveSearchInput.value;
+    archiveClearBtn.style.display = q ? "block" : "none";
+    if (q.trim()) renderArchiveResults(q); else renderArchiveEmpty();
+  });
+  archiveClearBtn.addEventListener("click", () => {
+    archiveSearchInput.value = "";
+    archiveClearBtn.style.display = "none";
+    renderArchiveEmpty();
+    archiveSearchInput.focus();
+  });
+
+  document.getElementById("tournament-back").addEventListener("click", () => {
+    STATE.currentTournamentSeasonId = null;
+    goBackScreen("search");
+    syncTabHighlightToScreen();
+  });
+
+  document.querySelectorAll("#entity-view-toggle .mode-toggle-btn").forEach(btn => {
+    btn.addEventListener("click", () => setEntityView(btn.getAttribute("data-entity-view")));
+  });
+
+  document.getElementById("entity-back").addEventListener("click", () => {
+    STATE.currentEntity = null;
+    goBackScreen("search");
+    syncTabHighlightToScreen();
+  });
+
+  document.getElementById("watched-history-back").addEventListener("click", () => {
+    goBackScreen("dashboard");
+    syncTabHighlightToScreen();
+  });
+
+  document.getElementById("sport-breakdown-see-all").addEventListener("click", openSportBreakdownFull);
+  document.getElementById("sport-breakdown-full-back").addEventListener("click", () => {
+    goBackScreen("dashboard");
+    syncTabHighlightToScreen();
+  });
+
+  document.getElementById("most-watched-see-all").addEventListener("click", openMostWatchedFull);
+  document.getElementById("mostwatched-full-back").addEventListener("click", () => {
+    goBackScreen("dashboard");
+    syncTabHighlightToScreen();
+  });
+
+  document.querySelectorAll(".tab").forEach(tab => {
+    tab.addEventListener("click", () => {
+      const name = tab.getAttribute("data-tab");
+      screenHistory = []; // switching tabs is a fresh start, not a "back" step
+      if (name === "search") {
+        STATE.currentEntity = null;
+        STATE.currentTournamentSeasonId = null;
+        switchScreen("search", { push: false });
+      } else {
+        switchScreen(name, { push: false });
+        if (name === "dashboard") renderHistory();
+      }
+      document.querySelectorAll(".tab").forEach(t => t.classList.toggle("active", t === tab));
+    });
+  });
+
+  document.getElementById("modal-close").addEventListener("click", closeModal);
+  document.getElementById("modal-backdrop").addEventListener("click", (e) => {
+    if (e.target.id === "modal-backdrop") closeModal();
+  });
+
+  document.getElementById("mark-watched-btn").addEventListener("click", () => {
+    const form = document.getElementById("viewing-form");
+    const isOpen = form.style.display === "block";
+    if (!isOpen) {
+      form.style.display = "block";
+      form.scrollIntoView({ behavior: "smooth", block: "nearest" });
+    } else if (!STATE.viewingsByEventId[STATE.currentEventId]) {
+      // First-time quick mark: save immediately with current defaults, form stays open for edits
+      saveViewing();
+    }
+  });
+
+
+  document.querySelectorAll("#coverage-segmented button").forEach(b => {
+    b.addEventListener("click", () => {
+      selectedCoverage = b.getAttribute("data-val");
+      updateSegmented("coverage-segmented", selectedCoverage);
+      document.getElementById("whole-event-duration-error").style.display = "none";
+    });
+  });
+  document.querySelectorAll("#rating-stars button").forEach(b => {
+    b.addEventListener("click", () => {
+      const val = parseInt(b.getAttribute("data-val"));
+      selectedRating = (selectedRating === val) ? 0 : val; // tap same star to clear
+      updateStars(selectedRating);
+    });
+  });
+
+  document.getElementById("save-viewing-btn").addEventListener("click", saveViewing);
+  document.getElementById("remove-viewing-btn").addEventListener("click", removeViewing);
+
+  document.getElementById("add-event-open-btn").addEventListener("click", () => openAddEventForm());
+  document.getElementById("add-event-delete-btn").addEventListener("click", deletePendingEvent);
+  document.getElementById("add-event-back").addEventListener("click", () => {
+    goBackScreen("search");
+    syncTabHighlightToScreen();
+  });
+  document.getElementById("add-event-save-btn").addEventListener("click", saveAddEvent);
+  document.querySelectorAll("#add-event-coverage-segmented button").forEach(b => {
+    b.addEventListener("click", () => {
+      addEventSelectedCoverage = b.getAttribute("data-val");
+      updateSegmented("add-event-coverage-segmented", addEventSelectedCoverage);
+      document.getElementById("add-event-duration-error").style.display = "none";
+    });
+  });
+  document.querySelectorAll("#add-event-rating-stars button").forEach(b => {
+    b.addEventListener("click", () => {
+      const val = parseInt(b.getAttribute("data-val"));
+      addEventSelectedRating = (addEventSelectedRating === val) ? 0 : val;
+      renderAddEventStars();
+    });
+  });
+
+  document.getElementById("pending-events-open-btn").addEventListener("click", openPendingEventsList);
+  document.getElementById("pending-events-back").addEventListener("click", () => {
+    goBackScreen("dashboard");
+    syncTabHighlightToScreen();
+  });
+  document.getElementById("copy-pending-events-btn").addEventListener("click", copyPendingEventsForReview);
+}
+
+init();
+
+</script>
+</body>
+</html>
