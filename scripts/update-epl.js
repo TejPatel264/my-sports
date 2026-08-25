@@ -130,12 +130,18 @@ function loadExistingEvents() {
 }
 
 function nextEventId(existingEvents) {
+  // "evt_epl_NNN" namespace, distinct from the inline seed data's "evt_NNN"
+  // counter (F1/darts/cricket etc, still defined in index.html) so IDs can
+  // never collide across the two sources when the app merges them at
+  // runtime. This was the cause of a real bug once already - IndexedDB
+  // enforces primary-key uniqueness, so any collision here silently breaks
+  // the entire seeding step and the app never finishes loading.
   let max = 0;
   existingEvents.forEach(e => {
-    const m = /^evt_(\d+)$/.exec(e.id);
+    const m = /^evt_epl_(\d+)$/.exec(e.id);
     if (m) max = Math.max(max, parseInt(m[1], 10));
   });
-  return () => `evt_${String(++max).padStart(3, "0")}`;
+  return () => `evt_epl_${String(++max).padStart(3, "0")}`;
 }
 
 function reconcile(existingEvents, fdMatches) {
