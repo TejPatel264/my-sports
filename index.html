@@ -1249,6 +1249,7 @@ const SEED_SPORTS = [
 
 const SEED_COMPETITIONS = [
   { id: "epl", sportId: "football", name: "Premier League", shortName: "EPL" },
+  { id: "championship", sportId: "football", name: "EFL Championship", shortName: "Championship" },
   { id: "f1champ", sportId: "f1", name: "FIA Formula One World Championship", shortName: "F1" },
   { id: "pdc_wc", sportId: "darts", name: "PDC World Darts Championship", shortName: "World Championship" },
   { id: "pdc_matchplay", sportId: "darts", name: "Betfred World Matchplay", shortName: "World Matchplay" },
@@ -1265,6 +1266,7 @@ const SEED_COMPETITIONS = [
 const SEED_SEASONS = [
   { id: "epl_2025_26", competitionId: "epl", label: "2025/26" },
   { id: "epl_2026_27", competitionId: "epl", label: "2026/27" },
+  { id: "championship_2026_27", competitionId: "championship", label: "2026/27" },
   { id: "f1_2026", competitionId: "f1champ", label: "2026" },
   { id: "pdc_2025_26", competitionId: "pdc_wc", label: "2025/26" },
   { id: "pdc_2026_27", competitionId: "pdc_wc", label: "2026/27" },
@@ -1299,7 +1301,19 @@ const PL_TEAMS = [
   "Coventry City", "Ipswich Town",
 ];
 
-const SEED_TEAMS = PL_TEAMS.map((name) => ({
+// EFL Championship 2026/27, confirmed 24-team roster (Yahoo Sports/AOL/FollowAway
+// fixture-list pages, cross-checked against each other; sourced 24 Aug 2026).
+// No name overlap with PL_TEAMS above, so both merge safely into one team list.
+const CHAMPIONSHIP_TEAMS = [
+  "Birmingham City", "Blackburn Rovers", "Bolton Wanderers", "Bristol City",
+  "Burnley", "Cardiff City", "Charlton Athletic", "Derby County",
+  "Lincoln City", "Middlesbrough", "Millwall", "Norwich City",
+  "Portsmouth", "Preston North End", "Queens Park Rangers", "Sheffield United",
+  "Southampton", "Stoke City", "Swansea City", "Watford",
+  "West Bromwich Albion", "West Ham United", "Wolverhampton Wanderers", "Wrexham",
+];
+
+const SEED_TEAMS = [...PL_TEAMS, ...CHAMPIONSHIP_TEAMS].map((name) => ({
   id: `team_${slug(name)}`,
   sportId: "football",
   name,
@@ -2165,38 +2179,40 @@ function normalizeSeedEvents(events) {
   return events;
 }
 
-// EPL event data now lives in data/epl-events.json rather than inline here —
-// this is the file a scheduled script (see scripts/update-epl.js) fetches
-// real fixture data and updates. Fetched here at load time and merged in
-// alongside the events still defined inline for other sports. If the fetch
-// fails (e.g. opening index.html directly from disk, where relative fetch
-// can be blocked by the browser's file:// origin restrictions), the app
-// still works — it just falls back to whatever EPL data was last inlined
-// before the JSON split, which for a fresh checkout is nothing, so EPL
-// would show no events until served over http(s). This is expected for a
-// GitHub Pages–hosted app and is noted in the README.
-async function loadExternalEplEvents() {
+// EPL and Championship event data live in data/*.json rather than inline
+// here — these are the files scheduled scripts (see scripts/update-epl.js,
+// and its Championship counterpart) fetch real fixture data into. Fetched
+// here at load time and merged in alongside the events still defined inline
+// for other sports. If a fetch fails (e.g. opening index.html directly from
+// disk, where relative fetch is blocked by file:// origin restrictions),
+// the app still works — that competition just shows no events until served
+// over http(s). This is expected for a GitHub Pages–hosted app and is noted
+// in the README.
+async function loadExternalEventsFile(path, label) {
   try {
-    const res = await fetch("data/epl-events.json");
-    if (!res.ok) throw new Error(`EPL events fetch failed: ${res.status}`);
+    const res = await fetch(path);
+    if (!res.ok) throw new Error(`${label} events fetch failed: ${res.status}`);
     const events = await res.json();
-    if (!Array.isArray(events)) throw new Error("EPL events JSON was not an array");
+    if (!Array.isArray(events)) throw new Error(`${label} events JSON was not an array`);
     return events;
   } catch (err) {
-    console.warn("[epl-events.json] could not load external EPL data:", err.message);
+    console.warn(`[${path}] could not load external ${label} data:`, err.message);
     return [];
   }
 }
 
 window.__SEED_READY__ = (async () => {
-  const eplEvents = await loadExternalEplEvents();
+  const [eplEvents, championshipEvents] = await Promise.all([
+    loadExternalEventsFile("data/epl-events.json", "EPL"),
+    loadExternalEventsFile("data/championship-events.json", "Championship"),
+  ]);
   window.__SEED__ = {
     SEED_SPORTS,
     SEED_COMPETITIONS: [...SEED_COMPETITIONS, ...ARCHIVE_COMPETITIONS],
     SEED_SEASONS: [...SEED_SEASONS, ...ARCHIVE_SEASONS],
     SEED_TEAMS: [...SEED_TEAMS, ...ARCHIVE_TEAMS],
     SEED_PLAYERS: [...SEED_PLAYERS, ...ARCHIVE_PLAYERS, ...F1_EXTRA_DRIVERS],
-    SEED_EVENTS: normalizeSeedEvents([...SEED_EVENTS, ...eplEvents, ...ARCHIVE_EVENTS]),
+    SEED_EVENTS: normalizeSeedEvents([...SEED_EVENTS, ...eplEvents, ...championshipEvents, ...ARCHIVE_EVENTS]),
   };
 })();
 
