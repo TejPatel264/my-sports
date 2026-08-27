@@ -1250,6 +1250,8 @@ const SEED_SPORTS = [
 const SEED_COMPETITIONS = [
   { id: "epl", sportId: "football", name: "Premier League", shortName: "EPL" },
   { id: "championship", sportId: "football", name: "EFL Championship", shortName: "Championship" },
+  { id: "carabao_cup", sportId: "football", name: "Carabao Cup", shortName: "Carabao Cup" },
+  { id: "champions_league", sportId: "football", name: "UEFA Champions League", shortName: "Champions League" },
   { id: "f1champ", sportId: "f1", name: "FIA Formula One World Championship", shortName: "F1" },
   { id: "pdc_wc", sportId: "darts", name: "PDC World Darts Championship", shortName: "World Championship" },
   { id: "pdc_matchplay", sportId: "darts", name: "Betfred World Matchplay", shortName: "World Matchplay" },
@@ -1267,6 +1269,8 @@ const SEED_SEASONS = [
   { id: "epl_2025_26", competitionId: "epl", label: "2025/26" },
   { id: "epl_2026_27", competitionId: "epl", label: "2026/27" },
   { id: "championship_2026_27", competitionId: "championship", label: "2026/27" },
+  { id: "carabao_cup_2026_27", competitionId: "carabao_cup", label: "2026/27" },
+  { id: "champions_league_2026_27", competitionId: "champions_league", label: "2026/27" },
   { id: "f1_2026", competitionId: "f1champ", label: "2026" },
   { id: "pdc_2025_26", competitionId: "pdc_wc", label: "2025/26" },
   { id: "pdc_2026_27", competitionId: "pdc_wc", label: "2026/27" },
@@ -1313,7 +1317,54 @@ const CHAMPIONSHIP_TEAMS = [
   "West Bromwich Albion", "West Ham United", "Wolverhampton Wanderers", "Wrexham",
 ];
 
-const SEED_TEAMS = [...PL_TEAMS, ...CHAMPIONSHIP_TEAMS].map((name) => ({
+// Clubs outside the PL/Championship that can still appear in Carabao Cup
+// fixtures (the Cup draws from all 92 EFL clubs; PL/Championship sides
+// just enter later, at Round 3). Kept separate from PL_TEAMS/CHAMPIONSHIP_TEAMS
+// since they're not relevant to the epl-events.json / championship-events.json
+// scrapers - only carabao-cup-events.json needs them. No name overlap with
+// the lists above.
+const CARABAO_CUP_OTHER_TEAMS = [
+  // Missing top-flight/Championship-adjacent names
+  "Leicester City", "Sheffield Wednesday", "Oxford United",
+  // League One
+  "Barnsley", "Blackpool", "Bradford City", "Cambridge United",
+  "Doncaster Rovers", "Exeter City", "Huddersfield Town", "Leyton Orient",
+  "Luton Town", "Mansfield Town", "Northampton Town", "Peterborough United",
+  "Plymouth Argyle", "Reading", "Rotherham United", "Stevenage",
+  "Wigan Athletic", "Wycombe Wanderers",
+  // League Two
+  "AFC Wimbledon", "Accrington Stanley", "Barnet", "Barrow",
+  "Bristol Rovers", "Bromley", "Cheltenham Town", "Chesterfield",
+  "Colchester United", "Crawley Town", "Crewe Alexandra", "Fleetwood Town",
+  "Gillingham", "Grimsby Town", "Harrogate Town", "Milton Keynes Dons",
+  "Newport County", "Notts County", "Salford City", "Swindon Town",
+  "Tranmere Rovers", "Walsall",
+];
+
+// Non-English clubs in the 2026/27 UEFA Champions League league phase (36
+// teams total; the other 5 - Arsenal, Aston Villa, Liverpool, Manchester
+// City, Manchester United - are already covered by PL_TEAMS above, so
+// aren't repeated here). Confirmed lineup as of the 27 Aug 2026 league
+// phase draw.
+const CHAMPIONS_LEAGUE_OTHER_TEAMS = [
+  "Real Madrid", "Barcelona", "Atletico Madrid", "Villarreal", "Real Betis",
+  "Bayern Munich", "Borussia Dortmund", "RB Leipzig", "Stuttgart",
+  "Inter Milan", "Napoli", "Roma", "Como",
+  "Paris Saint-Germain", "Lens", "Lille",
+  "Porto", "Sporting CP",
+  "PSV Eindhoven", "Feyenoord",
+  "Club Brugge",
+  "Galatasaray", "Fenerbahce",
+  "Shakhtar Donetsk",
+  "Slavia Prague",
+  "Slovan Bratislava",
+  "Bodo/Glimt", "Viking FK",
+  "LASK",
+  "AEK Athens",
+  "Sabah FK",
+];
+
+const SEED_TEAMS = [...PL_TEAMS, ...CHAMPIONSHIP_TEAMS, ...CARABAO_CUP_OTHER_TEAMS, ...CHAMPIONS_LEAGUE_OTHER_TEAMS].map((name) => ({
   id: `team_${slug(name)}`,
   sportId: "football",
   name,
@@ -2202,9 +2253,11 @@ async function loadExternalEventsFile(path, label) {
 }
 
 window.__SEED_READY__ = (async () => {
-  const [eplEvents, championshipEvents] = await Promise.all([
+  const [eplEvents, championshipEvents, carabaoCupEvents, championsLeagueEvents] = await Promise.all([
     loadExternalEventsFile("data/epl-events.json", "EPL"),
     loadExternalEventsFile("data/championship-events.json", "Championship"),
+    loadExternalEventsFile("data/carabao-cup-events.json", "Carabao Cup"),
+    loadExternalEventsFile("data/champions-league-events.json", "Champions League"),
   ]);
   window.__SEED__ = {
     SEED_SPORTS,
@@ -2212,7 +2265,7 @@ window.__SEED_READY__ = (async () => {
     SEED_SEASONS: [...SEED_SEASONS, ...ARCHIVE_SEASONS],
     SEED_TEAMS: [...SEED_TEAMS, ...ARCHIVE_TEAMS],
     SEED_PLAYERS: [...SEED_PLAYERS, ...ARCHIVE_PLAYERS, ...F1_EXTRA_DRIVERS],
-    SEED_EVENTS: normalizeSeedEvents([...SEED_EVENTS, ...eplEvents, ...championshipEvents, ...ARCHIVE_EVENTS]),
+    SEED_EVENTS: normalizeSeedEvents([...SEED_EVENTS, ...eplEvents, ...championshipEvents, ...carabaoCupEvents, ...championsLeagueEvents, ...ARCHIVE_EVENTS]),
   };
 })();
 

@@ -6,6 +6,9 @@
     "node": ">=18"
   },
   "scripts": {
-    "update-epl": "node update-epl.js"
+    "update-epl": "node update-epl.js",
+    "update-championship": "node update-championship.js",
+    "update-carabao-cup": "node update-carabao-cup.js",
+    "update-champions-league": "node update-champions-league.js"
   }
 }
