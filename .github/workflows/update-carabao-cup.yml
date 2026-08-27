@@ -4,7 +4,7 @@ on:
   schedule:
     # 04:00 UTC daily, same time as the football-data.org fixtures job
     # (update-fixtures.yml). Kept in its own workflow file because this
-    # one hits a different provider (api-football.com via RapidAPI) with
+    # one hits a different provider (api-football.com, direct API) with
     # its own key and its own rate limit, not because of any need to
     # stagger timing.
     - cron: "0 4 * * *"
@@ -27,7 +27,7 @@ jobs:
 
       - name: Update Carabao Cup fixtures
         env:
-          RAPIDAPI_KEY: ${{ secrets.RAPIDAPI_KEY }}
+          API_FOOTBALL_KEY: ${{ secrets.API_FOOTBALL_KEY }}
         run: node scripts/update-carabao-cup.js
 
       - name: Commit changes if any
