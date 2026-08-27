@@ -1,10 +1,12 @@
-name: Update football fixtures
+name: Update football fixtures (daily)
 
 on:
   schedule:
-    # Once a day, 06:00 UTC. Adjust as you like - GitHub Actions cron can
-    # run a little late during busy periods, that's normal and fine here.
-    - cron: "0 6 * * *"
+    # Once a day, 04:00 UTC. Champions League runs separately, once a week,
+    # at a different time (see update-champions-league.yml) - spacing these
+    # out is just being considerate of football-data.org's free-tier rate
+    # limit, even though two calls a few seconds apart is well within it.
+    - cron: "0 4 * * *"
   workflow_dispatch: {} # lets you trigger a run manually from the Actions tab
 
 permissions:

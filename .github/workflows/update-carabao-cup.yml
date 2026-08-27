@@ -1,0 +1,43 @@
+name: Update Carabao Cup fixtures (daily)
+
+on:
+  schedule:
+    # 04:00 UTC daily, same time as the football-data.org fixtures job
+    # (update-fixtures.yml). Kept in its own workflow file because this
+    # one hits a different provider (api-football.com via RapidAPI) with
+    # its own key and its own rate limit, not because of any need to
+    # stagger timing.
+    - cron: "0 4 * * *"
+  workflow_dispatch: {} # lets you trigger a run manually from the Actions tab
+
+permissions:
+  contents: write # needed to commit the updated data file back to the repo
+
+jobs:
+  update-carabao-cup:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Set up Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+
+      - name: Update Carabao Cup fixtures
+        env:
+          RAPIDAPI_KEY: ${{ secrets.RAPIDAPI_KEY }}
+        run: node scripts/update-carabao-cup.js
+
+      - name: Commit changes if any
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add data/carabao-cup-events.json
+          if git diff --cached --quiet; then
+            echo "No changes to commit."
+          else
+            git commit -m "Update Carabao Cup fixtures [automated]"
+            git push
+          fi
