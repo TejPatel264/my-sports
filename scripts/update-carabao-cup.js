@@ -14,7 +14,7 @@
  * rather than silently mis-filing, same pattern as the other scripts.
  *
  * Run locally:
- *   RAPIDAPI_KEY=xxxx node scripts/update-carabao-cup.js
+ *   API_FOOTBALL_KEY=xxxx node scripts/update-carabao-cup.js
  */
 
 const path = require("path");

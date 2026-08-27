@@ -78,20 +78,20 @@ Note: the Championship and Champions League team-name mappings were written from
 
 ### Carabao Cup (api-football.com)
 
-The Carabao Cup uses a different source, [api-football.com](https://www.api-football.com/) via RapidAPI, since it draws from all 92 Premier League + EFL clubs and needed a provider with reliable EFL Cup coverage. `scripts/update-football-competition-api-football.js` mirrors the football-data.org shared logic above (same fetch → match → add/update → write pattern, same external-ID-with-date/team fallback matching), just against a different API shape; `update-carabao-cup.js` is the thin config file for it, same role as `update-epl.js`/`update-championship.js`.
+The Carabao Cup uses a different source, [api-football.com](https://www.api-football.com/) (direct API, via [dashboard.api-football.com](https://dashboard.api-football.com/register) — **not** their separate RapidAPI marketplace listing, which uses a different host and a different key), since it draws from all 92 Premier League + EFL clubs and needed a provider with reliable EFL Cup coverage. `scripts/update-football-competition-api-football.js` mirrors the football-data.org shared logic above (same fetch → match → add/update → write pattern, same external-ID-with-date/team fallback matching), just against a different API shape; `update-carabao-cup.js` is the thin config file for it, same role as `update-epl.js`/`update-championship.js`.
 
 Because the Cup includes League One and League Two clubs (not just PL/Championship sides), `update-carabao-cup.js`'s `TEAM_NAME_TO_ID` mapping is wider than the other two scripts', and `index.html`'s `SEED_TEAMS` had to gain a `CARABAO_CUP_OTHER_TEAMS` list to match — otherwise early-round fixtures involving lower-league clubs get logged as `Unrecognized team name` and silently skipped rather than crashing the whole run.
 
 **Running it locally:**
 
-1. Get a free API key: [rapidapi.com/api-sports/api/api-football](https://rapidapi.com/api-sports/api/api-football) (free tier covers this use case; check current rate limits on RapidAPI before relying on it for anything time-sensitive).
+1. Get a free API key: [dashboard.api-football.com/register](https://dashboard.api-football.com/register). Sign up there directly — don't use a RapidAPI key here, it'll fail with a `404 API doesn't exists` error, since RapidAPI's gateway doesn't recognize a direct api-sports.io key (and vice versa).
 2. Run:
    ```
-   RAPIDAPI_KEY=your_key_here node scripts/update-carabao-cup.js
+   API_FOOTBALL_KEY=your_key_here node scripts/update-carabao-cup.js
    ```
 3. Check `git diff data/carabao-cup-events.json` to see what changed.
 
-**Running it on a schedule (already set up):** `.github/workflows/update-carabao-cup.yml` runs once a day (04:00 UTC) and commits any change to `data/carabao-cup-events.json` back to the repo. To enable it, go to **Settings → Secrets and variables → Actions** and add a repository secret named `RAPIDAPI_KEY` with your key. It's a separate workflow file from `update-fixtures.yml` because it hits a different provider with its own key and its own rate limit, not because of any need to stagger timing — both happen to run at 04:00 UTC.
+**Running it on a schedule (already set up):** `.github/workflows/update-carabao-cup.yml` runs once a day (04:00 UTC) and commits any change to `data/carabao-cup-events.json` back to the repo. To enable it, go to **Settings → Secrets and variables → Actions** and add a repository secret named `API_FOOTBALL_KEY` with your key. It's a separate workflow file from `update-fixtures.yml` because it hits a different provider with its own key and its own rate limit, not because of any need to stagger timing — both happen to run at 04:00 UTC.
 
 If a script logs `Unrecognized team name from api-football.com`, add the team to `TEAM_NAME_TO_ID` near the top of `update-carabao-cup.js` **and** to `CARABAO_CUP_OTHER_TEAMS` (or `PL_TEAMS`/`CHAMPIONSHIP_TEAMS` if it belongs there instead) inside `index.html`, same as the "Adding a new team" process above. Note: `TEAM_NAME_TO_ID` here was written from api-football.com's typical short-form naming convention (e.g. "Brighton", not "Brighton & Hove Albion FC") rather than verified against a live response, since no API key was available while building it — check exact names in any error message against a real API response and adjust as needed.
 

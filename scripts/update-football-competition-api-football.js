@@ -1,7 +1,12 @@
 /**
  * update-football-competition-api-football.js
  *
- * Shared logic for fetching competition data from api-football.com (via RapidAPI).
+ * Shared logic for fetching competition data from api-football.com's direct
+ * API (api-sports.io) - i.e. a key from signing up at api-football.com /
+ * dashboard.api-football.com directly, NOT a RapidAPI marketplace key.
+ * (api-football.com is also listed on RapidAPI as a separate product with
+ * its own key format and its own gateway host - the two aren't
+ * interchangeable, and mixing them up is what "API doesn't exists" means.)
  * Parallel to update-football-competition.js (which uses football-data.org).
  *
  * Each competition script (update-carabao-cup.js, etc.) supplies config
@@ -14,20 +19,19 @@
 const fs = require("fs");
 const path = require("path");
 
-const API_BASE = "https://api-football-v3.p.rapidapi.com";
+const API_BASE = "https://v3.football.api-sports.io";
 
 function formatResult(goals) {
   if (goals?.home == null || goals?.away == null) return null;
   return `${goals.home}-${goals.away}`;
 }
 
-async function fetchCompetitionFixtures(leagueId, season, apiKey, apiHost) {
+async function fetchCompetitionFixtures(leagueId, season, apiKey) {
   const res = await fetch(
     `${API_BASE}/fixtures?league=${leagueId}&season=${season}`,
     {
       headers: {
-        "X-RapidAPI-Key": apiKey,
-        "X-RapidAPI-Host": apiHost,
+        "x-apisports-key": apiKey,
       },
     }
   );
@@ -223,16 +227,15 @@ function reconcile(existingEvents, apiFixtures, config) {
 }
 
 async function runUpdate(config) {
-  const apiKey = process.env.RAPIDAPI_KEY;
+  const apiKey = process.env.API_FOOTBALL_KEY;
   if (!apiKey) {
-    console.error("Missing RAPIDAPI_KEY environment variable.");
+    console.error("Missing API_FOOTBALL_KEY environment variable.");
     console.error(
-      "Get a free key at https://rapidapi.com/api-sports/api/api-football and set it locally or as a GitHub Actions secret."
+      "Get a free key at https://dashboard.api-football.com/register and set it locally or as a GitHub Actions secret. " +
+      "(This must be a direct api-football.com key, not a RapidAPI key - the two use different hosts/auth and aren't interchangeable.)"
     );
     process.exit(1);
   }
-
-  const apiHost = "api-football-v3.p.rapidapi.com";
 
   console.log(
     `Fetching ${config.competitionId.toUpperCase()} fixtures from api-football.com (league ${config.leagueId}, season ${config.season})...`
@@ -240,8 +243,7 @@ async function runUpdate(config) {
   const apiFixtures = await fetchCompetitionFixtures(
     config.leagueId,
     config.season,
-    apiKey,
-    apiHost
+    apiKey
   );
   console.log(`  received ${apiFixtures.length} fixtures`);
 
