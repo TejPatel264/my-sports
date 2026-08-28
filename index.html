@@ -244,6 +244,7 @@ input, textarea { font-family: inherit; }
 .memorable-checkbox.checked svg { opacity: 1; }
 .memorable-event-title { font-size: 14.5px; font-weight: 500; }
 .memorable-event-meta { font-size: 11.5px; color: var(--parchment-faint); margin-top: 1px; }
+.memorable-event-result { font-size: 11.5px; font-weight: 600; color: var(--brass); margin-top: 2px; }
 
 .search-wrap {
   padding: 0 20px 14px;
@@ -427,6 +428,7 @@ input, textarea { font-family: inherit; }
 }
 .event-meta { font-size: 12.5px; color: var(--parchment-dim); padding-left: 16px; }
 .event-meta .comp { color: var(--parchment-faint); }
+.result-summary { font-size: 12.5px; font-weight: 600; color: var(--brass); padding-left: 16px; }
 
 .empty-state {
   text-align: center;
@@ -868,6 +870,7 @@ textarea.notes-input { resize: vertical; min-height: 70px; line-height: 1.4; }
 .history-sub { font-size: 12px; color: var(--parchment-faint); margin-top: 2px; }
 .history-rating { color: var(--brass-bright); font-size: 12px; margin-top: 3px; }
 .history-sessions { color: var(--brass-bright); font-size: 11.5px; margin-top: 3px; font-weight: 500; }
+.history-result { color: var(--brass); font-size: 12.5px; font-weight: 600; margin-top: 3px; }
 
 /* ============ TOAST ============ */
 .toast {
@@ -1365,6 +1368,15 @@ const CHAMPIONS_LEAGUE_OTHER_TEAMS = [
   "LASK",
   "AEK Athens",
   "Sabah FK",
+
+  // Confirmed via a live football-data.org response on 28 Aug 2026 (that
+  // response happened to be last season's - 2025/26 - field, since
+  // football-data.org hadn't published 2026/27 fixtures yet at that point).
+  // Kept here since these clubs recur often in UCL and having verified
+  // names/ids ready removes a future round-trip.
+  "Athletic Bilbao", "Union Saint-Gilloise", "Juventus", "Benfica",
+  "Marseille", "Olympiacos", "Ajax", "Atalanta", "Copenhagen", "Monaco",
+  "Eintracht Frankfurt", "Kairat", "Pafos", "Qarabag", "Bayer Leverkusen",
 ];
 
 const SEED_TEAMS = [...PL_TEAMS, ...CHAMPIONSHIP_TEAMS, ...CARABAO_CUP_OTHER_TEAMS, ...CHAMPIONS_LEAGUE_OTHER_TEAMS].map((name) => ({
@@ -2544,6 +2556,57 @@ function participantName(id) {
   return STATE.teamsById[id]?.name || STATE.playersById[id]?.name || null;
 }
 
+// Short, human-readable result/winner line for an event, e.g. "Arsenal won
+// 2-1", "Draw 1-1", "Littler won 18-9", "India won by 7 runs", "Verstappen
+// won". Returns "" for events with no result yet (upcoming fixtures) or a
+// sport this doesn't know how to summarise, so callers can omit it cleanly.
+// Centralised here so every list view (search, entity fixtures, watch
+// history) shows the same summary without duplicating per-sport parsing.
+function eventResultSummary(e) {
+  const sd = e.sportData;
+  if (!sd) return "";
+  const kind = sportDataKindFor(e);
+
+  if (kind === "football_match") {
+    if (!sd.result) return "";
+    const parts = sd.result.split("-");
+    if (parts.length !== 2) return sd.result; // not a plain "H-A" score - show as-is
+    const homeScore = Number(parts[0]);
+    const awayScore = Number(parts[1]);
+    if (Number.isNaN(homeScore) || Number.isNaN(awayScore)) return sd.result;
+    if (homeScore === awayScore) return `Draw ${sd.result}`;
+    const winnerName = participantName(homeScore > awayScore ? sd.homeTeam : sd.awayTeam);
+    return winnerName ? `${winnerName} won ${sd.result}` : sd.result;
+  }
+
+  if (kind === "darts_match") {
+    if (!sd.result) return "";
+    const parts = sd.result.split("-");
+    if (parts.length !== 2) return sd.result;
+    const p1Score = Number(parts[0]);
+    const p2Score = Number(parts[1]);
+    if (Number.isNaN(p1Score) || Number.isNaN(p2Score) || p1Score === p2Score) return sd.result;
+    // Score order follows participant order (participants[0] vs participants[1]),
+    // same convention the title ("A vs B") and result string are already built from.
+    const winnerName = participantName(p1Score > p2Score ? e.participants?.[0] : e.participants?.[1]);
+    return winnerName ? `${winnerName} won ${sd.result}` : sd.result;
+  }
+
+  if (kind === "cricket_test" || kind === "cricket_t20") {
+    // Already a full descriptive sentence in the source data
+    // ("India won by 7 runs" / "New Zealand won") - nothing to build.
+    return sd.result || "";
+  }
+
+  if (kind === "f1_race") {
+    if (!sd.winner) return "";
+    const winnerName = participantName(sd.winner);
+    return winnerName ? `${winnerName} won` : "";
+  }
+
+  return "";
+}
+
 function isWatched(eventId) {
   return !!(STATE.viewingsByEventId[eventId] && STATE.viewingsByEventId[eventId].length);
 }
@@ -2703,6 +2766,7 @@ function eventRowHtml(e) {
   const comp = STATE.competitionsById[e.competitionId];
   const dateStr = formatEventDate(e.date);
   const statusColor = watchStatusColor(e.id);
+  const resultSummary = eventResultSummary(e);
   return `
     <button class="event-row" data-event-id="${e.id}">
       <div class="event-row-top">
@@ -2711,6 +2775,7 @@ function eventRowHtml(e) {
         ${watched ? '<span class="watched-badge">Watched</span>' : ''}
       </div>
       <div class="event-meta"><span class="comp">${escapeHtml(comp?.shortName || '')}</span> · ${dateStr}</div>
+      ${resultSummary ? `<div class="result-summary">${escapeHtml(resultSummary)}</div>` : ''}
     </button>`;
 }
 
@@ -2957,6 +3022,7 @@ function memorableEventRowHtml(e, isChecked) {
   const dateStr = formatEventDate(e.date);
   let extra = "";
   if (e.sportData?.round != null) extra = e.sportId === "f1" ? `Round ${e.sportData.round}` : String(e.sportData.round);
+  const resultSummary = eventResultSummary(e);
   return `
     <button class="memorable-event-row" data-memorable-event-id="${e.id}">
       <div class="memorable-checkbox ${isChecked ? 'checked' : ''}">
@@ -2965,6 +3031,7 @@ function memorableEventRowHtml(e, isChecked) {
       <div>
         <div class="memorable-event-title">${escapeHtml(e.title)}</div>
         <div class="memorable-event-meta">${extra ? escapeHtml(extra) + ' · ' : ''}${dateStr}</div>
+        ${resultSummary ? `<div class="memorable-event-result">${escapeHtml(resultSummary)}</div>` : ''}
       </div>
     </button>`;
 }
@@ -3281,6 +3348,7 @@ function renderEntityWatched(viewings) {
     const durationStr = formatDuration(v.durationMinutes);
     const coverageLabel = v.coverage === "full" ? "Full" : "Partial";
     const stars = v.rating ? "★".repeat(v.rating) + "☆".repeat(5 - v.rating) : "";
+    const resultSummary = eventResultSummary(ev);
     return `
       <button class="history-item" data-event-id="${ev.id}" style="width:100%; border:none; background:none; cursor:pointer; padding-left:20px; padding-right:20px;">
         <div class="history-stamp-icon">
@@ -3289,6 +3357,7 @@ function renderEntityWatched(viewings) {
         <div class="history-content">
           <div class="history-title">${escapeHtml(ev.title)}</div>
           <div class="history-sub">${escapeHtml(comp?.shortName || '')} · ${dateStr}${durationStr ? ' · ' + durationStr + ' watched' : ''} · ${coverageLabel}</div>
+          ${resultSummary ? `<div class="history-result">${escapeHtml(resultSummary)}</div>` : ''}
           ${sessionsSummaryHtml(v, ev)}
           ${stars ? `<div class="history-rating">${stars}</div>` : ''}
         </div>
@@ -4166,6 +4235,7 @@ function renderWatchedHistoryList(viewings) {
     const durationStr = formatDuration(v.durationMinutes);
     const coverageLabel = v.coverage === "full" ? "Full" : "Partial";
     const stars = v.rating ? "★".repeat(v.rating) + "☆".repeat(5 - v.rating) : "";
+    const resultSummary = eventResultSummary(ev);
     return `
       <button class="history-item" data-event-id="${ev.id}" style="width:100%; border:none; background:none; cursor:pointer; padding-left:20px; padding-right:20px;">
         <div class="history-stamp-icon">
@@ -4174,6 +4244,7 @@ function renderWatchedHistoryList(viewings) {
         <div class="history-content">
           <div class="history-title">${escapeHtml(ev.title)}</div>
           <div class="history-sub">${escapeHtml(comp?.shortName || '')} · ${dateStr}${durationStr ? ' · ' + durationStr + ' watched' : ''} · ${coverageLabel}</div>
+          ${resultSummary ? `<div class="history-result">${escapeHtml(resultSummary)}</div>` : ''}
           ${sessionsSummaryHtml(v, ev)}
           ${stars ? `<div class="history-rating">${stars}</div>` : ''}
         </div>
