@@ -118,6 +118,18 @@ const TEAM_NAME_TO_ID = {
   "Swindon Town": "team_swindon_town",
   "Tranmere Rovers": "team_tranmere_rovers",
   "Walsall": "team_walsall",
+
+  // Missing from the original mapping - confirmed against actual 2026/27
+  // divisional lineups (promotions/relegations since this was first written
+  // moved several clubs around, and a few newly-promoted National League
+  // sides weren't in the original 92-club sweep at all).
+  "Burton Albion": "team_burton_albion",       // League One 2026/27
+  "Stockport County": "team_stockport_county", // League One 2026/27
+  "Oldham Athletic": "team_oldham_athletic",   // League Two 2026/27
+  "Shrewsbury Town": "team_shrewsbury_town",   // League Two 2026/27
+  "Port Vale": "team_port_vale",               // League Two 2026/27
+  "York City": "team_york_city",               // League Two 2026/27, promoted from the National League
+  "Rochdale": "team_rochdale",                 // League Two 2026/27, promoted from the National League
 };
 
 runUpdate({
