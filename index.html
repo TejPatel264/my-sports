@@ -882,7 +882,7 @@ textarea.notes-input { resize: vertical; min-height: 70px; line-height: 1.4; }
 .sport-bar-fill { height: 100%; border-radius: 5px; transition: width 0.4s ease; }
 .sport-bar-count {
   font-family: 'JetBrains Mono', monospace;
-  font-size: 12.5px; color: var(--parchment-dim); min-width: 28px; text-align: right; flex-shrink: 0; white-space: nowrap;
+  font-size: 12.5px; color: var(--parchment-dim); width: 50px; text-align: right; flex-shrink: 0; white-space: nowrap;
 }
 
 /* Most watched list (clickable — drills into watched history for that team/player) */
@@ -1015,10 +1015,6 @@ textarea.notes-input { resize: vertical; min-height: 70px; line-height: 1.4; }
         </div>
       </div>
     </div>
-    <div class="mode-toggle" id="sport-breakdown-mode-toggle" style="padding: 14px 20px 0;">
-      <button class="mode-toggle-btn active" data-mode="count">By count</button>
-      <button class="mode-toggle-btn" data-mode="time">By watch time</button>
-    </div>
     <div class="results-scroll" id="sport-breakdown-full-list" style="padding: 22px 20px 4px;"></div>
   </div>
 
@@ -1034,10 +1030,6 @@ textarea.notes-input { resize: vertical; min-height: 70px; line-height: 1.4; }
           <div class="detail-sub">Full breakdown</div>
         </div>
       </div>
-    </div>
-    <div class="mode-toggle" id="mostwatched-mode-toggle" style="padding: 14px 20px 0;">
-      <button class="mode-toggle-btn active" data-mode="count">By count</button>
-      <button class="mode-toggle-btn" data-mode="time">By watch time</button>
     </div>
     <div class="results-scroll" id="mostwatched-full-list" style="padding: 4px 20px 4px;"></div>
   </div>
@@ -2557,8 +2549,6 @@ let STATE = {
   currentEntity: null, // { type: 'team'|'player'|'competition', id }
   currentEntityView: "fixtures", // "fixtures" | "watched" — which tab is active on the entity screen
   entityFilters: { seasonId: null, secondaryId: null }, // null = "All" for each. secondaryId is a participant id when currentEntity.type === "competition", otherwise a competitionId.
-  sportBreakdownMode: "count", // "count" | "time" — ranking mode for the dashboard's "By sport" section, toggled from its "See all" screen and retained when navigating back to the dashboard
-  mostWatchedMode: "count", // "count" | "time" — same idea, for the "Most watched" teams/players section
   currentEventId: null,
   currentTournamentSeasonId: null,
   searchMode: "search", // "search" | "archive"
@@ -2716,7 +2706,11 @@ function searchAll(query) {
   if (!q) return { teams: [], players: [], competitions: [], events: [] };
 
   const teams = Object.values(STATE.teamsById).filter(t => normalize(t.name).includes(q)).slice(0, 8);
-  const players = Object.values(STATE.playersById).filter(p => normalize(p.name).includes(q)).slice(0, 8);
+  // F1 drivers are excluded: events only record the race winner, not a
+  // roster of participants, so "profile" pages for every driver would be
+  // the same kind of clutter as adding a page for every player on a
+  // football/cricket team that played in a match.
+  const players = Object.values(STATE.playersById).filter(p => p.sportId !== "f1" && normalize(p.name).includes(q)).slice(0, 8);
   const competitions = Object.values(STATE.competitionsById).filter(c => normalize(c.name).includes(q) || normalize(c.shortName).includes(q)).slice(0, 6);
   const events = Object.values(STATE.eventsById)
     .filter(e => normalize(e.title).includes(q))
@@ -3512,6 +3506,7 @@ function sessionsSummaryHtml(v, ev) {
 // Returns "" if no duration was recorded, so callers can omit it cleanly.
 function formatDuration(minutes) {
   if (!minutes) return "";
+  if (minutes >= 600) return `${Math.round(minutes / 60)}h`; // 10h+: hours only, no minutes
   const h = Math.floor(minutes / 60);
   const m = minutes % 60;
   if (h && m) return `${h}h ${m}m`;
@@ -4365,18 +4360,14 @@ function renderSportBreakdown(allViewings, targetElId, limit) {
   if (targetElId === undefined && !allViewings.length) { section.style.display = "none"; return; }
   if (targetElId === undefined) section.style.display = "block";
 
-  const mode = STATE.sportBreakdownMode;
-  const counts = {};
   const minutes = {};
   allViewings.forEach(v => {
     const sportId = v.sportId || STATE.eventsById[v.eventId]?.sportId;
     if (!sportId) return;
-    counts[sportId] = (counts[sportId] || 0) + 1;
     minutes[sportId] = (minutes[sportId] || 0) + (v.durationMinutes || 0);
   });
 
-  const metric = mode === "time" ? minutes : counts;
-  let sportOrder = Object.keys(metric).sort((a, b) => metric[b] - metric[a]);
+  let sportOrder = Object.keys(minutes).sort((a, b) => minutes[b] - minutes[a]);
   if (limit) sportOrder = sportOrder.slice(0, limit);
 
   if (!sportOrder.length) {
@@ -4384,54 +4375,24 @@ function renderSportBreakdown(allViewings, targetElId, limit) {
     return;
   }
 
-  if (mode === "time") {
-    // Progress-bar style retained specifically for the watch-time ranking -
-    // a bar communicates relative time share better than a bare number.
-    const max = Math.max(...sportOrder.map(id => minutes[id]), 1);
-    el.innerHTML = sportOrder.map(sportId => {
-      const sport = STATE.sportsById[sportId];
-      const mins = minutes[sportId] || 0;
-      const pct = Math.round((mins / max) * 100);
-      const colorVar = SPORT_COLORS[sportId] || "var(--brass)";
-      return `
-        <button class="sport-bar-row" data-sport-id="${sportId}">
-          <div class="sport-bar-icon">${SPORT_ICONS[sportId] || "🏅"}</div>
-          <div class="sport-bar-name">${escapeHtml(sport?.name || sportId)}</div>
-          <div class="sport-bar-track"><div class="sport-bar-fill" style="width:${pct}%; background:${colorVar}"></div></div>
-          <div class="sport-bar-count">${formatDuration(mins) || "0m"}</div>
-        </button>`;
-    }).join("");
-  } else {
-    // Count ranking matches the "Most watched" row format (rank, icon, name, count).
-    el.innerHTML = sportOrder.map((sportId, i) => {
-      const sport = STATE.sportsById[sportId];
-      return `
-        <button class="mostwatched-row" data-sport-id="${sportId}">
-          <div class="mostwatched-rank">${i + 1}</div>
-          <div class="mostwatched-icon">${SPORT_ICONS[sportId] || "🏅"}</div>
-          <div class="mostwatched-name">${escapeHtml(sport?.name || sportId)}</div>
-          <div class="mostwatched-count">${counts[sportId]}×</div>
-        </button>`;
-    }).join("");
-  }
+  const max = Math.max(...sportOrder.map(id => minutes[id]), 1);
+  el.innerHTML = sportOrder.map(sportId => {
+    const sport = STATE.sportsById[sportId];
+    const mins = minutes[sportId] || 0;
+    const pct = Math.round((mins / max) * 100);
+    const colorVar = SPORT_COLORS[sportId] || "var(--brass)";
+    return `
+      <button class="sport-bar-row" data-sport-id="${sportId}">
+        <div class="sport-bar-icon">${SPORT_ICONS[sportId] || "🏅"}</div>
+        <div class="sport-bar-name">${escapeHtml(sport?.name || sportId)}</div>
+        <div class="sport-bar-track"><div class="sport-bar-fill" style="width:${pct}%; background:${colorVar}"></div></div>
+        <div class="sport-bar-count">${formatDuration(mins) || "0m"}</div>
+      </button>`;
+  }).join("");
 
   el.querySelectorAll("[data-sport-id]").forEach(row => {
     row.addEventListener("click", () => openSportWatchedHistory(row.getAttribute("data-sport-id")));
   });
-}
-
-// Switches the "By sport" ranking mode and re-renders both the full "See
-// all" list (if open) and the dashboard's condensed preview, so the
-// dashboard reflects whichever mode was last selected without needing its
-// own toggle control.
-function setSportBreakdownMode(mode) {
-  STATE.sportBreakdownMode = mode;
-  document.querySelectorAll("#sport-breakdown-mode-toggle .mode-toggle-btn").forEach(b => {
-    b.classList.toggle("active", b.getAttribute("data-mode") === mode);
-  });
-  const allViewings = Object.values(STATE.viewingsByEventId).flat().concat(buildEstimatedTournamentViewings());
-  renderSportBreakdown(allViewings, "sport-breakdown-full-list", null);
-  renderHistory();
 }
 
 function openSportBreakdownFull() {
@@ -4442,26 +4403,26 @@ function openSportBreakdownFull() {
 
 // ---- Most watched teams/players ----
 // limit caps how many rows render (dashboard preview = 3, full page = no cap).
+// F1 drivers are deliberately excluded: events only record the race winner
+// (not "who you watched"), so a driver "count" here would really just mean
+// "how many races they won" - not a meaningful watched-most ranking the way
+// it is for a football team or darts player.
 function renderMostWatched(allViewings, targetElId, limit) {
   const el = document.getElementById(targetElId || "most-watched-list");
   const section = document.getElementById("dash-mostwatched-section");
   if (targetElId === undefined && !allViewings.length) { section.style.display = "none"; return; }
   if (targetElId === undefined) section.style.display = "block";
 
-  const mode = STATE.mostWatchedMode;
   const counts = {}; // participantId -> count
-  const minutes = {}; // participantId -> total minutes
   allViewings.forEach(v => {
     const ev = STATE.eventsById[v.eventId];
-    if (!ev) return;
+    if (!ev || ev.sportId === "f1") return;
     ev.participants.forEach(pid => {
       counts[pid] = (counts[pid] || 0) + 1;
-      minutes[pid] = (minutes[pid] || 0) + (v.durationMinutes || 0);
     });
   });
 
-  const metric = mode === "time" ? minutes : counts;
-  let ranked = Object.entries(metric).sort((a, b) => b[1] - a[1]);
+  let ranked = Object.entries(counts).sort((a, b) => b[1] - a[1]);
   if (limit) ranked = ranked.slice(0, limit);
 
   if (!ranked.length) {
@@ -4469,44 +4430,21 @@ function renderMostWatched(allViewings, targetElId, limit) {
     return;
   }
 
-  if (mode === "time") {
-    // Progress-bar style retained specifically for the watch-time ranking -
-    // same treatment as the "By sport" section's time mode.
-    const max = Math.max(...ranked.map(([, v]) => v), 1);
-    el.innerHTML = ranked.map(([id]) => {
-      const team = STATE.teamsById[id];
-      const player = STATE.playersById[id];
-      const name = team?.name || player?.name || "?";
-      const sportId = team?.sportId || player?.sportId;
-      const entityType = team ? "team" : "player";
-      const mins = minutes[id] || 0;
-      const pct = Math.round((mins / max) * 100);
-      const colorVar = SPORT_COLORS[sportId] || "var(--brass)";
-      return `
-        <button class="sport-bar-row" data-entity-type="${entityType}" data-entity-id="${id}">
-          <div class="sport-bar-icon">${SPORT_ICONS[sportId] || "🏅"}</div>
-          <div class="sport-bar-name">${escapeHtml(name)}</div>
-          <div class="sport-bar-track"><div class="sport-bar-fill" style="width:${pct}%; background:${colorVar}"></div></div>
-          <div class="sport-bar-count">${formatDuration(mins) || "0m"}</div>
-        </button>`;
-    }).join("");
-  } else {
-    el.innerHTML = ranked.map(([id, count], i) => {
-      const team = STATE.teamsById[id];
-      const player = STATE.playersById[id];
-      const name = team?.name || player?.name || "?";
-      const sportId = team?.sportId || player?.sportId;
-      const icon = SPORT_ICONS[sportId] || "🏅";
-      const entityType = team ? "team" : "player";
-      return `
-        <button class="mostwatched-row" data-entity-type="${entityType}" data-entity-id="${id}">
-          <div class="mostwatched-rank">${i + 1}</div>
-          <div class="mostwatched-icon">${icon}</div>
-          <div class="mostwatched-name">${escapeHtml(name)}</div>
-          <div class="mostwatched-count">${count}×</div>
-        </button>`;
-    }).join("");
-  }
+  el.innerHTML = ranked.map(([id, count], i) => {
+    const team = STATE.teamsById[id];
+    const player = STATE.playersById[id];
+    const name = team?.name || player?.name || "?";
+    const sportId = team?.sportId || player?.sportId;
+    const icon = SPORT_ICONS[sportId] || "🏅";
+    const entityType = team ? "team" : "player";
+    return `
+      <button class="mostwatched-row" data-entity-type="${entityType}" data-entity-id="${id}">
+        <div class="mostwatched-rank">${i + 1}</div>
+        <div class="mostwatched-icon">${icon}</div>
+        <div class="mostwatched-name">${escapeHtml(name)}</div>
+        <div class="mostwatched-count">${count}×</div>
+      </button>`;
+  }).join("");
 
   el.querySelectorAll("[data-entity-id]").forEach(row => {
     // Opens the same entity screen reachable from Search, pre-set to the
@@ -4517,18 +4455,6 @@ function renderMostWatched(allViewings, targetElId, limit) {
       "watched"
     ));
   });
-}
-
-// Switches the "Most watched" ranking mode - same idea as
-// setSportBreakdownMode above.
-function setMostWatchedMode(mode) {
-  STATE.mostWatchedMode = mode;
-  document.querySelectorAll("#mostwatched-mode-toggle .mode-toggle-btn").forEach(b => {
-    b.classList.toggle("active", b.getAttribute("data-mode") === mode);
-  });
-  const allViewings = Object.values(STATE.viewingsByEventId).flat();
-  renderMostWatched(allViewings, "mostwatched-full-list", null);
-  renderHistory();
 }
 
 function openMostWatchedFull() {
@@ -4701,17 +4627,11 @@ function bindGlobalUI() {
     goBackScreen("dashboard");
     syncTabHighlightToScreen();
   });
-  document.querySelectorAll("#sport-breakdown-mode-toggle .mode-toggle-btn").forEach(btn => {
-    btn.addEventListener("click", () => setSportBreakdownMode(btn.getAttribute("data-mode")));
-  });
 
   document.getElementById("most-watched-see-all").addEventListener("click", openMostWatchedFull);
   document.getElementById("mostwatched-full-back").addEventListener("click", () => {
     goBackScreen("dashboard");
     syncTabHighlightToScreen();
-  });
-  document.querySelectorAll("#mostwatched-mode-toggle .mode-toggle-btn").forEach(btn => {
-    btn.addEventListener("click", () => setMostWatchedMode(btn.getAttribute("data-mode")));
   });
 
   document.querySelectorAll(".tab").forEach(tab => {
