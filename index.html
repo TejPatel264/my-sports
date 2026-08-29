@@ -154,6 +154,32 @@ input, textarea { font-family: inherit; }
   border-color: var(--brass);
 }
 
+.filter-pill-row {
+  display: flex;
+  gap: 6px;
+  padding: 0 20px 10px;
+  overflow-x: auto;
+  scrollbar-width: none;
+}
+.filter-pill-row:empty { display: none; }
+.filter-pill-row::-webkit-scrollbar { display: none; }
+.filter-pill {
+  flex: 0 0 auto;
+  padding: 6px 13px;
+  border-radius: 999px;
+  border: 1px solid var(--ink-border);
+  background: var(--ink-card);
+  color: var(--parchment-dim);
+  font-size: 12.5px;
+  font-weight: 600;
+  white-space: nowrap;
+}
+.filter-pill.active {
+  background: var(--brass);
+  color: #241a0c;
+  border-color: var(--brass);
+}
+
 /* ============ TOURNAMENT ARCHIVE ============ */
 .tournament-row {
   display: flex;
@@ -691,10 +717,47 @@ textarea.notes-input { resize: vertical; min-height: 70px; line-height: 1.4; }
   background: var(--football); color: #06251a; font-weight: 700; font-size: 15px;
   margin-top: 4px;
 }
-.remove-btn {
+.remove-btn, .cancel-edit-btn {
   width: 100%; padding: 12px; border-radius: 12px; border: 1px solid var(--ink-border);
   background: none; color: var(--parchment-faint); font-weight: 600; font-size: 13.5px;
   margin-top: 8px;
+}
+
+.viewing-summary { margin-bottom: 10px; }
+.viewing-summary-header {
+  display: flex; align-items: center; justify-content: space-between;
+  margin-bottom: 12px;
+}
+.viewing-summary-title {
+  font-size: 11.5px; font-weight: 700; text-transform: uppercase;
+  letter-spacing: 0.06em; color: var(--parchment-faint);
+}
+.edit-viewing-btn {
+  width: 30px; height: 30px; border-radius: 50%;
+  background: var(--ink-card); border: 1px solid var(--ink-border);
+  display: flex; align-items: center; justify-content: center;
+  color: var(--brass-bright); flex-shrink: 0;
+}
+.edit-viewing-btn svg { width: 15px; height: 15px; }
+.viewing-summary-body {
+  background: var(--ink-card); border: 1px solid var(--ink-border);
+  border-radius: 14px; padding: 4px 14px;
+}
+.viewing-summary-row {
+  display: flex; align-items: baseline; justify-content: space-between; gap: 12px;
+  padding: 10px 0; border-bottom: 1px solid var(--ink-border);
+}
+.viewing-summary-row:last-child { border-bottom: none; }
+.viewing-summary-label {
+  font-size: 12.5px; color: var(--parchment-faint); flex-shrink: 0;
+}
+.viewing-summary-value {
+  font-size: 14px; font-weight: 600; color: var(--parchment); text-align: right;
+}
+.viewing-summary-stars { color: var(--brass-bright); letter-spacing: 1px; }
+.viewing-summary-notes-row { flex-direction: column; align-items: stretch; gap: 4px; }
+.viewing-summary-notes {
+  font-size: 13.5px; color: var(--parchment-dim); line-height: 1.5; text-align: left;
 }
 
 /* ============ DASHBOARD ============ */
@@ -819,7 +882,7 @@ textarea.notes-input { resize: vertical; min-height: 70px; line-height: 1.4; }
 .sport-bar-fill { height: 100%; border-radius: 5px; transition: width 0.4s ease; }
 .sport-bar-count {
   font-family: 'JetBrains Mono', monospace;
-  font-size: 12.5px; color: var(--parchment-dim); width: 28px; text-align: right; flex-shrink: 0;
+  font-size: 12.5px; color: var(--parchment-dim); min-width: 28px; text-align: right; flex-shrink: 0; white-space: nowrap;
 }
 
 /* Most watched list (clickable — drills into watched history for that team/player) */
@@ -952,6 +1015,10 @@ textarea.notes-input { resize: vertical; min-height: 70px; line-height: 1.4; }
         </div>
       </div>
     </div>
+    <div class="mode-toggle" id="sport-breakdown-mode-toggle" style="padding: 14px 20px 0;">
+      <button class="mode-toggle-btn active" data-mode="count">By count</button>
+      <button class="mode-toggle-btn" data-mode="time">By watch time</button>
+    </div>
     <div class="results-scroll" id="sport-breakdown-full-list" style="padding: 22px 20px 4px;"></div>
   </div>
 
@@ -967,6 +1034,10 @@ textarea.notes-input { resize: vertical; min-height: 70px; line-height: 1.4; }
           <div class="detail-sub">Full breakdown</div>
         </div>
       </div>
+    </div>
+    <div class="mode-toggle" id="mostwatched-mode-toggle" style="padding: 14px 20px 0;">
+      <button class="mode-toggle-btn active" data-mode="count">By count</button>
+      <button class="mode-toggle-btn" data-mode="time">By watch time</button>
     </div>
     <div class="results-scroll" id="mostwatched-full-list" style="padding: 4px 20px 4px;"></div>
   </div>
@@ -1149,6 +1220,8 @@ textarea.notes-input { resize: vertical; min-height: 70px; line-height: 1.4; }
       <button class="mode-toggle-btn active" data-entity-view="fixtures">Fixtures</button>
       <button class="mode-toggle-btn" data-entity-view="watched">Watched</button>
     </div>
+    <div class="filter-pill-row" id="entity-season-filter"></div>
+    <div class="filter-pill-row" id="entity-secondary-filter"></div>
     <div class="history-stats stats-2col" id="entity-watched-stats" style="display:none;"></div>
     <div class="results-scroll" id="entity-events"></div>
   </div>
@@ -1191,6 +1264,16 @@ textarea.notes-input { resize: vertical; min-height: 70px; line-height: 1.4; }
         <span id="mark-watched-label">Mark as watched</span>
       </button>
 
+      <div id="viewing-summary" class="viewing-summary" style="display:none;">
+        <div class="viewing-summary-header">
+          <span class="viewing-summary-title">Your entry</span>
+          <button class="edit-viewing-btn" id="edit-viewing-btn" aria-label="Edit entry">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20h9"/><path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4Z"/></svg>
+          </button>
+        </div>
+        <div class="viewing-summary-body" id="viewing-summary-body"></div>
+      </div>
+
       <div id="viewing-form" style="display:none;">
         <div class="field-group" id="whole-event-duration-group">
           <label class="field-label" id="whole-event-duration-label">Time watched</label>
@@ -1229,6 +1312,7 @@ textarea.notes-input { resize: vertical; min-height: 70px; line-height: 1.4; }
           <textarea class="notes-input" id="notes-input" placeholder="What stood out…"></textarea>
         </div>
         <button class="save-btn" id="save-viewing-btn">Save to history</button>
+        <button class="cancel-edit-btn" id="cancel-edit-viewing-btn" style="display:none;">Cancel</button>
         <button class="remove-btn" id="remove-viewing-btn" style="display:none;">Remove from history</button>
       </div>
     </div>
@@ -2472,6 +2556,9 @@ let STATE = {
   pendingEventsById: {}, // id -> pending event (user-submitted, not yet reconciled)
   currentEntity: null, // { type: 'team'|'player'|'competition', id }
   currentEntityView: "fixtures", // "fixtures" | "watched" — which tab is active on the entity screen
+  entityFilters: { seasonId: null, secondaryId: null }, // null = "All" for each. secondaryId is a participant id when currentEntity.type === "competition", otherwise a competitionId.
+  sportBreakdownMode: "count", // "count" | "time" — ranking mode for the dashboard's "By sport" section, toggled from its "See all" screen and retained when navigating back to the dashboard
+  mostWatchedMode: "count", // "count" | "time" — same idea, for the "Most watched" teams/players section
   currentEventId: null,
   currentTournamentSeasonId: null,
   searchMode: "search", // "search" | "archive"
@@ -3165,12 +3252,14 @@ async function saveTournamentWatch() {
 function openEntityDetail(type, id, initialView) {
   STATE.currentEntity = { type, id };
   STATE.currentEntityView = initialView || "fixtures";
+  STATE.entityFilters = { seasonId: null, secondaryId: null };
   const name = entityName(type, id);
   const sportId = type === "team" ? STATE.teamsById[id]?.sportId : STATE.playersById[id]?.sportId;
 
   document.getElementById("entity-name").textContent = name;
   document.getElementById("entity-sub").textContent = STATE.sportsById[sportId]?.name || "";
 
+  renderEntityFilterPills();
   setEntityView(STATE.currentEntityView);
   switchScreen("entity");
 }
@@ -3179,9 +3268,11 @@ function openCompetitionDetail(competitionId, initialView) {
   const comp = STATE.competitionsById[competitionId];
   STATE.currentEntity = { type: "competition", id: competitionId };
   STATE.currentEntityView = initialView || "fixtures";
+  STATE.entityFilters = { seasonId: null, secondaryId: null };
   document.getElementById("entity-name").textContent = comp.name;
   document.getElementById("entity-sub").textContent = STATE.sportsById[comp.sportId]?.name || "";
 
+  renderEntityFilterPills();
   setEntityView(STATE.currentEntityView);
   switchScreen("entity");
 }
@@ -3204,9 +3295,11 @@ function setEntityView(view) {
     document.getElementById("entity-watched-stats").style.display = "none";
     // renderEntityFixtures does its own chronological sort (upcoming and
     // past both earliest-first), so no need to pre-sort here.
-    renderEntityFixtures(getEntityEvents(entity));
+    renderEntityFixtures(applyEntityFilters(getEntityEvents(entity)));
   } else {
-    const viewings = getEntityWatchedViewings(entity).sort((a, b) => new Date(b.watchedAt) - new Date(a.watchedAt));
+    const viewings = getEntityWatchedViewings(entity)
+      .filter(v => eventMatchesEntityFilters(STATE.eventsById[v.eventId]))
+      .sort((a, b) => new Date(b.watchedAt) - new Date(a.watchedAt));
     renderWatchedSummaryStats("entity-watched-stats", viewings);
     renderEntityWatched(viewings);
   }
@@ -3225,6 +3318,125 @@ function getEntityWatchedViewings(entity) {
     return allViewings.filter(v => STATE.eventsById[v.eventId]?.competitionId === entity.id);
   }
   return allViewings.filter(v => STATE.eventsById[v.eventId]?.participants.includes(entity.id));
+}
+
+// True if an event passes the currently-selected season/secondary filter
+// pills on the entity screen. `secondaryId` means different things
+// depending on what kind of entity we're looking at: a participant id when
+// browsing a competition's fixtures (filtering to one team/player within
+// it), or a competitionId when browsing a team/player's fixtures (filtering
+// to one competition they play in). Both filters are optional (null = "All")
+// and combine with AND.
+function eventMatchesEntityFilters(e) {
+  if (!e) return false;
+  const f = STATE.entityFilters;
+  if (!f) return true;
+  if (f.seasonId && e.seasonId !== f.seasonId) return false;
+  if (f.secondaryId) {
+    if (STATE.currentEntity?.type === "competition") {
+      if (!e.participants?.includes(f.secondaryId)) return false;
+    } else if (e.competitionId !== f.secondaryId) {
+      return false;
+    }
+  }
+  return true;
+}
+
+function applyEntityFilters(events) {
+  return events.filter(eventMatchesEntityFilters);
+}
+
+// Builds the "All" + one-pill-per-option row markup shared by both filter
+// rows. `selectedId` is the currently active value (null = "All").
+function filterPillRowHtml(options, selectedId, kind) {
+  let html = `<button class="filter-pill ${!selectedId ? 'active' : ''}" data-filter-kind="${kind}" data-filter-value="">All</button>`;
+  options.forEach(o => {
+    html += `<button class="filter-pill ${selectedId === o.id ? 'active' : ''}" data-filter-kind="${kind}" data-filter-value="${escapeHtml(o.id)}">${escapeHtml(o.label)}</button>`;
+  });
+  return html;
+}
+
+// Populates the season and secondary (team/player, or league/tournament)
+// filter pill rows on the entity screen, based on what the current entity's
+// full (unfiltered) event set actually contains. A row is hidden entirely
+// when there's nothing meaningful to filter by (fewer than two options), and
+// the secondary row is always skipped for F1 - a single championship per
+// season means a league/tournament filter is meaningless, and filtering a
+// race weekend down to one driver doesn't fit the "fixtures" list format.
+function renderEntityFilterPills() {
+  const seasonWrap = document.getElementById("entity-season-filter");
+  const secondaryWrap = document.getElementById("entity-secondary-filter");
+  const entity = STATE.currentEntity;
+  if (!entity) {
+    seasonWrap.innerHTML = "";
+    secondaryWrap.innerHTML = "";
+    return;
+  }
+
+  const sportId = entity.type === "competition"
+    ? STATE.competitionsById[entity.id]?.sportId
+    : entity.type === "team"
+      ? STATE.teamsById[entity.id]?.sportId
+      : STATE.playersById[entity.id]?.sportId;
+
+  const allEvents = getEntityEvents(entity);
+
+  // ---- Season/year pills ----
+  const seasonIds = [...new Set(allEvents.map(e => e.seasonId).filter(Boolean))];
+  if (seasonIds.length > 1) {
+    const latestDateFor = sid => Math.max(...allEvents.filter(e => e.seasonId === sid).map(e => new Date(e.date).getTime()));
+    seasonIds.sort((a, b) => latestDateFor(b) - latestDateFor(a)); // most recent season first
+    const options = seasonIds.map(sid => ({ id: sid, label: STATE.seasonsById[sid]?.label || sid }));
+    seasonWrap.innerHTML = filterPillRowHtml(options, STATE.entityFilters.seasonId, "season");
+  } else {
+    seasonWrap.innerHTML = "";
+  }
+
+  // ---- Secondary pills: team/player filter for a competition, or
+  // league/tournament filter for a team/player. For a team/player page this
+  // needs no special-casing for F1 - a driver/constructor only ever has one
+  // competition (f1champ), so the options.length > 1 check below already
+  // hides it naturally. The F1 championship page itself is the one case that
+  // does need an explicit skip: race events only record the winner in
+  // `participants` (not the full grid), so "distinct participants" resolves
+  // to "distinct winners" - usually more than one across a season - which
+  // would otherwise show a misleading "filter by winner" pill instead of
+  // just the year filter.
+  if (entity.type === "competition") {
+    if (sportId === "f1") {
+      secondaryWrap.innerHTML = "";
+    } else {
+      const ids = [...new Set(allEvents.flatMap(e => e.participants || []))];
+      const options = ids
+        .map(id => ({ id, label: participantName(id) }))
+        .filter(o => o.label)
+        .sort((a, b) => a.label.localeCompare(b.label));
+      secondaryWrap.innerHTML = options.length > 1
+        ? filterPillRowHtml(options, STATE.entityFilters.secondaryId, "secondary")
+        : "";
+    }
+  } else {
+    const ids = [...new Set(allEvents.map(e => e.competitionId).filter(Boolean))];
+    const options = ids
+      .map(id => ({ id, label: STATE.competitionsById[id]?.shortName || STATE.competitionsById[id]?.name || id }))
+      .sort((a, b) => a.label.localeCompare(b.label));
+    secondaryWrap.innerHTML = options.length > 1
+      ? filterPillRowHtml(options, STATE.entityFilters.secondaryId, "secondary")
+      : "";
+  }
+
+  document.querySelectorAll(".filter-pill").forEach(btn => {
+    btn.addEventListener("click", () => {
+      const kind = btn.getAttribute("data-filter-kind");
+      const value = btn.getAttribute("data-filter-value") || null;
+      if (kind === "season") STATE.entityFilters.seasonId = value;
+      else STATE.entityFilters.secondaryId = value;
+      document.querySelectorAll(`.filter-pill[data-filter-kind="${kind}"]`).forEach(b => {
+        b.classList.toggle("active", (b.getAttribute("data-filter-value") || null) === value);
+      });
+      setEntityView(STATE.currentEntityView);
+    });
+  });
 }
 
 function renderEntityFixtures(events) {
@@ -3346,7 +3558,6 @@ function renderEntityWatched(viewings) {
     const d = new Date(v.watchedAt);
     const dateStr = d.toLocaleDateString("en-GB", { day: "numeric", month: "short", year: "numeric" });
     const durationStr = formatDuration(v.durationMinutes);
-    const coverageLabel = v.coverage === "full" ? "Full" : "Partial";
     const stars = v.rating ? "★".repeat(v.rating) + "☆".repeat(5 - v.rating) : "";
     const resultSummary = eventResultSummary(ev);
     return `
@@ -3356,7 +3567,7 @@ function renderEntityWatched(viewings) {
         </div>
         <div class="history-content">
           <div class="history-title">${escapeHtml(ev.title)}</div>
-          <div class="history-sub">${escapeHtml(comp?.shortName || '')} · ${dateStr}${durationStr ? ' · ' + durationStr + ' watched' : ''} · ${coverageLabel}</div>
+          <div class="history-sub">${escapeHtml(comp?.shortName || '')} · ${dateStr}${durationStr ? ' · ' + durationStr + ' watched' : ''}</div>
           ${resultSummary ? `<div class="history-result">${escapeHtml(resultSummary)}</div>` : ''}
           ${sessionsSummaryHtml(v, ev)}
           ${stars ? `<div class="history-rating">${stars}</div>` : ''}
@@ -3689,9 +3900,6 @@ function resetViewingForm(existing, event) {
   errorEl.style.display = "none";
 
   if (existing) {
-    markBtn.classList.add("watched-state");
-    markLabel.textContent = "Watched — edit details";
-    form.style.display = "block";
     removeBtn.style.display = "block";
 
     const d = new Date(existing.watchedAt);
@@ -3702,6 +3910,8 @@ function resetViewingForm(existing, event) {
     // renderSessionsChecklist below will hide/show them and populate the
     // per-session inputs as appropriate, but seed the whole-event fields
     // from the saved total in case this event has no sub-parts at all.
+    // These populate the edit form even though it's not shown by default -
+    // it needs correct starting values whenever the pen icon opens it.
     const totalMinutes = existing.durationMinutes || 0;
     document.getElementById("watched-hours").value = totalMinutes ? Math.floor(totalMinutes / 60) : "";
     document.getElementById("watched-minutes").value = totalMinutes ? totalMinutes % 60 : "";
@@ -3712,11 +3922,17 @@ function resetViewingForm(existing, event) {
     document.getElementById("stamp-date-text").textContent = d.toLocaleDateString("en-GB", { day: "numeric", month: "short", year: "numeric" }).toUpperCase();
     void stampWrap.offsetWidth;
     stampWrap.classList.add("show");
+
+    document.getElementById("viewing-summary-body").innerHTML = buildViewingSummaryHtml(existing, event);
+    showViewingSummary();
   } else {
     markBtn.classList.remove("watched-state");
     markLabel.textContent = "Mark as watched";
+    markBtn.style.display = "flex";
     form.style.display = "none";
+    document.getElementById("viewing-summary").style.display = "none";
     removeBtn.style.display = "none";
+    document.getElementById("cancel-edit-viewing-btn").style.display = "none";
 
     document.getElementById("watched-hours").value = "";
     document.getElementById("watched-minutes").value = "";
@@ -3730,6 +3946,51 @@ function resetViewingForm(existing, event) {
   updateSegmented("coverage-segmented", selectedCoverage);
   updateStars(selectedRating);
   renderSessionsChecklist(event);
+}
+
+// Shows the compact, read-only summary of an existing viewing record —
+// entered fields only, no inputs — with a pen icon to switch into the full
+// editable form. Hides the "Mark as watched" button entirely, since it has
+// nothing to do once a record already exists.
+function showViewingSummary() {
+  document.getElementById("mark-watched-btn").style.display = "none";
+  document.getElementById("viewing-form").style.display = "none";
+  document.getElementById("viewing-summary").style.display = "block";
+}
+
+// Switches to the full editable form. `hasExisting` controls whether the
+// Cancel button appears - only meaningful when there's a saved summary to
+// cancel back to; a brand-new record has no prior state to discard.
+function showViewingForm(hasExisting) {
+  document.getElementById("mark-watched-btn").style.display = "none";
+  document.getElementById("viewing-summary").style.display = "none";
+  document.getElementById("viewing-form").style.display = "block";
+  document.getElementById("cancel-edit-viewing-btn").style.display = hasExisting ? "block" : "none";
+}
+
+// Builds the compact summary's row markup for one viewing record — only
+// rows for fields that actually have a value, per-sport session labels
+// resolved the same way the Watched-history list does.
+function buildViewingSummaryHtml(v, event) {
+  const rows = [];
+  if (v.durationMinutes) {
+    rows.push(`<div class="viewing-summary-row"><span class="viewing-summary-label">Duration</span><span class="viewing-summary-value">${escapeHtml(formatDuration(v.durationMinutes))}</span></div>`);
+  }
+  rows.push(`<div class="viewing-summary-row"><span class="viewing-summary-label">Coverage</span><span class="viewing-summary-value">${v.coverage === "partial" ? "Partial" : "Full"}</span></div>`);
+  if (v.sessionsWatched && v.sessionsWatched.length) {
+    const sessions = sessionsForEvent(event);
+    const labelById = Object.fromEntries(sessions.map(s => [s.id, s.label]));
+    const labels = v.sessionsWatched.map(id => labelById[id] || id).join(", ");
+    rows.push(`<div class="viewing-summary-row"><span class="viewing-summary-label">Sessions</span><span class="viewing-summary-value">${escapeHtml(labels)}</span></div>`);
+  }
+  if (v.rating) {
+    const stars = "★".repeat(v.rating) + "☆".repeat(5 - v.rating);
+    rows.push(`<div class="viewing-summary-row"><span class="viewing-summary-label">Rating</span><span class="viewing-summary-value viewing-summary-stars">${stars}</span></div>`);
+  }
+  if (v.notes) {
+    rows.push(`<div class="viewing-summary-row viewing-summary-notes-row"><span class="viewing-summary-label">Notes</span><div class="viewing-summary-notes">${escapeHtml(v.notes)}</div></div>`);
+  }
+  return rows.join("");
 }
 
 // Shows the session checklist (Practice, Qualifying, Sprint, Race, etc) only
@@ -4104,13 +4365,18 @@ function renderSportBreakdown(allViewings, targetElId, limit) {
   if (targetElId === undefined && !allViewings.length) { section.style.display = "none"; return; }
   if (targetElId === undefined) section.style.display = "block";
 
+  const mode = STATE.sportBreakdownMode;
   const counts = {};
+  const minutes = {};
   allViewings.forEach(v => {
     const sportId = v.sportId || STATE.eventsById[v.eventId]?.sportId;
-    if (sportId) counts[sportId] = (counts[sportId] || 0) + 1;
+    if (!sportId) return;
+    counts[sportId] = (counts[sportId] || 0) + 1;
+    minutes[sportId] = (minutes[sportId] || 0) + (v.durationMinutes || 0);
   });
-  const max = Math.max(...Object.values(counts), 1);
-  let sportOrder = Object.keys(counts).sort((a, b) => counts[b] - counts[a]);
+
+  const metric = mode === "time" ? minutes : counts;
+  let sportOrder = Object.keys(metric).sort((a, b) => metric[b] - metric[a]);
   if (limit) sportOrder = sportOrder.slice(0, limit);
 
   if (!sportOrder.length) {
@@ -4118,23 +4384,54 @@ function renderSportBreakdown(allViewings, targetElId, limit) {
     return;
   }
 
-  el.innerHTML = sportOrder.map(sportId => {
-    const sport = STATE.sportsById[sportId];
-    const count = counts[sportId];
-    const pct = Math.round((count / max) * 100);
-    const colorVar = SPORT_COLORS[sportId] || "var(--brass)";
-    return `
-      <button class="sport-bar-row" data-sport-id="${sportId}">
-        <div class="sport-bar-icon">${SPORT_ICONS[sportId] || "🏅"}</div>
-        <div class="sport-bar-name">${escapeHtml(sport?.name || sportId)}</div>
-        <div class="sport-bar-track"><div class="sport-bar-fill" style="width:${pct}%; background:${colorVar}"></div></div>
-        <div class="sport-bar-count">${count}</div>
-      </button>`;
-  }).join("");
+  if (mode === "time") {
+    // Progress-bar style retained specifically for the watch-time ranking -
+    // a bar communicates relative time share better than a bare number.
+    const max = Math.max(...sportOrder.map(id => minutes[id]), 1);
+    el.innerHTML = sportOrder.map(sportId => {
+      const sport = STATE.sportsById[sportId];
+      const mins = minutes[sportId] || 0;
+      const pct = Math.round((mins / max) * 100);
+      const colorVar = SPORT_COLORS[sportId] || "var(--brass)";
+      return `
+        <button class="sport-bar-row" data-sport-id="${sportId}">
+          <div class="sport-bar-icon">${SPORT_ICONS[sportId] || "🏅"}</div>
+          <div class="sport-bar-name">${escapeHtml(sport?.name || sportId)}</div>
+          <div class="sport-bar-track"><div class="sport-bar-fill" style="width:${pct}%; background:${colorVar}"></div></div>
+          <div class="sport-bar-count">${formatDuration(mins) || "0m"}</div>
+        </button>`;
+    }).join("");
+  } else {
+    // Count ranking matches the "Most watched" row format (rank, icon, name, count).
+    el.innerHTML = sportOrder.map((sportId, i) => {
+      const sport = STATE.sportsById[sportId];
+      return `
+        <button class="mostwatched-row" data-sport-id="${sportId}">
+          <div class="mostwatched-rank">${i + 1}</div>
+          <div class="mostwatched-icon">${SPORT_ICONS[sportId] || "🏅"}</div>
+          <div class="mostwatched-name">${escapeHtml(sport?.name || sportId)}</div>
+          <div class="mostwatched-count">${counts[sportId]}×</div>
+        </button>`;
+    }).join("");
+  }
 
   el.querySelectorAll("[data-sport-id]").forEach(row => {
     row.addEventListener("click", () => openSportWatchedHistory(row.getAttribute("data-sport-id")));
   });
+}
+
+// Switches the "By sport" ranking mode and re-renders both the full "See
+// all" list (if open) and the dashboard's condensed preview, so the
+// dashboard reflects whichever mode was last selected without needing its
+// own toggle control.
+function setSportBreakdownMode(mode) {
+  STATE.sportBreakdownMode = mode;
+  document.querySelectorAll("#sport-breakdown-mode-toggle .mode-toggle-btn").forEach(b => {
+    b.classList.toggle("active", b.getAttribute("data-mode") === mode);
+  });
+  const allViewings = Object.values(STATE.viewingsByEventId).flat().concat(buildEstimatedTournamentViewings());
+  renderSportBreakdown(allViewings, "sport-breakdown-full-list", null);
+  renderHistory();
 }
 
 function openSportBreakdownFull() {
@@ -4151,14 +4448,20 @@ function renderMostWatched(allViewings, targetElId, limit) {
   if (targetElId === undefined && !allViewings.length) { section.style.display = "none"; return; }
   if (targetElId === undefined) section.style.display = "block";
 
+  const mode = STATE.mostWatchedMode;
   const counts = {}; // participantId -> count
+  const minutes = {}; // participantId -> total minutes
   allViewings.forEach(v => {
     const ev = STATE.eventsById[v.eventId];
     if (!ev) return;
-    ev.participants.forEach(pid => { counts[pid] = (counts[pid] || 0) + 1; });
+    ev.participants.forEach(pid => {
+      counts[pid] = (counts[pid] || 0) + 1;
+      minutes[pid] = (minutes[pid] || 0) + (v.durationMinutes || 0);
+    });
   });
 
-  let ranked = Object.entries(counts).sort((a, b) => b[1] - a[1]);
+  const metric = mode === "time" ? minutes : counts;
+  let ranked = Object.entries(metric).sort((a, b) => b[1] - a[1]);
   if (limit) ranked = ranked.slice(0, limit);
 
   if (!ranked.length) {
@@ -4166,21 +4469,44 @@ function renderMostWatched(allViewings, targetElId, limit) {
     return;
   }
 
-  el.innerHTML = ranked.map(([id, count], i) => {
-    const team = STATE.teamsById[id];
-    const player = STATE.playersById[id];
-    const name = team?.name || player?.name || "?";
-    const sportId = team?.sportId || player?.sportId;
-    const icon = SPORT_ICONS[sportId] || "🏅";
-    const entityType = team ? "team" : "player";
-    return `
-      <button class="mostwatched-row" data-entity-type="${entityType}" data-entity-id="${id}">
-        <div class="mostwatched-rank">${i + 1}</div>
-        <div class="mostwatched-icon">${icon}</div>
-        <div class="mostwatched-name">${escapeHtml(name)}</div>
-        <div class="mostwatched-count">${count}×</div>
-      </button>`;
-  }).join("");
+  if (mode === "time") {
+    // Progress-bar style retained specifically for the watch-time ranking -
+    // same treatment as the "By sport" section's time mode.
+    const max = Math.max(...ranked.map(([, v]) => v), 1);
+    el.innerHTML = ranked.map(([id]) => {
+      const team = STATE.teamsById[id];
+      const player = STATE.playersById[id];
+      const name = team?.name || player?.name || "?";
+      const sportId = team?.sportId || player?.sportId;
+      const entityType = team ? "team" : "player";
+      const mins = minutes[id] || 0;
+      const pct = Math.round((mins / max) * 100);
+      const colorVar = SPORT_COLORS[sportId] || "var(--brass)";
+      return `
+        <button class="sport-bar-row" data-entity-type="${entityType}" data-entity-id="${id}">
+          <div class="sport-bar-icon">${SPORT_ICONS[sportId] || "🏅"}</div>
+          <div class="sport-bar-name">${escapeHtml(name)}</div>
+          <div class="sport-bar-track"><div class="sport-bar-fill" style="width:${pct}%; background:${colorVar}"></div></div>
+          <div class="sport-bar-count">${formatDuration(mins) || "0m"}</div>
+        </button>`;
+    }).join("");
+  } else {
+    el.innerHTML = ranked.map(([id, count], i) => {
+      const team = STATE.teamsById[id];
+      const player = STATE.playersById[id];
+      const name = team?.name || player?.name || "?";
+      const sportId = team?.sportId || player?.sportId;
+      const icon = SPORT_ICONS[sportId] || "🏅";
+      const entityType = team ? "team" : "player";
+      return `
+        <button class="mostwatched-row" data-entity-type="${entityType}" data-entity-id="${id}">
+          <div class="mostwatched-rank">${i + 1}</div>
+          <div class="mostwatched-icon">${icon}</div>
+          <div class="mostwatched-name">${escapeHtml(name)}</div>
+          <div class="mostwatched-count">${count}×</div>
+        </button>`;
+    }).join("");
+  }
 
   el.querySelectorAll("[data-entity-id]").forEach(row => {
     // Opens the same entity screen reachable from Search, pre-set to the
@@ -4191,6 +4517,18 @@ function renderMostWatched(allViewings, targetElId, limit) {
       "watched"
     ));
   });
+}
+
+// Switches the "Most watched" ranking mode - same idea as
+// setSportBreakdownMode above.
+function setMostWatchedMode(mode) {
+  STATE.mostWatchedMode = mode;
+  document.querySelectorAll("#mostwatched-mode-toggle .mode-toggle-btn").forEach(b => {
+    b.classList.toggle("active", b.getAttribute("data-mode") === mode);
+  });
+  const allViewings = Object.values(STATE.viewingsByEventId).flat();
+  renderMostWatched(allViewings, "mostwatched-full-list", null);
+  renderHistory();
 }
 
 function openMostWatchedFull() {
@@ -4233,7 +4571,6 @@ function renderWatchedHistoryList(viewings) {
     const d = new Date(v.watchedAt);
     const dateStr = d.toLocaleDateString("en-GB", { day: "numeric", month: "short", year: "numeric" });
     const durationStr = formatDuration(v.durationMinutes);
-    const coverageLabel = v.coverage === "full" ? "Full" : "Partial";
     const stars = v.rating ? "★".repeat(v.rating) + "☆".repeat(5 - v.rating) : "";
     const resultSummary = eventResultSummary(ev);
     return `
@@ -4243,7 +4580,7 @@ function renderWatchedHistoryList(viewings) {
         </div>
         <div class="history-content">
           <div class="history-title">${escapeHtml(ev.title)}</div>
-          <div class="history-sub">${escapeHtml(comp?.shortName || '')} · ${dateStr}${durationStr ? ' · ' + durationStr + ' watched' : ''} · ${coverageLabel}</div>
+          <div class="history-sub">${escapeHtml(comp?.shortName || '')} · ${dateStr}${durationStr ? ' · ' + durationStr + ' watched' : ''}</div>
           ${resultSummary ? `<div class="history-result">${escapeHtml(resultSummary)}</div>` : ''}
           ${sessionsSummaryHtml(v, ev)}
           ${stars ? `<div class="history-rating">${stars}</div>` : ''}
@@ -4364,11 +4701,17 @@ function bindGlobalUI() {
     goBackScreen("dashboard");
     syncTabHighlightToScreen();
   });
+  document.querySelectorAll("#sport-breakdown-mode-toggle .mode-toggle-btn").forEach(btn => {
+    btn.addEventListener("click", () => setSportBreakdownMode(btn.getAttribute("data-mode")));
+  });
 
   document.getElementById("most-watched-see-all").addEventListener("click", openMostWatchedFull);
   document.getElementById("mostwatched-full-back").addEventListener("click", () => {
     goBackScreen("dashboard");
     syncTabHighlightToScreen();
+  });
+  document.querySelectorAll("#mostwatched-mode-toggle .mode-toggle-btn").forEach(btn => {
+    btn.addEventListener("click", () => setMostWatchedMode(btn.getAttribute("data-mode")));
   });
 
   document.querySelectorAll(".tab").forEach(tab => {
@@ -4393,17 +4736,22 @@ function bindGlobalUI() {
   });
 
   document.getElementById("mark-watched-btn").addEventListener("click", () => {
-    const form = document.getElementById("viewing-form");
-    const isOpen = form.style.display === "block";
-    if (!isOpen) {
-      form.style.display = "block";
-      form.scrollIntoView({ behavior: "smooth", block: "nearest" });
-    } else if (!STATE.viewingsByEventId[STATE.currentEventId]) {
-      // First-time quick mark: save immediately with current defaults, form stays open for edits
-      saveViewing();
-    }
+    // Only reachable for a brand-new record now (existing ones show the
+    // compact summary + pen icon instead) — just reveal the form to fill in.
+    showViewingForm(false);
+    document.getElementById("viewing-form").scrollIntoView({ behavior: "smooth", block: "nearest" });
   });
 
+  document.getElementById("edit-viewing-btn").addEventListener("click", () => {
+    showViewingForm(true);
+  });
+
+  document.getElementById("cancel-edit-viewing-btn").addEventListener("click", () => {
+    // Discards any unsaved edits by re-seeding the form from the saved
+    // record and returning to the summary view.
+    const existing = STATE.viewingsByEventId[STATE.currentEventId]?.[0];
+    resetViewingForm(existing, STATE.eventsById[STATE.currentEventId]);
+  });
 
   document.querySelectorAll("#coverage-segmented button").forEach(b => {
     b.addEventListener("click", () => {

@@ -1,0 +1,14 @@
+{
+  "name": "sportlog-update-scripts",
+  "private": true,
+  "description": "Scheduled data-update scripts for the SportLog app. No dependencies - uses Node's built-in fetch (Node 18+).",
+  "engines": {
+    "node": ">=18"
+  },
+  "scripts": {
+    "update-epl": "node update-epl.js",
+    "update-championship": "node update-championship.js",
+    "update-carabao-cup": "node update-carabao-cup.js",
+    "update-champions-league": "node update-champions-league.js"
+  }
+}
