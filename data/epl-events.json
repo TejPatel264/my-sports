@@ -1145,29 +1145,6 @@
     }
   },
   {
-    "id": "evt_epl_051",
-    "sportId": "football",
-    "competitionId": "epl",
-    "seasonId": "epl_2026_27",
-    "date": "2026-09-19T14:00:00Z",
-    "title": "Manchester City vs Sunderland",
-    "participants": [
-      "team_manchester_city",
-      "team_sunderland"
-    ],
-    "sportData": {
-      "homeTeam": "team_manchester_city",
-      "awayTeam": "team_sunderland",
-      "venue": null,
-      "result": null,
-      "kind": "football_match"
-    },
-    "dataQuality": "verified",
-    "externalIds": {
-      "footballDataOrgId": 560590
-    }
-  },
-  {
     "id": "evt_epl_052",
     "sportId": "football",
     "competitionId": "epl",
@@ -1211,6 +1188,29 @@
     "dataQuality": "verified",
     "externalIds": {
       "footballDataOrgId": 560589
+    }
+  },
+  {
+    "id": "evt_epl_051",
+    "sportId": "football",
+    "competitionId": "epl",
+    "seasonId": "epl_2026_27",
+    "date": "2026-09-20T13:00:00Z",
+    "title": "Manchester City vs Sunderland",
+    "participants": [
+      "team_manchester_city",
+      "team_sunderland"
+    ],
+    "sportData": {
+      "homeTeam": "team_manchester_city",
+      "awayTeam": "team_sunderland",
+      "venue": null,
+      "result": null,
+      "kind": "football_match"
+    },
+    "dataQuality": "verified",
+    "externalIds": {
+      "footballDataOrgId": 560590
     }
   },
   {

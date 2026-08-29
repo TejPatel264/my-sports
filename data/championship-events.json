@@ -2074,29 +2074,6 @@
     "competitionId": "championship",
     "seasonId": "championship_2026_27",
     "date": "2026-09-19T14:00:00Z",
-    "title": "Norwich City vs Bolton Wanderers",
-    "participants": [
-      "team_norwich_city",
-      "team_bolton_wanderers"
-    ],
-    "sportData": {
-      "kind": "football_match",
-      "homeTeam": "team_norwich_city",
-      "awayTeam": "team_bolton_wanderers",
-      "venue": null,
-      "result": null
-    },
-    "dataQuality": "verified",
-    "externalIds": {
-      "footballDataOrgId": 561850
-    },
-    "id": "evt_championship_091"
-  },
-  {
-    "sportId": "football",
-    "competitionId": "championship",
-    "seasonId": "championship_2026_27",
-    "date": "2026-09-19T14:00:00Z",
     "title": "Queens Park Rangers vs Preston North End",
     "participants": [
       "team_queens_park_rangers",
@@ -2206,6 +2183,29 @@
       "footballDataOrgId": 561851
     },
     "id": "evt_championship_096"
+  },
+  {
+    "sportId": "football",
+    "competitionId": "championship",
+    "seasonId": "championship_2026_27",
+    "date": "2026-09-20T12:30:00Z",
+    "title": "Norwich City vs Bolton Wanderers",
+    "participants": [
+      "team_norwich_city",
+      "team_bolton_wanderers"
+    ],
+    "sportData": {
+      "kind": "football_match",
+      "homeTeam": "team_norwich_city",
+      "awayTeam": "team_bolton_wanderers",
+      "venue": null,
+      "result": null
+    },
+    "dataQuality": "verified",
+    "externalIds": {
+      "footballDataOrgId": 561850
+    },
+    "id": "evt_championship_091"
   },
   {
     "sportId": "football",
