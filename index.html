@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
-<title>Logbook — Sporting Events Watched</title>
+<title>My Sports LogBook — Sporting Events Watched</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
@@ -44,7 +44,7 @@
 }
 
 * { box-sizing: border-box; -webkit-tap-highlight-color: transparent; }
-html, body { height: 100%; }
+html, body { height: 100%; overflow: hidden; }
 body {
   margin: 0;
   background: var(--ink);
@@ -70,10 +70,12 @@ input, textarea { font-family: inherit; }
 #app {
   max-width: 560px;
   margin: 0 auto;
-  min-height: 100%;
+  height: 100vh;
+  height: 100dvh; /* accounts for mobile browser chrome; falls back to 100vh where unsupported */
   display: flex;
   flex-direction: column;
   position: relative;
+  overflow: hidden;
 }
 
 .topbar {
@@ -130,6 +132,7 @@ input, textarea { font-family: inherit; }
 
 .screen { display: none; flex: 1; flex-direction: column; padding-bottom: 90px; }
 .screen.active { display: flex; }
+#screen-dashboard { padding-bottom: 0; }
 
 /* ============ SEARCH ============ */
 /* ============ MODE TOGGLE (Search vs Tournament Archive) ============ */
@@ -288,7 +291,7 @@ input, textarea { font-family: inherit; }
 }
 .add-event-link:active { color: var(--brass-bright); }
 .dashboard-footer-link-wrap {
-  padding: 30px 20px 20px;
+  padding: 10px 20px 8px;
   text-align: center;
 }
 .dashboard-footer-link {
@@ -374,6 +377,7 @@ input, textarea { font-family: inherit; }
 }
 
 .results-scroll { flex: 1; overflow-y: auto; padding: 0 20px; }
+#dashboard-scroll { overflow-y: hidden; }
 
 .section-label {
   font-size: 11px;
@@ -518,6 +522,7 @@ input, textarea { font-family: inherit; }
   display: flex; align-items: center; justify-content: center;
   color: var(--parchment-dim); font-size: 15px;
 }
+.sheet-close svg { width: 15px; height: 15px; }
 
 .event-hero {
   padding: 22px 24px 18px;
@@ -717,7 +722,7 @@ textarea.notes-input { resize: vertical; min-height: 70px; line-height: 1.4; }
   background: var(--football); color: #06251a; font-weight: 700; font-size: 15px;
   margin-top: 4px;
 }
-.remove-btn, .cancel-edit-btn {
+.remove-btn {
   width: 100%; padding: 12px; border-radius: 12px; border: 1px solid var(--ink-border);
   background: none; color: var(--parchment-faint); font-weight: 600; font-size: 13.5px;
   margin-top: 8px;
@@ -774,14 +779,39 @@ textarea.notes-input { resize: vertical; min-height: 70px; line-height: 1.4; }
   background: var(--ink-card);
   border: 1px solid var(--ink-border);
   border-radius: 14px;
-  padding: 14px 10px;
+  padding: 10px 8px;
   text-align: center;
 }
-.stat-card .num { font-family: 'Fraunces', serif; font-size: 26px; font-weight: 600; color: var(--brass-bright); line-height: 1; }
-.stat-card .num.num-text { font-size: 19px; }
-.stat-card .lbl { font-size: 10.5px; color: var(--parchment-faint); margin-top: 5px; text-transform: uppercase; letter-spacing: 0.05em; }
+.stat-card .num { font-family: 'Fraunces', serif; font-size: 22px; font-weight: 600; color: var(--brass-bright); line-height: 1; }
+.stat-card .num.num-text { font-size: 17px; }
+.stat-card .lbl { font-size: 10px; color: var(--parchment-faint); margin-top: 4px; text-transform: uppercase; letter-spacing: 0.05em; }
 
-.dash-section { padding: 22px 20px 4px; }
+.stats-swiper-track {
+  display: flex;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: none;
+}
+.stats-swiper-track::-webkit-scrollbar { display: none; }
+.stats-swiper-page {
+  flex: 0 0 100%;
+  scroll-snap-align: start;
+  min-width: 100%;
+}
+.stats-period-label {
+  font-size: 11px; font-weight: 700; text-transform: uppercase;
+  letter-spacing: 0.06em; color: var(--parchment-faint);
+  padding: 0 20px 4px; margin-top: 10px;
+}
+.stats-swiper-dots {
+  display: flex; justify-content: center; gap: 6px;
+  margin-top: 6px; margin-bottom: 0;
+}
+.stats-dot { width: 6px; height: 6px; border-radius: 50%; background: var(--ink-border); }
+.stats-dot.active { background: var(--brass); }
+
+.dash-section { padding: 14px 20px 2px; }
 .dash-section-header {
   display: flex;
   align-items: baseline;
@@ -790,7 +820,7 @@ textarea.notes-input { resize: vertical; min-height: 70px; line-height: 1.4; }
   font-size: 16.5px;
   font-weight: 600;
   color: var(--parchment);
-  margin-bottom: 12px;
+  margin-bottom: 8px;
 }
 .dash-streak-count {
   font-family: 'Inter', sans-serif;
@@ -867,8 +897,8 @@ textarea.notes-input { resize: vertical; min-height: 70px; line-height: 1.4; }
 
 /* Sport breakdown bars (clickable — drills into watched history for that sport) */
 .sport-bar-row {
-  display: flex; align-items: center; gap: 10px; margin-bottom: 10px;
-  width: 100%; background: none; border: none; padding: 4px 0; text-align: left;
+  display: flex; align-items: center; gap: 10px; margin-bottom: 6px;
+  width: 100%; background: none; border: none; padding: 2px 0; text-align: left;
   color: inherit; cursor: pointer;
 }
 .sport-bar-row:last-child { margin-bottom: 0; }
@@ -888,7 +918,7 @@ textarea.notes-input { resize: vertical; min-height: 70px; line-height: 1.4; }
 /* Most watched list (clickable — drills into watched history for that team/player) */
 .mostwatched-row {
   display: flex; align-items: center; gap: 12px;
-  padding: 9px 0;
+  padding: 6px 0;
   border-bottom: 1px solid var(--ink-border);
   width: 100%; background: none; border-top: none; border-left: none; border-right: none;
   text-align: left; color: inherit; cursor: pointer;
@@ -900,9 +930,9 @@ textarea.notes-input { resize: vertical; min-height: 70px; line-height: 1.4; }
   color: var(--parchment-faint); width: 18px; flex-shrink: 0;
 }
 .mostwatched-icon {
-  width: 30px; height: 30px; border-radius: 8px;
+  width: 26px; height: 26px; border-radius: 8px;
   display: flex; align-items: center; justify-content: center;
-  font-size: 14px; flex-shrink: 0;
+  font-size: 13px; flex-shrink: 0;
   background: var(--ink-card); border: 1px solid var(--ink-border);
 }
 .mostwatched-name { flex: 1; font-size: 14px; font-weight: 500; }
@@ -957,20 +987,92 @@ textarea.notes-input { resize: vertical; min-height: 70px; line-height: 1.4; }
 @media (max-width: 380px) {
   .topbar-title { font-size: 22px; }
 }
+
+/* ============ LOADING SCREEN (first launch only) ============ */
+#app-loading-screen {
+  position: fixed; inset: 0; z-index: 500;
+  background: var(--ink);
+  display: flex; flex-direction: column; align-items: center; justify-content: center;
+  gap: 14px;
+  opacity: 1;
+  transition: opacity 0.35s ease;
+}
+#app-loading-screen.hidden {
+  opacity: 0;
+  pointer-events: none;
+}
+.loading-mark {
+  width: 44px; height: 44px;
+  color: var(--brass);
+  opacity: 0.9;
+}
+.loading-mark svg { width: 100%; height: 100%; }
+.loading-title {
+  font-family: 'Fraunces', serif;
+  font-size: 20px;
+  font-weight: 600;
+  color: var(--parchment);
+  display: flex;
+  align-items: baseline;
+  gap: 7px;
+}
+.loading-title span {
+  font-family: 'Inter', sans-serif;
+  font-weight: 500;
+  font-size: 10.5px;
+  color: var(--brass);
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+.loading-spinner {
+  width: 22px; height: 22px;
+  border-radius: 50%;
+  border: 2.5px solid var(--ink-border);
+  border-top-color: var(--brass);
+  animation: loading-spin 0.8s linear infinite;
+  margin-top: 6px;
+}
+@keyframes loading-spin { to { transform: rotate(360deg); } }
 </style>
 </head>
 <body>
+
+<div id="app-loading-screen">
+  <div class="loading-mark">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg>
+  </div>
+  <div class="loading-title">My Sports <span>LogBook</span></div>
+  <div class="loading-spinner"></div>
+</div>
 
 <div id="app">
 
   <!-- ============ DASHBOARD (HOME) SCREEN ============ -->
   <div class="screen active" id="screen-dashboard">
     <div class="topbar">
-      <div class="topbar-title">Logbook <span class="sub">Archive</span></div>
+      <div class="topbar-title">My Sports <span class="sub">LogBook</span></div>
     </div>
     <div class="results-scroll" id="dashboard-scroll">
 
-      <div class="history-stats stats-4col" id="history-stats"></div>
+      <div class="stats-swiper-track" id="stats-swiper-track">
+        <div class="stats-swiper-page">
+          <div class="stats-period-label">All Time</div>
+          <div class="history-stats stats-4col" id="history-stats-alltime"></div>
+        </div>
+        <div class="stats-swiper-page">
+          <div class="stats-period-label">This Year</div>
+          <div class="history-stats stats-4col" id="history-stats-year"></div>
+        </div>
+        <div class="stats-swiper-page">
+          <div class="stats-period-label">This Month</div>
+          <div class="history-stats stats-4col" id="history-stats-month"></div>
+        </div>
+      </div>
+      <div class="stats-swiper-dots" id="stats-swiper-dots">
+        <span class="stats-dot active"></span>
+        <span class="stats-dot"></span>
+        <span class="stats-dot"></span>
+      </div>
 
       <div class="dash-section" id="dash-activity-section">
         <div class="dash-section-header">
@@ -1015,6 +1117,10 @@ textarea.notes-input { resize: vertical; min-height: 70px; line-height: 1.4; }
         </div>
       </div>
     </div>
+    <div class="mode-toggle" id="sport-breakdown-mode-toggle" style="padding: 14px 20px 0;">
+      <button class="mode-toggle-btn active" data-mode="count">By count</button>
+      <button class="mode-toggle-btn" data-mode="time">By watch time</button>
+    </div>
     <div class="results-scroll" id="sport-breakdown-full-list" style="padding: 22px 20px 4px;"></div>
   </div>
 
@@ -1030,6 +1136,10 @@ textarea.notes-input { resize: vertical; min-height: 70px; line-height: 1.4; }
           <div class="detail-sub">Full breakdown</div>
         </div>
       </div>
+    </div>
+    <div class="mode-toggle" id="mostwatched-mode-toggle" style="padding: 14px 20px 0;">
+      <button class="mode-toggle-btn active" data-mode="count">By count</button>
+      <button class="mode-toggle-btn" data-mode="time">By watch time</button>
     </div>
     <div class="results-scroll" id="mostwatched-full-list" style="padding: 4px 20px 4px;"></div>
   </div>
@@ -1304,7 +1414,6 @@ textarea.notes-input { resize: vertical; min-height: 70px; line-height: 1.4; }
           <textarea class="notes-input" id="notes-input" placeholder="What stood out…"></textarea>
         </div>
         <button class="save-btn" id="save-viewing-btn">Save to history</button>
-        <button class="cancel-edit-btn" id="cancel-edit-viewing-btn" style="display:none;">Cancel</button>
         <button class="remove-btn" id="remove-viewing-btn" style="display:none;">Remove from history</button>
       </div>
     </div>
@@ -2549,6 +2658,8 @@ let STATE = {
   currentEntity: null, // { type: 'team'|'player'|'competition', id }
   currentEntityView: "fixtures", // "fixtures" | "watched" — which tab is active on the entity screen
   entityFilters: { seasonId: null, secondaryId: null }, // null = "All" for each. secondaryId is a participant id when currentEntity.type === "competition", otherwise a competitionId.
+  sportBreakdownMode: "count", // "count" | "time" — toggle on the "By sport" See all screen only; the dashboard preview always shows "time" regardless of this
+  mostWatchedMode: "count", // "count" | "time" — toggle on the "Most watched" See all screen only; the dashboard preview always shows "count" regardless of this
   currentEventId: null,
   currentTournamentSeasonId: null,
   searchMode: "search", // "search" | "archive"
@@ -2556,23 +2667,52 @@ let STATE = {
 
 // ---------- INIT / SEEDING ----------
 async function init() {
-  await window.__SEED_READY__; // wait for data/epl-events.json to be fetched and merged in
+  bindGlobalUI(); // pure event binding, safe before any data has loaded
+  showLoadingScreen(); // shown on every load for now (temporary, for testing)
+
   const sportCount = await db.sports.count();
+
   if (sportCount === 0) {
-    // First ever launch: seed everything.
+    // First-ever launch: there's nothing local to show yet, so this
+    // genuinely has to wait on the network fetch of data/*.json before
+    // there's anything to render.
+    await window.__SEED_READY__;
     await seedDatabase();
+    await loadAllIntoMemory();
+    renderSearchEmpty();
+    renderHistory();
+    hideLoadingScreen();
   } else {
-    // Every subsequent launch: sync in any new/updated reference data (teams,
-    // players, competitions, seasons, events) added in app updates since the
-    // person's local database was first created. Uses put (upsert) so it's
-    // always safe to re-run, and never touches the person's own viewing
-    // records or tournament-watch records.
-    await syncReferenceData();
+    // Returning visit: the person's own data is already sitting in
+    // IndexedDB locally, so render immediately from that - no reason to
+    // make them wait on a network fetch just to see their own history again.
+    await loadAllIntoMemory();
+    renderSearchEmpty();
+    renderHistory();
+    hideLoadingScreen();
+
+    // Sync in any new/updated reference data (new competitions, updated
+    // fixtures, etc. shipped since this person's local database was first
+    // created) in the background, then quietly refresh once it's in -
+    // no loading state needed since the dashboard is already showing
+    // something useful.
+    window.__SEED_READY__
+      .then(() => syncReferenceData())
+      .then(() => loadAllIntoMemory())
+      .then(() => {
+        renderHistory();
+        refreshCurrentListViews();
+      })
+      .catch(err => console.warn("Background reference-data sync failed:", err));
   }
-  await loadAllIntoMemory();
-  bindGlobalUI();
-  renderSearchEmpty();
-  renderHistory();
+}
+
+function showLoadingScreen() {
+  document.getElementById("app-loading-screen").classList.remove("hidden");
+}
+
+function hideLoadingScreen() {
+  document.getElementById("app-loading-screen").classList.add("hidden");
 }
 
 async function seedDatabase() {
@@ -3927,7 +4067,7 @@ function resetViewingForm(existing, event) {
     form.style.display = "none";
     document.getElementById("viewing-summary").style.display = "none";
     removeBtn.style.display = "none";
-    document.getElementById("cancel-edit-viewing-btn").style.display = "none";
+    setModalCloseButton("close");
 
     document.getElementById("watched-hours").value = "";
     document.getElementById("watched-minutes").value = "";
@@ -3943,6 +4083,29 @@ function resetViewingForm(existing, event) {
   renderSessionsChecklist(event);
 }
 
+// Swaps the modal's top-right button between "×" (close the whole modal)
+// and "‹" (go back to the compact summary, discarding unsaved edits) -
+// whichever makes sense for the sub-view currently showing. Uses .onclick
+// rather than addEventListener so repeated calls cleanly replace the
+// handler instead of stacking duplicates.
+function setModalCloseButton(mode) {
+  const btn = document.getElementById("modal-close");
+  if (mode === "back") {
+    btn.innerHTML = `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"/></svg>`;
+    btn.setAttribute("aria-label", "Back to summary");
+    btn.onclick = () => {
+      // Discards any unsaved edits by re-seeding the form from the saved
+      // record and returning to the summary view.
+      const existing = STATE.viewingsByEventId[STATE.currentEventId]?.[0];
+      resetViewingForm(existing, STATE.eventsById[STATE.currentEventId]);
+    };
+  } else {
+    btn.innerHTML = "×";
+    btn.setAttribute("aria-label", "Close");
+    btn.onclick = closeModal;
+  }
+}
+
 // Shows the compact, read-only summary of an existing viewing record —
 // entered fields only, no inputs — with a pen icon to switch into the full
 // editable form. Hides the "Mark as watched" button entirely, since it has
@@ -3951,16 +4114,18 @@ function showViewingSummary() {
   document.getElementById("mark-watched-btn").style.display = "none";
   document.getElementById("viewing-form").style.display = "none";
   document.getElementById("viewing-summary").style.display = "block";
+  setModalCloseButton("close");
 }
 
 // Switches to the full editable form. `hasExisting` controls whether the
-// Cancel button appears - only meaningful when there's a saved summary to
-// cancel back to; a brand-new record has no prior state to discard.
+// top-right button becomes a back arrow (there's a saved summary to return
+// to) or stays as a close "×" (a brand-new record has no prior state to
+// go back to, so closing the whole modal is the only sensible action).
 function showViewingForm(hasExisting) {
   document.getElementById("mark-watched-btn").style.display = "none";
   document.getElementById("viewing-summary").style.display = "none";
   document.getElementById("viewing-form").style.display = "block";
-  document.getElementById("cancel-edit-viewing-btn").style.display = hasExisting ? "block" : "none";
+  setModalCloseButton(hasExisting ? "back" : "close");
 }
 
 // Builds the compact summary's row markup for one viewing record — only
@@ -4212,6 +4377,44 @@ function refreshCurrentListViews() {
   }
 }
 
+// Computes and fills the three swipeable stat-card pages on the dashboard:
+// All Time, This Year, This Month. Each period reuses the exact same
+// stat-card markup, just scoped to a filtered slice of viewings — "this
+// year"/"this month" are judged against each viewing's own watchedAt date
+// (works the same for real and estimated-tournament viewings, since both
+// carry a watchedAt).
+function renderHistoryStats(combinedForCounts) {
+  const now = new Date();
+  const thisYear = combinedForCounts.filter(v => new Date(v.watchedAt).getFullYear() === now.getFullYear());
+  const thisMonth = thisYear.filter(v => new Date(v.watchedAt).getMonth() === now.getMonth());
+
+  const periods = [
+    { elId: "history-stats-alltime", viewings: combinedForCounts },
+    { elId: "history-stats-year", viewings: thisYear },
+    { elId: "history-stats-month", viewings: thisMonth },
+  ];
+
+  periods.forEach(({ elId, viewings }) => {
+    const sportsWatched = new Set();
+    const compsWatched = new Set();
+    let totalMinutes = 0;
+    viewings.forEach(v => {
+      const sportId = v.sportId || STATE.eventsById[v.eventId]?.sportId;
+      const compId = v.competitionId || STATE.eventsById[v.eventId]?.competitionId;
+      if (sportId) sportsWatched.add(sportId);
+      if (compId) compsWatched.add(compId);
+      totalMinutes += v.durationMinutes || 0;
+    });
+    const timeLabel = totalMinutes ? formatDuration(totalMinutes) : "—";
+    document.getElementById(elId).innerHTML = `
+      <div class="stat-card"><div class="num">${viewings.length}</div><div class="lbl">Watched</div></div>
+      <div class="stat-card"><div class="num num-text">${timeLabel}</div><div class="lbl">Time Watched</div></div>
+      <div class="stat-card"><div class="num">${sportsWatched.size}</div><div class="lbl">Sports</div></div>
+      <div class="stat-card"><div class="num">${compsWatched.size}</div><div class="lbl">Competitions</div></div>
+    `;
+  });
+}
+
 // ---------- HISTORY ----------
 function renderHistory() {
   const allViewings = Object.values(STATE.viewingsByEventId).flat()
@@ -4226,24 +4429,8 @@ function renderHistory() {
   const estimatedViewings = buildEstimatedTournamentViewings();
   const combinedForCounts = allViewings.concat(estimatedViewings);
 
-  // ---- top stat row (includes estimated tournament matches) ----
-  const sportsWatched = new Set();
-  const compsWatched = new Set();
-  let totalMinutes = 0;
-  combinedForCounts.forEach(v => {
-    const sportId = v.sportId || STATE.eventsById[v.eventId]?.sportId;
-    const compId = v.competitionId || STATE.eventsById[v.eventId]?.competitionId;
-    if (sportId) sportsWatched.add(sportId);
-    if (compId) compsWatched.add(compId);
-    totalMinutes += v.durationMinutes || 0;
-  });
-  const timeLabel = totalMinutes ? formatDuration(totalMinutes) : "—";
-  document.getElementById("history-stats").innerHTML = `
-    <div class="stat-card"><div class="num">${combinedForCounts.length}</div><div class="lbl">Watched</div></div>
-    <div class="stat-card"><div class="num num-text">${timeLabel}</div><div class="lbl">Time Watched</div></div>
-    <div class="stat-card"><div class="num">${sportsWatched.size}</div><div class="lbl">Sports</div></div>
-    <div class="stat-card"><div class="num">${compsWatched.size}</div><div class="lbl">Competitions</div></div>
-  `;
+  // ---- top stat row: All Time / This Year / This Month, swipeable ----
+  renderHistoryStats(combinedForCounts);
 
   renderMonthGrid(combinedForCounts);
   renderSportBreakdown(combinedForCounts, undefined, 3);
@@ -4357,17 +4544,25 @@ function renderMonthGrid(allViewings) {
 function renderSportBreakdown(allViewings, targetElId, limit) {
   const el = document.getElementById(targetElId || "sport-breakdown");
   const section = document.getElementById("dash-sportmix-section");
-  if (targetElId === undefined && !allViewings.length) { section.style.display = "none"; return; }
-  if (targetElId === undefined) section.style.display = "block";
+  const isDashboard = targetElId === undefined;
+  if (isDashboard && !allViewings.length) { section.style.display = "none"; return; }
+  if (isDashboard) section.style.display = "block";
 
+  // The dashboard preview always shows watch time, regardless of whatever
+  // mode is currently selected on the "See all" screen's toggle - only the
+  // full page respects STATE.sportBreakdownMode.
+  const mode = isDashboard ? "time" : STATE.sportBreakdownMode;
+  const counts = {};
   const minutes = {};
   allViewings.forEach(v => {
     const sportId = v.sportId || STATE.eventsById[v.eventId]?.sportId;
     if (!sportId) return;
+    counts[sportId] = (counts[sportId] || 0) + 1;
     minutes[sportId] = (minutes[sportId] || 0) + (v.durationMinutes || 0);
   });
 
-  let sportOrder = Object.keys(minutes).sort((a, b) => minutes[b] - minutes[a]);
+  const metric = mode === "time" ? minutes : counts;
+  let sportOrder = Object.keys(metric).sort((a, b) => metric[b] - metric[a]);
   if (limit) sportOrder = sportOrder.slice(0, limit);
 
   if (!sportOrder.length) {
@@ -4375,24 +4570,51 @@ function renderSportBreakdown(allViewings, targetElId, limit) {
     return;
   }
 
-  const max = Math.max(...sportOrder.map(id => minutes[id]), 1);
-  el.innerHTML = sportOrder.map(sportId => {
-    const sport = STATE.sportsById[sportId];
-    const mins = minutes[sportId] || 0;
-    const pct = Math.round((mins / max) * 100);
-    const colorVar = SPORT_COLORS[sportId] || "var(--brass)";
-    return `
-      <button class="sport-bar-row" data-sport-id="${sportId}">
-        <div class="sport-bar-icon">${SPORT_ICONS[sportId] || "🏅"}</div>
-        <div class="sport-bar-name">${escapeHtml(sport?.name || sportId)}</div>
-        <div class="sport-bar-track"><div class="sport-bar-fill" style="width:${pct}%; background:${colorVar}"></div></div>
-        <div class="sport-bar-count">${formatDuration(mins) || "0m"}</div>
-      </button>`;
-  }).join("");
+  if (mode === "time") {
+    // Progress-bar style retained specifically for the watch-time ranking -
+    // a bar communicates relative time share better than a bare number.
+    const max = Math.max(...sportOrder.map(id => minutes[id]), 1);
+    el.innerHTML = sportOrder.map(sportId => {
+      const sport = STATE.sportsById[sportId];
+      const mins = minutes[sportId] || 0;
+      const pct = Math.round((mins / max) * 100);
+      const colorVar = SPORT_COLORS[sportId] || "var(--brass)";
+      return `
+        <button class="sport-bar-row" data-sport-id="${sportId}">
+          <div class="sport-bar-icon">${SPORT_ICONS[sportId] || "🏅"}</div>
+          <div class="sport-bar-name">${escapeHtml(sport?.name || sportId)}</div>
+          <div class="sport-bar-track"><div class="sport-bar-fill" style="width:${pct}%; background:${colorVar}"></div></div>
+          <div class="sport-bar-count">${formatDuration(mins) || "0m"}</div>
+        </button>`;
+    }).join("");
+  } else {
+    // Count ranking matches the "Most watched" row format (rank, icon, name, count).
+    el.innerHTML = sportOrder.map((sportId, i) => {
+      const sport = STATE.sportsById[sportId];
+      return `
+        <button class="mostwatched-row" data-sport-id="${sportId}">
+          <div class="mostwatched-rank">${i + 1}</div>
+          <div class="mostwatched-icon">${SPORT_ICONS[sportId] || "🏅"}</div>
+          <div class="mostwatched-name">${escapeHtml(sport?.name || sportId)}</div>
+          <div class="mostwatched-count">${counts[sportId]}×</div>
+        </button>`;
+    }).join("");
+  }
 
   el.querySelectorAll("[data-sport-id]").forEach(row => {
     row.addEventListener("click", () => openSportWatchedHistory(row.getAttribute("data-sport-id")));
   });
+}
+
+// Switches the "By sport" ranking mode on the full "See all" screen only -
+// the dashboard preview is unaffected and always shows watch time.
+function setSportBreakdownMode(mode) {
+  STATE.sportBreakdownMode = mode;
+  document.querySelectorAll("#sport-breakdown-mode-toggle .mode-toggle-btn").forEach(b => {
+    b.classList.toggle("active", b.getAttribute("data-mode") === mode);
+  });
+  const allViewings = Object.values(STATE.viewingsByEventId).flat().concat(buildEstimatedTournamentViewings());
+  renderSportBreakdown(allViewings, "sport-breakdown-full-list", null);
 }
 
 function openSportBreakdownFull() {
@@ -4403,26 +4625,35 @@ function openSportBreakdownFull() {
 
 // ---- Most watched teams/players ----
 // limit caps how many rows render (dashboard preview = 3, full page = no cap).
-// F1 drivers are deliberately excluded: events only record the race winner
-// (not "who you watched"), so a driver "count" here would really just mean
-// "how many races they won" - not a meaningful watched-most ranking the way
-// it is for a football team or darts player.
+// F1 drivers are deliberately excluded regardless of mode: events only
+// record the race winner (not "who you watched"), so a driver count/time
+// here would really just mean "how many races they won"/"how long the
+// races they won took" - not a meaningful watched-most ranking the way it
+// is for a football team or darts player.
 function renderMostWatched(allViewings, targetElId, limit) {
   const el = document.getElementById(targetElId || "most-watched-list");
   const section = document.getElementById("dash-mostwatched-section");
-  if (targetElId === undefined && !allViewings.length) { section.style.display = "none"; return; }
-  if (targetElId === undefined) section.style.display = "block";
+  const isDashboard = targetElId === undefined;
+  if (isDashboard && !allViewings.length) { section.style.display = "none"; return; }
+  if (isDashboard) section.style.display = "block";
 
+  // The dashboard preview always shows count, regardless of whatever mode
+  // is currently selected on the "See all" screen's toggle - only the full
+  // page respects STATE.mostWatchedMode.
+  const mode = isDashboard ? "count" : STATE.mostWatchedMode;
   const counts = {}; // participantId -> count
+  const minutes = {}; // participantId -> total minutes
   allViewings.forEach(v => {
     const ev = STATE.eventsById[v.eventId];
     if (!ev || ev.sportId === "f1") return;
     ev.participants.forEach(pid => {
       counts[pid] = (counts[pid] || 0) + 1;
+      minutes[pid] = (minutes[pid] || 0) + (v.durationMinutes || 0);
     });
   });
 
-  let ranked = Object.entries(counts).sort((a, b) => b[1] - a[1]);
+  const metric = mode === "time" ? minutes : counts;
+  let ranked = Object.entries(metric).sort((a, b) => b[1] - a[1]);
   if (limit) ranked = ranked.slice(0, limit);
 
   if (!ranked.length) {
@@ -4430,21 +4661,42 @@ function renderMostWatched(allViewings, targetElId, limit) {
     return;
   }
 
-  el.innerHTML = ranked.map(([id, count], i) => {
-    const team = STATE.teamsById[id];
-    const player = STATE.playersById[id];
-    const name = team?.name || player?.name || "?";
-    const sportId = team?.sportId || player?.sportId;
-    const icon = SPORT_ICONS[sportId] || "🏅";
-    const entityType = team ? "team" : "player";
-    return `
-      <button class="mostwatched-row" data-entity-type="${entityType}" data-entity-id="${id}">
-        <div class="mostwatched-rank">${i + 1}</div>
-        <div class="mostwatched-icon">${icon}</div>
-        <div class="mostwatched-name">${escapeHtml(name)}</div>
-        <div class="mostwatched-count">${count}×</div>
-      </button>`;
-  }).join("");
+  if (mode === "time") {
+    const max = Math.max(...ranked.map(([, v]) => v), 1);
+    el.innerHTML = ranked.map(([id]) => {
+      const team = STATE.teamsById[id];
+      const player = STATE.playersById[id];
+      const name = team?.name || player?.name || "?";
+      const sportId = team?.sportId || player?.sportId;
+      const entityType = team ? "team" : "player";
+      const mins = minutes[id] || 0;
+      const pct = Math.round((mins / max) * 100);
+      const colorVar = SPORT_COLORS[sportId] || "var(--brass)";
+      return `
+        <button class="sport-bar-row" data-entity-type="${entityType}" data-entity-id="${id}">
+          <div class="sport-bar-icon">${SPORT_ICONS[sportId] || "🏅"}</div>
+          <div class="sport-bar-name">${escapeHtml(name)}</div>
+          <div class="sport-bar-track"><div class="sport-bar-fill" style="width:${pct}%; background:${colorVar}"></div></div>
+          <div class="sport-bar-count">${formatDuration(mins) || "0m"}</div>
+        </button>`;
+    }).join("");
+  } else {
+    el.innerHTML = ranked.map(([id, count], i) => {
+      const team = STATE.teamsById[id];
+      const player = STATE.playersById[id];
+      const name = team?.name || player?.name || "?";
+      const sportId = team?.sportId || player?.sportId;
+      const icon = SPORT_ICONS[sportId] || "🏅";
+      const entityType = team ? "team" : "player";
+      return `
+        <button class="mostwatched-row" data-entity-type="${entityType}" data-entity-id="${id}">
+          <div class="mostwatched-rank">${i + 1}</div>
+          <div class="mostwatched-icon">${icon}</div>
+          <div class="mostwatched-name">${escapeHtml(name)}</div>
+          <div class="mostwatched-count">${count}×</div>
+        </button>`;
+    }).join("");
+  }
 
   el.querySelectorAll("[data-entity-id]").forEach(row => {
     // Opens the same entity screen reachable from Search, pre-set to the
@@ -4455,6 +4707,17 @@ function renderMostWatched(allViewings, targetElId, limit) {
       "watched"
     ));
   });
+}
+
+// Switches the "Most watched" ranking mode on the full "See all" screen
+// only - same idea as setSportBreakdownMode above.
+function setMostWatchedMode(mode) {
+  STATE.mostWatchedMode = mode;
+  document.querySelectorAll("#mostwatched-mode-toggle .mode-toggle-btn").forEach(b => {
+    b.classList.toggle("active", b.getAttribute("data-mode") === mode);
+  });
+  const allViewings = Object.values(STATE.viewingsByEventId).flat();
+  renderMostWatched(allViewings, "mostwatched-full-list", null);
 }
 
 function openMostWatchedFull() {
@@ -4622,16 +4885,29 @@ function bindGlobalUI() {
     syncTabHighlightToScreen();
   });
 
+  const statsSwiperTrack = document.getElementById("stats-swiper-track");
+  const statsSwiperDots = document.querySelectorAll("#stats-swiper-dots .stats-dot");
+  statsSwiperTrack.addEventListener("scroll", () => {
+    const idx = Math.round(statsSwiperTrack.scrollLeft / statsSwiperTrack.clientWidth);
+    statsSwiperDots.forEach((d, i) => d.classList.toggle("active", i === idx));
+  });
+
   document.getElementById("sport-breakdown-see-all").addEventListener("click", openSportBreakdownFull);
   document.getElementById("sport-breakdown-full-back").addEventListener("click", () => {
     goBackScreen("dashboard");
     syncTabHighlightToScreen();
+  });
+  document.querySelectorAll("#sport-breakdown-mode-toggle .mode-toggle-btn").forEach(btn => {
+    btn.addEventListener("click", () => setSportBreakdownMode(btn.getAttribute("data-mode")));
   });
 
   document.getElementById("most-watched-see-all").addEventListener("click", openMostWatchedFull);
   document.getElementById("mostwatched-full-back").addEventListener("click", () => {
     goBackScreen("dashboard");
     syncTabHighlightToScreen();
+  });
+  document.querySelectorAll("#mostwatched-mode-toggle .mode-toggle-btn").forEach(btn => {
+    btn.addEventListener("click", () => setMostWatchedMode(btn.getAttribute("data-mode")));
   });
 
   document.querySelectorAll(".tab").forEach(tab => {
@@ -4650,7 +4926,7 @@ function bindGlobalUI() {
     });
   });
 
-  document.getElementById("modal-close").addEventListener("click", closeModal);
+  setModalCloseButton("close"); // default state; showViewingSummary/showViewingForm swap it as needed
   document.getElementById("modal-backdrop").addEventListener("click", (e) => {
     if (e.target.id === "modal-backdrop") closeModal();
   });
@@ -4664,13 +4940,6 @@ function bindGlobalUI() {
 
   document.getElementById("edit-viewing-btn").addEventListener("click", () => {
     showViewingForm(true);
-  });
-
-  document.getElementById("cancel-edit-viewing-btn").addEventListener("click", () => {
-    // Discards any unsaved edits by re-seeding the form from the saved
-    // record and returning to the summary view.
-    const existing = STATE.viewingsByEventId[STATE.currentEventId]?.[0];
-    resetViewingForm(existing, STATE.eventsById[STATE.currentEventId]);
   });
 
   document.querySelectorAll("#coverage-segmented button").forEach(b => {
