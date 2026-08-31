@@ -155,31 +155,26 @@ input, textarea { font-family: inherit; }
   border-color: var(--brass);
 }
 
-.filter-pill-row {
-  display: flex;
-  gap: 6px;
-  padding: 0 20px 10px;
-  overflow-x: auto;
-  scrollbar-width: none;
-}
-.filter-pill-row:empty { display: none; }
-.filter-pill-row::-webkit-scrollbar { display: none; }
-.filter-pill {
-  flex: 0 0 auto;
-  padding: 6px 13px;
-  border-radius: 999px;
+.filter-select {
+  display: block;
+  width: calc(100% - 40px);
+  margin: 0 20px 10px;
+  padding: 9px 32px 9px 13px;
+  border-radius: 10px;
   border: 1px solid var(--ink-border);
   background: var(--ink-card);
-  color: var(--parchment-dim);
-  font-size: 12.5px;
+  color: var(--parchment);
+  font-size: 13px;
   font-weight: 600;
-  white-space: nowrap;
+  font-family: inherit;
+  appearance: none;
+  -webkit-appearance: none;
+  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23a3a396' stroke-width='2.4' stroke-linecap='round' stroke-linejoin='round'><polyline points='6 9 12 15 18 9'/></svg>");
+  background-repeat: no-repeat;
+  background-position: right 10px center;
+  background-size: 15px;
 }
-.filter-pill.active {
-  background: var(--brass);
-  color: #241a0c;
-  border-color: var(--brass);
-}
+.filter-select:focus { outline: none; border-color: var(--brass); }
 
 /* ============ TOURNAMENT ARCHIVE ============ */
 .tournament-row {
@@ -1320,8 +1315,8 @@ textarea.notes-input { resize: vertical; min-height: 70px; line-height: 1.4; }
       <button class="mode-toggle-btn active" data-entity-view="fixtures">Fixtures</button>
       <button class="mode-toggle-btn" data-entity-view="watched">Watched</button>
     </div>
-    <div class="filter-pill-row" id="entity-season-filter"></div>
-    <div class="filter-pill-row" id="entity-secondary-filter"></div>
+    <select class="filter-select" id="entity-season-filter" style="display:none;"></select>
+    <select class="filter-select" id="entity-secondary-filter" style="display:none;"></select>
     <div class="history-stats stats-2col" id="entity-watched-stats" style="display:none;"></div>
     <div class="results-scroll" id="entity-events"></div>
   </div>
@@ -2685,7 +2680,7 @@ let STATE = {
   pendingEventsById: {}, // id -> pending event (user-submitted, not yet reconciled)
   currentEntity: null, // { type: 'team'|'player'|'competition', id }
   currentEntityView: "fixtures", // "fixtures" | "watched" — which tab is active on the entity screen
-  entityFilters: { seasonId: null, secondaryId: null }, // null = "All" for each. secondaryId is a participant id when currentEntity.type === "competition", otherwise a competitionId.
+  entityFilters: { seasonLabel: null, secondaryId: null }, // null = "All" for each. seasonLabel is a season's display label (e.g. "2026"), not a specific seasonId - see eventMatchesEntityFilters for why. secondaryId is a participant id when currentEntity.type === "competition", otherwise a competitionId.
   sportBreakdownMode: "count", // "count" | "time" — toggle on the "By sport" See all screen only; the dashboard preview always shows "time" regardless of this
   mostWatchedMode: "count", // "count" | "time" — toggle on the "Most watched" See all screen only; the dashboard preview always shows "count" regardless of this
   currentEventId: null,
@@ -2878,7 +2873,7 @@ function normalize(s) { return (s || "").toLowerCase().trim(); }
 
 function searchAll(query) {
   const q = normalize(query);
-  if (!q) return { teams: [], players: [], competitions: [], events: [] };
+  if (!q) return { teams: [], players: [], competitions: [], todayEvents: {} };
 
   const teams = Object.values(STATE.teamsById).filter(t => normalize(t.name).includes(q)).slice(0, 8);
   // F1 drivers are excluded: events only record the race winner, not a
@@ -2887,12 +2882,19 @@ function searchAll(query) {
   // football/cricket team that played in a match.
   const players = Object.values(STATE.playersById).filter(p => p.sportId !== "f1" && normalize(p.name).includes(q)).slice(0, 8);
   const competitions = Object.values(STATE.competitionsById).filter(c => normalize(c.name).includes(q) || normalize(c.shortName).includes(q)).slice(0, 6);
-  const events = Object.values(STATE.eventsById)
-    .filter(e => normalize(e.title).includes(q))
-    .sort((a, b) => new Date(a.date) - new Date(b.date))
-    .slice(0, 10);
 
-  return { teams, players, competitions, events };
+  // Rather than a broad "any event, any date, matching this text" list,
+  // search only ever surfaces matches happening today - the same "Today"
+  // section shown before any query is typed, just filtered down to ones
+  // that also match the search text. Full match history lives on the
+  // relevant team/player/competition page instead, with its filters.
+  const todayEvents = {};
+  Object.entries(todaysEventsBySport()).forEach(([sportId, events]) => {
+    const filtered = events.filter(e => normalize(e.title).includes(q));
+    if (filtered.length) todayEvents[sportId] = filtered;
+  });
+
+  return { teams, players, competitions, todayEvents };
 }
 
 // Returns true if an event itself is happening today, or — for events with
@@ -2925,23 +2927,27 @@ function todaysEventsBySport() {
   return grouped;
 }
 
+// Shared by renderSearchEmpty (all of today's events) and renderSearchResults
+// (today's events filtered to whatever's currently being searched for) -
+// same grouped-by-sport presentation either way.
+function buildTodayHtml(grouped) {
+  const sportIds = Object.keys(grouped);
+  if (!sportIds.length) return "";
+  // Sort sports by whichever has the earliest event today, so the most
+  // imminent sport's section leads.
+  sportIds.sort((a, b) => new Date(grouped[a][0].date) - new Date(grouped[b][0].date));
+  let html = `<div class="section-label">Today</div>`;
+  sportIds.forEach(sportId => {
+    const sport = STATE.sportsById[sportId];
+    html += `<div class="today-sport-heading"><span>${SPORT_ICONS[sportId] || "🏅"}</span> ${escapeHtml(sport?.name || sportId)}</div>`;
+    grouped[sportId].forEach(e => { html += eventRowHtml(e); });
+  });
+  return html;
+}
+
 function renderSearchEmpty() {
   const el = document.getElementById("search-results");
-  const grouped = todaysEventsBySport();
-  const sportIds = Object.keys(grouped);
-
-  let todayHtml = "";
-  if (sportIds.length) {
-    // Sort sports by whichever has the earliest event today, so the most
-    // imminent sport's section leads.
-    sportIds.sort((a, b) => new Date(grouped[a][0].date) - new Date(grouped[b][0].date));
-    todayHtml += `<div class="section-label">Today</div>`;
-    sportIds.forEach(sportId => {
-      const sport = STATE.sportsById[sportId];
-      todayHtml += `<div class="today-sport-heading"><span>${SPORT_ICONS[sportId] || "🏅"}</span> ${escapeHtml(sport?.name || sportId)}</div>`;
-      grouped[sportId].forEach(e => { todayHtml += eventRowHtml(e); });
-    });
-  }
+  const todayHtml = buildTodayHtml(todaysEventsBySport());
 
   el.innerHTML = todayHtml + `
     <div class="empty-state">
@@ -2957,8 +2963,9 @@ function renderSearchEmpty() {
 
 function renderSearchResults(query) {
   const el = document.getElementById("search-results");
-  const { teams, players, competitions, events } = searchAll(query);
-  const totalCount = teams.length + players.length + competitions.length + events.length;
+  const { teams, players, competitions, todayEvents } = searchAll(query);
+  const todayEventsCount = Object.values(todayEvents).reduce((sum, list) => sum + list.length, 0);
+  const totalCount = teams.length + players.length + competitions.length + todayEventsCount;
 
   if (totalCount === 0) {
     el.innerHTML = `
@@ -2984,10 +2991,10 @@ function renderSearchResults(query) {
     html += `<div class="section-label">Competitions</div>`;
     competitions.forEach(c => { html += entityRowHtml("competition", c.id, c.name, STATE.sportsById[c.sportId]?.name || "", c.sportId); });
   }
-  if (events.length) {
-    html += `<div class="section-label">Events</div>`;
-    events.forEach(e => { html += eventRowHtml(e); });
-  }
+  // Today's matches matching the search text, carried over from the
+  // pre-search state - everything else (full match history) lives on the
+  // relevant team/player/competition page instead, with its own filters.
+  html += buildTodayHtml(todayEvents);
 
   el.innerHTML = html;
 
@@ -3421,7 +3428,7 @@ async function saveTournamentWatch() {
 function openEntityDetail(type, id, initialView) {
   STATE.currentEntity = { type, id };
   STATE.currentEntityView = initialView || "fixtures";
-  STATE.entityFilters = { seasonId: null, secondaryId: null };
+  STATE.entityFilters = { seasonLabel: null, secondaryId: null };
   const name = entityName(type, id);
   const sportId = type === "team" ? STATE.teamsById[id]?.sportId : STATE.playersById[id]?.sportId;
 
@@ -3437,7 +3444,7 @@ function openCompetitionDetail(competitionId, initialView) {
   const comp = STATE.competitionsById[competitionId];
   STATE.currentEntity = { type: "competition", id: competitionId };
   STATE.currentEntityView = initialView || "fixtures";
-  STATE.entityFilters = { seasonId: null, secondaryId: null };
+  STATE.entityFilters = { seasonLabel: null, secondaryId: null };
   document.getElementById("entity-name").textContent = comp.name;
   document.getElementById("entity-sub").textContent = STATE.sportsById[comp.sportId]?.name || "";
 
@@ -3490,17 +3497,25 @@ function getEntityWatchedViewings(entity) {
 }
 
 // True if an event passes the currently-selected season/secondary filter
-// pills on the entity screen. `secondaryId` means different things
-// depending on what kind of entity we're looking at: a participant id when
-// browsing a competition's fixtures (filtering to one team/player within
-// it), or a competitionId when browsing a team/player's fixtures (filtering
-// to one competition they play in). Both filters are optional (null = "All")
-// and combine with AND.
+// dropdowns on the entity screen. seasonLabel is compared against the
+// season's display label (e.g. "2026"), not its raw seasonId - an entity
+// spanning several competitions (e.g. a tennis player's tournaments, or a
+// football team's leagues/cups) has a *different* seasonId per competition
+// even for the same real-world year, so matching on seasonId would split
+// "2026" into one option per competition instead of one option total.
+// secondaryId means different things depending on what kind of entity we're
+// looking at: a participant id when browsing a competition's fixtures
+// (filtering to one team/player within it), or a competitionId when
+// browsing a team/player's fixtures (filtering to one competition they play
+// in). Both filters are optional (null = "All") and combine with AND.
 function eventMatchesEntityFilters(e) {
   if (!e) return false;
   const f = STATE.entityFilters;
   if (!f) return true;
-  if (f.seasonId && e.seasonId !== f.seasonId) return false;
+  if (f.seasonLabel) {
+    const label = STATE.seasonsById[e.seasonId]?.label || e.seasonId;
+    if (label !== f.seasonLabel) return false;
+  }
   if (f.secondaryId) {
     if (STATE.currentEntity?.type === "competition") {
       if (!e.participants?.includes(f.secondaryId)) return false;
@@ -3515,30 +3530,31 @@ function applyEntityFilters(events) {
   return events.filter(eventMatchesEntityFilters);
 }
 
-// Builds the "All" + one-pill-per-option row markup shared by both filter
-// rows. `selectedId` is the currently active value (null = "All").
-function filterPillRowHtml(options, selectedId, kind) {
-  let html = `<button class="filter-pill ${!selectedId ? 'active' : ''}" data-filter-kind="${kind}" data-filter-value="">All</button>`;
+// Builds the "All" + one-<option>-per-choice markup for a filter <select>.
+// `selectedValue` is the currently active value (null = "All").
+function filterSelectOptionsHtml(options, selectedValue) {
+  let html = `<option value=""${!selectedValue ? " selected" : ""}>All</option>`;
   options.forEach(o => {
-    html += `<button class="filter-pill ${selectedId === o.id ? 'active' : ''}" data-filter-kind="${kind}" data-filter-value="${escapeHtml(o.id)}">${escapeHtml(o.label)}</button>`;
+    html += `<option value="${escapeHtml(o.id)}"${selectedValue === o.id ? " selected" : ""}>${escapeHtml(o.label)}</option>`;
   });
   return html;
 }
 
 // Populates the season and secondary (team/player, or league/tournament)
-// filter pill rows on the entity screen, based on what the current entity's
-// full (unfiltered) event set actually contains. A row is hidden entirely
-// when there's nothing meaningful to filter by (fewer than two options), and
-// the secondary row is always skipped for F1 - a single championship per
-// season means a league/tournament filter is meaningless, and filtering a
-// race weekend down to one driver doesn't fit the "fixtures" list format.
+// filter dropdowns on the entity screen, based on what the current entity's
+// full (unfiltered) event set actually contains. A dropdown is hidden
+// entirely when there's nothing meaningful to filter by (fewer than two
+// options), and the secondary one is always skipped for F1 - a single
+// championship per season means a league/tournament filter is meaningless,
+// and filtering a race weekend down to one driver doesn't fit the
+// "fixtures" list format.
 function renderEntityFilterPills() {
-  const seasonWrap = document.getElementById("entity-season-filter");
-  const secondaryWrap = document.getElementById("entity-secondary-filter");
+  const seasonSelect = document.getElementById("entity-season-filter");
+  const secondarySelect = document.getElementById("entity-secondary-filter");
   const entity = STATE.currentEntity;
   if (!entity) {
-    seasonWrap.innerHTML = "";
-    secondaryWrap.innerHTML = "";
+    seasonSelect.style.display = "none";
+    secondarySelect.style.display = "none";
     return;
   }
 
@@ -3550,18 +3566,36 @@ function renderEntityFilterPills() {
 
   const allEvents = getEntityEvents(entity);
 
-  // ---- Season/year pills ----
-  const seasonIds = [...new Set(allEvents.map(e => e.seasonId).filter(Boolean))];
-  if (seasonIds.length > 1) {
-    const latestDateFor = sid => Math.max(...allEvents.filter(e => e.seasonId === sid).map(e => new Date(e.date).getTime()));
-    seasonIds.sort((a, b) => latestDateFor(b) - latestDateFor(a)); // most recent season first
-    const options = seasonIds.map(sid => ({ id: sid, label: STATE.seasonsById[sid]?.label || sid }));
-    seasonWrap.innerHTML = filterPillRowHtml(options, STATE.entityFilters.seasonId, "season");
+  // ---- Season/year dropdown ----
+  // Grouped by the season's display LABEL (e.g. "2026"), not its raw
+  // seasonId - a player/team spanning several competitions has one distinct
+  // seasonId per competition even within the same real-world year (a
+  // tennis player's 2026 US Open and 2026 Monterrey are different
+  // seasonIds), so deduping by seasonId would show one "2026" option per
+  // competition instead of one option covering all of them.
+  const labelLatestDate = {};
+  allEvents.forEach(e => {
+    const label = STATE.seasonsById[e.seasonId]?.label || e.seasonId;
+    if (!label) return;
+    const t = new Date(e.date).getTime();
+    if (!(label in labelLatestDate) || t > labelLatestDate[label]) labelLatestDate[label] = t;
+  });
+  const seasonLabels = Object.keys(labelLatestDate);
+  if (seasonLabels.length > 1) {
+    seasonLabels.sort((a, b) => labelLatestDate[b] - labelLatestDate[a]); // most recent first
+    const options = seasonLabels.map(label => ({ id: label, label }));
+    seasonSelect.innerHTML = filterSelectOptionsHtml(options, STATE.entityFilters.seasonLabel);
+    seasonSelect.style.display = "block";
   } else {
-    seasonWrap.innerHTML = "";
+    seasonSelect.innerHTML = "";
+    seasonSelect.style.display = "none";
   }
+  seasonSelect.onchange = () => {
+    STATE.entityFilters.seasonLabel = seasonSelect.value || null;
+    setEntityView(STATE.currentEntityView);
+  };
 
-  // ---- Secondary pills: team/player filter for a competition, or
+  // ---- Secondary dropdown: team/player filter for a competition, or
   // league/tournament filter for a team/player. For a team/player page this
   // needs no special-casing for F1 - a driver/constructor only ever has one
   // competition (f1champ), so the options.length > 1 check below already
@@ -3569,43 +3603,35 @@ function renderEntityFilterPills() {
   // does need an explicit skip: race events only record the winner in
   // `participants` (not the full grid), so "distinct participants" resolves
   // to "distinct winners" - usually more than one across a season - which
-  // would otherwise show a misleading "filter by winner" pill instead of
+  // would otherwise show a misleading "filter by winner" dropdown instead of
   // just the year filter.
+  let secondaryOptions = [];
   if (entity.type === "competition") {
-    if (sportId === "f1") {
-      secondaryWrap.innerHTML = "";
-    } else {
+    if (sportId !== "f1") {
       const ids = [...new Set(allEvents.flatMap(e => e.participants || []))];
-      const options = ids
+      secondaryOptions = ids
         .map(id => ({ id, label: participantName(id) }))
         .filter(o => o.label)
         .sort((a, b) => a.label.localeCompare(b.label));
-      secondaryWrap.innerHTML = options.length > 1
-        ? filterPillRowHtml(options, STATE.entityFilters.secondaryId, "secondary")
-        : "";
     }
   } else {
     const ids = [...new Set(allEvents.map(e => e.competitionId).filter(Boolean))];
-    const options = ids
+    secondaryOptions = ids
       .map(id => ({ id, label: STATE.competitionsById[id]?.shortName || STATE.competitionsById[id]?.name || id }))
       .sort((a, b) => a.label.localeCompare(b.label));
-    secondaryWrap.innerHTML = options.length > 1
-      ? filterPillRowHtml(options, STATE.entityFilters.secondaryId, "secondary")
-      : "";
   }
 
-  document.querySelectorAll(".filter-pill").forEach(btn => {
-    btn.addEventListener("click", () => {
-      const kind = btn.getAttribute("data-filter-kind");
-      const value = btn.getAttribute("data-filter-value") || null;
-      if (kind === "season") STATE.entityFilters.seasonId = value;
-      else STATE.entityFilters.secondaryId = value;
-      document.querySelectorAll(`.filter-pill[data-filter-kind="${kind}"]`).forEach(b => {
-        b.classList.toggle("active", (b.getAttribute("data-filter-value") || null) === value);
-      });
-      setEntityView(STATE.currentEntityView);
-    });
-  });
+  if (secondaryOptions.length > 1) {
+    secondarySelect.innerHTML = filterSelectOptionsHtml(secondaryOptions, STATE.entityFilters.secondaryId);
+    secondarySelect.style.display = "block";
+  } else {
+    secondarySelect.innerHTML = "";
+    secondarySelect.style.display = "none";
+  }
+  secondarySelect.onchange = () => {
+    STATE.entityFilters.secondaryId = secondarySelect.value || null;
+    setEntityView(STATE.currentEntityView);
+  };
 }
 
 function renderEntityFixtures(events) {
