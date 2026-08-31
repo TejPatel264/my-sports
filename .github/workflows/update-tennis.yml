@@ -1,0 +1,39 @@
+name: Update tennis fixtures (daily)
+
+on:
+  schedule:
+    - cron: "0 0 * * *" # 00:00 UTC every day
+  workflow_dispatch: {} # lets you trigger a run manually from the Actions tab
+
+permissions:
+  contents: write # needed to commit the updated data files back to the repo
+
+jobs:
+  update-tennis:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Set up Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+
+      - name: Update tennis fixtures
+        run: node scripts/update-tennis.js
+        # No API key needed - stats.tennismylife.org's data-files API and CSV
+        # downloads are public, MIT-licensed, and explicitly documented for
+        # automated/scripted access.
+
+      - name: Commit changes if any
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add data/tennis-events.json data/tennis-players.json data/tennis-competitions.json data/tennis-seasons.json
+          if git diff --cached --quiet; then
+            echo "No changes to commit."
+          else
+            git commit -m "Update tennis fixtures [automated]"
+            git push
+          fi
