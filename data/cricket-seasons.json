@@ -1,1 +1,1527 @@
-[]
+[
+  {
+    "id": "hundred_men_2021",
+    "competitionId": "hundred_men",
+    "label": "2021"
+  },
+  {
+    "id": "hundred_men_2022",
+    "competitionId": "hundred_men",
+    "label": "2022"
+  },
+  {
+    "id": "hundred_men_2023",
+    "competitionId": "hundred_men",
+    "label": "2023"
+  },
+  {
+    "id": "hundred_men_2024",
+    "competitionId": "hundred_men",
+    "label": "2024"
+  },
+  {
+    "id": "hundred_men_2025",
+    "competitionId": "hundred_men",
+    "label": "2025"
+  },
+  {
+    "id": "hundred_men_2026",
+    "competitionId": "hundred_men",
+    "label": "2026"
+  },
+  {
+    "id": "hundred_women_2021",
+    "competitionId": "hundred_women",
+    "label": "2021"
+  },
+  {
+    "id": "hundred_women_2022",
+    "competitionId": "hundred_women",
+    "label": "2022"
+  },
+  {
+    "id": "hundred_women_2023",
+    "competitionId": "hundred_women",
+    "label": "2023"
+  },
+  {
+    "id": "hundred_women_2024",
+    "competitionId": "hundred_women",
+    "label": "2024"
+  },
+  {
+    "id": "hundred_women_2025",
+    "competitionId": "hundred_women",
+    "label": "2025"
+  },
+  {
+    "id": "hundred_women_2026",
+    "competitionId": "hundred_women",
+    "label": "2026"
+  },
+  {
+    "id": "icc_mens_odi_world_cup_2002_03",
+    "competitionId": "icc_mens_odi_world_cup",
+    "label": "2002/03"
+  },
+  {
+    "id": "icc_mens_odi_world_cup_2006_07",
+    "competitionId": "icc_mens_odi_world_cup",
+    "label": "2006/07"
+  },
+  {
+    "id": "icc_mens_odi_world_cup_2010_11",
+    "competitionId": "icc_mens_odi_world_cup",
+    "label": "2010/11"
+  },
+  {
+    "id": "icc_mens_odi_world_cup_2014_15",
+    "competitionId": "icc_mens_odi_world_cup",
+    "label": "2014/15"
+  },
+  {
+    "id": "icc_mens_odi_world_cup_2019",
+    "competitionId": "icc_mens_odi_world_cup",
+    "label": "2019"
+  },
+  {
+    "id": "icc_mens_odi_world_cup_2023_24",
+    "competitionId": "icc_mens_odi_world_cup",
+    "label": "2023/24"
+  },
+  {
+    "id": "icc_womens_odi_world_cup_2008_09",
+    "competitionId": "icc_womens_odi_world_cup",
+    "label": "2008/09"
+  },
+  {
+    "id": "icc_womens_odi_world_cup_2012_13",
+    "competitionId": "icc_womens_odi_world_cup",
+    "label": "2012/13"
+  },
+  {
+    "id": "icc_womens_odi_world_cup_2017",
+    "competitionId": "icc_womens_odi_world_cup",
+    "label": "2017"
+  },
+  {
+    "id": "icc_womens_odi_world_cup_2021_22",
+    "competitionId": "icc_womens_odi_world_cup",
+    "label": "2021/22"
+  },
+  {
+    "id": "icc_womens_odi_world_cup_2025_26",
+    "competitionId": "icc_womens_odi_world_cup",
+    "label": "2025/26"
+  },
+  {
+    "id": "icc_womens_t20_world_cup_2013_14",
+    "competitionId": "icc_womens_t20_world_cup",
+    "label": "2013/14"
+  },
+  {
+    "id": "icc_womens_t20_world_cup_2015_16",
+    "competitionId": "icc_womens_t20_world_cup",
+    "label": "2015/16"
+  },
+  {
+    "id": "icc_womens_t20_world_cup_2018_19",
+    "competitionId": "icc_womens_t20_world_cup",
+    "label": "2018/19"
+  },
+  {
+    "id": "icc_womens_t20_world_cup_2019_20",
+    "competitionId": "icc_womens_t20_world_cup",
+    "label": "2019/20"
+  },
+  {
+    "id": "icc_womens_t20_world_cup_2022_23",
+    "competitionId": "icc_womens_t20_world_cup",
+    "label": "2022/23"
+  },
+  {
+    "id": "icc_womens_t20_world_cup_2024_25",
+    "competitionId": "icc_womens_t20_world_cup",
+    "label": "2024/25"
+  },
+  {
+    "id": "icc_womens_t20_world_cup_2026",
+    "competitionId": "icc_womens_t20_world_cup",
+    "label": "2026"
+  },
+  {
+    "id": "ipl_2007_08",
+    "competitionId": "ipl",
+    "label": "2007/08"
+  },
+  {
+    "id": "ipl_2009",
+    "competitionId": "ipl",
+    "label": "2009"
+  },
+  {
+    "id": "ipl_2009_10",
+    "competitionId": "ipl",
+    "label": "2009/10"
+  },
+  {
+    "id": "ipl_2011",
+    "competitionId": "ipl",
+    "label": "2011"
+  },
+  {
+    "id": "ipl_2012",
+    "competitionId": "ipl",
+    "label": "2012"
+  },
+  {
+    "id": "ipl_2013",
+    "competitionId": "ipl",
+    "label": "2013"
+  },
+  {
+    "id": "ipl_2014",
+    "competitionId": "ipl",
+    "label": "2014"
+  },
+  {
+    "id": "ipl_2015",
+    "competitionId": "ipl",
+    "label": "2015"
+  },
+  {
+    "id": "ipl_2016",
+    "competitionId": "ipl",
+    "label": "2016"
+  },
+  {
+    "id": "ipl_2017",
+    "competitionId": "ipl",
+    "label": "2017"
+  },
+  {
+    "id": "ipl_2018",
+    "competitionId": "ipl",
+    "label": "2018"
+  },
+  {
+    "id": "ipl_2019",
+    "competitionId": "ipl",
+    "label": "2019"
+  },
+  {
+    "id": "ipl_2020_21",
+    "competitionId": "ipl",
+    "label": "2020/21"
+  },
+  {
+    "id": "ipl_2021",
+    "competitionId": "ipl",
+    "label": "2021"
+  },
+  {
+    "id": "ipl_2022",
+    "competitionId": "ipl",
+    "label": "2022"
+  },
+  {
+    "id": "ipl_2023",
+    "competitionId": "ipl",
+    "label": "2023"
+  },
+  {
+    "id": "ipl_2024",
+    "competitionId": "ipl",
+    "label": "2024"
+  },
+  {
+    "id": "ipl_2025",
+    "competitionId": "ipl",
+    "label": "2025"
+  },
+  {
+    "id": "ipl_2026",
+    "competitionId": "ipl",
+    "label": "2026"
+  },
+  {
+    "id": "odi_cricket_men_2002",
+    "competitionId": "odi_cricket_men",
+    "label": "2002"
+  },
+  {
+    "id": "odi_cricket_men_2002_03",
+    "competitionId": "odi_cricket_men",
+    "label": "2002/03"
+  },
+  {
+    "id": "odi_cricket_men_2003",
+    "competitionId": "odi_cricket_men",
+    "label": "2003"
+  },
+  {
+    "id": "odi_cricket_men_2003_04",
+    "competitionId": "odi_cricket_men",
+    "label": "2003/04"
+  },
+  {
+    "id": "odi_cricket_men_2004",
+    "competitionId": "odi_cricket_men",
+    "label": "2004"
+  },
+  {
+    "id": "odi_cricket_men_2004_05",
+    "competitionId": "odi_cricket_men",
+    "label": "2004/05"
+  },
+  {
+    "id": "odi_cricket_men_2005",
+    "competitionId": "odi_cricket_men",
+    "label": "2005"
+  },
+  {
+    "id": "odi_cricket_men_2005_06",
+    "competitionId": "odi_cricket_men",
+    "label": "2005/06"
+  },
+  {
+    "id": "odi_cricket_men_2006",
+    "competitionId": "odi_cricket_men",
+    "label": "2006"
+  },
+  {
+    "id": "odi_cricket_men_2006_07",
+    "competitionId": "odi_cricket_men",
+    "label": "2006/07"
+  },
+  {
+    "id": "odi_cricket_men_2007",
+    "competitionId": "odi_cricket_men",
+    "label": "2007"
+  },
+  {
+    "id": "odi_cricket_men_2007_08",
+    "competitionId": "odi_cricket_men",
+    "label": "2007/08"
+  },
+  {
+    "id": "odi_cricket_men_2008",
+    "competitionId": "odi_cricket_men",
+    "label": "2008"
+  },
+  {
+    "id": "odi_cricket_men_2008_09",
+    "competitionId": "odi_cricket_men",
+    "label": "2008/09"
+  },
+  {
+    "id": "odi_cricket_men_2009",
+    "competitionId": "odi_cricket_men",
+    "label": "2009"
+  },
+  {
+    "id": "odi_cricket_men_2009_10",
+    "competitionId": "odi_cricket_men",
+    "label": "2009/10"
+  },
+  {
+    "id": "odi_cricket_men_2010",
+    "competitionId": "odi_cricket_men",
+    "label": "2010"
+  },
+  {
+    "id": "odi_cricket_men_2010_11",
+    "competitionId": "odi_cricket_men",
+    "label": "2010/11"
+  },
+  {
+    "id": "odi_cricket_men_2011",
+    "competitionId": "odi_cricket_men",
+    "label": "2011"
+  },
+  {
+    "id": "odi_cricket_men_2011_12",
+    "competitionId": "odi_cricket_men",
+    "label": "2011/12"
+  },
+  {
+    "id": "odi_cricket_men_2012",
+    "competitionId": "odi_cricket_men",
+    "label": "2012"
+  },
+  {
+    "id": "odi_cricket_men_2012_13",
+    "competitionId": "odi_cricket_men",
+    "label": "2012/13"
+  },
+  {
+    "id": "odi_cricket_men_2013",
+    "competitionId": "odi_cricket_men",
+    "label": "2013"
+  },
+  {
+    "id": "odi_cricket_men_2013_14",
+    "competitionId": "odi_cricket_men",
+    "label": "2013/14"
+  },
+  {
+    "id": "odi_cricket_men_2014",
+    "competitionId": "odi_cricket_men",
+    "label": "2014"
+  },
+  {
+    "id": "odi_cricket_men_2014_15",
+    "competitionId": "odi_cricket_men",
+    "label": "2014/15"
+  },
+  {
+    "id": "odi_cricket_men_2015",
+    "competitionId": "odi_cricket_men",
+    "label": "2015"
+  },
+  {
+    "id": "odi_cricket_men_2015_16",
+    "competitionId": "odi_cricket_men",
+    "label": "2015/16"
+  },
+  {
+    "id": "odi_cricket_men_2016",
+    "competitionId": "odi_cricket_men",
+    "label": "2016"
+  },
+  {
+    "id": "odi_cricket_men_2016_17",
+    "competitionId": "odi_cricket_men",
+    "label": "2016/17"
+  },
+  {
+    "id": "odi_cricket_men_2017",
+    "competitionId": "odi_cricket_men",
+    "label": "2017"
+  },
+  {
+    "id": "odi_cricket_men_2017_18",
+    "competitionId": "odi_cricket_men",
+    "label": "2017/18"
+  },
+  {
+    "id": "odi_cricket_men_2018",
+    "competitionId": "odi_cricket_men",
+    "label": "2018"
+  },
+  {
+    "id": "odi_cricket_men_2018_19",
+    "competitionId": "odi_cricket_men",
+    "label": "2018/19"
+  },
+  {
+    "id": "odi_cricket_men_2019",
+    "competitionId": "odi_cricket_men",
+    "label": "2019"
+  },
+  {
+    "id": "odi_cricket_men_2019_20",
+    "competitionId": "odi_cricket_men",
+    "label": "2019/20"
+  },
+  {
+    "id": "odi_cricket_men_2020",
+    "competitionId": "odi_cricket_men",
+    "label": "2020"
+  },
+  {
+    "id": "odi_cricket_men_2020_21",
+    "competitionId": "odi_cricket_men",
+    "label": "2020/21"
+  },
+  {
+    "id": "odi_cricket_men_2021",
+    "competitionId": "odi_cricket_men",
+    "label": "2021"
+  },
+  {
+    "id": "odi_cricket_men_2021_22",
+    "competitionId": "odi_cricket_men",
+    "label": "2021/22"
+  },
+  {
+    "id": "odi_cricket_men_2022",
+    "competitionId": "odi_cricket_men",
+    "label": "2022"
+  },
+  {
+    "id": "odi_cricket_men_2022_23",
+    "competitionId": "odi_cricket_men",
+    "label": "2022/23"
+  },
+  {
+    "id": "odi_cricket_men_2023",
+    "competitionId": "odi_cricket_men",
+    "label": "2023"
+  },
+  {
+    "id": "odi_cricket_men_2023_24",
+    "competitionId": "odi_cricket_men",
+    "label": "2023/24"
+  },
+  {
+    "id": "odi_cricket_men_2024",
+    "competitionId": "odi_cricket_men",
+    "label": "2024"
+  },
+  {
+    "id": "odi_cricket_men_2024_25",
+    "competitionId": "odi_cricket_men",
+    "label": "2024/25"
+  },
+  {
+    "id": "odi_cricket_men_2025",
+    "competitionId": "odi_cricket_men",
+    "label": "2025"
+  },
+  {
+    "id": "odi_cricket_men_2025_26",
+    "competitionId": "odi_cricket_men",
+    "label": "2025/26"
+  },
+  {
+    "id": "odi_cricket_men_2026",
+    "competitionId": "odi_cricket_men",
+    "label": "2026"
+  },
+  {
+    "id": "odi_cricket_women_2006_07",
+    "competitionId": "odi_cricket_women",
+    "label": "2006/07"
+  },
+  {
+    "id": "odi_cricket_women_2007_08",
+    "competitionId": "odi_cricket_women",
+    "label": "2007/08"
+  },
+  {
+    "id": "odi_cricket_women_2008",
+    "competitionId": "odi_cricket_women",
+    "label": "2008"
+  },
+  {
+    "id": "odi_cricket_women_2008_09",
+    "competitionId": "odi_cricket_women",
+    "label": "2008/09"
+  },
+  {
+    "id": "odi_cricket_women_2009",
+    "competitionId": "odi_cricket_women",
+    "label": "2009"
+  },
+  {
+    "id": "odi_cricket_women_2009_10",
+    "competitionId": "odi_cricket_women",
+    "label": "2009/10"
+  },
+  {
+    "id": "odi_cricket_women_2011_12",
+    "competitionId": "odi_cricket_women",
+    "label": "2011/12"
+  },
+  {
+    "id": "odi_cricket_women_2012",
+    "competitionId": "odi_cricket_women",
+    "label": "2012"
+  },
+  {
+    "id": "odi_cricket_women_2012_13",
+    "competitionId": "odi_cricket_women",
+    "label": "2012/13"
+  },
+  {
+    "id": "odi_cricket_women_2013",
+    "competitionId": "odi_cricket_women",
+    "label": "2013"
+  },
+  {
+    "id": "odi_cricket_women_2013_14",
+    "competitionId": "odi_cricket_women",
+    "label": "2013/14"
+  },
+  {
+    "id": "odi_cricket_women_2014",
+    "competitionId": "odi_cricket_women",
+    "label": "2014"
+  },
+  {
+    "id": "odi_cricket_women_2014_15",
+    "competitionId": "odi_cricket_women",
+    "label": "2014/15"
+  },
+  {
+    "id": "odi_cricket_women_2015",
+    "competitionId": "odi_cricket_women",
+    "label": "2015"
+  },
+  {
+    "id": "odi_cricket_women_2015_16",
+    "competitionId": "odi_cricket_women",
+    "label": "2015/16"
+  },
+  {
+    "id": "odi_cricket_women_2016",
+    "competitionId": "odi_cricket_women",
+    "label": "2016"
+  },
+  {
+    "id": "odi_cricket_women_2016_17",
+    "competitionId": "odi_cricket_women",
+    "label": "2016/17"
+  },
+  {
+    "id": "odi_cricket_women_2017",
+    "competitionId": "odi_cricket_women",
+    "label": "2017"
+  },
+  {
+    "id": "odi_cricket_women_2017_18",
+    "competitionId": "odi_cricket_women",
+    "label": "2017/18"
+  },
+  {
+    "id": "odi_cricket_women_2018",
+    "competitionId": "odi_cricket_women",
+    "label": "2018"
+  },
+  {
+    "id": "odi_cricket_women_2018_19",
+    "competitionId": "odi_cricket_women",
+    "label": "2018/19"
+  },
+  {
+    "id": "odi_cricket_women_2019",
+    "competitionId": "odi_cricket_women",
+    "label": "2019"
+  },
+  {
+    "id": "odi_cricket_women_2019_20",
+    "competitionId": "odi_cricket_women",
+    "label": "2019/20"
+  },
+  {
+    "id": "odi_cricket_women_2020_21",
+    "competitionId": "odi_cricket_women",
+    "label": "2020/21"
+  },
+  {
+    "id": "odi_cricket_women_2021",
+    "competitionId": "odi_cricket_women",
+    "label": "2021"
+  },
+  {
+    "id": "odi_cricket_women_2021_22",
+    "competitionId": "odi_cricket_women",
+    "label": "2021/22"
+  },
+  {
+    "id": "odi_cricket_women_2022",
+    "competitionId": "odi_cricket_women",
+    "label": "2022"
+  },
+  {
+    "id": "odi_cricket_women_2022_23",
+    "competitionId": "odi_cricket_women",
+    "label": "2022/23"
+  },
+  {
+    "id": "odi_cricket_women_2023",
+    "competitionId": "odi_cricket_women",
+    "label": "2023"
+  },
+  {
+    "id": "odi_cricket_women_2023_24",
+    "competitionId": "odi_cricket_women",
+    "label": "2023/24"
+  },
+  {
+    "id": "odi_cricket_women_2024",
+    "competitionId": "odi_cricket_women",
+    "label": "2024"
+  },
+  {
+    "id": "odi_cricket_women_2024_25",
+    "competitionId": "odi_cricket_women",
+    "label": "2024/25"
+  },
+  {
+    "id": "odi_cricket_women_2025",
+    "competitionId": "odi_cricket_women",
+    "label": "2025"
+  },
+  {
+    "id": "odi_cricket_women_2025_26",
+    "competitionId": "odi_cricket_women",
+    "label": "2025/26"
+  },
+  {
+    "id": "odi_cricket_women_2026",
+    "competitionId": "odi_cricket_women",
+    "label": "2026"
+  },
+  {
+    "id": "t20_world_cup_2013_14",
+    "competitionId": "t20_world_cup",
+    "label": "2013/14"
+  },
+  {
+    "id": "t20_world_cup_2015_16",
+    "competitionId": "t20_world_cup",
+    "label": "2015/16"
+  },
+  {
+    "id": "t20_world_cup_2021_22",
+    "competitionId": "t20_world_cup",
+    "label": "2021/22"
+  },
+  {
+    "id": "t20_world_cup_2022_23",
+    "competitionId": "t20_world_cup",
+    "label": "2022/23"
+  },
+  {
+    "id": "t20_world_cup_2024",
+    "competitionId": "t20_world_cup",
+    "label": "2024"
+  },
+  {
+    "id": "t20_world_cup_2025_26",
+    "competitionId": "t20_world_cup",
+    "label": "2025/26"
+  },
+  {
+    "id": "t20i_cricket_men_2004_05",
+    "competitionId": "t20i_cricket_men",
+    "label": "2004/05"
+  },
+  {
+    "id": "t20i_cricket_men_2005",
+    "competitionId": "t20i_cricket_men",
+    "label": "2005"
+  },
+  {
+    "id": "t20i_cricket_men_2005_06",
+    "competitionId": "t20i_cricket_men",
+    "label": "2005/06"
+  },
+  {
+    "id": "t20i_cricket_men_2006",
+    "competitionId": "t20i_cricket_men",
+    "label": "2006"
+  },
+  {
+    "id": "t20i_cricket_men_2006_07",
+    "competitionId": "t20i_cricket_men",
+    "label": "2006/07"
+  },
+  {
+    "id": "t20i_cricket_men_2007",
+    "competitionId": "t20i_cricket_men",
+    "label": "2007"
+  },
+  {
+    "id": "t20i_cricket_men_2007_08",
+    "competitionId": "t20i_cricket_men",
+    "label": "2007/08"
+  },
+  {
+    "id": "t20i_cricket_men_2008",
+    "competitionId": "t20i_cricket_men",
+    "label": "2008"
+  },
+  {
+    "id": "t20i_cricket_men_2008_09",
+    "competitionId": "t20i_cricket_men",
+    "label": "2008/09"
+  },
+  {
+    "id": "t20i_cricket_men_2009",
+    "competitionId": "t20i_cricket_men",
+    "label": "2009"
+  },
+  {
+    "id": "t20i_cricket_men_2009_10",
+    "competitionId": "t20i_cricket_men",
+    "label": "2009/10"
+  },
+  {
+    "id": "t20i_cricket_men_2010",
+    "competitionId": "t20i_cricket_men",
+    "label": "2010"
+  },
+  {
+    "id": "t20i_cricket_men_2010_11",
+    "competitionId": "t20i_cricket_men",
+    "label": "2010/11"
+  },
+  {
+    "id": "t20i_cricket_men_2011",
+    "competitionId": "t20i_cricket_men",
+    "label": "2011"
+  },
+  {
+    "id": "t20i_cricket_men_2011_12",
+    "competitionId": "t20i_cricket_men",
+    "label": "2011/12"
+  },
+  {
+    "id": "t20i_cricket_men_2012",
+    "competitionId": "t20i_cricket_men",
+    "label": "2012"
+  },
+  {
+    "id": "t20i_cricket_men_2012_13",
+    "competitionId": "t20i_cricket_men",
+    "label": "2012/13"
+  },
+  {
+    "id": "t20i_cricket_men_2013",
+    "competitionId": "t20i_cricket_men",
+    "label": "2013"
+  },
+  {
+    "id": "t20i_cricket_men_2013_14",
+    "competitionId": "t20i_cricket_men",
+    "label": "2013/14"
+  },
+  {
+    "id": "t20i_cricket_men_2014",
+    "competitionId": "t20i_cricket_men",
+    "label": "2014"
+  },
+  {
+    "id": "t20i_cricket_men_2014_15",
+    "competitionId": "t20i_cricket_men",
+    "label": "2014/15"
+  },
+  {
+    "id": "t20i_cricket_men_2015",
+    "competitionId": "t20i_cricket_men",
+    "label": "2015"
+  },
+  {
+    "id": "t20i_cricket_men_2015_16",
+    "competitionId": "t20i_cricket_men",
+    "label": "2015/16"
+  },
+  {
+    "id": "t20i_cricket_men_2016",
+    "competitionId": "t20i_cricket_men",
+    "label": "2016"
+  },
+  {
+    "id": "t20i_cricket_men_2016_17",
+    "competitionId": "t20i_cricket_men",
+    "label": "2016/17"
+  },
+  {
+    "id": "t20i_cricket_men_2017",
+    "competitionId": "t20i_cricket_men",
+    "label": "2017"
+  },
+  {
+    "id": "t20i_cricket_men_2017_18",
+    "competitionId": "t20i_cricket_men",
+    "label": "2017/18"
+  },
+  {
+    "id": "t20i_cricket_men_2018",
+    "competitionId": "t20i_cricket_men",
+    "label": "2018"
+  },
+  {
+    "id": "t20i_cricket_men_2018_19",
+    "competitionId": "t20i_cricket_men",
+    "label": "2018/19"
+  },
+  {
+    "id": "t20i_cricket_men_2019",
+    "competitionId": "t20i_cricket_men",
+    "label": "2019"
+  },
+  {
+    "id": "t20i_cricket_men_2019_20",
+    "competitionId": "t20i_cricket_men",
+    "label": "2019/20"
+  },
+  {
+    "id": "t20i_cricket_men_2020",
+    "competitionId": "t20i_cricket_men",
+    "label": "2020"
+  },
+  {
+    "id": "t20i_cricket_men_2020_21",
+    "competitionId": "t20i_cricket_men",
+    "label": "2020/21"
+  },
+  {
+    "id": "t20i_cricket_men_2021",
+    "competitionId": "t20i_cricket_men",
+    "label": "2021"
+  },
+  {
+    "id": "t20i_cricket_men_2021_22",
+    "competitionId": "t20i_cricket_men",
+    "label": "2021/22"
+  },
+  {
+    "id": "t20i_cricket_men_2022",
+    "competitionId": "t20i_cricket_men",
+    "label": "2022"
+  },
+  {
+    "id": "t20i_cricket_men_2022_23",
+    "competitionId": "t20i_cricket_men",
+    "label": "2022/23"
+  },
+  {
+    "id": "t20i_cricket_men_2023",
+    "competitionId": "t20i_cricket_men",
+    "label": "2023"
+  },
+  {
+    "id": "t20i_cricket_men_2023_24",
+    "competitionId": "t20i_cricket_men",
+    "label": "2023/24"
+  },
+  {
+    "id": "t20i_cricket_men_2024",
+    "competitionId": "t20i_cricket_men",
+    "label": "2024"
+  },
+  {
+    "id": "t20i_cricket_men_2024_25",
+    "competitionId": "t20i_cricket_men",
+    "label": "2024/25"
+  },
+  {
+    "id": "t20i_cricket_men_2025",
+    "competitionId": "t20i_cricket_men",
+    "label": "2025"
+  },
+  {
+    "id": "t20i_cricket_men_2025_26",
+    "competitionId": "t20i_cricket_men",
+    "label": "2025/26"
+  },
+  {
+    "id": "t20i_cricket_men_2026",
+    "competitionId": "t20i_cricket_men",
+    "label": "2026"
+  },
+  {
+    "id": "t20i_cricket_women_2009",
+    "competitionId": "t20i_cricket_women",
+    "label": "2009"
+  },
+  {
+    "id": "t20i_cricket_women_2009_10",
+    "competitionId": "t20i_cricket_women",
+    "label": "2009/10"
+  },
+  {
+    "id": "t20i_cricket_women_2010",
+    "competitionId": "t20i_cricket_women",
+    "label": "2010"
+  },
+  {
+    "id": "t20i_cricket_women_2010_11",
+    "competitionId": "t20i_cricket_women",
+    "label": "2010/11"
+  },
+  {
+    "id": "t20i_cricket_women_2011",
+    "competitionId": "t20i_cricket_women",
+    "label": "2011"
+  },
+  {
+    "id": "t20i_cricket_women_2011_12",
+    "competitionId": "t20i_cricket_women",
+    "label": "2011/12"
+  },
+  {
+    "id": "t20i_cricket_women_2012",
+    "competitionId": "t20i_cricket_women",
+    "label": "2012"
+  },
+  {
+    "id": "t20i_cricket_women_2012_13",
+    "competitionId": "t20i_cricket_women",
+    "label": "2012/13"
+  },
+  {
+    "id": "t20i_cricket_women_2013",
+    "competitionId": "t20i_cricket_women",
+    "label": "2013"
+  },
+  {
+    "id": "t20i_cricket_women_2013_14",
+    "competitionId": "t20i_cricket_women",
+    "label": "2013/14"
+  },
+  {
+    "id": "t20i_cricket_women_2014",
+    "competitionId": "t20i_cricket_women",
+    "label": "2014"
+  },
+  {
+    "id": "t20i_cricket_women_2014_15",
+    "competitionId": "t20i_cricket_women",
+    "label": "2014/15"
+  },
+  {
+    "id": "t20i_cricket_women_2015",
+    "competitionId": "t20i_cricket_women",
+    "label": "2015"
+  },
+  {
+    "id": "t20i_cricket_women_2015_16",
+    "competitionId": "t20i_cricket_women",
+    "label": "2015/16"
+  },
+  {
+    "id": "t20i_cricket_women_2016",
+    "competitionId": "t20i_cricket_women",
+    "label": "2016"
+  },
+  {
+    "id": "t20i_cricket_women_2016_17",
+    "competitionId": "t20i_cricket_women",
+    "label": "2016/17"
+  },
+  {
+    "id": "t20i_cricket_women_2017_18",
+    "competitionId": "t20i_cricket_women",
+    "label": "2017/18"
+  },
+  {
+    "id": "t20i_cricket_women_2018",
+    "competitionId": "t20i_cricket_women",
+    "label": "2018"
+  },
+  {
+    "id": "t20i_cricket_women_2018_19",
+    "competitionId": "t20i_cricket_women",
+    "label": "2018/19"
+  },
+  {
+    "id": "t20i_cricket_women_2019",
+    "competitionId": "t20i_cricket_women",
+    "label": "2019"
+  },
+  {
+    "id": "t20i_cricket_women_2019_20",
+    "competitionId": "t20i_cricket_women",
+    "label": "2019/20"
+  },
+  {
+    "id": "t20i_cricket_women_2020",
+    "competitionId": "t20i_cricket_women",
+    "label": "2020"
+  },
+  {
+    "id": "t20i_cricket_women_2020_21",
+    "competitionId": "t20i_cricket_women",
+    "label": "2020/21"
+  },
+  {
+    "id": "t20i_cricket_women_2021",
+    "competitionId": "t20i_cricket_women",
+    "label": "2021"
+  },
+  {
+    "id": "t20i_cricket_women_2021_22",
+    "competitionId": "t20i_cricket_women",
+    "label": "2021/22"
+  },
+  {
+    "id": "t20i_cricket_women_2022",
+    "competitionId": "t20i_cricket_women",
+    "label": "2022"
+  },
+  {
+    "id": "t20i_cricket_women_2022_23",
+    "competitionId": "t20i_cricket_women",
+    "label": "2022/23"
+  },
+  {
+    "id": "t20i_cricket_women_2023",
+    "competitionId": "t20i_cricket_women",
+    "label": "2023"
+  },
+  {
+    "id": "t20i_cricket_women_2023_24",
+    "competitionId": "t20i_cricket_women",
+    "label": "2023/24"
+  },
+  {
+    "id": "t20i_cricket_women_2024",
+    "competitionId": "t20i_cricket_women",
+    "label": "2024"
+  },
+  {
+    "id": "t20i_cricket_women_2024_25",
+    "competitionId": "t20i_cricket_women",
+    "label": "2024/25"
+  },
+  {
+    "id": "t20i_cricket_women_2025",
+    "competitionId": "t20i_cricket_women",
+    "label": "2025"
+  },
+  {
+    "id": "t20i_cricket_women_2025_26",
+    "competitionId": "t20i_cricket_women",
+    "label": "2025/26"
+  },
+  {
+    "id": "t20i_cricket_women_2026",
+    "competitionId": "t20i_cricket_women",
+    "label": "2026"
+  },
+  {
+    "id": "test_cricket_men_2001_02",
+    "competitionId": "test_cricket_men",
+    "label": "2001/02"
+  },
+  {
+    "id": "test_cricket_men_2002_03",
+    "competitionId": "test_cricket_men",
+    "label": "2002/03"
+  },
+  {
+    "id": "test_cricket_men_2003",
+    "competitionId": "test_cricket_men",
+    "label": "2003"
+  },
+  {
+    "id": "test_cricket_men_2003_04",
+    "competitionId": "test_cricket_men",
+    "label": "2003/04"
+  },
+  {
+    "id": "test_cricket_men_2004",
+    "competitionId": "test_cricket_men",
+    "label": "2004"
+  },
+  {
+    "id": "test_cricket_men_2004_05",
+    "competitionId": "test_cricket_men",
+    "label": "2004/05"
+  },
+  {
+    "id": "test_cricket_men_2005",
+    "competitionId": "test_cricket_men",
+    "label": "2005"
+  },
+  {
+    "id": "test_cricket_men_2005_06",
+    "competitionId": "test_cricket_men",
+    "label": "2005/06"
+  },
+  {
+    "id": "test_cricket_men_2006",
+    "competitionId": "test_cricket_men",
+    "label": "2006"
+  },
+  {
+    "id": "test_cricket_men_2006_07",
+    "competitionId": "test_cricket_men",
+    "label": "2006/07"
+  },
+  {
+    "id": "test_cricket_men_2007",
+    "competitionId": "test_cricket_men",
+    "label": "2007"
+  },
+  {
+    "id": "test_cricket_men_2007_08",
+    "competitionId": "test_cricket_men",
+    "label": "2007/08"
+  },
+  {
+    "id": "test_cricket_men_2008",
+    "competitionId": "test_cricket_men",
+    "label": "2008"
+  },
+  {
+    "id": "test_cricket_men_2008_09",
+    "competitionId": "test_cricket_men",
+    "label": "2008/09"
+  },
+  {
+    "id": "test_cricket_men_2009",
+    "competitionId": "test_cricket_men",
+    "label": "2009"
+  },
+  {
+    "id": "test_cricket_men_2009_10",
+    "competitionId": "test_cricket_men",
+    "label": "2009/10"
+  },
+  {
+    "id": "test_cricket_men_2010",
+    "competitionId": "test_cricket_men",
+    "label": "2010"
+  },
+  {
+    "id": "test_cricket_men_2010_11",
+    "competitionId": "test_cricket_men",
+    "label": "2010/11"
+  },
+  {
+    "id": "test_cricket_men_2011",
+    "competitionId": "test_cricket_men",
+    "label": "2011"
+  },
+  {
+    "id": "test_cricket_men_2011_12",
+    "competitionId": "test_cricket_men",
+    "label": "2011/12"
+  },
+  {
+    "id": "test_cricket_men_2012",
+    "competitionId": "test_cricket_men",
+    "label": "2012"
+  },
+  {
+    "id": "test_cricket_men_2012_13",
+    "competitionId": "test_cricket_men",
+    "label": "2012/13"
+  },
+  {
+    "id": "test_cricket_men_2013",
+    "competitionId": "test_cricket_men",
+    "label": "2013"
+  },
+  {
+    "id": "test_cricket_men_2013_14",
+    "competitionId": "test_cricket_men",
+    "label": "2013/14"
+  },
+  {
+    "id": "test_cricket_men_2014",
+    "competitionId": "test_cricket_men",
+    "label": "2014"
+  },
+  {
+    "id": "test_cricket_men_2014_15",
+    "competitionId": "test_cricket_men",
+    "label": "2014/15"
+  },
+  {
+    "id": "test_cricket_men_2015",
+    "competitionId": "test_cricket_men",
+    "label": "2015"
+  },
+  {
+    "id": "test_cricket_men_2015_16",
+    "competitionId": "test_cricket_men",
+    "label": "2015/16"
+  },
+  {
+    "id": "test_cricket_men_2016",
+    "competitionId": "test_cricket_men",
+    "label": "2016"
+  },
+  {
+    "id": "test_cricket_men_2016_17",
+    "competitionId": "test_cricket_men",
+    "label": "2016/17"
+  },
+  {
+    "id": "test_cricket_men_2017",
+    "competitionId": "test_cricket_men",
+    "label": "2017"
+  },
+  {
+    "id": "test_cricket_men_2017_18",
+    "competitionId": "test_cricket_men",
+    "label": "2017/18"
+  },
+  {
+    "id": "test_cricket_men_2018",
+    "competitionId": "test_cricket_men",
+    "label": "2018"
+  },
+  {
+    "id": "test_cricket_men_2018_19",
+    "competitionId": "test_cricket_men",
+    "label": "2018/19"
+  },
+  {
+    "id": "test_cricket_men_2019",
+    "competitionId": "test_cricket_men",
+    "label": "2019"
+  },
+  {
+    "id": "test_cricket_men_2019_20",
+    "competitionId": "test_cricket_men",
+    "label": "2019/20"
+  },
+  {
+    "id": "test_cricket_men_2020",
+    "competitionId": "test_cricket_men",
+    "label": "2020"
+  },
+  {
+    "id": "test_cricket_men_2020_21",
+    "competitionId": "test_cricket_men",
+    "label": "2020/21"
+  },
+  {
+    "id": "test_cricket_men_2021",
+    "competitionId": "test_cricket_men",
+    "label": "2021"
+  },
+  {
+    "id": "test_cricket_men_2021_22",
+    "competitionId": "test_cricket_men",
+    "label": "2021/22"
+  },
+  {
+    "id": "test_cricket_men_2022",
+    "competitionId": "test_cricket_men",
+    "label": "2022"
+  },
+  {
+    "id": "test_cricket_men_2022_23",
+    "competitionId": "test_cricket_men",
+    "label": "2022/23"
+  },
+  {
+    "id": "test_cricket_men_2023",
+    "competitionId": "test_cricket_men",
+    "label": "2023"
+  },
+  {
+    "id": "test_cricket_men_2023_24",
+    "competitionId": "test_cricket_men",
+    "label": "2023/24"
+  },
+  {
+    "id": "test_cricket_men_2024",
+    "competitionId": "test_cricket_men",
+    "label": "2024"
+  },
+  {
+    "id": "test_cricket_men_2024_25",
+    "competitionId": "test_cricket_men",
+    "label": "2024/25"
+  },
+  {
+    "id": "test_cricket_men_2025",
+    "competitionId": "test_cricket_men",
+    "label": "2025"
+  },
+  {
+    "id": "test_cricket_men_2025_26",
+    "competitionId": "test_cricket_men",
+    "label": "2025/26"
+  },
+  {
+    "id": "test_cricket_men_2026",
+    "competitionId": "test_cricket_men",
+    "label": "2026"
+  },
+  {
+    "id": "test_cricket_women_2002_03",
+    "competitionId": "test_cricket_women",
+    "label": "2002/03"
+  },
+  {
+    "id": "test_cricket_women_2005",
+    "competitionId": "test_cricket_women",
+    "label": "2005"
+  },
+  {
+    "id": "test_cricket_women_2006",
+    "competitionId": "test_cricket_women",
+    "label": "2006"
+  },
+  {
+    "id": "test_cricket_women_2007_08",
+    "competitionId": "test_cricket_women",
+    "label": "2007/08"
+  },
+  {
+    "id": "test_cricket_women_2009",
+    "competitionId": "test_cricket_women",
+    "label": "2009"
+  },
+  {
+    "id": "test_cricket_women_2010_11",
+    "competitionId": "test_cricket_women",
+    "label": "2010/11"
+  },
+  {
+    "id": "test_cricket_women_2013",
+    "competitionId": "test_cricket_women",
+    "label": "2013"
+  },
+  {
+    "id": "test_cricket_women_2014",
+    "competitionId": "test_cricket_women",
+    "label": "2014"
+  },
+  {
+    "id": "test_cricket_women_2015",
+    "competitionId": "test_cricket_women",
+    "label": "2015"
+  },
+  {
+    "id": "test_cricket_women_2017_18",
+    "competitionId": "test_cricket_women",
+    "label": "2017/18"
+  },
+  {
+    "id": "test_cricket_women_2019",
+    "competitionId": "test_cricket_women",
+    "label": "2019"
+  },
+  {
+    "id": "test_cricket_women_2021",
+    "competitionId": "test_cricket_women",
+    "label": "2021"
+  },
+  {
+    "id": "test_cricket_women_2021_22",
+    "competitionId": "test_cricket_women",
+    "label": "2021/22"
+  },
+  {
+    "id": "test_cricket_women_2022",
+    "competitionId": "test_cricket_women",
+    "label": "2022"
+  },
+  {
+    "id": "test_cricket_women_2023",
+    "competitionId": "test_cricket_women",
+    "label": "2023"
+  },
+  {
+    "id": "test_cricket_women_2023_24",
+    "competitionId": "test_cricket_women",
+    "label": "2023/24"
+  },
+  {
+    "id": "test_cricket_women_2024",
+    "competitionId": "test_cricket_women",
+    "label": "2024"
+  },
+  {
+    "id": "test_cricket_women_2024_25",
+    "competitionId": "test_cricket_women",
+    "label": "2024/25"
+  },
+  {
+    "id": "test_cricket_women_2025_26",
+    "competitionId": "test_cricket_women",
+    "label": "2025/26"
+  },
+  {
+    "id": "test_cricket_women_2026",
+    "competitionId": "test_cricket_women",
+    "label": "2026"
+  },
+  {
+    "id": "vitality_blast_men_2014",
+    "competitionId": "vitality_blast_men",
+    "label": "2014"
+  },
+  {
+    "id": "vitality_blast_men_2015",
+    "competitionId": "vitality_blast_men",
+    "label": "2015"
+  },
+  {
+    "id": "vitality_blast_men_2016",
+    "competitionId": "vitality_blast_men",
+    "label": "2016"
+  },
+  {
+    "id": "vitality_blast_men_2017",
+    "competitionId": "vitality_blast_men",
+    "label": "2017"
+  },
+  {
+    "id": "vitality_blast_men_2018",
+    "competitionId": "vitality_blast_men",
+    "label": "2018"
+  },
+  {
+    "id": "vitality_blast_men_2019",
+    "competitionId": "vitality_blast_men",
+    "label": "2019"
+  },
+  {
+    "id": "vitality_blast_men_2020",
+    "competitionId": "vitality_blast_men",
+    "label": "2020"
+  },
+  {
+    "id": "vitality_blast_men_2021",
+    "competitionId": "vitality_blast_men",
+    "label": "2021"
+  },
+  {
+    "id": "vitality_blast_men_2022",
+    "competitionId": "vitality_blast_men",
+    "label": "2022"
+  },
+  {
+    "id": "vitality_blast_men_2023",
+    "competitionId": "vitality_blast_men",
+    "label": "2023"
+  },
+  {
+    "id": "vitality_blast_men_2024",
+    "competitionId": "vitality_blast_men",
+    "label": "2024"
+  },
+  {
+    "id": "vitality_blast_men_2025",
+    "competitionId": "vitality_blast_men",
+    "label": "2025"
+  },
+  {
+    "id": "vitality_blast_men_2026",
+    "competitionId": "vitality_blast_men",
+    "label": "2026"
+  },
+  {
+    "id": "vitality_blast_women_2025",
+    "competitionId": "vitality_blast_women",
+    "label": "2025"
+  },
+  {
+    "id": "vitality_blast_women_2026",
+    "competitionId": "vitality_blast_women",
+    "label": "2026"
+  },
+  {
+    "id": "wpl_2022_23",
+    "competitionId": "wpl",
+    "label": "2022/23"
+  },
+  {
+    "id": "wpl_2023_24",
+    "competitionId": "wpl",
+    "label": "2023/24"
+  },
+  {
+    "id": "wpl_2024_25",
+    "competitionId": "wpl",
+    "label": "2024/25"
+  },
+  {
+    "id": "wpl_2025_26",
+    "competitionId": "wpl",
+    "label": "2025/26"
+  }
+]

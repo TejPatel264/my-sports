@@ -1,1 +1,822 @@
-[]
+[
+  {
+    "id": "cricket_team_africa_xi",
+    "sportId": "cricket",
+    "name": "Africa XI"
+  },
+  {
+    "id": "cricket_team_argentina",
+    "sportId": "cricket",
+    "name": "Argentina"
+  },
+  {
+    "id": "cricket_team_asia_xi",
+    "sportId": "cricket",
+    "name": "Asia XI"
+  },
+  {
+    "id": "cricket_team_australia",
+    "sportId": "cricket",
+    "name": "Australia"
+  },
+  {
+    "id": "cricket_team_austria",
+    "sportId": "cricket",
+    "name": "Austria"
+  },
+  {
+    "id": "cricket_team_bahamas",
+    "sportId": "cricket",
+    "name": "Bahamas"
+  },
+  {
+    "id": "cricket_team_bahrain",
+    "sportId": "cricket",
+    "name": "Bahrain"
+  },
+  {
+    "id": "cricket_team_bangladesh",
+    "sportId": "cricket",
+    "name": "Bangladesh"
+  },
+  {
+    "id": "cricket_team_barbados",
+    "sportId": "cricket",
+    "name": "Barbados"
+  },
+  {
+    "id": "cricket_team_belgium",
+    "sportId": "cricket",
+    "name": "Belgium"
+  },
+  {
+    "id": "cricket_team_belize",
+    "sportId": "cricket",
+    "name": "Belize"
+  },
+  {
+    "id": "cricket_team_bermuda",
+    "sportId": "cricket",
+    "name": "Bermuda"
+  },
+  {
+    "id": "cricket_team_bhutan",
+    "sportId": "cricket",
+    "name": "Bhutan"
+  },
+  {
+    "id": "cricket_team_birmingham_bears",
+    "sportId": "cricket",
+    "name": "Birmingham Bears"
+  },
+  {
+    "id": "cricket_team_birmingham_phoenix",
+    "sportId": "cricket",
+    "name": "Birmingham Phoenix"
+  },
+  {
+    "id": "cricket_team_botswana",
+    "sportId": "cricket",
+    "name": "Botswana"
+  },
+  {
+    "id": "cricket_team_brazil",
+    "sportId": "cricket",
+    "name": "Brazil"
+  },
+  {
+    "id": "cricket_team_bulgaria",
+    "sportId": "cricket",
+    "name": "Bulgaria"
+  },
+  {
+    "id": "cricket_team_cambodia",
+    "sportId": "cricket",
+    "name": "Cambodia"
+  },
+  {
+    "id": "cricket_team_cameroon",
+    "sportId": "cricket",
+    "name": "Cameroon"
+  },
+  {
+    "id": "cricket_team_canada",
+    "sportId": "cricket",
+    "name": "Canada"
+  },
+  {
+    "id": "cricket_team_cayman_islands",
+    "sportId": "cricket",
+    "name": "Cayman Islands"
+  },
+  {
+    "id": "cricket_team_chennai_super_kings",
+    "sportId": "cricket",
+    "name": "Chennai Super Kings"
+  },
+  {
+    "id": "cricket_team_chile",
+    "sportId": "cricket",
+    "name": "Chile"
+  },
+  {
+    "id": "cricket_team_china",
+    "sportId": "cricket",
+    "name": "China"
+  },
+  {
+    "id": "cricket_team_cook_islands",
+    "sportId": "cricket",
+    "name": "Cook Islands"
+  },
+  {
+    "id": "cricket_team_costa_rica",
+    "sportId": "cricket",
+    "name": "Costa Rica"
+  },
+  {
+    "id": "cricket_team_croatia",
+    "sportId": "cricket",
+    "name": "Croatia"
+  },
+  {
+    "id": "cricket_team_cyprus",
+    "sportId": "cricket",
+    "name": "Cyprus"
+  },
+  {
+    "id": "cricket_team_czech_republic",
+    "sportId": "cricket",
+    "name": "Czech Republic"
+  },
+  {
+    "id": "cricket_team_deccan_chargers",
+    "sportId": "cricket",
+    "name": "Deccan Chargers"
+  },
+  {
+    "id": "cricket_team_delhi_capitals",
+    "sportId": "cricket",
+    "name": "Delhi Capitals"
+  },
+  {
+    "id": "cricket_team_delhi_daredevils",
+    "sportId": "cricket",
+    "name": "Delhi Daredevils"
+  },
+  {
+    "id": "cricket_team_denmark",
+    "sportId": "cricket",
+    "name": "Denmark"
+  },
+  {
+    "id": "cricket_team_derbyshire",
+    "sportId": "cricket",
+    "name": "Derbyshire"
+  },
+  {
+    "id": "cricket_team_durham",
+    "sportId": "cricket",
+    "name": "Durham"
+  },
+  {
+    "id": "cricket_team_england",
+    "sportId": "cricket",
+    "name": "England"
+  },
+  {
+    "id": "cricket_team_essex",
+    "sportId": "cricket",
+    "name": "Essex"
+  },
+  {
+    "id": "cricket_team_estonia",
+    "sportId": "cricket",
+    "name": "Estonia"
+  },
+  {
+    "id": "cricket_team_eswatini",
+    "sportId": "cricket",
+    "name": "Eswatini"
+  },
+  {
+    "id": "cricket_team_fiji",
+    "sportId": "cricket",
+    "name": "Fiji"
+  },
+  {
+    "id": "cricket_team_finland",
+    "sportId": "cricket",
+    "name": "Finland"
+  },
+  {
+    "id": "cricket_team_france",
+    "sportId": "cricket",
+    "name": "France"
+  },
+  {
+    "id": "cricket_team_gambia",
+    "sportId": "cricket",
+    "name": "Gambia"
+  },
+  {
+    "id": "cricket_team_germany",
+    "sportId": "cricket",
+    "name": "Germany"
+  },
+  {
+    "id": "cricket_team_ghana",
+    "sportId": "cricket",
+    "name": "Ghana"
+  },
+  {
+    "id": "cricket_team_gibraltar",
+    "sportId": "cricket",
+    "name": "Gibraltar"
+  },
+  {
+    "id": "cricket_team_glamorgan",
+    "sportId": "cricket",
+    "name": "Glamorgan"
+  },
+  {
+    "id": "cricket_team_gloucestershire",
+    "sportId": "cricket",
+    "name": "Gloucestershire"
+  },
+  {
+    "id": "cricket_team_greece",
+    "sportId": "cricket",
+    "name": "Greece"
+  },
+  {
+    "id": "cricket_team_guernsey",
+    "sportId": "cricket",
+    "name": "Guernsey"
+  },
+  {
+    "id": "cricket_team_gujarat_giants",
+    "sportId": "cricket",
+    "name": "Gujarat Giants"
+  },
+  {
+    "id": "cricket_team_gujarat_lions",
+    "sportId": "cricket",
+    "name": "Gujarat Lions"
+  },
+  {
+    "id": "cricket_team_gujarat_titans",
+    "sportId": "cricket",
+    "name": "Gujarat Titans"
+  },
+  {
+    "id": "cricket_team_hampshire",
+    "sportId": "cricket",
+    "name": "Hampshire"
+  },
+  {
+    "id": "cricket_team_hong_kong",
+    "sportId": "cricket",
+    "name": "Hong Kong"
+  },
+  {
+    "id": "cricket_team_hungary",
+    "sportId": "cricket",
+    "name": "Hungary"
+  },
+  {
+    "id": "cricket_team_icc_world_xi",
+    "sportId": "cricket",
+    "name": "ICC World XI"
+  },
+  {
+    "id": "cricket_team_india",
+    "sportId": "cricket",
+    "name": "India"
+  },
+  {
+    "id": "cricket_team_indonesia",
+    "sportId": "cricket",
+    "name": "Indonesia"
+  },
+  {
+    "id": "cricket_team_iran",
+    "sportId": "cricket",
+    "name": "Iran"
+  },
+  {
+    "id": "cricket_team_ireland",
+    "sportId": "cricket",
+    "name": "Ireland"
+  },
+  {
+    "id": "cricket_team_isle_of_man",
+    "sportId": "cricket",
+    "name": "Isle of Man"
+  },
+  {
+    "id": "cricket_team_israel",
+    "sportId": "cricket",
+    "name": "Israel"
+  },
+  {
+    "id": "cricket_team_italy",
+    "sportId": "cricket",
+    "name": "Italy"
+  },
+  {
+    "id": "cricket_team_ivory_coast",
+    "sportId": "cricket",
+    "name": "Ivory Coast"
+  },
+  {
+    "id": "cricket_team_japan",
+    "sportId": "cricket",
+    "name": "Japan"
+  },
+  {
+    "id": "cricket_team_jersey",
+    "sportId": "cricket",
+    "name": "Jersey"
+  },
+  {
+    "id": "cricket_team_kent",
+    "sportId": "cricket",
+    "name": "Kent"
+  },
+  {
+    "id": "cricket_team_kenya",
+    "sportId": "cricket",
+    "name": "Kenya"
+  },
+  {
+    "id": "cricket_team_kings_xi_punjab",
+    "sportId": "cricket",
+    "name": "Kings XI Punjab"
+  },
+  {
+    "id": "cricket_team_kochi_tuskers_kerala",
+    "sportId": "cricket",
+    "name": "Kochi Tuskers Kerala"
+  },
+  {
+    "id": "cricket_team_kolkata_knight_riders",
+    "sportId": "cricket",
+    "name": "Kolkata Knight Riders"
+  },
+  {
+    "id": "cricket_team_kuwait",
+    "sportId": "cricket",
+    "name": "Kuwait"
+  },
+  {
+    "id": "cricket_team_lancashire",
+    "sportId": "cricket",
+    "name": "Lancashire"
+  },
+  {
+    "id": "cricket_team_leicestershire",
+    "sportId": "cricket",
+    "name": "Leicestershire"
+  },
+  {
+    "id": "cricket_team_lesotho",
+    "sportId": "cricket",
+    "name": "Lesotho"
+  },
+  {
+    "id": "cricket_team_london_spirit",
+    "sportId": "cricket",
+    "name": "London Spirit"
+  },
+  {
+    "id": "cricket_team_lucknow_super_giants",
+    "sportId": "cricket",
+    "name": "Lucknow Super Giants"
+  },
+  {
+    "id": "cricket_team_luxembourg",
+    "sportId": "cricket",
+    "name": "Luxembourg"
+  },
+  {
+    "id": "cricket_team_malawi",
+    "sportId": "cricket",
+    "name": "Malawi"
+  },
+  {
+    "id": "cricket_team_malaysia",
+    "sportId": "cricket",
+    "name": "Malaysia"
+  },
+  {
+    "id": "cricket_team_maldives",
+    "sportId": "cricket",
+    "name": "Maldives"
+  },
+  {
+    "id": "cricket_team_mali",
+    "sportId": "cricket",
+    "name": "Mali"
+  },
+  {
+    "id": "cricket_team_malta",
+    "sportId": "cricket",
+    "name": "Malta"
+  },
+  {
+    "id": "cricket_team_manchester_originals",
+    "sportId": "cricket",
+    "name": "Manchester Originals"
+  },
+  {
+    "id": "cricket_team_manchester_super_giants",
+    "sportId": "cricket",
+    "name": "Manchester Super Giants"
+  },
+  {
+    "id": "cricket_team_mexico",
+    "sportId": "cricket",
+    "name": "Mexico"
+  },
+  {
+    "id": "cricket_team_mi_london",
+    "sportId": "cricket",
+    "name": "MI London"
+  },
+  {
+    "id": "cricket_team_middlesex",
+    "sportId": "cricket",
+    "name": "Middlesex"
+  },
+  {
+    "id": "cricket_team_mongolia",
+    "sportId": "cricket",
+    "name": "Mongolia"
+  },
+  {
+    "id": "cricket_team_mozambique",
+    "sportId": "cricket",
+    "name": "Mozambique"
+  },
+  {
+    "id": "cricket_team_mumbai_indians",
+    "sportId": "cricket",
+    "name": "Mumbai Indians"
+  },
+  {
+    "id": "cricket_team_myanmar",
+    "sportId": "cricket",
+    "name": "Myanmar"
+  },
+  {
+    "id": "cricket_team_namibia",
+    "sportId": "cricket",
+    "name": "Namibia"
+  },
+  {
+    "id": "cricket_team_nepal",
+    "sportId": "cricket",
+    "name": "Nepal"
+  },
+  {
+    "id": "cricket_team_netherlands",
+    "sportId": "cricket",
+    "name": "Netherlands"
+  },
+  {
+    "id": "cricket_team_new_zealand",
+    "sportId": "cricket",
+    "name": "New Zealand"
+  },
+  {
+    "id": "cricket_team_nigeria",
+    "sportId": "cricket",
+    "name": "Nigeria"
+  },
+  {
+    "id": "cricket_team_northamptonshire",
+    "sportId": "cricket",
+    "name": "Northamptonshire"
+  },
+  {
+    "id": "cricket_team_northern_superchargers",
+    "sportId": "cricket",
+    "name": "Northern Superchargers"
+  },
+  {
+    "id": "cricket_team_norway",
+    "sportId": "cricket",
+    "name": "Norway"
+  },
+  {
+    "id": "cricket_team_nottinghamshire",
+    "sportId": "cricket",
+    "name": "Nottinghamshire"
+  },
+  {
+    "id": "cricket_team_oman",
+    "sportId": "cricket",
+    "name": "Oman"
+  },
+  {
+    "id": "cricket_team_oval_invincibles",
+    "sportId": "cricket",
+    "name": "Oval Invincibles"
+  },
+  {
+    "id": "cricket_team_pakistan",
+    "sportId": "cricket",
+    "name": "Pakistan"
+  },
+  {
+    "id": "cricket_team_panama",
+    "sportId": "cricket",
+    "name": "Panama"
+  },
+  {
+    "id": "cricket_team_papua_new_guinea",
+    "sportId": "cricket",
+    "name": "Papua New Guinea"
+  },
+  {
+    "id": "cricket_team_peru",
+    "sportId": "cricket",
+    "name": "Peru"
+  },
+  {
+    "id": "cricket_team_philippines",
+    "sportId": "cricket",
+    "name": "Philippines"
+  },
+  {
+    "id": "cricket_team_portugal",
+    "sportId": "cricket",
+    "name": "Portugal"
+  },
+  {
+    "id": "cricket_team_pune_warriors",
+    "sportId": "cricket",
+    "name": "Pune Warriors"
+  },
+  {
+    "id": "cricket_team_punjab_kings",
+    "sportId": "cricket",
+    "name": "Punjab Kings"
+  },
+  {
+    "id": "cricket_team_qatar",
+    "sportId": "cricket",
+    "name": "Qatar"
+  },
+  {
+    "id": "cricket_team_rajasthan_royals",
+    "sportId": "cricket",
+    "name": "Rajasthan Royals"
+  },
+  {
+    "id": "cricket_team_rising_pune_supergiant",
+    "sportId": "cricket",
+    "name": "Rising Pune Supergiant"
+  },
+  {
+    "id": "cricket_team_rising_pune_supergiants",
+    "sportId": "cricket",
+    "name": "Rising Pune Supergiants"
+  },
+  {
+    "id": "cricket_team_romania",
+    "sportId": "cricket",
+    "name": "Romania"
+  },
+  {
+    "id": "cricket_team_royal_challengers_bangalore",
+    "sportId": "cricket",
+    "name": "Royal Challengers Bangalore"
+  },
+  {
+    "id": "cricket_team_royal_challengers_bengaluru",
+    "sportId": "cricket",
+    "name": "Royal Challengers Bengaluru"
+  },
+  {
+    "id": "cricket_team_rwanda",
+    "sportId": "cricket",
+    "name": "Rwanda"
+  },
+  {
+    "id": "cricket_team_samoa",
+    "sportId": "cricket",
+    "name": "Samoa"
+  },
+  {
+    "id": "cricket_team_saudi_arabia",
+    "sportId": "cricket",
+    "name": "Saudi Arabia"
+  },
+  {
+    "id": "cricket_team_scotland",
+    "sportId": "cricket",
+    "name": "Scotland"
+  },
+  {
+    "id": "cricket_team_serbia",
+    "sportId": "cricket",
+    "name": "Serbia"
+  },
+  {
+    "id": "cricket_team_seychelles",
+    "sportId": "cricket",
+    "name": "Seychelles"
+  },
+  {
+    "id": "cricket_team_sierra_leone",
+    "sportId": "cricket",
+    "name": "Sierra Leone"
+  },
+  {
+    "id": "cricket_team_singapore",
+    "sportId": "cricket",
+    "name": "Singapore"
+  },
+  {
+    "id": "cricket_team_slovenia",
+    "sportId": "cricket",
+    "name": "Slovenia"
+  },
+  {
+    "id": "cricket_team_somerset",
+    "sportId": "cricket",
+    "name": "Somerset"
+  },
+  {
+    "id": "cricket_team_south_africa",
+    "sportId": "cricket",
+    "name": "South Africa"
+  },
+  {
+    "id": "cricket_team_south_korea",
+    "sportId": "cricket",
+    "name": "South Korea"
+  },
+  {
+    "id": "cricket_team_southern_brave",
+    "sportId": "cricket",
+    "name": "Southern Brave"
+  },
+  {
+    "id": "cricket_team_spain",
+    "sportId": "cricket",
+    "name": "Spain"
+  },
+  {
+    "id": "cricket_team_sri_lanka",
+    "sportId": "cricket",
+    "name": "Sri Lanka"
+  },
+  {
+    "id": "cricket_team_st_helena",
+    "sportId": "cricket",
+    "name": "St Helena"
+  },
+  {
+    "id": "cricket_team_sunrisers_hyderabad",
+    "sportId": "cricket",
+    "name": "Sunrisers Hyderabad"
+  },
+  {
+    "id": "cricket_team_sunrisers_leeds",
+    "sportId": "cricket",
+    "name": "Sunrisers Leeds"
+  },
+  {
+    "id": "cricket_team_suriname",
+    "sportId": "cricket",
+    "name": "Suriname"
+  },
+  {
+    "id": "cricket_team_surrey",
+    "sportId": "cricket",
+    "name": "Surrey"
+  },
+  {
+    "id": "cricket_team_sussex",
+    "sportId": "cricket",
+    "name": "Sussex"
+  },
+  {
+    "id": "cricket_team_swaziland",
+    "sportId": "cricket",
+    "name": "Swaziland"
+  },
+  {
+    "id": "cricket_team_sweden",
+    "sportId": "cricket",
+    "name": "Sweden"
+  },
+  {
+    "id": "cricket_team_switzerland",
+    "sportId": "cricket",
+    "name": "Switzerland"
+  },
+  {
+    "id": "cricket_team_tanzania",
+    "sportId": "cricket",
+    "name": "Tanzania"
+  },
+  {
+    "id": "cricket_team_thailand",
+    "sportId": "cricket",
+    "name": "Thailand"
+  },
+  {
+    "id": "cricket_team_the_blaze",
+    "sportId": "cricket",
+    "name": "The Blaze"
+  },
+  {
+    "id": "cricket_team_timor_leste",
+    "sportId": "cricket",
+    "name": "Timor-Leste"
+  },
+  {
+    "id": "cricket_team_trent_rockets",
+    "sportId": "cricket",
+    "name": "Trent Rockets"
+  },
+  {
+    "id": "cricket_team_turkey",
+    "sportId": "cricket",
+    "name": "Turkey"
+  },
+  {
+    "id": "cricket_team_turks_and_caicos_island",
+    "sportId": "cricket",
+    "name": "Turks and Caicos Island"
+  },
+  {
+    "id": "cricket_team_uganda",
+    "sportId": "cricket",
+    "name": "Uganda"
+  },
+  {
+    "id": "cricket_team_united_arab_emirates",
+    "sportId": "cricket",
+    "name": "United Arab Emirates"
+  },
+  {
+    "id": "cricket_team_united_states_of_america",
+    "sportId": "cricket",
+    "name": "United States of America"
+  },
+  {
+    "id": "cricket_team_up_warriorz",
+    "sportId": "cricket",
+    "name": "UP Warriorz"
+  },
+  {
+    "id": "cricket_team_uzbekistan",
+    "sportId": "cricket",
+    "name": "Uzbekistan"
+  },
+  {
+    "id": "cricket_team_vanuatu",
+    "sportId": "cricket",
+    "name": "Vanuatu"
+  },
+  {
+    "id": "cricket_team_warwickshire",
+    "sportId": "cricket",
+    "name": "Warwickshire"
+  },
+  {
+    "id": "cricket_team_welsh_fire",
+    "sportId": "cricket",
+    "name": "Welsh Fire"
+  },
+  {
+    "id": "cricket_team_west_indies",
+    "sportId": "cricket",
+    "name": "West Indies"
+  },
+  {
+    "id": "cricket_team_worcestershire",
+    "sportId": "cricket",
+    "name": "Worcestershire"
+  },
+  {
+    "id": "cricket_team_yorkshire",
+    "sportId": "cricket",
+    "name": "Yorkshire"
+  },
+  {
+    "id": "cricket_team_zambia",
+    "sportId": "cricket",
+    "name": "Zambia"
+  },
+  {
+    "id": "cricket_team_zimbabwe",
+    "sportId": "cricket",
+    "name": "Zimbabwe"
+  }
+]
