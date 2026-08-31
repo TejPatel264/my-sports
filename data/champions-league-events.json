@@ -1,1 +1,2624 @@
-[]
+[
+  {
+    "sportId": "football",
+    "competitionId": "champions_league",
+    "seasonId": "champions_league_2026_27",
+    "date": "2026-09-08T16:45:00Z",
+    "title": "Club Brugge KV vs Aston Villa",
+    "participants": [
+      "team_club_brugge",
+      "team_aston_villa"
+    ],
+    "sportData": {
+      "kind": "football_match",
+      "homeTeam": "team_club_brugge",
+      "awayTeam": "team_aston_villa",
+      "venue": null,
+      "result": null
+    },
+    "dataQuality": "verified",
+    "externalIds": {
+      "footballDataOrgId": 575323
+    },
+    "id": "evt_ucl_001"
+  },
+  {
+    "sportId": "football",
+    "competitionId": "champions_league",
+    "seasonId": "champions_league_2026_27",
+    "date": "2026-09-08T19:00:00Z",
+    "title": "Real Madrid CF vs FC Internazionale Milano",
+    "participants": [
+      "team_real_madrid",
+      "team_inter_milan"
+    ],
+    "sportData": {
+      "kind": "football_match",
+      "homeTeam": "team_real_madrid",
+      "awayTeam": "team_inter_milan",
+      "venue": null,
+      "result": null
+    },
+    "dataQuality": "verified",
+    "externalIds": {
+      "footballDataOrgId": 575325
+    },
+    "id": "evt_ucl_002"
+  },
+  {
+    "sportId": "football",
+    "competitionId": "champions_league",
+    "seasonId": "champions_league_2026_27",
+    "date": "2026-09-08T19:00:00Z",
+    "title": "FC Porto vs Manchester City",
+    "participants": [
+      "team_porto",
+      "team_manchester_city"
+    ],
+    "sportData": {
+      "kind": "football_match",
+      "homeTeam": "team_porto",
+      "awayTeam": "team_manchester_city",
+      "venue": null,
+      "result": null
+    },
+    "dataQuality": "verified",
+    "externalIds": {
+      "footballDataOrgId": 575326
+    },
+    "id": "evt_ucl_003"
+  },
+  {
+    "sportId": "football",
+    "competitionId": "champions_league",
+    "seasonId": "champions_league_2026_27",
+    "date": "2026-09-08T19:00:00Z",
+    "title": "Borussia Dortmund vs Villarreal CF",
+    "participants": [
+      "team_borussia_dortmund",
+      "team_villarreal"
+    ],
+    "sportData": {
+      "kind": "football_match",
+      "homeTeam": "team_borussia_dortmund",
+      "awayTeam": "team_villarreal",
+      "venue": null,
+      "result": null
+    },
+    "dataQuality": "verified",
+    "externalIds": {
+      "footballDataOrgId": 575327
+    },
+    "id": "evt_ucl_004"
+  },
+  {
+    "sportId": "football",
+    "competitionId": "champions_league",
+    "seasonId": "champions_league_2026_27",
+    "date": "2026-09-09T16:45:00Z",
+    "title": "FC Barcelona vs Feyenoord Rotterdam",
+    "participants": [
+      "team_barcelona",
+      "team_feyenoord"
+    ],
+    "sportData": {
+      "kind": "football_match",
+      "homeTeam": "team_barcelona",
+      "awayTeam": "team_feyenoord",
+      "venue": null,
+      "result": null
+    },
+    "dataQuality": "verified",
+    "externalIds": {
+      "footballDataOrgId": 575329
+    },
+    "id": "evt_ucl_005"
+  },
+  {
+    "sportId": "football",
+    "competitionId": "champions_league",
+    "seasonId": "champions_league_2026_27",
+    "date": "2026-09-09T16:45:00Z",
+    "title": "VfB Stuttgart vs Viking FK",
+    "participants": [
+      "team_stuttgart",
+      "team_viking_fk"
+    ],
+    "sportData": {
+      "kind": "football_match",
+      "homeTeam": "team_stuttgart",
+      "awayTeam": "team_viking_fk",
+      "venue": null,
+      "result": null
+    },
+    "dataQuality": "verified",
+    "externalIds": {
+      "footballDataOrgId": 575330
+    },
+    "id": "evt_ucl_006"
+  },
+  {
+    "sportId": "football",
+    "competitionId": "champions_league",
+    "seasonId": "champions_league_2026_27",
+    "date": "2026-09-09T19:00:00Z",
+    "title": "Liverpool vs Club Atlético de Madrid",
+    "participants": [
+      "team_liverpool",
+      "team_atletico_madrid"
+    ],
+    "sportData": {
+      "kind": "football_match",
+      "homeTeam": "team_liverpool",
+      "awayTeam": "team_atletico_madrid",
+      "venue": null,
+      "result": null
+    },
+    "dataQuality": "verified",
+    "externalIds": {
+      "footballDataOrgId": 575331
+    },
+    "id": "evt_ucl_007"
+  },
+  {
+    "sportId": "football",
+    "competitionId": "champions_league",
+    "seasonId": "champions_league_2026_27",
+    "date": "2026-09-09T19:00:00Z",
+    "title": "Paris Saint-Germain vs ŠK Slovan Bratislava",
+    "participants": [
+      "team_paris_saint_germain",
+      "team_slovan_bratislava"
+    ],
+    "sportData": {
+      "kind": "football_match",
+      "homeTeam": "team_paris_saint_germain",
+      "awayTeam": "team_slovan_bratislava",
+      "venue": null,
+      "result": null
+    },
+    "dataQuality": "verified",
+    "externalIds": {
+      "footballDataOrgId": 575332
+    },
+    "id": "evt_ucl_008"
+  },
+  {
+    "sportId": "football",
+    "competitionId": "champions_league",
+    "seasonId": "champions_league_2026_27",
+    "date": "2026-09-09T19:00:00Z",
+    "title": "SSC Napoli vs Arsenal",
+    "participants": [
+      "team_napoli",
+      "team_arsenal"
+    ],
+    "sportData": {
+      "kind": "football_match",
+      "homeTeam": "team_napoli",
+      "awayTeam": "team_arsenal",
+      "venue": null,
+      "result": null
+    },
+    "dataQuality": "verified",
+    "externalIds": {
+      "footballDataOrgId": 575333
+    },
+    "id": "evt_ucl_009"
+  },
+  {
+    "sportId": "football",
+    "competitionId": "champions_league",
+    "seasonId": "champions_league_2026_27",
+    "date": "2026-09-09T19:00:00Z",
+    "title": "Sporting Clube de Portugal vs Galatasaray SK",
+    "participants": [
+      "team_sporting_cp",
+      "team_galatasaray"
+    ],
+    "sportData": {
+      "kind": "football_match",
+      "homeTeam": "team_sporting_cp",
+      "awayTeam": "team_galatasaray",
+      "venue": null,
+      "result": null
+    },
+    "dataQuality": "verified",
+    "externalIds": {
+      "footballDataOrgId": 575334
+    },
+    "id": "evt_ucl_010"
+  },
+  {
+    "sportId": "football",
+    "competitionId": "champions_league",
+    "seasonId": "champions_league_2026_27",
+    "date": "2026-09-10T16:45:00Z",
+    "title": "Fenerbahçe SK vs AS Roma",
+    "participants": [
+      "team_fenerbahce",
+      "team_roma"
+    ],
+    "sportData": {
+      "kind": "football_match",
+      "homeTeam": "team_fenerbahce",
+      "awayTeam": "team_roma",
+      "venue": null,
+      "result": null
+    },
+    "dataQuality": "verified",
+    "externalIds": {
+      "footballDataOrgId": 575335
+    },
+    "id": "evt_ucl_011"
+  },
+  {
+    "sportId": "football",
+    "competitionId": "champions_league",
+    "seasonId": "champions_league_2026_27",
+    "date": "2026-09-10T19:00:00Z",
+    "title": "FC Bayern München vs FK Bodø/Glimt",
+    "participants": [
+      "team_bayern_munich",
+      "team_bodo_glimt"
+    ],
+    "sportData": {
+      "kind": "football_match",
+      "homeTeam": "team_bayern_munich",
+      "awayTeam": "team_bodo_glimt",
+      "venue": null,
+      "result": null
+    },
+    "dataQuality": "verified",
+    "externalIds": {
+      "footballDataOrgId": 575337
+    },
+    "id": "evt_ucl_012"
+  },
+  {
+    "sportId": "football",
+    "competitionId": "champions_league",
+    "seasonId": "champions_league_2026_27",
+    "date": "2026-09-10T19:00:00Z",
+    "title": "Manchester United vs Sabah FK",
+    "participants": [
+      "team_manchester_united",
+      "team_sabah_fk"
+    ],
+    "sportData": {
+      "kind": "football_match",
+      "homeTeam": "team_manchester_united",
+      "awayTeam": "team_sabah_fk",
+      "venue": null,
+      "result": null
+    },
+    "dataQuality": "verified",
+    "externalIds": {
+      "footballDataOrgId": 575338
+    },
+    "id": "evt_ucl_013"
+  },
+  {
+    "sportId": "football",
+    "competitionId": "champions_league",
+    "seasonId": "champions_league_2026_27",
+    "date": "2026-09-10T19:00:00Z",
+    "title": "Como 1907 vs RB Leipzig",
+    "participants": [
+      "team_como",
+      "team_rb_leipzig"
+    ],
+    "sportData": {
+      "kind": "football_match",
+      "homeTeam": "team_como",
+      "awayTeam": "team_rb_leipzig",
+      "venue": null,
+      "result": null
+    },
+    "dataQuality": "verified",
+    "externalIds": {
+      "footballDataOrgId": 575339
+    },
+    "id": "evt_ucl_014"
+  },
+  {
+    "sportId": "football",
+    "competitionId": "champions_league",
+    "seasonId": "champions_league_2026_27",
+    "date": "2026-09-10T19:00:00Z",
+    "title": "SK Slavia Praha vs Racing Club de Lens",
+    "participants": [
+      "team_slavia_prague",
+      "team_lens"
+    ],
+    "sportData": {
+      "kind": "football_match",
+      "homeTeam": "team_slavia_prague",
+      "awayTeam": "team_lens",
+      "venue": null,
+      "result": null
+    },
+    "dataQuality": "verified",
+    "externalIds": {
+      "footballDataOrgId": 575340
+    },
+    "id": "evt_ucl_015"
+  },
+  {
+    "sportId": "football",
+    "competitionId": "champions_league",
+    "seasonId": "champions_league_2026_27",
+    "date": "2026-10-13T16:45:00Z",
+    "title": "Racing Club de Lens vs Sporting Clube de Portugal",
+    "participants": [
+      "team_lens",
+      "team_sporting_cp"
+    ],
+    "sportData": {
+      "kind": "football_match",
+      "homeTeam": "team_lens",
+      "awayTeam": "team_sporting_cp",
+      "venue": null,
+      "result": null
+    },
+    "dataQuality": "verified",
+    "externalIds": {
+      "footballDataOrgId": 575341
+    },
+    "id": "evt_ucl_016"
+  },
+  {
+    "sportId": "football",
+    "competitionId": "champions_league",
+    "seasonId": "champions_league_2026_27",
+    "date": "2026-10-13T16:45:00Z",
+    "title": "Sabah FK vs SK Slavia Praha",
+    "participants": [
+      "team_sabah_fk",
+      "team_slavia_prague"
+    ],
+    "sportData": {
+      "kind": "football_match",
+      "homeTeam": "team_sabah_fk",
+      "awayTeam": "team_slavia_prague",
+      "venue": null,
+      "result": null
+    },
+    "dataQuality": "verified",
+    "externalIds": {
+      "footballDataOrgId": 575342
+    },
+    "id": "evt_ucl_017"
+  },
+  {
+    "sportId": "football",
+    "competitionId": "champions_league",
+    "seasonId": "champions_league_2026_27",
+    "date": "2026-10-13T19:00:00Z",
+    "title": "FC Internazionale Milano vs Club Brugge KV",
+    "participants": [
+      "team_inter_milan",
+      "team_club_brugge"
+    ],
+    "sportData": {
+      "kind": "football_match",
+      "homeTeam": "team_inter_milan",
+      "awayTeam": "team_club_brugge",
+      "venue": null,
+      "result": null
+    },
+    "dataQuality": "verified",
+    "externalIds": {
+      "footballDataOrgId": 575343
+    },
+    "id": "evt_ucl_018"
+  },
+  {
+    "sportId": "football",
+    "competitionId": "champions_league",
+    "seasonId": "champions_league_2026_27",
+    "date": "2026-10-13T19:00:00Z",
+    "title": "Galatasaray SK vs FC Barcelona",
+    "participants": [
+      "team_galatasaray",
+      "team_barcelona"
+    ],
+    "sportData": {
+      "kind": "football_match",
+      "homeTeam": "team_galatasaray",
+      "awayTeam": "team_barcelona",
+      "venue": null,
+      "result": null
+    },
+    "dataQuality": "verified",
+    "externalIds": {
+      "footballDataOrgId": 575344
+    },
+    "id": "evt_ucl_019"
+  },
+  {
+    "sportId": "football",
+    "competitionId": "champions_league",
+    "seasonId": "champions_league_2026_27",
+    "date": "2026-10-13T19:00:00Z",
+    "title": "Club Atlético de Madrid vs Manchester United",
+    "participants": [
+      "team_atletico_madrid",
+      "team_manchester_united"
+    ],
+    "sportData": {
+      "kind": "football_match",
+      "homeTeam": "team_atletico_madrid",
+      "awayTeam": "team_manchester_united",
+      "venue": null,
+      "result": null
+    },
+    "dataQuality": "verified",
+    "externalIds": {
+      "footballDataOrgId": 575345
+    },
+    "id": "evt_ucl_020"
+  },
+  {
+    "sportId": "football",
+    "competitionId": "champions_league",
+    "seasonId": "champions_league_2026_27",
+    "date": "2026-10-13T19:00:00Z",
+    "title": "Viking FK vs FC Bayern München",
+    "participants": [
+      "team_viking_fk",
+      "team_bayern_munich"
+    ],
+    "sportData": {
+      "kind": "football_match",
+      "homeTeam": "team_viking_fk",
+      "awayTeam": "team_bayern_munich",
+      "venue": null,
+      "result": null
+    },
+    "dataQuality": "verified",
+    "externalIds": {
+      "footballDataOrgId": 575347
+    },
+    "id": "evt_ucl_021"
+  },
+  {
+    "sportId": "football",
+    "competitionId": "champions_league",
+    "seasonId": "champions_league_2026_27",
+    "date": "2026-10-13T19:00:00Z",
+    "title": "RB Leipzig vs PSV",
+    "participants": [
+      "team_rb_leipzig",
+      "team_psv_eindhoven"
+    ],
+    "sportData": {
+      "kind": "football_match",
+      "homeTeam": "team_rb_leipzig",
+      "awayTeam": "team_psv_eindhoven",
+      "venue": null,
+      "result": null
+    },
+    "dataQuality": "verified",
+    "externalIds": {
+      "footballDataOrgId": 575348
+    },
+    "id": "evt_ucl_022"
+  },
+  {
+    "sportId": "football",
+    "competitionId": "champions_league",
+    "seasonId": "champions_league_2026_27",
+    "date": "2026-10-13T19:00:00Z",
+    "title": "Villarreal CF vs SSC Napoli",
+    "participants": [
+      "team_villarreal",
+      "team_napoli"
+    ],
+    "sportData": {
+      "kind": "football_match",
+      "homeTeam": "team_villarreal",
+      "awayTeam": "team_napoli",
+      "venue": null,
+      "result": null
+    },
+    "dataQuality": "verified",
+    "externalIds": {
+      "footballDataOrgId": 575349
+    },
+    "id": "evt_ucl_023"
+  },
+  {
+    "sportId": "football",
+    "competitionId": "champions_league",
+    "seasonId": "champions_league_2026_27",
+    "date": "2026-10-14T16:45:00Z",
+    "title": "Feyenoord Rotterdam vs Como 1907",
+    "participants": [
+      "team_feyenoord",
+      "team_como"
+    ],
+    "sportData": {
+      "kind": "football_match",
+      "homeTeam": "team_feyenoord",
+      "awayTeam": "team_como",
+      "venue": null,
+      "result": null
+    },
+    "dataQuality": "verified",
+    "externalIds": {
+      "footballDataOrgId": 575351
+    },
+    "id": "evt_ucl_024"
+  },
+  {
+    "sportId": "football",
+    "competitionId": "champions_league",
+    "seasonId": "champions_league_2026_27",
+    "date": "2026-10-14T19:00:00Z",
+    "title": "AS Roma vs Real Madrid CF",
+    "participants": [
+      "team_roma",
+      "team_real_madrid"
+    ],
+    "sportData": {
+      "kind": "football_match",
+      "homeTeam": "team_roma",
+      "awayTeam": "team_real_madrid",
+      "venue": null,
+      "result": null
+    },
+    "dataQuality": "verified",
+    "externalIds": {
+      "footballDataOrgId": 575352
+    },
+    "id": "evt_ucl_025"
+  },
+  {
+    "sportId": "football",
+    "competitionId": "champions_league",
+    "seasonId": "champions_league_2026_27",
+    "date": "2026-10-14T19:00:00Z",
+    "title": "Manchester City vs Paris Saint-Germain",
+    "participants": [
+      "team_manchester_city",
+      "team_paris_saint_germain"
+    ],
+    "sportData": {
+      "kind": "football_match",
+      "homeTeam": "team_manchester_city",
+      "awayTeam": "team_paris_saint_germain",
+      "venue": null,
+      "result": null
+    },
+    "dataQuality": "verified",
+    "externalIds": {
+      "footballDataOrgId": 575353
+    },
+    "id": "evt_ucl_026"
+  },
+  {
+    "sportId": "football",
+    "competitionId": "champions_league",
+    "seasonId": "champions_league_2026_27",
+    "date": "2026-10-14T19:00:00Z",
+    "title": "FK Bodø/Glimt vs Borussia Dortmund",
+    "participants": [
+      "team_bodo_glimt",
+      "team_borussia_dortmund"
+    ],
+    "sportData": {
+      "kind": "football_match",
+      "homeTeam": "team_bodo_glimt",
+      "awayTeam": "team_borussia_dortmund",
+      "venue": null,
+      "result": null
+    },
+    "dataQuality": "verified",
+    "externalIds": {
+      "footballDataOrgId": 575354
+    },
+    "id": "evt_ucl_027"
+  },
+  {
+    "sportId": "football",
+    "competitionId": "champions_league",
+    "seasonId": "champions_league_2026_27",
+    "date": "2026-10-14T19:00:00Z",
+    "title": "Aston Villa vs Fenerbahçe SK",
+    "participants": [
+      "team_aston_villa",
+      "team_fenerbahce"
+    ],
+    "sportData": {
+      "kind": "football_match",
+      "homeTeam": "team_aston_villa",
+      "awayTeam": "team_fenerbahce",
+      "venue": null,
+      "result": null
+    },
+    "dataQuality": "verified",
+    "externalIds": {
+      "footballDataOrgId": 575355
+    },
+    "id": "evt_ucl_028"
+  },
+  {
+    "sportId": "football",
+    "competitionId": "champions_league",
+    "seasonId": "champions_league_2026_27",
+    "date": "2026-10-14T19:00:00Z",
+    "title": "Real Betis Balompié vs FC Porto",
+    "participants": [
+      "team_real_betis",
+      "team_porto"
+    ],
+    "sportData": {
+      "kind": "football_match",
+      "homeTeam": "team_real_betis",
+      "awayTeam": "team_porto",
+      "venue": null,
+      "result": null
+    },
+    "dataQuality": "verified",
+    "externalIds": {
+      "footballDataOrgId": 575356
+    },
+    "id": "evt_ucl_029"
+  },
+  {
+    "sportId": "football",
+    "competitionId": "champions_league",
+    "seasonId": "champions_league_2026_27",
+    "date": "2026-10-14T19:00:00Z",
+    "title": "ŠK Slovan Bratislava vs VfB Stuttgart",
+    "participants": [
+      "team_slovan_bratislava",
+      "team_stuttgart"
+    ],
+    "sportData": {
+      "kind": "football_match",
+      "homeTeam": "team_slovan_bratislava",
+      "awayTeam": "team_stuttgart",
+      "venue": null,
+      "result": null
+    },
+    "dataQuality": "verified",
+    "externalIds": {
+      "footballDataOrgId": 575358
+    },
+    "id": "evt_ucl_030"
+  },
+  {
+    "sportId": "football",
+    "competitionId": "champions_league",
+    "seasonId": "champions_league_2026_27",
+    "date": "2026-10-20T16:45:00Z",
+    "title": "Sabah FK vs Borussia Dortmund",
+    "participants": [
+      "team_sabah_fk",
+      "team_borussia_dortmund"
+    ],
+    "sportData": {
+      "kind": "football_match",
+      "homeTeam": "team_sabah_fk",
+      "awayTeam": "team_borussia_dortmund",
+      "venue": null,
+      "result": null
+    },
+    "dataQuality": "verified",
+    "externalIds": {
+      "footballDataOrgId": 575359
+    },
+    "id": "evt_ucl_031"
+  },
+  {
+    "sportId": "football",
+    "competitionId": "champions_league",
+    "seasonId": "champions_league_2026_27",
+    "date": "2026-10-20T16:45:00Z",
+    "title": "Fenerbahçe SK vs SK Slavia Praha",
+    "participants": [
+      "team_fenerbahce",
+      "team_slavia_prague"
+    ],
+    "sportData": {
+      "kind": "football_match",
+      "homeTeam": "team_fenerbahce",
+      "awayTeam": "team_slavia_prague",
+      "venue": null,
+      "result": null
+    },
+    "dataQuality": "verified",
+    "externalIds": {
+      "footballDataOrgId": 575360
+    },
+    "id": "evt_ucl_032"
+  },
+  {
+    "sportId": "football",
+    "competitionId": "champions_league",
+    "seasonId": "champions_league_2026_27",
+    "date": "2026-10-20T19:00:00Z",
+    "title": "VfB Stuttgart vs Club Atlético de Madrid",
+    "participants": [
+      "team_stuttgart",
+      "team_atletico_madrid"
+    ],
+    "sportData": {
+      "kind": "football_match",
+      "homeTeam": "team_stuttgart",
+      "awayTeam": "team_atletico_madrid",
+      "venue": null,
+      "result": null
+    },
+    "dataQuality": "verified",
+    "externalIds": {
+      "footballDataOrgId": 575362
+    },
+    "id": "evt_ucl_033"
+  },
+  {
+    "sportId": "football",
+    "competitionId": "champions_league",
+    "seasonId": "champions_league_2026_27",
+    "date": "2026-10-20T19:00:00Z",
+    "title": "Liverpool vs Villarreal CF",
+    "participants": [
+      "team_liverpool",
+      "team_villarreal"
+    ],
+    "sportData": {
+      "kind": "football_match",
+      "homeTeam": "team_liverpool",
+      "awayTeam": "team_villarreal",
+      "venue": null,
+      "result": null
+    },
+    "dataQuality": "verified",
+    "externalIds": {
+      "footballDataOrgId": 575363
+    },
+    "id": "evt_ucl_034"
+  },
+  {
+    "sportId": "football",
+    "competitionId": "champions_league",
+    "seasonId": "champions_league_2026_27",
+    "date": "2026-10-20T19:00:00Z",
+    "title": "AS Roma vs ŠK Slovan Bratislava",
+    "participants": [
+      "team_roma",
+      "team_slovan_bratislava"
+    ],
+    "sportData": {
+      "kind": "football_match",
+      "homeTeam": "team_roma",
+      "awayTeam": "team_slovan_bratislava",
+      "venue": null,
+      "result": null
+    },
+    "dataQuality": "verified",
+    "externalIds": {
+      "footballDataOrgId": 575364
+    },
+    "id": "evt_ucl_035"
+  },
+  {
+    "sportId": "football",
+    "competitionId": "champions_league",
+    "seasonId": "champions_league_2026_27",
+    "date": "2026-10-20T19:00:00Z",
+    "title": "FC Porto vs PSV",
+    "participants": [
+      "team_porto",
+      "team_psv_eindhoven"
+    ],
+    "sportData": {
+      "kind": "football_match",
+      "homeTeam": "team_porto",
+      "awayTeam": "team_psv_eindhoven",
+      "venue": null,
+      "result": null
+    },
+    "dataQuality": "verified",
+    "externalIds": {
+      "footballDataOrgId": 575365
+    },
+    "id": "evt_ucl_036"
+  },
+  {
+    "sportId": "football",
+    "competitionId": "champions_league",
+    "seasonId": "champions_league_2026_27",
+    "date": "2026-10-20T19:00:00Z",
+    "title": "SSC Napoli vs FK Bodø/Glimt",
+    "participants": [
+      "team_napoli",
+      "team_bodo_glimt"
+    ],
+    "sportData": {
+      "kind": "football_match",
+      "homeTeam": "team_napoli",
+      "awayTeam": "team_bodo_glimt",
+      "venue": null,
+      "result": null
+    },
+    "dataQuality": "verified",
+    "externalIds": {
+      "footballDataOrgId": 575366
+    },
+    "id": "evt_ucl_037"
+  },
+  {
+    "sportId": "football",
+    "competitionId": "champions_league",
+    "seasonId": "champions_league_2026_27",
+    "date": "2026-10-20T19:00:00Z",
+    "title": "Paris Saint-Germain vs FC Barcelona",
+    "participants": [
+      "team_paris_saint_germain",
+      "team_barcelona"
+    ],
+    "sportData": {
+      "kind": "football_match",
+      "homeTeam": "team_paris_saint_germain",
+      "awayTeam": "team_barcelona",
+      "venue": null,
+      "result": null
+    },
+    "dataQuality": "verified",
+    "externalIds": {
+      "footballDataOrgId": 575367
+    },
+    "id": "evt_ucl_038"
+  },
+  {
+    "sportId": "football",
+    "competitionId": "champions_league",
+    "seasonId": "champions_league_2026_27",
+    "date": "2026-10-21T16:45:00Z",
+    "title": "Como 1907 vs Manchester United",
+    "participants": [
+      "team_como",
+      "team_manchester_united"
+    ],
+    "sportData": {
+      "kind": "football_match",
+      "homeTeam": "team_como",
+      "awayTeam": "team_manchester_united",
+      "venue": null,
+      "result": null
+    },
+    "dataQuality": "verified",
+    "externalIds": {
+      "footballDataOrgId": 575368
+    },
+    "id": "evt_ucl_039"
+  },
+  {
+    "sportId": "football",
+    "competitionId": "champions_league",
+    "seasonId": "champions_league_2026_27",
+    "date": "2026-10-21T19:00:00Z",
+    "title": "Real Madrid CF vs RB Leipzig",
+    "participants": [
+      "team_real_madrid",
+      "team_rb_leipzig"
+    ],
+    "sportData": {
+      "kind": "football_match",
+      "homeTeam": "team_real_madrid",
+      "awayTeam": "team_rb_leipzig",
+      "venue": null,
+      "result": null
+    },
+    "dataQuality": "verified",
+    "externalIds": {
+      "footballDataOrgId": 575370
+    },
+    "id": "evt_ucl_040"
+  },
+  {
+    "sportId": "football",
+    "competitionId": "champions_league",
+    "seasonId": "champions_league_2026_27",
+    "date": "2026-10-21T19:00:00Z",
+    "title": "FC Bayern München vs Arsenal",
+    "participants": [
+      "team_bayern_munich",
+      "team_arsenal"
+    ],
+    "sportData": {
+      "kind": "football_match",
+      "homeTeam": "team_bayern_munich",
+      "awayTeam": "team_arsenal",
+      "venue": null,
+      "result": null
+    },
+    "dataQuality": "verified",
+    "externalIds": {
+      "footballDataOrgId": 575372
+    },
+    "id": "evt_ucl_041"
+  },
+  {
+    "sportId": "football",
+    "competitionId": "champions_league",
+    "seasonId": "champions_league_2026_27",
+    "date": "2026-10-21T19:00:00Z",
+    "title": "Club Brugge KV vs Racing Club de Lens",
+    "participants": [
+      "team_club_brugge",
+      "team_lens"
+    ],
+    "sportData": {
+      "kind": "football_match",
+      "homeTeam": "team_club_brugge",
+      "awayTeam": "team_lens",
+      "venue": null,
+      "result": null
+    },
+    "dataQuality": "verified",
+    "externalIds": {
+      "footballDataOrgId": 575373
+    },
+    "id": "evt_ucl_042"
+  },
+  {
+    "sportId": "football",
+    "competitionId": "champions_league",
+    "seasonId": "champions_league_2026_27",
+    "date": "2026-10-21T19:00:00Z",
+    "title": "Aston Villa vs Viking FK",
+    "participants": [
+      "team_aston_villa",
+      "team_viking_fk"
+    ],
+    "sportData": {
+      "kind": "football_match",
+      "homeTeam": "team_aston_villa",
+      "awayTeam": "team_viking_fk",
+      "venue": null,
+      "result": null
+    },
+    "dataQuality": "verified",
+    "externalIds": {
+      "footballDataOrgId": 575374
+    },
+    "id": "evt_ucl_043"
+  },
+  {
+    "sportId": "football",
+    "competitionId": "champions_league",
+    "seasonId": "champions_league_2026_27",
+    "date": "2026-10-21T19:00:00Z",
+    "title": "Real Betis Balompié vs Feyenoord Rotterdam",
+    "participants": [
+      "team_real_betis",
+      "team_feyenoord"
+    ],
+    "sportData": {
+      "kind": "football_match",
+      "homeTeam": "team_real_betis",
+      "awayTeam": "team_feyenoord",
+      "venue": null,
+      "result": null
+    },
+    "dataQuality": "verified",
+    "externalIds": {
+      "footballDataOrgId": 575376
+    },
+    "id": "evt_ucl_044"
+  },
+  {
+    "sportId": "football",
+    "competitionId": "champions_league",
+    "seasonId": "champions_league_2026_27",
+    "date": "2026-11-03T17:45:00Z",
+    "title": "Galatasaray SK vs VfB Stuttgart",
+    "participants": [
+      "team_galatasaray",
+      "team_stuttgart"
+    ],
+    "sportData": {
+      "kind": "football_match",
+      "homeTeam": "team_galatasaray",
+      "awayTeam": "team_stuttgart",
+      "venue": null,
+      "result": null
+    },
+    "dataQuality": "verified",
+    "externalIds": {
+      "footballDataOrgId": 575378
+    },
+    "id": "evt_ucl_045"
+  },
+  {
+    "sportId": "football",
+    "competitionId": "champions_league",
+    "seasonId": "champions_league_2026_27",
+    "date": "2026-11-03T20:00:00Z",
+    "title": "Feyenoord Rotterdam vs FC Internazionale Milano",
+    "participants": [
+      "team_feyenoord",
+      "team_inter_milan"
+    ],
+    "sportData": {
+      "kind": "football_match",
+      "homeTeam": "team_feyenoord",
+      "awayTeam": "team_inter_milan",
+      "venue": null,
+      "result": null
+    },
+    "dataQuality": "verified",
+    "externalIds": {
+      "footballDataOrgId": 575379
+    },
+    "id": "evt_ucl_046"
+  },
+  {
+    "sportId": "football",
+    "competitionId": "champions_league",
+    "seasonId": "champions_league_2026_27",
+    "date": "2026-11-03T20:00:00Z",
+    "title": "FC Barcelona vs Aston Villa",
+    "participants": [
+      "team_barcelona",
+      "team_aston_villa"
+    ],
+    "sportData": {
+      "kind": "football_match",
+      "homeTeam": "team_barcelona",
+      "awayTeam": "team_aston_villa",
+      "venue": null,
+      "result": null
+    },
+    "dataQuality": "verified",
+    "externalIds": {
+      "footballDataOrgId": 575380
+    },
+    "id": "evt_ucl_047"
+  },
+  {
+    "sportId": "football",
+    "competitionId": "champions_league",
+    "seasonId": "champions_league_2026_27",
+    "date": "2026-11-03T20:00:00Z",
+    "title": "Club Atlético de Madrid vs FC Bayern München",
+    "participants": [
+      "team_atletico_madrid",
+      "team_bayern_munich"
+    ],
+    "sportData": {
+      "kind": "football_match",
+      "homeTeam": "team_atletico_madrid",
+      "awayTeam": "team_bayern_munich",
+      "venue": null,
+      "result": null
+    },
+    "dataQuality": "verified",
+    "externalIds": {
+      "footballDataOrgId": 575381
+    },
+    "id": "evt_ucl_048"
+  },
+  {
+    "sportId": "football",
+    "competitionId": "champions_league",
+    "seasonId": "champions_league_2026_27",
+    "date": "2026-11-03T20:00:00Z",
+    "title": "Villarreal CF vs Paris Saint-Germain",
+    "participants": [
+      "team_villarreal",
+      "team_paris_saint_germain"
+    ],
+    "sportData": {
+      "kind": "football_match",
+      "homeTeam": "team_villarreal",
+      "awayTeam": "team_paris_saint_germain",
+      "venue": null,
+      "result": null
+    },
+    "dataQuality": "verified",
+    "externalIds": {
+      "footballDataOrgId": 575382
+    },
+    "id": "evt_ucl_049"
+  },
+  {
+    "sportId": "football",
+    "competitionId": "champions_league",
+    "seasonId": "champions_league_2026_27",
+    "date": "2026-11-03T20:00:00Z",
+    "title": "Manchester United vs AS Roma",
+    "participants": [
+      "team_manchester_united",
+      "team_roma"
+    ],
+    "sportData": {
+      "kind": "football_match",
+      "homeTeam": "team_manchester_united",
+      "awayTeam": "team_roma",
+      "venue": null,
+      "result": null
+    },
+    "dataQuality": "verified",
+    "externalIds": {
+      "footballDataOrgId": 575383
+    },
+    "id": "evt_ucl_050"
+  },
+  {
+    "sportId": "football",
+    "competitionId": "champions_league",
+    "seasonId": "champions_league_2026_27",
+    "date": "2026-11-04T17:45:00Z",
+    "title": "Fenerbahçe SK vs Liverpool",
+    "participants": [
+      "team_fenerbahce",
+      "team_liverpool"
+    ],
+    "sportData": {
+      "kind": "football_match",
+      "homeTeam": "team_fenerbahce",
+      "awayTeam": "team_liverpool",
+      "venue": null,
+      "result": null
+    },
+    "dataQuality": "verified",
+    "externalIds": {
+      "footballDataOrgId": 575387
+    },
+    "id": "evt_ucl_051"
+  },
+  {
+    "sportId": "football",
+    "competitionId": "champions_league",
+    "seasonId": "champions_league_2026_27",
+    "date": "2026-11-04T20:00:00Z",
+    "title": "RB Leipzig vs Manchester City",
+    "participants": [
+      "team_rb_leipzig",
+      "team_manchester_city"
+    ],
+    "sportData": {
+      "kind": "football_match",
+      "homeTeam": "team_rb_leipzig",
+      "awayTeam": "team_manchester_city",
+      "venue": null,
+      "result": null
+    },
+    "dataQuality": "verified",
+    "externalIds": {
+      "footballDataOrgId": 575388
+    },
+    "id": "evt_ucl_052"
+  },
+  {
+    "sportId": "football",
+    "competitionId": "champions_league",
+    "seasonId": "champions_league_2026_27",
+    "date": "2026-11-04T20:00:00Z",
+    "title": "SK Slavia Praha vs Arsenal",
+    "participants": [
+      "team_slavia_prague",
+      "team_arsenal"
+    ],
+    "sportData": {
+      "kind": "football_match",
+      "homeTeam": "team_slavia_prague",
+      "awayTeam": "team_arsenal",
+      "venue": null,
+      "result": null
+    },
+    "dataQuality": "verified",
+    "externalIds": {
+      "footballDataOrgId": 575389
+    },
+    "id": "evt_ucl_053"
+  },
+  {
+    "sportId": "football",
+    "competitionId": "champions_league",
+    "seasonId": "champions_league_2026_27",
+    "date": "2026-11-04T20:00:00Z",
+    "title": "PSV vs Club Brugge KV",
+    "participants": [
+      "team_psv_eindhoven",
+      "team_club_brugge"
+    ],
+    "sportData": {
+      "kind": "football_match",
+      "homeTeam": "team_psv_eindhoven",
+      "awayTeam": "team_club_brugge",
+      "venue": null,
+      "result": null
+    },
+    "dataQuality": "verified",
+    "externalIds": {
+      "footballDataOrgId": 575390
+    },
+    "id": "evt_ucl_054"
+  },
+  {
+    "sportId": "football",
+    "competitionId": "champions_league",
+    "seasonId": "champions_league_2026_27",
+    "date": "2026-11-04T20:00:00Z",
+    "title": "Borussia Dortmund vs Real Betis Balompié",
+    "participants": [
+      "team_borussia_dortmund",
+      "team_real_betis"
+    ],
+    "sportData": {
+      "kind": "football_match",
+      "homeTeam": "team_borussia_dortmund",
+      "awayTeam": "team_real_betis",
+      "venue": null,
+      "result": null
+    },
+    "dataQuality": "verified",
+    "externalIds": {
+      "footballDataOrgId": 575391
+    },
+    "id": "evt_ucl_055"
+  },
+  {
+    "sportId": "football",
+    "competitionId": "champions_league",
+    "seasonId": "champions_league_2026_27",
+    "date": "2026-11-04T20:00:00Z",
+    "title": "FC Porto vs SSC Napoli",
+    "participants": [
+      "team_porto",
+      "team_napoli"
+    ],
+    "sportData": {
+      "kind": "football_match",
+      "homeTeam": "team_porto",
+      "awayTeam": "team_napoli",
+      "venue": null,
+      "result": null
+    },
+    "dataQuality": "verified",
+    "externalIds": {
+      "footballDataOrgId": 575392
+    },
+    "id": "evt_ucl_056"
+  },
+  {
+    "sportId": "football",
+    "competitionId": "champions_league",
+    "seasonId": "champions_league_2026_27",
+    "date": "2026-11-04T20:00:00Z",
+    "title": "Racing Club de Lens vs Como 1907",
+    "participants": [
+      "team_lens",
+      "team_como"
+    ],
+    "sportData": {
+      "kind": "football_match",
+      "homeTeam": "team_lens",
+      "awayTeam": "team_como",
+      "venue": null,
+      "result": null
+    },
+    "dataQuality": "verified",
+    "externalIds": {
+      "footballDataOrgId": 575393
+    },
+    "id": "evt_ucl_057"
+  },
+  {
+    "sportId": "football",
+    "competitionId": "champions_league",
+    "seasonId": "champions_league_2026_27",
+    "date": "2026-11-04T20:00:00Z",
+    "title": "Viking FK vs Sabah FK",
+    "participants": [
+      "team_viking_fk",
+      "team_sabah_fk"
+    ],
+    "sportData": {
+      "kind": "football_match",
+      "homeTeam": "team_viking_fk",
+      "awayTeam": "team_sabah_fk",
+      "venue": null,
+      "result": null
+    },
+    "dataQuality": "verified",
+    "externalIds": {
+      "footballDataOrgId": 575394
+    },
+    "id": "evt_ucl_058"
+  },
+  {
+    "sportId": "football",
+    "competitionId": "champions_league",
+    "seasonId": "champions_league_2026_27",
+    "date": "2026-11-24T17:45:00Z",
+    "title": "Galatasaray SK vs Aston Villa",
+    "participants": [
+      "team_galatasaray",
+      "team_aston_villa"
+    ],
+    "sportData": {
+      "kind": "football_match",
+      "homeTeam": "team_galatasaray",
+      "awayTeam": "team_aston_villa",
+      "venue": null,
+      "result": null
+    },
+    "dataQuality": "verified",
+    "externalIds": {
+      "footballDataOrgId": 575395
+    },
+    "id": "evt_ucl_059"
+  },
+  {
+    "sportId": "football",
+    "competitionId": "champions_league",
+    "seasonId": "champions_league_2026_27",
+    "date": "2026-11-24T20:00:00Z",
+    "title": "Real Madrid CF vs PSV",
+    "participants": [
+      "team_real_madrid",
+      "team_psv_eindhoven"
+    ],
+    "sportData": {
+      "kind": "football_match",
+      "homeTeam": "team_real_madrid",
+      "awayTeam": "team_psv_eindhoven",
+      "venue": null,
+      "result": null
+    },
+    "dataQuality": "verified",
+    "externalIds": {
+      "footballDataOrgId": 575397
+    },
+    "id": "evt_ucl_060"
+  },
+  {
+    "sportId": "football",
+    "competitionId": "champions_league",
+    "seasonId": "champions_league_2026_27",
+    "date": "2026-11-24T20:00:00Z",
+    "title": "Manchester City vs SSC Napoli",
+    "participants": [
+      "team_manchester_city",
+      "team_napoli"
+    ],
+    "sportData": {
+      "kind": "football_match",
+      "homeTeam": "team_manchester_city",
+      "awayTeam": "team_napoli",
+      "venue": null,
+      "result": null
+    },
+    "dataQuality": "verified",
+    "externalIds": {
+      "footballDataOrgId": 575398
+    },
+    "id": "evt_ucl_061"
+  },
+  {
+    "sportId": "football",
+    "competitionId": "champions_league",
+    "seasonId": "champions_league_2026_27",
+    "date": "2026-11-24T20:00:00Z",
+    "title": "Arsenal vs Borussia Dortmund",
+    "participants": [
+      "team_arsenal",
+      "team_borussia_dortmund"
+    ],
+    "sportData": {
+      "kind": "football_match",
+      "homeTeam": "team_arsenal",
+      "awayTeam": "team_borussia_dortmund",
+      "venue": null,
+      "result": null
+    },
+    "dataQuality": "verified",
+    "externalIds": {
+      "footballDataOrgId": 575399
+    },
+    "id": "evt_ucl_062"
+  },
+  {
+    "sportId": "football",
+    "competitionId": "champions_league",
+    "seasonId": "champions_league_2026_27",
+    "date": "2026-11-24T20:00:00Z",
+    "title": "Feyenoord Rotterdam vs FC Porto",
+    "participants": [
+      "team_feyenoord",
+      "team_porto"
+    ],
+    "sportData": {
+      "kind": "football_match",
+      "homeTeam": "team_feyenoord",
+      "awayTeam": "team_porto",
+      "venue": null,
+      "result": null
+    },
+    "dataQuality": "verified",
+    "externalIds": {
+      "footballDataOrgId": 575400
+    },
+    "id": "evt_ucl_063"
+  },
+  {
+    "sportId": "football",
+    "competitionId": "champions_league",
+    "seasonId": "champions_league_2026_27",
+    "date": "2026-11-24T20:00:00Z",
+    "title": "ŠK Slovan Bratislava vs Real Betis Balompié",
+    "participants": [
+      "team_slovan_bratislava",
+      "team_real_betis"
+    ],
+    "sportData": {
+      "kind": "football_match",
+      "homeTeam": "team_slovan_bratislava",
+      "awayTeam": "team_real_betis",
+      "venue": null,
+      "result": null
+    },
+    "dataQuality": "verified",
+    "externalIds": {
+      "footballDataOrgId": 575401
+    },
+    "id": "evt_ucl_064"
+  },
+  {
+    "sportId": "football",
+    "competitionId": "champions_league",
+    "seasonId": "champions_league_2026_27",
+    "date": "2026-11-24T20:00:00Z",
+    "title": "RB Leipzig vs Racing Club de Lens",
+    "participants": [
+      "team_rb_leipzig",
+      "team_lens"
+    ],
+    "sportData": {
+      "kind": "football_match",
+      "homeTeam": "team_rb_leipzig",
+      "awayTeam": "team_lens",
+      "venue": null,
+      "result": null
+    },
+    "dataQuality": "verified",
+    "externalIds": {
+      "footballDataOrgId": 575402
+    },
+    "id": "evt_ucl_065"
+  },
+  {
+    "sportId": "football",
+    "competitionId": "champions_league",
+    "seasonId": "champions_league_2026_27",
+    "date": "2026-11-25T17:45:00Z",
+    "title": "Sabah FK vs FC Barcelona",
+    "participants": [
+      "team_sabah_fk",
+      "team_barcelona"
+    ],
+    "sportData": {
+      "kind": "football_match",
+      "homeTeam": "team_sabah_fk",
+      "awayTeam": "team_barcelona",
+      "venue": null,
+      "result": null
+    },
+    "dataQuality": "verified",
+    "externalIds": {
+      "footballDataOrgId": 575404
+    },
+    "id": "evt_ucl_066"
+  },
+  {
+    "sportId": "football",
+    "competitionId": "champions_league",
+    "seasonId": "champions_league_2026_27",
+    "date": "2026-11-25T17:45:00Z",
+    "title": "SK Slavia Praha vs Villarreal CF",
+    "participants": [
+      "team_slavia_prague",
+      "team_villarreal"
+    ],
+    "sportData": {
+      "kind": "football_match",
+      "homeTeam": "team_slavia_prague",
+      "awayTeam": "team_villarreal",
+      "venue": null,
+      "result": null
+    },
+    "dataQuality": "verified",
+    "externalIds": {
+      "footballDataOrgId": 575405
+    },
+    "id": "evt_ucl_067"
+  },
+  {
+    "sportId": "football",
+    "competitionId": "champions_league",
+    "seasonId": "champions_league_2026_27",
+    "date": "2026-11-25T20:00:00Z",
+    "title": "FC Internazionale Milano vs VfB Stuttgart",
+    "participants": [
+      "team_inter_milan",
+      "team_stuttgart"
+    ],
+    "sportData": {
+      "kind": "football_match",
+      "homeTeam": "team_inter_milan",
+      "awayTeam": "team_stuttgart",
+      "venue": null,
+      "result": null
+    },
+    "dataQuality": "verified",
+    "externalIds": {
+      "footballDataOrgId": 575406
+    },
+    "id": "evt_ucl_068"
+  },
+  {
+    "sportId": "football",
+    "competitionId": "champions_league",
+    "seasonId": "champions_league_2026_27",
+    "date": "2026-11-25T20:00:00Z",
+    "title": "Club Atlético de Madrid vs Viking FK",
+    "participants": [
+      "team_atletico_madrid",
+      "team_viking_fk"
+    ],
+    "sportData": {
+      "kind": "football_match",
+      "homeTeam": "team_atletico_madrid",
+      "awayTeam": "team_viking_fk",
+      "venue": null,
+      "result": null
+    },
+    "dataQuality": "verified",
+    "externalIds": {
+      "footballDataOrgId": 575407
+    },
+    "id": "evt_ucl_069"
+  },
+  {
+    "sportId": "football",
+    "competitionId": "champions_league",
+    "seasonId": "champions_league_2026_27",
+    "date": "2026-11-25T20:00:00Z",
+    "title": "Paris Saint-Germain vs AS Roma",
+    "participants": [
+      "team_paris_saint_germain",
+      "team_roma"
+    ],
+    "sportData": {
+      "kind": "football_match",
+      "homeTeam": "team_paris_saint_germain",
+      "awayTeam": "team_roma",
+      "venue": null,
+      "result": null
+    },
+    "dataQuality": "verified",
+    "externalIds": {
+      "footballDataOrgId": 575408
+    },
+    "id": "evt_ucl_070"
+  },
+  {
+    "sportId": "football",
+    "competitionId": "champions_league",
+    "seasonId": "champions_league_2026_27",
+    "date": "2026-11-25T20:00:00Z",
+    "title": "Club Brugge KV vs Liverpool",
+    "participants": [
+      "team_club_brugge",
+      "team_liverpool"
+    ],
+    "sportData": {
+      "kind": "football_match",
+      "homeTeam": "team_club_brugge",
+      "awayTeam": "team_liverpool",
+      "venue": null,
+      "result": null
+    },
+    "dataQuality": "verified",
+    "externalIds": {
+      "footballDataOrgId": 575409
+    },
+    "id": "evt_ucl_071"
+  },
+  {
+    "sportId": "football",
+    "competitionId": "champions_league",
+    "seasonId": "champions_league_2026_27",
+    "date": "2026-11-25T20:00:00Z",
+    "title": "Sporting Clube de Portugal vs Manchester United",
+    "participants": [
+      "team_sporting_cp",
+      "team_manchester_united"
+    ],
+    "sportData": {
+      "kind": "football_match",
+      "homeTeam": "team_sporting_cp",
+      "awayTeam": "team_manchester_united",
+      "venue": null,
+      "result": null
+    },
+    "dataQuality": "verified",
+    "externalIds": {
+      "footballDataOrgId": 575411
+    },
+    "id": "evt_ucl_072"
+  },
+  {
+    "sportId": "football",
+    "competitionId": "champions_league",
+    "seasonId": "champions_league_2026_27",
+    "date": "2026-12-08T17:45:00Z",
+    "title": "Villarreal CF vs Sabah FK",
+    "participants": [
+      "team_villarreal",
+      "team_sabah_fk"
+    ],
+    "sportData": {
+      "kind": "football_match",
+      "homeTeam": "team_villarreal",
+      "awayTeam": "team_sabah_fk",
+      "venue": null,
+      "result": null
+    },
+    "dataQuality": "verified",
+    "externalIds": {
+      "footballDataOrgId": 575413
+    },
+    "id": "evt_ucl_073"
+  },
+  {
+    "sportId": "football",
+    "competitionId": "champions_league",
+    "seasonId": "champions_league_2026_27",
+    "date": "2026-12-08T17:45:00Z",
+    "title": "Viking FK vs Feyenoord Rotterdam",
+    "participants": [
+      "team_viking_fk",
+      "team_feyenoord"
+    ],
+    "sportData": {
+      "kind": "football_match",
+      "homeTeam": "team_viking_fk",
+      "awayTeam": "team_feyenoord",
+      "venue": null,
+      "result": null
+    },
+    "dataQuality": "verified",
+    "externalIds": {
+      "footballDataOrgId": 575414
+    },
+    "id": "evt_ucl_074"
+  },
+  {
+    "sportId": "football",
+    "competitionId": "champions_league",
+    "seasonId": "champions_league_2026_27",
+    "date": "2026-12-08T20:00:00Z",
+    "title": "FC Barcelona vs Manchester City",
+    "participants": [
+      "team_barcelona",
+      "team_manchester_city"
+    ],
+    "sportData": {
+      "kind": "football_match",
+      "homeTeam": "team_barcelona",
+      "awayTeam": "team_manchester_city",
+      "venue": null,
+      "result": null
+    },
+    "dataQuality": "verified",
+    "externalIds": {
+      "footballDataOrgId": 575415
+    },
+    "id": "evt_ucl_075"
+  },
+  {
+    "sportId": "football",
+    "competitionId": "champions_league",
+    "seasonId": "champions_league_2026_27",
+    "date": "2026-12-08T20:00:00Z",
+    "title": "Aston Villa vs Paris Saint-Germain",
+    "participants": [
+      "team_aston_villa",
+      "team_paris_saint_germain"
+    ],
+    "sportData": {
+      "kind": "football_match",
+      "homeTeam": "team_aston_villa",
+      "awayTeam": "team_paris_saint_germain",
+      "venue": null,
+      "result": null
+    },
+    "dataQuality": "verified",
+    "externalIds": {
+      "footballDataOrgId": 575416
+    },
+    "id": "evt_ucl_076"
+  },
+  {
+    "sportId": "football",
+    "competitionId": "champions_league",
+    "seasonId": "champions_league_2026_27",
+    "date": "2026-12-08T20:00:00Z",
+    "title": "FC Bayern München vs SK Slavia Praha",
+    "participants": [
+      "team_bayern_munich",
+      "team_slavia_prague"
+    ],
+    "sportData": {
+      "kind": "football_match",
+      "homeTeam": "team_bayern_munich",
+      "awayTeam": "team_slavia_prague",
+      "venue": null,
+      "result": null
+    },
+    "dataQuality": "verified",
+    "externalIds": {
+      "footballDataOrgId": 575417
+    },
+    "id": "evt_ucl_077"
+  },
+  {
+    "sportId": "football",
+    "competitionId": "champions_league",
+    "seasonId": "champions_league_2026_27",
+    "date": "2026-12-08T20:00:00Z",
+    "title": "SSC Napoli vs Club Brugge KV",
+    "participants": [
+      "team_napoli",
+      "team_club_brugge"
+    ],
+    "sportData": {
+      "kind": "football_match",
+      "homeTeam": "team_napoli",
+      "awayTeam": "team_club_brugge",
+      "venue": null,
+      "result": null
+    },
+    "dataQuality": "verified",
+    "externalIds": {
+      "footballDataOrgId": 575418
+    },
+    "id": "evt_ucl_078"
+  },
+  {
+    "sportId": "football",
+    "competitionId": "champions_league",
+    "seasonId": "champions_league_2026_27",
+    "date": "2026-12-08T20:00:00Z",
+    "title": "AS Roma vs Sporting Clube de Portugal",
+    "participants": [
+      "team_roma",
+      "team_sporting_cp"
+    ],
+    "sportData": {
+      "kind": "football_match",
+      "homeTeam": "team_roma",
+      "awayTeam": "team_sporting_cp",
+      "venue": null,
+      "result": null
+    },
+    "dataQuality": "verified",
+    "externalIds": {
+      "footballDataOrgId": 575419
+    },
+    "id": "evt_ucl_079"
+  },
+  {
+    "sportId": "football",
+    "competitionId": "champions_league",
+    "seasonId": "champions_league_2026_27",
+    "date": "2026-12-08T20:00:00Z",
+    "title": "Manchester United vs RB Leipzig",
+    "participants": [
+      "team_manchester_united",
+      "team_rb_leipzig"
+    ],
+    "sportData": {
+      "kind": "football_match",
+      "homeTeam": "team_manchester_united",
+      "awayTeam": "team_rb_leipzig",
+      "venue": null,
+      "result": null
+    },
+    "dataQuality": "verified",
+    "externalIds": {
+      "footballDataOrgId": 575420
+    },
+    "id": "evt_ucl_080"
+  },
+  {
+    "sportId": "football",
+    "competitionId": "champions_league",
+    "seasonId": "champions_league_2026_27",
+    "date": "2026-12-09T17:45:00Z",
+    "title": "Real Betis Balompié vs Como 1907",
+    "participants": [
+      "team_real_betis",
+      "team_como"
+    ],
+    "sportData": {
+      "kind": "football_match",
+      "homeTeam": "team_real_betis",
+      "awayTeam": "team_como",
+      "venue": null,
+      "result": null
+    },
+    "dataQuality": "verified",
+    "externalIds": {
+      "footballDataOrgId": 575422
+    },
+    "id": "evt_ucl_081"
+  },
+  {
+    "sportId": "football",
+    "competitionId": "champions_league",
+    "seasonId": "champions_league_2026_27",
+    "date": "2026-12-09T20:00:00Z",
+    "title": "Arsenal vs Real Madrid CF",
+    "participants": [
+      "team_arsenal",
+      "team_real_madrid"
+    ],
+    "sportData": {
+      "kind": "football_match",
+      "homeTeam": "team_arsenal",
+      "awayTeam": "team_real_madrid",
+      "venue": null,
+      "result": null
+    },
+    "dataQuality": "verified",
+    "externalIds": {
+      "footballDataOrgId": 575280
+    },
+    "id": "evt_ucl_082"
+  },
+  {
+    "sportId": "football",
+    "competitionId": "champions_league",
+    "seasonId": "champions_league_2026_27",
+    "date": "2026-12-09T20:00:00Z",
+    "title": "Borussia Dortmund vs FC Internazionale Milano",
+    "participants": [
+      "team_borussia_dortmund",
+      "team_inter_milan"
+    ],
+    "sportData": {
+      "kind": "football_match",
+      "homeTeam": "team_borussia_dortmund",
+      "awayTeam": "team_inter_milan",
+      "venue": null,
+      "result": null
+    },
+    "dataQuality": "verified",
+    "externalIds": {
+      "footballDataOrgId": 575286
+    },
+    "id": "evt_ucl_083"
+  },
+  {
+    "sportId": "football",
+    "competitionId": "champions_league",
+    "seasonId": "champions_league_2026_27",
+    "date": "2026-12-09T20:00:00Z",
+    "title": "PSV vs Club Atlético de Madrid",
+    "participants": [
+      "team_psv_eindhoven",
+      "team_atletico_madrid"
+    ],
+    "sportData": {
+      "kind": "football_match",
+      "homeTeam": "team_psv_eindhoven",
+      "awayTeam": "team_atletico_madrid",
+      "venue": null,
+      "result": null
+    },
+    "dataQuality": "verified",
+    "externalIds": {
+      "footballDataOrgId": 575290
+    },
+    "id": "evt_ucl_084"
+  },
+  {
+    "sportId": "football",
+    "competitionId": "champions_league",
+    "seasonId": "champions_league_2026_27",
+    "date": "2026-12-09T20:00:00Z",
+    "title": "Liverpool vs FC Porto",
+    "participants": [
+      "team_liverpool",
+      "team_porto"
+    ],
+    "sportData": {
+      "kind": "football_match",
+      "homeTeam": "team_liverpool",
+      "awayTeam": "team_porto",
+      "venue": null,
+      "result": null
+    },
+    "dataQuality": "verified",
+    "externalIds": {
+      "footballDataOrgId": 575295
+    },
+    "id": "evt_ucl_085"
+  },
+  {
+    "sportId": "football",
+    "competitionId": "champions_league",
+    "seasonId": "champions_league_2026_27",
+    "date": "2026-12-09T20:00:00Z",
+    "title": "Racing Club de Lens vs FK Bodø/Glimt",
+    "participants": [
+      "team_lens",
+      "team_bodo_glimt"
+    ],
+    "sportData": {
+      "kind": "football_match",
+      "homeTeam": "team_lens",
+      "awayTeam": "team_bodo_glimt",
+      "venue": null,
+      "result": null
+    },
+    "dataQuality": "verified",
+    "externalIds": {
+      "footballDataOrgId": 575315
+    },
+    "id": "evt_ucl_086"
+  },
+  {
+    "sportId": "football",
+    "competitionId": "champions_league",
+    "seasonId": "champions_league_2026_27",
+    "date": "2027-01-19T17:45:00Z",
+    "title": "FK Bodø/Glimt vs Club Atlético de Madrid",
+    "participants": [
+      "team_bodo_glimt",
+      "team_atletico_madrid"
+    ],
+    "sportData": {
+      "kind": "football_match",
+      "homeTeam": "team_bodo_glimt",
+      "awayTeam": "team_atletico_madrid",
+      "venue": null,
+      "result": null
+    },
+    "dataQuality": "verified",
+    "externalIds": {
+      "footballDataOrgId": 575292
+    },
+    "id": "evt_ucl_087"
+  },
+  {
+    "sportId": "football",
+    "competitionId": "champions_league",
+    "seasonId": "champions_league_2026_27",
+    "date": "2027-01-19T17:45:00Z",
+    "title": "Galatasaray SK vs Feyenoord Rotterdam",
+    "participants": [
+      "team_galatasaray",
+      "team_feyenoord"
+    ],
+    "sportData": {
+      "kind": "football_match",
+      "homeTeam": "team_galatasaray",
+      "awayTeam": "team_feyenoord",
+      "venue": null,
+      "result": null
+    },
+    "dataQuality": "verified",
+    "externalIds": {
+      "footballDataOrgId": 575318
+    },
+    "id": "evt_ucl_088"
+  },
+  {
+    "sportId": "football",
+    "competitionId": "champions_league",
+    "seasonId": "champions_league_2026_27",
+    "date": "2027-01-19T20:00:00Z",
+    "title": "FC Internazionale Milano vs Liverpool",
+    "participants": [
+      "team_inter_milan",
+      "team_liverpool"
+    ],
+    "sportData": {
+      "kind": "football_match",
+      "homeTeam": "team_inter_milan",
+      "awayTeam": "team_liverpool",
+      "venue": null,
+      "result": null
+    },
+    "dataQuality": "verified",
+    "externalIds": {
+      "footballDataOrgId": 575285
+    },
+    "id": "evt_ucl_089"
+  },
+  {
+    "sportId": "football",
+    "competitionId": "champions_league",
+    "seasonId": "champions_league_2026_27",
+    "date": "2027-01-19T20:00:00Z",
+    "title": "VfB Stuttgart vs Club Brugge KV",
+    "participants": [
+      "team_stuttgart",
+      "team_club_brugge"
+    ],
+    "sportData": {
+      "kind": "football_match",
+      "homeTeam": "team_stuttgart",
+      "awayTeam": "team_club_brugge",
+      "venue": null,
+      "result": null
+    },
+    "dataQuality": "verified",
+    "externalIds": {
+      "footballDataOrgId": 575302
+    },
+    "id": "evt_ucl_090"
+  },
+  {
+    "sportId": "football",
+    "competitionId": "champions_league",
+    "seasonId": "champions_league_2026_27",
+    "date": "2027-01-19T20:00:00Z",
+    "title": "Aston Villa vs Borussia Dortmund",
+    "participants": [
+      "team_aston_villa",
+      "team_borussia_dortmund"
+    ],
+    "sportData": {
+      "kind": "football_match",
+      "homeTeam": "team_aston_villa",
+      "awayTeam": "team_borussia_dortmund",
+      "venue": null,
+      "result": null
+    },
+    "dataQuality": "verified",
+    "externalIds": {
+      "footballDataOrgId": 575303
+    },
+    "id": "evt_ucl_091"
+  },
+  {
+    "sportId": "football",
+    "competitionId": "champions_league",
+    "seasonId": "champions_league_2026_27",
+    "date": "2027-01-19T20:00:00Z",
+    "title": "FC Porto vs SK Slavia Praha",
+    "participants": [
+      "team_porto",
+      "team_slavia_prague"
+    ],
+    "sportData": {
+      "kind": "football_match",
+      "homeTeam": "team_porto",
+      "awayTeam": "team_slavia_prague",
+      "venue": null,
+      "result": null
+    },
+    "dataQuality": "verified",
+    "externalIds": {
+      "footballDataOrgId": 575308
+    },
+    "id": "evt_ucl_092"
+  },
+  {
+    "sportId": "football",
+    "competitionId": "champions_league",
+    "seasonId": "champions_league_2026_27",
+    "date": "2027-01-20T17:45:00Z",
+    "title": "Fenerbahçe SK vs Villarreal CF",
+    "participants": [
+      "team_fenerbahce",
+      "team_villarreal"
+    ],
+    "sportData": {
+      "kind": "football_match",
+      "homeTeam": "team_fenerbahce",
+      "awayTeam": "team_villarreal",
+      "venue": null,
+      "result": null
+    },
+    "dataQuality": "verified",
+    "externalIds": {
+      "footballDataOrgId": 575314
+    },
+    "id": "evt_ucl_093"
+  },
+  {
+    "sportId": "football",
+    "competitionId": "champions_league",
+    "seasonId": "champions_league_2026_27",
+    "date": "2027-01-20T17:45:00Z",
+    "title": "Sabah FK vs SSC Napoli",
+    "participants": [
+      "team_sabah_fk",
+      "team_napoli"
+    ],
+    "sportData": {
+      "kind": "football_match",
+      "homeTeam": "team_sabah_fk",
+      "awayTeam": "team_napoli",
+      "venue": null,
+      "result": null
+    },
+    "dataQuality": "verified",
+    "externalIds": {
+      "footballDataOrgId": 575320
+    },
+    "id": "evt_ucl_094"
+  },
+  {
+    "sportId": "football",
+    "competitionId": "champions_league",
+    "seasonId": "champions_league_2026_27",
+    "date": "2027-01-20T20:00:00Z",
+    "title": "Racing Club de Lens vs Manchester City",
+    "participants": [
+      "team_lens",
+      "team_manchester_city"
+    ],
+    "sportData": {
+      "kind": "football_match",
+      "homeTeam": "team_lens",
+      "awayTeam": "team_manchester_city",
+      "venue": null,
+      "result": null
+    },
+    "dataQuality": "verified",
+    "externalIds": {
+      "footballDataOrgId": 575284
+    },
+    "id": "evt_ucl_095"
+  },
+  {
+    "sportId": "football",
+    "competitionId": "champions_league",
+    "seasonId": "champions_league_2026_27",
+    "date": "2027-01-20T20:00:00Z",
+    "title": "Sporting Clube de Portugal vs FC Barcelona",
+    "participants": [
+      "team_sporting_cp",
+      "team_barcelona"
+    ],
+    "sportData": {
+      "kind": "football_match",
+      "homeTeam": "team_sporting_cp",
+      "awayTeam": "team_barcelona",
+      "venue": null,
+      "result": null
+    },
+    "dataQuality": "verified",
+    "externalIds": {
+      "footballDataOrgId": 575288
+    },
+    "id": "evt_ucl_096"
+  },
+  {
+    "sportId": "football",
+    "competitionId": "champions_league",
+    "seasonId": "champions_league_2026_27",
+    "date": "2027-01-20T20:00:00Z",
+    "title": "Como 1907 vs Paris Saint-Germain",
+    "participants": [
+      "team_como",
+      "team_paris_saint_germain"
+    ],
+    "sportData": {
+      "kind": "football_match",
+      "homeTeam": "team_como",
+      "awayTeam": "team_paris_saint_germain",
+      "venue": null,
+      "result": null
+    },
+    "dataQuality": "verified",
+    "externalIds": {
+      "footballDataOrgId": 575294
+    },
+    "id": "evt_ucl_097"
+  },
+  {
+    "sportId": "football",
+    "competitionId": "champions_league",
+    "seasonId": "champions_league_2026_27",
+    "date": "2027-01-20T20:00:00Z",
+    "title": "Real Betis Balompié vs Arsenal",
+    "participants": [
+      "team_real_betis",
+      "team_arsenal"
+    ],
+    "sportData": {
+      "kind": "football_match",
+      "homeTeam": "team_real_betis",
+      "awayTeam": "team_arsenal",
+      "venue": null,
+      "result": null
+    },
+    "dataQuality": "verified",
+    "externalIds": {
+      "footballDataOrgId": 575297
+    },
+    "id": "evt_ucl_098"
+  },
+  {
+    "sportId": "football",
+    "competitionId": "champions_league",
+    "seasonId": "champions_league_2026_27",
+    "date": "2027-01-20T20:00:00Z",
+    "title": "Manchester United vs FC Bayern München",
+    "participants": [
+      "team_manchester_united",
+      "team_bayern_munich"
+    ],
+    "sportData": {
+      "kind": "football_match",
+      "homeTeam": "team_manchester_united",
+      "awayTeam": "team_bayern_munich",
+      "venue": null,
+      "result": null
+    },
+    "dataQuality": "verified",
+    "externalIds": {
+      "footballDataOrgId": 575300
+    },
+    "id": "evt_ucl_099"
+  },
+  {
+    "sportId": "football",
+    "competitionId": "champions_league",
+    "seasonId": "champions_league_2026_27",
+    "date": "2027-01-20T20:00:00Z",
+    "title": "Viking FK vs PSV",
+    "participants": [
+      "team_viking_fk",
+      "team_psv_eindhoven"
+    ],
+    "sportData": {
+      "kind": "football_match",
+      "homeTeam": "team_viking_fk",
+      "awayTeam": "team_psv_eindhoven",
+      "venue": null,
+      "result": null
+    },
+    "dataQuality": "verified",
+    "externalIds": {
+      "footballDataOrgId": 575312
+    },
+    "id": "evt_ucl_100"
+  },
+  {
+    "sportId": "football",
+    "competitionId": "champions_league",
+    "seasonId": "champions_league_2026_27",
+    "date": "2027-01-27T20:00:00Z",
+    "title": "Manchester City vs Sporting Clube de Portugal",
+    "participants": [
+      "team_manchester_city",
+      "team_sporting_cp"
+    ],
+    "sportData": {
+      "kind": "football_match",
+      "homeTeam": "team_manchester_city",
+      "awayTeam": "team_sporting_cp",
+      "venue": null,
+      "result": null
+    },
+    "dataQuality": "verified",
+    "externalIds": {
+      "footballDataOrgId": 575283
+    },
+    "id": "evt_ucl_101"
+  },
+  {
+    "sportId": "football",
+    "competitionId": "champions_league",
+    "seasonId": "champions_league_2026_27",
+    "date": "2027-01-27T20:00:00Z",
+    "title": "ŠK Slovan Bratislava vs FC Internazionale Milano",
+    "participants": [
+      "team_slovan_bratislava",
+      "team_inter_milan"
+    ],
+    "sportData": {
+      "kind": "football_match",
+      "homeTeam": "team_slovan_bratislava",
+      "awayTeam": "team_inter_milan",
+      "venue": null,
+      "result": null
+    },
+    "dataQuality": "verified",
+    "externalIds": {
+      "footballDataOrgId": 575287
+    },
+    "id": "evt_ucl_102"
+  },
+  {
+    "sportId": "football",
+    "competitionId": "champions_league",
+    "seasonId": "champions_league_2026_27",
+    "date": "2027-01-27T20:00:00Z",
+    "title": "FC Barcelona vs Como 1907",
+    "participants": [
+      "team_barcelona",
+      "team_como"
+    ],
+    "sportData": {
+      "kind": "football_match",
+      "homeTeam": "team_barcelona",
+      "awayTeam": "team_como",
+      "venue": null,
+      "result": null
+    },
+    "dataQuality": "verified",
+    "externalIds": {
+      "footballDataOrgId": 575289
+    },
+    "id": "evt_ucl_103"
+  },
+  {
+    "sportId": "football",
+    "competitionId": "champions_league",
+    "seasonId": "champions_league_2026_27",
+    "date": "2027-01-27T20:00:00Z",
+    "title": "Club Atlético de Madrid vs Fenerbahçe SK",
+    "participants": [
+      "team_atletico_madrid",
+      "team_fenerbahce"
+    ],
+    "sportData": {
+      "kind": "football_match",
+      "homeTeam": "team_atletico_madrid",
+      "awayTeam": "team_fenerbahce",
+      "venue": null,
+      "result": null
+    },
+    "dataQuality": "verified",
+    "externalIds": {
+      "footballDataOrgId": 575291
+    },
+    "id": "evt_ucl_104"
+  },
+  {
+    "sportId": "football",
+    "competitionId": "champions_league",
+    "seasonId": "champions_league_2026_27",
+    "date": "2027-01-27T20:00:00Z",
+    "title": "Paris Saint-Germain vs Galatasaray SK",
+    "participants": [
+      "team_paris_saint_germain",
+      "team_galatasaray"
+    ],
+    "sportData": {
+      "kind": "football_match",
+      "homeTeam": "team_paris_saint_germain",
+      "awayTeam": "team_galatasaray",
+      "venue": null,
+      "result": null
+    },
+    "dataQuality": "verified",
+    "externalIds": {
+      "footballDataOrgId": 575293
+    },
+    "id": "evt_ucl_105"
+  },
+  {
+    "sportId": "football",
+    "competitionId": "champions_league",
+    "seasonId": "champions_league_2026_27",
+    "date": "2027-01-27T20:00:00Z",
+    "title": "Liverpool vs Racing Club de Lens",
+    "participants": [
+      "team_liverpool",
+      "team_lens"
+    ],
+    "sportData": {
+      "kind": "football_match",
+      "homeTeam": "team_liverpool",
+      "awayTeam": "team_lens",
+      "venue": null,
+      "result": null
+    },
+    "dataQuality": "verified",
+    "externalIds": {
+      "footballDataOrgId": 575296
+    },
+    "id": "evt_ucl_106"
+  },
+  {
+    "sportId": "football",
+    "competitionId": "champions_league",
+    "seasonId": "champions_league_2026_27",
+    "date": "2027-01-27T20:00:00Z",
+    "title": "Arsenal vs Sabah FK",
+    "participants": [
+      "team_arsenal",
+      "team_sabah_fk"
+    ],
+    "sportData": {
+      "kind": "football_match",
+      "homeTeam": "team_arsenal",
+      "awayTeam": "team_sabah_fk",
+      "venue": null,
+      "result": null
+    },
+    "dataQuality": "verified",
+    "externalIds": {
+      "footballDataOrgId": 575298
+    },
+    "id": "evt_ucl_107"
+  },
+  {
+    "sportId": "football",
+    "competitionId": "champions_league",
+    "seasonId": "champions_league_2026_27",
+    "date": "2027-01-27T20:00:00Z",
+    "title": "FC Bayern München vs Real Betis Balompié",
+    "participants": [
+      "team_bayern_munich",
+      "team_real_betis"
+    ],
+    "sportData": {
+      "kind": "football_match",
+      "homeTeam": "team_bayern_munich",
+      "awayTeam": "team_real_betis",
+      "venue": null,
+      "result": null
+    },
+    "dataQuality": "verified",
+    "externalIds": {
+      "footballDataOrgId": 575299
+    },
+    "id": "evt_ucl_108"
+  },
+  {
+    "sportId": "football",
+    "competitionId": "champions_league",
+    "seasonId": "champions_league_2026_27",
+    "date": "2027-01-27T20:00:00Z",
+    "title": "Club Brugge KV vs FK Bodø/Glimt",
+    "participants": [
+      "team_club_brugge",
+      "team_bodo_glimt"
+    ],
+    "sportData": {
+      "kind": "football_match",
+      "homeTeam": "team_club_brugge",
+      "awayTeam": "team_bodo_glimt",
+      "venue": null,
+      "result": null
+    },
+    "dataQuality": "verified",
+    "externalIds": {
+      "footballDataOrgId": 575301
+    },
+    "id": "evt_ucl_109"
+  },
+  {
+    "sportId": "football",
+    "competitionId": "champions_league",
+    "seasonId": "champions_league_2026_27",
+    "date": "2027-01-27T20:00:00Z",
+    "title": "SK Slavia Praha vs Aston Villa",
+    "participants": [
+      "team_slavia_prague",
+      "team_aston_villa"
+    ],
+    "sportData": {
+      "kind": "football_match",
+      "homeTeam": "team_slavia_prague",
+      "awayTeam": "team_aston_villa",
+      "venue": null,
+      "result": null
+    },
+    "dataQuality": "verified",
+    "externalIds": {
+      "footballDataOrgId": 575305
+    },
+    "id": "evt_ucl_110"
+  },
+  {
+    "sportId": "football",
+    "competitionId": "champions_league",
+    "seasonId": "champions_league_2026_27",
+    "date": "2027-01-27T20:00:00Z",
+    "title": "Villarreal CF vs Manchester United",
+    "participants": [
+      "team_villarreal",
+      "team_manchester_united"
+    ],
+    "sportData": {
+      "kind": "football_match",
+      "homeTeam": "team_villarreal",
+      "awayTeam": "team_manchester_united",
+      "venue": null,
+      "result": null
+    },
+    "dataQuality": "verified",
+    "externalIds": {
+      "footballDataOrgId": 575310
+    },
+    "id": "evt_ucl_111"
+  },
+  {
+    "sportId": "football",
+    "competitionId": "champions_league",
+    "seasonId": "champions_league_2026_27",
+    "date": "2027-01-27T20:00:00Z",
+    "title": "PSV vs VfB Stuttgart",
+    "participants": [
+      "team_psv_eindhoven",
+      "team_stuttgart"
+    ],
+    "sportData": {
+      "kind": "football_match",
+      "homeTeam": "team_psv_eindhoven",
+      "awayTeam": "team_stuttgart",
+      "venue": null,
+      "result": null
+    },
+    "dataQuality": "verified",
+    "externalIds": {
+      "footballDataOrgId": 575311
+    },
+    "id": "evt_ucl_112"
+  },
+  {
+    "sportId": "football",
+    "competitionId": "champions_league",
+    "seasonId": "champions_league_2026_27",
+    "date": "2027-01-27T20:00:00Z",
+    "title": "Feyenoord Rotterdam vs RB Leipzig",
+    "participants": [
+      "team_feyenoord",
+      "team_rb_leipzig"
+    ],
+    "sportData": {
+      "kind": "football_match",
+      "homeTeam": "team_feyenoord",
+      "awayTeam": "team_rb_leipzig",
+      "venue": null,
+      "result": null
+    },
+    "dataQuality": "verified",
+    "externalIds": {
+      "footballDataOrgId": 575316
+    },
+    "id": "evt_ucl_113"
+  },
+  {
+    "sportId": "football",
+    "competitionId": "champions_league",
+    "seasonId": "champions_league_2026_27",
+    "date": "2027-01-27T20:00:00Z",
+    "title": "SSC Napoli vs Viking FK",
+    "participants": [
+      "team_napoli",
+      "team_viking_fk"
+    ],
+    "sportData": {
+      "kind": "football_match",
+      "homeTeam": "team_napoli",
+      "awayTeam": "team_viking_fk",
+      "venue": null,
+      "result": null
+    },
+    "dataQuality": "verified",
+    "externalIds": {
+      "footballDataOrgId": 575319
+    },
+    "id": "evt_ucl_114"
+  }
+]
