@@ -1,1 +1,5774 @@
-[]
+[
+  {
+    "id": "tennis_atp_s_hertogenbosch",
+    "sportId": "tennis",
+    "name": "'s-Hertogenbosch (ATP)",
+    "shortName": "'s-Hertogenbosch"
+  },
+  {
+    "id": "tennis_wta_s_hertogenbosch",
+    "sportId": "tennis",
+    "name": "'s-Hertogenbosch (WTA)",
+    "shortName": "'s-Hertogenbosch"
+  },
+  {
+    "id": "tennis_wta_abu_dhabi",
+    "sportId": "tennis",
+    "name": "Abu Dhabi (WTA)",
+    "shortName": "Abu Dhabi"
+  },
+  {
+    "id": "tennis_atp_acapulco",
+    "sportId": "tennis",
+    "name": "Acapulco (ATP)",
+    "shortName": "Acapulco"
+  },
+  {
+    "id": "tennis_wta_acapulco",
+    "sportId": "tennis",
+    "name": "Acapulco (WTA)",
+    "shortName": "Acapulco"
+  },
+  {
+    "id": "tennis_atp_adelaide",
+    "sportId": "tennis",
+    "name": "Adelaide (ATP)",
+    "shortName": "Adelaide"
+  },
+  {
+    "id": "tennis_wta_adelaide",
+    "sportId": "tennis",
+    "name": "Adelaide (WTA)",
+    "shortName": "Adelaide"
+  },
+  {
+    "id": "tennis_wta_adelaide_1",
+    "sportId": "tennis",
+    "name": "Adelaide 1 (WTA)",
+    "shortName": "Adelaide 1"
+  },
+  {
+    "id": "tennis_wta_adelaide_2",
+    "sportId": "tennis",
+    "name": "Adelaide 2 (WTA)",
+    "shortName": "Adelaide 2"
+  },
+  {
+    "id": "tennis_atp_adelaide_1",
+    "sportId": "tennis",
+    "name": "Adelaide-1 (ATP)",
+    "shortName": "Adelaide-1"
+  },
+  {
+    "id": "tennis_atp_adelaide_2",
+    "sportId": "tennis",
+    "name": "Adelaide-2 (ATP)",
+    "shortName": "Adelaide-2"
+  },
+  {
+    "id": "tennis_atp_almaty",
+    "sportId": "tennis",
+    "name": "Almaty (ATP)",
+    "shortName": "Almaty"
+  },
+  {
+    "id": "tennis_atp_antalya",
+    "sportId": "tennis",
+    "name": "Antalya (ATP)",
+    "shortName": "Antalya"
+  },
+  {
+    "id": "tennis_atp_antwerp",
+    "sportId": "tennis",
+    "name": "Antwerp (ATP)",
+    "shortName": "Antwerp"
+  },
+  {
+    "id": "tennis_atp_astana",
+    "sportId": "tennis",
+    "name": "Astana (ATP)",
+    "shortName": "Astana"
+  },
+  {
+    "id": "tennis_atp_athens",
+    "sportId": "tennis",
+    "name": "Athens (ATP)",
+    "shortName": "Athens"
+  },
+  {
+    "id": "tennis_wta_athens",
+    "sportId": "tennis",
+    "name": "Athens (WTA)",
+    "shortName": "Athens"
+  },
+  {
+    "id": "tennis_atp_atlanta",
+    "sportId": "tennis",
+    "name": "Atlanta (ATP)",
+    "shortName": "Atlanta"
+  },
+  {
+    "id": "tennis_atp_atp_cup",
+    "sportId": "tennis",
+    "name": "ATP Cup (ATP)",
+    "shortName": "ATP Cup"
+  },
+  {
+    "id": "tennis_atp_atp_finals",
+    "sportId": "tennis",
+    "name": "ATP Finals (ATP)",
+    "shortName": "ATP Finals"
+  },
+  {
+    "id": "tennis_atp_atp_tour_finals",
+    "sportId": "tennis",
+    "name": "ATP Tour Finals (ATP)",
+    "shortName": "ATP Tour Finals"
+  },
+  {
+    "id": "tennis_atp_auckland",
+    "sportId": "tennis",
+    "name": "Auckland (ATP)",
+    "shortName": "Auckland"
+  },
+  {
+    "id": "tennis_wta_auckland",
+    "sportId": "tennis",
+    "name": "Auckland (WTA)",
+    "shortName": "Auckland"
+  },
+  {
+    "id": "tennis_wta_austin",
+    "sportId": "tennis",
+    "name": "Austin (WTA)",
+    "shortName": "Austin"
+  },
+  {
+    "id": "tennis_atp_australian_open",
+    "sportId": "tennis",
+    "name": "Australian Open (ATP)",
+    "shortName": "Australian Open"
+  },
+  {
+    "id": "tennis_wta_australian_open",
+    "sportId": "tennis",
+    "name": "Australian Open (WTA)",
+    "shortName": "Australian Open"
+  },
+  {
+    "id": "tennis_wta_bad_homburg",
+    "sportId": "tennis",
+    "name": "Bad Homburg (WTA)",
+    "shortName": "Bad Homburg"
+  },
+  {
+    "id": "tennis_atp_banja_luka",
+    "sportId": "tennis",
+    "name": "Banja Luka (ATP)",
+    "shortName": "Banja Luka"
+  },
+  {
+    "id": "tennis_atp_barcelona",
+    "sportId": "tennis",
+    "name": "Barcelona (ATP)",
+    "shortName": "Barcelona"
+  },
+  {
+    "id": "tennis_atp_basel",
+    "sportId": "tennis",
+    "name": "Basel (ATP)",
+    "shortName": "Basel"
+  },
+  {
+    "id": "tennis_atp_bastad",
+    "sportId": "tennis",
+    "name": "Bastad (ATP)",
+    "shortName": "Bastad"
+  },
+  {
+    "id": "tennis_atp_beijing",
+    "sportId": "tennis",
+    "name": "Beijing (ATP)",
+    "shortName": "Beijing"
+  },
+  {
+    "id": "tennis_wta_beijing",
+    "sportId": "tennis",
+    "name": "Beijing (WTA)",
+    "shortName": "Beijing"
+  },
+  {
+    "id": "tennis_atp_belgrade",
+    "sportId": "tennis",
+    "name": "Belgrade (ATP)",
+    "shortName": "Belgrade"
+  },
+  {
+    "id": "tennis_wta_belgrade",
+    "sportId": "tennis",
+    "name": "Belgrade (WTA)",
+    "shortName": "Belgrade"
+  },
+  {
+    "id": "tennis_wta_berlin",
+    "sportId": "tennis",
+    "name": "Berlin (WTA)",
+    "shortName": "Berlin"
+  },
+  {
+    "id": "tennis_wta_billie_jean_king_cup_play_offs_group_a",
+    "sportId": "tennis",
+    "name": "Billie Jean King Cup Play-offs - Group A (WTA)",
+    "shortName": "Billie Jean King Cup Play-offs - Group A"
+  },
+  {
+    "id": "tennis_wta_billie_jean_king_cup_play_offs_group_b",
+    "sportId": "tennis",
+    "name": "Billie Jean King Cup Play-offs - Group B (WTA)",
+    "shortName": "Billie Jean King Cup Play-offs - Group B"
+  },
+  {
+    "id": "tennis_wta_billie_jean_king_cup_play_offs_group_c",
+    "sportId": "tennis",
+    "name": "Billie Jean King Cup Play-offs - Group C (WTA)",
+    "shortName": "Billie Jean King Cup Play-offs - Group C"
+  },
+  {
+    "id": "tennis_wta_billie_jean_king_cup_play_offs_group_d",
+    "sportId": "tennis",
+    "name": "Billie Jean King Cup Play-offs - Group D (WTA)",
+    "shortName": "Billie Jean King Cup Play-offs - Group D"
+  },
+  {
+    "id": "tennis_wta_billie_jean_king_cup_play_offs_group_e",
+    "sportId": "tennis",
+    "name": "Billie Jean King Cup Play-offs - Group E (WTA)",
+    "shortName": "Billie Jean King Cup Play-offs - Group E"
+  },
+  {
+    "id": "tennis_wta_billie_jean_king_cup_play_offs_group_f",
+    "sportId": "tennis",
+    "name": "Billie Jean King Cup Play-offs - Group F (WTA)",
+    "shortName": "Billie Jean King Cup Play-offs - Group F"
+  },
+  {
+    "id": "tennis_wta_billie_jean_king_cup_play_offs_group_g",
+    "sportId": "tennis",
+    "name": "Billie Jean King Cup Play-offs - Group G (WTA)",
+    "shortName": "Billie Jean King Cup Play-offs - Group G"
+  },
+  {
+    "id": "tennis_wta_billie_jean_king_cup_qualifying_round_group_a",
+    "sportId": "tennis",
+    "name": "Billie Jean King Cup Qualifying Round - Group A (WTA)",
+    "shortName": "Billie Jean King Cup Qualifying Round - Group A"
+  },
+  {
+    "id": "tennis_wta_billie_jean_king_cup_qualifying_round_group_b",
+    "sportId": "tennis",
+    "name": "Billie Jean King Cup Qualifying Round - Group B (WTA)",
+    "shortName": "Billie Jean King Cup Qualifying Round - Group B"
+  },
+  {
+    "id": "tennis_wta_billie_jean_king_cup_qualifying_round_group_c",
+    "sportId": "tennis",
+    "name": "Billie Jean King Cup Qualifying Round - Group C (WTA)",
+    "shortName": "Billie Jean King Cup Qualifying Round - Group C"
+  },
+  {
+    "id": "tennis_wta_billie_jean_king_cup_qualifying_round_group_d",
+    "sportId": "tennis",
+    "name": "Billie Jean King Cup Qualifying Round - Group D (WTA)",
+    "shortName": "Billie Jean King Cup Qualifying Round - Group D"
+  },
+  {
+    "id": "tennis_wta_billie_jean_king_cup_qualifying_round_group_e",
+    "sportId": "tennis",
+    "name": "Billie Jean King Cup Qualifying Round - Group E (WTA)",
+    "shortName": "Billie Jean King Cup Qualifying Round - Group E"
+  },
+  {
+    "id": "tennis_wta_billie_jean_king_cup_qualifying_round_group_f",
+    "sportId": "tennis",
+    "name": "Billie Jean King Cup Qualifying Round - Group F (WTA)",
+    "shortName": "Billie Jean King Cup Qualifying Round - Group F"
+  },
+  {
+    "id": "tennis_wta_billie_jean_king_cup_qualifying_round_australia_vs_great_britain",
+    "sportId": "tennis",
+    "name": "Billie Jean King Cup qualifying round: Australia vs. Great Britain (WTA)",
+    "shortName": "Billie Jean King Cup qualifying round: Australia vs. Great Britain"
+  },
+  {
+    "id": "tennis_wta_billie_jean_king_cup_qualifying_round_belgium_vs_united_states",
+    "sportId": "tennis",
+    "name": "Billie Jean King Cup qualifying round: Belgium vs. United States (WTA)",
+    "shortName": "Billie Jean King Cup qualifying round: Belgium vs. United States"
+  },
+  {
+    "id": "tennis_wta_billie_jean_king_cup_qualifying_round_italy_vs_japan",
+    "sportId": "tennis",
+    "name": "Billie Jean King Cup qualifying round: Italy vs. Japan (WTA)",
+    "shortName": "Billie Jean King Cup qualifying round: Italy vs. Japan"
+  },
+  {
+    "id": "tennis_wta_billie_jean_king_cup_qualifying_round_kazakhstan_vs_canada",
+    "sportId": "tennis",
+    "name": "Billie Jean King Cup qualifying round: Kazakhstan vs. Canada (WTA)",
+    "shortName": "Billie Jean King Cup qualifying round: Kazakhstan vs. Canada"
+  },
+  {
+    "id": "tennis_wta_billie_jean_king_cup_qualifying_round_poland_vs_ukraine",
+    "sportId": "tennis",
+    "name": "Billie Jean King Cup qualifying round: Poland vs. Ukraine (WTA)",
+    "shortName": "Billie Jean King Cup qualifying round: Poland vs. Ukraine"
+  },
+  {
+    "id": "tennis_wta_billie_jean_king_cup_qualifying_round_slovenia_vs_spain",
+    "sportId": "tennis",
+    "name": "Billie Jean King Cup qualifying round: Slovenia vs. Spain (WTA)",
+    "shortName": "Billie Jean King Cup qualifying round: Slovenia vs. Spain"
+  },
+  {
+    "id": "tennis_wta_billie_jean_king_cup_qualifying_round_switzerland_vs_czechia",
+    "sportId": "tennis",
+    "name": "Billie Jean King Cup qualifying round: Switzerland vs. Czechia (WTA)",
+    "shortName": "Billie Jean King Cup qualifying round: Switzerland vs. Czechia"
+  },
+  {
+    "id": "tennis_wta_birmingham",
+    "sportId": "tennis",
+    "name": "Birmingham (WTA)",
+    "shortName": "Birmingham"
+  },
+  {
+    "id": "tennis_wta_bjk_cup_finals",
+    "sportId": "tennis",
+    "name": "BJK Cup Finals (WTA)",
+    "shortName": "BJK Cup Finals"
+  },
+  {
+    "id": "tennis_wta_bjk_cup_finals_f_rtf_vs_sui",
+    "sportId": "tennis",
+    "name": "BJK Cup Finals F: RTF vs SUI (WTA)",
+    "shortName": "BJK Cup Finals F: RTF vs SUI"
+  },
+  {
+    "id": "tennis_wta_bjk_cup_finals_f_sui_vs_aus",
+    "sportId": "tennis",
+    "name": "BJK Cup Finals F: SUI vs AUS (WTA)",
+    "shortName": "BJK Cup Finals F: SUI vs AUS"
+  },
+  {
+    "id": "tennis_wta_bjk_cup_finals_rr_aus_vs_bel",
+    "sportId": "tennis",
+    "name": "BJK Cup Finals RR: AUS vs BEL (WTA)",
+    "shortName": "BJK Cup Finals RR: AUS vs BEL"
+  },
+  {
+    "id": "tennis_wta_bjk_cup_finals_rr_aus_vs_blr",
+    "sportId": "tennis",
+    "name": "BJK Cup Finals RR: AUS vs BLR (WTA)",
+    "shortName": "BJK Cup Finals RR: AUS vs BLR"
+  },
+  {
+    "id": "tennis_wta_bjk_cup_finals_rr_aus_vs_svk",
+    "sportId": "tennis",
+    "name": "BJK Cup Finals RR: AUS vs SVK (WTA)",
+    "shortName": "BJK Cup Finals RR: AUS vs SVK"
+  },
+  {
+    "id": "tennis_wta_bjk_cup_finals_rr_blr_vs_bel",
+    "sportId": "tennis",
+    "name": "BJK Cup Finals RR: BLR vs BEL (WTA)",
+    "shortName": "BJK Cup Finals RR: BLR vs BEL"
+  },
+  {
+    "id": "tennis_wta_bjk_cup_finals_rr_can_vs_ita",
+    "sportId": "tennis",
+    "name": "BJK Cup Finals RR: CAN vs ITA (WTA)",
+    "shortName": "BJK Cup Finals RR: CAN vs ITA"
+  },
+  {
+    "id": "tennis_wta_bjk_cup_finals_rr_cze_vs_ger",
+    "sportId": "tennis",
+    "name": "BJK Cup Finals RR: CZE vs GER (WTA)",
+    "shortName": "BJK Cup Finals RR: CZE vs GER"
+  },
+  {
+    "id": "tennis_wta_bjk_cup_finals_rr_cze_vs_pol",
+    "sportId": "tennis",
+    "name": "BJK Cup Finals RR: CZE vs POL (WTA)",
+    "shortName": "BJK Cup Finals RR: CZE vs POL"
+  },
+  {
+    "id": "tennis_wta_bjk_cup_finals_rr_cze_vs_sui",
+    "sportId": "tennis",
+    "name": "BJK Cup Finals RR: CZE vs SUI (WTA)",
+    "shortName": "BJK Cup Finals RR: CZE vs SUI"
+  },
+  {
+    "id": "tennis_wta_bjk_cup_finals_rr_cze_vs_usa",
+    "sportId": "tennis",
+    "name": "BJK Cup Finals RR: CZE vs USA (WTA)",
+    "shortName": "BJK Cup Finals RR: CZE vs USA"
+  },
+  {
+    "id": "tennis_wta_bjk_cup_finals_rr_esp_vs_gbr",
+    "sportId": "tennis",
+    "name": "BJK Cup Finals RR: ESP vs GBR (WTA)",
+    "shortName": "BJK Cup Finals RR: ESP vs GBR"
+  },
+  {
+    "id": "tennis_wta_bjk_cup_finals_rr_esp_vs_kaz",
+    "sportId": "tennis",
+    "name": "BJK Cup Finals RR: ESP vs KAZ (WTA)",
+    "shortName": "BJK Cup Finals RR: ESP vs KAZ"
+  },
+  {
+    "id": "tennis_wta_bjk_cup_finals_rr_esp_vs_svk",
+    "sportId": "tennis",
+    "name": "BJK Cup Finals RR: ESP vs SVK (WTA)",
+    "shortName": "BJK Cup Finals RR: ESP vs SVK"
+  },
+  {
+    "id": "tennis_wta_bjk_cup_finals_rr_fra_vs_can",
+    "sportId": "tennis",
+    "name": "BJK Cup Finals RR: FRA vs CAN (WTA)",
+    "shortName": "BJK Cup Finals RR: FRA vs CAN"
+  },
+  {
+    "id": "tennis_wta_bjk_cup_finals_rr_fra_vs_rtf",
+    "sportId": "tennis",
+    "name": "BJK Cup Finals RR: FRA vs RTF (WTA)",
+    "shortName": "BJK Cup Finals RR: FRA vs RTF"
+  },
+  {
+    "id": "tennis_wta_bjk_cup_finals_rr_ger_vs_sui",
+    "sportId": "tennis",
+    "name": "BJK Cup Finals RR: GER vs SUI (WTA)",
+    "shortName": "BJK Cup Finals RR: GER vs SUI"
+  },
+  {
+    "id": "tennis_wta_bjk_cup_finals_rr_kaz_vs_gbr",
+    "sportId": "tennis",
+    "name": "BJK Cup Finals RR: KAZ vs GBR (WTA)",
+    "shortName": "BJK Cup Finals RR: KAZ vs GBR"
+  },
+  {
+    "id": "tennis_wta_bjk_cup_finals_rr_rtf_vs_can",
+    "sportId": "tennis",
+    "name": "BJK Cup Finals RR: RTF vs CAN (WTA)",
+    "shortName": "BJK Cup Finals RR: RTF vs CAN"
+  },
+  {
+    "id": "tennis_wta_bjk_cup_finals_rr_sui_vs_can",
+    "sportId": "tennis",
+    "name": "BJK Cup Finals RR: SUI vs CAN (WTA)",
+    "shortName": "BJK Cup Finals RR: SUI vs CAN"
+  },
+  {
+    "id": "tennis_wta_bjk_cup_finals_rr_sui_vs_ita",
+    "sportId": "tennis",
+    "name": "BJK Cup Finals RR: SUI vs ITA (WTA)",
+    "shortName": "BJK Cup Finals RR: SUI vs ITA"
+  },
+  {
+    "id": "tennis_wta_bjk_cup_finals_rr_svk_vs_bel",
+    "sportId": "tennis",
+    "name": "BJK Cup Finals RR: SVK vs BEL (WTA)",
+    "shortName": "BJK Cup Finals RR: SVK vs BEL"
+  },
+  {
+    "id": "tennis_wta_bjk_cup_finals_rr_usa_vs_esp",
+    "sportId": "tennis",
+    "name": "BJK Cup Finals RR: USA vs ESP (WTA)",
+    "shortName": "BJK Cup Finals RR: USA vs ESP"
+  },
+  {
+    "id": "tennis_wta_bjk_cup_finals_rr_usa_vs_pol",
+    "sportId": "tennis",
+    "name": "BJK Cup Finals RR: USA vs POL (WTA)",
+    "shortName": "BJK Cup Finals RR: USA vs POL"
+  },
+  {
+    "id": "tennis_wta_bjk_cup_finals_rr_usa_vs_svk",
+    "sportId": "tennis",
+    "name": "BJK Cup Finals RR: USA vs SVK (WTA)",
+    "shortName": "BJK Cup Finals RR: USA vs SVK"
+  },
+  {
+    "id": "tennis_wta_bjk_cup_finals_sf_aus_vs_sui",
+    "sportId": "tennis",
+    "name": "BJK Cup Finals SF: AUS vs SUI (WTA)",
+    "shortName": "BJK Cup Finals SF: AUS vs SUI"
+  },
+  {
+    "id": "tennis_wta_bjk_cup_finals_sf_gbr_vs_aus",
+    "sportId": "tennis",
+    "name": "BJK Cup Finals SF: GBR vs AUS (WTA)",
+    "shortName": "BJK Cup Finals SF: GBR vs AUS"
+  },
+  {
+    "id": "tennis_wta_bjk_cup_finals_sf_rtf_vs_usa",
+    "sportId": "tennis",
+    "name": "BJK Cup Finals SF: RTF vs USA (WTA)",
+    "shortName": "BJK Cup Finals SF: RTF vs USA"
+  },
+  {
+    "id": "tennis_wta_bjk_cup_finals_sf_sui_vs_cze",
+    "sportId": "tennis",
+    "name": "BJK Cup Finals SF: SUI vs CZE (WTA)",
+    "shortName": "BJK Cup Finals SF: SUI vs CZE"
+  },
+  {
+    "id": "tennis_wta_bjk_cup_g1_pm_lat_vs_nor",
+    "sportId": "tennis",
+    "name": "BJK Cup G1 PM: LAT vs NOR (WTA)",
+    "shortName": "BJK Cup G1 PM: LAT vs NOR"
+  },
+  {
+    "id": "tennis_wta_bjk_cup_g1_pm_tur_vs_bul",
+    "sportId": "tennis",
+    "name": "BJK Cup G1 PM: TUR vs BUL (WTA)",
+    "shortName": "BJK Cup G1 PM: TUR vs BUL"
+  },
+  {
+    "id": "tennis_wta_bjk_cup_g1_po_hun_vs_slo",
+    "sportId": "tennis",
+    "name": "BJK Cup G1 PO: HUN vs SLO (WTA)",
+    "shortName": "BJK Cup G1 PO: HUN vs SLO"
+  },
+  {
+    "id": "tennis_wta_bjk_cup_g1_po_hun_vs_swe",
+    "sportId": "tennis",
+    "name": "BJK Cup G1 PO: HUN vs SWE (WTA)",
+    "shortName": "BJK Cup G1 PO: HUN vs SWE"
+  },
+  {
+    "id": "tennis_wta_bjk_cup_g1_ppo_bra_vs_chi",
+    "sportId": "tennis",
+    "name": "BJK Cup G1 PPO: BRA vs CHI (WTA)",
+    "shortName": "BJK Cup G1 PPO: BRA vs CHI"
+  },
+  {
+    "id": "tennis_wta_bjk_cup_g1_ppo_mex_vs_arg",
+    "sportId": "tennis",
+    "name": "BJK Cup G1 PPO: MEX vs ARG (WTA)",
+    "shortName": "BJK Cup G1 PPO: MEX vs ARG"
+  },
+  {
+    "id": "tennis_wta_bjk_cup_g1_ppo_ned_vs_srb",
+    "sportId": "tennis",
+    "name": "BJK Cup G1 PPO: NED vs SRB (WTA)",
+    "shortName": "BJK Cup G1 PPO: NED vs SRB"
+  },
+  {
+    "id": "tennis_wta_bjk_cup_g1_ppo_srb_vs_cro",
+    "sportId": "tennis",
+    "name": "BJK Cup G1 PPO: SRB vs CRO (WTA)",
+    "shortName": "BJK Cup G1 PPO: SRB vs CRO"
+  },
+  {
+    "id": "tennis_wta_bjk_cup_g1_rel_col_vs_par",
+    "sportId": "tennis",
+    "name": "BJK Cup G1 REL: COL vs PAR (WTA)",
+    "shortName": "BJK Cup G1 REL: COL vs PAR"
+  },
+  {
+    "id": "tennis_wta_bjk_cup_g1_rel_den_vs_geo",
+    "sportId": "tennis",
+    "name": "BJK Cup G1 REL: DEN vs GEO (WTA)",
+    "shortName": "BJK Cup G1 REL: DEN vs GEO"
+  },
+  {
+    "id": "tennis_wta_bjk_cup_g1_rel_egy_vs_den",
+    "sportId": "tennis",
+    "name": "BJK Cup G1 REL: EGY vs DEN (WTA)",
+    "shortName": "BJK Cup G1 REL: EGY vs DEN"
+  },
+  {
+    "id": "tennis_wta_bjk_cup_g1_rel_est_vs_swe",
+    "sportId": "tennis",
+    "name": "BJK Cup G1 REL: EST vs SWE (WTA)",
+    "shortName": "BJK Cup G1 REL: EST vs SWE"
+  },
+  {
+    "id": "tennis_wta_bjk_cup_g1_rel_gua_vs_ecu",
+    "sportId": "tennis",
+    "name": "BJK Cup G1 REL: GUA vs ECU (WTA)",
+    "shortName": "BJK Cup G1 REL: GUA vs ECU"
+  },
+  {
+    "id": "tennis_wta_bjk_cup_g1_rr_arg_vs_bol",
+    "sportId": "tennis",
+    "name": "BJK Cup G1 RR: ARG vs BOL (WTA)",
+    "shortName": "BJK Cup G1 RR: ARG vs BOL"
+  },
+  {
+    "id": "tennis_wta_bjk_cup_g1_rr_arg_vs_chi",
+    "sportId": "tennis",
+    "name": "BJK Cup G1 RR: ARG vs CHI (WTA)",
+    "shortName": "BJK Cup G1 RR: ARG vs CHI"
+  },
+  {
+    "id": "tennis_wta_bjk_cup_g1_rr_arg_vs_col",
+    "sportId": "tennis",
+    "name": "BJK Cup G1 RR: ARG vs COL (WTA)",
+    "shortName": "BJK Cup G1 RR: ARG vs COL"
+  },
+  {
+    "id": "tennis_wta_bjk_cup_g1_rr_arg_vs_gua",
+    "sportId": "tennis",
+    "name": "BJK Cup G1 RR: ARG vs GUA (WTA)",
+    "shortName": "BJK Cup G1 RR: ARG vs GUA"
+  },
+  {
+    "id": "tennis_wta_bjk_cup_g1_rr_arg_vs_per",
+    "sportId": "tennis",
+    "name": "BJK Cup G1 RR: ARG vs PER (WTA)",
+    "shortName": "BJK Cup G1 RR: ARG vs PER"
+  },
+  {
+    "id": "tennis_wta_bjk_cup_g1_rr_aut_vs_bul",
+    "sportId": "tennis",
+    "name": "BJK Cup G1 RR: AUT vs BUL (WTA)",
+    "shortName": "BJK Cup G1 RR: AUT vs BUL"
+  },
+  {
+    "id": "tennis_wta_bjk_cup_g1_rr_aut_vs_geo",
+    "sportId": "tennis",
+    "name": "BJK Cup G1 RR: AUT vs GEO (WTA)",
+    "shortName": "BJK Cup G1 RR: AUT vs GEO"
+  },
+  {
+    "id": "tennis_wta_bjk_cup_g1_rr_aut_vs_slo",
+    "sportId": "tennis",
+    "name": "BJK Cup G1 RR: AUT vs SLO (WTA)",
+    "shortName": "BJK Cup G1 RR: AUT vs SLO"
+  },
+  {
+    "id": "tennis_wta_bjk_cup_g1_rr_bol_vs_gua",
+    "sportId": "tennis",
+    "name": "BJK Cup G1 RR: BOL vs GUA (WTA)",
+    "shortName": "BJK Cup G1 RR: BOL vs GUA"
+  },
+  {
+    "id": "tennis_wta_bjk_cup_g1_rr_bra_vs_arg",
+    "sportId": "tennis",
+    "name": "BJK Cup G1 RR: BRA vs ARG (WTA)",
+    "shortName": "BJK Cup G1 RR: BRA vs ARG"
+  },
+  {
+    "id": "tennis_wta_bjk_cup_g1_rr_bra_vs_col",
+    "sportId": "tennis",
+    "name": "BJK Cup G1 RR: BRA vs COL (WTA)",
+    "shortName": "BJK Cup G1 RR: BRA vs COL"
+  },
+  {
+    "id": "tennis_wta_bjk_cup_g1_rr_bra_vs_gua",
+    "sportId": "tennis",
+    "name": "BJK Cup G1 RR: BRA vs GUA (WTA)",
+    "shortName": "BJK Cup G1 RR: BRA vs GUA"
+  },
+  {
+    "id": "tennis_wta_bjk_cup_g1_rr_bul_vs_den",
+    "sportId": "tennis",
+    "name": "BJK Cup G1 RR: BUL vs DEN (WTA)",
+    "shortName": "BJK Cup G1 RR: BUL vs DEN"
+  },
+  {
+    "id": "tennis_wta_bjk_cup_g1_rr_bul_vs_geo",
+    "sportId": "tennis",
+    "name": "BJK Cup G1 RR: BUL vs GEO (WTA)",
+    "shortName": "BJK Cup G1 RR: BUL vs GEO"
+  },
+  {
+    "id": "tennis_wta_bjk_cup_g1_rr_bul_vs_nor",
+    "sportId": "tennis",
+    "name": "BJK Cup G1 RR: BUL vs NOR (WTA)",
+    "shortName": "BJK Cup G1 RR: BUL vs NOR"
+  },
+  {
+    "id": "tennis_wta_bjk_cup_g1_rr_bul_vs_slo",
+    "sportId": "tennis",
+    "name": "BJK Cup G1 RR: BUL vs SLO (WTA)",
+    "shortName": "BJK Cup G1 RR: BUL vs SLO"
+  },
+  {
+    "id": "tennis_wta_bjk_cup_g1_rr_chi_vs_bol",
+    "sportId": "tennis",
+    "name": "BJK Cup G1 RR: CHI vs BOL (WTA)",
+    "shortName": "BJK Cup G1 RR: CHI vs BOL"
+  },
+  {
+    "id": "tennis_wta_bjk_cup_g1_rr_chi_vs_ecu",
+    "sportId": "tennis",
+    "name": "BJK Cup G1 RR: CHI vs ECU (WTA)",
+    "shortName": "BJK Cup G1 RR: CHI vs ECU"
+  },
+  {
+    "id": "tennis_wta_bjk_cup_g1_rr_chi_vs_gua",
+    "sportId": "tennis",
+    "name": "BJK Cup G1 RR: CHI vs GUA (WTA)",
+    "shortName": "BJK Cup G1 RR: CHI vs GUA"
+  },
+  {
+    "id": "tennis_wta_bjk_cup_g1_rr_chi_vs_per",
+    "sportId": "tennis",
+    "name": "BJK Cup G1 RR: CHI vs PER (WTA)",
+    "shortName": "BJK Cup G1 RR: CHI vs PER"
+  },
+  {
+    "id": "tennis_wta_bjk_cup_g1_rr_chn_vs_ina",
+    "sportId": "tennis",
+    "name": "BJK Cup G1 RR: CHN vs INA (WTA)",
+    "shortName": "BJK Cup G1 RR: CHN vs INA"
+  },
+  {
+    "id": "tennis_wta_bjk_cup_g1_rr_chn_vs_ind",
+    "sportId": "tennis",
+    "name": "BJK Cup G1 RR: CHN vs IND (WTA)",
+    "shortName": "BJK Cup G1 RR: CHN vs IND"
+  },
+  {
+    "id": "tennis_wta_bjk_cup_g1_rr_chn_vs_kor",
+    "sportId": "tennis",
+    "name": "BJK Cup G1 RR: CHN vs KOR (WTA)",
+    "shortName": "BJK Cup G1 RR: CHN vs KOR"
+  },
+  {
+    "id": "tennis_wta_bjk_cup_g1_rr_chn_vs_nzl",
+    "sportId": "tennis",
+    "name": "BJK Cup G1 RR: CHN vs NZL (WTA)",
+    "shortName": "BJK Cup G1 RR: CHN vs NZL"
+  },
+  {
+    "id": "tennis_wta_bjk_cup_g1_rr_chn_vs_tha",
+    "sportId": "tennis",
+    "name": "BJK Cup G1 RR: CHN vs THA (WTA)",
+    "shortName": "BJK Cup G1 RR: CHN vs THA"
+  },
+  {
+    "id": "tennis_wta_bjk_cup_g1_rr_chn_vs_uzb",
+    "sportId": "tennis",
+    "name": "BJK Cup G1 RR: CHN vs UZB (WTA)",
+    "shortName": "BJK Cup G1 RR: CHN vs UZB"
+  },
+  {
+    "id": "tennis_wta_bjk_cup_g1_rr_col_vs_bol",
+    "sportId": "tennis",
+    "name": "BJK Cup G1 RR: COL vs BOL (WTA)",
+    "shortName": "BJK Cup G1 RR: COL vs BOL"
+  },
+  {
+    "id": "tennis_wta_bjk_cup_g1_rr_col_vs_chi",
+    "sportId": "tennis",
+    "name": "BJK Cup G1 RR: COL vs CHI (WTA)",
+    "shortName": "BJK Cup G1 RR: COL vs CHI"
+  },
+  {
+    "id": "tennis_wta_bjk_cup_g1_rr_col_vs_gua",
+    "sportId": "tennis",
+    "name": "BJK Cup G1 RR: COL vs GUA (WTA)",
+    "shortName": "BJK Cup G1 RR: COL vs GUA"
+  },
+  {
+    "id": "tennis_wta_bjk_cup_g1_rr_col_vs_per",
+    "sportId": "tennis",
+    "name": "BJK Cup G1 RR: COL vs PER (WTA)",
+    "shortName": "BJK Cup G1 RR: COL vs PER"
+  },
+  {
+    "id": "tennis_wta_bjk_cup_g1_rr_cro_vs_aut",
+    "sportId": "tennis",
+    "name": "BJK Cup G1 RR: CRO vs AUT (WTA)",
+    "shortName": "BJK Cup G1 RR: CRO vs AUT"
+  },
+  {
+    "id": "tennis_wta_bjk_cup_g1_rr_cro_vs_bul",
+    "sportId": "tennis",
+    "name": "BJK Cup G1 RR: CRO vs BUL (WTA)",
+    "shortName": "BJK Cup G1 RR: CRO vs BUL"
+  },
+  {
+    "id": "tennis_wta_bjk_cup_g1_rr_cro_vs_den",
+    "sportId": "tennis",
+    "name": "BJK Cup G1 RR: CRO vs DEN (WTA)",
+    "shortName": "BJK Cup G1 RR: CRO vs DEN"
+  },
+  {
+    "id": "tennis_wta_bjk_cup_g1_rr_cro_vs_geo",
+    "sportId": "tennis",
+    "name": "BJK Cup G1 RR: CRO vs GEO (WTA)",
+    "shortName": "BJK Cup G1 RR: CRO vs GEO"
+  },
+  {
+    "id": "tennis_wta_bjk_cup_g1_rr_cro_vs_nor",
+    "sportId": "tennis",
+    "name": "BJK Cup G1 RR: CRO vs NOR (WTA)",
+    "shortName": "BJK Cup G1 RR: CRO vs NOR"
+  },
+  {
+    "id": "tennis_wta_bjk_cup_g1_rr_cro_vs_slo",
+    "sportId": "tennis",
+    "name": "BJK Cup G1 RR: CRO vs SLO (WTA)",
+    "shortName": "BJK Cup G1 RR: CRO vs SLO"
+  },
+  {
+    "id": "tennis_wta_bjk_cup_g1_rr_den_vs_nor",
+    "sportId": "tennis",
+    "name": "BJK Cup G1 RR: DEN vs NOR (WTA)",
+    "shortName": "BJK Cup G1 RR: DEN vs NOR"
+  },
+  {
+    "id": "tennis_wta_bjk_cup_g1_rr_est_vs_den",
+    "sportId": "tennis",
+    "name": "BJK Cup G1 RR: EST vs DEN (WTA)",
+    "shortName": "BJK Cup G1 RR: EST vs DEN"
+  },
+  {
+    "id": "tennis_wta_bjk_cup_g1_rr_hun_vs_den",
+    "sportId": "tennis",
+    "name": "BJK Cup G1 RR: HUN vs DEN (WTA)",
+    "shortName": "BJK Cup G1 RR: HUN vs DEN"
+  },
+  {
+    "id": "tennis_wta_bjk_cup_g1_rr_hun_vs_egy",
+    "sportId": "tennis",
+    "name": "BJK Cup G1 RR: HUN vs EGY (WTA)",
+    "shortName": "BJK Cup G1 RR: HUN vs EGY"
+  },
+  {
+    "id": "tennis_wta_bjk_cup_g1_rr_hun_vs_est",
+    "sportId": "tennis",
+    "name": "BJK Cup G1 RR: HUN vs EST (WTA)",
+    "shortName": "BJK Cup G1 RR: HUN vs EST"
+  },
+  {
+    "id": "tennis_wta_bjk_cup_g1_rr_hun_vs_ned",
+    "sportId": "tennis",
+    "name": "BJK Cup G1 RR: HUN vs NED (WTA)",
+    "shortName": "BJK Cup G1 RR: HUN vs NED"
+  },
+  {
+    "id": "tennis_wta_bjk_cup_g1_rr_hun_vs_tur",
+    "sportId": "tennis",
+    "name": "BJK Cup G1 RR: HUN vs TUR (WTA)",
+    "shortName": "BJK Cup G1 RR: HUN vs TUR"
+  },
+  {
+    "id": "tennis_wta_bjk_cup_g1_rr_ina_vs_nzl",
+    "sportId": "tennis",
+    "name": "BJK Cup G1 RR: INA vs NZL (WTA)",
+    "shortName": "BJK Cup G1 RR: INA vs NZL"
+  },
+  {
+    "id": "tennis_wta_bjk_cup_g1_rr_ind_vs_ina",
+    "sportId": "tennis",
+    "name": "BJK Cup G1 RR: IND vs INA (WTA)",
+    "shortName": "BJK Cup G1 RR: IND vs INA"
+  },
+  {
+    "id": "tennis_wta_bjk_cup_g1_rr_ind_vs_kor",
+    "sportId": "tennis",
+    "name": "BJK Cup G1 RR: IND vs KOR (WTA)",
+    "shortName": "BJK Cup G1 RR: IND vs KOR"
+  },
+  {
+    "id": "tennis_wta_bjk_cup_g1_rr_ind_vs_nzl",
+    "sportId": "tennis",
+    "name": "BJK Cup G1 RR: IND vs NZL (WTA)",
+    "shortName": "BJK Cup G1 RR: IND vs NZL"
+  },
+  {
+    "id": "tennis_wta_bjk_cup_g1_rr_ind_vs_tha",
+    "sportId": "tennis",
+    "name": "BJK Cup G1 RR: IND vs THA (WTA)",
+    "shortName": "BJK Cup G1 RR: IND vs THA"
+  },
+  {
+    "id": "tennis_wta_bjk_cup_g1_rr_ind_vs_uzb",
+    "sportId": "tennis",
+    "name": "BJK Cup G1 RR: IND vs UZB (WTA)",
+    "shortName": "BJK Cup G1 RR: IND vs UZB"
+  },
+  {
+    "id": "tennis_wta_bjk_cup_g1_rr_jpn_vs_chn",
+    "sportId": "tennis",
+    "name": "BJK Cup G1 RR: JPN vs CHN (WTA)",
+    "shortName": "BJK Cup G1 RR: JPN vs CHN"
+  },
+  {
+    "id": "tennis_wta_bjk_cup_g1_rr_jpn_vs_ina",
+    "sportId": "tennis",
+    "name": "BJK Cup G1 RR: JPN vs INA (WTA)",
+    "shortName": "BJK Cup G1 RR: JPN vs INA"
+  },
+  {
+    "id": "tennis_wta_bjk_cup_g1_rr_jpn_vs_ind",
+    "sportId": "tennis",
+    "name": "BJK Cup G1 RR: JPN vs IND (WTA)",
+    "shortName": "BJK Cup G1 RR: JPN vs IND"
+  },
+  {
+    "id": "tennis_wta_bjk_cup_g1_rr_jpn_vs_kor",
+    "sportId": "tennis",
+    "name": "BJK Cup G1 RR: JPN vs KOR (WTA)",
+    "shortName": "BJK Cup G1 RR: JPN vs KOR"
+  },
+  {
+    "id": "tennis_wta_bjk_cup_g1_rr_jpn_vs_nzl",
+    "sportId": "tennis",
+    "name": "BJK Cup G1 RR: JPN vs NZL (WTA)",
+    "shortName": "BJK Cup G1 RR: JPN vs NZL"
+  },
+  {
+    "id": "tennis_wta_bjk_cup_g1_rr_jpn_vs_tha",
+    "sportId": "tennis",
+    "name": "BJK Cup G1 RR: JPN vs THA (WTA)",
+    "shortName": "BJK Cup G1 RR: JPN vs THA"
+  },
+  {
+    "id": "tennis_wta_bjk_cup_g1_rr_jpn_vs_uzb",
+    "sportId": "tennis",
+    "name": "BJK Cup G1 RR: JPN vs UZB (WTA)",
+    "shortName": "BJK Cup G1 RR: JPN vs UZB"
+  },
+  {
+    "id": "tennis_wta_bjk_cup_g1_rr_kor_vs_ina",
+    "sportId": "tennis",
+    "name": "BJK Cup G1 RR: KOR vs INA (WTA)",
+    "shortName": "BJK Cup G1 RR: KOR vs INA"
+  },
+  {
+    "id": "tennis_wta_bjk_cup_g1_rr_kor_vs_ind",
+    "sportId": "tennis",
+    "name": "BJK Cup G1 RR: KOR vs IND (WTA)",
+    "shortName": "BJK Cup G1 RR: KOR vs IND"
+  },
+  {
+    "id": "tennis_wta_bjk_cup_g1_rr_kor_vs_nzl",
+    "sportId": "tennis",
+    "name": "BJK Cup G1 RR: KOR vs NZL (WTA)",
+    "shortName": "BJK Cup G1 RR: KOR vs NZL"
+  },
+  {
+    "id": "tennis_wta_bjk_cup_g1_rr_kor_vs_tha",
+    "sportId": "tennis",
+    "name": "BJK Cup G1 RR: KOR vs THA (WTA)",
+    "shortName": "BJK Cup G1 RR: KOR vs THA"
+  },
+  {
+    "id": "tennis_wta_bjk_cup_g1_rr_kor_vs_uzb",
+    "sportId": "tennis",
+    "name": "BJK Cup G1 RR: KOR vs UZB (WTA)",
+    "shortName": "BJK Cup G1 RR: KOR vs UZB"
+  },
+  {
+    "id": "tennis_wta_bjk_cup_g1_rr_lat_vs_egy",
+    "sportId": "tennis",
+    "name": "BJK Cup G1 RR: LAT vs EGY (WTA)",
+    "shortName": "BJK Cup G1 RR: LAT vs EGY"
+  },
+  {
+    "id": "tennis_wta_bjk_cup_g1_rr_lat_vs_hun",
+    "sportId": "tennis",
+    "name": "BJK Cup G1 RR: LAT vs HUN (WTA)",
+    "shortName": "BJK Cup G1 RR: LAT vs HUN"
+  },
+  {
+    "id": "tennis_wta_bjk_cup_g1_rr_lat_vs_ned",
+    "sportId": "tennis",
+    "name": "BJK Cup G1 RR: LAT vs NED (WTA)",
+    "shortName": "BJK Cup G1 RR: LAT vs NED"
+  },
+  {
+    "id": "tennis_wta_bjk_cup_g1_rr_lat_vs_tur",
+    "sportId": "tennis",
+    "name": "BJK Cup G1 RR: LAT vs TUR (WTA)",
+    "shortName": "BJK Cup G1 RR: LAT vs TUR"
+  },
+  {
+    "id": "tennis_wta_bjk_cup_g1_rr_mex_vs_chi",
+    "sportId": "tennis",
+    "name": "BJK Cup G1 RR: MEX vs CHI (WTA)",
+    "shortName": "BJK Cup G1 RR: MEX vs CHI"
+  },
+  {
+    "id": "tennis_wta_bjk_cup_g1_rr_mex_vs_ecu",
+    "sportId": "tennis",
+    "name": "BJK Cup G1 RR: MEX vs ECU (WTA)",
+    "shortName": "BJK Cup G1 RR: MEX vs ECU"
+  },
+  {
+    "id": "tennis_wta_bjk_cup_g1_rr_ned_vs_egy",
+    "sportId": "tennis",
+    "name": "BJK Cup G1 RR: NED vs EGY (WTA)",
+    "shortName": "BJK Cup G1 RR: NED vs EGY"
+  },
+  {
+    "id": "tennis_wta_bjk_cup_g1_rr_par_vs_chi",
+    "sportId": "tennis",
+    "name": "BJK Cup G1 RR: PAR vs CHI (WTA)",
+    "shortName": "BJK Cup G1 RR: PAR vs CHI"
+  },
+  {
+    "id": "tennis_wta_bjk_cup_g1_rr_par_vs_ecu",
+    "sportId": "tennis",
+    "name": "BJK Cup G1 RR: PAR vs ECU (WTA)",
+    "shortName": "BJK Cup G1 RR: PAR vs ECU"
+  },
+  {
+    "id": "tennis_wta_bjk_cup_g1_rr_par_vs_mex",
+    "sportId": "tennis",
+    "name": "BJK Cup G1 RR: PAR vs MEX (WTA)",
+    "shortName": "BJK Cup G1 RR: PAR vs MEX"
+  },
+  {
+    "id": "tennis_wta_bjk_cup_g1_rr_per_vs_bol",
+    "sportId": "tennis",
+    "name": "BJK Cup G1 RR: PER vs BOL (WTA)",
+    "shortName": "BJK Cup G1 RR: PER vs BOL"
+  },
+  {
+    "id": "tennis_wta_bjk_cup_g1_rr_per_vs_gua",
+    "sportId": "tennis",
+    "name": "BJK Cup G1 RR: PER vs GUA (WTA)",
+    "shortName": "BJK Cup G1 RR: PER vs GUA"
+  },
+  {
+    "id": "tennis_wta_bjk_cup_g1_rr_slo_vs_geo",
+    "sportId": "tennis",
+    "name": "BJK Cup G1 RR: SLO vs GEO (WTA)",
+    "shortName": "BJK Cup G1 RR: SLO vs GEO"
+  },
+  {
+    "id": "tennis_wta_bjk_cup_g1_rr_srb_vs_bul",
+    "sportId": "tennis",
+    "name": "BJK Cup G1 RR: SRB vs BUL (WTA)",
+    "shortName": "BJK Cup G1 RR: SRB vs BUL"
+  },
+  {
+    "id": "tennis_wta_bjk_cup_g1_rr_srb_vs_cro",
+    "sportId": "tennis",
+    "name": "BJK Cup G1 RR: SRB vs CRO (WTA)",
+    "shortName": "BJK Cup G1 RR: SRB vs CRO"
+  },
+  {
+    "id": "tennis_wta_bjk_cup_g1_rr_srb_vs_den",
+    "sportId": "tennis",
+    "name": "BJK Cup G1 RR: SRB vs DEN (WTA)",
+    "shortName": "BJK Cup G1 RR: SRB vs DEN"
+  },
+  {
+    "id": "tennis_wta_bjk_cup_g1_rr_srb_vs_est",
+    "sportId": "tennis",
+    "name": "BJK Cup G1 RR: SRB vs EST (WTA)",
+    "shortName": "BJK Cup G1 RR: SRB vs EST"
+  },
+  {
+    "id": "tennis_wta_bjk_cup_g1_rr_srb_vs_hun",
+    "sportId": "tennis",
+    "name": "BJK Cup G1 RR: SRB vs HUN (WTA)",
+    "shortName": "BJK Cup G1 RR: SRB vs HUN"
+  },
+  {
+    "id": "tennis_wta_bjk_cup_g1_rr_srb_vs_nor",
+    "sportId": "tennis",
+    "name": "BJK Cup G1 RR: SRB vs NOR (WTA)",
+    "shortName": "BJK Cup G1 RR: SRB vs NOR"
+  },
+  {
+    "id": "tennis_wta_bjk_cup_g1_rr_srb_vs_swe",
+    "sportId": "tennis",
+    "name": "BJK Cup G1 RR: SRB vs SWE (WTA)",
+    "shortName": "BJK Cup G1 RR: SRB vs SWE"
+  },
+  {
+    "id": "tennis_wta_bjk_cup_g1_rr_srb_vs_tur",
+    "sportId": "tennis",
+    "name": "BJK Cup G1 RR: SRB vs TUR (WTA)",
+    "shortName": "BJK Cup G1 RR: SRB vs TUR"
+  },
+  {
+    "id": "tennis_wta_bjk_cup_g1_rr_swe_vs_aut",
+    "sportId": "tennis",
+    "name": "BJK Cup G1 RR: SWE vs AUT (WTA)",
+    "shortName": "BJK Cup G1 RR: SWE vs AUT"
+  },
+  {
+    "id": "tennis_wta_bjk_cup_g1_rr_swe_vs_bul",
+    "sportId": "tennis",
+    "name": "BJK Cup G1 RR: SWE vs BUL (WTA)",
+    "shortName": "BJK Cup G1 RR: SWE vs BUL"
+  },
+  {
+    "id": "tennis_wta_bjk_cup_g1_rr_swe_vs_cro",
+    "sportId": "tennis",
+    "name": "BJK Cup G1 RR: SWE vs CRO (WTA)",
+    "shortName": "BJK Cup G1 RR: SWE vs CRO"
+  },
+  {
+    "id": "tennis_wta_bjk_cup_g1_rr_swe_vs_den",
+    "sportId": "tennis",
+    "name": "BJK Cup G1 RR: SWE vs DEN (WTA)",
+    "shortName": "BJK Cup G1 RR: SWE vs DEN"
+  },
+  {
+    "id": "tennis_wta_bjk_cup_g1_rr_swe_vs_geo",
+    "sportId": "tennis",
+    "name": "BJK Cup G1 RR: SWE vs GEO (WTA)",
+    "shortName": "BJK Cup G1 RR: SWE vs GEO"
+  },
+  {
+    "id": "tennis_wta_bjk_cup_g1_rr_swe_vs_nor",
+    "sportId": "tennis",
+    "name": "BJK Cup G1 RR: SWE vs NOR (WTA)",
+    "shortName": "BJK Cup G1 RR: SWE vs NOR"
+  },
+  {
+    "id": "tennis_wta_bjk_cup_g1_rr_swe_vs_slo",
+    "sportId": "tennis",
+    "name": "BJK Cup G1 RR: SWE vs SLO (WTA)",
+    "shortName": "BJK Cup G1 RR: SWE vs SLO"
+  },
+  {
+    "id": "tennis_wta_bjk_cup_g1_rr_tur_vs_den",
+    "sportId": "tennis",
+    "name": "BJK Cup G1 RR: TUR vs DEN (WTA)",
+    "shortName": "BJK Cup G1 RR: TUR vs DEN"
+  },
+  {
+    "id": "tennis_wta_bjk_cup_g1_rr_tur_vs_egy",
+    "sportId": "tennis",
+    "name": "BJK Cup G1 RR: TUR vs EGY (WTA)",
+    "shortName": "BJK Cup G1 RR: TUR vs EGY"
+  },
+  {
+    "id": "tennis_wta_bjk_cup_g1_rr_tur_vs_est",
+    "sportId": "tennis",
+    "name": "BJK Cup G1 RR: TUR vs EST (WTA)",
+    "shortName": "BJK Cup G1 RR: TUR vs EST"
+  },
+  {
+    "id": "tennis_wta_bjk_cup_g1_rr_tur_vs_ned",
+    "sportId": "tennis",
+    "name": "BJK Cup G1 RR: TUR vs NED (WTA)",
+    "shortName": "BJK Cup G1 RR: TUR vs NED"
+  },
+  {
+    "id": "tennis_wta_bjk_cup_g1_rr_uzb_vs_tha",
+    "sportId": "tennis",
+    "name": "BJK Cup G1 RR: UZB vs THA (WTA)",
+    "shortName": "BJK Cup G1 RR: UZB vs THA"
+  },
+  {
+    "id": "tennis_wta_bjk_cup_g2_pm_bih_vs_kos",
+    "sportId": "tennis",
+    "name": "BJK Cup G2 PM: BIH vs KOS (WTA)",
+    "shortName": "BJK Cup G2 PM: BIH vs KOS"
+  },
+  {
+    "id": "tennis_wta_bjk_cup_g2_pm_ltu_vs_isr",
+    "sportId": "tennis",
+    "name": "BJK Cup G2 PM: LTU vs ISR (WTA)",
+    "shortName": "BJK Cup G2 PM: LTU vs ISR"
+  },
+  {
+    "id": "tennis_wta_bjk_cup_g2_ppo_est_vs_gre",
+    "sportId": "tennis",
+    "name": "BJK Cup G2 PPO: EST vs GRE (WTA)",
+    "shortName": "BJK Cup G2 PPO: EST vs GRE"
+  },
+  {
+    "id": "tennis_wta_bjk_cup_g2_ppo_ltu_vs_egy",
+    "sportId": "tennis",
+    "name": "BJK Cup G2 PPO: LTU vs EGY (WTA)",
+    "shortName": "BJK Cup G2 PPO: LTU vs EGY"
+  },
+  {
+    "id": "tennis_wta_bjk_cup_g2_ppo_nor_vs_isr",
+    "sportId": "tennis",
+    "name": "BJK Cup G2 PPO: NOR vs ISR (WTA)",
+    "shortName": "BJK Cup G2 PPO: NOR vs ISR"
+  },
+  {
+    "id": "tennis_wta_bjk_cup_g2_ppo_por_vs_geo",
+    "sportId": "tennis",
+    "name": "BJK Cup G2 PPO: POR vs GEO (WTA)",
+    "shortName": "BJK Cup G2 PPO: POR vs GEO"
+  },
+  {
+    "id": "tennis_wta_bjk_cup_g2_rel_gre_vs_lux",
+    "sportId": "tennis",
+    "name": "BJK Cup G2 REL: GRE vs LUX (WTA)",
+    "shortName": "BJK Cup G2 REL: GRE vs LUX"
+  },
+  {
+    "id": "tennis_wta_bjk_cup_g2_rel_mlt_vs_rsa",
+    "sportId": "tennis",
+    "name": "BJK Cup G2 REL: MLT vs RSA (WTA)",
+    "shortName": "BJK Cup G2 REL: MLT vs RSA"
+  },
+  {
+    "id": "tennis_wta_bjk_cup_g2_rr_bih_vs_mlt",
+    "sportId": "tennis",
+    "name": "BJK Cup G2 RR: BIH vs MLT (WTA)",
+    "shortName": "BJK Cup G2 RR: BIH vs MLT"
+  },
+  {
+    "id": "tennis_wta_bjk_cup_g2_rr_bih_vs_por",
+    "sportId": "tennis",
+    "name": "BJK Cup G2 RR: BIH vs POR (WTA)",
+    "shortName": "BJK Cup G2 RR: BIH vs POR"
+  },
+  {
+    "id": "tennis_wta_bjk_cup_g2_rr_egy_vs_nor",
+    "sportId": "tennis",
+    "name": "BJK Cup G2 RR: EGY vs NOR (WTA)",
+    "shortName": "BJK Cup G2 RR: EGY vs NOR"
+  },
+  {
+    "id": "tennis_wta_bjk_cup_g2_rr_est_vs_geo",
+    "sportId": "tennis",
+    "name": "BJK Cup G2 RR: EST vs GEO (WTA)",
+    "shortName": "BJK Cup G2 RR: EST vs GEO"
+  },
+  {
+    "id": "tennis_wta_bjk_cup_g2_rr_est_vs_irl",
+    "sportId": "tennis",
+    "name": "BJK Cup G2 RR: EST vs IRL (WTA)",
+    "shortName": "BJK Cup G2 RR: EST vs IRL"
+  },
+  {
+    "id": "tennis_wta_bjk_cup_g2_rr_est_vs_kos",
+    "sportId": "tennis",
+    "name": "BJK Cup G2 RR: EST vs KOS (WTA)",
+    "shortName": "BJK Cup G2 RR: EST vs KOS"
+  },
+  {
+    "id": "tennis_wta_bjk_cup_g2_rr_est_vs_rsa",
+    "sportId": "tennis",
+    "name": "BJK Cup G2 RR: EST vs RSA (WTA)",
+    "shortName": "BJK Cup G2 RR: EST vs RSA"
+  },
+  {
+    "id": "tennis_wta_bjk_cup_g2_rr_fin_vs_isr",
+    "sportId": "tennis",
+    "name": "BJK Cup G2 RR: FIN vs ISR (WTA)",
+    "shortName": "BJK Cup G2 RR: FIN vs ISR"
+  },
+  {
+    "id": "tennis_wta_bjk_cup_g2_rr_fin_vs_ltu",
+    "sportId": "tennis",
+    "name": "BJK Cup G2 RR: FIN vs LTU (WTA)",
+    "shortName": "BJK Cup G2 RR: FIN vs LTU"
+  },
+  {
+    "id": "tennis_wta_bjk_cup_g2_rr_geo_vs_irl",
+    "sportId": "tennis",
+    "name": "BJK Cup G2 RR: GEO vs IRL (WTA)",
+    "shortName": "BJK Cup G2 RR: GEO vs IRL"
+  },
+  {
+    "id": "tennis_wta_bjk_cup_g2_rr_geo_vs_kos",
+    "sportId": "tennis",
+    "name": "BJK Cup G2 RR: GEO vs KOS (WTA)",
+    "shortName": "BJK Cup G2 RR: GEO vs KOS"
+  },
+  {
+    "id": "tennis_wta_bjk_cup_g2_rr_geo_vs_rsa",
+    "sportId": "tennis",
+    "name": "BJK Cup G2 RR: GEO vs RSA (WTA)",
+    "shortName": "BJK Cup G2 RR: GEO vs RSA"
+  },
+  {
+    "id": "tennis_wta_bjk_cup_g2_rr_gre_vs_bih",
+    "sportId": "tennis",
+    "name": "BJK Cup G2 RR: GRE vs BIH (WTA)",
+    "shortName": "BJK Cup G2 RR: GRE vs BIH"
+  },
+  {
+    "id": "tennis_wta_bjk_cup_g2_rr_gre_vs_egy",
+    "sportId": "tennis",
+    "name": "BJK Cup G2 RR: GRE vs EGY (WTA)",
+    "shortName": "BJK Cup G2 RR: GRE vs EGY"
+  },
+  {
+    "id": "tennis_wta_bjk_cup_g2_rr_gre_vs_isr",
+    "sportId": "tennis",
+    "name": "BJK Cup G2 RR: GRE vs ISR (WTA)",
+    "shortName": "BJK Cup G2 RR: GRE vs ISR"
+  },
+  {
+    "id": "tennis_wta_bjk_cup_g2_rr_gre_vs_mlt",
+    "sportId": "tennis",
+    "name": "BJK Cup G2 RR: GRE vs MLT (WTA)",
+    "shortName": "BJK Cup G2 RR: GRE vs MLT"
+  },
+  {
+    "id": "tennis_wta_bjk_cup_g2_rr_gre_vs_nor",
+    "sportId": "tennis",
+    "name": "BJK Cup G2 RR: GRE vs NOR (WTA)",
+    "shortName": "BJK Cup G2 RR: GRE vs NOR"
+  },
+  {
+    "id": "tennis_wta_bjk_cup_g2_rr_gre_vs_por",
+    "sportId": "tennis",
+    "name": "BJK Cup G2 RR: GRE vs POR (WTA)",
+    "shortName": "BJK Cup G2 RR: GRE vs POR"
+  },
+  {
+    "id": "tennis_wta_bjk_cup_g2_rr_irl_vs_kos",
+    "sportId": "tennis",
+    "name": "BJK Cup G2 RR: IRL vs KOS (WTA)",
+    "shortName": "BJK Cup G2 RR: IRL vs KOS"
+  },
+  {
+    "id": "tennis_wta_bjk_cup_g2_rr_irl_vs_rsa",
+    "sportId": "tennis",
+    "name": "BJK Cup G2 RR: IRL vs RSA (WTA)",
+    "shortName": "BJK Cup G2 RR: IRL vs RSA"
+  },
+  {
+    "id": "tennis_wta_bjk_cup_g2_rr_isr_vs_bih",
+    "sportId": "tennis",
+    "name": "BJK Cup G2 RR: ISR vs BIH (WTA)",
+    "shortName": "BJK Cup G2 RR: ISR vs BIH"
+  },
+  {
+    "id": "tennis_wta_bjk_cup_g2_rr_isr_vs_mlt",
+    "sportId": "tennis",
+    "name": "BJK Cup G2 RR: ISR vs MLT (WTA)",
+    "shortName": "BJK Cup G2 RR: ISR vs MLT"
+  },
+  {
+    "id": "tennis_wta_bjk_cup_g2_rr_isr_vs_por",
+    "sportId": "tennis",
+    "name": "BJK Cup G2 RR: ISR vs POR (WTA)",
+    "shortName": "BJK Cup G2 RR: ISR vs POR"
+  },
+  {
+    "id": "tennis_wta_bjk_cup_g2_rr_ltu_vs_est",
+    "sportId": "tennis",
+    "name": "BJK Cup G2 RR: LTU vs EST (WTA)",
+    "shortName": "BJK Cup G2 RR: LTU vs EST"
+  },
+  {
+    "id": "tennis_wta_bjk_cup_g2_rr_ltu_vs_geo",
+    "sportId": "tennis",
+    "name": "BJK Cup G2 RR: LTU vs GEO (WTA)",
+    "shortName": "BJK Cup G2 RR: LTU vs GEO"
+  },
+  {
+    "id": "tennis_wta_bjk_cup_g2_rr_ltu_vs_irl",
+    "sportId": "tennis",
+    "name": "BJK Cup G2 RR: LTU vs IRL (WTA)",
+    "shortName": "BJK Cup G2 RR: LTU vs IRL"
+  },
+  {
+    "id": "tennis_wta_bjk_cup_g2_rr_ltu_vs_isr",
+    "sportId": "tennis",
+    "name": "BJK Cup G2 RR: LTU vs ISR (WTA)",
+    "shortName": "BJK Cup G2 RR: LTU vs ISR"
+  },
+  {
+    "id": "tennis_wta_bjk_cup_g2_rr_ltu_vs_kos",
+    "sportId": "tennis",
+    "name": "BJK Cup G2 RR: LTU vs KOS (WTA)",
+    "shortName": "BJK Cup G2 RR: LTU vs KOS"
+  },
+  {
+    "id": "tennis_wta_bjk_cup_g2_rr_ltu_vs_rsa",
+    "sportId": "tennis",
+    "name": "BJK Cup G2 RR: LTU vs RSA (WTA)",
+    "shortName": "BJK Cup G2 RR: LTU vs RSA"
+  },
+  {
+    "id": "tennis_wta_bjk_cup_g2_rr_lux_vs_fin",
+    "sportId": "tennis",
+    "name": "BJK Cup G2 RR: LUX vs FIN (WTA)",
+    "shortName": "BJK Cup G2 RR: LUX vs FIN"
+  },
+  {
+    "id": "tennis_wta_bjk_cup_g2_rr_lux_vs_isr",
+    "sportId": "tennis",
+    "name": "BJK Cup G2 RR: LUX vs ISR (WTA)",
+    "shortName": "BJK Cup G2 RR: LUX vs ISR"
+  },
+  {
+    "id": "tennis_wta_bjk_cup_g2_rr_lux_vs_ltu",
+    "sportId": "tennis",
+    "name": "BJK Cup G2 RR: LUX vs LTU (WTA)",
+    "shortName": "BJK Cup G2 RR: LUX vs LTU"
+  },
+  {
+    "id": "tennis_wta_bjk_cup_g2_rr_por_vs_mlt",
+    "sportId": "tennis",
+    "name": "BJK Cup G2 RR: POR vs MLT (WTA)",
+    "shortName": "BJK Cup G2 RR: POR vs MLT"
+  },
+  {
+    "id": "tennis_wta_bjk_cup_g2_rr_rsa_vs_kos",
+    "sportId": "tennis",
+    "name": "BJK Cup G2 RR: RSA vs KOS (WTA)",
+    "shortName": "BJK Cup G2 RR: RSA vs KOS"
+  },
+  {
+    "id": "tennis_wta_bjk_cup_playoffs",
+    "sportId": "tennis",
+    "name": "BJK Cup Playoffs (WTA)",
+    "shortName": "BJK Cup Playoffs"
+  },
+  {
+    "id": "tennis_wta_bjk_cup_playoffs_bra_vs_arg",
+    "sportId": "tennis",
+    "name": "BJK Cup Playoffs: BRA vs ARG (WTA)",
+    "shortName": "BJK Cup Playoffs: BRA vs ARG"
+  },
+  {
+    "id": "tennis_wta_bjk_cup_playoffs_bra_vs_pol",
+    "sportId": "tennis",
+    "name": "BJK Cup Playoffs: BRA vs POL (WTA)",
+    "shortName": "BJK Cup Playoffs: BRA vs POL"
+  },
+  {
+    "id": "tennis_wta_bjk_cup_playoffs_can_vs_srb",
+    "sportId": "tennis",
+    "name": "BJK Cup Playoffs: CAN vs SRB (WTA)",
+    "shortName": "BJK Cup Playoffs: CAN vs SRB"
+  },
+  {
+    "id": "tennis_wta_bjk_cup_playoffs_chn_vs_slo",
+    "sportId": "tennis",
+    "name": "BJK Cup Playoffs: CHN vs SLO (WTA)",
+    "shortName": "BJK Cup Playoffs: CHN vs SLO"
+  },
+  {
+    "id": "tennis_wta_bjk_cup_playoffs_fra_vs_ned",
+    "sportId": "tennis",
+    "name": "BJK Cup Playoffs: FRA vs NED (WTA)",
+    "shortName": "BJK Cup Playoffs: FRA vs NED"
+  },
+  {
+    "id": "tennis_wta_bjk_cup_playoffs_gbr_vs_mex",
+    "sportId": "tennis",
+    "name": "BJK Cup Playoffs: GBR vs MEX (WTA)",
+    "shortName": "BJK Cup Playoffs: GBR vs MEX"
+  },
+  {
+    "id": "tennis_wta_bjk_cup_playoffs_ger_vs_cro",
+    "sportId": "tennis",
+    "name": "BJK Cup Playoffs: GER vs CRO (WTA)",
+    "shortName": "BJK Cup Playoffs: GER vs CRO"
+  },
+  {
+    "id": "tennis_wta_bjk_cup_playoffs_jpn_vs_ukr",
+    "sportId": "tennis",
+    "name": "BJK Cup Playoffs: JPN vs UKR (WTA)",
+    "shortName": "BJK Cup Playoffs: JPN vs UKR"
+  },
+  {
+    "id": "tennis_wta_bjk_cup_playoffs_kaz_vs_arg",
+    "sportId": "tennis",
+    "name": "BJK Cup Playoffs: KAZ vs ARG (WTA)",
+    "shortName": "BJK Cup Playoffs: KAZ vs ARG"
+  },
+  {
+    "id": "tennis_wta_bjk_cup_playoffs_lat_vs_aut",
+    "sportId": "tennis",
+    "name": "BJK Cup Playoffs: LAT vs AUT (WTA)",
+    "shortName": "BJK Cup Playoffs: LAT vs AUT"
+  },
+  {
+    "id": "tennis_wta_bjk_cup_playoffs_lat_vs_ind",
+    "sportId": "tennis",
+    "name": "BJK Cup Playoffs: LAT vs IND (WTA)",
+    "shortName": "BJK Cup Playoffs: LAT vs IND"
+  },
+  {
+    "id": "tennis_wta_bjk_cup_playoffs_ned_vs_chn",
+    "sportId": "tennis",
+    "name": "BJK Cup Playoffs: NED vs CHN (WTA)",
+    "shortName": "BJK Cup Playoffs: NED vs CHN"
+  },
+  {
+    "id": "tennis_wta_bjk_cup_playoffs_rou_vs_hun",
+    "sportId": "tennis",
+    "name": "BJK Cup Playoffs: ROU vs HUN (WTA)",
+    "shortName": "BJK Cup Playoffs: ROU vs HUN"
+  },
+  {
+    "id": "tennis_wta_bjk_cup_playoffs_rou_vs_ita",
+    "sportId": "tennis",
+    "name": "BJK Cup Playoffs: ROU vs ITA (WTA)",
+    "shortName": "BJK Cup Playoffs: ROU vs ITA"
+  },
+  {
+    "id": "tennis_wta_bjk_cup_playoffs_srb_vs_mex",
+    "sportId": "tennis",
+    "name": "BJK Cup Playoffs: SRB vs MEX (WTA)",
+    "shortName": "BJK Cup Playoffs: SRB vs MEX"
+  },
+  {
+    "id": "tennis_wta_bjk_cup_qls_r1_can_vs_bel",
+    "sportId": "tennis",
+    "name": "BJK Cup QLS R1: CAN vs BEL (WTA)",
+    "shortName": "BJK Cup QLS R1: CAN vs BEL"
+  },
+  {
+    "id": "tennis_wta_bjk_cup_qls_r1_can_vs_lat",
+    "sportId": "tennis",
+    "name": "BJK Cup QLS R1: CAN vs LAT (WTA)",
+    "shortName": "BJK Cup QLS R1: CAN vs LAT"
+  },
+  {
+    "id": "tennis_wta_bjk_cup_qls_r1_cze_vs_gbr",
+    "sportId": "tennis",
+    "name": "BJK Cup QLS R1: CZE vs GBR (WTA)",
+    "shortName": "BJK Cup QLS R1: CZE vs GBR"
+  },
+  {
+    "id": "tennis_wta_bjk_cup_qls_r1_cze_vs_ukr",
+    "sportId": "tennis",
+    "name": "BJK Cup QLS R1: CZE vs UKR (WTA)",
+    "shortName": "BJK Cup QLS R1: CZE vs UKR"
+  },
+  {
+    "id": "tennis_wta_bjk_cup_qls_r1_esp_vs_mex",
+    "sportId": "tennis",
+    "name": "BJK Cup QLS R1: ESP vs MEX (WTA)",
+    "shortName": "BJK Cup QLS R1: ESP vs MEX"
+  },
+  {
+    "id": "tennis_wta_bjk_cup_qls_r1_esp_vs_ned",
+    "sportId": "tennis",
+    "name": "BJK Cup QLS R1: ESP vs NED (WTA)",
+    "shortName": "BJK Cup QLS R1: ESP vs NED"
+  },
+  {
+    "id": "tennis_wta_bjk_cup_qls_r1_fra_vs_gbr",
+    "sportId": "tennis",
+    "name": "BJK Cup QLS R1: FRA vs GBR (WTA)",
+    "shortName": "BJK Cup QLS R1: FRA vs GBR"
+  },
+  {
+    "id": "tennis_wta_bjk_cup_qls_r1_fra_vs_ita",
+    "sportId": "tennis",
+    "name": "BJK Cup QLS R1: FRA vs ITA (WTA)",
+    "shortName": "BJK Cup QLS R1: FRA vs ITA"
+  },
+  {
+    "id": "tennis_wta_bjk_cup_qls_r1_ger_vs_bra",
+    "sportId": "tennis",
+    "name": "BJK Cup QLS R1: GER vs BRA (WTA)",
+    "shortName": "BJK Cup QLS R1: GER vs BRA"
+  },
+  {
+    "id": "tennis_wta_bjk_cup_qls_r1_ger_vs_kaz",
+    "sportId": "tennis",
+    "name": "BJK Cup QLS R1: GER vs KAZ (WTA)",
+    "shortName": "BJK Cup QLS R1: GER vs KAZ"
+  },
+  {
+    "id": "tennis_wta_bjk_cup_qls_r1_kaz_vs_pol",
+    "sportId": "tennis",
+    "name": "BJK Cup QLS R1: KAZ vs POL (WTA)",
+    "shortName": "BJK Cup QLS R1: KAZ vs POL"
+  },
+  {
+    "id": "tennis_wta_bjk_cup_qls_r1_rou_vs_pol",
+    "sportId": "tennis",
+    "name": "BJK Cup QLS R1: ROU vs POL (WTA)",
+    "shortName": "BJK Cup QLS R1: ROU vs POL"
+  },
+  {
+    "id": "tennis_wta_bjk_cup_qls_r1_rou_vs_slo",
+    "sportId": "tennis",
+    "name": "BJK Cup QLS R1: ROU vs SLO (WTA)",
+    "shortName": "BJK Cup QLS R1: ROU vs SLO"
+  },
+  {
+    "id": "tennis_wta_bjk_cup_qls_r1_svk_vs_ita",
+    "sportId": "tennis",
+    "name": "BJK Cup QLS R1: SVK vs ITA (WTA)",
+    "shortName": "BJK Cup QLS R1: SVK vs ITA"
+  },
+  {
+    "id": "tennis_wta_bjk_cup_qls_r1_usa_vs_aut",
+    "sportId": "tennis",
+    "name": "BJK Cup QLS R1: USA vs AUT (WTA)",
+    "shortName": "BJK Cup QLS R1: USA vs AUT"
+  },
+  {
+    "id": "tennis_wta_bjk_cup_qls_r1_usa_vs_ukr",
+    "sportId": "tennis",
+    "name": "BJK Cup QLS R1: USA vs UKR (WTA)",
+    "shortName": "BJK Cup QLS R1: USA vs UKR"
+  },
+  {
+    "id": "tennis_wta_bjk_cup_qualifiers",
+    "sportId": "tennis",
+    "name": "BJK Cup Qualifiers (WTA)",
+    "shortName": "BJK Cup Qualifiers"
+  },
+  {
+    "id": "tennis_wta_bogota",
+    "sportId": "tennis",
+    "name": "Bogota (WTA)",
+    "shortName": "Bogota"
+  },
+  {
+    "id": "tennis_atp_brisbane",
+    "sportId": "tennis",
+    "name": "Brisbane (ATP)",
+    "shortName": "Brisbane"
+  },
+  {
+    "id": "tennis_wta_brisbane",
+    "sportId": "tennis",
+    "name": "Brisbane (WTA)",
+    "shortName": "Brisbane"
+  },
+  {
+    "id": "tennis_atp_brussels",
+    "sportId": "tennis",
+    "name": "Brussels (ATP)",
+    "shortName": "Brussels"
+  },
+  {
+    "id": "tennis_atp_bucharest",
+    "sportId": "tennis",
+    "name": "Bucharest (ATP)",
+    "shortName": "Bucharest"
+  },
+  {
+    "id": "tennis_wta_budapest",
+    "sportId": "tennis",
+    "name": "Budapest (WTA)",
+    "shortName": "Budapest"
+  },
+  {
+    "id": "tennis_atp_buenos_aires",
+    "sportId": "tennis",
+    "name": "Buenos Aires (ATP)",
+    "shortName": "Buenos Aires"
+  },
+  {
+    "id": "tennis_atp_cagliari",
+    "sportId": "tennis",
+    "name": "Cagliari (ATP)",
+    "shortName": "Cagliari"
+  },
+  {
+    "id": "tennis_atp_canada_masters",
+    "sportId": "tennis",
+    "name": "Canada Masters (ATP)",
+    "shortName": "Canada Masters"
+  },
+  {
+    "id": "tennis_wta_cancun_finals",
+    "sportId": "tennis",
+    "name": "Cancun Finals (WTA)",
+    "shortName": "Cancun Finals"
+  },
+  {
+    "id": "tennis_wta_charleston",
+    "sportId": "tennis",
+    "name": "Charleston (WTA)",
+    "shortName": "Charleston"
+  },
+  {
+    "id": "tennis_wta_charleston_1",
+    "sportId": "tennis",
+    "name": "Charleston 1 (WTA)",
+    "shortName": "Charleston 1"
+  },
+  {
+    "id": "tennis_wta_charleston_2",
+    "sportId": "tennis",
+    "name": "Charleston 2 (WTA)",
+    "shortName": "Charleston 2"
+  },
+  {
+    "id": "tennis_atp_chengdu",
+    "sportId": "tennis",
+    "name": "Chengdu (ATP)",
+    "shortName": "Chengdu"
+  },
+  {
+    "id": "tennis_wta_chennai",
+    "sportId": "tennis",
+    "name": "Chennai (WTA)",
+    "shortName": "Chennai"
+  },
+  {
+    "id": "tennis_wta_chicago_1",
+    "sportId": "tennis",
+    "name": "Chicago 1 (WTA)",
+    "shortName": "Chicago 1"
+  },
+  {
+    "id": "tennis_wta_chicago_2",
+    "sportId": "tennis",
+    "name": "Chicago 2 (WTA)",
+    "shortName": "Chicago 2"
+  },
+  {
+    "id": "tennis_wta_cincinnati",
+    "sportId": "tennis",
+    "name": "Cincinnati (WTA)",
+    "shortName": "Cincinnati"
+  },
+  {
+    "id": "tennis_atp_cincinnati_masters",
+    "sportId": "tennis",
+    "name": "Cincinnati Masters (ATP)",
+    "shortName": "Cincinnati Masters"
+  },
+  {
+    "id": "tennis_wta_cleveland",
+    "sportId": "tennis",
+    "name": "Cleveland (WTA)",
+    "shortName": "Cleveland"
+  },
+  {
+    "id": "tennis_wta_cluj_napoca",
+    "sportId": "tennis",
+    "name": "Cluj-Napoca (WTA)",
+    "shortName": "Cluj-Napoca"
+  },
+  {
+    "id": "tennis_wta_cluj_napoca_1",
+    "sportId": "tennis",
+    "name": "Cluj-Napoca 1 (WTA)",
+    "shortName": "Cluj-Napoca 1"
+  },
+  {
+    "id": "tennis_wta_cluj_napoca_2",
+    "sportId": "tennis",
+    "name": "Cluj-Napoca 2 (WTA)",
+    "shortName": "Cluj-Napoca 2"
+  },
+  {
+    "id": "tennis_atp_cologne_1",
+    "sportId": "tennis",
+    "name": "Cologne 1 (ATP)",
+    "shortName": "Cologne 1"
+  },
+  {
+    "id": "tennis_atp_cologne_2",
+    "sportId": "tennis",
+    "name": "Cologne 2 (ATP)",
+    "shortName": "Cologne 2"
+  },
+  {
+    "id": "tennis_atp_cordoba",
+    "sportId": "tennis",
+    "name": "Cordoba (ATP)",
+    "shortName": "Cordoba"
+  },
+  {
+    "id": "tennis_wta_courmayeur",
+    "sportId": "tennis",
+    "name": "Courmayeur (WTA)",
+    "shortName": "Courmayeur"
+  },
+  {
+    "id": "tennis_atp_dallas",
+    "sportId": "tennis",
+    "name": "Dallas (ATP)",
+    "shortName": "Dallas"
+  },
+  {
+    "id": "tennis_atp_davis_cup_finals_f_aus_vs_ita",
+    "sportId": "tennis",
+    "name": "Davis Cup Finals F: AUS vs ITA (ATP)",
+    "shortName": "Davis Cup Finals F: AUS vs ITA"
+  },
+  {
+    "id": "tennis_atp_davis_cup_finals_f_can_vs_aus",
+    "sportId": "tennis",
+    "name": "Davis Cup Finals F: CAN vs AUS (ATP)",
+    "shortName": "Davis Cup Finals F: CAN vs AUS"
+  },
+  {
+    "id": "tennis_atp_davis_cup_finals_f_ita_vs_esp",
+    "sportId": "tennis",
+    "name": "Davis Cup Finals F: ITA vs ESP (ATP)",
+    "shortName": "Davis Cup Finals F: ITA vs ESP"
+  },
+  {
+    "id": "tennis_atp_davis_cup_finals_f_ita_vs_ned",
+    "sportId": "tennis",
+    "name": "Davis Cup Finals F: ITA vs NED (ATP)",
+    "shortName": "Davis Cup Finals F: ITA vs NED"
+  },
+  {
+    "id": "tennis_atp_davis_cup_finals_f_rtf_vs_cro",
+    "sportId": "tennis",
+    "name": "Davis Cup Finals F: RTF vs CRO (ATP)",
+    "shortName": "Davis Cup Finals F: RTF vs CRO"
+  },
+  {
+    "id": "tennis_atp_davis_cup_finals_qf_arg_vs_ger",
+    "sportId": "tennis",
+    "name": "Davis Cup Finals QF: ARG vs GER (ATP)",
+    "shortName": "Davis Cup Finals QF: ARG vs GER"
+  },
+  {
+    "id": "tennis_atp_davis_cup_finals_qf_aus_vs_ned",
+    "sportId": "tennis",
+    "name": "Davis Cup Finals QF: AUS vs NED (ATP)",
+    "shortName": "Davis Cup Finals QF: AUS vs NED"
+  },
+  {
+    "id": "tennis_atp_davis_cup_finals_qf_can_vs_fin",
+    "sportId": "tennis",
+    "name": "Davis Cup Finals QF: CAN vs FIN (ATP)",
+    "shortName": "Davis Cup Finals QF: CAN vs FIN"
+  },
+  {
+    "id": "tennis_atp_davis_cup_finals_qf_cro_vs_esp",
+    "sportId": "tennis",
+    "name": "Davis Cup Finals QF: CRO vs ESP (ATP)",
+    "shortName": "Davis Cup Finals QF: CRO vs ESP"
+  },
+  {
+    "id": "tennis_atp_davis_cup_finals_qf_cze_vs_aus",
+    "sportId": "tennis",
+    "name": "Davis Cup Finals QF: CZE vs AUS (ATP)",
+    "shortName": "Davis Cup Finals QF: CZE vs AUS"
+  },
+  {
+    "id": "tennis_atp_davis_cup_finals_qf_esp_vs_cze",
+    "sportId": "tennis",
+    "name": "Davis Cup Finals QF: ESP vs CZE (ATP)",
+    "shortName": "Davis Cup Finals QF: ESP vs CZE"
+  },
+  {
+    "id": "tennis_atp_davis_cup_finals_qf_fra_vs_bel",
+    "sportId": "tennis",
+    "name": "Davis Cup Finals QF: FRA vs BEL (ATP)",
+    "shortName": "Davis Cup Finals QF: FRA vs BEL"
+  },
+  {
+    "id": "tennis_atp_davis_cup_finals_qf_gbr_vs_ger",
+    "sportId": "tennis",
+    "name": "Davis Cup Finals QF: GBR vs GER (ATP)",
+    "shortName": "Davis Cup Finals QF: GBR vs GER"
+  },
+  {
+    "id": "tennis_atp_davis_cup_finals_qf_ger_vs_can",
+    "sportId": "tennis",
+    "name": "Davis Cup Finals QF: GER vs CAN (ATP)",
+    "shortName": "Davis Cup Finals QF: GER vs CAN"
+  },
+  {
+    "id": "tennis_atp_davis_cup_finals_qf_ita_vs_arg",
+    "sportId": "tennis",
+    "name": "Davis Cup Finals QF: ITA vs ARG (ATP)",
+    "shortName": "Davis Cup Finals QF: ITA vs ARG"
+  },
+  {
+    "id": "tennis_atp_davis_cup_finals_qf_ita_vs_aut",
+    "sportId": "tennis",
+    "name": "Davis Cup Finals QF: ITA vs AUT (ATP)",
+    "shortName": "Davis Cup Finals QF: ITA vs AUT"
+  },
+  {
+    "id": "tennis_atp_davis_cup_finals_qf_ita_vs_cro",
+    "sportId": "tennis",
+    "name": "Davis Cup Finals QF: ITA vs CRO (ATP)",
+    "shortName": "Davis Cup Finals QF: ITA vs CRO"
+  },
+  {
+    "id": "tennis_atp_davis_cup_finals_qf_ita_vs_ned",
+    "sportId": "tennis",
+    "name": "Davis Cup Finals QF: ITA vs NED (ATP)",
+    "shortName": "Davis Cup Finals QF: ITA vs NED"
+  },
+  {
+    "id": "tennis_atp_davis_cup_finals_qf_ita_vs_usa",
+    "sportId": "tennis",
+    "name": "Davis Cup Finals QF: ITA vs USA (ATP)",
+    "shortName": "Davis Cup Finals QF: ITA vs USA"
+  },
+  {
+    "id": "tennis_atp_davis_cup_finals_qf_ned_vs_esp",
+    "sportId": "tennis",
+    "name": "Davis Cup Finals QF: NED vs ESP (ATP)",
+    "shortName": "Davis Cup Finals QF: NED vs ESP"
+  },
+  {
+    "id": "tennis_atp_davis_cup_finals_qf_rtf_vs_swe",
+    "sportId": "tennis",
+    "name": "Davis Cup Finals QF: RTF vs SWE (ATP)",
+    "shortName": "Davis Cup Finals QF: RTF vs SWE"
+  },
+  {
+    "id": "tennis_atp_davis_cup_finals_qf_srb_vs_gbr",
+    "sportId": "tennis",
+    "name": "Davis Cup Finals QF: SRB vs GBR (ATP)",
+    "shortName": "Davis Cup Finals QF: SRB vs GBR"
+  },
+  {
+    "id": "tennis_atp_davis_cup_finals_qf_srb_vs_kaz",
+    "sportId": "tennis",
+    "name": "Davis Cup Finals QF: SRB vs KAZ (ATP)",
+    "shortName": "Davis Cup Finals QF: SRB vs KAZ"
+  },
+  {
+    "id": "tennis_atp_davis_cup_finals_qf_usa_vs_aus",
+    "sportId": "tennis",
+    "name": "Davis Cup Finals QF: USA vs AUS (ATP)",
+    "shortName": "Davis Cup Finals QF: USA vs AUS"
+  },
+  {
+    "id": "tennis_atp_davis_cup_finals_rr_arg_vs_cro",
+    "sportId": "tennis",
+    "name": "Davis Cup Finals RR: ARG vs CRO (ATP)",
+    "shortName": "Davis Cup Finals RR: ARG vs CRO"
+  },
+  {
+    "id": "tennis_atp_davis_cup_finals_rr_arg_vs_swe",
+    "sportId": "tennis",
+    "name": "Davis Cup Finals RR: ARG vs SWE (ATP)",
+    "shortName": "Davis Cup Finals RR: ARG vs SWE"
+  },
+  {
+    "id": "tennis_atp_davis_cup_finals_rr_aus_vs_bel",
+    "sportId": "tennis",
+    "name": "Davis Cup Finals RR: AUS vs BEL (ATP)",
+    "shortName": "Davis Cup Finals RR: AUS vs BEL"
+  },
+  {
+    "id": "tennis_atp_davis_cup_finals_rr_aus_vs_cze",
+    "sportId": "tennis",
+    "name": "Davis Cup Finals RR: AUS vs CZE (ATP)",
+    "shortName": "Davis Cup Finals RR: AUS vs CZE"
+  },
+  {
+    "id": "tennis_atp_davis_cup_finals_rr_aus_vs_esp",
+    "sportId": "tennis",
+    "name": "Davis Cup Finals RR: AUS vs ESP (ATP)",
+    "shortName": "Davis Cup Finals RR: AUS vs ESP"
+  },
+  {
+    "id": "tennis_atp_davis_cup_finals_rr_aus_vs_fra",
+    "sportId": "tennis",
+    "name": "Davis Cup Finals RR: AUS vs FRA (ATP)",
+    "shortName": "Davis Cup Finals RR: AUS vs FRA"
+  },
+  {
+    "id": "tennis_atp_davis_cup_finals_rr_aus_vs_gbr",
+    "sportId": "tennis",
+    "name": "Davis Cup Finals RR: AUS vs GBR (ATP)",
+    "shortName": "Davis Cup Finals RR: AUS vs GBR"
+  },
+  {
+    "id": "tennis_atp_davis_cup_finals_rr_aus_vs_hun",
+    "sportId": "tennis",
+    "name": "Davis Cup Finals RR: AUS vs HUN (ATP)",
+    "shortName": "Davis Cup Finals RR: AUS vs HUN"
+  },
+  {
+    "id": "tennis_atp_davis_cup_finals_rr_aus_vs_sui",
+    "sportId": "tennis",
+    "name": "Davis Cup Finals RR: AUS vs SUI (ATP)",
+    "shortName": "Davis Cup Finals RR: AUS vs SUI"
+  },
+  {
+    "id": "tennis_atp_davis_cup_finals_rr_bel_vs_bra",
+    "sportId": "tennis",
+    "name": "Davis Cup Finals RR: BEL vs BRA (ATP)",
+    "shortName": "Davis Cup Finals RR: BEL vs BRA"
+  },
+  {
+    "id": "tennis_atp_davis_cup_finals_rr_can_vs_arg",
+    "sportId": "tennis",
+    "name": "Davis Cup Finals RR: CAN vs ARG (ATP)",
+    "shortName": "Davis Cup Finals RR: CAN vs ARG"
+  },
+  {
+    "id": "tennis_atp_davis_cup_finals_rr_can_vs_chi",
+    "sportId": "tennis",
+    "name": "Davis Cup Finals RR: CAN vs CHI (ATP)",
+    "shortName": "Davis Cup Finals RR: CAN vs CHI"
+  },
+  {
+    "id": "tennis_atp_davis_cup_finals_rr_can_vs_fin",
+    "sportId": "tennis",
+    "name": "Davis Cup Finals RR: CAN vs FIN (ATP)",
+    "shortName": "Davis Cup Finals RR: CAN vs FIN"
+  },
+  {
+    "id": "tennis_atp_davis_cup_finals_rr_can_vs_gbr",
+    "sportId": "tennis",
+    "name": "Davis Cup Finals RR: CAN vs GBR (ATP)",
+    "shortName": "Davis Cup Finals RR: CAN vs GBR"
+  },
+  {
+    "id": "tennis_atp_davis_cup_finals_rr_can_vs_ita",
+    "sportId": "tennis",
+    "name": "Davis Cup Finals RR: CAN vs ITA (ATP)",
+    "shortName": "Davis Cup Finals RR: CAN vs ITA"
+  },
+  {
+    "id": "tennis_atp_davis_cup_finals_rr_can_vs_kaz",
+    "sportId": "tennis",
+    "name": "Davis Cup Finals RR: CAN vs KAZ (ATP)",
+    "shortName": "Davis Cup Finals RR: CAN vs KAZ"
+  },
+  {
+    "id": "tennis_atp_davis_cup_finals_rr_can_vs_swe",
+    "sportId": "tennis",
+    "name": "Davis Cup Finals RR: CAN vs SWE (ATP)",
+    "shortName": "Davis Cup Finals RR: CAN vs SWE"
+  },
+  {
+    "id": "tennis_atp_davis_cup_finals_rr_cro_vs_aus",
+    "sportId": "tennis",
+    "name": "Davis Cup Finals RR: CRO vs AUS (ATP)",
+    "shortName": "Davis Cup Finals RR: CRO vs AUS"
+  },
+  {
+    "id": "tennis_atp_davis_cup_finals_rr_cro_vs_fin",
+    "sportId": "tennis",
+    "name": "Davis Cup Finals RR: CRO vs FIN (ATP)",
+    "shortName": "Davis Cup Finals RR: CRO vs FIN"
+  },
+  {
+    "id": "tennis_atp_davis_cup_finals_rr_cro_vs_hun",
+    "sportId": "tennis",
+    "name": "Davis Cup Finals RR: CRO vs HUN (ATP)",
+    "shortName": "Davis Cup Finals RR: CRO vs HUN"
+  },
+  {
+    "id": "tennis_atp_davis_cup_finals_rr_cro_vs_ned",
+    "sportId": "tennis",
+    "name": "Davis Cup Finals RR: CRO vs NED (ATP)",
+    "shortName": "Davis Cup Finals RR: CRO vs NED"
+  },
+  {
+    "id": "tennis_atp_davis_cup_finals_rr_cro_vs_swe",
+    "sportId": "tennis",
+    "name": "Davis Cup Finals RR: CRO vs SWE (ATP)",
+    "shortName": "Davis Cup Finals RR: CRO vs SWE"
+  },
+  {
+    "id": "tennis_atp_davis_cup_finals_rr_cro_vs_usa",
+    "sportId": "tennis",
+    "name": "Davis Cup Finals RR: CRO vs USA (ATP)",
+    "shortName": "Davis Cup Finals RR: CRO vs USA"
+  },
+  {
+    "id": "tennis_atp_davis_cup_finals_rr_cze_vs_esp",
+    "sportId": "tennis",
+    "name": "Davis Cup Finals RR: CZE vs ESP (ATP)",
+    "shortName": "Davis Cup Finals RR: CZE vs ESP"
+  },
+  {
+    "id": "tennis_atp_davis_cup_finals_rr_cze_vs_fra",
+    "sportId": "tennis",
+    "name": "Davis Cup Finals RR: CZE vs FRA (ATP)",
+    "shortName": "Davis Cup Finals RR: CZE vs FRA"
+  },
+  {
+    "id": "tennis_atp_davis_cup_finals_rr_cze_vs_kor",
+    "sportId": "tennis",
+    "name": "Davis Cup Finals RR: CZE vs KOR (ATP)",
+    "shortName": "Davis Cup Finals RR: CZE vs KOR"
+  },
+  {
+    "id": "tennis_atp_davis_cup_finals_rr_esp_vs_can",
+    "sportId": "tennis",
+    "name": "Davis Cup Finals RR: ESP vs CAN (ATP)",
+    "shortName": "Davis Cup Finals RR: ESP vs CAN"
+  },
+  {
+    "id": "tennis_atp_davis_cup_finals_rr_esp_vs_cze",
+    "sportId": "tennis",
+    "name": "Davis Cup Finals RR: ESP vs CZE (ATP)",
+    "shortName": "Davis Cup Finals RR: ESP vs CZE"
+  },
+  {
+    "id": "tennis_atp_davis_cup_finals_rr_esp_vs_ecu",
+    "sportId": "tennis",
+    "name": "Davis Cup Finals RR: ESP vs ECU (ATP)",
+    "shortName": "Davis Cup Finals RR: ESP vs ECU"
+  },
+  {
+    "id": "tennis_atp_davis_cup_finals_rr_esp_vs_kor",
+    "sportId": "tennis",
+    "name": "Davis Cup Finals RR: ESP vs KOR (ATP)",
+    "shortName": "Davis Cup Finals RR: ESP vs KOR"
+  },
+  {
+    "id": "tennis_atp_davis_cup_finals_rr_esp_vs_rtf",
+    "sportId": "tennis",
+    "name": "Davis Cup Finals RR: ESP vs RTF (ATP)",
+    "shortName": "Davis Cup Finals RR: ESP vs RTF"
+  },
+  {
+    "id": "tennis_atp_davis_cup_finals_rr_esp_vs_srb",
+    "sportId": "tennis",
+    "name": "Davis Cup Finals RR: ESP vs SRB (ATP)",
+    "shortName": "Davis Cup Finals RR: ESP vs SRB"
+  },
+  {
+    "id": "tennis_atp_davis_cup_finals_rr_fin_vs_arg",
+    "sportId": "tennis",
+    "name": "Davis Cup Finals RR: FIN vs ARG (ATP)",
+    "shortName": "Davis Cup Finals RR: FIN vs ARG"
+  },
+  {
+    "id": "tennis_atp_davis_cup_finals_rr_fin_vs_gbr",
+    "sportId": "tennis",
+    "name": "Davis Cup Finals RR: FIN vs GBR (ATP)",
+    "shortName": "Davis Cup Finals RR: FIN vs GBR"
+  },
+  {
+    "id": "tennis_atp_davis_cup_finals_rr_fra_vs_aus",
+    "sportId": "tennis",
+    "name": "Davis Cup Finals RR: FRA vs AUS (ATP)",
+    "shortName": "Davis Cup Finals RR: FRA vs AUS"
+  },
+  {
+    "id": "tennis_atp_davis_cup_finals_rr_fra_vs_bel",
+    "sportId": "tennis",
+    "name": "Davis Cup Finals RR: FRA vs BEL (ATP)",
+    "shortName": "Davis Cup Finals RR: FRA vs BEL"
+  },
+  {
+    "id": "tennis_atp_davis_cup_finals_rr_fra_vs_cze",
+    "sportId": "tennis",
+    "name": "Davis Cup Finals RR: FRA vs CZE (ATP)",
+    "shortName": "Davis Cup Finals RR: FRA vs CZE"
+  },
+  {
+    "id": "tennis_atp_davis_cup_finals_rr_fra_vs_esp",
+    "sportId": "tennis",
+    "name": "Davis Cup Finals RR: FRA vs ESP (ATP)",
+    "shortName": "Davis Cup Finals RR: FRA vs ESP"
+  },
+  {
+    "id": "tennis_atp_davis_cup_finals_rr_fra_vs_gbr",
+    "sportId": "tennis",
+    "name": "Davis Cup Finals RR: FRA vs GBR (ATP)",
+    "shortName": "Davis Cup Finals RR: FRA vs GBR"
+  },
+  {
+    "id": "tennis_atp_davis_cup_finals_rr_fra_vs_ger",
+    "sportId": "tennis",
+    "name": "Davis Cup Finals RR: FRA vs GER (ATP)",
+    "shortName": "Davis Cup Finals RR: FRA vs GER"
+  },
+  {
+    "id": "tennis_atp_davis_cup_finals_rr_fra_vs_sui",
+    "sportId": "tennis",
+    "name": "Davis Cup Finals RR: FRA vs SUI (ATP)",
+    "shortName": "Davis Cup Finals RR: FRA vs SUI"
+  },
+  {
+    "id": "tennis_atp_davis_cup_finals_rr_gbr_vs_arg",
+    "sportId": "tennis",
+    "name": "Davis Cup Finals RR: GBR vs ARG (ATP)",
+    "shortName": "Davis Cup Finals RR: GBR vs ARG"
+  },
+  {
+    "id": "tennis_atp_davis_cup_finals_rr_gbr_vs_cze",
+    "sportId": "tennis",
+    "name": "Davis Cup Finals RR: GBR vs CZE (ATP)",
+    "shortName": "Davis Cup Finals RR: GBR vs CZE"
+  },
+  {
+    "id": "tennis_atp_davis_cup_finals_rr_gbr_vs_fra",
+    "sportId": "tennis",
+    "name": "Davis Cup Finals RR: GBR vs FRA (ATP)",
+    "shortName": "Davis Cup Finals RR: GBR vs FRA"
+  },
+  {
+    "id": "tennis_atp_davis_cup_finals_rr_gbr_vs_kaz",
+    "sportId": "tennis",
+    "name": "Davis Cup Finals RR: GBR vs KAZ (ATP)",
+    "shortName": "Davis Cup Finals RR: GBR vs KAZ"
+  },
+  {
+    "id": "tennis_atp_davis_cup_finals_rr_gbr_vs_ned",
+    "sportId": "tennis",
+    "name": "Davis Cup Finals RR: GBR vs NED (ATP)",
+    "shortName": "Davis Cup Finals RR: GBR vs NED"
+  },
+  {
+    "id": "tennis_atp_davis_cup_finals_rr_gbr_vs_sui",
+    "sportId": "tennis",
+    "name": "Davis Cup Finals RR: GBR vs SUI (ATP)",
+    "shortName": "Davis Cup Finals RR: GBR vs SUI"
+  },
+  {
+    "id": "tennis_atp_davis_cup_finals_rr_ger_vs_aus",
+    "sportId": "tennis",
+    "name": "Davis Cup Finals RR: GER vs AUS (ATP)",
+    "shortName": "Davis Cup Finals RR: GER vs AUS"
+  },
+  {
+    "id": "tennis_atp_davis_cup_finals_rr_ger_vs_aut",
+    "sportId": "tennis",
+    "name": "Davis Cup Finals RR: GER vs AUT (ATP)",
+    "shortName": "Davis Cup Finals RR: GER vs AUT"
+  },
+  {
+    "id": "tennis_atp_davis_cup_finals_rr_ger_vs_bel",
+    "sportId": "tennis",
+    "name": "Davis Cup Finals RR: GER vs BEL (ATP)",
+    "shortName": "Davis Cup Finals RR: GER vs BEL"
+  },
+  {
+    "id": "tennis_atp_davis_cup_finals_rr_ger_vs_chi",
+    "sportId": "tennis",
+    "name": "Davis Cup Finals RR: GER vs CHI (ATP)",
+    "shortName": "Davis Cup Finals RR: GER vs CHI"
+  },
+  {
+    "id": "tennis_atp_davis_cup_finals_rr_ger_vs_svk",
+    "sportId": "tennis",
+    "name": "Davis Cup Finals RR: GER vs SVK (ATP)",
+    "shortName": "Davis Cup Finals RR: GER vs SVK"
+  },
+  {
+    "id": "tennis_atp_davis_cup_finals_rr_ger_vs_usa",
+    "sportId": "tennis",
+    "name": "Davis Cup Finals RR: GER vs USA (ATP)",
+    "shortName": "Davis Cup Finals RR: GER vs USA"
+  },
+  {
+    "id": "tennis_atp_davis_cup_finals_rr_ita_vs_arg",
+    "sportId": "tennis",
+    "name": "Davis Cup Finals RR: ITA vs ARG (ATP)",
+    "shortName": "Davis Cup Finals RR: ITA vs ARG"
+  },
+  {
+    "id": "tennis_atp_davis_cup_finals_rr_ita_vs_bel",
+    "sportId": "tennis",
+    "name": "Davis Cup Finals RR: ITA vs BEL (ATP)",
+    "shortName": "Davis Cup Finals RR: ITA vs BEL"
+  },
+  {
+    "id": "tennis_atp_davis_cup_finals_rr_ita_vs_bra",
+    "sportId": "tennis",
+    "name": "Davis Cup Finals RR: ITA vs BRA (ATP)",
+    "shortName": "Davis Cup Finals RR: ITA vs BRA"
+  },
+  {
+    "id": "tennis_atp_davis_cup_finals_rr_ita_vs_chi",
+    "sportId": "tennis",
+    "name": "Davis Cup Finals RR: ITA vs CHI (ATP)",
+    "shortName": "Davis Cup Finals RR: ITA vs CHI"
+  },
+  {
+    "id": "tennis_atp_davis_cup_finals_rr_ita_vs_col",
+    "sportId": "tennis",
+    "name": "Davis Cup Finals RR: ITA vs COL (ATP)",
+    "shortName": "Davis Cup Finals RR: ITA vs COL"
+  },
+  {
+    "id": "tennis_atp_davis_cup_finals_rr_ita_vs_cro",
+    "sportId": "tennis",
+    "name": "Davis Cup Finals RR: ITA vs CRO (ATP)",
+    "shortName": "Davis Cup Finals RR: ITA vs CRO"
+  },
+  {
+    "id": "tennis_atp_davis_cup_finals_rr_ita_vs_ned",
+    "sportId": "tennis",
+    "name": "Davis Cup Finals RR: ITA vs NED (ATP)",
+    "shortName": "Davis Cup Finals RR: ITA vs NED"
+  },
+  {
+    "id": "tennis_atp_davis_cup_finals_rr_ita_vs_swe",
+    "sportId": "tennis",
+    "name": "Davis Cup Finals RR: ITA vs SWE (ATP)",
+    "shortName": "Davis Cup Finals RR: ITA vs SWE"
+  },
+  {
+    "id": "tennis_atp_davis_cup_finals_rr_kaz_vs_ned",
+    "sportId": "tennis",
+    "name": "Davis Cup Finals RR: KAZ vs NED (ATP)",
+    "shortName": "Davis Cup Finals RR: KAZ vs NED"
+  },
+  {
+    "id": "tennis_atp_davis_cup_finals_rr_kaz_vs_swe",
+    "sportId": "tennis",
+    "name": "Davis Cup Finals RR: KAZ vs SWE (ATP)",
+    "shortName": "Davis Cup Finals RR: KAZ vs SWE"
+  },
+  {
+    "id": "tennis_atp_davis_cup_finals_rr_kor_vs_can",
+    "sportId": "tennis",
+    "name": "Davis Cup Finals RR: KOR vs CAN (ATP)",
+    "shortName": "Davis Cup Finals RR: KOR vs CAN"
+  },
+  {
+    "id": "tennis_atp_davis_cup_finals_rr_kor_vs_srb",
+    "sportId": "tennis",
+    "name": "Davis Cup Finals RR: KOR vs SRB (ATP)",
+    "shortName": "Davis Cup Finals RR: KOR vs SRB"
+  },
+  {
+    "id": "tennis_atp_davis_cup_finals_rr_ned_vs_bel",
+    "sportId": "tennis",
+    "name": "Davis Cup Finals RR: NED vs BEL (ATP)",
+    "shortName": "Davis Cup Finals RR: NED vs BEL"
+  },
+  {
+    "id": "tennis_atp_davis_cup_finals_rr_ned_vs_bra",
+    "sportId": "tennis",
+    "name": "Davis Cup Finals RR: NED vs BRA (ATP)",
+    "shortName": "Davis Cup Finals RR: NED vs BRA"
+  },
+  {
+    "id": "tennis_atp_davis_cup_finals_rr_ned_vs_fin",
+    "sportId": "tennis",
+    "name": "Davis Cup Finals RR: NED vs FIN (ATP)",
+    "shortName": "Davis Cup Finals RR: NED vs FIN"
+  },
+  {
+    "id": "tennis_atp_davis_cup_finals_rr_ned_vs_usa",
+    "sportId": "tennis",
+    "name": "Davis Cup Finals RR: NED vs USA (ATP)",
+    "shortName": "Davis Cup Finals RR: NED vs USA"
+  },
+  {
+    "id": "tennis_atp_davis_cup_finals_rr_rtf_vs_ecu",
+    "sportId": "tennis",
+    "name": "Davis Cup Finals RR: RTF vs ECU (ATP)",
+    "shortName": "Davis Cup Finals RR: RTF vs ECU"
+  },
+  {
+    "id": "tennis_atp_davis_cup_finals_rr_srb_vs_aut",
+    "sportId": "tennis",
+    "name": "Davis Cup Finals RR: SRB vs AUT (ATP)",
+    "shortName": "Davis Cup Finals RR: SRB vs AUT"
+  },
+  {
+    "id": "tennis_atp_davis_cup_finals_rr_srb_vs_can",
+    "sportId": "tennis",
+    "name": "Davis Cup Finals RR: SRB vs CAN (ATP)",
+    "shortName": "Davis Cup Finals RR: SRB vs CAN"
+  },
+  {
+    "id": "tennis_atp_davis_cup_finals_rr_srb_vs_cze",
+    "sportId": "tennis",
+    "name": "Davis Cup Finals RR: SRB vs CZE (ATP)",
+    "shortName": "Davis Cup Finals RR: SRB vs CZE"
+  },
+  {
+    "id": "tennis_atp_davis_cup_finals_rr_srb_vs_ger",
+    "sportId": "tennis",
+    "name": "Davis Cup Finals RR: SRB vs GER (ATP)",
+    "shortName": "Davis Cup Finals RR: SRB vs GER"
+  },
+  {
+    "id": "tennis_atp_davis_cup_finals_rr_srb_vs_kor",
+    "sportId": "tennis",
+    "name": "Davis Cup Finals RR: SRB vs KOR (ATP)",
+    "shortName": "Davis Cup Finals RR: SRB vs KOR"
+  },
+  {
+    "id": "tennis_atp_davis_cup_finals_rr_svk_vs_chi",
+    "sportId": "tennis",
+    "name": "Davis Cup Finals RR: SVK vs CHI (ATP)",
+    "shortName": "Davis Cup Finals RR: SVK vs CHI"
+  },
+  {
+    "id": "tennis_atp_davis_cup_finals_rr_swe_vs_chi",
+    "sportId": "tennis",
+    "name": "Davis Cup Finals RR: SWE vs CHI (ATP)",
+    "shortName": "Davis Cup Finals RR: SWE vs CHI"
+  },
+  {
+    "id": "tennis_atp_davis_cup_finals_rr_usa_vs_chi",
+    "sportId": "tennis",
+    "name": "Davis Cup Finals RR: USA vs CHI (ATP)",
+    "shortName": "Davis Cup Finals RR: USA vs CHI"
+  },
+  {
+    "id": "tennis_atp_davis_cup_finals_rr_usa_vs_col",
+    "sportId": "tennis",
+    "name": "Davis Cup Finals RR: USA vs COL (ATP)",
+    "shortName": "Davis Cup Finals RR: USA vs COL"
+  },
+  {
+    "id": "tennis_atp_davis_cup_finals_rr_usa_vs_fin",
+    "sportId": "tennis",
+    "name": "Davis Cup Finals RR: USA vs FIN (ATP)",
+    "shortName": "Davis Cup Finals RR: USA vs FIN"
+  },
+  {
+    "id": "tennis_atp_davis_cup_finals_rr_usa_vs_gbr",
+    "sportId": "tennis",
+    "name": "Davis Cup Finals RR: USA vs GBR (ATP)",
+    "shortName": "Davis Cup Finals RR: USA vs GBR"
+  },
+  {
+    "id": "tennis_atp_davis_cup_finals_rr_usa_vs_ita",
+    "sportId": "tennis",
+    "name": "Davis Cup Finals RR: USA vs ITA (ATP)",
+    "shortName": "Davis Cup Finals RR: USA vs ITA"
+  },
+  {
+    "id": "tennis_atp_davis_cup_finals_rr_usa_vs_kaz",
+    "sportId": "tennis",
+    "name": "Davis Cup Finals RR: USA vs KAZ (ATP)",
+    "shortName": "Davis Cup Finals RR: USA vs KAZ"
+  },
+  {
+    "id": "tennis_atp_davis_cup_finals_rr_usa_vs_ned",
+    "sportId": "tennis",
+    "name": "Davis Cup Finals RR: USA vs NED (ATP)",
+    "shortName": "Davis Cup Finals RR: USA vs NED"
+  },
+  {
+    "id": "tennis_atp_davis_cup_finals_rr_usa_vs_svk",
+    "sportId": "tennis",
+    "name": "Davis Cup Finals RR: USA vs SVK (ATP)",
+    "shortName": "Davis Cup Finals RR: USA vs SVK"
+  },
+  {
+    "id": "tennis_atp_davis_cup_finals_sf_aus_vs_cro",
+    "sportId": "tennis",
+    "name": "Davis Cup Finals SF: AUS vs CRO (ATP)",
+    "shortName": "Davis Cup Finals SF: AUS vs CRO"
+  },
+  {
+    "id": "tennis_atp_davis_cup_finals_sf_cro_vs_srb",
+    "sportId": "tennis",
+    "name": "Davis Cup Finals SF: CRO vs SRB (ATP)",
+    "shortName": "Davis Cup Finals SF: CRO vs SRB"
+  },
+  {
+    "id": "tennis_atp_davis_cup_finals_sf_esp_vs_ger",
+    "sportId": "tennis",
+    "name": "Davis Cup Finals SF: ESP vs GER (ATP)",
+    "shortName": "Davis Cup Finals SF: ESP vs GER"
+  },
+  {
+    "id": "tennis_atp_davis_cup_finals_sf_fin_vs_aus",
+    "sportId": "tennis",
+    "name": "Davis Cup Finals SF: FIN vs AUS (ATP)",
+    "shortName": "Davis Cup Finals SF: FIN vs AUS"
+  },
+  {
+    "id": "tennis_atp_davis_cup_finals_sf_ger_vs_ned",
+    "sportId": "tennis",
+    "name": "Davis Cup Finals SF: GER vs NED (ATP)",
+    "shortName": "Davis Cup Finals SF: GER vs NED"
+  },
+  {
+    "id": "tennis_atp_davis_cup_finals_sf_ita_vs_aus",
+    "sportId": "tennis",
+    "name": "Davis Cup Finals SF: ITA vs AUS (ATP)",
+    "shortName": "Davis Cup Finals SF: ITA vs AUS"
+  },
+  {
+    "id": "tennis_atp_davis_cup_finals_sf_ita_vs_bel",
+    "sportId": "tennis",
+    "name": "Davis Cup Finals SF: ITA vs BEL (ATP)",
+    "shortName": "Davis Cup Finals SF: ITA vs BEL"
+  },
+  {
+    "id": "tennis_atp_davis_cup_finals_sf_ita_vs_can",
+    "sportId": "tennis",
+    "name": "Davis Cup Finals SF: ITA vs CAN (ATP)",
+    "shortName": "Davis Cup Finals SF: ITA vs CAN"
+  },
+  {
+    "id": "tennis_atp_davis_cup_finals_sf_ita_vs_srb",
+    "sportId": "tennis",
+    "name": "Davis Cup Finals SF: ITA vs SRB (ATP)",
+    "shortName": "Davis Cup Finals SF: ITA vs SRB"
+  },
+  {
+    "id": "tennis_atp_davis_cup_finals_sf_rtf_vs_ger",
+    "sportId": "tennis",
+    "name": "Davis Cup Finals SF: RTF vs GER (ATP)",
+    "shortName": "Davis Cup Finals SF: RTF vs GER"
+  },
+  {
+    "id": "tennis_atp_davis_cup_g2_geo_vs_est",
+    "sportId": "tennis",
+    "name": "Davis Cup G2 GEO vs EST (ATP)",
+    "shortName": "Davis Cup G2 GEO vs EST"
+  },
+  {
+    "id": "tennis_atp_davis_cup_g2_ita_vs_kor",
+    "sportId": "tennis",
+    "name": "Davis Cup G2 ITA vs KOR (ATP)",
+    "shortName": "Davis Cup G2 ITA vs KOR"
+  },
+  {
+    "id": "tennis_atp_davis_cup_qls_r1_arg_vs_col",
+    "sportId": "tennis",
+    "name": "Davis Cup QLS R1: ARG vs COL (ATP)",
+    "shortName": "Davis Cup QLS R1: ARG vs COL"
+  },
+  {
+    "id": "tennis_atp_davis_cup_qls_r1_arg_vs_cze",
+    "sportId": "tennis",
+    "name": "Davis Cup QLS R1: ARG vs CZE (ATP)",
+    "shortName": "Davis Cup QLS R1: ARG vs CZE"
+  },
+  {
+    "id": "tennis_atp_davis_cup_qls_r1_arg_vs_fin",
+    "sportId": "tennis",
+    "name": "Davis Cup QLS R1: ARG vs FIN (ATP)",
+    "shortName": "Davis Cup QLS R1: ARG vs FIN"
+  },
+  {
+    "id": "tennis_atp_davis_cup_qls_r1_arg_vs_kaz",
+    "sportId": "tennis",
+    "name": "Davis Cup QLS R1: ARG vs KAZ (ATP)",
+    "shortName": "Davis Cup QLS R1: ARG vs KAZ"
+  },
+  {
+    "id": "tennis_atp_davis_cup_qls_r1_aus_vs_bra",
+    "sportId": "tennis",
+    "name": "Davis Cup QLS R1: AUS vs BRA (ATP)",
+    "shortName": "Davis Cup QLS R1: AUS vs BRA"
+  },
+  {
+    "id": "tennis_atp_davis_cup_qls_r1_aus_vs_hun",
+    "sportId": "tennis",
+    "name": "Davis Cup QLS R1: AUS vs HUN (ATP)",
+    "shortName": "Davis Cup QLS R1: AUS vs HUN"
+  },
+  {
+    "id": "tennis_atp_davis_cup_qls_r1_aut_vs_fin",
+    "sportId": "tennis",
+    "name": "Davis Cup QLS R1: AUT vs FIN (ATP)",
+    "shortName": "Davis Cup QLS R1: AUT vs FIN"
+  },
+  {
+    "id": "tennis_atp_davis_cup_qls_r1_aut_vs_kor",
+    "sportId": "tennis",
+    "name": "Davis Cup QLS R1: AUT vs KOR (ATP)",
+    "shortName": "Davis Cup QLS R1: AUT vs KOR"
+  },
+  {
+    "id": "tennis_atp_davis_cup_qls_r1_aut_vs_uru",
+    "sportId": "tennis",
+    "name": "Davis Cup QLS R1: AUT vs URU (ATP)",
+    "shortName": "Davis Cup QLS R1: AUT vs URU"
+  },
+  {
+    "id": "tennis_atp_davis_cup_qls_r1_bel_vs_chi",
+    "sportId": "tennis",
+    "name": "Davis Cup QLS R1: BEL vs CHI (ATP)",
+    "shortName": "Davis Cup QLS R1: BEL vs CHI"
+  },
+  {
+    "id": "tennis_atp_davis_cup_qls_r1_bel_vs_fin",
+    "sportId": "tennis",
+    "name": "Davis Cup QLS R1: BEL vs FIN (ATP)",
+    "shortName": "Davis Cup QLS R1: BEL vs FIN"
+  },
+  {
+    "id": "tennis_atp_davis_cup_qls_r1_bel_vs_hun",
+    "sportId": "tennis",
+    "name": "Davis Cup QLS R1: BEL vs HUN (ATP)",
+    "shortName": "Davis Cup QLS R1: BEL vs HUN"
+  },
+  {
+    "id": "tennis_atp_davis_cup_qls_r1_bel_vs_kor",
+    "sportId": "tennis",
+    "name": "Davis Cup QLS R1: BEL vs KOR (ATP)",
+    "shortName": "Davis Cup QLS R1: BEL vs KOR"
+  },
+  {
+    "id": "tennis_atp_davis_cup_qls_r1_bul_vs_bel",
+    "sportId": "tennis",
+    "name": "Davis Cup QLS R1: BUL vs BEL (ATP)",
+    "shortName": "Davis Cup QLS R1: BUL vs BEL"
+  },
+  {
+    "id": "tennis_atp_davis_cup_qls_r1_can_vs_bra",
+    "sportId": "tennis",
+    "name": "Davis Cup QLS R1: CAN vs BRA (ATP)",
+    "shortName": "Davis Cup QLS R1: CAN vs BRA"
+  },
+  {
+    "id": "tennis_atp_davis_cup_qls_r1_can_vs_hun",
+    "sportId": "tennis",
+    "name": "Davis Cup QLS R1: CAN vs HUN (ATP)",
+    "shortName": "Davis Cup QLS R1: CAN vs HUN"
+  },
+  {
+    "id": "tennis_atp_davis_cup_qls_r1_can_vs_kor",
+    "sportId": "tennis",
+    "name": "Davis Cup QLS R1: CAN vs KOR (ATP)",
+    "shortName": "Davis Cup QLS R1: CAN vs KOR"
+  },
+  {
+    "id": "tennis_atp_davis_cup_qls_r1_can_vs_ned",
+    "sportId": "tennis",
+    "name": "Davis Cup QLS R1: CAN vs NED (ATP)",
+    "shortName": "Davis Cup QLS R1: CAN vs NED"
+  },
+  {
+    "id": "tennis_atp_davis_cup_qls_r1_chi_vs_per",
+    "sportId": "tennis",
+    "name": "Davis Cup QLS R1: CHI vs PER (ATP)",
+    "shortName": "Davis Cup QLS R1: CHI vs PER"
+  },
+  {
+    "id": "tennis_atp_davis_cup_qls_r1_chi_vs_srb",
+    "sportId": "tennis",
+    "name": "Davis Cup QLS R1: CHI vs SRB (ATP)",
+    "shortName": "Davis Cup QLS R1: CHI vs SRB"
+  },
+  {
+    "id": "tennis_atp_davis_cup_qls_r1_cro_vs_aut",
+    "sportId": "tennis",
+    "name": "Davis Cup QLS R1: CRO vs AUT (ATP)",
+    "shortName": "Davis Cup QLS R1: CRO vs AUT"
+  },
+  {
+    "id": "tennis_atp_davis_cup_qls_r1_cro_vs_bel",
+    "sportId": "tennis",
+    "name": "Davis Cup QLS R1: CRO vs BEL (ATP)",
+    "shortName": "Davis Cup QLS R1: CRO vs BEL"
+  },
+  {
+    "id": "tennis_atp_davis_cup_qls_r1_cro_vs_den",
+    "sportId": "tennis",
+    "name": "Davis Cup QLS R1: CRO vs DEN (ATP)",
+    "shortName": "Davis Cup QLS R1: CRO vs DEN"
+  },
+  {
+    "id": "tennis_atp_davis_cup_qls_r1_cro_vs_ind",
+    "sportId": "tennis",
+    "name": "Davis Cup QLS R1: CRO vs IND (ATP)",
+    "shortName": "Davis Cup QLS R1: CRO vs IND"
+  },
+  {
+    "id": "tennis_atp_davis_cup_qls_r1_cro_vs_svk",
+    "sportId": "tennis",
+    "name": "Davis Cup QLS R1: CRO vs SVK (ATP)",
+    "shortName": "Davis Cup QLS R1: CRO vs SVK"
+  },
+  {
+    "id": "tennis_atp_davis_cup_qls_r1_cze_vs_isr",
+    "sportId": "tennis",
+    "name": "Davis Cup QLS R1: CZE vs ISR (ATP)",
+    "shortName": "Davis Cup QLS R1: CZE vs ISR"
+  },
+  {
+    "id": "tennis_atp_davis_cup_qls_r1_cze_vs_kor",
+    "sportId": "tennis",
+    "name": "Davis Cup QLS R1: CZE vs KOR (ATP)",
+    "shortName": "Davis Cup QLS R1: CZE vs KOR"
+  },
+  {
+    "id": "tennis_atp_davis_cup_qls_r1_cze_vs_por",
+    "sportId": "tennis",
+    "name": "Davis Cup QLS R1: CZE vs POR (ATP)",
+    "shortName": "Davis Cup QLS R1: CZE vs POR"
+  },
+  {
+    "id": "tennis_atp_davis_cup_qls_r1_cze_vs_svk",
+    "sportId": "tennis",
+    "name": "Davis Cup QLS R1: CZE vs SVK (ATP)",
+    "shortName": "Davis Cup QLS R1: CZE vs SVK"
+  },
+  {
+    "id": "tennis_atp_davis_cup_qls_r1_cze_vs_swe",
+    "sportId": "tennis",
+    "name": "Davis Cup QLS R1: CZE vs SWE (ATP)",
+    "shortName": "Davis Cup QLS R1: CZE vs SWE"
+  },
+  {
+    "id": "tennis_atp_davis_cup_qls_r1_den_vs_srb",
+    "sportId": "tennis",
+    "name": "Davis Cup QLS R1: DEN vs SRB (ATP)",
+    "shortName": "Davis Cup QLS R1: DEN vs SRB"
+  },
+  {
+    "id": "tennis_atp_davis_cup_qls_r1_ecu_vs_aus",
+    "sportId": "tennis",
+    "name": "Davis Cup QLS R1: ECU vs AUS (ATP)",
+    "shortName": "Davis Cup QLS R1: ECU vs AUS"
+  },
+  {
+    "id": "tennis_atp_davis_cup_qls_r1_esp_vs_rou",
+    "sportId": "tennis",
+    "name": "Davis Cup QLS R1: ESP vs ROU (ATP)",
+    "shortName": "Davis Cup QLS R1: ESP vs ROU"
+  },
+  {
+    "id": "tennis_atp_davis_cup_qls_r1_esp_vs_sui",
+    "sportId": "tennis",
+    "name": "Davis Cup QLS R1: ESP vs SUI (ATP)",
+    "shortName": "Davis Cup QLS R1: ESP vs SUI"
+  },
+  {
+    "id": "tennis_atp_davis_cup_qls_r1_fin_vs_por",
+    "sportId": "tennis",
+    "name": "Davis Cup QLS R1: FIN vs POR (ATP)",
+    "shortName": "Davis Cup QLS R1: FIN vs POR"
+  },
+  {
+    "id": "tennis_atp_davis_cup_qls_r1_fra_vs_bra",
+    "sportId": "tennis",
+    "name": "Davis Cup QLS R1: FRA vs BRA (ATP)",
+    "shortName": "Davis Cup QLS R1: FRA vs BRA"
+  },
+  {
+    "id": "tennis_atp_davis_cup_qls_r1_fra_vs_ecu",
+    "sportId": "tennis",
+    "name": "Davis Cup QLS R1: FRA vs ECU (ATP)",
+    "shortName": "Davis Cup QLS R1: FRA vs ECU"
+  },
+  {
+    "id": "tennis_atp_davis_cup_qls_r1_fra_vs_hun",
+    "sportId": "tennis",
+    "name": "Davis Cup QLS R1: FRA vs HUN (ATP)",
+    "shortName": "Davis Cup QLS R1: FRA vs HUN"
+  },
+  {
+    "id": "tennis_atp_davis_cup_qls_r1_fra_vs_svk",
+    "sportId": "tennis",
+    "name": "Davis Cup QLS R1: FRA vs SVK (ATP)",
+    "shortName": "Davis Cup QLS R1: FRA vs SVK"
+  },
+  {
+    "id": "tennis_atp_davis_cup_qls_r1_gbr_vs_col",
+    "sportId": "tennis",
+    "name": "Davis Cup QLS R1: GBR vs COL (ATP)",
+    "shortName": "Davis Cup QLS R1: GBR vs COL"
+  },
+  {
+    "id": "tennis_atp_davis_cup_qls_r1_ger_vs_blr",
+    "sportId": "tennis",
+    "name": "Davis Cup QLS R1: GER vs BLR (ATP)",
+    "shortName": "Davis Cup QLS R1: GER vs BLR"
+  },
+  {
+    "id": "tennis_atp_davis_cup_qls_r1_ger_vs_bra",
+    "sportId": "tennis",
+    "name": "Davis Cup QLS R1: GER vs BRA (ATP)",
+    "shortName": "Davis Cup QLS R1: GER vs BRA"
+  },
+  {
+    "id": "tennis_atp_davis_cup_qls_r1_ger_vs_per",
+    "sportId": "tennis",
+    "name": "Davis Cup QLS R1: GER vs PER (ATP)",
+    "shortName": "Davis Cup QLS R1: GER vs PER"
+  },
+  {
+    "id": "tennis_atp_davis_cup_qls_r1_ger_vs_sui",
+    "sportId": "tennis",
+    "name": "Davis Cup QLS R1: GER vs SUI (ATP)",
+    "shortName": "Davis Cup QLS R1: GER vs SUI"
+  },
+  {
+    "id": "tennis_atp_davis_cup_qls_r1_hun_vs_ger",
+    "sportId": "tennis",
+    "name": "Davis Cup QLS R1: HUN vs GER (ATP)",
+    "shortName": "Davis Cup QLS R1: HUN vs GER"
+  },
+  {
+    "id": "tennis_atp_davis_cup_qls_r1_hun_vs_usa",
+    "sportId": "tennis",
+    "name": "Davis Cup QLS R1: HUN vs USA (ATP)",
+    "shortName": "Davis Cup QLS R1: HUN vs USA"
+  },
+  {
+    "id": "tennis_atp_davis_cup_qls_r1_ind_vs_ned",
+    "sportId": "tennis",
+    "name": "Davis Cup QLS R1: IND vs NED (ATP)",
+    "shortName": "Davis Cup QLS R1: IND vs NED"
+  },
+  {
+    "id": "tennis_atp_davis_cup_qls_r1_isr_vs_ger",
+    "sportId": "tennis",
+    "name": "Davis Cup QLS R1: ISR vs GER (ATP)",
+    "shortName": "Davis Cup QLS R1: ISR vs GER"
+  },
+  {
+    "id": "tennis_atp_davis_cup_qls_r1_ita_vs_svk",
+    "sportId": "tennis",
+    "name": "Davis Cup QLS R1: ITA vs SVK (ATP)",
+    "shortName": "Davis Cup QLS R1: ITA vs SVK"
+  },
+  {
+    "id": "tennis_atp_davis_cup_qls_r1_jpn_vs_aut",
+    "sportId": "tennis",
+    "name": "Davis Cup QLS R1: JPN vs AUT (ATP)",
+    "shortName": "Davis Cup QLS R1: JPN vs AUT"
+  },
+  {
+    "id": "tennis_atp_davis_cup_qls_r1_jpn_vs_ecu",
+    "sportId": "tennis",
+    "name": "Davis Cup QLS R1: JPN vs ECU (ATP)",
+    "shortName": "Davis Cup QLS R1: JPN vs ECU"
+  },
+  {
+    "id": "tennis_atp_davis_cup_qls_r1_jpn_vs_gbr",
+    "sportId": "tennis",
+    "name": "Davis Cup QLS R1: JPN vs GBR (ATP)",
+    "shortName": "Davis Cup QLS R1: JPN vs GBR"
+  },
+  {
+    "id": "tennis_atp_davis_cup_qls_r1_kaz_vs_chi",
+    "sportId": "tennis",
+    "name": "Davis Cup QLS R1: KAZ vs CHI (ATP)",
+    "shortName": "Davis Cup QLS R1: KAZ vs CHI"
+  },
+  {
+    "id": "tennis_atp_davis_cup_qls_r1_kaz_vs_ned",
+    "sportId": "tennis",
+    "name": "Davis Cup QLS R1: KAZ vs NED (ATP)",
+    "shortName": "Davis Cup QLS R1: KAZ vs NED"
+  },
+  {
+    "id": "tennis_atp_davis_cup_qls_r1_kaz_vs_nor",
+    "sportId": "tennis",
+    "name": "Davis Cup QLS R1: KAZ vs NOR (ATP)",
+    "shortName": "Davis Cup QLS R1: KAZ vs NOR"
+  },
+  {
+    "id": "tennis_atp_davis_cup_qls_r1_kor_vs_arg",
+    "sportId": "tennis",
+    "name": "Davis Cup QLS R1: KOR vs ARG (ATP)",
+    "shortName": "Davis Cup QLS R1: KOR vs ARG"
+  },
+  {
+    "id": "tennis_atp_davis_cup_qls_r1_ned_vs_sui",
+    "sportId": "tennis",
+    "name": "Davis Cup QLS R1: NED vs SUI (ATP)",
+    "shortName": "Davis Cup QLS R1: NED vs SUI"
+  },
+  {
+    "id": "tennis_atp_davis_cup_qls_r1_ned_vs_svk",
+    "sportId": "tennis",
+    "name": "Davis Cup QLS R1: NED vs SVK (ATP)",
+    "shortName": "Davis Cup QLS R1: NED vs SVK"
+  },
+  {
+    "id": "tennis_atp_davis_cup_qls_r1_nor_vs_arg",
+    "sportId": "tennis",
+    "name": "Davis Cup QLS R1: NOR vs ARG (ATP)",
+    "shortName": "Davis Cup QLS R1: NOR vs ARG"
+  },
+  {
+    "id": "tennis_atp_davis_cup_qls_r1_nor_vs_gbr",
+    "sportId": "tennis",
+    "name": "Davis Cup QLS R1: NOR vs GBR (ATP)",
+    "shortName": "Davis Cup QLS R1: NOR vs GBR"
+  },
+  {
+    "id": "tennis_atp_davis_cup_qls_r1_srb_vs_nor",
+    "sportId": "tennis",
+    "name": "Davis Cup QLS R1: SRB vs NOR (ATP)",
+    "shortName": "Davis Cup QLS R1: SRB vs NOR"
+  },
+  {
+    "id": "tennis_atp_davis_cup_qls_r1_srb_vs_svk",
+    "sportId": "tennis",
+    "name": "Davis Cup QLS R1: SRB vs SVK (ATP)",
+    "shortName": "Davis Cup QLS R1: SRB vs SVK"
+  },
+  {
+    "id": "tennis_atp_davis_cup_qls_r1_swe_vs_arg",
+    "sportId": "tennis",
+    "name": "Davis Cup QLS R1: SWE vs ARG (ATP)",
+    "shortName": "Davis Cup QLS R1: SWE vs ARG"
+  },
+  {
+    "id": "tennis_atp_davis_cup_qls_r1_swe_vs_bih",
+    "sportId": "tennis",
+    "name": "Davis Cup QLS R1: SWE vs BIH (ATP)",
+    "shortName": "Davis Cup QLS R1: SWE vs BIH"
+  },
+  {
+    "id": "tennis_atp_davis_cup_qls_r1_swe_vs_bra",
+    "sportId": "tennis",
+    "name": "Davis Cup QLS R1: SWE vs BRA (ATP)",
+    "shortName": "Davis Cup QLS R1: SWE vs BRA"
+  },
+  {
+    "id": "tennis_atp_davis_cup_qls_r1_swe_vs_chi",
+    "sportId": "tennis",
+    "name": "Davis Cup QLS R1: SWE vs CHI (ATP)",
+    "shortName": "Davis Cup QLS R1: SWE vs CHI"
+  },
+  {
+    "id": "tennis_atp_davis_cup_qls_r1_swe_vs_jpn",
+    "sportId": "tennis",
+    "name": "Davis Cup QLS R1: SWE vs JPN (ATP)",
+    "shortName": "Davis Cup QLS R1: SWE vs JPN"
+  },
+  {
+    "id": "tennis_atp_davis_cup_qls_r1_tpe_vs_fra",
+    "sportId": "tennis",
+    "name": "Davis Cup QLS R1: TPE vs FRA (ATP)",
+    "shortName": "Davis Cup QLS R1: TPE vs FRA"
+  },
+  {
+    "id": "tennis_atp_davis_cup_qls_r1_tpe_vs_usa",
+    "sportId": "tennis",
+    "name": "Davis Cup QLS R1: TPE vs USA (ATP)",
+    "shortName": "Davis Cup QLS R1: TPE vs USA"
+  },
+  {
+    "id": "tennis_atp_davis_cup_qls_r1_ukr_vs_usa",
+    "sportId": "tennis",
+    "name": "Davis Cup QLS R1: UKR vs USA (ATP)",
+    "shortName": "Davis Cup QLS R1: UKR vs USA"
+  },
+  {
+    "id": "tennis_atp_davis_cup_qls_r1_usa_vs_col",
+    "sportId": "tennis",
+    "name": "Davis Cup QLS R1: USA vs COL (ATP)",
+    "shortName": "Davis Cup QLS R1: USA vs COL"
+  },
+  {
+    "id": "tennis_atp_davis_cup_qls_r1_usa_vs_uzb",
+    "sportId": "tennis",
+    "name": "Davis Cup QLS R1: USA vs UZB (ATP)",
+    "shortName": "Davis Cup QLS R1: USA vs UZB"
+  },
+  {
+    "id": "tennis_atp_davis_cup_qls_r2_aus_vs_bel",
+    "sportId": "tennis",
+    "name": "Davis Cup QLS R2: AUS vs BEL (ATP)",
+    "shortName": "Davis Cup QLS R2: AUS vs BEL"
+  },
+  {
+    "id": "tennis_atp_davis_cup_qls_r2_cro_vs_fra",
+    "sportId": "tennis",
+    "name": "Davis Cup QLS R2: CRO vs FRA (ATP)",
+    "shortName": "Davis Cup QLS R2: CRO vs FRA"
+  },
+  {
+    "id": "tennis_atp_davis_cup_qls_r2_esp_vs_den",
+    "sportId": "tennis",
+    "name": "Davis Cup QLS R2: ESP vs DEN (ATP)",
+    "shortName": "Davis Cup QLS R2: ESP vs DEN"
+  },
+  {
+    "id": "tennis_atp_davis_cup_qls_r2_hun_vs_aut",
+    "sportId": "tennis",
+    "name": "Davis Cup QLS R2: HUN vs AUT (ATP)",
+    "shortName": "Davis Cup QLS R2: HUN vs AUT"
+  },
+  {
+    "id": "tennis_atp_davis_cup_qls_r2_jpn_vs_ger",
+    "sportId": "tennis",
+    "name": "Davis Cup QLS R2: JPN vs GER (ATP)",
+    "shortName": "Davis Cup QLS R2: JPN vs GER"
+  },
+  {
+    "id": "tennis_atp_davis_cup_qls_r2_ned_vs_arg",
+    "sportId": "tennis",
+    "name": "Davis Cup QLS R2: NED vs ARG (ATP)",
+    "shortName": "Davis Cup QLS R2: NED vs ARG"
+  },
+  {
+    "id": "tennis_atp_davis_cup_qls_r2_usa_vs_cze",
+    "sportId": "tennis",
+    "name": "Davis Cup QLS R2: USA vs CZE (ATP)",
+    "shortName": "Davis Cup QLS R2: USA vs CZE"
+  },
+  {
+    "id": "tennis_atp_davis_cup_wg1_po_bih_vs_rsa",
+    "sportId": "tennis",
+    "name": "Davis Cup WG1 PO: BIH vs RSA (ATP)",
+    "shortName": "Davis Cup WG1 PO: BIH vs RSA"
+  },
+  {
+    "id": "tennis_atp_davis_cup_wg1_po_bol_vs_dom",
+    "sportId": "tennis",
+    "name": "Davis Cup WG1 PO: BOL vs DOM (ATP)",
+    "shortName": "Davis Cup WG1 PO: BOL vs DOM"
+  },
+  {
+    "id": "tennis_atp_davis_cup_wg1_po_bra_vs_chn",
+    "sportId": "tennis",
+    "name": "Davis Cup WG1 PO: BRA vs CHN (ATP)",
+    "shortName": "Davis Cup WG1 PO: BRA vs CHN"
+  },
+  {
+    "id": "tennis_atp_davis_cup_wg1_po_bul_vs_bih",
+    "sportId": "tennis",
+    "name": "Davis Cup WG1 PO: BUL vs BIH (ATP)",
+    "shortName": "Davis Cup WG1 PO: BUL vs BIH"
+  },
+  {
+    "id": "tennis_atp_davis_cup_wg1_po_chi_vs_slo",
+    "sportId": "tennis",
+    "name": "Davis Cup WG1 PO: CHI vs SLO (ATP)",
+    "shortName": "Davis Cup WG1 PO: CHI vs SLO"
+  },
+  {
+    "id": "tennis_atp_davis_cup_wg1_po_chn_vs_por",
+    "sportId": "tennis",
+    "name": "Davis Cup WG1 PO: CHN vs POR (ATP)",
+    "shortName": "Davis Cup WG1 PO: CHN vs POR"
+  },
+  {
+    "id": "tennis_atp_davis_cup_wg1_po_col_vs_brb",
+    "sportId": "tennis",
+    "name": "Davis Cup WG1 PO: COL vs BRB (ATP)",
+    "shortName": "Davis Cup WG1 PO: COL vs BRB"
+  },
+  {
+    "id": "tennis_atp_davis_cup_wg1_po_col_vs_lux",
+    "sportId": "tennis",
+    "name": "Davis Cup WG1 PO: COL vs LUX (ATP)",
+    "shortName": "Davis Cup WG1 PO: COL vs LUX"
+  },
+  {
+    "id": "tennis_atp_davis_cup_wg1_po_ecu_vs_uru",
+    "sportId": "tennis",
+    "name": "Davis Cup WG1 PO: ECU vs URU (ATP)",
+    "shortName": "Davis Cup WG1 PO: ECU vs URU"
+  },
+  {
+    "id": "tennis_atp_davis_cup_wg1_po_egy_vs_ecu",
+    "sportId": "tennis",
+    "name": "Davis Cup WG1 PO: EGY vs ECU (ATP)",
+    "shortName": "Davis Cup WG1 PO: EGY vs ECU"
+  },
+  {
+    "id": "tennis_atp_davis_cup_wg1_po_egy_vs_pol",
+    "sportId": "tennis",
+    "name": "Davis Cup WG1 PO: EGY vs POL (ATP)",
+    "shortName": "Davis Cup WG1 PO: EGY vs POL"
+  },
+  {
+    "id": "tennis_atp_davis_cup_wg1_po_fin_vs_hkg",
+    "sportId": "tennis",
+    "name": "Davis Cup WG1 PO: FIN vs HKG (ATP)",
+    "shortName": "Davis Cup WG1 PO: FIN vs HKG"
+  },
+  {
+    "id": "tennis_atp_davis_cup_wg1_po_geo_vs_pol",
+    "sportId": "tennis",
+    "name": "Davis Cup WG1 PO: GEO vs POL (ATP)",
+    "shortName": "Davis Cup WG1 PO: GEO vs POL"
+  },
+  {
+    "id": "tennis_atp_davis_cup_wg1_po_gre_vs_ecu",
+    "sportId": "tennis",
+    "name": "Davis Cup WG1 PO: GRE vs ECU (ATP)",
+    "shortName": "Davis Cup WG1 PO: GRE vs ECU"
+  },
+  {
+    "id": "tennis_atp_davis_cup_wg1_po_gre_vs_egy",
+    "sportId": "tennis",
+    "name": "Davis Cup WG1 PO: GRE vs EGY (ATP)",
+    "shortName": "Davis Cup WG1 PO: GRE vs EGY"
+  },
+  {
+    "id": "tennis_atp_davis_cup_wg1_po_gre_vs_mex",
+    "sportId": "tennis",
+    "name": "Davis Cup WG1 PO: GRE vs MEX (ATP)",
+    "shortName": "Davis Cup WG1 PO: GRE vs MEX"
+  },
+  {
+    "id": "tennis_atp_davis_cup_wg1_po_gre_vs_rou",
+    "sportId": "tennis",
+    "name": "Davis Cup WG1 PO: GRE vs ROU (ATP)",
+    "shortName": "Davis Cup WG1 PO: GRE vs ROU"
+  },
+  {
+    "id": "tennis_atp_davis_cup_wg1_po_ind_vs_den",
+    "sportId": "tennis",
+    "name": "Davis Cup WG1 PO: IND vs DEN (ATP)",
+    "shortName": "Davis Cup WG1 PO: IND vs DEN"
+  },
+  {
+    "id": "tennis_atp_davis_cup_wg1_po_ind_vs_tog",
+    "sportId": "tennis",
+    "name": "Davis Cup WG1 PO: IND vs TOG (ATP)",
+    "shortName": "Davis Cup WG1 PO: IND vs TOG"
+  },
+  {
+    "id": "tennis_atp_davis_cup_wg1_po_irl_vs_aut",
+    "sportId": "tennis",
+    "name": "Davis Cup WG1 PO: IRL vs AUT (ATP)",
+    "shortName": "Davis Cup WG1 PO: IRL vs AUT"
+  },
+  {
+    "id": "tennis_atp_davis_cup_wg1_po_isr_vs_lat",
+    "sportId": "tennis",
+    "name": "Davis Cup WG1 PO: ISR vs LAT (ATP)",
+    "shortName": "Davis Cup WG1 PO: ISR vs LAT"
+  },
+  {
+    "id": "tennis_atp_davis_cup_wg1_po_isr_vs_ltu",
+    "sportId": "tennis",
+    "name": "Davis Cup WG1 PO: ISR vs LTU (ATP)",
+    "shortName": "Davis Cup WG1 PO: ISR vs LTU"
+  },
+  {
+    "id": "tennis_atp_davis_cup_wg1_po_kaz_vs_mon",
+    "sportId": "tennis",
+    "name": "Davis Cup WG1 PO: KAZ vs MON (ATP)",
+    "shortName": "Davis Cup WG1 PO: KAZ vs MON"
+  },
+  {
+    "id": "tennis_atp_davis_cup_wg1_po_kaz_vs_pak",
+    "sportId": "tennis",
+    "name": "Davis Cup WG1 PO: KAZ vs PAK (ATP)",
+    "shortName": "Davis Cup WG1 PO: KAZ vs PAK"
+  },
+  {
+    "id": "tennis_atp_davis_cup_wg1_po_lbn_vs_jpn",
+    "sportId": "tennis",
+    "name": "Davis Cup WG1 PO: LBN vs JPN (ATP)",
+    "shortName": "Davis Cup WG1 PO: LBN vs JPN"
+  },
+  {
+    "id": "tennis_atp_davis_cup_wg1_po_lbn_vs_per",
+    "sportId": "tennis",
+    "name": "Davis Cup WG1 PO: LBN vs PER (ATP)",
+    "shortName": "Davis Cup WG1 PO: LBN vs PER"
+  },
+  {
+    "id": "tennis_atp_davis_cup_wg1_po_lbn_vs_tha",
+    "sportId": "tennis",
+    "name": "Davis Cup WG1 PO: LBN vs THA (ATP)",
+    "shortName": "Davis Cup WG1 PO: LBN vs THA"
+  },
+  {
+    "id": "tennis_atp_davis_cup_wg1_po_ltu_vs_geo",
+    "sportId": "tennis",
+    "name": "Davis Cup WG1 PO: LTU vs GEO (ATP)",
+    "shortName": "Davis Cup WG1 PO: LTU vs GEO"
+  },
+  {
+    "id": "tennis_atp_davis_cup_wg1_po_ltu_vs_por",
+    "sportId": "tennis",
+    "name": "Davis Cup WG1 PO: LTU vs POR (ATP)",
+    "shortName": "Davis Cup WG1 PO: LTU vs POR"
+  },
+  {
+    "id": "tennis_atp_davis_cup_wg1_po_lux_vs_ltu",
+    "sportId": "tennis",
+    "name": "Davis Cup WG1 PO: LUX vs LTU (ATP)",
+    "shortName": "Davis Cup WG1 PO: LUX vs LTU"
+  },
+  {
+    "id": "tennis_atp_davis_cup_wg1_po_lux_vs_ukr",
+    "sportId": "tennis",
+    "name": "Davis Cup WG1 PO: LUX vs UKR (ATP)",
+    "shortName": "Davis Cup WG1 PO: LUX vs UKR"
+  },
+  {
+    "id": "tennis_atp_davis_cup_wg1_po_mar_vs_col",
+    "sportId": "tennis",
+    "name": "Davis Cup WG1 PO: MAR vs COL (ATP)",
+    "shortName": "Davis Cup WG1 PO: MAR vs COL"
+  },
+  {
+    "id": "tennis_atp_davis_cup_wg1_po_mex_vs_den",
+    "sportId": "tennis",
+    "name": "Davis Cup WG1 PO: MEX vs DEN (ATP)",
+    "shortName": "Davis Cup WG1 PO: MEX vs DEN"
+  },
+  {
+    "id": "tennis_atp_davis_cup_wg1_po_mex_vs_fin",
+    "sportId": "tennis",
+    "name": "Davis Cup WG1 PO: MEX vs FIN (ATP)",
+    "shortName": "Davis Cup WG1 PO: MEX vs FIN"
+  },
+  {
+    "id": "tennis_atp_davis_cup_wg1_po_mon_vs_por",
+    "sportId": "tennis",
+    "name": "Davis Cup WG1 PO: MON vs POR (ATP)",
+    "shortName": "Davis Cup WG1 PO: MON vs POR"
+  },
+  {
+    "id": "tennis_atp_davis_cup_wg1_po_nor_vs_bar",
+    "sportId": "tennis",
+    "name": "Davis Cup WG1 PO: NOR vs BAR (ATP)",
+    "shortName": "Davis Cup WG1 PO: NOR vs BAR"
+  },
+  {
+    "id": "tennis_atp_davis_cup_wg1_po_nor_vs_lat",
+    "sportId": "tennis",
+    "name": "Davis Cup WG1 PO: NOR vs LAT (ATP)",
+    "shortName": "Davis Cup WG1 PO: NOR vs LAT"
+  },
+  {
+    "id": "tennis_atp_davis_cup_wg1_po_nzl_vs_bih",
+    "sportId": "tennis",
+    "name": "Davis Cup WG1 PO: NZL vs BIH (ATP)",
+    "shortName": "Davis Cup WG1 PO: NZL vs BIH"
+  },
+  {
+    "id": "tennis_atp_davis_cup_wg1_po_nzl_vs_tur",
+    "sportId": "tennis",
+    "name": "Davis Cup WG1 PO: NZL vs TUR (ATP)",
+    "shortName": "Davis Cup WG1 PO: NZL vs TUR"
+  },
+  {
+    "id": "tennis_atp_davis_cup_wg1_po_pak_vs_ind",
+    "sportId": "tennis",
+    "name": "Davis Cup WG1 PO: PAK vs IND (ATP)",
+    "shortName": "Davis Cup WG1 PO: PAK vs IND"
+  },
+  {
+    "id": "tennis_atp_davis_cup_wg1_po_pak_vs_ltu",
+    "sportId": "tennis",
+    "name": "Davis Cup WG1 PO: PAK vs LTU (ATP)",
+    "shortName": "Davis Cup WG1 PO: PAK vs LTU"
+  },
+  {
+    "id": "tennis_atp_davis_cup_wg1_po_pak_vs_slo",
+    "sportId": "tennis",
+    "name": "Davis Cup WG1 PO: PAK vs SLO (ATP)",
+    "shortName": "Davis Cup WG1 PO: PAK vs SLO"
+  },
+  {
+    "id": "tennis_atp_davis_cup_wg1_po_par_vs_rou",
+    "sportId": "tennis",
+    "name": "Davis Cup WG1 PO: PAR vs ROU (ATP)",
+    "shortName": "Davis Cup WG1 PO: PAR vs ROU"
+  },
+  {
+    "id": "tennis_atp_davis_cup_wg1_po_per_vs_irl",
+    "sportId": "tennis",
+    "name": "Davis Cup WG1 PO: PER vs IRL (ATP)",
+    "shortName": "Davis Cup WG1 PO: PER vs IRL"
+  },
+  {
+    "id": "tennis_atp_davis_cup_wg1_po_per_vs_sui",
+    "sportId": "tennis",
+    "name": "Davis Cup WG1 PO: PER vs SUI (ATP)",
+    "shortName": "Davis Cup WG1 PO: PER vs SUI"
+  },
+  {
+    "id": "tennis_atp_davis_cup_wg1_po_rou_vs_bul",
+    "sportId": "tennis",
+    "name": "Davis Cup WG1 PO: ROU vs BUL (ATP)",
+    "shortName": "Davis Cup WG1 PO: ROU vs BUL"
+  },
+  {
+    "id": "tennis_atp_davis_cup_wg1_po_rou_vs_tha",
+    "sportId": "tennis",
+    "name": "Davis Cup WG1 PO: ROU vs THA (ATP)",
+    "shortName": "Davis Cup WG1 PO: ROU vs THA"
+  },
+  {
+    "id": "tennis_atp_davis_cup_wg1_po_slo_vs_tur",
+    "sportId": "tennis",
+    "name": "Davis Cup WG1 PO: SLO vs TUR (ATP)",
+    "shortName": "Davis Cup WG1 PO: SLO vs TUR"
+  },
+  {
+    "id": "tennis_atp_davis_cup_wg1_po_sui_vs_tun",
+    "sportId": "tennis",
+    "name": "Davis Cup WG1 PO: SUI vs TUN (ATP)",
+    "shortName": "Davis Cup WG1 PO: SUI vs TUN"
+  },
+  {
+    "id": "tennis_atp_davis_cup_wg1_po_tpe_vs_lbn",
+    "sportId": "tennis",
+    "name": "Davis Cup WG1 PO: TPE vs LBN (ATP)",
+    "shortName": "Davis Cup WG1 PO: TPE vs LBN"
+  },
+  {
+    "id": "tennis_atp_davis_cup_wg1_po_tun_vs_ukr",
+    "sportId": "tennis",
+    "name": "Davis Cup WG1 PO: TUN vs UKR (ATP)",
+    "shortName": "Davis Cup WG1 PO: TUN vs UKR"
+  },
+  {
+    "id": "tennis_atp_davis_cup_wg1_po_tur_vs_isr",
+    "sportId": "tennis",
+    "name": "Davis Cup WG1 PO: TUR vs ISR (ATP)",
+    "shortName": "Davis Cup WG1 PO: TUR vs ISR"
+  },
+  {
+    "id": "tennis_atp_davis_cup_wg1_po_tur_vs_mex",
+    "sportId": "tennis",
+    "name": "Davis Cup WG1 PO: TUR vs MEX (ATP)",
+    "shortName": "Davis Cup WG1 PO: TUR vs MEX"
+  },
+  {
+    "id": "tennis_atp_davis_cup_wg1_po_tur_vs_slo",
+    "sportId": "tennis",
+    "name": "Davis Cup WG1 PO: TUR vs SLO (ATP)",
+    "shortName": "Davis Cup WG1 PO: TUR vs SLO"
+  },
+  {
+    "id": "tennis_atp_davis_cup_wg1_po_ukr_vs_lbn",
+    "sportId": "tennis",
+    "name": "Davis Cup WG1 PO: UKR vs LBN (ATP)",
+    "shortName": "Davis Cup WG1 PO: UKR vs LBN"
+  },
+  {
+    "id": "tennis_atp_davis_cup_wg1_po_ukr_vs_nor",
+    "sportId": "tennis",
+    "name": "Davis Cup WG1 PO: UKR vs NOR (ATP)",
+    "shortName": "Davis Cup WG1 PO: UKR vs NOR"
+  },
+  {
+    "id": "tennis_atp_davis_cup_wg1_po_ukr_vs_tpe",
+    "sportId": "tennis",
+    "name": "Davis Cup WG1 PO: UKR vs TPE (ATP)",
+    "shortName": "Davis Cup WG1 PO: UKR vs TPE"
+  },
+  {
+    "id": "tennis_atp_davis_cup_wg1_po_uzb_vs_bih",
+    "sportId": "tennis",
+    "name": "Davis Cup WG1 PO: UZB vs BIH (ATP)",
+    "shortName": "Davis Cup WG1 PO: UZB vs BIH"
+  },
+  {
+    "id": "tennis_atp_davis_cup_wg1_po_uzb_vs_pol",
+    "sportId": "tennis",
+    "name": "Davis Cup WG1 PO: UZB vs POL (ATP)",
+    "shortName": "Davis Cup WG1 PO: UZB vs POL"
+  },
+  {
+    "id": "tennis_atp_davis_cup_wg1_po_uzb_vs_tur",
+    "sportId": "tennis",
+    "name": "Davis Cup WG1 PO: UZB vs TUR (ATP)",
+    "shortName": "Davis Cup WG1 PO: UZB vs TUR"
+  },
+  {
+    "id": "tennis_atp_davis_cup_wg1_po_ven_vs_nzl",
+    "sportId": "tennis",
+    "name": "Davis Cup WG1 PO: VEN vs NZL (ATP)",
+    "shortName": "Davis Cup WG1 PO: VEN vs NZL"
+  },
+  {
+    "id": "tennis_atp_davis_cup_wg1_r1_arg_vs_blr",
+    "sportId": "tennis",
+    "name": "Davis Cup WG1 R1: ARG vs BLR (ATP)",
+    "shortName": "Davis Cup WG1 R1: ARG vs BLR"
+  },
+  {
+    "id": "tennis_atp_davis_cup_wg1_r1_arg_vs_ltu",
+    "sportId": "tennis",
+    "name": "Davis Cup WG1 R1: ARG vs LTU (ATP)",
+    "shortName": "Davis Cup WG1 R1: ARG vs LTU"
+  },
+  {
+    "id": "tennis_atp_davis_cup_wg1_r1_aut_vs_pak",
+    "sportId": "tennis",
+    "name": "Davis Cup WG1 R1: AUT vs PAK (ATP)",
+    "shortName": "Davis Cup WG1 R1: AUT vs PAK"
+  },
+  {
+    "id": "tennis_atp_davis_cup_wg1_r1_aut_vs_por",
+    "sportId": "tennis",
+    "name": "Davis Cup WG1 R1: AUT vs POR (ATP)",
+    "shortName": "Davis Cup WG1 R1: AUT vs POR"
+  },
+  {
+    "id": "tennis_atp_davis_cup_wg1_r1_aut_vs_tur",
+    "sportId": "tennis",
+    "name": "Davis Cup WG1 R1: AUT vs TUR (ATP)",
+    "shortName": "Davis Cup WG1 R1: AUT vs TUR"
+  },
+  {
+    "id": "tennis_atp_davis_cup_wg1_r1_bel_vs_bol",
+    "sportId": "tennis",
+    "name": "Davis Cup WG1 R1: BEL vs BOL (ATP)",
+    "shortName": "Davis Cup WG1 R1: BEL vs BOL"
+  },
+  {
+    "id": "tennis_atp_davis_cup_wg1_r1_bih_vs_ger",
+    "sportId": "tennis",
+    "name": "Davis Cup WG1 R1: BIH vs GER (ATP)",
+    "shortName": "Davis Cup WG1 R1: BIH vs GER"
+  },
+  {
+    "id": "tennis_atp_davis_cup_wg1_r1_bih_vs_mex",
+    "sportId": "tennis",
+    "name": "Davis Cup WG1 R1: BIH vs MEX (ATP)",
+    "shortName": "Davis Cup WG1 R1: BIH vs MEX"
+  },
+  {
+    "id": "tennis_atp_davis_cup_wg1_r1_bih_vs_per",
+    "sportId": "tennis",
+    "name": "Davis Cup WG1 R1: BIH vs PER (ATP)",
+    "shortName": "Davis Cup WG1 R1: BIH vs PER"
+  },
+  {
+    "id": "tennis_atp_davis_cup_wg1_r1_bra_vs_lbn",
+    "sportId": "tennis",
+    "name": "Davis Cup WG1 R1: BRA vs LBN (ATP)",
+    "shortName": "Davis Cup WG1 R1: BRA vs LBN"
+  },
+  {
+    "id": "tennis_atp_davis_cup_wg1_r1_bra_vs_por",
+    "sportId": "tennis",
+    "name": "Davis Cup WG1 R1: BRA vs POR (ATP)",
+    "shortName": "Davis Cup WG1 R1: BRA vs POR"
+  },
+  {
+    "id": "tennis_atp_davis_cup_wg1_r1_bul_vs_fin",
+    "sportId": "tennis",
+    "name": "Davis Cup WG1 R1: BUL vs FIN (ATP)",
+    "shortName": "Davis Cup WG1 R1: BUL vs FIN"
+  },
+  {
+    "id": "tennis_atp_davis_cup_wg1_r1_bul_vs_kaz",
+    "sportId": "tennis",
+    "name": "Davis Cup WG1 R1: BUL vs KAZ (ATP)",
+    "shortName": "Davis Cup WG1 R1: BUL vs KAZ"
+  },
+  {
+    "id": "tennis_atp_davis_cup_wg1_r1_chi_vs_lux",
+    "sportId": "tennis",
+    "name": "Davis Cup WG1 R1: CHI vs LUX (ATP)",
+    "shortName": "Davis Cup WG1 R1: CHI vs LUX"
+  },
+  {
+    "id": "tennis_atp_davis_cup_wg1_r1_chi_vs_per",
+    "sportId": "tennis",
+    "name": "Davis Cup WG1 R1: CHI vs PER (ATP)",
+    "shortName": "Davis Cup WG1 R1: CHI vs PER"
+  },
+  {
+    "id": "tennis_atp_davis_cup_wg1_r1_chi_vs_svk",
+    "sportId": "tennis",
+    "name": "Davis Cup WG1 R1: CHI vs SVK (ATP)",
+    "shortName": "Davis Cup WG1 R1: CHI vs SVK"
+  },
+  {
+    "id": "tennis_atp_davis_cup_wg1_r1_col_vs_tur",
+    "sportId": "tennis",
+    "name": "Davis Cup WG1 R1: COL vs TUR (ATP)",
+    "shortName": "Davis Cup WG1 R1: COL vs TUR"
+  },
+  {
+    "id": "tennis_atp_davis_cup_wg1_r1_cro_vs_ltu",
+    "sportId": "tennis",
+    "name": "Davis Cup WG1 R1: CRO vs LTU (ATP)",
+    "shortName": "Davis Cup WG1 R1: CRO vs LTU"
+  },
+  {
+    "id": "tennis_atp_davis_cup_wg1_r1_cze_vs_isr",
+    "sportId": "tennis",
+    "name": "Davis Cup WG1 R1: CZE vs ISR (ATP)",
+    "shortName": "Davis Cup WG1 R1: CZE vs ISR"
+  },
+  {
+    "id": "tennis_atp_davis_cup_wg1_r1_den_vs_bra",
+    "sportId": "tennis",
+    "name": "Davis Cup WG1 R1: DEN vs BRA (ATP)",
+    "shortName": "Davis Cup WG1 R1: DEN vs BRA"
+  },
+  {
+    "id": "tennis_atp_davis_cup_wg1_r1_ecu_vs_bih",
+    "sportId": "tennis",
+    "name": "Davis Cup WG1 R1: ECU vs BIH (ATP)",
+    "shortName": "Davis Cup WG1 R1: ECU vs BIH"
+  },
+  {
+    "id": "tennis_atp_davis_cup_wg1_r1_ecu_vs_sui",
+    "sportId": "tennis",
+    "name": "Davis Cup WG1 R1: ECU vs SUI (ATP)",
+    "shortName": "Davis Cup WG1 R1: ECU vs SUI"
+  },
+  {
+    "id": "tennis_atp_davis_cup_wg1_r1_egy_vs_hun",
+    "sportId": "tennis",
+    "name": "Davis Cup WG1 R1: EGY vs HUN (ATP)",
+    "shortName": "Davis Cup WG1 R1: EGY vs HUN"
+  },
+  {
+    "id": "tennis_atp_davis_cup_wg1_r1_fin_vs_nzl",
+    "sportId": "tennis",
+    "name": "Davis Cup WG1 R1: FIN vs NZL (ATP)",
+    "shortName": "Davis Cup WG1 R1: FIN vs NZL"
+  },
+  {
+    "id": "tennis_atp_davis_cup_wg1_r1_gre_vs_bra",
+    "sportId": "tennis",
+    "name": "Davis Cup WG1 R1: GRE vs BRA (ATP)",
+    "shortName": "Davis Cup WG1 R1: GRE vs BRA"
+  },
+  {
+    "id": "tennis_atp_davis_cup_wg1_r1_gre_vs_svk",
+    "sportId": "tennis",
+    "name": "Davis Cup WG1 R1: GRE vs SVK (ATP)",
+    "shortName": "Davis Cup WG1 R1: GRE vs SVK"
+  },
+  {
+    "id": "tennis_atp_davis_cup_wg1_r1_hun_vs_ukr",
+    "sportId": "tennis",
+    "name": "Davis Cup WG1 R1: HUN vs UKR (ATP)",
+    "shortName": "Davis Cup WG1 R1: HUN vs UKR"
+  },
+  {
+    "id": "tennis_atp_davis_cup_wg1_r1_ind_vs_fin",
+    "sportId": "tennis",
+    "name": "Davis Cup WG1 R1: IND vs FIN (ATP)",
+    "shortName": "Davis Cup WG1 R1: IND vs FIN"
+  },
+  {
+    "id": "tennis_atp_davis_cup_wg1_r1_ind_vs_nor",
+    "sportId": "tennis",
+    "name": "Davis Cup WG1 R1: IND vs NOR (ATP)",
+    "shortName": "Davis Cup WG1 R1: IND vs NOR"
+  },
+  {
+    "id": "tennis_atp_davis_cup_wg1_r1_isr_vs_can",
+    "sportId": "tennis",
+    "name": "Davis Cup WG1 R1: ISR vs CAN (ATP)",
+    "shortName": "Davis Cup WG1 R1: ISR vs CAN"
+  },
+  {
+    "id": "tennis_atp_davis_cup_wg1_r1_isr_vs_jpn",
+    "sportId": "tennis",
+    "name": "Davis Cup WG1 R1: ISR vs JPN (ATP)",
+    "shortName": "Davis Cup WG1 R1: ISR vs JPN"
+  },
+  {
+    "id": "tennis_atp_davis_cup_wg1_r1_isr_vs_ukr",
+    "sportId": "tennis",
+    "name": "Davis Cup WG1 R1: ISR vs UKR (ATP)",
+    "shortName": "Davis Cup WG1 R1: ISR vs UKR"
+  },
+  {
+    "id": "tennis_atp_davis_cup_wg1_r1_jpn_vs_col",
+    "sportId": "tennis",
+    "name": "Davis Cup WG1 R1: JPN vs COL (ATP)",
+    "shortName": "Davis Cup WG1 R1: JPN vs COL"
+  },
+  {
+    "id": "tennis_atp_davis_cup_wg1_r1_jpn_vs_pak",
+    "sportId": "tennis",
+    "name": "Davis Cup WG1 R1: JPN vs PAK (ATP)",
+    "shortName": "Davis Cup WG1 R1: JPN vs PAK"
+  },
+  {
+    "id": "tennis_atp_davis_cup_wg1_r1_jpn_vs_uzb",
+    "sportId": "tennis",
+    "name": "Davis Cup WG1 R1: JPN vs UZB (ATP)",
+    "shortName": "Davis Cup WG1 R1: JPN vs UZB"
+  },
+  {
+    "id": "tennis_atp_davis_cup_wg1_r1_kaz_vs_den",
+    "sportId": "tennis",
+    "name": "Davis Cup WG1 R1: KAZ vs DEN (ATP)",
+    "shortName": "Davis Cup WG1 R1: KAZ vs DEN"
+  },
+  {
+    "id": "tennis_atp_davis_cup_wg1_r1_kor_vs_kaz",
+    "sportId": "tennis",
+    "name": "Davis Cup WG1 R1: KOR vs KAZ (ATP)",
+    "shortName": "Davis Cup WG1 R1: KOR vs KAZ"
+  },
+  {
+    "id": "tennis_atp_davis_cup_wg1_r1_kor_vs_nzl",
+    "sportId": "tennis",
+    "name": "Davis Cup WG1 R1: KOR vs NZL (ATP)",
+    "shortName": "Davis Cup WG1 R1: KOR vs NZL"
+  },
+  {
+    "id": "tennis_atp_davis_cup_wg1_r1_ned_vs_uru",
+    "sportId": "tennis",
+    "name": "Davis Cup WG1 R1: NED vs URU (ATP)",
+    "shortName": "Davis Cup WG1 R1: NED vs URU"
+  },
+  {
+    "id": "tennis_atp_davis_cup_wg1_r1_nor_vs_por",
+    "sportId": "tennis",
+    "name": "Davis Cup WG1 R1: NOR vs POR (ATP)",
+    "shortName": "Davis Cup WG1 R1: NOR vs POR"
+  },
+  {
+    "id": "tennis_atp_davis_cup_wg1_r1_per_vs_nor",
+    "sportId": "tennis",
+    "name": "Davis Cup WG1 R1: PER vs NOR (ATP)",
+    "shortName": "Davis Cup WG1 R1: PER vs NOR"
+  },
+  {
+    "id": "tennis_atp_davis_cup_wg1_r1_per_vs_por",
+    "sportId": "tennis",
+    "name": "Davis Cup WG1 R1: PER vs POR (ATP)",
+    "shortName": "Davis Cup WG1 R1: PER vs POR"
+  },
+  {
+    "id": "tennis_atp_davis_cup_wg1_r1_pol_vs_gbr",
+    "sportId": "tennis",
+    "name": "Davis Cup WG1 R1: POL vs GBR (ATP)",
+    "shortName": "Davis Cup WG1 R1: POL vs GBR"
+  },
+  {
+    "id": "tennis_atp_davis_cup_wg1_r1_pol_vs_kor",
+    "sportId": "tennis",
+    "name": "Davis Cup WG1 R1: POL vs KOR (ATP)",
+    "shortName": "Davis Cup WG1 R1: POL vs KOR"
+  },
+  {
+    "id": "tennis_atp_davis_cup_wg1_r1_por_vs_rou",
+    "sportId": "tennis",
+    "name": "Davis Cup WG1 R1: POR vs ROU (ATP)",
+    "shortName": "Davis Cup WG1 R1: POR vs ROU"
+  },
+  {
+    "id": "tennis_atp_davis_cup_wg1_r1_srb_vs_gre",
+    "sportId": "tennis",
+    "name": "Davis Cup WG1 R1: SRB vs GRE (ATP)",
+    "shortName": "Davis Cup WG1 R1: SRB vs GRE"
+  },
+  {
+    "id": "tennis_atp_davis_cup_wg1_r1_srb_vs_tur",
+    "sportId": "tennis",
+    "name": "Davis Cup WG1 R1: SRB vs TUR (ATP)",
+    "shortName": "Davis Cup WG1 R1: SRB vs TUR"
+  },
+  {
+    "id": "tennis_atp_davis_cup_wg1_r1_sui_vs_ind",
+    "sportId": "tennis",
+    "name": "Davis Cup WG1 R1: SUI vs IND (ATP)",
+    "shortName": "Davis Cup WG1 R1: SUI vs IND"
+  },
+  {
+    "id": "tennis_atp_davis_cup_wg1_r1_sui_vs_per",
+    "sportId": "tennis",
+    "name": "Davis Cup WG1 R1: SUI vs PER (ATP)",
+    "shortName": "Davis Cup WG1 R1: SUI vs PER"
+  },
+  {
+    "id": "tennis_atp_davis_cup_wg1_r1_svk_vs_col",
+    "sportId": "tennis",
+    "name": "Davis Cup WG1 R1: SVK vs COL (ATP)",
+    "shortName": "Davis Cup WG1 R1: SVK vs COL"
+  },
+  {
+    "id": "tennis_atp_davis_cup_wg1_r1_svk_vs_rou",
+    "sportId": "tennis",
+    "name": "Davis Cup WG1 R1: SVK vs ROU (ATP)",
+    "shortName": "Davis Cup WG1 R1: SVK vs ROU"
+  },
+  {
+    "id": "tennis_atp_davis_cup_wg1_r1_swe_vs_ind",
+    "sportId": "tennis",
+    "name": "Davis Cup WG1 R1: SWE vs IND (ATP)",
+    "shortName": "Davis Cup WG1 R1: SWE vs IND"
+  },
+  {
+    "id": "tennis_atp_davis_cup_wg1_r1_swe_vs_tun",
+    "sportId": "tennis",
+    "name": "Davis Cup WG1 R1: SWE vs TUN (ATP)",
+    "shortName": "Davis Cup WG1 R1: SWE vs TUN"
+  },
+  {
+    "id": "tennis_atp_davis_cup_wg1_r1_tpe_vs_bih",
+    "sportId": "tennis",
+    "name": "Davis Cup WG1 R1: TPE vs BIH (ATP)",
+    "shortName": "Davis Cup WG1 R1: TPE vs BIH"
+  },
+  {
+    "id": "tennis_atp_davis_cup_wg1_r1_tpe_vs_nor",
+    "sportId": "tennis",
+    "name": "Davis Cup WG1 R1: TPE vs NOR (ATP)",
+    "shortName": "Davis Cup WG1 R1: TPE vs NOR"
+  },
+  {
+    "id": "tennis_atp_davis_cup_wg1_r1_ukr_vs_col",
+    "sportId": "tennis",
+    "name": "Davis Cup WG1 R1: UKR vs COL (ATP)",
+    "shortName": "Davis Cup WG1 R1: UKR vs COL"
+  },
+  {
+    "id": "tennis_atp_davis_cup_wg1_r1_uzb_vs_nor",
+    "sportId": "tennis",
+    "name": "Davis Cup WG1 R1: UZB vs NOR (ATP)",
+    "shortName": "Davis Cup WG1 R1: UZB vs NOR"
+  },
+  {
+    "id": "tennis_atp_davis_cup_wg2_po_bar_vs_poc",
+    "sportId": "tennis",
+    "name": "Davis Cup WG2 PO: BAR vs POC (ATP)",
+    "shortName": "Davis Cup WG2 PO: BAR vs POC"
+  },
+  {
+    "id": "tennis_atp_davis_cup_wg2_po_ben_vs_lat",
+    "sportId": "tennis",
+    "name": "Davis Cup WG2 PO: BEN vs LAT (ATP)",
+    "shortName": "Davis Cup WG2 PO: BEN vs LAT"
+  },
+  {
+    "id": "tennis_atp_davis_cup_wg2_po_bol_vs_geo",
+    "sportId": "tennis",
+    "name": "Davis Cup WG2 PO: BOL vs GEO (ATP)",
+    "shortName": "Davis Cup WG2 PO: BOL vs GEO"
+  },
+  {
+    "id": "tennis_atp_davis_cup_wg2_po_bol_vs_tha",
+    "sportId": "tennis",
+    "name": "Davis Cup WG2 PO: BOL vs THA (ATP)",
+    "shortName": "Davis Cup WG2 PO: BOL vs THA"
+  },
+  {
+    "id": "tennis_atp_davis_cup_wg2_po_chn_vs_mne",
+    "sportId": "tennis",
+    "name": "Davis Cup WG2 PO: CHN vs MNE (ATP)",
+    "shortName": "Davis Cup WG2 PO: CHN vs MNE"
+  },
+  {
+    "id": "tennis_atp_davis_cup_wg2_po_chn_vs_slo",
+    "sportId": "tennis",
+    "name": "Davis Cup WG2 PO: CHN vs SLO (ATP)",
+    "shortName": "Davis Cup WG2 PO: CHN vs SLO"
+  },
+  {
+    "id": "tennis_atp_davis_cup_wg2_po_crc_vs_bul",
+    "sportId": "tennis",
+    "name": "Davis Cup WG2 PO: CRC vs BUL (ATP)",
+    "shortName": "Davis Cup WG2 PO: CRC vs BUL"
+  },
+  {
+    "id": "tennis_atp_davis_cup_wg2_po_cyp_vs_mar",
+    "sportId": "tennis",
+    "name": "Davis Cup WG2 PO: CYP vs MAR (ATP)",
+    "shortName": "Davis Cup WG2 PO: CYP vs MAR"
+  },
+  {
+    "id": "tennis_atp_davis_cup_wg2_po_cyp_vs_tha",
+    "sportId": "tennis",
+    "name": "Davis Cup WG2 PO: CYP vs THA (ATP)",
+    "shortName": "Davis Cup WG2 PO: CYP vs THA"
+  },
+  {
+    "id": "tennis_atp_davis_cup_wg2_po_den_vs_pur",
+    "sportId": "tennis",
+    "name": "Davis Cup WG2 PO: DEN vs PUR (ATP)",
+    "shortName": "Davis Cup WG2 PO: DEN vs PUR"
+  },
+  {
+    "id": "tennis_atp_davis_cup_wg2_po_dom_vs_bol",
+    "sportId": "tennis",
+    "name": "Davis Cup WG2 PO: DOM vs BOL (ATP)",
+    "shortName": "Davis Cup WG2 PO: DOM vs BOL"
+  },
+  {
+    "id": "tennis_atp_davis_cup_wg2_po_egy_vs_cyp",
+    "sportId": "tennis",
+    "name": "Davis Cup WG2 PO: EGY vs CYP (ATP)",
+    "shortName": "Davis Cup WG2 PO: EGY vs CYP"
+  },
+  {
+    "id": "tennis_atp_davis_cup_wg2_po_egy_vs_par",
+    "sportId": "tennis",
+    "name": "Davis Cup WG2 PO: EGY vs PAR (ATP)",
+    "shortName": "Davis Cup WG2 PO: EGY vs PAR"
+  },
+  {
+    "id": "tennis_atp_davis_cup_wg2_po_esa_vs_jam",
+    "sportId": "tennis",
+    "name": "Davis Cup WG2 PO: ESA vs JAM (ATP)",
+    "shortName": "Davis Cup WG2 PO: ESA vs JAM"
+  },
+  {
+    "id": "tennis_atp_davis_cup_wg2_po_esa_vs_jor",
+    "sportId": "tennis",
+    "name": "Davis Cup WG2 PO: ESA vs JOR (ATP)",
+    "shortName": "Davis Cup WG2 PO: ESA vs JOR"
+  },
+  {
+    "id": "tennis_atp_davis_cup_wg2_po_esa_vs_mda",
+    "sportId": "tennis",
+    "name": "Davis Cup WG2 PO: ESA vs MDA (ATP)",
+    "shortName": "Davis Cup WG2 PO: ESA vs MDA"
+  },
+  {
+    "id": "tennis_atp_davis_cup_wg2_po_esa_vs_poc",
+    "sportId": "tennis",
+    "name": "Davis Cup WG2 PO: ESA vs POC (ATP)",
+    "shortName": "Davis Cup WG2 PO: ESA vs POC"
+  },
+  {
+    "id": "tennis_atp_davis_cup_wg2_po_est_vs_jam",
+    "sportId": "tennis",
+    "name": "Davis Cup WG2 PO: EST vs JAM (ATP)",
+    "shortName": "Davis Cup WG2 PO: EST vs JAM"
+  },
+  {
+    "id": "tennis_atp_davis_cup_wg2_po_est_vs_ven",
+    "sportId": "tennis",
+    "name": "Davis Cup WG2 PO: EST vs VEN (ATP)",
+    "shortName": "Davis Cup WG2 PO: EST vs VEN"
+  },
+  {
+    "id": "tennis_atp_davis_cup_wg2_po_geo_vs_est",
+    "sportId": "tennis",
+    "name": "Davis Cup WG2 PO: GEO vs EST (ATP)",
+    "shortName": "Davis Cup WG2 PO: GEO vs EST"
+  },
+  {
+    "id": "tennis_atp_davis_cup_wg2_po_gre_vs_jam",
+    "sportId": "tennis",
+    "name": "Davis Cup WG2 PO: GRE vs JAM (ATP)",
+    "shortName": "Davis Cup WG2 PO: GRE vs JAM"
+  },
+  {
+    "id": "tennis_atp_davis_cup_wg2_po_gua_vs_tun",
+    "sportId": "tennis",
+    "name": "Davis Cup WG2 PO: GUA vs TUN (ATP)",
+    "shortName": "Davis Cup WG2 PO: GUA vs TUN"
+  },
+  {
+    "id": "tennis_atp_davis_cup_wg2_po_hkg_vs_ben",
+    "sportId": "tennis",
+    "name": "Davis Cup WG2 PO: HKG vs BEN (ATP)",
+    "shortName": "Davis Cup WG2 PO: HKG vs BEN"
+  },
+  {
+    "id": "tennis_atp_davis_cup_wg2_po_hkg_vs_zim",
+    "sportId": "tennis",
+    "name": "Davis Cup WG2 PO: HKG vs ZIM (ATP)",
+    "shortName": "Davis Cup WG2 PO: HKG vs ZIM"
+  },
+  {
+    "id": "tennis_atp_davis_cup_wg2_po_ina_vs_ken",
+    "sportId": "tennis",
+    "name": "Davis Cup WG2 PO: INA vs KEN (ATP)",
+    "shortName": "Davis Cup WG2 PO: INA vs KEN"
+  },
+  {
+    "id": "tennis_atp_davis_cup_wg2_po_ina_vs_vie",
+    "sportId": "tennis",
+    "name": "Davis Cup WG2 PO: INA vs VIE (ATP)",
+    "shortName": "Davis Cup WG2 PO: INA vs VIE"
+  },
+  {
+    "id": "tennis_atp_davis_cup_wg2_po_iri_vs_est",
+    "sportId": "tennis",
+    "name": "Davis Cup WG2 PO: IRI vs EST (ATP)",
+    "shortName": "Davis Cup WG2 PO: IRI vs EST"
+  },
+  {
+    "id": "tennis_atp_davis_cup_wg2_po_irl_vs_ksa",
+    "sportId": "tennis",
+    "name": "Davis Cup WG2 PO: IRL vs KSA (ATP)",
+    "shortName": "Davis Cup WG2 PO: IRL vs KSA"
+  },
+  {
+    "id": "tennis_atp_davis_cup_wg2_po_jam_vs_bar",
+    "sportId": "tennis",
+    "name": "Davis Cup WG2 PO: JAM vs BAR (ATP)",
+    "shortName": "Davis Cup WG2 PO: JAM vs BAR"
+  },
+  {
+    "id": "tennis_atp_davis_cup_wg2_po_jam_vs_nzl",
+    "sportId": "tennis",
+    "name": "Davis Cup WG2 PO: JAM vs NZL (ATP)",
+    "shortName": "Davis Cup WG2 PO: JAM vs NZL"
+  },
+  {
+    "id": "tennis_atp_davis_cup_wg2_po_lat_vs_egy",
+    "sportId": "tennis",
+    "name": "Davis Cup WG2 PO: LAT vs EGY (ATP)",
+    "shortName": "Davis Cup WG2 PO: LAT vs EGY"
+  },
+  {
+    "id": "tennis_atp_davis_cup_wg2_po_mar_vs_vie",
+    "sportId": "tennis",
+    "name": "Davis Cup WG2 PO: MAR vs VIE (ATP)",
+    "shortName": "Davis Cup WG2 PO: MAR vs VIE"
+  },
+  {
+    "id": "tennis_atp_davis_cup_wg2_po_mar_vs_zim",
+    "sportId": "tennis",
+    "name": "Davis Cup WG2 PO: MAR vs ZIM (ATP)",
+    "shortName": "Davis Cup WG2 PO: MAR vs ZIM"
+  },
+  {
+    "id": "tennis_atp_davis_cup_wg2_po_nam_vs_hkg",
+    "sportId": "tennis",
+    "name": "Davis Cup WG2 PO: NAM vs HKG (ATP)",
+    "shortName": "Davis Cup WG2 PO: NAM vs HKG"
+  },
+  {
+    "id": "tennis_atp_davis_cup_wg2_po_par_vs_mon",
+    "sportId": "tennis",
+    "name": "Davis Cup WG2 PO: PAR vs MON (ATP)",
+    "shortName": "Davis Cup WG2 PO: PAR vs MON"
+  },
+  {
+    "id": "tennis_atp_davis_cup_wg2_po_par_vs_sri",
+    "sportId": "tennis",
+    "name": "Davis Cup WG2 PO: PAR vs SRI (ATP)",
+    "shortName": "Davis Cup WG2 PO: PAR vs SRI"
+  },
+  {
+    "id": "tennis_atp_davis_cup_wg2_po_phi_vs_gre",
+    "sportId": "tennis",
+    "name": "Davis Cup WG2 PO: PHI vs GRE (ATP)",
+    "shortName": "Davis Cup WG2 PO: PHI vs GRE"
+  },
+  {
+    "id": "tennis_atp_davis_cup_wg2_po_pol_vs_hkg",
+    "sportId": "tennis",
+    "name": "Davis Cup WG2 PO: POL vs HKG (ATP)",
+    "shortName": "Davis Cup WG2 PO: POL vs HKG"
+  },
+  {
+    "id": "tennis_atp_davis_cup_wg2_po_rsa_vs_lux",
+    "sportId": "tennis",
+    "name": "Davis Cup WG2 PO: RSA vs LUX (ATP)",
+    "shortName": "Davis Cup WG2 PO: RSA vs LUX"
+  },
+  {
+    "id": "tennis_atp_davis_cup_wg2_po_rsa_vs_ngr",
+    "sportId": "tennis",
+    "name": "Davis Cup WG2 PO: RSA vs NGR (ATP)",
+    "shortName": "Davis Cup WG2 PO: RSA vs NGR"
+  },
+  {
+    "id": "tennis_atp_davis_cup_wg2_po_slo_vs_ina",
+    "sportId": "tennis",
+    "name": "Davis Cup WG2 PO: SLO vs INA (ATP)",
+    "shortName": "Davis Cup WG2 PO: SLO vs INA"
+  },
+  {
+    "id": "tennis_atp_davis_cup_wg2_po_syr_vs_zim",
+    "sportId": "tennis",
+    "name": "Davis Cup WG2 PO: SYR vs ZIM (ATP)",
+    "shortName": "Davis Cup WG2 PO: SYR vs ZIM"
+  },
+  {
+    "id": "tennis_atp_davis_cup_wg2_po_tog_vs_ina",
+    "sportId": "tennis",
+    "name": "Davis Cup WG2 PO: TOG vs INA (ATP)",
+    "shortName": "Davis Cup WG2 PO: TOG vs INA"
+  },
+  {
+    "id": "tennis_atp_davis_cup_wg2_po_tun_vs_crc",
+    "sportId": "tennis",
+    "name": "Davis Cup WG2 PO: TUN vs CRC (ATP)",
+    "shortName": "Davis Cup WG2 PO: TUN vs CRC"
+  },
+  {
+    "id": "tennis_atp_davis_cup_wg2_po_tun_vs_cyp",
+    "sportId": "tennis",
+    "name": "Davis Cup WG2 PO: TUN vs CYP (ATP)",
+    "shortName": "Davis Cup WG2 PO: TUN vs CYP"
+  },
+  {
+    "id": "tennis_atp_davis_cup_wg2_po_tun_vs_zim",
+    "sportId": "tennis",
+    "name": "Davis Cup WG2 PO: TUN vs ZIM (ATP)",
+    "shortName": "Davis Cup WG2 PO: TUN vs ZIM"
+  },
+  {
+    "id": "tennis_atp_davis_cup_wg2_po_uru_vs_mda",
+    "sportId": "tennis",
+    "name": "Davis Cup WG2 PO: URU vs MDA (ATP)",
+    "shortName": "Davis Cup WG2 PO: URU vs MDA"
+  },
+  {
+    "id": "tennis_atp_davis_cup_wg2_po_vie_vs_rsa",
+    "sportId": "tennis",
+    "name": "Davis Cup WG2 PO: VIE vs RSA (ATP)",
+    "shortName": "Davis Cup WG2 PO: VIE vs RSA"
+  },
+  {
+    "id": "tennis_atp_davis_cup_wg2_r1_bar_vs_ina",
+    "sportId": "tennis",
+    "name": "Davis Cup WG2 R1: BAR vs INA (ATP)",
+    "shortName": "Davis Cup WG2 R1: BAR vs INA"
+  },
+  {
+    "id": "tennis_atp_davis_cup_wg2_r1_bar_vs_irl",
+    "sportId": "tennis",
+    "name": "Davis Cup WG2 R1: BAR vs IRL (ATP)",
+    "shortName": "Davis Cup WG2 R1: BAR vs IRL"
+  },
+  {
+    "id": "tennis_atp_davis_cup_wg2_r1_bar_vs_pak",
+    "sportId": "tennis",
+    "name": "Davis Cup WG2 R1: BAR vs PAK (ATP)",
+    "shortName": "Davis Cup WG2 R1: BAR vs PAK"
+  },
+  {
+    "id": "tennis_atp_davis_cup_wg2_r1_bol_vs_tha",
+    "sportId": "tennis",
+    "name": "Davis Cup WG2 R1: BOL vs THA (ATP)",
+    "shortName": "Davis Cup WG2 R1: BOL vs THA"
+  },
+  {
+    "id": "tennis_atp_davis_cup_wg2_r1_bol_vs_uru",
+    "sportId": "tennis",
+    "name": "Davis Cup WG2 R1: BOL vs URU (ATP)",
+    "shortName": "Davis Cup WG2 R1: BOL vs URU"
+  },
+  {
+    "id": "tennis_atp_davis_cup_wg2_r1_bul_vs_esa",
+    "sportId": "tennis",
+    "name": "Davis Cup WG2 R1: BUL vs ESA (ATP)",
+    "shortName": "Davis Cup WG2 R1: BUL vs ESA"
+  },
+  {
+    "id": "tennis_atp_davis_cup_wg2_r1_cyp_vs_mon",
+    "sportId": "tennis",
+    "name": "Davis Cup WG2 R1: CYP vs MON (ATP)",
+    "shortName": "Davis Cup WG2 R1: CYP vs MON"
+  },
+  {
+    "id": "tennis_atp_davis_cup_wg2_r1_den_vs_esa",
+    "sportId": "tennis",
+    "name": "Davis Cup WG2 R1: DEN vs ESA (ATP)",
+    "shortName": "Davis Cup WG2 R1: DEN vs ESA"
+  },
+  {
+    "id": "tennis_atp_davis_cup_wg2_r1_dom_vs_lat",
+    "sportId": "tennis",
+    "name": "Davis Cup WG2 R1: DOM vs LAT (ATP)",
+    "shortName": "Davis Cup WG2 R1: DOM vs LAT"
+  },
+  {
+    "id": "tennis_atp_davis_cup_wg2_r1_dom_vs_tun",
+    "sportId": "tennis",
+    "name": "Davis Cup WG2 R1: DOM vs TUN (ATP)",
+    "shortName": "Davis Cup WG2 R1: DOM vs TUN"
+  },
+  {
+    "id": "tennis_atp_davis_cup_wg2_r1_esa_vs_irl",
+    "sportId": "tennis",
+    "name": "Davis Cup WG2 R1: ESA vs IRL (ATP)",
+    "shortName": "Davis Cup WG2 R1: ESA vs IRL"
+  },
+  {
+    "id": "tennis_atp_davis_cup_wg2_r1_esa_vs_rou",
+    "sportId": "tennis",
+    "name": "Davis Cup WG2 R1: ESA vs ROU (ATP)",
+    "shortName": "Davis Cup WG2 R1: ESA vs ROU"
+  },
+  {
+    "id": "tennis_atp_davis_cup_wg2_r1_est_vs_mex",
+    "sportId": "tennis",
+    "name": "Davis Cup WG2 R1: EST vs MEX (ATP)",
+    "shortName": "Davis Cup WG2 R1: EST vs MEX"
+  },
+  {
+    "id": "tennis_atp_davis_cup_wg2_r1_geo_vs_mex",
+    "sportId": "tennis",
+    "name": "Davis Cup WG2 R1: GEO vs MEX (ATP)",
+    "shortName": "Davis Cup WG2 R1: GEO vs MEX"
+  },
+  {
+    "id": "tennis_atp_davis_cup_wg2_r1_hkg_vs_ecu",
+    "sportId": "tennis",
+    "name": "Davis Cup WG2 R1: HKG vs ECU (ATP)",
+    "shortName": "Davis Cup WG2 R1: HKG vs ECU"
+  },
+  {
+    "id": "tennis_atp_davis_cup_wg2_r1_hkg_vs_lat",
+    "sportId": "tennis",
+    "name": "Davis Cup WG2 R1: HKG vs LAT (ATP)",
+    "shortName": "Davis Cup WG2 R1: HKG vs LAT"
+  },
+  {
+    "id": "tennis_atp_davis_cup_wg2_r1_hkg_vs_uzb",
+    "sportId": "tennis",
+    "name": "Davis Cup WG2 R1: HKG vs UZB (ATP)",
+    "shortName": "Davis Cup WG2 R1: HKG vs UZB"
+  },
+  {
+    "id": "tennis_atp_davis_cup_wg2_r1_ind_vs_mar",
+    "sportId": "tennis",
+    "name": "Davis Cup WG2 R1: IND vs MAR (ATP)",
+    "shortName": "Davis Cup WG2 R1: IND vs MAR"
+  },
+  {
+    "id": "tennis_atp_davis_cup_wg2_r1_irl_vs_chn",
+    "sportId": "tennis",
+    "name": "Davis Cup WG2 R1: IRL vs CHN (ATP)",
+    "shortName": "Davis Cup WG2 R1: IRL vs CHN"
+  },
+  {
+    "id": "tennis_atp_davis_cup_wg2_r1_lbn_vs_bar",
+    "sportId": "tennis",
+    "name": "Davis Cup WG2 R1: LBN vs BAR (ATP)",
+    "shortName": "Davis Cup WG2 R1: LBN vs BAR"
+  },
+  {
+    "id": "tennis_atp_davis_cup_wg2_r1_lbn_vs_jam",
+    "sportId": "tennis",
+    "name": "Davis Cup WG2 R1: LBN vs JAM (ATP)",
+    "shortName": "Davis Cup WG2 R1: LBN vs JAM"
+  },
+  {
+    "id": "tennis_atp_davis_cup_wg2_r1_lbn_vs_mon",
+    "sportId": "tennis",
+    "name": "Davis Cup WG2 R1: LBN vs MON (ATP)",
+    "shortName": "Davis Cup WG2 R1: LBN vs MON"
+  },
+  {
+    "id": "tennis_atp_davis_cup_wg2_r1_lbn_vs_rsa",
+    "sportId": "tennis",
+    "name": "Davis Cup WG2 R1: LBN vs RSA (ATP)",
+    "shortName": "Davis Cup WG2 R1: LBN vs RSA"
+  },
+  {
+    "id": "tennis_atp_davis_cup_wg2_r1_ltu_vs_ben",
+    "sportId": "tennis",
+    "name": "Davis Cup WG2 R1: LTU vs BEN (ATP)",
+    "shortName": "Davis Cup WG2 R1: LTU vs BEN"
+  },
+  {
+    "id": "tennis_atp_davis_cup_wg2_r1_ltu_vs_egy",
+    "sportId": "tennis",
+    "name": "Davis Cup WG2 R1: LTU vs EGY (ATP)",
+    "shortName": "Davis Cup WG2 R1: LTU vs EGY"
+  },
+  {
+    "id": "tennis_atp_davis_cup_wg2_r1_ltu_vs_gre",
+    "sportId": "tennis",
+    "name": "Davis Cup WG2 R1: LTU vs GRE (ATP)",
+    "shortName": "Davis Cup WG2 R1: LTU vs GRE"
+  },
+  {
+    "id": "tennis_atp_davis_cup_wg2_r1_mar_vs_mon",
+    "sportId": "tennis",
+    "name": "Davis Cup WG2 R1: MAR vs MON (ATP)",
+    "shortName": "Davis Cup WG2 R1: MAR vs MON"
+  },
+  {
+    "id": "tennis_atp_davis_cup_wg2_r1_mex_vs_bul",
+    "sportId": "tennis",
+    "name": "Davis Cup WG2 R1: MEX vs BUL (ATP)",
+    "shortName": "Davis Cup WG2 R1: MEX vs BUL"
+  },
+  {
+    "id": "tennis_atp_davis_cup_wg2_r1_mex_vs_chn",
+    "sportId": "tennis",
+    "name": "Davis Cup WG2 R1: MEX vs CHN (ATP)",
+    "shortName": "Davis Cup WG2 R1: MEX vs CHN"
+  },
+  {
+    "id": "tennis_atp_davis_cup_wg2_r1_mon_vs_ecu",
+    "sportId": "tennis",
+    "name": "Davis Cup WG2 R1: MON vs ECU (ATP)",
+    "shortName": "Davis Cup WG2 R1: MON vs ECU"
+  },
+  {
+    "id": "tennis_atp_davis_cup_wg2_r1_nzl_vs_geo",
+    "sportId": "tennis",
+    "name": "Davis Cup WG2 R1: NZL vs GEO (ATP)",
+    "shortName": "Davis Cup WG2 R1: NZL vs GEO"
+  },
+  {
+    "id": "tennis_atp_davis_cup_wg2_r1_nzl_vs_lux",
+    "sportId": "tennis",
+    "name": "Davis Cup WG2 R1: NZL vs LUX (ATP)",
+    "shortName": "Davis Cup WG2 R1: NZL vs LUX"
+  },
+  {
+    "id": "tennis_atp_davis_cup_wg2_r1_pak_vs_ina",
+    "sportId": "tennis",
+    "name": "Davis Cup WG2 R1: PAK vs INA (ATP)",
+    "shortName": "Davis Cup WG2 R1: PAK vs INA"
+  },
+  {
+    "id": "tennis_atp_davis_cup_wg2_r1_par_vs_pak",
+    "sportId": "tennis",
+    "name": "Davis Cup WG2 R1: PAR vs PAK (ATP)",
+    "shortName": "Davis Cup WG2 R1: PAR vs PAK"
+  },
+  {
+    "id": "tennis_atp_davis_cup_wg2_r1_pol_vs_esa",
+    "sportId": "tennis",
+    "name": "Davis Cup WG2 R1: POL vs ESA (ATP)",
+    "shortName": "Davis Cup WG2 R1: POL vs ESA"
+  },
+  {
+    "id": "tennis_atp_davis_cup_wg2_r1_pol_vs_ina",
+    "sportId": "tennis",
+    "name": "Davis Cup WG2 R1: POL vs INA (ATP)",
+    "shortName": "Davis Cup WG2 R1: POL vs INA"
+  },
+  {
+    "id": "tennis_atp_davis_cup_wg2_r1_rou_vs_chn",
+    "sportId": "tennis",
+    "name": "Davis Cup WG2 R1: ROU vs CHN (ATP)",
+    "shortName": "Davis Cup WG2 R1: ROU vs CHN"
+  },
+  {
+    "id": "tennis_atp_davis_cup_wg2_r1_rsa_vs_bul",
+    "sportId": "tennis",
+    "name": "Davis Cup WG2 R1: RSA vs BUL (ATP)",
+    "shortName": "Davis Cup WG2 R1: RSA vs BUL"
+  },
+  {
+    "id": "tennis_atp_davis_cup_wg2_r1_rsa_vs_mar",
+    "sportId": "tennis",
+    "name": "Davis Cup WG2 R1: RSA vs MAR (ATP)",
+    "shortName": "Davis Cup WG2 R1: RSA vs MAR"
+  },
+  {
+    "id": "tennis_atp_davis_cup_wg2_r1_rsa_vs_ven",
+    "sportId": "tennis",
+    "name": "Davis Cup WG2 R1: RSA vs VEN (ATP)",
+    "shortName": "Davis Cup WG2 R1: RSA vs VEN"
+  },
+  {
+    "id": "tennis_atp_davis_cup_wg2_r1_slo_vs_est",
+    "sportId": "tennis",
+    "name": "Davis Cup WG2 R1: SLO vs EST (ATP)",
+    "shortName": "Davis Cup WG2 R1: SLO vs EST"
+  },
+  {
+    "id": "tennis_atp_davis_cup_wg2_r1_slo_vs_lux",
+    "sportId": "tennis",
+    "name": "Davis Cup WG2 R1: SLO vs LUX (ATP)",
+    "shortName": "Davis Cup WG2 R1: SLO vs LUX"
+  },
+  {
+    "id": "tennis_atp_davis_cup_wg2_r1_slo_vs_par",
+    "sportId": "tennis",
+    "name": "Davis Cup WG2 R1: SLO vs PAR (ATP)",
+    "shortName": "Davis Cup WG2 R1: SLO vs PAR"
+  },
+  {
+    "id": "tennis_atp_davis_cup_wg2_r1_slo_vs_uru",
+    "sportId": "tennis",
+    "name": "Davis Cup WG2 R1: SLO vs URU (ATP)",
+    "shortName": "Davis Cup WG2 R1: SLO vs URU"
+  },
+  {
+    "id": "tennis_atp_davis_cup_wg2_r1_sui_vs_est",
+    "sportId": "tennis",
+    "name": "Davis Cup WG2 R1: SUI vs EST (ATP)",
+    "shortName": "Davis Cup WG2 R1: SUI vs EST"
+  },
+  {
+    "id": "tennis_atp_davis_cup_wg2_r1_tha_vs_den",
+    "sportId": "tennis",
+    "name": "Davis Cup WG2 R1: THA vs DEN (ATP)",
+    "shortName": "Davis Cup WG2 R1: THA vs DEN"
+  },
+  {
+    "id": "tennis_atp_davis_cup_wg2_r1_tog_vs_egy",
+    "sportId": "tennis",
+    "name": "Davis Cup WG2 R1: TOG vs EGY (ATP)",
+    "shortName": "Davis Cup WG2 R1: TOG vs EGY"
+  },
+  {
+    "id": "tennis_atp_davis_cup_wg2_r1_tog_vs_lat",
+    "sportId": "tennis",
+    "name": "Davis Cup WG2 R1: TOG vs LAT (ATP)",
+    "shortName": "Davis Cup WG2 R1: TOG vs LAT"
+  },
+  {
+    "id": "tennis_atp_davis_cup_wg2_r1_tpe_vs_hkg",
+    "sportId": "tennis",
+    "name": "Davis Cup WG2 R1: TPE vs HKG (ATP)",
+    "shortName": "Davis Cup WG2 R1: TPE vs HKG"
+  },
+  {
+    "id": "tennis_atp_davis_cup_wg2_r1_tun_vs_gre",
+    "sportId": "tennis",
+    "name": "Davis Cup WG2 R1: TUN vs GRE (ATP)",
+    "shortName": "Davis Cup WG2 R1: TUN vs GRE"
+  },
+  {
+    "id": "tennis_atp_davis_cup_wg2_r1_tun_vs_irl",
+    "sportId": "tennis",
+    "name": "Davis Cup WG2 R1: TUN vs IRL (ATP)",
+    "shortName": "Davis Cup WG2 R1: TUN vs IRL"
+  },
+  {
+    "id": "tennis_atp_davis_cup_wg2_r1_tur_vs_lat",
+    "sportId": "tennis",
+    "name": "Davis Cup WG2 R1: TUR vs LAT (ATP)",
+    "shortName": "Davis Cup WG2 R1: TUR vs LAT"
+  },
+  {
+    "id": "tennis_atp_davis_cup_wg2_r1_ukr_vs_dom",
+    "sportId": "tennis",
+    "name": "Davis Cup WG2 R1: UKR vs DOM (ATP)",
+    "shortName": "Davis Cup WG2 R1: UKR vs DOM"
+  },
+  {
+    "id": "tennis_atp_davis_cup_wg2_r1_uru_vs_chn",
+    "sportId": "tennis",
+    "name": "Davis Cup WG2 R1: URU vs CHN (ATP)",
+    "shortName": "Davis Cup WG2 R1: URU vs CHN"
+  },
+  {
+    "id": "tennis_atp_davis_cup_wg2_r1_uru_vs_egy",
+    "sportId": "tennis",
+    "name": "Davis Cup WG2 R1: URU vs EGY (ATP)",
+    "shortName": "Davis Cup WG2 R1: URU vs EGY"
+  },
+  {
+    "id": "tennis_atp_davis_cup_wg2_r1_uzb_vs_est",
+    "sportId": "tennis",
+    "name": "Davis Cup WG2 R1: UZB vs EST (ATP)",
+    "shortName": "Davis Cup WG2 R1: UZB vs EST"
+  },
+  {
+    "id": "tennis_atp_delray_beach",
+    "sportId": "tennis",
+    "name": "Delray Beach (ATP)",
+    "shortName": "Delray Beach"
+  },
+  {
+    "id": "tennis_atp_doha",
+    "sportId": "tennis",
+    "name": "Doha (ATP)",
+    "shortName": "Doha"
+  },
+  {
+    "id": "tennis_wta_doha",
+    "sportId": "tennis",
+    "name": "Doha (WTA)",
+    "shortName": "Doha"
+  },
+  {
+    "id": "tennis_atp_dubai",
+    "sportId": "tennis",
+    "name": "Dubai (ATP)",
+    "shortName": "Dubai"
+  },
+  {
+    "id": "tennis_wta_dubai",
+    "sportId": "tennis",
+    "name": "Dubai (WTA)",
+    "shortName": "Dubai"
+  },
+  {
+    "id": "tennis_atp_eastbourne",
+    "sportId": "tennis",
+    "name": "Eastbourne (ATP)",
+    "shortName": "Eastbourne"
+  },
+  {
+    "id": "tennis_wta_eastbourne",
+    "sportId": "tennis",
+    "name": "Eastbourne (WTA)",
+    "shortName": "Eastbourne"
+  },
+  {
+    "id": "tennis_atp_estoril",
+    "sportId": "tennis",
+    "name": "Estoril (ATP)",
+    "shortName": "Estoril"
+  },
+  {
+    "id": "tennis_wta_fed_cup_g1_ppo_arg_vs_col",
+    "sportId": "tennis",
+    "name": "Fed Cup G1 PPO: ARG vs COL (WTA)",
+    "shortName": "Fed Cup G1 PPO: ARG vs COL"
+  },
+  {
+    "id": "tennis_wta_fed_cup_g1_ppo_cro_vs_ita",
+    "sportId": "tennis",
+    "name": "Fed Cup G1 PPO: CRO vs ITA (WTA)",
+    "shortName": "Fed Cup G1 PPO: CRO vs ITA"
+  },
+  {
+    "id": "tennis_wta_fed_cup_g1_ppo_par_vs_mex",
+    "sportId": "tennis",
+    "name": "Fed Cup G1 PPO: PAR vs MEX (WTA)",
+    "shortName": "Fed Cup G1 PPO: PAR vs MEX"
+  },
+  {
+    "id": "tennis_wta_fed_cup_g1_ppo_pol_vs_swe",
+    "sportId": "tennis",
+    "name": "Fed Cup G1 PPO: POL vs SWE (WTA)",
+    "shortName": "Fed Cup G1 PPO: POL vs SWE"
+  },
+  {
+    "id": "tennis_wta_fed_cup_g1_ppo_srb_vs_slo",
+    "sportId": "tennis",
+    "name": "Fed Cup G1 PPO: SRB vs SLO (WTA)",
+    "shortName": "Fed Cup G1 PPO: SRB vs SLO"
+  },
+  {
+    "id": "tennis_wta_fed_cup_g1_ppo_ukr_vs_est",
+    "sportId": "tennis",
+    "name": "Fed Cup G1 PPO: UKR vs EST (WTA)",
+    "shortName": "Fed Cup G1 PPO: UKR vs EST"
+  },
+  {
+    "id": "tennis_wta_fed_cup_g1_rel_bul_vs_gre",
+    "sportId": "tennis",
+    "name": "Fed Cup G1 REL: BUL vs GRE (WTA)",
+    "shortName": "Fed Cup G1 REL: BUL vs GRE"
+  },
+  {
+    "id": "tennis_wta_fed_cup_g1_rel_lux_vs_tur",
+    "sportId": "tennis",
+    "name": "Fed Cup G1 REL: LUX vs TUR (WTA)",
+    "shortName": "Fed Cup G1 REL: LUX vs TUR"
+  },
+  {
+    "id": "tennis_wta_fed_cup_g1_rel_ven_vs_chi",
+    "sportId": "tennis",
+    "name": "Fed Cup G1 REL: VEN vs CHI (WTA)",
+    "shortName": "Fed Cup G1 REL: VEN vs CHI"
+  },
+  {
+    "id": "tennis_wta_fed_cup_g1_rr_arg_vs_chi",
+    "sportId": "tennis",
+    "name": "Fed Cup G1 RR: ARG vs CHI (WTA)",
+    "shortName": "Fed Cup G1 RR: ARG vs CHI"
+  },
+  {
+    "id": "tennis_wta_fed_cup_g1_rr_arg_vs_mex",
+    "sportId": "tennis",
+    "name": "Fed Cup G1 RR: ARG vs MEX (WTA)",
+    "shortName": "Fed Cup G1 RR: ARG vs MEX"
+  },
+  {
+    "id": "tennis_wta_fed_cup_g1_rr_arg_vs_per",
+    "sportId": "tennis",
+    "name": "Fed Cup G1 RR: ARG vs PER (WTA)",
+    "shortName": "Fed Cup G1 RR: ARG vs PER"
+  },
+  {
+    "id": "tennis_wta_fed_cup_g1_rr_aut_vs_gre",
+    "sportId": "tennis",
+    "name": "Fed Cup G1 RR: AUT vs GRE (WTA)",
+    "shortName": "Fed Cup G1 RR: AUT vs GRE"
+  },
+  {
+    "id": "tennis_wta_fed_cup_g1_rr_chi_vs_mex",
+    "sportId": "tennis",
+    "name": "Fed Cup G1 RR: CHI vs MEX (WTA)",
+    "shortName": "Fed Cup G1 RR: CHI vs MEX"
+  },
+  {
+    "id": "tennis_wta_fed_cup_g1_rr_chi_vs_per",
+    "sportId": "tennis",
+    "name": "Fed Cup G1 RR: CHI vs PER (WTA)",
+    "shortName": "Fed Cup G1 RR: CHI vs PER"
+  },
+  {
+    "id": "tennis_wta_fed_cup_g1_rr_chn_vs_ina",
+    "sportId": "tennis",
+    "name": "Fed Cup G1 RR: CHN vs INA (WTA)",
+    "shortName": "Fed Cup G1 RR: CHN vs INA"
+  },
+  {
+    "id": "tennis_wta_fed_cup_g1_rr_chn_vs_ind",
+    "sportId": "tennis",
+    "name": "Fed Cup G1 RR: CHN vs IND (WTA)",
+    "shortName": "Fed Cup G1 RR: CHN vs IND"
+  },
+  {
+    "id": "tennis_wta_fed_cup_g1_rr_chn_vs_kor",
+    "sportId": "tennis",
+    "name": "Fed Cup G1 RR: CHN vs KOR (WTA)",
+    "shortName": "Fed Cup G1 RR: CHN vs KOR"
+  },
+  {
+    "id": "tennis_wta_fed_cup_g1_rr_chn_vs_tpe",
+    "sportId": "tennis",
+    "name": "Fed Cup G1 RR: CHN vs TPE (WTA)",
+    "shortName": "Fed Cup G1 RR: CHN vs TPE"
+  },
+  {
+    "id": "tennis_wta_fed_cup_g1_rr_chn_vs_uzb",
+    "sportId": "tennis",
+    "name": "Fed Cup G1 RR: CHN vs UZB (WTA)",
+    "shortName": "Fed Cup G1 RR: CHN vs UZB"
+  },
+  {
+    "id": "tennis_wta_fed_cup_g1_rr_col_vs_ven",
+    "sportId": "tennis",
+    "name": "Fed Cup G1 RR: COL vs VEN (WTA)",
+    "shortName": "Fed Cup G1 RR: COL vs VEN"
+  },
+  {
+    "id": "tennis_wta_fed_cup_g1_rr_cro_vs_bul",
+    "sportId": "tennis",
+    "name": "Fed Cup G1 RR: CRO vs BUL (WTA)",
+    "shortName": "Fed Cup G1 RR: CRO vs BUL"
+  },
+  {
+    "id": "tennis_wta_fed_cup_g1_rr_est_vs_aut",
+    "sportId": "tennis",
+    "name": "Fed Cup G1 RR: EST vs AUT (WTA)",
+    "shortName": "Fed Cup G1 RR: EST vs AUT"
+  },
+  {
+    "id": "tennis_wta_fed_cup_g1_rr_est_vs_gre",
+    "sportId": "tennis",
+    "name": "Fed Cup G1 RR: EST vs GRE (WTA)",
+    "shortName": "Fed Cup G1 RR: EST vs GRE"
+  },
+  {
+    "id": "tennis_wta_fed_cup_g1_rr_ina_vs_kor",
+    "sportId": "tennis",
+    "name": "Fed Cup G1 RR: INA vs KOR (WTA)",
+    "shortName": "Fed Cup G1 RR: INA vs KOR"
+  },
+  {
+    "id": "tennis_wta_fed_cup_g1_rr_ina_vs_uzb",
+    "sportId": "tennis",
+    "name": "Fed Cup G1 RR: INA vs UZB (WTA)",
+    "shortName": "Fed Cup G1 RR: INA vs UZB"
+  },
+  {
+    "id": "tennis_wta_fed_cup_g1_rr_ind_vs_ina",
+    "sportId": "tennis",
+    "name": "Fed Cup G1 RR: IND vs INA (WTA)",
+    "shortName": "Fed Cup G1 RR: IND vs INA"
+  },
+  {
+    "id": "tennis_wta_fed_cup_g1_rr_ind_vs_kor",
+    "sportId": "tennis",
+    "name": "Fed Cup G1 RR: IND vs KOR (WTA)",
+    "shortName": "Fed Cup G1 RR: IND vs KOR"
+  },
+  {
+    "id": "tennis_wta_fed_cup_g1_rr_ind_vs_uzb",
+    "sportId": "tennis",
+    "name": "Fed Cup G1 RR: IND vs UZB (WTA)",
+    "shortName": "Fed Cup G1 RR: IND vs UZB"
+  },
+  {
+    "id": "tennis_wta_fed_cup_g1_rr_ita_vs_aut",
+    "sportId": "tennis",
+    "name": "Fed Cup G1 RR: ITA vs AUT (WTA)",
+    "shortName": "Fed Cup G1 RR: ITA vs AUT"
+  },
+  {
+    "id": "tennis_wta_fed_cup_g1_rr_ita_vs_est",
+    "sportId": "tennis",
+    "name": "Fed Cup G1 RR: ITA vs EST (WTA)",
+    "shortName": "Fed Cup G1 RR: ITA vs EST"
+  },
+  {
+    "id": "tennis_wta_fed_cup_g1_rr_ita_vs_gre",
+    "sportId": "tennis",
+    "name": "Fed Cup G1 RR: ITA vs GRE (WTA)",
+    "shortName": "Fed Cup G1 RR: ITA vs GRE"
+  },
+  {
+    "id": "tennis_wta_fed_cup_g1_rr_kor_vs_uzb",
+    "sportId": "tennis",
+    "name": "Fed Cup G1 RR: KOR vs UZB (WTA)",
+    "shortName": "Fed Cup G1 RR: KOR vs UZB"
+  },
+  {
+    "id": "tennis_wta_fed_cup_g1_rr_mex_vs_per",
+    "sportId": "tennis",
+    "name": "Fed Cup G1 RR: MEX vs PER (WTA)",
+    "shortName": "Fed Cup G1 RR: MEX vs PER"
+  },
+  {
+    "id": "tennis_wta_fed_cup_g1_rr_par_vs_col",
+    "sportId": "tennis",
+    "name": "Fed Cup G1 RR: PAR vs COL (WTA)",
+    "shortName": "Fed Cup G1 RR: PAR vs COL"
+  },
+  {
+    "id": "tennis_wta_fed_cup_g1_rr_par_vs_ven",
+    "sportId": "tennis",
+    "name": "Fed Cup G1 RR: PAR vs VEN (WTA)",
+    "shortName": "Fed Cup G1 RR: PAR vs VEN"
+  },
+  {
+    "id": "tennis_wta_fed_cup_g1_rr_pol_vs_slo",
+    "sportId": "tennis",
+    "name": "Fed Cup G1 RR: POL vs SLO (WTA)",
+    "shortName": "Fed Cup G1 RR: POL vs SLO"
+  },
+  {
+    "id": "tennis_wta_fed_cup_g1_rr_pol_vs_tur",
+    "sportId": "tennis",
+    "name": "Fed Cup G1 RR: POL vs TUR (WTA)",
+    "shortName": "Fed Cup G1 RR: POL vs TUR"
+  },
+  {
+    "id": "tennis_wta_fed_cup_g1_rr_srb_vs_lux",
+    "sportId": "tennis",
+    "name": "Fed Cup G1 RR: SRB vs LUX (WTA)",
+    "shortName": "Fed Cup G1 RR: SRB vs LUX"
+  },
+  {
+    "id": "tennis_wta_fed_cup_g1_rr_srb_vs_swe",
+    "sportId": "tennis",
+    "name": "Fed Cup G1 RR: SRB vs SWE (WTA)",
+    "shortName": "Fed Cup G1 RR: SRB vs SWE"
+  },
+  {
+    "id": "tennis_wta_fed_cup_g1_rr_swe_vs_lux",
+    "sportId": "tennis",
+    "name": "Fed Cup G1 RR: SWE vs LUX (WTA)",
+    "shortName": "Fed Cup G1 RR: SWE vs LUX"
+  },
+  {
+    "id": "tennis_wta_fed_cup_g1_rr_tpe_vs_ina",
+    "sportId": "tennis",
+    "name": "Fed Cup G1 RR: TPE vs INA (WTA)",
+    "shortName": "Fed Cup G1 RR: TPE vs INA"
+  },
+  {
+    "id": "tennis_wta_fed_cup_g1_rr_tpe_vs_ind",
+    "sportId": "tennis",
+    "name": "Fed Cup G1 RR: TPE vs IND (WTA)",
+    "shortName": "Fed Cup G1 RR: TPE vs IND"
+  },
+  {
+    "id": "tennis_wta_fed_cup_g1_rr_tpe_vs_kor",
+    "sportId": "tennis",
+    "name": "Fed Cup G1 RR: TPE vs KOR (WTA)",
+    "shortName": "Fed Cup G1 RR: TPE vs KOR"
+  },
+  {
+    "id": "tennis_wta_fed_cup_g1_rr_tpe_vs_uzb",
+    "sportId": "tennis",
+    "name": "Fed Cup G1 RR: TPE vs UZB (WTA)",
+    "shortName": "Fed Cup G1 RR: TPE vs UZB"
+  },
+  {
+    "id": "tennis_wta_fed_cup_g1_rr_tur_vs_slo",
+    "sportId": "tennis",
+    "name": "Fed Cup G1 RR: TUR vs SLO (WTA)",
+    "shortName": "Fed Cup G1 RR: TUR vs SLO"
+  },
+  {
+    "id": "tennis_wta_fed_cup_g1_rr_ukr_vs_bul",
+    "sportId": "tennis",
+    "name": "Fed Cup G1 RR: UKR vs BUL (WTA)",
+    "shortName": "Fed Cup G1 RR: UKR vs BUL"
+  },
+  {
+    "id": "tennis_wta_fed_cup_g1_rr_ukr_vs_cro",
+    "sportId": "tennis",
+    "name": "Fed Cup G1 RR: UKR vs CRO (WTA)",
+    "shortName": "Fed Cup G1 RR: UKR vs CRO"
+  },
+  {
+    "id": "tennis_wta_fed_cup_g2_pm_gum_vs_mgl",
+    "sportId": "tennis",
+    "name": "Fed Cup G2 PM: GUM vs MGL (WTA)",
+    "shortName": "Fed Cup G2 PM: GUM vs MGL"
+  },
+  {
+    "id": "tennis_wta_fed_cup_g2_pm_sgp_vs_tkm",
+    "sportId": "tennis",
+    "name": "Fed Cup G2 PM: SGP vs TKM (WTA)",
+    "shortName": "Fed Cup G2 PM: SGP vs TKM"
+  },
+  {
+    "id": "tennis_wta_fed_cup_g2_pm_tha_vs_pak",
+    "sportId": "tennis",
+    "name": "Fed Cup G2 PM: THA vs PAK (WTA)",
+    "shortName": "Fed Cup G2 PM: THA vs PAK"
+  },
+  {
+    "id": "tennis_wta_fed_cup_g2_ppo_den_vs_tun",
+    "sportId": "tennis",
+    "name": "Fed Cup G2 PPO: DEN vs TUN (WTA)",
+    "shortName": "Fed Cup G2 PPO: DEN vs TUN"
+  },
+  {
+    "id": "tennis_wta_fed_cup_g2_ppo_geo_vs_fin",
+    "sportId": "tennis",
+    "name": "Fed Cup G2 PPO: GEO vs FIN (WTA)",
+    "shortName": "Fed Cup G2 PPO: GEO vs FIN"
+  },
+  {
+    "id": "tennis_wta_fed_cup_g2_ppo_nzl_vs_phi",
+    "sportId": "tennis",
+    "name": "Fed Cup G2 PPO: NZL vs PHI (WTA)",
+    "shortName": "Fed Cup G2 PPO: NZL vs PHI"
+  },
+  {
+    "id": "tennis_wta_fed_cup_g2_rel_egy_vs_mda",
+    "sportId": "tennis",
+    "name": "Fed Cup G2 REL: EGY vs MDA (WTA)",
+    "shortName": "Fed Cup G2 REL: EGY vs MDA"
+  },
+  {
+    "id": "tennis_wta_fed_cup_g2_rel_isr_vs_por",
+    "sportId": "tennis",
+    "name": "Fed Cup G2 REL: ISR vs POR (WTA)",
+    "shortName": "Fed Cup G2 REL: ISR vs POR"
+  },
+  {
+    "id": "tennis_wta_fed_cup_g2_rr_den_vs_egy",
+    "sportId": "tennis",
+    "name": "Fed Cup G2 RR: DEN vs EGY (WTA)",
+    "shortName": "Fed Cup G2 RR: DEN vs EGY"
+  },
+  {
+    "id": "tennis_wta_fed_cup_g2_rr_den_vs_fin",
+    "sportId": "tennis",
+    "name": "Fed Cup G2 RR: DEN vs FIN (WTA)",
+    "shortName": "Fed Cup G2 RR: DEN vs FIN"
+  },
+  {
+    "id": "tennis_wta_fed_cup_g2_rr_den_vs_por",
+    "sportId": "tennis",
+    "name": "Fed Cup G2 RR: DEN vs POR (WTA)",
+    "shortName": "Fed Cup G2 RR: DEN vs POR"
+  },
+  {
+    "id": "tennis_wta_fed_cup_g2_rr_fin_vs_egy",
+    "sportId": "tennis",
+    "name": "Fed Cup G2 RR: FIN vs EGY (WTA)",
+    "shortName": "Fed Cup G2 RR: FIN vs EGY"
+  },
+  {
+    "id": "tennis_wta_fed_cup_g2_rr_geo_vs_mda",
+    "sportId": "tennis",
+    "name": "Fed Cup G2 RR: GEO vs MDA (WTA)",
+    "shortName": "Fed Cup G2 RR: GEO vs MDA"
+  },
+  {
+    "id": "tennis_wta_fed_cup_g2_rr_isr_vs_geo",
+    "sportId": "tennis",
+    "name": "Fed Cup G2 RR: ISR vs GEO (WTA)",
+    "shortName": "Fed Cup G2 RR: ISR vs GEO"
+  },
+  {
+    "id": "tennis_wta_fed_cup_g2_rr_isr_vs_mda",
+    "sportId": "tennis",
+    "name": "Fed Cup G2 RR: ISR vs MDA (WTA)",
+    "shortName": "Fed Cup G2 RR: ISR vs MDA"
+  },
+  {
+    "id": "tennis_wta_fed_cup_g2_rr_isr_vs_tun",
+    "sportId": "tennis",
+    "name": "Fed Cup G2 RR: ISR vs TUN (WTA)",
+    "shortName": "Fed Cup G2 RR: ISR vs TUN"
+  },
+  {
+    "id": "tennis_wta_fed_cup_g2_rr_nzl_vs_mgl",
+    "sportId": "tennis",
+    "name": "Fed Cup G2 RR: NZL vs MGL (WTA)",
+    "shortName": "Fed Cup G2 RR: NZL vs MGL"
+  },
+  {
+    "id": "tennis_wta_fed_cup_g2_rr_nzl_vs_pak",
+    "sportId": "tennis",
+    "name": "Fed Cup G2 RR: NZL vs PAK (WTA)",
+    "shortName": "Fed Cup G2 RR: NZL vs PAK"
+  },
+  {
+    "id": "tennis_wta_fed_cup_g2_rr_pak_vs_mgl",
+    "sportId": "tennis",
+    "name": "Fed Cup G2 RR: PAK vs MGL (WTA)",
+    "shortName": "Fed Cup G2 RR: PAK vs MGL"
+  },
+  {
+    "id": "tennis_wta_fed_cup_g2_rr_phi_vs_gum",
+    "sportId": "tennis",
+    "name": "Fed Cup G2 RR: PHI vs GUM (WTA)",
+    "shortName": "Fed Cup G2 RR: PHI vs GUM"
+  },
+  {
+    "id": "tennis_wta_fed_cup_g2_rr_phi_vs_tkm",
+    "sportId": "tennis",
+    "name": "Fed Cup G2 RR: PHI vs TKM (WTA)",
+    "shortName": "Fed Cup G2 RR: PHI vs TKM"
+  },
+  {
+    "id": "tennis_wta_fed_cup_g2_rr_por_vs_egy",
+    "sportId": "tennis",
+    "name": "Fed Cup G2 RR: POR vs EGY (WTA)",
+    "shortName": "Fed Cup G2 RR: POR vs EGY"
+  },
+  {
+    "id": "tennis_wta_fed_cup_g2_rr_por_vs_fin",
+    "sportId": "tennis",
+    "name": "Fed Cup G2 RR: POR vs FIN (WTA)",
+    "shortName": "Fed Cup G2 RR: POR vs FIN"
+  },
+  {
+    "id": "tennis_wta_fed_cup_g2_rr_sgp_vs_mgl",
+    "sportId": "tennis",
+    "name": "Fed Cup G2 RR: SGP vs MGL (WTA)",
+    "shortName": "Fed Cup G2 RR: SGP vs MGL"
+  },
+  {
+    "id": "tennis_wta_fed_cup_g2_rr_sgp_vs_nzl",
+    "sportId": "tennis",
+    "name": "Fed Cup G2 RR: SGP vs NZL (WTA)",
+    "shortName": "Fed Cup G2 RR: SGP vs NZL"
+  },
+  {
+    "id": "tennis_wta_fed_cup_g2_rr_sgp_vs_pak",
+    "sportId": "tennis",
+    "name": "Fed Cup G2 RR: SGP vs PAK (WTA)",
+    "shortName": "Fed Cup G2 RR: SGP vs PAK"
+  },
+  {
+    "id": "tennis_wta_fed_cup_g2_rr_tha_vs_gum",
+    "sportId": "tennis",
+    "name": "Fed Cup G2 RR: THA vs GUM (WTA)",
+    "shortName": "Fed Cup G2 RR: THA vs GUM"
+  },
+  {
+    "id": "tennis_wta_fed_cup_g2_rr_tha_vs_phi",
+    "sportId": "tennis",
+    "name": "Fed Cup G2 RR: THA vs PHI (WTA)",
+    "shortName": "Fed Cup G2 RR: THA vs PHI"
+  },
+  {
+    "id": "tennis_wta_fed_cup_g2_rr_tha_vs_tkm",
+    "sportId": "tennis",
+    "name": "Fed Cup G2 RR: THA vs TKM (WTA)",
+    "shortName": "Fed Cup G2 RR: THA vs TKM"
+  },
+  {
+    "id": "tennis_wta_fed_cup_g2_rr_tkm_vs_gum",
+    "sportId": "tennis",
+    "name": "Fed Cup G2 RR: TKM vs GUM (WTA)",
+    "shortName": "Fed Cup G2 RR: TKM vs GUM"
+  },
+  {
+    "id": "tennis_wta_fed_cup_g2_rr_tun_vs_geo",
+    "sportId": "tennis",
+    "name": "Fed Cup G2 RR: TUN vs GEO (WTA)",
+    "shortName": "Fed Cup G2 RR: TUN vs GEO"
+  },
+  {
+    "id": "tennis_wta_fed_cup_g2_rr_tun_vs_mda",
+    "sportId": "tennis",
+    "name": "Fed Cup G2 RR: TUN vs MDA (WTA)",
+    "shortName": "Fed Cup G2 RR: TUN vs MDA"
+  },
+  {
+    "id": "tennis_wta_fed_cup_qls_r1_bel_vs_kaz",
+    "sportId": "tennis",
+    "name": "Fed Cup QLS R1: BEL vs KAZ (WTA)",
+    "shortName": "Fed Cup QLS R1: BEL vs KAZ"
+  },
+  {
+    "id": "tennis_wta_fed_cup_qls_r1_blr_vs_ned",
+    "sportId": "tennis",
+    "name": "Fed Cup QLS R1: BLR vs NED (WTA)",
+    "shortName": "Fed Cup QLS R1: BLR vs NED"
+  },
+  {
+    "id": "tennis_wta_fed_cup_qls_r1_esp_vs_jpn",
+    "sportId": "tennis",
+    "name": "Fed Cup QLS R1: ESP vs JPN (WTA)",
+    "shortName": "Fed Cup QLS R1: ESP vs JPN"
+  },
+  {
+    "id": "tennis_wta_fed_cup_qls_r1_gbr_vs_svk",
+    "sportId": "tennis",
+    "name": "Fed Cup QLS R1: GBR vs SVK (WTA)",
+    "shortName": "Fed Cup QLS R1: GBR vs SVK"
+  },
+  {
+    "id": "tennis_wta_fed_cup_qls_r1_ger_vs_bra",
+    "sportId": "tennis",
+    "name": "Fed Cup QLS R1: GER vs BRA (WTA)",
+    "shortName": "Fed Cup QLS R1: GER vs BRA"
+  },
+  {
+    "id": "tennis_wta_fed_cup_qls_r1_rou_vs_rus",
+    "sportId": "tennis",
+    "name": "Fed Cup QLS R1: ROU vs RUS (WTA)",
+    "shortName": "Fed Cup QLS R1: ROU vs RUS"
+  },
+  {
+    "id": "tennis_wta_fed_cup_qls_r1_sui_vs_can",
+    "sportId": "tennis",
+    "name": "Fed Cup QLS R1: SUI vs CAN (WTA)",
+    "shortName": "Fed Cup QLS R1: SUI vs CAN"
+  },
+  {
+    "id": "tennis_wta_fed_cup_qls_r1_usa_vs_lat",
+    "sportId": "tennis",
+    "name": "Fed Cup QLS R1: USA vs LAT (WTA)",
+    "shortName": "Fed Cup QLS R1: USA vs LAT"
+  },
+  {
+    "id": "tennis_atp_florence",
+    "sportId": "tennis",
+    "name": "Florence (ATP)",
+    "shortName": "Florence"
+  },
+  {
+    "id": "tennis_wta_fort_worth_finals",
+    "sportId": "tennis",
+    "name": "Fort Worth Finals (WTA)",
+    "shortName": "Fort Worth Finals"
+  },
+  {
+    "id": "tennis_wta_gdynia",
+    "sportId": "tennis",
+    "name": "Gdynia (WTA)",
+    "shortName": "Gdynia"
+  },
+  {
+    "id": "tennis_atp_geneva",
+    "sportId": "tennis",
+    "name": "Geneva (ATP)",
+    "shortName": "Geneva"
+  },
+  {
+    "id": "tennis_atp_gijon",
+    "sportId": "tennis",
+    "name": "Gijon (ATP)",
+    "shortName": "Gijon"
+  },
+  {
+    "id": "tennis_wta_gippsland_trophy",
+    "sportId": "tennis",
+    "name": "Gippsland Trophy (WTA)",
+    "shortName": "Gippsland Trophy"
+  },
+  {
+    "id": "tennis_wta_grampians_trophy",
+    "sportId": "tennis",
+    "name": "Grampians Trophy (WTA)",
+    "shortName": "Grampians Trophy"
+  },
+  {
+    "id": "tennis_wta_granby",
+    "sportId": "tennis",
+    "name": "Granby (WTA)",
+    "shortName": "Granby"
+  },
+  {
+    "id": "tennis_atp_great_ocean_road_open",
+    "sportId": "tennis",
+    "name": "Great Ocean Road Open (ATP)",
+    "shortName": "Great Ocean Road Open"
+  },
+  {
+    "id": "tennis_atp_gstaad",
+    "sportId": "tennis",
+    "name": "Gstaad (ATP)",
+    "shortName": "Gstaad"
+  },
+  {
+    "id": "tennis_wta_guadalajara",
+    "sportId": "tennis",
+    "name": "Guadalajara (WTA)",
+    "shortName": "Guadalajara"
+  },
+  {
+    "id": "tennis_wta_guadalajara_2",
+    "sportId": "tennis",
+    "name": "Guadalajara 2 (WTA)",
+    "shortName": "Guadalajara 2"
+  },
+  {
+    "id": "tennis_wta_guadalajara_finals",
+    "sportId": "tennis",
+    "name": "Guadalajara Finals (WTA)",
+    "shortName": "Guadalajara Finals"
+  },
+  {
+    "id": "tennis_wta_guangzhou",
+    "sportId": "tennis",
+    "name": "Guangzhou (WTA)",
+    "shortName": "Guangzhou"
+  },
+  {
+    "id": "tennis_atp_halle",
+    "sportId": "tennis",
+    "name": "Halle (ATP)",
+    "shortName": "Halle"
+  },
+  {
+    "id": "tennis_atp_hamburg",
+    "sportId": "tennis",
+    "name": "Hamburg (ATP)",
+    "shortName": "Hamburg"
+  },
+  {
+    "id": "tennis_wta_hamburg",
+    "sportId": "tennis",
+    "name": "Hamburg (WTA)",
+    "shortName": "Hamburg"
+  },
+  {
+    "id": "tennis_atp_hangzhou",
+    "sportId": "tennis",
+    "name": "Hangzhou (ATP)",
+    "shortName": "Hangzhou"
+  },
+  {
+    "id": "tennis_wta_hobart",
+    "sportId": "tennis",
+    "name": "Hobart (WTA)",
+    "shortName": "Hobart"
+  },
+  {
+    "id": "tennis_atp_hong_kong",
+    "sportId": "tennis",
+    "name": "Hong Kong (ATP)",
+    "shortName": "Hong Kong"
+  },
+  {
+    "id": "tennis_wta_hong_kong",
+    "sportId": "tennis",
+    "name": "Hong Kong (WTA)",
+    "shortName": "Hong Kong"
+  },
+  {
+    "id": "tennis_atp_houston",
+    "sportId": "tennis",
+    "name": "Houston (ATP)",
+    "shortName": "Houston"
+  },
+  {
+    "id": "tennis_wta_hua_hin",
+    "sportId": "tennis",
+    "name": "Hua Hin (WTA)",
+    "shortName": "Hua Hin"
+  },
+  {
+    "id": "tennis_wta_hua_hin_2",
+    "sportId": "tennis",
+    "name": "Hua Hin 2 (WTA)",
+    "shortName": "Hua Hin 2"
+  },
+  {
+    "id": "tennis_wta_iasi",
+    "sportId": "tennis",
+    "name": "Iasi (WTA)",
+    "shortName": "Iasi"
+  },
+  {
+    "id": "tennis_wta_indian_wells",
+    "sportId": "tennis",
+    "name": "Indian Wells (WTA)",
+    "shortName": "Indian Wells"
+  },
+  {
+    "id": "tennis_atp_indian_wells_masters",
+    "sportId": "tennis",
+    "name": "Indian Wells Masters (ATP)",
+    "shortName": "Indian Wells Masters"
+  },
+  {
+    "id": "tennis_wta_istanbul",
+    "sportId": "tennis",
+    "name": "Istanbul (WTA)",
+    "shortName": "Istanbul"
+  },
+  {
+    "id": "tennis_wta_jiujiang",
+    "sportId": "tennis",
+    "name": "Jiujiang (WTA)",
+    "shortName": "Jiujiang"
+  },
+  {
+    "id": "tennis_atp_kitzbuhel",
+    "sportId": "tennis",
+    "name": "Kitzbuhel (ATP)",
+    "shortName": "Kitzbuhel"
+  },
+  {
+    "id": "tennis_wta_lausanne",
+    "sportId": "tennis",
+    "name": "Lausanne (WTA)",
+    "shortName": "Lausanne"
+  },
+  {
+    "id": "tennis_atp_laver_cup",
+    "sportId": "tennis",
+    "name": "Laver Cup (ATP)",
+    "shortName": "Laver Cup"
+  },
+  {
+    "id": "tennis_wta_lexington",
+    "sportId": "tennis",
+    "name": "Lexington (WTA)",
+    "shortName": "Lexington"
+  },
+  {
+    "id": "tennis_wta_linz",
+    "sportId": "tennis",
+    "name": "Linz (WTA)",
+    "shortName": "Linz"
+  },
+  {
+    "id": "tennis_atp_los_cabos",
+    "sportId": "tennis",
+    "name": "Los Cabos (ATP)",
+    "shortName": "Los Cabos"
+  },
+  {
+    "id": "tennis_wta_luxembourg",
+    "sportId": "tennis",
+    "name": "Luxembourg (WTA)",
+    "shortName": "Luxembourg"
+  },
+  {
+    "id": "tennis_atp_lyon",
+    "sportId": "tennis",
+    "name": "Lyon (ATP)",
+    "shortName": "Lyon"
+  },
+  {
+    "id": "tennis_wta_lyon",
+    "sportId": "tennis",
+    "name": "Lyon (WTA)",
+    "shortName": "Lyon"
+  },
+  {
+    "id": "tennis_wta_madrid",
+    "sportId": "tennis",
+    "name": "Madrid (WTA)",
+    "shortName": "Madrid"
+  },
+  {
+    "id": "tennis_atp_madrid_masters",
+    "sportId": "tennis",
+    "name": "Madrid Masters (ATP)",
+    "shortName": "Madrid Masters"
+  },
+  {
+    "id": "tennis_atp_mallorca",
+    "sportId": "tennis",
+    "name": "Mallorca (ATP)",
+    "shortName": "Mallorca"
+  },
+  {
+    "id": "tennis_atp_marbella",
+    "sportId": "tennis",
+    "name": "Marbella (ATP)",
+    "shortName": "Marbella"
+  },
+  {
+    "id": "tennis_atp_marrakech",
+    "sportId": "tennis",
+    "name": "Marrakech (ATP)",
+    "shortName": "Marrakech"
+  },
+  {
+    "id": "tennis_atp_marseille",
+    "sportId": "tennis",
+    "name": "Marseille (ATP)",
+    "shortName": "Marseille"
+  },
+  {
+    "id": "tennis_atp_melbourne",
+    "sportId": "tennis",
+    "name": "Melbourne (ATP)",
+    "shortName": "Melbourne"
+  },
+  {
+    "id": "tennis_wta_melbourne_1",
+    "sportId": "tennis",
+    "name": "Melbourne 1 (WTA)",
+    "shortName": "Melbourne 1"
+  },
+  {
+    "id": "tennis_wta_melbourne_2",
+    "sportId": "tennis",
+    "name": "Melbourne 2 (WTA)",
+    "shortName": "Melbourne 2"
+  },
+  {
+    "id": "tennis_wta_memphis",
+    "sportId": "tennis",
+    "name": "Memphis (WTA)",
+    "shortName": "Memphis"
+  },
+  {
+    "id": "tennis_wta_merida",
+    "sportId": "tennis",
+    "name": "Merida (WTA)",
+    "shortName": "Merida"
+  },
+  {
+    "id": "tennis_atp_metz",
+    "sportId": "tennis",
+    "name": "Metz (ATP)",
+    "shortName": "Metz"
+  },
+  {
+    "id": "tennis_wta_miami",
+    "sportId": "tennis",
+    "name": "Miami (WTA)",
+    "shortName": "Miami"
+  },
+  {
+    "id": "tennis_atp_miami_masters",
+    "sportId": "tennis",
+    "name": "Miami Masters (ATP)",
+    "shortName": "Miami Masters"
+  },
+  {
+    "id": "tennis_wta_monastir",
+    "sportId": "tennis",
+    "name": "Monastir (WTA)",
+    "shortName": "Monastir"
+  },
+  {
+    "id": "tennis_atp_monte_carlo",
+    "sportId": "tennis",
+    "name": "Monte Carlo (ATP)",
+    "shortName": "Monte Carlo"
+  },
+  {
+    "id": "tennis_atp_monte_carlo_masters",
+    "sportId": "tennis",
+    "name": "Monte Carlo Masters (ATP)",
+    "shortName": "Monte Carlo Masters"
+  },
+  {
+    "id": "tennis_wta_monterrey",
+    "sportId": "tennis",
+    "name": "Monterrey (WTA)",
+    "shortName": "Monterrey"
+  },
+  {
+    "id": "tennis_atp_montpellier",
+    "sportId": "tennis",
+    "name": "Montpellier (ATP)",
+    "shortName": "Montpellier"
+  },
+  {
+    "id": "tennis_wta_montreal",
+    "sportId": "tennis",
+    "name": "Montreal (WTA)",
+    "shortName": "Montreal"
+  },
+  {
+    "id": "tennis_atp_moscow",
+    "sportId": "tennis",
+    "name": "Moscow (ATP)",
+    "shortName": "Moscow"
+  },
+  {
+    "id": "tennis_wta_moscow",
+    "sportId": "tennis",
+    "name": "Moscow (WTA)",
+    "shortName": "Moscow"
+  },
+  {
+    "id": "tennis_atp_munich",
+    "sportId": "tennis",
+    "name": "Munich (ATP)",
+    "shortName": "Munich"
+  },
+  {
+    "id": "tennis_atp_murray_river_open",
+    "sportId": "tennis",
+    "name": "Murray River Open (ATP)",
+    "shortName": "Murray River Open"
+  },
+  {
+    "id": "tennis_wta_nanchang",
+    "sportId": "tennis",
+    "name": "Nanchang (WTA)",
+    "shortName": "Nanchang"
+  },
+  {
+    "id": "tennis_atp_naples",
+    "sportId": "tennis",
+    "name": "Naples (ATP)",
+    "shortName": "Naples"
+  },
+  {
+    "id": "tennis_atp_new_york",
+    "sportId": "tennis",
+    "name": "New York (ATP)",
+    "shortName": "New York"
+  },
+  {
+    "id": "tennis_atp_newport",
+    "sportId": "tennis",
+    "name": "Newport (ATP)",
+    "shortName": "Newport"
+  },
+  {
+    "id": "tennis_atp_next_gen_atp_finals",
+    "sportId": "tennis",
+    "name": "Next Gen ATP Finals (ATP)",
+    "shortName": "Next Gen ATP Finals"
+  },
+  {
+    "id": "tennis_atp_next_gen_finals",
+    "sportId": "tennis",
+    "name": "Next Gen Finals (ATP)",
+    "shortName": "Next Gen Finals"
+  },
+  {
+    "id": "tennis_atp_nextgen_finals",
+    "sportId": "tennis",
+    "name": "NextGen Finals (ATP)",
+    "shortName": "NextGen Finals"
+  },
+  {
+    "id": "tennis_wta_ningbo",
+    "sportId": "tennis",
+    "name": "Ningbo (WTA)",
+    "shortName": "Ningbo"
+  },
+  {
+    "id": "tennis_wta_nottingham",
+    "sportId": "tennis",
+    "name": "Nottingham (WTA)",
+    "shortName": "Nottingham"
+  },
+  {
+    "id": "tennis_atp_nur_sultan",
+    "sportId": "tennis",
+    "name": "Nur-Sultan (ATP)",
+    "shortName": "Nur-Sultan"
+  },
+  {
+    "id": "tennis_wta_nur_sultan",
+    "sportId": "tennis",
+    "name": "Nur-Sultan (WTA)",
+    "shortName": "Nur-Sultan"
+  },
+  {
+    "id": "tennis_wta_olympics",
+    "sportId": "tennis",
+    "name": "Olympics (WTA)",
+    "shortName": "Olympics"
+  },
+  {
+    "id": "tennis_wta_osaka",
+    "sportId": "tennis",
+    "name": "Osaka (WTA)",
+    "shortName": "Osaka"
+  },
+  {
+    "id": "tennis_wta_ostrava",
+    "sportId": "tennis",
+    "name": "Ostrava (WTA)",
+    "shortName": "Ostrava"
+  },
+  {
+    "id": "tennis_wta_palermo",
+    "sportId": "tennis",
+    "name": "Palermo (WTA)",
+    "shortName": "Palermo"
+  },
+  {
+    "id": "tennis_atp_paris_masters",
+    "sportId": "tennis",
+    "name": "Paris Masters (ATP)",
+    "shortName": "Paris Masters"
+  },
+  {
+    "id": "tennis_atp_paris_olympics",
+    "sportId": "tennis",
+    "name": "Paris Olympics (ATP)",
+    "shortName": "Paris Olympics"
+  },
+  {
+    "id": "tennis_atp_parma",
+    "sportId": "tennis",
+    "name": "Parma (ATP)",
+    "shortName": "Parma"
+  },
+  {
+    "id": "tennis_wta_parma",
+    "sportId": "tennis",
+    "name": "Parma (WTA)",
+    "shortName": "Parma"
+  },
+  {
+    "id": "tennis_wta_phillip_island_trophy",
+    "sportId": "tennis",
+    "name": "Phillip Island Trophy (WTA)",
+    "shortName": "Phillip Island Trophy"
+  },
+  {
+    "id": "tennis_wta_portoroz",
+    "sportId": "tennis",
+    "name": "Portoroz (WTA)",
+    "shortName": "Portoroz"
+  },
+  {
+    "id": "tennis_wta_prague",
+    "sportId": "tennis",
+    "name": "Prague (WTA)",
+    "shortName": "Prague"
+  },
+  {
+    "id": "tennis_wta_prague_open",
+    "sportId": "tennis",
+    "name": "Prague Open (WTA)",
+    "shortName": "Prague Open"
+  },
+  {
+    "id": "tennis_atp_pune",
+    "sportId": "tennis",
+    "name": "Pune (ATP)",
+    "shortName": "Pune"
+  },
+  {
+    "id": "tennis_atp_queen_s_club",
+    "sportId": "tennis",
+    "name": "Queen's Club (ATP)",
+    "shortName": "Queen's Club"
+  },
+  {
+    "id": "tennis_wta_queen_s_club",
+    "sportId": "tennis",
+    "name": "Queen's Club (WTA)",
+    "shortName": "Queen's Club"
+  },
+  {
+    "id": "tennis_wta_rabat",
+    "sportId": "tennis",
+    "name": "Rabat (WTA)",
+    "shortName": "Rabat"
+  },
+  {
+    "id": "tennis_atp_rio_de_janeiro",
+    "sportId": "tennis",
+    "name": "Rio de Janeiro (ATP)",
+    "shortName": "Rio de Janeiro"
+  },
+  {
+    "id": "tennis_wta_riyadh_finals",
+    "sportId": "tennis",
+    "name": "Riyadh Finals (WTA)",
+    "shortName": "Riyadh Finals"
+  },
+  {
+    "id": "tennis_atp_roland_garros",
+    "sportId": "tennis",
+    "name": "Roland Garros (ATP)",
+    "shortName": "Roland Garros"
+  },
+  {
+    "id": "tennis_wta_roland_garros",
+    "sportId": "tennis",
+    "name": "Roland Garros (WTA)",
+    "shortName": "Roland Garros"
+  },
+  {
+    "id": "tennis_wta_rome",
+    "sportId": "tennis",
+    "name": "Rome (WTA)",
+    "shortName": "Rome"
+  },
+  {
+    "id": "tennis_atp_rome_masters",
+    "sportId": "tennis",
+    "name": "Rome Masters (ATP)",
+    "shortName": "Rome Masters"
+  },
+  {
+    "id": "tennis_wta_rosmalen",
+    "sportId": "tennis",
+    "name": "Rosmalen (WTA)",
+    "shortName": "Rosmalen"
+  },
+  {
+    "id": "tennis_atp_rotterdam",
+    "sportId": "tennis",
+    "name": "Rotterdam (ATP)",
+    "shortName": "Rotterdam"
+  },
+  {
+    "id": "tennis_wta_rouen",
+    "sportId": "tennis",
+    "name": "Rouen (WTA)",
+    "shortName": "Rouen"
+  },
+  {
+    "id": "tennis_atp_san_diego",
+    "sportId": "tennis",
+    "name": "San Diego (ATP)",
+    "shortName": "San Diego"
+  },
+  {
+    "id": "tennis_wta_san_diego",
+    "sportId": "tennis",
+    "name": "San Diego (WTA)",
+    "shortName": "San Diego"
+  },
+  {
+    "id": "tennis_wta_san_jose",
+    "sportId": "tennis",
+    "name": "San Jose (WTA)",
+    "shortName": "San Jose"
+  },
+  {
+    "id": "tennis_atp_santiago",
+    "sportId": "tennis",
+    "name": "Santiago (ATP)",
+    "shortName": "Santiago"
+  },
+  {
+    "id": "tennis_wta_sao_paulo",
+    "sportId": "tennis",
+    "name": "Sao Paulo (WTA)",
+    "shortName": "Sao Paulo"
+  },
+  {
+    "id": "tennis_atp_sardinia",
+    "sportId": "tennis",
+    "name": "Sardinia (ATP)",
+    "shortName": "Sardinia"
+  },
+  {
+    "id": "tennis_atp_seoul",
+    "sportId": "tennis",
+    "name": "Seoul (ATP)",
+    "shortName": "Seoul"
+  },
+  {
+    "id": "tennis_wta_seoul",
+    "sportId": "tennis",
+    "name": "Seoul (WTA)",
+    "shortName": "Seoul"
+  },
+  {
+    "id": "tennis_atp_serbia",
+    "sportId": "tennis",
+    "name": "Serbia (ATP)",
+    "shortName": "Serbia"
+  },
+  {
+    "id": "tennis_atp_shanghai",
+    "sportId": "tennis",
+    "name": "Shanghai (ATP)",
+    "shortName": "Shanghai"
+  },
+  {
+    "id": "tennis_atp_shanghai_masters",
+    "sportId": "tennis",
+    "name": "Shanghai Masters (ATP)",
+    "shortName": "Shanghai Masters"
+  },
+  {
+    "id": "tennis_wta_shenzhen",
+    "sportId": "tennis",
+    "name": "Shenzhen (WTA)",
+    "shortName": "Shenzhen"
+  },
+  {
+    "id": "tennis_atp_singapore",
+    "sportId": "tennis",
+    "name": "Singapore (ATP)",
+    "shortName": "Singapore"
+  },
+  {
+    "id": "tennis_wta_singapore",
+    "sportId": "tennis",
+    "name": "Singapore (WTA)",
+    "shortName": "Singapore"
+  },
+  {
+    "id": "tennis_atp_sofia",
+    "sportId": "tennis",
+    "name": "Sofia (ATP)",
+    "shortName": "Sofia"
+  },
+  {
+    "id": "tennis_atp_st_petersburg",
+    "sportId": "tennis",
+    "name": "St. Petersburg (ATP)",
+    "shortName": "St. Petersburg"
+  },
+  {
+    "id": "tennis_wta_st_petersburg",
+    "sportId": "tennis",
+    "name": "St. Petersburg (WTA)",
+    "shortName": "St. Petersburg"
+  },
+  {
+    "id": "tennis_atp_stockholm",
+    "sportId": "tennis",
+    "name": "Stockholm (ATP)",
+    "shortName": "Stockholm"
+  },
+  {
+    "id": "tennis_wta_strasbourg",
+    "sportId": "tennis",
+    "name": "Strasbourg (WTA)",
+    "shortName": "Strasbourg"
+  },
+  {
+    "id": "tennis_atp_stuttgart",
+    "sportId": "tennis",
+    "name": "Stuttgart (ATP)",
+    "shortName": "Stuttgart"
+  },
+  {
+    "id": "tennis_wta_stuttgart",
+    "sportId": "tennis",
+    "name": "Stuttgart (WTA)",
+    "shortName": "Stuttgart"
+  },
+  {
+    "id": "tennis_atp_sydney",
+    "sportId": "tennis",
+    "name": "Sydney (ATP)",
+    "shortName": "Sydney"
+  },
+  {
+    "id": "tennis_wta_sydney",
+    "sportId": "tennis",
+    "name": "Sydney (WTA)",
+    "shortName": "Sydney"
+  },
+  {
+    "id": "tennis_wta_tallinn",
+    "sportId": "tennis",
+    "name": "Tallinn (WTA)",
+    "shortName": "Tallinn"
+  },
+  {
+    "id": "tennis_atp_tel_aviv",
+    "sportId": "tennis",
+    "name": "Tel Aviv (ATP)",
+    "shortName": "Tel Aviv"
+  },
+  {
+    "id": "tennis_wta_tenerife",
+    "sportId": "tennis",
+    "name": "Tenerife (WTA)",
+    "shortName": "Tenerife"
+  },
+  {
+    "id": "tennis_atp_tokyo",
+    "sportId": "tennis",
+    "name": "Tokyo (ATP)",
+    "shortName": "Tokyo"
+  },
+  {
+    "id": "tennis_wta_tokyo",
+    "sportId": "tennis",
+    "name": "Tokyo (WTA)",
+    "shortName": "Tokyo"
+  },
+  {
+    "id": "tennis_atp_tokyo_olympics",
+    "sportId": "tennis",
+    "name": "Tokyo Olympics (ATP)",
+    "shortName": "Tokyo Olympics"
+  },
+  {
+    "id": "tennis_wta_toronto",
+    "sportId": "tennis",
+    "name": "Toronto (WTA)",
+    "shortName": "Toronto"
+  },
+  {
+    "id": "tennis_atp_tour_finals",
+    "sportId": "tennis",
+    "name": "Tour Finals (ATP)",
+    "shortName": "Tour Finals"
+  },
+  {
+    "id": "tennis_atp_umag",
+    "sportId": "tennis",
+    "name": "Umag (ATP)",
+    "shortName": "Umag"
+  },
+  {
+    "id": "tennis_atp_united_cup",
+    "sportId": "tennis",
+    "name": "United Cup (ATP)",
+    "shortName": "United Cup"
+  },
+  {
+    "id": "tennis_wta_united_cup",
+    "sportId": "tennis",
+    "name": "United Cup (WTA)",
+    "shortName": "United Cup"
+  },
+  {
+    "id": "tennis_atp_us_open",
+    "sportId": "tennis",
+    "name": "US Open (ATP)",
+    "shortName": "US Open"
+  },
+  {
+    "id": "tennis_wta_us_open",
+    "sportId": "tennis",
+    "name": "US Open (WTA)",
+    "shortName": "US Open"
+  },
+  {
+    "id": "tennis_atp_vienna",
+    "sportId": "tennis",
+    "name": "Vienna (ATP)",
+    "shortName": "Vienna"
+  },
+  {
+    "id": "tennis_wta_warsaw",
+    "sportId": "tennis",
+    "name": "Warsaw (WTA)",
+    "shortName": "Warsaw"
+  },
+  {
+    "id": "tennis_atp_washington",
+    "sportId": "tennis",
+    "name": "Washington (ATP)",
+    "shortName": "Washington"
+  },
+  {
+    "id": "tennis_wta_washington",
+    "sportId": "tennis",
+    "name": "Washington (WTA)",
+    "shortName": "Washington"
+  },
+  {
+    "id": "tennis_atp_wimbledon",
+    "sportId": "tennis",
+    "name": "Wimbledon (ATP)",
+    "shortName": "Wimbledon"
+  },
+  {
+    "id": "tennis_wta_wimbledon",
+    "sportId": "tennis",
+    "name": "Wimbledon (WTA)",
+    "shortName": "Wimbledon"
+  },
+  {
+    "id": "tennis_atp_winston_salem",
+    "sportId": "tennis",
+    "name": "Winston-Salem (ATP)",
+    "shortName": "Winston-Salem"
+  },
+  {
+    "id": "tennis_wta_wta_finals",
+    "sportId": "tennis",
+    "name": "WTA Finals (WTA)",
+    "shortName": "WTA Finals"
+  },
+  {
+    "id": "tennis_wta_wuhan",
+    "sportId": "tennis",
+    "name": "Wuhan (WTA)",
+    "shortName": "Wuhan"
+  },
+  {
+    "id": "tennis_wta_yarra_valley_classic",
+    "sportId": "tennis",
+    "name": "Yarra Valley Classic (WTA)",
+    "shortName": "Yarra Valley Classic"
+  },
+  {
+    "id": "tennis_wta_zhengzhou",
+    "sportId": "tennis",
+    "name": "Zhengzhou (WTA)",
+    "shortName": "Zhengzhou"
+  },
+  {
+    "id": "tennis_atp_zhuhai",
+    "sportId": "tennis",
+    "name": "Zhuhai (ATP)",
+    "shortName": "Zhuhai"
+  },
+  {
+    "id": "tennis_wta_zhuhai",
+    "sportId": "tennis",
+    "name": "Zhuhai (WTA)",
+    "shortName": "Zhuhai"
+  }
+]
