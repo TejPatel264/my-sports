@@ -11,6 +11,13 @@ data/
   championship-events.json          EFL Championship fixtures/results
   carabao-cup-events.json           Carabao Cup (EFL Cup) fixtures/results
   champions-league-events.json      UEFA Champions League fixtures/results
+  cricket-events.json               All 16 cricket competitions' matches (filtered from cricsheet.org)
+  cricket-teams.json                Auto-populated cricket team registry (countries/franchises)
+  cricket-seasons.json              Auto-populated cricket season labels
+  tennis-events.json                ATP + WTA matches, 2020-present (from stats.tennismylife.org)
+  tennis-players.json               Auto-populated tennis player registry
+  tennis-competitions.json          Auto-populated tennis tournament registry
+  tennis-seasons.json               Auto-populated tennis season labels
 scripts/
   update-football-competition.js               shared fetch/match/write logic (football-data.org), used by the three scripts below
   update-epl.js                                configures the shared logic for the Premier League (PL)
@@ -18,11 +25,17 @@ scripts/
   update-champions-league.js                   configures the shared logic for the Champions League (CL)
   update-football-competition-api-football.js  shared fetch/match/write logic (api-football.com), used by update-carabao-cup.js
   update-carabao-cup.js                        configures the shared logic for the Carabao Cup
+  cricsheet-common.js                          shared download/extract/filter/reconcile logic (cricsheet.org), used by update-cricket.js
+  update-cricket.js                            config array of all 16 cricket sources + runner
+  tennis-common.js                             shared fetch/parse/filter/reconcile logic (stats.tennismylife.org), used by update-tennis.js
+  update-tennis.js                             ATP + WTA runner
   package.json
 .github/workflows/
   update-fixtures.yml               runs the daily football-data.org scripts (PL, Championship) once a day
   update-champions-league.yml       runs the Champions League scraper once a week, Thursdays 02:00 UTC
   update-carabao-cup.yml            runs the Carabao Cup scraper once a day via GitHub Actions
+  update-cricket.yml                runs all 16 cricket sources once a week, Sundays 03:00 UTC
+  update-tennis.yml                 runs the tennis scraper once a day, 00:00 UTC
 ```
 
 All other sports (F1, darts, cricket, tournament archive) are still defined inline in `index.html`. Premier League was split out first as the proof of concept for the update-script approach, Championship followed the same pattern; other sports can move to their own JSON files + scripts the same way, one at a time.
@@ -96,6 +109,52 @@ Because the Cup includes League One and League Two clubs (not just PL/Championsh
 If a script logs `Unrecognized team name from api-football.com`, add the team to `TEAM_NAME_TO_ID` near the top of `update-carabao-cup.js` **and** to `CARABAO_CUP_OTHER_TEAMS` (or `PL_TEAMS`/`CHAMPIONSHIP_TEAMS` if it belongs there instead) inside `index.html`, same as the "Adding a new team" process above. Note: `TEAM_NAME_TO_ID` here was written from api-football.com's typical short-form naming convention (e.g. "Brighton", not "Brighton & Hove Albion FC") rather than verified against a live response, since no API key was available while building it — check exact names in any error message against a real API response and adjust as needed.
 
 **If the script instead reports 0 fixtures received (not an unrecognized-team error)** — that's a different problem than a team-mapping gap, and filling in missing teams won't fix it. That means the API call itself returned nothing, which per api-football.com's own docs can happen for a few reasons: the league ID is wrong (a 200 with an empty array looks identical to "correct ID, no data" — there's no error to tell them apart), the season value isn't covered on your plan tier, or — specific to cup competitions — that round's fixtures haven't been added to their database yet because the draw/pairings for it aren't finalized. Run `API_FOOTBALL_KEY=your_key_here node scripts/diagnose-api-football.js` to check your account's plan/season coverage and confirm league ID 48 is actually the Carabao Cup rather than guessing further blind.
+
+### Cricket (cricsheet.org)
+
+Cricket uses [cricsheet.org](https://cricsheet.org/), which is a different shape of source than the others: instead of an API you call per match, it publishes whole-competition **zip archives** (JSON, one file per match), covering that competition's full history. `scripts/cricsheet-common.js` holds the shared download → extract → filter → reconcile logic; `scripts/update-cricket.js` is a config array listing all 16 sources (men's + women's for: The Hundred, IPL/WPL, Vitality Blast, Test matches, ODIs, T20Is, the T20 World Cup, and the ODI World Cup) and runs them all in one go.
+
+**Why this one's structured differently from the football scrapers:** Cricsheet's team names are already the plain display name (no "FC"/"AFC" guessing needed), so there's no per-competition `TEAM_NAME_TO_ID` mapping to maintain - team ids are derived directly as `cricket_team_${slug(name)}`, matching the convention `index.html` already used for the hand-seeded cricket events. Any team or season not seen before is automatically appended to `data/cricket-teams.json` / `data/cricket-seasons.json`, so nothing needs manual upkeep as new countries or franchises show up in the data. All 16 sources also share a single `data/cricket-events.json` rather than one file each, since there's no per-source team list to keep separate.
+
+**Naming note:** there's no "Women's IPL" - the Indian women's T20 league is a separate competition, the Women's Premier League (WPL), mapped here under its own `wpl` competition id rather than paired with `ipl`.
+
+**Filtering:** Cricsheet's data is ball-by-ball (every single delivery) - the scraper only reads the match-level `info` block from each file and discards the `innings`/delivery data entirely, since a viewing log has no use for it. What's kept: teams, date(s), season, venue, competition/event name, match result, toss winner+decision, and player of the match. See the full JSON schema at [cricsheet.org/format/json](https://cricsheet.org/format/json/) for everything available if more fields are wanted later - `toAppEvent()` in `cricsheet-common.js` is the one place that would need extending.
+
+**Running it locally:**
+
+```
+node scripts/update-cricket.js                # all 16 sources
+node scripts/update-cricket.js hundred_men     # just one, by key - useful while testing
+```
+
+Requires the `unzip` command on PATH (preinstalled on GitHub Actions' `ubuntu-latest` runners; on most Linux/macOS machines it's already there too). No API key needed - cricsheet.org's downloads are public, no auth required.
+
+**Running it on a schedule (already set up):** `.github/workflows/update-cricket.yml` runs once a week (Sundays, 03:00 UTC) rather than daily - each run re-downloads full competition archives (some with thousands of matches) since Cricsheet doesn't offer an incremental/diff download, so a daily schedule would just be re-fetching the same data far more often than it actually changes.
+
+### Tennis (stats.tennismylife.org)
+
+Two other tennis sites were checked first and both turned out to be non-starters: [tennis-db.com](https://tennis-db.com/) and [tennisdata.app](https://tennisdata.app/) both explicitly prohibit automated/bulk data extraction in their own Terms of Service (tennisdata.app also has active bot detection and gates downloads behind a paid credit system). Neither is used here.
+
+[stats.tennismylife.org](https://stats.tennismylife.org/) is the opposite situation: MIT-licensed, explicitly "free to use," and the site itself documents a bulk-download API (`GET /api/data-files`) along with copy-paste curl/PowerShell examples for scripted use - built for exactly this kind of thing. `scripts/tennis-common.js` holds the shared fetch/parse/reconcile logic; `scripts/update-tennis.js` runs both the ATP and WTA tours.
+
+**Structure:** similar reasoning to the cricket scraper - hundreds of distinct players and tournaments make a hand-maintained mapping impractical, so player ids, tournament (competition) ids, and season ids are all auto-derived and auto-registered into `data/tennis-players.json`, `data/tennis-competitions.json`, and `data/tennis-seasons.json` respectively, the first time each is encountered. Each tournament becomes its own competition (e.g. "US Open (ATP)"), with each year of it a season - the same two-level model every other sport in this app already uses.
+
+**Scope:** 2020 onward, per what was asked for, covering both tours' main draws. The site also has Challenger Tour and qualifying-round files available, not currently pulled in - easy to add in `update-tennis.js` if wanted later.
+
+**Filtering:** this source's CSVs are already match-level (no ball-by-ball equivalent to strip), so there wasn't much to filter beyond dropping the serve/rally statistics columns (aces, break points, etc. - all present in the source if wanted later). Kept: both players, tournament, surface, round, score, result, and match duration when available.
+
+**Known data limitation, not a bug:** the source only records each match's *tournament week* (`tourney_date`), not the specific day an individual match was played - every match within the same tournament shares one date. There's no way to get a precise per-match day/time from this data.
+
+**Running it locally:**
+
+```
+node scripts/update-tennis.js       # both tours
+node scripts/update-tennis.js atp   # just one, for testing
+```
+
+No API key needed.
+
+**Running it on a schedule (already set up):** `.github/workflows/update-tennis.yml` runs daily at 00:00 UTC.
 
 ### Extending to other sources/sports
 

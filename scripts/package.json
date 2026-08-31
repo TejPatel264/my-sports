@@ -9,6 +9,8 @@
     "update-epl": "node update-epl.js",
     "update-championship": "node update-championship.js",
     "update-carabao-cup": "node update-carabao-cup.js",
-    "update-champions-league": "node update-champions-league.js"
+    "update-champions-league": "node update-champions-league.js",
+    "update-cricket": "node update-cricket.js",
+    "update-tennis": "node update-tennis.js"
   }
 }

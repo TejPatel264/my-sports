@@ -44,7 +44,7 @@
 }
 
 * { box-sizing: border-box; -webkit-tap-highlight-color: transparent; }
-html, body { height: 100%; overflow: hidden; }
+html, body { height: 100%; }
 body {
   margin: 0;
   background: var(--ink);
@@ -70,12 +70,10 @@ input, textarea { font-family: inherit; }
 #app {
   max-width: 560px;
   margin: 0 auto;
-  height: 100vh;
-  height: 100dvh; /* accounts for mobile browser chrome; falls back to 100vh where unsupported */
+  min-height: 100%;
   display: flex;
   flex-direction: column;
   position: relative;
-  overflow: hidden;
 }
 
 .topbar {
@@ -1433,6 +1431,7 @@ const SEED_SPORTS = [
   { id: "f1", name: "Formula 1", icon: "🏎️" },
   { id: "darts", name: "Darts", icon: "🎯" },
   { id: "cricket", name: "Cricket", icon: "🏏" },
+  { id: "tennis", name: "Tennis", icon: "🎾" },
 ];
 
 const SEED_COMPETITIONS = [
@@ -1448,6 +1447,21 @@ const SEED_COMPETITIONS = [
   { id: "pdc_ukopen", sportId: "darts", name: "PDC UK Open", shortName: "UK Open" },
   { id: "cricket_test_eng_nz", sportId: "cricket", name: "England v New Zealand Test Series", shortName: "ENG v NZ Tests" },
   { id: "t20_world_cup", sportId: "cricket", name: "ICC Men's T20 World Cup", shortName: "T20 World Cup" },
+  { id: "icc_womens_t20_world_cup", sportId: "cricket", name: "ICC Women's T20 World Cup", shortName: "Women's T20 World Cup" },
+  { id: "icc_mens_odi_world_cup", sportId: "cricket", name: "ICC Men's Cricket World Cup", shortName: "Men's ODI World Cup" },
+  { id: "icc_womens_odi_world_cup", sportId: "cricket", name: "ICC Women's Cricket World Cup", shortName: "Women's ODI World Cup" },
+  { id: "test_cricket_men", sportId: "cricket", name: "Test Cricket (Men's)", shortName: "Test Cricket (M)" },
+  { id: "test_cricket_women", sportId: "cricket", name: "Test Cricket (Women's)", shortName: "Test Cricket (W)" },
+  { id: "odi_cricket_men", sportId: "cricket", name: "One-Day Internationals (Men's)", shortName: "ODIs (M)" },
+  { id: "odi_cricket_women", sportId: "cricket", name: "One-Day Internationals (Women's)", shortName: "ODIs (W)" },
+  { id: "t20i_cricket_men", sportId: "cricket", name: "T20 Internationals (Men's)", shortName: "T20Is (M)" },
+  { id: "t20i_cricket_women", sportId: "cricket", name: "T20 Internationals (Women's)", shortName: "T20Is (W)" },
+  { id: "hundred_men", sportId: "cricket", name: "The Hundred (Men's)", shortName: "The Hundred (M)" },
+  { id: "hundred_women", sportId: "cricket", name: "The Hundred (Women's)", shortName: "The Hundred (W)" },
+  { id: "ipl", sportId: "cricket", name: "Indian Premier League", shortName: "IPL" },
+  { id: "wpl", sportId: "cricket", name: "Women's Premier League", shortName: "WPL" },
+  { id: "vitality_blast_men", sportId: "cricket", name: "Vitality Blast (Men's)", shortName: "Vitality Blast (M)" },
+  { id: "vitality_blast_women", sportId: "cricket", name: "Vitality Blast (Women's)", shortName: "Vitality Blast (W)" },
   { id: "pdc_grandprix", sportId: "darts", name: "PDC World Grand Prix", shortName: "World Grand Prix" },
   { id: "pdc_euro", sportId: "darts", name: "PDC European Championship", shortName: "European Championship" },
   { id: "pdc_grandslam", sportId: "darts", name: "Grand Slam of Darts", shortName: "Grand Slam" },
@@ -2389,15 +2403,22 @@ const SPORT_DATA_KINDS = {
   football_match: { required: ["homeTeam", "awayTeam"], optional: ["venue", "result", "round", "note"] },
   f1_race: { required: ["round"], optional: ["winner", "sessions"] },
   darts_match: { required: ["round"], optional: ["result", "venue", "note"] },
-  cricket_test: { required: ["round", "scheduledDays", "actualDays"], optional: ["venue", "result", "scorecard"] },
-  cricket_t20: { required: ["round"], optional: ["venue", "result", "scorecard", "note"] },
+  cricket_test: { required: ["round", "scheduledDays", "actualDays"], optional: ["venue", "result", "scorecard", "matchFormat", "toss", "playerOfMatch"] },
+  cricket_t20: { required: ["round"], optional: ["venue", "result", "scorecard", "note", "matchFormat", "toss", "playerOfMatch"] },
+  tennis_match: { required: ["round"], optional: ["surface", "tournamentLevel", "winner", "loser", "score", "durationMinutes"] },
 };
 
 function sportDataKindFor(event) {
   if (event.sportId === "football") return "football_match";
   if (event.sportId === "f1") return "f1_race";
   if (event.sportId === "darts") return "darts_match";
+  if (event.sportId === "tennis") return "tennis_match";
   if (event.sportId === "cricket") {
+    // Scraped events carry an explicit matchFormat; hand-seeded events from
+    // before that field existed fall back to the old single-competition check.
+    if (event.sportData?.matchFormat) {
+      return (event.sportData.matchFormat === "Test" || event.sportData.matchFormat === "MDM") ? "cricket_test" : "cricket_t20";
+    }
     return event.competitionId === "cricket_test_eng_nz" ? "cricket_test" : "cricket_t20";
   }
   return null;
@@ -2453,19 +2474,26 @@ async function loadExternalEventsFile(path, label) {
 }
 
 window.__SEED_READY__ = (async () => {
-  const [eplEvents, championshipEvents, carabaoCupEvents, championsLeagueEvents] = await Promise.all([
+  const [eplEvents, championshipEvents, carabaoCupEvents, championsLeagueEvents, cricketEvents, cricketTeams, cricketSeasons, tennisEvents, tennisPlayers, tennisCompetitions, tennisSeasons] = await Promise.all([
     loadExternalEventsFile("data/epl-events.json", "EPL"),
     loadExternalEventsFile("data/championship-events.json", "Championship"),
     loadExternalEventsFile("data/carabao-cup-events.json", "Carabao Cup"),
     loadExternalEventsFile("data/champions-league-events.json", "Champions League"),
+    loadExternalEventsFile("data/cricket-events.json", "Cricket"),
+    loadExternalEventsFile("data/cricket-teams.json", "Cricket teams"),
+    loadExternalEventsFile("data/cricket-seasons.json", "Cricket seasons"),
+    loadExternalEventsFile("data/tennis-events.json", "Tennis"),
+    loadExternalEventsFile("data/tennis-players.json", "Tennis players"),
+    loadExternalEventsFile("data/tennis-competitions.json", "Tennis competitions"),
+    loadExternalEventsFile("data/tennis-seasons.json", "Tennis seasons"),
   ]);
   window.__SEED__ = {
     SEED_SPORTS,
-    SEED_COMPETITIONS: [...SEED_COMPETITIONS, ...ARCHIVE_COMPETITIONS],
-    SEED_SEASONS: [...SEED_SEASONS, ...ARCHIVE_SEASONS],
-    SEED_TEAMS: [...SEED_TEAMS, ...ARCHIVE_TEAMS],
-    SEED_PLAYERS: [...SEED_PLAYERS, ...ARCHIVE_PLAYERS, ...F1_EXTRA_DRIVERS],
-    SEED_EVENTS: normalizeSeedEvents([...SEED_EVENTS, ...eplEvents, ...championshipEvents, ...carabaoCupEvents, ...championsLeagueEvents, ...ARCHIVE_EVENTS]),
+    SEED_COMPETITIONS: [...SEED_COMPETITIONS, ...ARCHIVE_COMPETITIONS, ...tennisCompetitions],
+    SEED_SEASONS: [...SEED_SEASONS, ...ARCHIVE_SEASONS, ...cricketSeasons, ...tennisSeasons],
+    SEED_TEAMS: [...SEED_TEAMS, ...ARCHIVE_TEAMS, ...cricketTeams],
+    SEED_PLAYERS: [...SEED_PLAYERS, ...ARCHIVE_PLAYERS, ...F1_EXTRA_DRIVERS, ...tennisPlayers],
+    SEED_EVENTS: normalizeSeedEvents([...SEED_EVENTS, ...eplEvents, ...championshipEvents, ...carabaoCupEvents, ...championsLeagueEvents, ...cricketEvents, ...tennisEvents, ...ARCHIVE_EVENTS]),
   };
 })();
 
@@ -2819,6 +2847,13 @@ function eventResultSummary(e) {
     if (!sd.winner) return "";
     const winnerName = participantName(sd.winner);
     return winnerName ? `${winnerName} won` : "";
+  }
+
+  if (kind === "tennis_match") {
+    if (!sd.winner) return "";
+    const winnerName = participantName(sd.winner);
+    if (!winnerName) return "";
+    return sd.score ? `${winnerName} won ${sd.score}` : `${winnerName} won`;
   }
 
   return "";
