@@ -460,6 +460,11 @@
     "name": "Alina Korneeva"
   },
   {
+    "id": "tennis_player_wta_331330",
+    "sportId": "tennis",
+    "name": "Alina Korneeva"
+  },
+  {
     "id": "tennis_player_wta_211901",
     "sportId": "tennis",
     "name": "Aliona Bolsova"
@@ -856,6 +861,11 @@
   },
   {
     "id": "tennis_player_wta_214388",
+    "sportId": "tennis",
+    "name": "Anna Bondar"
+  },
+  {
+    "id": "tennis_player_wta_322942",
     "sportId": "tennis",
     "name": "Anna Bondar"
   },
@@ -2565,6 +2575,11 @@
     "name": "Ella Seidel"
   },
   {
+    "id": "tennis_player_wta_330548",
+    "sportId": "tennis",
+    "name": "Ella Seidel"
+  },
+  {
     "id": "tennis_player_wta_206391",
     "sportId": "tennis",
     "name": "Ellen Perez"
@@ -2766,6 +2781,11 @@
   },
   {
     "id": "tennis_player_wta_220332",
+    "sportId": "tennis",
+    "name": "Eva Lys"
+  },
+  {
+    "id": "tennis_player_wta_325826",
     "sportId": "tennis",
     "name": "Eva Lys"
   },
@@ -3108,6 +3128,11 @@
     "id": "tennis_player_wta_202681",
     "sportId": "tennis",
     "name": "Gabriela Dabrowski"
+  },
+  {
+    "id": "tennis_player_wta_321367",
+    "sportId": "tennis",
+    "name": "Gabriela Knutson"
   },
   {
     "id": "tennis_player_wta_211342",
@@ -3886,6 +3911,11 @@
   },
   {
     "id": "tennis_player_wta_222145",
+    "sportId": "tennis",
+    "name": "Janice Tjen"
+  },
+  {
+    "id": "tennis_player_wta_328818",
     "sportId": "tennis",
     "name": "Janice Tjen"
   },
@@ -5165,6 +5195,11 @@
     "name": "Lucie Havlickova"
   },
   {
+    "id": "tennis_player_wta_330147",
+    "sportId": "tennis",
+    "name": "Lucie Havlickova"
+  },
+  {
     "id": "tennis_player_wta_201556",
     "sportId": "tennis",
     "name": "Lucie Hradecka"
@@ -5301,6 +5336,11 @@
   },
   {
     "id": "tennis_player_wta_201619",
+    "sportId": "tennis",
+    "name": "Madison Keys"
+  },
+  {
+    "id": "tennis_player_wta_316959",
     "sportId": "tennis",
     "name": "Madison Keys"
   },
@@ -5506,6 +5546,11 @@
   },
   {
     "id": "tennis_player_wta_206289",
+    "sportId": "tennis",
+    "name": "Maria Sakkari"
+  },
+  {
+    "id": "tennis_player_wta_318312",
     "sportId": "tennis",
     "name": "Maria Sakkari"
   },
@@ -6166,6 +6211,11 @@
   },
   {
     "id": "tennis_player_wta_259799",
+    "sportId": "tennis",
+    "name": "Mirra Andreeva"
+  },
+  {
+    "id": "tennis_player_wta_331809",
     "sportId": "tennis",
     "name": "Mirra Andreeva"
   },
@@ -8260,6 +8310,11 @@
     "name": "Thasaporn Naklo"
   },
   {
+    "id": "tennis_player_wta_333641",
+    "sportId": "tennis",
+    "name": "Thea Frodin"
+  },
+  {
     "id": "tennis_player_atp_W0C5",
     "sportId": "tennis",
     "name": "Thehan Sanjaya Wijemanne"
@@ -9086,6 +9141,11 @@
   },
   {
     "id": "tennis_player_wta_263857",
+    "sportId": "tennis",
+    "name": "Yuliia Starodubtseva"
+  },
+  {
+    "id": "tennis_player_wta_325338",
     "sportId": "tennis",
     "name": "Yuliia Starodubtseva"
   },
