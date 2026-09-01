@@ -561,7 +561,7 @@
       "homeTeam": "team_aston_villa",
       "awayTeam": "team_arsenal",
       "venue": null,
-      "result": null,
+      "result": "0-1",
       "kind": "football_match"
     },
     "dataQuality": "verified",
