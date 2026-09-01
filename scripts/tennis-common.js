@@ -208,12 +208,26 @@ async function runTennisTour(tour, { minYear, eventsFile, playersFile, competiti
   const yearlyPattern = tour === "atp" ? /^(\d{4})\.csv$/ : /^(\d{4})_wta\.csv$/;
   const ongoingName = tour === "atp" ? "ongoing_tourneys.csv" : "wta_ongoing_tourneys.csv";
 
+  // Compare basenames rather than the raw `name` field verbatim - tolerates
+  // the API possibly returning a path-prefixed name (e.g.
+  // "data/ongoing_tourneys.csv") rather than a bare filename. This couldn't
+  // be independently confirmed against a live response while writing this
+  // (the discovery endpoint is robots.txt-restricted for automated
+  // research tools, though not for this script's own plain fetch() calls),
+  // so matching defensively here is cheap insurance against exactly that
+  // kind of mismatch silently dropping the ongoing file.
+  const baseName = name => name.split("/").pop();
   const filesToFetch = allFiles.filter(f => {
-    if (f.name === ongoingName) return true;
-    const m = yearlyPattern.exec(f.name);
+    const b = baseName(f.name);
+    if (b === ongoingName) return true;
+    const m = yearlyPattern.exec(b);
     return m && parseInt(m[1], 10) >= minYear;
   });
   console.log(`  Fetching ${filesToFetch.length} file(s): ${filesToFetch.map(f => f.name).join(", ")}`);
+  if (!filesToFetch.some(f => baseName(f.name) === ongoingName)) {
+    console.warn(`  ! "${ongoingName}" was not found among the files the API returned - it won't be included in this run.`);
+    console.warn(`    All discovered filenames: ${allFiles.map(f => f.name).join(", ")}`);
+  }
 
   const existingEvents = loadJsonArrayFile(eventsFile);
   const byMatchId = new Map();

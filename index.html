@@ -176,6 +176,31 @@ input, textarea { font-family: inherit; }
 }
 .filter-select:focus { outline: none; border-color: var(--brass); }
 
+.fixtures-jump-buttons {
+  position: absolute;
+  right: 16px;
+  bottom: 90px; /* clears the tab bar, with safe-area-inset margin */
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  z-index: 20;
+}
+.fixtures-jump-buttons button {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  padding: 8px 14px;
+  border-radius: 999px;
+  border: 1px solid var(--brass);
+  background: var(--ink-card);
+  color: var(--brass-bright);
+  font-size: 12px;
+  font-weight: 700;
+  box-shadow: 0 4px 14px rgba(0,0,0,0.35);
+}
+.fixtures-jump-buttons button svg { width: 13px; height: 13px; }
+.fixtures-jump-buttons button:active { background: var(--ink-raised); }
+
 /* ============ TOURNAMENT ARCHIVE ============ */
 .tournament-row {
   display: flex;
@@ -840,14 +865,16 @@ textarea.notes-input { resize: vertical; min-height: 70px; line-height: 1.4; }
   align-items: flex-end;
   gap: 6px;
   width: 100%;
+  overflow-x: auto;
+  scrollbar-width: none;
 }
+.month-grid::-webkit-scrollbar { display: none; }
 .month-cell-wrap {
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 6px;
-  flex: 1;
-  min-width: 0;
+  flex: 0 0 34px;
   position: relative;
 }
 .month-cell-wrap.year-boundary {
@@ -1017,15 +1044,42 @@ textarea.notes-input { resize: vertical; min-height: 70px; line-height: 1.4; }
   text-transform: uppercase;
   letter-spacing: 0.08em;
 }
-.loading-spinner {
-  width: 22px; height: 22px;
-  border-radius: 50%;
-  border: 2.5px solid var(--ink-border);
-  border-top-color: var(--brass);
-  animation: loading-spin 0.8s linear infinite;
-  margin-top: 6px;
+.loading-ball-wrap {
+  position: relative;
+  width: 40px;
+  height: 40px;
+  margin-top: 8px;
 }
-@keyframes loading-spin { to { transform: rotate(360deg); } }
+.loading-ball {
+  position: absolute;
+  left: 50%;
+  top: 0;
+  font-size: 22px;
+  line-height: 1;
+  transform: translateX(-50%);
+  animation: loading-bounce 0.9s infinite;
+}
+.loading-ball-shadow {
+  position: absolute;
+  bottom: 2px;
+  left: 50%;
+  width: 20px;
+  height: 5px;
+  border-radius: 50%;
+  background: #000;
+  transform: translateX(-50%);
+  animation: loading-shadow 0.9s infinite;
+}
+@keyframes loading-bounce {
+  0%   { transform: translate(-50%, 0); animation-timing-function: cubic-bezier(0.5, 0, 1, 0.5); }
+  50%  { transform: translate(-50%, 22px); animation-timing-function: cubic-bezier(0, 0.5, 0.5, 1); }
+  100% { transform: translate(-50%, 0); }
+}
+@keyframes loading-shadow {
+  0%   { opacity: 0.12; transform: translateX(-50%) scaleX(0.55); }
+  50%  { opacity: 0.35; transform: translateX(-50%) scaleX(1); }
+  100% { opacity: 0.12; transform: translateX(-50%) scaleX(0.55); }
+}
 </style>
 </head>
 <body>
@@ -1035,7 +1089,10 @@ textarea.notes-input { resize: vertical; min-height: 70px; line-height: 1.4; }
     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg>
   </div>
   <div class="loading-title">My Sports <span>LogBook</span></div>
-  <div class="loading-spinner"></div>
+  <div class="loading-ball-wrap">
+    <div class="loading-ball-shadow"></div>
+    <div class="loading-ball">⚽</div>
+  </div>
 </div>
 
 <div id="app">
@@ -1319,6 +1376,16 @@ textarea.notes-input { resize: vertical; min-height: 70px; line-height: 1.4; }
     <select class="filter-select" id="entity-secondary-filter" style="display:none;"></select>
     <div class="history-stats stats-2col" id="entity-watched-stats" style="display:none;"></div>
     <div class="results-scroll" id="entity-events"></div>
+    <div class="fixtures-jump-buttons" id="fixtures-jump-buttons">
+      <button id="jump-to-past-btn" style="display:none;">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><polyline points="18 15 12 9 6 15"/></svg>
+        Past
+      </button>
+      <button id="jump-to-upcoming-btn" style="display:none;">
+        Upcoming
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+      </button>
+    </div>
   </div>
 
   <!-- ============ TAB BAR ============ -->
@@ -2934,8 +3001,11 @@ function buildTodayHtml(grouped) {
   const sportIds = Object.keys(grouped);
   if (!sportIds.length) return "";
   // Sort sports by whichever has the earliest event today, so the most
-  // imminent sport's section leads.
-  sportIds.sort((a, b) => new Date(grouped[a][0].date) - new Date(grouped[b][0].date));
+  // imminent sport's section leads. Uses Math.min rather than picking an
+  // array end, since the events within each sport are themselves sorted
+  // reverse-chronologically (latest first) - independent of that.
+  const earliestFor = sportId => Math.min(...grouped[sportId].map(e => new Date(e.date).getTime()));
+  sportIds.sort((a, b) => earliestFor(a) - earliestFor(b));
   let html = `<div class="section-label">Today</div>`;
   sportIds.forEach(sportId => {
     const sport = STATE.sportsById[sportId];
@@ -3027,7 +3097,7 @@ function entityRowHtml(type, id, name, sportName, sportId) {
 function eventRowHtml(e) {
   const watched = isWatched(e.id);
   const comp = STATE.competitionsById[e.competitionId];
-  const dateStr = formatEventDate(e.date);
+  const dateStr = formatEventDate(e.date, e.sportId);
   const statusColor = watchStatusColor(e.id);
   const resultSummary = eventResultSummary(e);
   return `
@@ -3042,11 +3112,17 @@ function eventRowHtml(e) {
     </button>`;
 }
 
-function formatEventDate(iso) {
+function formatEventDate(iso, sportId) {
   const d = new Date(iso);
   const now = new Date();
   const opts = { day: "numeric", month: "short", year: d.getFullYear() !== now.getFullYear() ? "numeric" : undefined };
   const dateFmt = d.toLocaleDateString("en-GB", opts);
+  // Tennis source data only records the tournament's date, not a specific
+  // match time - every tennis event is stored with a placeholder midnight
+  // timestamp (kept so date-based sorting/filtering still works), so
+  // showing a time here would be misleadingly precise. Every other sport's
+  // source data does carry a real kickoff/start time.
+  if (sportId === "tennis") return dateFmt;
   const timeFmt = d.toLocaleTimeString("en-GB", { hour: "2-digit", minute: "2-digit" });
   return `${dateFmt}, ${timeFmt}`;
 }
@@ -3282,7 +3358,7 @@ function bindMemorableEventRows(container) {
 
 function memorableEventRowHtml(e, isChecked) {
   const comp = STATE.competitionsById[e.competitionId];
-  const dateStr = formatEventDate(e.date);
+  const dateStr = formatEventDate(e.date, e.sportId);
   let extra = "";
   if (e.sportData?.round != null) extra = e.sportId === "f1" ? `Round ${e.sportData.round}` : String(e.sportData.round);
   const resultSummary = eventResultSummary(e);
@@ -3469,10 +3545,12 @@ function setEntityView(view) {
 
   if (view === "fixtures") {
     document.getElementById("entity-watched-stats").style.display = "none";
-    // renderEntityFixtures does its own chronological sort (upcoming and
-    // past both earliest-first), so no need to pre-sort here.
+    // renderEntityFixtures does its own sort (reverse chronological within
+    // each section) and manages the jump-button visibility itself.
     renderEntityFixtures(applyEntityFilters(getEntityEvents(entity)));
   } else {
+    document.getElementById("jump-to-upcoming-btn").style.display = "none";
+    document.getElementById("jump-to-past-btn").style.display = "none";
     const viewings = getEntityWatchedViewings(entity)
       .filter(v => eventMatchesEntityFilters(STATE.eventsById[v.eventId]))
       .sort((a, b) => new Date(b.watchedAt) - new Date(a.watchedAt));
@@ -3636,8 +3714,13 @@ function renderEntityFilterPills() {
 
 function renderEntityFixtures(events) {
   const el = document.getElementById("entity-events");
+  const jumpToUpcomingBtn = document.getElementById("jump-to-upcoming-btn");
+  const jumpToPastBtn = document.getElementById("jump-to-past-btn");
+
   if (!events.length) {
     el.innerHTML = `<div class="empty-state"><div class="glyph">📭</div><p>No events found.</p></div>`;
+    jumpToUpcomingBtn.style.display = "none";
+    jumpToPastBtn.style.display = "none";
     return;
   }
 
@@ -3664,12 +3747,16 @@ function renderEntityFixtures(events) {
     else past.push(e);
   });
 
-  // Chronological throughout: each section earliest-first, so scrolling the
-  // list reads as a timeline rather than jumping between sort directions.
-  today.sort((a, b) => new Date(a.date) - new Date(b.date));
-  recent.sort((a, b) => new Date(a.date) - new Date(b.date));
-  upcoming.sort((a, b) => new Date(a.date) - new Date(b.date));
-  past.sort((a, b) => new Date(a.date) - new Date(b.date));
+  // "Today" and "Upcoming" stay chronological (soonest first) - you want
+  // your next fixture at the top, not the furthest-away one. "Recent" and
+  // "Past" are reverse chronological (latest first), so the most recent
+  // result leads rather than being buried behind years of older history.
+  const byDateAsc = (a, b) => new Date(a.date) - new Date(b.date);
+  const byDateDesc = (a, b) => new Date(b.date) - new Date(a.date);
+  today.sort(byDateAsc);
+  recent.sort(byDateDesc);
+  upcoming.sort(byDateAsc);
+  past.sort(byDateDesc);
 
   let html = "";
   if (today.length) {
@@ -3681,17 +3768,22 @@ function renderEntityFixtures(events) {
     recent.forEach(e => html += eventRowHtml(e));
   }
   if (upcoming.length) {
-    html += `<div class="section-label">Upcoming</div>`;
+    html += `<div class="section-label" id="fixtures-section-upcoming">Upcoming</div>`;
     upcoming.forEach(e => html += eventRowHtml(e));
   }
   if (past.length) {
-    html += `<div class="section-label">Past</div>`;
+    html += `<div class="section-label" id="fixtures-section-past">Past</div>`;
     past.forEach(e => html += eventRowHtml(e));
   }
   el.innerHTML = html;
   el.querySelectorAll("[data-event-id]").forEach(row => {
     row.addEventListener("click", () => openEventModal(row.getAttribute("data-event-id")));
   });
+
+  // Quick-scroll shortcuts only make sense (and only appear) when the
+  // corresponding section actually exists in this particular list.
+  jumpToUpcomingBtn.style.display = upcoming.length ? "flex" : "none";
+  jumpToPastBtn.style.display = past.length ? "flex" : "none";
 }
 
 function sessionsSummaryHtml(v, ev) {
@@ -4061,7 +4153,7 @@ function openEventModal(eventId) {
   document.getElementById("event-comp-label").innerHTML = `<span style="color:${statusColor}">●</span> ${escapeHtml(comp?.name || '')}`;
   document.getElementById("event-comp-label").style.color = "var(--parchment-dim)";
   document.getElementById("event-title").textContent = e.title;
-  document.getElementById("event-datetime").innerHTML = `🗓 ${formatEventDate(e.date)}`;
+  document.getElementById("event-datetime").innerHTML = `🗓 ${formatEventDate(e.date, e.sportId)}`;
 
   let extra = "";
   if (e.sportData) {
@@ -4549,19 +4641,28 @@ function renderMonthGrid(allViewings) {
   }
   section.style.display = "block";
 
-  // Count watched events per calendar month (YYYY-MM key)
+  // Count watched events per calendar month (YYYY-MM key), and track the
+  // earliest watched record to decide how far back the strip needs to go.
   const monthCounts = {};
+  let earliestWatchedAt = null;
   allViewings.forEach(v => {
     const d = new Date(v.watchedAt);
     const key = `${d.getFullYear()}-${String(d.getMonth() + 1).padStart(2, "0")}`;
     monthCounts[key] = (monthCounts[key] || 0) + 1;
+    if (!earliestWatchedAt || d < earliestWatchedAt) earliestWatchedAt = d;
   });
 
-  // Last 12 calendar months ending with the current month (e.g. run in Aug 2026
-  // -> Sep 2025 through Aug 2026), oldest to newest, left to right.
   const now = new Date();
+  // Default: last 12 calendar months ending with the current month. If the
+  // first-ever watched record is further back than that, extend the strip
+  // to cover full history instead - starting one month before that first
+  // record (a little empty run-up for context) - and let it scroll
+  // horizontally rather than compressing everything to fit one screen.
+  const monthsSinceFirst = (now.getFullYear() - earliestWatchedAt.getFullYear()) * 12 + (now.getMonth() - earliestWatchedAt.getMonth());
+  const monthsToShow = monthsSinceFirst > 12 ? monthsSinceFirst + 2 : 12;
+
   const months = [];
-  for (let i = 11; i >= 0; i--) {
+  for (let i = monthsToShow - 1; i >= 0; i--) {
     const d = new Date(now.getFullYear(), now.getMonth() - i, 1);
     months.push(d);
   }
@@ -4598,6 +4699,10 @@ function renderMonthGrid(allViewings) {
   });
 
   wrap.innerHTML = html;
+  // Default view lands on the most recent months (the end of the strip),
+  // matching what the fixed 12-month grid always showed - only scrolling
+  // back reveals the older history now folded in.
+  wrap.scrollLeft = wrap.scrollWidth;
 }
 
 // ---- Sport breakdown bars ----
@@ -4939,6 +5044,13 @@ function bindGlobalUI() {
     STATE.currentEntity = null;
     goBackScreen("search");
     syncTabHighlightToScreen();
+  });
+
+  document.getElementById("jump-to-upcoming-btn").addEventListener("click", () => {
+    document.getElementById("fixtures-section-upcoming")?.scrollIntoView({ behavior: "smooth", block: "start" });
+  });
+  document.getElementById("jump-to-past-btn").addEventListener("click", () => {
+    document.getElementById("fixtures-section-past")?.scrollIntoView({ behavior: "smooth", block: "start" });
   });
 
   document.getElementById("watched-history-back").addEventListener("click", () => {
