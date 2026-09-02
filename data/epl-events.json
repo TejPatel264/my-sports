@@ -1122,29 +1122,6 @@
     }
   },
   {
-    "id": "evt_epl_050",
-    "sportId": "football",
-    "competitionId": "epl",
-    "seasonId": "epl_2026_27",
-    "date": "2026-09-19T14:00:00Z",
-    "title": "Leeds United vs Crystal Palace",
-    "participants": [
-      "team_leeds_united",
-      "team_crystal_palace"
-    ],
-    "sportData": {
-      "homeTeam": "team_leeds_united",
-      "awayTeam": "team_crystal_palace",
-      "venue": null,
-      "result": null,
-      "kind": "football_match"
-    },
-    "dataQuality": "verified",
-    "externalIds": {
-      "footballDataOrgId": 560585
-    }
-  },
-  {
     "id": "evt_epl_051",
     "sportId": "football",
     "competitionId": "epl",
@@ -1209,6 +1186,29 @@
     "dataQuality": "verified",
     "externalIds": {
       "footballDataOrgId": 560589
+    }
+  },
+  {
+    "id": "evt_epl_050",
+    "sportId": "football",
+    "competitionId": "epl",
+    "seasonId": "epl_2026_27",
+    "date": "2026-09-20T13:00:00Z",
+    "title": "Leeds United vs Crystal Palace",
+    "participants": [
+      "team_leeds_united",
+      "team_crystal_palace"
+    ],
+    "sportData": {
+      "homeTeam": "team_leeds_united",
+      "awayTeam": "team_crystal_palace",
+      "venue": null,
+      "result": null,
+      "kind": "football_match"
+    },
+    "dataQuality": "verified",
+    "externalIds": {
+      "footballDataOrgId": 560585
     }
   },
   {
