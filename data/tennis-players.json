@@ -645,6 +645,11 @@
     "name": "Anastasia Potapova"
   },
   {
+    "id": "tennis_player_wta_325601",
+    "sportId": "tennis",
+    "name": "Anastasia Potapova"
+  },
+  {
     "id": "tennis_player_wta_221073",
     "sportId": "tennis",
     "name": "Anastasia Tikhonova"
@@ -1005,6 +1010,11 @@
     "name": "Arantxa Rus"
   },
   {
+    "id": "tennis_player_wta_313349",
+    "sportId": "tennis",
+    "name": "Arantxa Rus"
+  },
+  {
     "id": "tennis_player_atp_A0DV",
     "sportId": "tennis",
     "name": "Arda Azkara"
@@ -1241,6 +1251,11 @@
   },
   {
     "id": "tennis_player_wta_202505",
+    "sportId": "tennis",
+    "name": "Belinda Bencic"
+  },
+  {
+    "id": "tennis_player_wta_319001",
     "sportId": "tennis",
     "name": "Belinda Bencic"
   },
@@ -1780,6 +1795,11 @@
     "name": "Coco Gauff"
   },
   {
+    "id": "tennis_player_wta_328560",
+    "sportId": "tennis",
+    "name": "Coco Gauff"
+  },
+  {
     "id": "tennis_player_wta_201535",
     "sportId": "tennis",
     "name": "Coco Vandeweghe"
@@ -2105,7 +2125,17 @@
     "name": "Darja Semenistaja"
   },
   {
+    "id": "tennis_player_wta_329457",
+    "sportId": "tennis",
+    "name": "Darja Semenistaja"
+  },
+  {
     "id": "tennis_player_wta_221307",
+    "sportId": "tennis",
+    "name": "Darja Vidmanova"
+  },
+  {
+    "id": "tennis_player_wta_329057",
     "sportId": "tennis",
     "name": "Darja Vidmanova"
   },
@@ -2556,6 +2586,11 @@
   },
   {
     "id": "tennis_player_wta_210722",
+    "sportId": "tennis",
+    "name": "Elise Mertens"
+  },
+  {
+    "id": "tennis_player_wta_317964",
     "sportId": "tennis",
     "name": "Elise Mertens"
   },
@@ -4045,6 +4080,11 @@
     "name": "Jessica Bouzas Maneiro"
   },
   {
+    "id": "tennis_player_wta_328139",
+    "sportId": "tennis",
+    "name": "Jessica Bouzas Maneiro"
+  },
+  {
     "id": "tennis_player_wta_202468",
     "sportId": "tennis",
     "name": "Jessica Pegula"
@@ -4406,6 +4446,11 @@
   },
   {
     "id": "tennis_player_wta_269267",
+    "sportId": "tennis",
+    "name": "Kaitlin Quevedo"
+  },
+  {
+    "id": "tennis_player_wta_331742",
     "sportId": "tennis",
     "name": "Kaitlin Quevedo"
   },
@@ -4921,6 +4966,11 @@
   },
   {
     "id": "tennis_player_wta_206417",
+    "sportId": "tennis",
+    "name": "Leolia Jeanjean"
+  },
+  {
+    "id": "tennis_player_wta_320313",
     "sportId": "tennis",
     "name": "Leolia Jeanjean"
   },
@@ -5766,6 +5816,11 @@
   },
   {
     "id": "tennis_player_wta_269265",
+    "sportId": "tennis",
+    "name": "Mary Stoiana"
+  },
+  {
+    "id": "tennis_player_wta_330265",
     "sportId": "tennis",
     "name": "Mary Stoiana"
   },
@@ -6706,6 +6761,11 @@
   },
   {
     "id": "tennis_player_wta_220716",
+    "sportId": "tennis",
+    "name": "Oleksandra Oliynykova"
+  },
+  {
+    "id": "tennis_player_wta_327182",
     "sportId": "tennis",
     "name": "Oleksandra Oliynykova"
   },
@@ -9126,6 +9186,11 @@
   },
   {
     "id": "tennis_player_wta_201709",
+    "sportId": "tennis",
+    "name": "Yulia Putintseva"
+  },
+  {
+    "id": "tennis_player_wta_317683",
     "sportId": "tennis",
     "name": "Yulia Putintseva"
   },
