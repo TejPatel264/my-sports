@@ -720,6 +720,11 @@
     "name": "Andrea Gamiz"
   },
   {
+    "id": "tennis_player_atp_G0A0",
+    "sportId": "tennis",
+    "name": "Andrea Guerrieri"
+  },
+  {
     "id": "tennis_player_wta_209304",
     "sportId": "tennis",
     "name": "Andrea Konjuh"
@@ -2570,6 +2575,11 @@
     "name": "Elina Svitolina"
   },
   {
+    "id": "tennis_player_wta_316738",
+    "sportId": "tennis",
+    "name": "Elina Svitolina"
+  },
+  {
     "id": "tennis_player_atp_S0JA",
     "sportId": "tennis",
     "name": "Eliot Spizzirri"
@@ -3980,6 +3990,11 @@
     "name": "Jasmine Paolini"
   },
   {
+    "id": "tennis_player_wta_319280",
+    "sportId": "tennis",
+    "name": "Jasmine Paolini"
+  },
+  {
     "id": "tennis_player_atp_J380",
     "sportId": "tennis",
     "name": "Jason Jung"
@@ -4086,6 +4101,11 @@
   },
   {
     "id": "tennis_player_wta_202468",
+    "sportId": "tennis",
+    "name": "Jessica Pegula"
+  },
+  {
+    "id": "tennis_player_wta_316956",
     "sportId": "tennis",
     "name": "Jessica Pegula"
   },
@@ -4870,6 +4890,11 @@
     "name": "Lanlana Tararudee"
   },
   {
+    "id": "tennis_player_wta_329651",
+    "sportId": "tennis",
+    "name": "Lanlana Tararudee"
+  },
+  {
     "id": "tennis_player_wta_202418",
     "sportId": "tennis",
     "name": "Lara Arruabarrena"
@@ -5266,6 +5291,11 @@
   },
   {
     "id": "tennis_player_wta_214593",
+    "sportId": "tennis",
+    "name": "Lucrezia Stefanini"
+  },
+  {
+    "id": "tennis_player_wta_323149",
     "sportId": "tennis",
     "name": "Lucrezia Stefanini"
   },
@@ -5731,6 +5761,11 @@
   },
   {
     "id": "tennis_player_wta_216146",
+    "sportId": "tennis",
+    "name": "Marta Kostyuk"
+  },
+  {
+    "id": "tennis_player_wta_326482",
     "sportId": "tennis",
     "name": "Marta Kostyuk"
   },
@@ -7135,6 +7170,11 @@
     "name": "Polina Iatcenko"
   },
   {
+    "id": "tennis_player_wta_330466",
+    "sportId": "tennis",
+    "name": "Polina Iatcenko"
+  },
+  {
     "id": "tennis_player_wta_221236",
     "sportId": "tennis",
     "name": "Polina Kudermetova"
@@ -7935,6 +7975,11 @@
     "name": "Sofia Kenin"
   },
   {
+    "id": "tennis_player_wta_320942",
+    "sportId": "tennis",
+    "name": "Sofia Kenin"
+  },
+  {
     "id": "tennis_player_wta_220272",
     "sportId": "tennis",
     "name": "Sofia Nami Samavati"
@@ -8266,6 +8311,11 @@
   },
   {
     "id": "tennis_player_wta_223194",
+    "sportId": "tennis",
+    "name": "Taylah Preston"
+  },
+  {
+    "id": "tennis_player_wta_330291",
     "sportId": "tennis",
     "name": "Taylah Preston"
   },
@@ -8971,6 +9021,11 @@
   },
   {
     "id": "tennis_player_wta_216133",
+    "sportId": "tennis",
+    "name": "Xinyu Wang"
+  },
+  {
+    "id": "tennis_player_wta_326376",
     "sportId": "tennis",
     "name": "Xinyu Wang"
   },
