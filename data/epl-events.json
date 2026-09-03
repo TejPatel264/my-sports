@@ -1814,29 +1814,6 @@
     "competitionId": "epl",
     "seasonId": "epl_2026_27",
     "date": "2026-10-24T14:00:00Z",
-    "title": "Liverpool vs Brighton & Hove Albion",
-    "participants": [
-      "team_liverpool",
-      "team_brighton_and_hove_albion"
-    ],
-    "sportData": {
-      "kind": "football_match",
-      "homeTeam": "team_liverpool",
-      "awayTeam": "team_brighton_and_hove_albion",
-      "venue": null,
-      "result": null
-    },
-    "dataQuality": "verified",
-    "externalIds": {
-      "footballDataOrgId": 560612
-    },
-    "id": "evt_epl_127"
-  },
-  {
-    "sportId": "football",
-    "competitionId": "epl",
-    "seasonId": "epl_2026_27",
-    "date": "2026-10-24T14:00:00Z",
     "title": "Coventry City vs Fulham",
     "participants": [
       "team_coventry_city",
@@ -1877,6 +1854,29 @@
     "externalIds": {
       "footballDataOrgId": 560617
     }
+  },
+  {
+    "sportId": "football",
+    "competitionId": "epl",
+    "seasonId": "epl_2026_27",
+    "date": "2026-10-25T14:00:00Z",
+    "title": "Liverpool vs Brighton & Hove Albion",
+    "participants": [
+      "team_liverpool",
+      "team_brighton_and_hove_albion"
+    ],
+    "sportData": {
+      "kind": "football_match",
+      "homeTeam": "team_liverpool",
+      "awayTeam": "team_brighton_and_hove_albion",
+      "venue": null,
+      "result": null
+    },
+    "dataQuality": "verified",
+    "externalIds": {
+      "footballDataOrgId": 560612
+    },
+    "id": "evt_epl_127"
   },
   {
     "sportId": "football",
@@ -2135,7 +2135,7 @@
     "sportId": "football",
     "competitionId": "epl",
     "seasonId": "epl_2026_27",
-    "date": "2026-11-01T14:00:00Z",
+    "date": "2026-10-31T20:00:00Z",
     "title": "Aston Villa vs Fulham",
     "participants": [
       "team_aston_villa",

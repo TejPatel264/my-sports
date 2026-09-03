@@ -1026,7 +1026,7 @@
       "homeTeam": "team_millwall",
       "awayTeam": "team_wrexham",
       "venue": null,
-      "result": null
+      "result": "0-3"
     },
     "dataQuality": "verified",
     "externalIds": {
@@ -1049,7 +1049,7 @@
       "homeTeam": "team_queens_park_rangers",
       "awayTeam": "team_cardiff_city",
       "venue": null,
-      "result": null
+      "result": "2-1"
     },
     "dataQuality": "verified",
     "externalIds": {
@@ -1072,7 +1072,7 @@
       "homeTeam": "team_west_bromwich_albion",
       "awayTeam": "team_charlton_athletic",
       "venue": null,
-      "result": null
+      "result": "1-1"
     },
     "dataQuality": "verified",
     "externalIds": {
@@ -1095,7 +1095,7 @@
       "homeTeam": "team_burnley",
       "awayTeam": "team_middlesbrough",
       "venue": null,
-      "result": null
+      "result": "1-1"
     },
     "dataQuality": "verified",
     "externalIds": {
