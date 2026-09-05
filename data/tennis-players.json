@@ -4035,6 +4035,11 @@
     "name": "Jelena Ostapenko"
   },
   {
+    "id": "tennis_player_wta_319939",
+    "sportId": "tennis",
+    "name": "Jelena Ostapenko"
+  },
+  {
     "id": "tennis_player_wta_259871",
     "sportId": "tennis",
     "name": "Jeline Vandromme"
@@ -5436,6 +5441,11 @@
   },
   {
     "id": "tennis_player_wta_211684",
+    "sportId": "tennis",
+    "name": "Magdalena Frech"
+  },
+  {
+    "id": "tennis_player_wta_320277",
     "sportId": "tennis",
     "name": "Magdalena Frech"
   },
