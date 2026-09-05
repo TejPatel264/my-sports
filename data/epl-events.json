@@ -584,7 +584,7 @@
       "homeTeam": "team_ipswich_town",
       "awayTeam": "team_liverpool",
       "venue": null,
-      "result": null,
+      "result": "0-2",
       "kind": "football_match"
     },
     "dataQuality": "verified",
