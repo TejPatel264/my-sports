@@ -4480,6 +4480,11 @@
     "name": "Kaitlin Quevedo"
   },
   {
+    "id": "tennis_player_wta_259733",
+    "sportId": "tennis",
+    "name": "Kaitlin Quevedo"
+  },
+  {
     "id": "tennis_player_wta_215219",
     "sportId": "tennis",
     "name": "Kaja Juvan"
@@ -5866,6 +5871,11 @@
   },
   {
     "id": "tennis_player_wta_330265",
+    "sportId": "tennis",
+    "name": "Mary Stoiana"
+  },
+  {
+    "id": "tennis_player_wta_223168",
     "sportId": "tennis",
     "name": "Mary Stoiana"
   },
@@ -7350,6 +7360,11 @@
     "name": "Reese Brantmeier"
   },
   {
+    "id": "tennis_player_wta_222034",
+    "sportId": "tennis",
+    "name": "Reese Brantmeier"
+  },
+  {
     "id": "tennis_player_atp_S0UV",
     "sportId": "tennis",
     "name": "Rei Sakamoto"
@@ -8431,6 +8446,11 @@
   },
   {
     "id": "tennis_player_wta_333641",
+    "sportId": "tennis",
+    "name": "Thea Frodin"
+  },
+  {
+    "id": "tennis_player_wta_264140",
     "sportId": "tennis",
     "name": "Thea Frodin"
   },
