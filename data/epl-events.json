@@ -607,7 +607,7 @@
       "homeTeam": "team_newcastle_united",
       "awayTeam": "team_afc_bournemouth",
       "venue": null,
-      "result": null,
+      "result": "2-2",
       "kind": "football_match"
     },
     "dataQuality": "verified",
@@ -630,7 +630,7 @@
       "homeTeam": "team_brentford",
       "awayTeam": "team_sunderland",
       "venue": null,
-      "result": null,
+      "result": "1-1",
       "kind": "football_match"
     },
     "dataQuality": "verified",
@@ -653,7 +653,7 @@
       "homeTeam": "team_brighton_and_hove_albion",
       "awayTeam": "team_leeds_united",
       "venue": null,
-      "result": null,
+      "result": "1-1",
       "kind": "football_match"
     },
     "dataQuality": "verified",
@@ -676,7 +676,7 @@
       "homeTeam": "team_fulham",
       "awayTeam": "team_crystal_palace",
       "venue": null,
-      "result": null,
+      "result": "2-3",
       "kind": "football_match"
     },
     "dataQuality": "verified",
@@ -699,7 +699,7 @@
       "homeTeam": "team_manchester_city",
       "awayTeam": "team_coventry_city",
       "venue": null,
-      "result": null,
+      "result": "1-0",
       "kind": "football_match"
     },
     "dataQuality": "verified",
@@ -722,7 +722,7 @@
       "homeTeam": "team_nottingham_forest",
       "awayTeam": "team_tottenham_hotspur",
       "venue": null,
-      "result": null,
+      "result": "0-0",
       "kind": "football_match"
     },
     "dataQuality": "verified",
@@ -745,7 +745,7 @@
       "homeTeam": "team_hull_city",
       "awayTeam": "team_aston_villa",
       "venue": null,
-      "result": null,
+      "result": "0-0",
       "kind": "football_match"
     },
     "dataQuality": "verified",
