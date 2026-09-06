@@ -369750,5 +369750,877 @@
       "cricsheetId": "1548525"
     },
     "id": "evt_cricket_12986"
+  },
+  {
+    "sportId": "cricket",
+    "competitionId": "test_cricket_men",
+    "seasonId": "test_cricket_men_2026",
+    "date": "2026-08-23T00:00:00Z",
+    "title": "India vs Sri Lanka",
+    "participants": [
+      "cricket_team_india",
+      "cricket_team_sri_lanka"
+    ],
+    "sportData": {
+      "kind": "cricket_test",
+      "matchFormat": "Test",
+      "round": "India tour of Sri Lanka, Match 2",
+      "venue": "Sinhalese Sports Club Ground, Colombo",
+      "result": "Match drawn",
+      "toss": {
+        "winner": "India",
+        "decision": "bat"
+      },
+      "playerOfMatch": "GS Dinusha",
+      "actualDays": 5,
+      "scheduledDays": 5
+    },
+    "dataQuality": "verified",
+    "externalIds": {
+      "cricsheetId": "1544002"
+    },
+    "id": "evt_cricket_13142"
+  },
+  {
+    "sportId": "cricket",
+    "competitionId": "t20i_cricket_women",
+    "seasonId": "t20i_cricket_women_2026",
+    "date": "2026-08-26T00:00:00Z",
+    "title": "Austria vs Turkey",
+    "participants": [
+      "cricket_team_austria",
+      "cricket_team_turkey"
+    ],
+    "sportData": {
+      "kind": "cricket_t20",
+      "matchFormat": "T20",
+      "round": "Women's Continental Cup, Match 1",
+      "venue": "Moara Vlasiei Cricket Ground, Ilfov County",
+      "result": "Turkey won by 8 wickets",
+      "toss": {
+        "winner": "Turkey",
+        "decision": "field"
+      },
+      "playerOfMatch": "K Canavarci"
+    },
+    "dataQuality": "verified",
+    "externalIds": {
+      "cricsheetId": "1549194"
+    },
+    "id": "evt_cricket_13159"
+  },
+  {
+    "sportId": "cricket",
+    "competitionId": "t20i_cricket_women",
+    "seasonId": "t20i_cricket_women_2026",
+    "date": "2026-08-26T00:00:00Z",
+    "title": "Romania vs Isle of Man",
+    "participants": [
+      "cricket_team_romania",
+      "cricket_team_isle_of_man"
+    ],
+    "sportData": {
+      "kind": "cricket_t20",
+      "matchFormat": "T20",
+      "round": "Women's Continental Cup, Match 2",
+      "venue": "Moara Vlasiei Cricket Ground, Ilfov County",
+      "result": "Isle of Man won by 3 wickets",
+      "toss": {
+        "winner": "Romania",
+        "decision": "bat"
+      },
+      "playerOfMatch": "L Barnett"
+    },
+    "dataQuality": "verified",
+    "externalIds": {
+      "cricsheetId": "1549195"
+    },
+    "id": "evt_cricket_13160"
+  },
+  {
+    "sportId": "cricket",
+    "competitionId": "t20i_cricket_women",
+    "seasonId": "t20i_cricket_women_2026",
+    "date": "2026-08-26T00:00:00Z",
+    "title": "Austria vs Guernsey",
+    "participants": [
+      "cricket_team_austria",
+      "cricket_team_guernsey"
+    ],
+    "sportData": {
+      "kind": "cricket_t20",
+      "matchFormat": "T20",
+      "round": "Women's Continental Cup, Match 3",
+      "venue": "Moara Vlasiei Cricket Ground, Ilfov County",
+      "result": "Austria won by 85 runs",
+      "toss": {
+        "winner": "Guernsey",
+        "decision": "field"
+      },
+      "playerOfMatch": "SK Reddy"
+    },
+    "dataQuality": "verified",
+    "externalIds": {
+      "cricsheetId": "1549196"
+    },
+    "id": "evt_cricket_13161"
+  },
+  {
+    "sportId": "cricket",
+    "competitionId": "test_cricket_men",
+    "seasonId": "test_cricket_men_2026",
+    "date": "2026-08-27T00:00:00Z",
+    "title": "England vs Pakistan",
+    "participants": [
+      "cricket_team_england",
+      "cricket_team_pakistan"
+    ],
+    "sportData": {
+      "kind": "cricket_test",
+      "matchFormat": "Test",
+      "round": "Pakistan tour of England, Match 2",
+      "venue": "Lord's, London",
+      "result": "England won by 194 runs",
+      "toss": {
+        "winner": "Pakistan",
+        "decision": "field"
+      },
+      "playerOfMatch": "OE Robinson",
+      "actualDays": 4,
+      "scheduledDays": 5
+    },
+    "dataQuality": "verified",
+    "externalIds": {
+      "cricsheetId": "1496583"
+    },
+    "id": "evt_cricket_13141"
+  },
+  {
+    "sportId": "cricket",
+    "competitionId": "t20i_cricket_women",
+    "seasonId": "t20i_cricket_women_2026",
+    "date": "2026-08-27T00:00:00Z",
+    "title": "Greece vs Isle of Man",
+    "participants": [
+      "cricket_team_greece",
+      "cricket_team_isle_of_man"
+    ],
+    "sportData": {
+      "kind": "cricket_t20",
+      "matchFormat": "T20",
+      "round": "Women's Continental Cup, Match 4",
+      "venue": "Moara Vlasiei Cricket Ground, Ilfov County",
+      "result": "Isle of Man won by 9 wickets",
+      "toss": {
+        "winner": "Greece",
+        "decision": "bat"
+      },
+      "playerOfMatch": "J Hicks"
+    },
+    "dataQuality": "verified",
+    "externalIds": {
+      "cricsheetId": "1549197"
+    },
+    "id": "evt_cricket_13162"
+  },
+  {
+    "sportId": "cricket",
+    "competitionId": "t20i_cricket_women",
+    "seasonId": "t20i_cricket_women_2026",
+    "date": "2026-08-27T00:00:00Z",
+    "title": "Czech Republic vs Turkey",
+    "participants": [
+      "cricket_team_czech_republic",
+      "cricket_team_turkey"
+    ],
+    "sportData": {
+      "kind": "cricket_t20",
+      "matchFormat": "T20",
+      "round": "Women's Continental Cup, Match 5",
+      "venue": "Moara Vlasiei Cricket Ground, Ilfov County",
+      "result": "Turkey won by 8 wickets",
+      "toss": {
+        "winner": "Turkey",
+        "decision": "field"
+      },
+      "playerOfMatch": "Ezgi Nur Kilic"
+    },
+    "dataQuality": "verified",
+    "externalIds": {
+      "cricsheetId": "1549198"
+    },
+    "id": "evt_cricket_13163"
+  },
+  {
+    "sportId": "cricket",
+    "competitionId": "t20i_cricket_men",
+    "seasonId": "t20i_cricket_men_2026",
+    "date": "2026-08-28T00:00:00Z",
+    "title": "Namibia vs South Africa",
+    "participants": [
+      "cricket_team_namibia",
+      "cricket_team_south_africa"
+    ],
+    "sportData": {
+      "kind": "cricket_t20",
+      "matchFormat": "T20",
+      "round": "Namibia T20I Tri-Series, Match 1",
+      "venue": "Namibia Cricket Ground, Windhoek",
+      "result": "Namibia won by 18 runs",
+      "toss": {
+        "winner": "South Africa",
+        "decision": "field"
+      },
+      "playerOfMatch": "JJ Smit"
+    },
+    "dataQuality": "verified",
+    "externalIds": {
+      "cricsheetId": "1549524"
+    },
+    "id": "evt_cricket_13145"
+  },
+  {
+    "sportId": "cricket",
+    "competitionId": "t20i_cricket_women",
+    "seasonId": "t20i_cricket_women_2026",
+    "date": "2026-08-28T00:00:00Z",
+    "title": "Germany vs Sweden",
+    "participants": [
+      "cricket_team_germany",
+      "cricket_team_sweden"
+    ],
+    "sportData": {
+      "kind": "cricket_t20",
+      "matchFormat": "T20",
+      "round": "Nordic Women T20 Cup, Match 1",
+      "venue": "GelsenTrabPark, Gelsenkirchen",
+      "result": "Sweden won by 14 runs (D/L)",
+      "toss": {
+        "winner": "Sweden",
+        "decision": "field"
+      },
+      "playerOfMatch": "H Shreya"
+    },
+    "dataQuality": "verified",
+    "externalIds": {
+      "cricsheetId": "1548658"
+    },
+    "id": "evt_cricket_13149"
+  },
+  {
+    "sportId": "cricket",
+    "competitionId": "t20i_cricket_women",
+    "seasonId": "t20i_cricket_women_2026",
+    "date": "2026-08-28T00:00:00Z",
+    "title": "Sweden vs Denmark",
+    "participants": [
+      "cricket_team_sweden",
+      "cricket_team_denmark"
+    ],
+    "sportData": {
+      "kind": "cricket_t20",
+      "matchFormat": "T20",
+      "round": "Nordic Women T20 Cup, Match 2",
+      "venue": "GelsenTrabPark, Gelsenkirchen",
+      "result": "Sweden won by 71 runs",
+      "toss": {
+        "winner": "Denmark",
+        "decision": "field"
+      },
+      "playerOfMatch": "Kanchan Rana"
+    },
+    "dataQuality": "verified",
+    "externalIds": {
+      "cricsheetId": "1548659"
+    },
+    "id": "evt_cricket_13150"
+  },
+  {
+    "sportId": "cricket",
+    "competitionId": "t20i_cricket_women",
+    "seasonId": "t20i_cricket_women_2026",
+    "date": "2026-08-28T00:00:00Z",
+    "title": "Thailand vs Hong Kong",
+    "participants": [
+      "cricket_team_thailand",
+      "cricket_team_hong_kong"
+    ],
+    "sportData": {
+      "kind": "cricket_t20",
+      "matchFormat": "T20",
+      "round": "Women's Twenty20 Asia Cup, Match 1",
+      "venue": "Dubai International Cricket Stadium",
+      "result": "Thailand won by 6 runs",
+      "toss": {
+        "winner": "Hong Kong",
+        "decision": "field"
+      },
+      "playerOfMatch": "N Chaiwai"
+    },
+    "dataQuality": "verified",
+    "externalIds": {
+      "cricsheetId": "1548891"
+    },
+    "id": "evt_cricket_13154"
+  },
+  {
+    "sportId": "cricket",
+    "competitionId": "t20i_cricket_women",
+    "seasonId": "t20i_cricket_women_2026",
+    "date": "2026-08-28T00:00:00Z",
+    "title": "Romania vs Greece",
+    "participants": [
+      "cricket_team_romania",
+      "cricket_team_greece"
+    ],
+    "sportData": {
+      "kind": "cricket_t20",
+      "matchFormat": "T20",
+      "round": "Women's Continental Cup, Match 7",
+      "venue": "Moara Vlasiei Cricket Ground, Ilfov County",
+      "result": "Romania won by 30 runs",
+      "toss": {
+        "winner": "Romania",
+        "decision": "bat"
+      },
+      "playerOfMatch": "RL Blake"
+    },
+    "dataQuality": "verified",
+    "externalIds": {
+      "cricsheetId": "1549200"
+    },
+    "id": "evt_cricket_13164"
+  },
+  {
+    "sportId": "cricket",
+    "competitionId": "t20i_cricket_women",
+    "seasonId": "t20i_cricket_women_2026",
+    "date": "2026-08-28T00:00:00Z",
+    "title": "Turkey vs Guernsey",
+    "participants": [
+      "cricket_team_turkey",
+      "cricket_team_guernsey"
+    ],
+    "sportData": {
+      "kind": "cricket_t20",
+      "matchFormat": "T20",
+      "round": "Women's Continental Cup, Match 8",
+      "venue": "Moara Vlasiei Cricket Ground, Ilfov County",
+      "result": "Turkey won by 17 runs",
+      "toss": {
+        "winner": "Turkey",
+        "decision": "bat"
+      },
+      "playerOfMatch": "K Robert"
+    },
+    "dataQuality": "verified",
+    "externalIds": {
+      "cricsheetId": "1549201"
+    },
+    "id": "evt_cricket_13165"
+  },
+  {
+    "sportId": "cricket",
+    "competitionId": "t20i_cricket_women",
+    "seasonId": "t20i_cricket_women_2026",
+    "date": "2026-08-28T00:00:00Z",
+    "title": "Czech Republic vs Austria",
+    "participants": [
+      "cricket_team_czech_republic",
+      "cricket_team_austria"
+    ],
+    "sportData": {
+      "kind": "cricket_t20",
+      "matchFormat": "T20",
+      "round": "Women's Continental Cup, Match 9",
+      "venue": "Moara Vlasiei Cricket Ground, Ilfov County",
+      "result": "Austria won by 5 wickets",
+      "toss": {
+        "winner": "Czech Republic",
+        "decision": "bat"
+      },
+      "playerOfMatch": "AM Zepeda"
+    },
+    "dataQuality": "verified",
+    "externalIds": {
+      "cricsheetId": "1549202"
+    },
+    "id": "evt_cricket_13166"
+  },
+  {
+    "sportId": "cricket",
+    "competitionId": "t20i_cricket_men",
+    "seasonId": "t20i_cricket_men_2026",
+    "date": "2026-08-29T00:00:00Z",
+    "title": "Zimbabwe vs South Africa",
+    "participants": [
+      "cricket_team_zimbabwe",
+      "cricket_team_south_africa"
+    ],
+    "sportData": {
+      "kind": "cricket_t20",
+      "matchFormat": "T20",
+      "round": "Namibia T20I Tri-Series, Match 2",
+      "venue": "Namibia Cricket Ground, Windhoek",
+      "result": "South Africa won by 7 wickets",
+      "toss": {
+        "winner": "Zimbabwe",
+        "decision": "bat"
+      },
+      "playerOfMatch": "D Brevis"
+    },
+    "dataQuality": "verified",
+    "externalIds": {
+      "cricsheetId": "1549525"
+    },
+    "id": "evt_cricket_13146"
+  },
+  {
+    "sportId": "cricket",
+    "competitionId": "t20i_cricket_women",
+    "seasonId": "t20i_cricket_women_2026",
+    "date": "2026-08-29T00:00:00Z",
+    "title": "Germany vs Denmark",
+    "participants": [
+      "cricket_team_germany",
+      "cricket_team_denmark"
+    ],
+    "sportData": {
+      "kind": "cricket_t20",
+      "matchFormat": "T20",
+      "round": "Nordic Women T20 Cup, Match 3",
+      "venue": "GelsenTrabPark, Gelsenkirchen",
+      "result": "Denmark won by 2 wickets",
+      "toss": {
+        "winner": "Germany",
+        "decision": "bat"
+      },
+      "playerOfMatch": "Frida Larsen"
+    },
+    "dataQuality": "verified",
+    "externalIds": {
+      "cricsheetId": "1548660"
+    },
+    "id": "evt_cricket_13151"
+  },
+  {
+    "sportId": "cricket",
+    "competitionId": "t20i_cricket_women",
+    "seasonId": "t20i_cricket_women_2026",
+    "date": "2026-08-29T00:00:00Z",
+    "title": "Sweden vs Germany",
+    "participants": [
+      "cricket_team_sweden",
+      "cricket_team_germany"
+    ],
+    "sportData": {
+      "kind": "cricket_t20",
+      "matchFormat": "T20",
+      "round": "Nordic Women T20 Cup, Match 4",
+      "venue": "GelsenTrabPark, Gelsenkirchen",
+      "result": "No result",
+      "toss": {
+        "winner": "Sweden",
+        "decision": "bat"
+      },
+      "playerOfMatch": null
+    },
+    "dataQuality": "verified",
+    "externalIds": {
+      "cricsheetId": "1548661"
+    },
+    "id": "evt_cricket_13152"
+  },
+  {
+    "sportId": "cricket",
+    "competitionId": "t20i_cricket_women",
+    "seasonId": "t20i_cricket_women_2026",
+    "date": "2026-08-29T00:00:00Z",
+    "title": "United Arab Emirates vs Sri Lanka",
+    "participants": [
+      "cricket_team_united_arab_emirates",
+      "cricket_team_sri_lanka"
+    ],
+    "sportData": {
+      "kind": "cricket_t20",
+      "matchFormat": "T20",
+      "round": "Women's Twenty20 Asia Cup, Match 2",
+      "venue": "Dubai International Cricket Stadium",
+      "result": "Sri Lanka won by 9 wickets",
+      "toss": {
+        "winner": "Sri Lanka",
+        "decision": "field"
+      },
+      "playerOfMatch": "AGC Vimukthi"
+    },
+    "dataQuality": "verified",
+    "externalIds": {
+      "cricsheetId": "1548892"
+    },
+    "id": "evt_cricket_13155"
+  },
+  {
+    "sportId": "cricket",
+    "competitionId": "t20i_cricket_women",
+    "seasonId": "t20i_cricket_women_2026",
+    "date": "2026-08-29T00:00:00Z",
+    "title": "Greece vs Norway",
+    "participants": [
+      "cricket_team_greece",
+      "cricket_team_norway"
+    ],
+    "sportData": {
+      "kind": "cricket_t20",
+      "matchFormat": "T20",
+      "round": "Women's Continental Cup, Match 10",
+      "venue": "Moara Vlasiei Cricket Ground, Ilfov County",
+      "result": "Norway won by 6 wickets",
+      "toss": {
+        "winner": "Norway",
+        "decision": "field"
+      },
+      "playerOfMatch": "VB Viyala"
+    },
+    "dataQuality": "verified",
+    "externalIds": {
+      "cricsheetId": "1549203"
+    },
+    "id": "evt_cricket_13167"
+  },
+  {
+    "sportId": "cricket",
+    "competitionId": "t20i_cricket_women",
+    "seasonId": "t20i_cricket_women_2026",
+    "date": "2026-08-29T00:00:00Z",
+    "title": "Czech Republic vs Guernsey",
+    "participants": [
+      "cricket_team_czech_republic",
+      "cricket_team_guernsey"
+    ],
+    "sportData": {
+      "kind": "cricket_t20",
+      "matchFormat": "T20",
+      "round": "Women's Continental Cup, Match 11",
+      "venue": "Moara Vlasiei Cricket Ground, Ilfov County",
+      "result": "Guernsey won by 5 wickets",
+      "toss": {
+        "winner": "Guernsey",
+        "decision": "field"
+      },
+      "playerOfMatch": "K Robert"
+    },
+    "dataQuality": "verified",
+    "externalIds": {
+      "cricsheetId": "1549204"
+    },
+    "id": "evt_cricket_13168"
+  },
+  {
+    "sportId": "cricket",
+    "competitionId": "t20i_cricket_women",
+    "seasonId": "t20i_cricket_women_2026",
+    "date": "2026-08-29T00:00:00Z",
+    "title": "Isle of Man vs Norway",
+    "participants": [
+      "cricket_team_isle_of_man",
+      "cricket_team_norway"
+    ],
+    "sportData": {
+      "kind": "cricket_t20",
+      "matchFormat": "T20",
+      "round": "Women's Continental Cup, Match 12",
+      "venue": "Moara Vlasiei Cricket Ground, Ilfov County",
+      "result": "Isle of Man won by 27 runs",
+      "toss": {
+        "winner": "Norway",
+        "decision": "field"
+      },
+      "playerOfMatch": "L Barnett"
+    },
+    "dataQuality": "verified",
+    "externalIds": {
+      "cricsheetId": "1549205"
+    },
+    "id": "evt_cricket_13169"
+  },
+  {
+    "sportId": "cricket",
+    "competitionId": "odi_cricket_women",
+    "seasonId": "odi_cricket_women_2026",
+    "date": "2026-08-30T00:00:00Z",
+    "title": "Netherlands vs Scotland",
+    "participants": [
+      "cricket_team_netherlands",
+      "cricket_team_scotland"
+    ],
+    "sportData": {
+      "kind": "cricket_t20",
+      "matchFormat": "ODI",
+      "round": "Netherlands Women tour of Scotland, Match 2",
+      "venue": "New Williamfield No1 Oval, Stirling",
+      "result": "Scotland won by 9 wickets",
+      "toss": {
+        "winner": "Scotland",
+        "decision": "field"
+      },
+      "playerOfMatch": null
+    },
+    "dataQuality": "verified",
+    "externalIds": {
+      "cricsheetId": "1549973"
+    },
+    "id": "evt_cricket_13144"
+  },
+  {
+    "sportId": "cricket",
+    "competitionId": "t20i_cricket_women",
+    "seasonId": "t20i_cricket_women_2026",
+    "date": "2026-08-30T00:00:00Z",
+    "title": "Germany vs Denmark",
+    "participants": [
+      "cricket_team_germany",
+      "cricket_team_denmark"
+    ],
+    "sportData": {
+      "kind": "cricket_t20",
+      "matchFormat": "T20",
+      "round": "Nordic Women T20 Cup, Match 6",
+      "venue": "GelsenTrabPark, Gelsenkirchen",
+      "result": "Germany won by 37 runs",
+      "toss": {
+        "winner": "Denmark",
+        "decision": "field"
+      },
+      "playerOfMatch": "S Kolcharam"
+    },
+    "dataQuality": "verified",
+    "externalIds": {
+      "cricsheetId": "1548663"
+    },
+    "id": "evt_cricket_13153"
+  },
+  {
+    "sportId": "cricket",
+    "competitionId": "t20i_cricket_women",
+    "seasonId": "t20i_cricket_women_2026",
+    "date": "2026-08-30T00:00:00Z",
+    "title": "India vs Thailand",
+    "participants": [
+      "cricket_team_india",
+      "cricket_team_thailand"
+    ],
+    "sportData": {
+      "kind": "cricket_t20",
+      "matchFormat": "T20",
+      "round": "Women's Twenty20 Asia Cup, Match 3",
+      "venue": "Dubai International Cricket Stadium",
+      "result": "India won by 94 runs",
+      "toss": {
+        "winner": "Thailand",
+        "decision": "field"
+      },
+      "playerOfMatch": "Shafali Verma"
+    },
+    "dataQuality": "verified",
+    "externalIds": {
+      "cricsheetId": "1548893"
+    },
+    "id": "evt_cricket_13156"
+  },
+  {
+    "sportId": "cricket",
+    "competitionId": "t20i_cricket_women",
+    "seasonId": "t20i_cricket_women_2026",
+    "date": "2026-08-30T00:00:00Z",
+    "title": "Norway vs Austria",
+    "participants": [
+      "cricket_team_norway",
+      "cricket_team_austria"
+    ],
+    "sportData": {
+      "kind": "cricket_t20",
+      "matchFormat": "T20",
+      "round": "Women's Continental Cup",
+      "venue": "Moara Vlasiei Cricket Ground, Ilfov County",
+      "result": "Austria won by 7 wickets",
+      "toss": {
+        "winner": "Austria",
+        "decision": "field"
+      },
+      "playerOfMatch": "AM Zepeda"
+    },
+    "dataQuality": "verified",
+    "externalIds": {
+      "cricsheetId": "1549206"
+    },
+    "id": "evt_cricket_13170"
+  },
+  {
+    "sportId": "cricket",
+    "competitionId": "t20i_cricket_women",
+    "seasonId": "t20i_cricket_women_2026",
+    "date": "2026-08-30T00:00:00Z",
+    "title": "Isle of Man vs Turkey",
+    "participants": [
+      "cricket_team_isle_of_man",
+      "cricket_team_turkey"
+    ],
+    "sportData": {
+      "kind": "cricket_t20",
+      "matchFormat": "T20",
+      "round": "Women's Continental Cup",
+      "venue": "Moara Vlasiei Cricket Ground, Ilfov County",
+      "result": "Turkey won by 5 wickets",
+      "toss": {
+        "winner": "Turkey",
+        "decision": "field"
+      },
+      "playerOfMatch": "H Celik"
+    },
+    "dataQuality": "verified",
+    "externalIds": {
+      "cricsheetId": "1549207"
+    },
+    "id": "evt_cricket_13171"
+  },
+  {
+    "sportId": "cricket",
+    "competitionId": "t20i_cricket_men",
+    "seasonId": "t20i_cricket_men_2026",
+    "date": "2026-08-31T00:00:00Z",
+    "title": "Zimbabwe vs Namibia",
+    "participants": [
+      "cricket_team_zimbabwe",
+      "cricket_team_namibia"
+    ],
+    "sportData": {
+      "kind": "cricket_t20",
+      "matchFormat": "T20",
+      "round": "Namibia T20I Tri-Series, Match 3",
+      "venue": "Namibia Cricket Ground, Windhoek",
+      "result": "Zimbabwe won by 5 runs",
+      "toss": {
+        "winner": "Namibia",
+        "decision": "field"
+      },
+      "playerOfMatch": "B Evans"
+    },
+    "dataQuality": "verified",
+    "externalIds": {
+      "cricsheetId": "1549526"
+    },
+    "id": "evt_cricket_13147"
+  },
+  {
+    "sportId": "cricket",
+    "competitionId": "t20i_cricket_women",
+    "seasonId": "t20i_cricket_women_2026",
+    "date": "2026-08-31T00:00:00Z",
+    "title": "Bangladesh vs Indonesia",
+    "participants": [
+      "cricket_team_bangladesh",
+      "cricket_team_indonesia"
+    ],
+    "sportData": {
+      "kind": "cricket_t20",
+      "matchFormat": "T20",
+      "round": "Women's Asia Cup, Match 4",
+      "venue": "Dubai International Cricket Stadium",
+      "result": "Bangladesh won by 71 runs",
+      "toss": {
+        "winner": "Indonesia",
+        "decision": "field"
+      },
+      "playerOfMatch": "Nahida Akter"
+    },
+    "dataQuality": "verified",
+    "externalIds": {
+      "cricsheetId": "1548894"
+    },
+    "id": "evt_cricket_13157"
+  },
+  {
+    "sportId": "cricket",
+    "competitionId": "odi_cricket_women",
+    "seasonId": "odi_cricket_women_2026",
+    "date": "2026-09-01T00:00:00Z",
+    "title": "Ireland vs England",
+    "participants": [
+      "cricket_team_ireland",
+      "cricket_team_england"
+    ],
+    "sportData": {
+      "kind": "cricket_t20",
+      "matchFormat": "ODI",
+      "round": "Ireland Women tour of England, Match 1",
+      "venue": "Grace Road, Leicester",
+      "result": "England won by 6 wickets",
+      "toss": {
+        "winner": "England",
+        "decision": "field"
+      },
+      "playerOfMatch": "ME Bouchier"
+    },
+    "dataQuality": "verified",
+    "externalIds": {
+      "cricsheetId": "1496552"
+    },
+    "id": "evt_cricket_13143"
+  },
+  {
+    "sportId": "cricket",
+    "competitionId": "t20i_cricket_men",
+    "seasonId": "t20i_cricket_men_2026",
+    "date": "2026-09-01T00:00:00Z",
+    "title": "South Africa vs Zimbabwe",
+    "participants": [
+      "cricket_team_south_africa",
+      "cricket_team_zimbabwe"
+    ],
+    "sportData": {
+      "kind": "cricket_t20",
+      "matchFormat": "T20",
+      "round": "Namibia T20I Tri-Series, Match 4",
+      "venue": "Namibia Cricket Ground, Windhoek",
+      "result": "South Africa won by 43 runs",
+      "toss": {
+        "winner": "South Africa",
+        "decision": "bat"
+      },
+      "playerOfMatch": "LG Pretorius"
+    },
+    "dataQuality": "verified",
+    "externalIds": {
+      "cricsheetId": "1549527"
+    },
+    "id": "evt_cricket_13148"
+  },
+  {
+    "sportId": "cricket",
+    "competitionId": "t20i_cricket_women",
+    "seasonId": "t20i_cricket_women_2026",
+    "date": "2026-09-01T00:00:00Z",
+    "title": "Pakistan vs Thailand",
+    "participants": [
+      "cricket_team_pakistan",
+      "cricket_team_thailand"
+    ],
+    "sportData": {
+      "kind": "cricket_t20",
+      "matchFormat": "T20",
+      "round": "Women's Asia Cup, Match 5",
+      "venue": "Dubai International Cricket Stadium",
+      "result": "Pakistan won by 35 runs",
+      "toss": {
+        "winner": "Pakistan",
+        "decision": "bat"
+      },
+      "playerOfMatch": "Muneeba Ali"
+    },
+    "dataQuality": "verified",
+    "externalIds": {
+      "cricsheetId": "1548895"
+    },
+    "id": "evt_cricket_13158"
   }
 ]
