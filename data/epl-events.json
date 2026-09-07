@@ -768,7 +768,7 @@
       "homeTeam": "team_everton",
       "awayTeam": "team_manchester_united",
       "venue": null,
-      "result": null,
+      "result": "2-2",
       "kind": "football_match"
     },
     "dataQuality": "verified",
@@ -791,7 +791,7 @@
       "homeTeam": "team_arsenal",
       "awayTeam": "team_chelsea",
       "venue": null,
-      "result": null,
+      "result": "2-1",
       "kind": "football_match"
     },
     "dataQuality": "verified",
