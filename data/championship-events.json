@@ -1521,29 +1521,6 @@
     "sportId": "football",
     "competitionId": "championship",
     "seasonId": "championship_2026_27",
-    "date": "2026-09-09T00:00:00Z",
-    "title": "Wolverhampton Wanderers vs Portsmouth",
-    "participants": [
-      "team_wolverhampton_wanderers",
-      "team_portsmouth"
-    ],
-    "sportData": {
-      "kind": "football_match",
-      "homeTeam": "team_wolverhampton_wanderers",
-      "awayTeam": "team_portsmouth",
-      "venue": null,
-      "result": null
-    },
-    "dataQuality": "verified",
-    "externalIds": {
-      "footballDataOrgId": 561826
-    },
-    "id": "evt_championship_067"
-  },
-  {
-    "sportId": "football",
-    "competitionId": "championship",
-    "seasonId": "championship_2026_27",
     "date": "2026-09-09T18:45:00Z",
     "title": "Derby County vs West Bromwich Albion",
     "participants": [
@@ -3034,6 +3011,29 @@
       "footballDataOrgId": 561892
     },
     "id": "evt_championship_132"
+  },
+  {
+    "sportId": "football",
+    "competitionId": "championship",
+    "seasonId": "championship_2026_27",
+    "date": "2026-10-20T18:45:00Z",
+    "title": "Wolverhampton Wanderers vs Portsmouth",
+    "participants": [
+      "team_wolverhampton_wanderers",
+      "team_portsmouth"
+    ],
+    "sportData": {
+      "kind": "football_match",
+      "homeTeam": "team_wolverhampton_wanderers",
+      "awayTeam": "team_portsmouth",
+      "venue": null,
+      "result": null
+    },
+    "dataQuality": "verified",
+    "externalIds": {
+      "footballDataOrgId": 561826
+    },
+    "id": "evt_championship_067"
   },
   {
     "sportId": "football",
