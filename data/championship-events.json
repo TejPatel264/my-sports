@@ -1394,7 +1394,7 @@
       "homeTeam": "team_blackburn_rovers",
       "awayTeam": "team_sheffield_united",
       "venue": null,
-      "result": null
+      "result": "1-2"
     },
     "dataQuality": "verified",
     "externalIds": {
@@ -1417,7 +1417,7 @@
       "homeTeam": "team_southampton",
       "awayTeam": "team_swansea_city",
       "venue": null,
-      "result": null
+      "result": "3-1"
     },
     "dataQuality": "verified",
     "externalIds": {
@@ -1440,7 +1440,7 @@
       "homeTeam": "team_watford",
       "awayTeam": "team_preston_north_end",
       "venue": null,
-      "result": null
+      "result": "2-1"
     },
     "dataQuality": "verified",
     "externalIds": {
@@ -1463,7 +1463,7 @@
       "homeTeam": "team_cardiff_city",
       "awayTeam": "team_stoke_city",
       "venue": null,
-      "result": null
+      "result": "1-1"
     },
     "dataQuality": "verified",
     "externalIds": {
@@ -1486,7 +1486,7 @@
       "homeTeam": "team_wrexham",
       "awayTeam": "team_burnley",
       "venue": null,
-      "result": null
+      "result": "1-1"
     },
     "dataQuality": "verified",
     "externalIds": {
@@ -1509,7 +1509,7 @@
       "homeTeam": "team_bolton_wanderers",
       "awayTeam": "team_west_ham_united",
       "venue": null,
-      "result": null
+      "result": "2-3"
     },
     "dataQuality": "verified",
     "externalIds": {
