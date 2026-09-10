@@ -1532,7 +1532,7 @@
       "homeTeam": "team_derby_county",
       "awayTeam": "team_west_bromwich_albion",
       "venue": null,
-      "result": null
+      "result": "0-1"
     },
     "dataQuality": "verified",
     "externalIds": {
@@ -1555,7 +1555,7 @@
       "homeTeam": "team_norwich_city",
       "awayTeam": "team_birmingham_city",
       "venue": null,
-      "result": null
+      "result": "2-1"
     },
     "dataQuality": "verified",
     "externalIds": {
@@ -1578,7 +1578,7 @@
       "homeTeam": "team_charlton_athletic",
       "awayTeam": "team_queens_park_rangers",
       "venue": null,
-      "result": null
+      "result": "0-0"
     },
     "dataQuality": "verified",
     "externalIds": {
