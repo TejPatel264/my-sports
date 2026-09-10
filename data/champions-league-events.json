@@ -14,7 +14,7 @@
       "homeTeam": "team_club_brugge",
       "awayTeam": "team_aston_villa",
       "venue": null,
-      "result": null
+      "result": "2-3"
     },
     "dataQuality": "verified",
     "externalIds": {
@@ -37,7 +37,7 @@
       "homeTeam": "team_real_madrid",
       "awayTeam": "team_inter_milan",
       "venue": null,
-      "result": null
+      "result": "2-1"
     },
     "dataQuality": "verified",
     "externalIds": {
@@ -60,7 +60,7 @@
       "homeTeam": "team_porto",
       "awayTeam": "team_manchester_city",
       "venue": null,
-      "result": null
+      "result": "0-2"
     },
     "dataQuality": "verified",
     "externalIds": {
@@ -83,7 +83,7 @@
       "homeTeam": "team_borussia_dortmund",
       "awayTeam": "team_villarreal",
       "venue": null,
-      "result": null
+      "result": "3-2"
     },
     "dataQuality": "verified",
     "externalIds": {
@@ -106,7 +106,7 @@
       "homeTeam": "team_barcelona",
       "awayTeam": "team_feyenoord",
       "venue": null,
-      "result": null
+      "result": "5-1"
     },
     "dataQuality": "verified",
     "externalIds": {
@@ -129,7 +129,7 @@
       "homeTeam": "team_stuttgart",
       "awayTeam": "team_viking_fk",
       "venue": null,
-      "result": null
+      "result": "3-1"
     },
     "dataQuality": "verified",
     "externalIds": {
@@ -152,7 +152,7 @@
       "homeTeam": "team_liverpool",
       "awayTeam": "team_atletico_madrid",
       "venue": null,
-      "result": null
+      "result": "2-1"
     },
     "dataQuality": "verified",
     "externalIds": {
@@ -175,7 +175,7 @@
       "homeTeam": "team_paris_saint_germain",
       "awayTeam": "team_slovan_bratislava",
       "venue": null,
-      "result": null
+      "result": "6-1"
     },
     "dataQuality": "verified",
     "externalIds": {
@@ -198,7 +198,7 @@
       "homeTeam": "team_napoli",
       "awayTeam": "team_arsenal",
       "venue": null,
-      "result": null
+      "result": "0-1"
     },
     "dataQuality": "verified",
     "externalIds": {
@@ -221,7 +221,7 @@
       "homeTeam": "team_sporting_cp",
       "awayTeam": "team_galatasaray",
       "venue": null,
-      "result": null
+      "result": "3-1"
     },
     "dataQuality": "verified",
     "externalIds": {
