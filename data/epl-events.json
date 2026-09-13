@@ -814,7 +814,7 @@
       "homeTeam": "team_afc_bournemouth",
       "awayTeam": "team_brentford",
       "venue": null,
-      "result": null,
+      "result": "2-2",
       "kind": "football_match"
     },
     "dataQuality": "verified",
@@ -837,7 +837,7 @@
       "homeTeam": "team_aston_villa",
       "awayTeam": "team_nottingham_forest",
       "venue": null,
-      "result": null,
+      "result": "1-2",
       "kind": "football_match"
     },
     "dataQuality": "verified",
@@ -860,7 +860,7 @@
       "homeTeam": "team_chelsea",
       "awayTeam": "team_hull_city",
       "venue": null,
-      "result": null,
+      "result": "2-2",
       "kind": "football_match"
     },
     "dataQuality": "verified",
@@ -883,7 +883,7 @@
       "homeTeam": "team_crystal_palace",
       "awayTeam": "team_ipswich_town",
       "venue": null,
-      "result": null,
+      "result": "2-3",
       "kind": "football_match"
     },
     "dataQuality": "verified",
@@ -906,7 +906,7 @@
       "homeTeam": "team_liverpool",
       "awayTeam": "team_fulham",
       "venue": null,
-      "result": null,
+      "result": "0-0",
       "kind": "football_match"
     },
     "dataQuality": "verified",
@@ -929,7 +929,7 @@
       "homeTeam": "team_tottenham_hotspur",
       "awayTeam": "team_everton",
       "venue": null,
-      "result": null,
+      "result": "0-0",
       "kind": "football_match"
     },
     "dataQuality": "verified",
@@ -952,7 +952,7 @@
       "homeTeam": "team_sunderland",
       "awayTeam": "team_arsenal",
       "venue": null,
-      "result": null,
+      "result": "0-2",
       "kind": "football_match"
     },
     "dataQuality": "verified",
