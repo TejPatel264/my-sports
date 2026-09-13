@@ -370622,5 +370622,873 @@
       "cricsheetId": "1548895"
     },
     "id": "evt_cricket_13158"
+  },
+  {
+    "sportId": "cricket",
+    "competitionId": "t20i_cricket_women",
+    "seasonId": "t20i_cricket_women_2026",
+    "date": "2026-09-02T00:00:00Z",
+    "title": "Sri Lanka vs Indonesia",
+    "participants": [
+      "cricket_team_sri_lanka",
+      "cricket_team_indonesia"
+    ],
+    "sportData": {
+      "kind": "cricket_t20",
+      "matchFormat": "T20",
+      "round": "Women's Asia Cup, Match 6",
+      "venue": "Dubai International Cricket Stadium",
+      "result": "Sri Lanka won by 75 runs",
+      "toss": {
+        "winner": "Indonesia",
+        "decision": "field"
+      },
+      "playerOfMatch": "AC Jayangani"
+    },
+    "dataQuality": "verified",
+    "externalIds": {
+      "cricsheetId": "1548896"
+    },
+    "id": "evt_cricket_13183"
+  },
+  {
+    "sportId": "cricket",
+    "competitionId": "odi_cricket_women",
+    "seasonId": "odi_cricket_women_2026",
+    "date": "2026-09-03T00:00:00Z",
+    "title": "Ireland vs England",
+    "participants": [
+      "cricket_team_ireland",
+      "cricket_team_england"
+    ],
+    "sportData": {
+      "kind": "cricket_t20",
+      "matchFormat": "ODI",
+      "round": "Ireland Women tour of England, Match 2",
+      "venue": "County Ground, Derby",
+      "result": "England won by 6 wickets",
+      "toss": {
+        "winner": "England",
+        "decision": "field"
+      },
+      "playerOfMatch": "IECM Wong"
+    },
+    "dataQuality": "verified",
+    "externalIds": {
+      "cricsheetId": "1496553"
+    },
+    "id": "evt_cricket_13174"
+  },
+  {
+    "sportId": "cricket",
+    "competitionId": "t20i_cricket_men",
+    "seasonId": "t20i_cricket_men_2026",
+    "date": "2026-09-03T00:00:00Z",
+    "title": "Namibia vs Zimbabwe",
+    "participants": [
+      "cricket_team_namibia",
+      "cricket_team_zimbabwe"
+    ],
+    "sportData": {
+      "kind": "cricket_t20",
+      "matchFormat": "T20",
+      "round": "Namibia T20I Tri-Series, Match 5",
+      "venue": "Namibia Cricket Ground, Windhoek",
+      "result": "Zimbabwe won by 5 wickets",
+      "toss": {
+        "winner": "Zimbabwe",
+        "decision": "field"
+      },
+      "playerOfMatch": "I Kaia"
+    },
+    "dataQuality": "verified",
+    "externalIds": {
+      "cricsheetId": "1549528"
+    },
+    "id": "evt_cricket_13176"
+  },
+  {
+    "sportId": "cricket",
+    "competitionId": "t20i_cricket_women",
+    "seasonId": "t20i_cricket_women_2026",
+    "date": "2026-09-03T00:00:00Z",
+    "title": "India vs Hong Kong",
+    "participants": [
+      "cricket_team_india",
+      "cricket_team_hong_kong"
+    ],
+    "sportData": {
+      "kind": "cricket_t20",
+      "matchFormat": "T20",
+      "round": "Women's Asia Cup, Match 7",
+      "venue": "Dubai International Cricket Stadium",
+      "result": "India won by 137 runs",
+      "toss": {
+        "winner": "Hong Kong",
+        "decision": "field"
+      },
+      "playerOfMatch": "S Mandhana"
+    },
+    "dataQuality": "verified",
+    "externalIds": {
+      "cricsheetId": "1548897"
+    },
+    "id": "evt_cricket_13184"
+  },
+  {
+    "sportId": "cricket",
+    "competitionId": "t20i_cricket_men",
+    "seasonId": "t20i_cricket_men_2026",
+    "date": "2026-09-04T00:00:00Z",
+    "title": "South Africa vs Namibia",
+    "participants": [
+      "cricket_team_south_africa",
+      "cricket_team_namibia"
+    ],
+    "sportData": {
+      "kind": "cricket_t20",
+      "matchFormat": "T20",
+      "round": "Namibia T20I Tri-Series, Match 6",
+      "venue": "Namibia Cricket Ground, Windhoek",
+      "result": "South Africa won by 11 runs",
+      "toss": {
+        "winner": "Namibia",
+        "decision": "field"
+      },
+      "playerOfMatch": "LG Pretorius"
+    },
+    "dataQuality": "verified",
+    "externalIds": {
+      "cricsheetId": "1549529"
+    },
+    "id": "evt_cricket_13177"
+  },
+  {
+    "sportId": "cricket",
+    "competitionId": "t20i_cricket_women",
+    "seasonId": "t20i_cricket_women_2026",
+    "date": "2026-09-04T00:00:00Z",
+    "title": "Indonesia vs United Arab Emirates",
+    "participants": [
+      "cricket_team_indonesia",
+      "cricket_team_united_arab_emirates"
+    ],
+    "sportData": {
+      "kind": "cricket_t20",
+      "matchFormat": "T20",
+      "round": "Women's Asia Cup, Match 8",
+      "venue": "Dubai International Cricket Stadium",
+      "result": "United Arab Emirates won by 6 wickets",
+      "toss": {
+        "winner": "United Arab Emirates",
+        "decision": "field"
+      },
+      "playerOfMatch": "ER Oza"
+    },
+    "dataQuality": "verified",
+    "externalIds": {
+      "cricsheetId": "1548898"
+    },
+    "id": "evt_cricket_13185"
+  },
+  {
+    "sportId": "cricket",
+    "competitionId": "t20i_cricket_women",
+    "seasonId": "t20i_cricket_women_2026",
+    "date": "2026-09-04T00:00:00Z",
+    "title": "Croatia vs Serbia",
+    "participants": [
+      "cricket_team_croatia",
+      "cricket_team_serbia"
+    ],
+    "sportData": {
+      "kind": "cricket_t20",
+      "matchFormat": "T20",
+      "round": "Serbia Women's T20I Tri-Series, Match 1",
+      "venue": "Lisicji Jarak Cricket Ground",
+      "result": "Croatia won by 8 runs",
+      "toss": {
+        "winner": "Serbia",
+        "decision": "field"
+      },
+      "playerOfMatch": "H Leko"
+    },
+    "dataQuality": "verified",
+    "externalIds": {
+      "cricsheetId": "1551066"
+    },
+    "id": "evt_cricket_13190"
+  },
+  {
+    "sportId": "cricket",
+    "competitionId": "t20i_cricket_women",
+    "seasonId": "t20i_cricket_women_2026",
+    "date": "2026-09-04T00:00:00Z",
+    "title": "Croatia vs Bulgaria",
+    "participants": [
+      "cricket_team_croatia",
+      "cricket_team_bulgaria"
+    ],
+    "sportData": {
+      "kind": "cricket_t20",
+      "matchFormat": "T20",
+      "round": "Serbia Women's T20I Tri-Series, Match 2",
+      "venue": "Lisicji Jarak Cricket Ground",
+      "result": "Croatia won by 90 runs",
+      "toss": {
+        "winner": "Croatia",
+        "decision": "bat"
+      },
+      "playerOfMatch": "M Durdevac"
+    },
+    "dataQuality": "verified",
+    "externalIds": {
+      "cricsheetId": "1551067"
+    },
+    "id": "evt_cricket_13191"
+  },
+  {
+    "sportId": "cricket",
+    "competitionId": "t20i_cricket_women",
+    "seasonId": "t20i_cricket_women_2026",
+    "date": "2026-09-04T00:00:00Z",
+    "title": "Portugal vs Belgium",
+    "participants": [
+      "cricket_team_portugal",
+      "cricket_team_belgium"
+    ],
+    "sportData": {
+      "kind": "cricket_t20",
+      "matchFormat": "T20",
+      "round": "Czech Republic Women's T20I Tri-Series, Match 1",
+      "venue": "Scott Page Field, Vinor",
+      "result": "Portugal won by 52 runs",
+      "toss": {
+        "winner": "Portugal",
+        "decision": "bat"
+      },
+      "playerOfMatch": "SG Luijke"
+    },
+    "dataQuality": "verified",
+    "externalIds": {
+      "cricsheetId": "1551072"
+    },
+    "id": "evt_cricket_13195"
+  },
+  {
+    "sportId": "cricket",
+    "competitionId": "t20i_cricket_women",
+    "seasonId": "t20i_cricket_women_2026",
+    "date": "2026-09-04T00:00:00Z",
+    "title": "Portugal vs Czech Republic",
+    "participants": [
+      "cricket_team_portugal",
+      "cricket_team_czech_republic"
+    ],
+    "sportData": {
+      "kind": "cricket_t20",
+      "matchFormat": "T20",
+      "round": "Czech Republic Women's T20I Tri-Series, Match 2",
+      "venue": "Scott Page Field, Vinor",
+      "result": "Czech Republic won by 7 wickets",
+      "toss": {
+        "winner": "Czech Republic",
+        "decision": "field"
+      },
+      "playerOfMatch": "E Kuncova"
+    },
+    "dataQuality": "verified",
+    "externalIds": {
+      "cricsheetId": "1551073"
+    },
+    "id": "evt_cricket_13196"
+  },
+  {
+    "sportId": "cricket",
+    "competitionId": "t20i_cricket_women",
+    "seasonId": "t20i_cricket_women_2026",
+    "date": "2026-09-04T00:00:00Z",
+    "title": "Czech Republic vs Belgium",
+    "participants": [
+      "cricket_team_czech_republic",
+      "cricket_team_belgium"
+    ],
+    "sportData": {
+      "kind": "cricket_t20",
+      "matchFormat": "T20",
+      "round": "Czech Republic Women's T20I Tri-Series, Match 3",
+      "venue": "Scott Page Field, Vinor",
+      "result": "Czech Republic won by 48 runs",
+      "toss": {
+        "winner": "Belgium",
+        "decision": "field"
+      },
+      "playerOfMatch": "Viola Komeda"
+    },
+    "dataQuality": "verified",
+    "externalIds": {
+      "cricsheetId": "1551074"
+    },
+    "id": "evt_cricket_13197"
+  },
+  {
+    "sportId": "cricket",
+    "competitionId": "t20i_cricket_women",
+    "seasonId": "t20i_cricket_women_2026",
+    "date": "2026-09-05T00:00:00Z",
+    "title": "Pakistan vs India",
+    "participants": [
+      "cricket_team_pakistan",
+      "cricket_team_india"
+    ],
+    "sportData": {
+      "kind": "cricket_t20",
+      "matchFormat": "T20",
+      "round": "Women's Asia Cup, Match 9",
+      "venue": "Dubai International Cricket Stadium",
+      "result": "India won by 7 wickets",
+      "toss": {
+        "winner": "Pakistan",
+        "decision": "bat"
+      },
+      "playerOfMatch": "N Shree Charani"
+    },
+    "dataQuality": "verified",
+    "externalIds": {
+      "cricsheetId": "1548899"
+    },
+    "id": "evt_cricket_13186"
+  },
+  {
+    "sportId": "cricket",
+    "competitionId": "t20i_cricket_women",
+    "seasonId": "t20i_cricket_women_2026",
+    "date": "2026-09-05T00:00:00Z",
+    "title": "Bulgaria vs Serbia",
+    "participants": [
+      "cricket_team_bulgaria",
+      "cricket_team_serbia"
+    ],
+    "sportData": {
+      "kind": "cricket_t20",
+      "matchFormat": "T20",
+      "round": "Serbia Women's T20I Tri-Series, Match 4",
+      "venue": "Lisicji Jarak Cricket Ground",
+      "result": "Serbia won by 7 wickets",
+      "toss": {
+        "winner": "Bulgaria",
+        "decision": "bat"
+      },
+      "playerOfMatch": "M Stevanovic"
+    },
+    "dataQuality": "verified",
+    "externalIds": {
+      "cricsheetId": "1551069"
+    },
+    "id": "evt_cricket_13192"
+  },
+  {
+    "sportId": "cricket",
+    "competitionId": "t20i_cricket_women",
+    "seasonId": "t20i_cricket_women_2026",
+    "date": "2026-09-05T00:00:00Z",
+    "title": "Belgium vs Portugal",
+    "participants": [
+      "cricket_team_belgium",
+      "cricket_team_portugal"
+    ],
+    "sportData": {
+      "kind": "cricket_t20",
+      "matchFormat": "T20",
+      "round": "Czech Republic Women's T20I Tri-Series, Match 4",
+      "venue": "Scott Page Field, Vinor",
+      "result": "Portugal won by 7 wickets",
+      "toss": {
+        "winner": "Belgium",
+        "decision": "bat"
+      },
+      "playerOfMatch": "NT Raghunandan"
+    },
+    "dataQuality": "verified",
+    "externalIds": {
+      "cricsheetId": "1551075"
+    },
+    "id": "evt_cricket_13198"
+  },
+  {
+    "sportId": "cricket",
+    "competitionId": "t20i_cricket_women",
+    "seasonId": "t20i_cricket_women_2026",
+    "date": "2026-09-05T00:00:00Z",
+    "title": "Belgium vs Czech Republic",
+    "participants": [
+      "cricket_team_belgium",
+      "cricket_team_czech_republic"
+    ],
+    "sportData": {
+      "kind": "cricket_t20",
+      "matchFormat": "T20",
+      "round": "Czech Republic Women's T20I Tri-Series, Match 5",
+      "venue": "Scott Page Field, Vinor",
+      "result": "Czech Republic won by 10 wickets",
+      "toss": {
+        "winner": "Belgium",
+        "decision": "bat"
+      },
+      "playerOfMatch": "S Talamarla"
+    },
+    "dataQuality": "verified",
+    "externalIds": {
+      "cricsheetId": "1551076"
+    },
+    "id": "evt_cricket_13199"
+  },
+  {
+    "sportId": "cricket",
+    "competitionId": "t20i_cricket_women",
+    "seasonId": "t20i_cricket_women_2026",
+    "date": "2026-09-05T00:00:00Z",
+    "title": "Portugal vs Czech Republic",
+    "participants": [
+      "cricket_team_portugal",
+      "cricket_team_czech_republic"
+    ],
+    "sportData": {
+      "kind": "cricket_t20",
+      "matchFormat": "T20",
+      "round": "Czech Republic Women's T20I Tri-Series, Match 6",
+      "venue": "Scott Page Field, Vinor",
+      "result": "Czech Republic won by 6 wickets",
+      "toss": {
+        "winner": "Czech Republic",
+        "decision": "field"
+      },
+      "playerOfMatch": "E Kuncova"
+    },
+    "dataQuality": "verified",
+    "externalIds": {
+      "cricsheetId": "1551077"
+    },
+    "id": "evt_cricket_13200"
+  },
+  {
+    "sportId": "cricket",
+    "competitionId": "odi_cricket_women",
+    "seasonId": "odi_cricket_women_2026",
+    "date": "2026-09-06T00:00:00Z",
+    "title": "England vs Ireland",
+    "participants": [
+      "cricket_team_england",
+      "cricket_team_ireland"
+    ],
+    "sportData": {
+      "kind": "cricket_t20",
+      "matchFormat": "ODI",
+      "round": "Ireland Women tour of England, Match 3",
+      "venue": "County Ground, New Road, Worcester",
+      "result": "England won by 114 runs",
+      "toss": {
+        "winner": "Ireland",
+        "decision": "field"
+      },
+      "playerOfMatch": "SIR Dunkley"
+    },
+    "dataQuality": "verified",
+    "externalIds": {
+      "cricsheetId": "1496554"
+    },
+    "id": "evt_cricket_13175"
+  },
+  {
+    "sportId": "cricket",
+    "competitionId": "t20i_cricket_men",
+    "seasonId": "t20i_cricket_men_2026",
+    "date": "2026-09-06T00:00:00Z",
+    "title": "South Africa vs Zimbabwe",
+    "participants": [
+      "cricket_team_south_africa",
+      "cricket_team_zimbabwe"
+    ],
+    "sportData": {
+      "kind": "cricket_t20",
+      "matchFormat": "T20",
+      "round": "Namibia T20I Tri-Series",
+      "venue": "Namibia Cricket Ground, Windhoek",
+      "result": "South Africa won by 48 runs",
+      "toss": {
+        "winner": "South Africa",
+        "decision": "bat"
+      },
+      "playerOfMatch": "J Hermann"
+    },
+    "dataQuality": "verified",
+    "externalIds": {
+      "cricsheetId": "1549530"
+    },
+    "id": "evt_cricket_13178"
+  },
+  {
+    "sportId": "cricket",
+    "competitionId": "t20i_cricket_women",
+    "seasonId": "t20i_cricket_women_2026",
+    "date": "2026-09-06T00:00:00Z",
+    "title": "Bangladesh vs Sri Lanka",
+    "participants": [
+      "cricket_team_bangladesh",
+      "cricket_team_sri_lanka"
+    ],
+    "sportData": {
+      "kind": "cricket_t20",
+      "matchFormat": "T20",
+      "round": "Women's Asia Cup, Match 10",
+      "venue": "Dubai International Cricket Stadium",
+      "result": "Sri Lanka won by 4 wickets",
+      "toss": {
+        "winner": "Sri Lanka",
+        "decision": "field"
+      },
+      "playerOfMatch": "H Madavi"
+    },
+    "dataQuality": "verified",
+    "externalIds": {
+      "cricsheetId": "1548900"
+    },
+    "id": "evt_cricket_13187"
+  },
+  {
+    "sportId": "cricket",
+    "competitionId": "t20i_cricket_women",
+    "seasonId": "t20i_cricket_women_2026",
+    "date": "2026-09-06T00:00:00Z",
+    "title": "Serbia vs Croatia",
+    "participants": [
+      "cricket_team_serbia",
+      "cricket_team_croatia"
+    ],
+    "sportData": {
+      "kind": "cricket_t20",
+      "matchFormat": "T20",
+      "round": "Serbia Women's T20I Tri-Series, Match 5",
+      "venue": "Lisicji Jarak Cricket Ground",
+      "result": "Croatia won by 7 wickets",
+      "toss": {
+        "winner": "Serbia",
+        "decision": "bat"
+      },
+      "playerOfMatch": "H Leko"
+    },
+    "dataQuality": "verified",
+    "externalIds": {
+      "cricsheetId": "1551070"
+    },
+    "id": "evt_cricket_13193"
+  },
+  {
+    "sportId": "cricket",
+    "competitionId": "t20i_cricket_women",
+    "seasonId": "t20i_cricket_women_2026",
+    "date": "2026-09-06T00:00:00Z",
+    "title": "Bulgaria vs Serbia",
+    "participants": [
+      "cricket_team_bulgaria",
+      "cricket_team_serbia"
+    ],
+    "sportData": {
+      "kind": "cricket_t20",
+      "matchFormat": "T20",
+      "round": "Serbia Women's T20I Tri-Series, Match 6",
+      "venue": "Lisicji Jarak Cricket Ground",
+      "result": "Serbia won by 5 wickets",
+      "toss": {
+        "winner": "Bulgaria",
+        "decision": "bat"
+      },
+      "playerOfMatch": "N Nojic"
+    },
+    "dataQuality": "verified",
+    "externalIds": {
+      "cricsheetId": "1551071"
+    },
+    "id": "evt_cricket_13194"
+  },
+  {
+    "sportId": "cricket",
+    "competitionId": "t20i_cricket_women",
+    "seasonId": "t20i_cricket_women_2026",
+    "date": "2026-09-06T00:00:00Z",
+    "title": "Belgium vs Portugal",
+    "participants": [
+      "cricket_team_belgium",
+      "cricket_team_portugal"
+    ],
+    "sportData": {
+      "kind": "cricket_t20",
+      "matchFormat": "T20",
+      "round": "Czech Republic Women's T20I Tri-Series",
+      "venue": "Scott Page Field, Vinor",
+      "result": "Portugal won by 8 wickets",
+      "toss": {
+        "winner": "Belgium",
+        "decision": "bat"
+      },
+      "playerOfMatch": "NT Raghunandan"
+    },
+    "dataQuality": "verified",
+    "externalIds": {
+      "cricsheetId": "1551078"
+    },
+    "id": "evt_cricket_13201"
+  },
+  {
+    "sportId": "cricket",
+    "competitionId": "t20i_cricket_women",
+    "seasonId": "t20i_cricket_women_2026",
+    "date": "2026-09-06T00:00:00Z",
+    "title": "Czech Republic vs Portugal",
+    "participants": [
+      "cricket_team_czech_republic",
+      "cricket_team_portugal"
+    ],
+    "sportData": {
+      "kind": "cricket_t20",
+      "matchFormat": "T20",
+      "round": "Czech Republic Women's T20I Tri-Series",
+      "venue": "Scott Page Field, Vinor",
+      "result": "Portugal won by 4 wickets",
+      "toss": {
+        "winner": "Portugal",
+        "decision": "field"
+      },
+      "playerOfMatch": "Isabel Walker"
+    },
+    "dataQuality": "verified",
+    "externalIds": {
+      "cricsheetId": "1551079"
+    },
+    "id": "evt_cricket_13202"
+  },
+  {
+    "sportId": "cricket",
+    "competitionId": "t20i_cricket_women",
+    "seasonId": "t20i_cricket_women_2026",
+    "date": "2026-09-07T00:00:00Z",
+    "title": "Pakistan vs Hong Kong",
+    "participants": [
+      "cricket_team_pakistan",
+      "cricket_team_hong_kong"
+    ],
+    "sportData": {
+      "kind": "cricket_t20",
+      "matchFormat": "T20",
+      "round": "Women's Asia Cup, Match 11",
+      "venue": "Dubai International Cricket Stadium",
+      "result": "Pakistan won by 72 runs",
+      "toss": {
+        "winner": "Pakistan",
+        "decision": "bat"
+      },
+      "playerOfMatch": "Nashra Sandhu"
+    },
+    "dataQuality": "verified",
+    "externalIds": {
+      "cricsheetId": "1548901"
+    },
+    "id": "evt_cricket_13188"
+  },
+  {
+    "sportId": "cricket",
+    "competitionId": "odi_cricket_men",
+    "seasonId": "odi_cricket_men_2026",
+    "date": "2026-09-08T00:00:00Z",
+    "title": "United Arab Emirates vs Oman",
+    "participants": [
+      "cricket_team_united_arab_emirates",
+      "cricket_team_oman"
+    ],
+    "sportData": {
+      "kind": "cricket_t20",
+      "matchFormat": "ODI",
+      "round": "ACC Men's Premier Cup, Match 20",
+      "venue": "YSD-UKM Cricket Oval, Bangi",
+      "result": "United Arab Emirates won by 49 runs",
+      "toss": {
+        "winner": "Oman",
+        "decision": "field"
+      },
+      "playerOfMatch": "Aayan Afzal Khan"
+    },
+    "dataQuality": "verified",
+    "externalIds": {
+      "cricsheetId": "1549965"
+    },
+    "id": "evt_cricket_13173"
+  },
+  {
+    "sportId": "cricket",
+    "competitionId": "t20i_cricket_men",
+    "seasonId": "t20i_cricket_men_2026",
+    "date": "2026-09-08T00:00:00Z",
+    "title": "Rwanda vs Botswana",
+    "participants": [
+      "cricket_team_rwanda",
+      "cricket_team_botswana"
+    ],
+    "sportData": {
+      "kind": "cricket_t20",
+      "matchFormat": "T20",
+      "round": "Africa Continental Cup, Match 1",
+      "venue": "Gahanga B Ground, Rwanda",
+      "result": "Rwanda won by 55 runs",
+      "toss": {
+        "winner": "Botswana",
+        "decision": "field"
+      },
+      "playerOfMatch": "D Ndikubwimana"
+    },
+    "dataQuality": "verified",
+    "externalIds": {
+      "cricsheetId": "1552906"
+    },
+    "id": "evt_cricket_13179"
+  },
+  {
+    "sportId": "cricket",
+    "competitionId": "t20i_cricket_men",
+    "seasonId": "t20i_cricket_men_2026",
+    "date": "2026-09-08T00:00:00Z",
+    "title": "Kenya vs Sierra Leone",
+    "participants": [
+      "cricket_team_kenya",
+      "cricket_team_sierra_leone"
+    ],
+    "sportData": {
+      "kind": "cricket_t20",
+      "matchFormat": "T20",
+      "round": "Africa Continental Cup, Match 2",
+      "venue": "Gahanga B Ground, Rwanda",
+      "result": "Kenya won by 94 runs",
+      "toss": {
+        "winner": "Kenya",
+        "decision": "bat"
+      },
+      "playerOfMatch": "RR Patel"
+    },
+    "dataQuality": "verified",
+    "externalIds": {
+      "cricsheetId": "1552907"
+    },
+    "id": "evt_cricket_13180"
+  },
+  {
+    "sportId": "cricket",
+    "competitionId": "t20i_cricket_women",
+    "seasonId": "t20i_cricket_women_2026",
+    "date": "2026-09-08T00:00:00Z",
+    "title": "Bangladesh vs United Arab Emirates",
+    "participants": [
+      "cricket_team_bangladesh",
+      "cricket_team_united_arab_emirates"
+    ],
+    "sportData": {
+      "kind": "cricket_t20",
+      "matchFormat": "T20",
+      "round": "Women's Asia Cup, Match 12",
+      "venue": "Dubai International Cricket Stadium",
+      "result": "Bangladesh won by 34 runs",
+      "toss": {
+        "winner": "United Arab Emirates",
+        "decision": "field"
+      },
+      "playerOfMatch": "Nahida Akter"
+    },
+    "dataQuality": "verified",
+    "externalIds": {
+      "cricsheetId": "1548902"
+    },
+    "id": "evt_cricket_13189"
+  },
+  {
+    "sportId": "cricket",
+    "competitionId": "odi_cricket_men",
+    "seasonId": "odi_cricket_men_2026",
+    "date": "2026-09-09T00:00:00Z",
+    "title": "South Africa vs Namibia",
+    "participants": [
+      "cricket_team_south_africa",
+      "cricket_team_namibia"
+    ],
+    "sportData": {
+      "kind": "cricket_t20",
+      "matchFormat": "ODI",
+      "round": "South Africa tour of Namibia, Match 1",
+      "venue": "Namibia Cricket Ground, Windhoek",
+      "result": "South Africa won by 99 runs (D/L)",
+      "toss": {
+        "winner": "Namibia",
+        "decision": "field"
+      },
+      "playerOfMatch": "J Hermann"
+    },
+    "dataQuality": "verified",
+    "externalIds": {
+      "cricsheetId": "1549531"
+    },
+    "id": "evt_cricket_13172"
+  },
+  {
+    "sportId": "cricket",
+    "competitionId": "t20i_cricket_men",
+    "seasonId": "t20i_cricket_men_2026",
+    "date": "2026-09-09T00:00:00Z",
+    "title": "Uganda vs Sierra Leone",
+    "participants": [
+      "cricket_team_uganda",
+      "cricket_team_sierra_leone"
+    ],
+    "sportData": {
+      "kind": "cricket_t20",
+      "matchFormat": "T20",
+      "round": "Africa Continental Cup, Match 3",
+      "venue": "Gahanga B Ground, Rwanda",
+      "result": "Uganda won by 114 runs",
+      "toss": {
+        "winner": "Uganda",
+        "decision": "bat"
+      },
+      "playerOfMatch": "Olipa Gerald"
+    },
+    "dataQuality": "verified",
+    "externalIds": {
+      "cricsheetId": "1552908"
+    },
+    "id": "evt_cricket_13181"
+  },
+  {
+    "sportId": "cricket",
+    "competitionId": "t20i_cricket_men",
+    "seasonId": "t20i_cricket_men_2026",
+    "date": "2026-09-09T00:00:00Z",
+    "title": "Rwanda vs Kenya",
+    "participants": [
+      "cricket_team_rwanda",
+      "cricket_team_kenya"
+    ],
+    "sportData": {
+      "kind": "cricket_t20",
+      "matchFormat": "T20",
+      "round": "Africa Continental Cup, Match 4",
+      "venue": "Gahanga B Ground, Rwanda",
+      "result": "Kenya won by 2 wickets",
+      "toss": {
+        "winner": "Rwanda",
+        "decision": "bat"
+      },
+      "playerOfMatch": "Yves Cyusa"
+    },
+    "dataQuality": "verified",
+    "externalIds": {
+      "cricsheetId": "1552909"
+    },
+    "id": "evt_cricket_13182"
   }
 ]
