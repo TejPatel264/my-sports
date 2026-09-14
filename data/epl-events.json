@@ -975,7 +975,7 @@
       "homeTeam": "team_coventry_city",
       "awayTeam": "team_brighton_and_hove_albion",
       "venue": null,
-      "result": null,
+      "result": "0-5",
       "kind": "football_match"
     },
     "dataQuality": "verified",
@@ -998,7 +998,7 @@
       "homeTeam": "team_manchester_united",
       "awayTeam": "team_manchester_city",
       "venue": null,
-      "result": null,
+      "result": "0-1",
       "kind": "football_match"
     },
     "dataQuality": "verified",
