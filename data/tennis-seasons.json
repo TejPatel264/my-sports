@@ -6550,6 +6550,11 @@
     "label": "2025"
   },
   {
+    "id": "tennis_wta_guadalajara_2026",
+    "competitionId": "tennis_wta_guadalajara",
+    "label": "2026"
+  },
+  {
     "id": "tennis_wta_guadalajara_finals_2021",
     "competitionId": "tennis_wta_guadalajara_finals",
     "label": "2021"
