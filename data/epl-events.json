@@ -1021,7 +1021,7 @@
       "homeTeam": "team_leeds_united",
       "awayTeam": "team_newcastle_united",
       "venue": null,
-      "result": null,
+      "result": "4-1",
       "kind": "football_match"
     },
     "dataQuality": "verified",
