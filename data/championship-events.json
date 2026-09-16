@@ -1877,7 +1877,7 @@
       "homeTeam": "team_middlesbrough",
       "awayTeam": "team_millwall",
       "venue": null,
-      "result": null
+      "result": "2-2"
     },
     "dataQuality": "verified",
     "externalIds": {
@@ -1900,7 +1900,7 @@
       "homeTeam": "team_bristol_city",
       "awayTeam": "team_lincoln_city",
       "venue": null,
-      "result": null
+      "result": "0-1"
     },
     "dataQuality": "verified",
     "externalIds": {
