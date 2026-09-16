@@ -7335,6 +7335,11 @@
     "label": "2025"
   },
   {
+    "id": "tennis_wta_sao_paulo_2026",
+    "competitionId": "tennis_wta_sao_paulo",
+    "label": "2026"
+  },
+  {
     "id": "tennis_wta_seoul_2022",
     "competitionId": "tennis_wta_seoul",
     "label": "2022"
