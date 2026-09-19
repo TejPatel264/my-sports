@@ -1044,7 +1044,7 @@
       "homeTeam": "team_brentford",
       "awayTeam": "team_chelsea",
       "venue": null,
-      "result": null,
+      "result": "3-0",
       "kind": "football_match"
     },
     "dataQuality": "verified",

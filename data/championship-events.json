@@ -1923,7 +1923,7 @@
       "homeTeam": "team_bristol_city",
       "awayTeam": "team_watford",
       "venue": null,
-      "result": null
+      "result": "1-0"
     },
     "dataQuality": "verified",
     "externalIds": {
@@ -2602,7 +2602,7 @@
     "sportId": "football",
     "competitionId": "championship",
     "seasonId": "championship_2026_27",
-    "date": "2026-10-13T18:45:00Z",
+    "date": "2026-10-13T19:00:00Z",
     "title": "Birmingham City vs Preston North End",
     "participants": [
       "team_birmingham_city",
