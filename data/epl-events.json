@@ -1067,7 +1067,7 @@
       "homeTeam": "team_tottenham_hotspur",
       "awayTeam": "team_aston_villa",
       "venue": null,
-      "result": null,
+      "result": "2-3",
       "kind": "football_match"
     },
     "dataQuality": "verified",
@@ -1090,7 +1090,7 @@
       "homeTeam": "team_brighton_and_hove_albion",
       "awayTeam": "team_arsenal",
       "venue": null,
-      "result": null,
+      "result": "3-0",
       "kind": "football_match"
     },
     "dataQuality": "verified",
@@ -1113,7 +1113,7 @@
       "homeTeam": "team_everton",
       "awayTeam": "team_ipswich_town",
       "venue": null,
-      "result": null,
+      "result": "1-0",
       "kind": "football_match"
     },
     "dataQuality": "verified",
@@ -1157,7 +1157,7 @@
       "homeTeam": "team_newcastle_united",
       "awayTeam": "team_hull_city",
       "venue": null,
-      "result": null,
+      "result": "2-1",
       "kind": "football_match"
     },
     "dataQuality": "verified",
@@ -1180,7 +1180,7 @@
       "homeTeam": "team_nottingham_forest",
       "awayTeam": "team_coventry_city",
       "venue": null,
-      "result": null,
+      "result": "0-1",
       "kind": "football_match"
     },
     "dataQuality": "verified",
