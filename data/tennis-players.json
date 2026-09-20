@@ -4225,6 +4225,11 @@
     "name": "Joel Schwaerzler"
   },
   {
+    "id": "tennis_player_atp_R0F1",
+    "sportId": "tennis",
+    "name": "Johan Alexander Rodriguez"
+  },
+  {
     "id": "tennis_player_atp_N830",
     "sportId": "tennis",
     "name": "Johan Nikles"
@@ -7683,6 +7688,11 @@
     "id": "tennis_player_wta_201325",
     "sportId": "tennis",
     "name": "Samantha Stosur"
+  },
+  {
+    "id": "tennis_player_atp_H0HU",
+    "sportId": "tennis",
+    "name": "Samuel Heredia"
   },
   {
     "id": "tennis_player_wta_211529",

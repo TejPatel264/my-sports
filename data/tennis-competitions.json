@@ -2946,16 +2946,52 @@
     "shortName": "Davis Cup QLS R2: AUS vs BEL"
   },
   {
+    "id": "tennis_atp_davis_cup_qls_r2_aut_vs_bel",
+    "sportId": "tennis",
+    "name": "Davis Cup QLS R2: AUT vs BEL (ATP)",
+    "shortName": "Davis Cup QLS R2: AUT vs BEL"
+  },
+  {
+    "id": "tennis_atp_davis_cup_qls_r2_can_vs_fra",
+    "sportId": "tennis",
+    "name": "Davis Cup QLS R2: CAN vs FRA (ATP)",
+    "shortName": "Davis Cup QLS R2: CAN vs FRA"
+  },
+  {
+    "id": "tennis_atp_davis_cup_qls_r2_chi_vs_esp",
+    "sportId": "tennis",
+    "name": "Davis Cup QLS R2: CHI vs ESP (ATP)",
+    "shortName": "Davis Cup QLS R2: CHI vs ESP"
+  },
+  {
     "id": "tennis_atp_davis_cup_qls_r2_cro_vs_fra",
     "sportId": "tennis",
     "name": "Davis Cup QLS R2: CRO vs FRA (ATP)",
     "shortName": "Davis Cup QLS R2: CRO vs FRA"
   },
   {
+    "id": "tennis_atp_davis_cup_qls_r2_cze_vs_usa",
+    "sportId": "tennis",
+    "name": "Davis Cup QLS R2: CZE vs USA (ATP)",
+    "shortName": "Davis Cup QLS R2: CZE vs USA"
+  },
+  {
     "id": "tennis_atp_davis_cup_qls_r2_esp_vs_den",
     "sportId": "tennis",
     "name": "Davis Cup QLS R2: ESP vs DEN (ATP)",
     "shortName": "Davis Cup QLS R2: ESP vs DEN"
+  },
+  {
+    "id": "tennis_atp_davis_cup_qls_r2_gbr_vs_ecu",
+    "sportId": "tennis",
+    "name": "Davis Cup QLS R2: GBR vs ECU (ATP)",
+    "shortName": "Davis Cup QLS R2: GBR vs ECU"
+  },
+  {
+    "id": "tennis_atp_davis_cup_qls_r2_ger_vs_cro",
+    "sportId": "tennis",
+    "name": "Davis Cup QLS R2: GER vs CRO (ATP)",
+    "shortName": "Davis Cup QLS R2: GER vs CRO"
   },
   {
     "id": "tennis_atp_davis_cup_qls_r2_hun_vs_aut",
@@ -2968,6 +3004,12 @@
     "sportId": "tennis",
     "name": "Davis Cup QLS R2: JPN vs GER (ATP)",
     "shortName": "Davis Cup QLS R2: JPN vs GER"
+  },
+  {
+    "id": "tennis_atp_davis_cup_qls_r2_kor_vs_ind",
+    "sportId": "tennis",
+    "name": "Davis Cup QLS R2: KOR vs IND (ATP)",
+    "shortName": "Davis Cup QLS R2: KOR vs IND"
   },
   {
     "id": "tennis_atp_davis_cup_qls_r2_ned_vs_arg",
@@ -3360,6 +3402,18 @@
     "shortName": "Davis Cup WG1 R1: ARG vs LTU"
   },
   {
+    "id": "tennis_atp_davis_cup_wg1_r1_arg_vs_tur",
+    "sportId": "tennis",
+    "name": "Davis Cup WG1 R1: ARG vs TUR (ATP)",
+    "shortName": "Davis Cup WG1 R1: ARG vs TUR"
+  },
+  {
+    "id": "tennis_atp_davis_cup_wg1_r1_aus_vs_pol",
+    "sportId": "tennis",
+    "name": "Davis Cup WG1 R1: AUS vs POL (ATP)",
+    "shortName": "Davis Cup WG1 R1: AUS vs POL"
+  },
+  {
     "id": "tennis_atp_davis_cup_wg1_r1_aut_vs_pak",
     "sportId": "tennis",
     "name": "Davis Cup WG1 R1: AUT vs PAK (ATP)",
@@ -3412,6 +3466,12 @@
     "sportId": "tennis",
     "name": "Davis Cup WG1 R1: BRA vs POR (ATP)",
     "shortName": "Davis Cup WG1 R1: BRA vs POR"
+  },
+  {
+    "id": "tennis_atp_davis_cup_wg1_r1_bra_vs_sui",
+    "sportId": "tennis",
+    "name": "Davis Cup WG1 R1: BRA vs SUI (ATP)",
+    "shortName": "Davis Cup WG1 R1: BRA vs SUI"
   },
   {
     "id": "tennis_atp_davis_cup_wg1_r1_bul_vs_fin",
@@ -3468,6 +3528,12 @@
     "shortName": "Davis Cup WG1 R1: DEN vs BRA"
   },
   {
+    "id": "tennis_atp_davis_cup_wg1_r1_den_vs_bul",
+    "sportId": "tennis",
+    "name": "Davis Cup WG1 R1: DEN vs BUL (ATP)",
+    "shortName": "Davis Cup WG1 R1: DEN vs BUL"
+  },
+  {
     "id": "tennis_atp_davis_cup_wg1_r1_ecu_vs_bih",
     "sportId": "tennis",
     "name": "Davis Cup WG1 R1: ECU vs BIH (ATP)",
@@ -3484,6 +3550,12 @@
     "sportId": "tennis",
     "name": "Davis Cup WG1 R1: EGY vs HUN (ATP)",
     "shortName": "Davis Cup WG1 R1: EGY vs HUN"
+  },
+  {
+    "id": "tennis_atp_davis_cup_wg1_r1_fin_vs_mon",
+    "sportId": "tennis",
+    "name": "Davis Cup WG1 R1: FIN vs MON (ATP)",
+    "shortName": "Davis Cup WG1 R1: FIN vs MON"
   },
   {
     "id": "tennis_atp_davis_cup_wg1_r1_fin_vs_nzl",
@@ -3576,10 +3648,28 @@
     "shortName": "Davis Cup WG1 R1: KOR vs NZL"
   },
   {
+    "id": "tennis_atp_davis_cup_wg1_r1_lux_vs_hun",
+    "sportId": "tennis",
+    "name": "Davis Cup WG1 R1: LUX vs HUN (ATP)",
+    "shortName": "Davis Cup WG1 R1: LUX vs HUN"
+  },
+  {
+    "id": "tennis_atp_davis_cup_wg1_r1_ned_vs_col",
+    "sportId": "tennis",
+    "name": "Davis Cup WG1 R1: NED vs COL (ATP)",
+    "shortName": "Davis Cup WG1 R1: NED vs COL"
+  },
+  {
     "id": "tennis_atp_davis_cup_wg1_r1_ned_vs_uru",
     "sportId": "tennis",
     "name": "Davis Cup WG1 R1: NED vs URU (ATP)",
     "shortName": "Davis Cup WG1 R1: NED vs URU"
+  },
+  {
+    "id": "tennis_atp_davis_cup_wg1_r1_nor_vs_chn",
+    "sportId": "tennis",
+    "name": "Davis Cup WG1 R1: NOR vs CHN (ATP)",
+    "shortName": "Davis Cup WG1 R1: NOR vs CHN"
   },
   {
     "id": "tennis_atp_davis_cup_wg1_r1_nor_vs_por",
@@ -3588,10 +3678,22 @@
     "shortName": "Davis Cup WG1 R1: NOR vs POR"
   },
   {
+    "id": "tennis_atp_davis_cup_wg1_r1_nzl_vs_jpn",
+    "sportId": "tennis",
+    "name": "Davis Cup WG1 R1: NZL vs JPN (ATP)",
+    "shortName": "Davis Cup WG1 R1: NZL vs JPN"
+  },
+  {
     "id": "tennis_atp_davis_cup_wg1_r1_per_vs_nor",
     "sportId": "tennis",
     "name": "Davis Cup WG1 R1: PER vs NOR (ATP)",
     "shortName": "Davis Cup WG1 R1: PER vs NOR"
+  },
+  {
+    "id": "tennis_atp_davis_cup_wg1_r1_per_vs_par",
+    "sportId": "tennis",
+    "name": "Davis Cup WG1 R1: PER vs PAR (ATP)",
+    "shortName": "Davis Cup WG1 R1: PER vs PAR"
   },
   {
     "id": "tennis_atp_davis_cup_wg1_r1_per_vs_por",
@@ -3624,6 +3726,12 @@
     "shortName": "Davis Cup WG1 R1: SRB vs GRE"
   },
   {
+    "id": "tennis_atp_davis_cup_wg1_r1_srb_vs_ltu",
+    "sportId": "tennis",
+    "name": "Davis Cup WG1 R1: SRB vs LTU (ATP)",
+    "shortName": "Davis Cup WG1 R1: SRB vs LTU"
+  },
+  {
     "id": "tennis_atp_davis_cup_wg1_r1_srb_vs_tur",
     "sportId": "tennis",
     "name": "Davis Cup WG1 R1: SRB vs TUR (ATP)",
@@ -3646,6 +3754,12 @@
     "sportId": "tennis",
     "name": "Davis Cup WG1 R1: SVK vs COL (ATP)",
     "shortName": "Davis Cup WG1 R1: SVK vs COL"
+  },
+  {
+    "id": "tennis_atp_davis_cup_wg1_r1_svk_vs_gre",
+    "sportId": "tennis",
+    "name": "Davis Cup WG1 R1: SVK vs GRE (ATP)",
+    "shortName": "Davis Cup WG1 R1: SVK vs GRE"
   },
   {
     "id": "tennis_atp_davis_cup_wg1_r1_svk_vs_rou",
@@ -3676,6 +3790,12 @@
     "sportId": "tennis",
     "name": "Davis Cup WG1 R1: TPE vs NOR (ATP)",
     "shortName": "Davis Cup WG1 R1: TPE vs NOR"
+  },
+  {
+    "id": "tennis_atp_davis_cup_wg1_r1_tpe_vs_swe",
+    "sportId": "tennis",
+    "name": "Davis Cup WG1 R1: TPE vs SWE (ATP)",
+    "shortName": "Davis Cup WG1 R1: TPE vs SWE"
   },
   {
     "id": "tennis_atp_davis_cup_wg1_r1_ukr_vs_col",
