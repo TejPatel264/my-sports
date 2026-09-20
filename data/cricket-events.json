@@ -371490,5 +371490,987 @@
       "cricsheetId": "1552909"
     },
     "id": "evt_cricket_13182"
+  },
+  {
+    "sportId": "cricket",
+    "competitionId": "test_cricket_men",
+    "seasonId": "test_cricket_men_2026",
+    "date": "2026-09-09T00:00:00Z",
+    "title": "Pakistan vs England",
+    "participants": [
+      "cricket_team_pakistan",
+      "cricket_team_england"
+    ],
+    "sportData": {
+      "kind": "cricket_test",
+      "matchFormat": "Test",
+      "round": "Pakistan tour of England, Match 3",
+      "venue": "Edgbaston, Birmingham",
+      "result": "England won by 8 wickets",
+      "toss": {
+        "winner": "England",
+        "decision": "field"
+      },
+      "playerOfMatch": "DW Lawrence",
+      "actualDays": 4,
+      "scheduledDays": 5
+    },
+    "dataQuality": "verified",
+    "externalIds": {
+      "cricsheetId": "1496584"
+    },
+    "id": "evt_cricket_13203"
+  },
+  {
+    "sportId": "cricket",
+    "competitionId": "odi_cricket_men",
+    "seasonId": "odi_cricket_men_2026",
+    "date": "2026-09-10T00:00:00Z",
+    "title": "Nepal vs Oman",
+    "participants": [
+      "cricket_team_nepal",
+      "cricket_team_oman"
+    ],
+    "sportData": {
+      "kind": "cricket_t20",
+      "matchFormat": "ODI",
+      "round": "ACC Men's Premier Cup",
+      "venue": "Bayuemas Oval, Kuala Lumpur",
+      "result": "Nepal won by 87 runs",
+      "toss": {
+        "winner": "Oman",
+        "decision": "field"
+      },
+      "playerOfMatch": "DS Airee"
+    },
+    "dataQuality": "verified",
+    "externalIds": {
+      "cricsheetId": "1549966"
+    },
+    "id": "evt_cricket_13207"
+  },
+  {
+    "sportId": "cricket",
+    "competitionId": "t20i_cricket_men",
+    "seasonId": "t20i_cricket_men_2026",
+    "date": "2026-09-10T00:00:00Z",
+    "title": "Botswana vs Uganda",
+    "participants": [
+      "cricket_team_botswana",
+      "cricket_team_uganda"
+    ],
+    "sportData": {
+      "kind": "cricket_t20",
+      "matchFormat": "T20",
+      "round": "Africa Continental Cup, Match 5",
+      "venue": "Gahanga B Ground, Rwanda",
+      "result": "Uganda won by 5 wickets",
+      "toss": {
+        "winner": "Botswana",
+        "decision": "bat"
+      },
+      "playerOfMatch": "R Obuya"
+    },
+    "dataQuality": "verified",
+    "externalIds": {
+      "cricsheetId": "1552910"
+    },
+    "id": "evt_cricket_13214"
+  },
+  {
+    "sportId": "cricket",
+    "competitionId": "t20i_cricket_men",
+    "seasonId": "t20i_cricket_men_2026",
+    "date": "2026-09-10T00:00:00Z",
+    "title": "Rwanda vs Sierra Leone",
+    "participants": [
+      "cricket_team_rwanda",
+      "cricket_team_sierra_leone"
+    ],
+    "sportData": {
+      "kind": "cricket_t20",
+      "matchFormat": "T20",
+      "round": "Africa Continental Cup, Match 6",
+      "venue": "Gahanga B Ground, Rwanda",
+      "result": "Rwanda won by 145 runs",
+      "toss": {
+        "winner": "Rwanda",
+        "decision": "bat"
+      },
+      "playerOfMatch": "D Ndikubwimana"
+    },
+    "dataQuality": "verified",
+    "externalIds": {
+      "cricsheetId": "1552911"
+    },
+    "id": "evt_cricket_13215"
+  },
+  {
+    "sportId": "cricket",
+    "competitionId": "t20i_cricket_women",
+    "seasonId": "t20i_cricket_women_2026",
+    "date": "2026-09-10T00:00:00Z",
+    "title": "India vs Bangladesh",
+    "participants": [
+      "cricket_team_india",
+      "cricket_team_bangladesh"
+    ],
+    "sportData": {
+      "kind": "cricket_t20",
+      "matchFormat": "T20",
+      "round": "Women's Asia Cup",
+      "venue": "Dubai International Cricket Stadium",
+      "result": "India won by 40 runs",
+      "toss": {
+        "winner": "Bangladesh",
+        "decision": "field"
+      },
+      "playerOfMatch": "Shafali Verma"
+    },
+    "dataQuality": "verified",
+    "externalIds": {
+      "cricsheetId": "1548903"
+    },
+    "id": "evt_cricket_13232"
+  },
+  {
+    "sportId": "cricket",
+    "competitionId": "odi_cricket_men",
+    "seasonId": "odi_cricket_men_2026",
+    "date": "2026-09-11T00:00:00Z",
+    "title": "South Africa vs Namibia",
+    "participants": [
+      "cricket_team_south_africa",
+      "cricket_team_namibia"
+    ],
+    "sportData": {
+      "kind": "cricket_t20",
+      "matchFormat": "ODI",
+      "round": "South Africa tour of Namibia, Match 2",
+      "venue": "Namibia Cricket Ground, Windhoek",
+      "result": "South Africa won by 157 runs",
+      "toss": {
+        "winner": "Namibia",
+        "decision": "field"
+      },
+      "playerOfMatch": "C Esterhuizen"
+    },
+    "dataQuality": "verified",
+    "externalIds": {
+      "cricsheetId": "1549532"
+    },
+    "id": "evt_cricket_13205"
+  },
+  {
+    "sportId": "cricket",
+    "competitionId": "t20i_cricket_men",
+    "seasonId": "t20i_cricket_men_2026",
+    "date": "2026-09-11T00:00:00Z",
+    "title": "Uganda vs Rwanda",
+    "participants": [
+      "cricket_team_uganda",
+      "cricket_team_rwanda"
+    ],
+    "sportData": {
+      "kind": "cricket_t20",
+      "matchFormat": "T20",
+      "round": "Africa Continental Cup, Match 7",
+      "venue": "Gahanga B Ground, Rwanda",
+      "result": "Uganda won by 64 runs",
+      "toss": {
+        "winner": "Uganda",
+        "decision": "bat"
+      },
+      "playerOfMatch": "C Kyewuta"
+    },
+    "dataQuality": "verified",
+    "externalIds": {
+      "cricsheetId": "1552912"
+    },
+    "id": "evt_cricket_13216"
+  },
+  {
+    "sportId": "cricket",
+    "competitionId": "t20i_cricket_men",
+    "seasonId": "t20i_cricket_men_2026",
+    "date": "2026-09-11T00:00:00Z",
+    "title": "Botswana vs Kenya",
+    "participants": [
+      "cricket_team_botswana",
+      "cricket_team_kenya"
+    ],
+    "sportData": {
+      "kind": "cricket_t20",
+      "matchFormat": "T20",
+      "round": "Africa Continental Cup, Match 8",
+      "venue": "Gahanga B Ground, Rwanda",
+      "result": "Kenya won by 10 wickets",
+      "toss": {
+        "winner": "Botswana",
+        "decision": "bat"
+      },
+      "playerOfMatch": "DM Gondaria"
+    },
+    "dataQuality": "verified",
+    "externalIds": {
+      "cricsheetId": "1552913"
+    },
+    "id": "evt_cricket_13217"
+  },
+  {
+    "sportId": "cricket",
+    "competitionId": "t20i_cricket_women",
+    "seasonId": "t20i_cricket_women_2026",
+    "date": "2026-09-11T00:00:00Z",
+    "title": "Zimbabwe vs South Africa",
+    "participants": [
+      "cricket_team_zimbabwe",
+      "cricket_team_south_africa"
+    ],
+    "sportData": {
+      "kind": "cricket_t20",
+      "matchFormat": "T20",
+      "round": "South Africa Women tour of Zimbabwe, Match 1",
+      "venue": "Queens Sports Club, Bulawayo",
+      "result": "South Africa won by 6 wickets",
+      "toss": {
+        "winner": "Zimbabwe",
+        "decision": "bat"
+      },
+      "playerOfMatch": "N Nini"
+    },
+    "dataQuality": "verified",
+    "externalIds": {
+      "cricsheetId": "1543887"
+    },
+    "id": "evt_cricket_13228"
+  },
+  {
+    "sportId": "cricket",
+    "competitionId": "t20i_cricket_women",
+    "seasonId": "t20i_cricket_women_2026",
+    "date": "2026-09-11T00:00:00Z",
+    "title": "Pakistan vs Sri Lanka",
+    "participants": [
+      "cricket_team_pakistan",
+      "cricket_team_sri_lanka"
+    ],
+    "sportData": {
+      "kind": "cricket_t20",
+      "matchFormat": "T20",
+      "round": "Women's Asia Cup",
+      "venue": "Dubai International Cricket Stadium",
+      "result": "Sri Lanka won by 4 wickets",
+      "toss": {
+        "winner": "Sri Lanka",
+        "decision": "field"
+      },
+      "playerOfMatch": "Fatima Sana"
+    },
+    "dataQuality": "verified",
+    "externalIds": {
+      "cricsheetId": "1548904"
+    },
+    "id": "evt_cricket_13233"
+  },
+  {
+    "sportId": "cricket",
+    "competitionId": "odi_cricket_men",
+    "seasonId": "odi_cricket_men_2026",
+    "date": "2026-09-12T00:00:00Z",
+    "title": "Nepal vs United Arab Emirates",
+    "participants": [
+      "cricket_team_nepal",
+      "cricket_team_united_arab_emirates"
+    ],
+    "sportData": {
+      "kind": "cricket_t20",
+      "matchFormat": "ODI",
+      "round": "ACC Men's Premier Cup",
+      "venue": "Bayuemas Oval, Kuala Lumpur",
+      "result": "Nepal won by 44 runs",
+      "toss": {
+        "winner": "Nepal",
+        "decision": "bat"
+      },
+      "playerOfMatch": "Aasif Sheikh"
+    },
+    "dataQuality": "verified",
+    "externalIds": {
+      "cricsheetId": "1549969"
+    },
+    "id": "evt_cricket_13208"
+  },
+  {
+    "sportId": "cricket",
+    "competitionId": "t20i_cricket_men",
+    "seasonId": "t20i_cricket_men_2026",
+    "date": "2026-09-12T00:00:00Z",
+    "title": "Uganda vs Kenya",
+    "participants": [
+      "cricket_team_uganda",
+      "cricket_team_kenya"
+    ],
+    "sportData": {
+      "kind": "cricket_t20",
+      "matchFormat": "T20",
+      "round": "Africa Continental Cup, Match 9",
+      "venue": "Gahanga B Ground, Rwanda",
+      "result": "Kenya won by 8 wickets",
+      "toss": {
+        "winner": "Kenya",
+        "decision": "field"
+      },
+      "playerOfMatch": "DM Gondaria"
+    },
+    "dataQuality": "verified",
+    "externalIds": {
+      "cricsheetId": "1552914"
+    },
+    "id": "evt_cricket_13218"
+  },
+  {
+    "sportId": "cricket",
+    "competitionId": "t20i_cricket_men",
+    "seasonId": "t20i_cricket_men_2026",
+    "date": "2026-09-12T00:00:00Z",
+    "title": "Botswana vs Sierra Leone",
+    "participants": [
+      "cricket_team_botswana",
+      "cricket_team_sierra_leone"
+    ],
+    "sportData": {
+      "kind": "cricket_t20",
+      "matchFormat": "T20",
+      "round": "Africa Continental Cup, Match 10",
+      "venue": "Gahanga B Ground, Rwanda",
+      "result": "Botswana won by 23 runs",
+      "toss": {
+        "winner": "Botswana",
+        "decision": "bat"
+      },
+      "playerOfMatch": "AB Kamara"
+    },
+    "dataQuality": "verified",
+    "externalIds": {
+      "cricsheetId": "1552915"
+    },
+    "id": "evt_cricket_13219"
+  },
+  {
+    "sportId": "cricket",
+    "competitionId": "t20i_cricket_women",
+    "seasonId": "t20i_cricket_women_2026",
+    "date": "2026-09-12T00:00:00Z",
+    "title": "Malaysia vs Japan",
+    "participants": [
+      "cricket_team_malaysia",
+      "cricket_team_japan"
+    ],
+    "sportData": {
+      "kind": "cricket_t20",
+      "matchFormat": "T20",
+      "round": "Malaysia Women tour of Japan, Match 2",
+      "venue": "Sano International Cricket Ground",
+      "result": "Malaysia won by 18 runs",
+      "toss": {
+        "winner": "Japan",
+        "decision": "field"
+      },
+      "playerOfMatch": "Ainna Hamizah Hashim"
+    },
+    "dataQuality": "verified",
+    "externalIds": {
+      "cricsheetId": "1552312"
+    },
+    "id": "evt_cricket_13236"
+  },
+  {
+    "sportId": "cricket",
+    "competitionId": "odi_cricket_men",
+    "seasonId": "odi_cricket_men_2026",
+    "date": "2026-09-13T00:00:00Z",
+    "title": "Namibia vs South Africa",
+    "participants": [
+      "cricket_team_namibia",
+      "cricket_team_south_africa"
+    ],
+    "sportData": {
+      "kind": "cricket_t20",
+      "matchFormat": "ODI",
+      "round": "South Africa tour of Namibia, Match 3",
+      "venue": "Namibia Cricket Ground, Windhoek",
+      "result": "South Africa won by 9 wickets",
+      "toss": {
+        "winner": "Namibia",
+        "decision": "bat"
+      },
+      "playerOfMatch": "BC Fortuin"
+    },
+    "dataQuality": "verified",
+    "externalIds": {
+      "cricsheetId": "1549533"
+    },
+    "id": "evt_cricket_13206"
+  },
+  {
+    "sportId": "cricket",
+    "competitionId": "t20i_cricket_men",
+    "seasonId": "t20i_cricket_men_2026",
+    "date": "2026-09-13T00:00:00Z",
+    "title": "Sierra Leone vs Kenya",
+    "participants": [
+      "cricket_team_sierra_leone",
+      "cricket_team_kenya"
+    ],
+    "sportData": {
+      "kind": "cricket_t20",
+      "matchFormat": "T20",
+      "round": "Africa Continental Cup, Match 11",
+      "venue": "Gahanga B Ground, Rwanda",
+      "result": "Kenya won by 9 wickets",
+      "toss": {
+        "winner": "Sierra Leone",
+        "decision": "bat"
+      },
+      "playerOfMatch": "Gurdeep Singh"
+    },
+    "dataQuality": "verified",
+    "externalIds": {
+      "cricsheetId": "1552916"
+    },
+    "id": "evt_cricket_13220"
+  },
+  {
+    "sportId": "cricket",
+    "competitionId": "t20i_cricket_men",
+    "seasonId": "t20i_cricket_men_2026",
+    "date": "2026-09-13T00:00:00Z",
+    "title": "Rwanda vs Botswana",
+    "participants": [
+      "cricket_team_rwanda",
+      "cricket_team_botswana"
+    ],
+    "sportData": {
+      "kind": "cricket_t20",
+      "matchFormat": "T20",
+      "round": "Africa Continental Cup, Match 12",
+      "venue": "Gahanga B Ground, Rwanda",
+      "result": "Rwanda won by 6 runs (D/L)",
+      "toss": {
+        "winner": "Rwanda",
+        "decision": "bat"
+      },
+      "playerOfMatch": "Hamza Khan"
+    },
+    "dataQuality": "verified",
+    "externalIds": {
+      "cricsheetId": "1552917"
+    },
+    "id": "evt_cricket_13221"
+  },
+  {
+    "sportId": "cricket",
+    "competitionId": "t20i_cricket_women",
+    "seasonId": "t20i_cricket_women_2026",
+    "date": "2026-09-13T00:00:00Z",
+    "title": "South Africa vs Zimbabwe",
+    "participants": [
+      "cricket_team_south_africa",
+      "cricket_team_zimbabwe"
+    ],
+    "sportData": {
+      "kind": "cricket_t20",
+      "matchFormat": "T20",
+      "round": "South Africa Women tour of Zimbabwe, Match 2",
+      "venue": "Queens Sports Club, Bulawayo",
+      "result": "South Africa won by 64 runs",
+      "toss": {
+        "winner": "South Africa",
+        "decision": "bat"
+      },
+      "playerOfMatch": "A Bosch"
+    },
+    "dataQuality": "verified",
+    "externalIds": {
+      "cricsheetId": "1543888"
+    },
+    "id": "evt_cricket_13229"
+  },
+  {
+    "sportId": "cricket",
+    "competitionId": "t20i_cricket_women",
+    "seasonId": "t20i_cricket_women_2026",
+    "date": "2026-09-13T00:00:00Z",
+    "title": "India vs Sri Lanka",
+    "participants": [
+      "cricket_team_india",
+      "cricket_team_sri_lanka"
+    ],
+    "sportData": {
+      "kind": "cricket_t20",
+      "matchFormat": "T20",
+      "round": "Women's Asia Cup",
+      "venue": "Dubai International Cricket Stadium",
+      "result": "India won by 72 runs",
+      "toss": {
+        "winner": "India",
+        "decision": "bat"
+      },
+      "playerOfMatch": "Shafali Verma"
+    },
+    "dataQuality": "verified",
+    "externalIds": {
+      "cricsheetId": "1548905"
+    },
+    "id": "evt_cricket_13234"
+  },
+  {
+    "sportId": "cricket",
+    "competitionId": "t20i_cricket_women",
+    "seasonId": "t20i_cricket_women_2026",
+    "date": "2026-09-13T00:00:00Z",
+    "title": "Japan vs Malaysia",
+    "participants": [
+      "cricket_team_japan",
+      "cricket_team_malaysia"
+    ],
+    "sportData": {
+      "kind": "cricket_t20",
+      "matchFormat": "T20",
+      "round": "Malaysia Women tour of Japan, Match 3",
+      "venue": "Sano International Cricket Ground",
+      "result": "Japan won by 11 runs",
+      "toss": {
+        "winner": "Japan",
+        "decision": "bat"
+      },
+      "playerOfMatch": "H Iwasaki"
+    },
+    "dataQuality": "verified",
+    "externalIds": {
+      "cricsheetId": "1552313"
+    },
+    "id": "evt_cricket_13237"
+  },
+  {
+    "sportId": "cricket",
+    "competitionId": "t20i_cricket_men",
+    "seasonId": "t20i_cricket_men_2026",
+    "date": "2026-09-14T00:00:00Z",
+    "title": "Malaysia vs United Arab Emirates",
+    "participants": [
+      "cricket_team_malaysia",
+      "cricket_team_united_arab_emirates"
+    ],
+    "sportData": {
+      "kind": "cricket_t20",
+      "matchFormat": "T20",
+      "round": "United Arab Emirates tour of Malaysia, Match 1",
+      "venue": "Bayuemas Oval, Kuala Lumpur",
+      "result": "United Arab Emirates won by 6 wickets",
+      "toss": {
+        "winner": "Malaysia",
+        "decision": "bat"
+      },
+      "playerOfMatch": "Khuzaima Tanveer"
+    },
+    "dataQuality": "verified",
+    "externalIds": {
+      "cricsheetId": "1552895"
+    },
+    "id": "evt_cricket_13211"
+  },
+  {
+    "sportId": "cricket",
+    "competitionId": "odi_cricket_men",
+    "seasonId": "odi_cricket_men_2026",
+    "date": "2026-09-15T00:00:00Z",
+    "title": "Australia vs Zimbabwe",
+    "participants": [
+      "cricket_team_australia",
+      "cricket_team_zimbabwe"
+    ],
+    "sportData": {
+      "kind": "cricket_t20",
+      "matchFormat": "ODI",
+      "round": "Australia tour of Zimbabwe, Match 1",
+      "venue": "Harare Sports Club",
+      "result": "Australia won by 59 runs",
+      "toss": {
+        "winner": "Australia",
+        "decision": "bat"
+      },
+      "playerOfMatch": "MT Renshaw"
+    },
+    "dataQuality": "verified",
+    "externalIds": {
+      "cricsheetId": "1530203"
+    },
+    "id": "evt_cricket_13204"
+  },
+  {
+    "sportId": "cricket",
+    "competitionId": "t20i_cricket_men",
+    "seasonId": "t20i_cricket_men_2026",
+    "date": "2026-09-15T00:00:00Z",
+    "title": "England vs Sri Lanka",
+    "participants": [
+      "cricket_team_england",
+      "cricket_team_sri_lanka"
+    ],
+    "sportData": {
+      "kind": "cricket_t20",
+      "matchFormat": "T20",
+      "round": "Sri Lanka tour of England, Match 1",
+      "venue": "The Rose Bowl, Southampton",
+      "result": "England won by 119 runs",
+      "toss": {
+        "winner": "Sri Lanka",
+        "decision": "field"
+      },
+      "playerOfMatch": "HC Brook"
+    },
+    "dataQuality": "verified",
+    "externalIds": {
+      "cricsheetId": "1496585"
+    },
+    "id": "evt_cricket_13209"
+  },
+  {
+    "sportId": "cricket",
+    "competitionId": "t20i_cricket_men",
+    "seasonId": "t20i_cricket_men_2026",
+    "date": "2026-09-15T00:00:00Z",
+    "title": "Sierra Leone vs Uganda",
+    "participants": [
+      "cricket_team_sierra_leone",
+      "cricket_team_uganda"
+    ],
+    "sportData": {
+      "kind": "cricket_t20",
+      "matchFormat": "T20",
+      "round": "Africa Continental Cup, Match 13",
+      "venue": "Gahanga International Cricket Stadium, Rwanda",
+      "result": "Uganda won by 8 wickets",
+      "toss": {
+        "winner": "Sierra Leone",
+        "decision": "bat"
+      },
+      "playerOfMatch": "Olipa Gerald"
+    },
+    "dataQuality": "verified",
+    "externalIds": {
+      "cricsheetId": "1552918"
+    },
+    "id": "evt_cricket_13222"
+  },
+  {
+    "sportId": "cricket",
+    "competitionId": "t20i_cricket_men",
+    "seasonId": "t20i_cricket_men_2026",
+    "date": "2026-09-15T00:00:00Z",
+    "title": "Kenya vs Rwanda",
+    "participants": [
+      "cricket_team_kenya",
+      "cricket_team_rwanda"
+    ],
+    "sportData": {
+      "kind": "cricket_t20",
+      "matchFormat": "T20",
+      "round": "Africa Continental Cup, Match 14",
+      "venue": "Gahanga International Cricket Stadium, Rwanda",
+      "result": "Kenya won by 32 runs",
+      "toss": {
+        "winner": "Rwanda",
+        "decision": "field"
+      },
+      "playerOfMatch": "S Singh"
+    },
+    "dataQuality": "verified",
+    "externalIds": {
+      "cricsheetId": "1552919"
+    },
+    "id": "evt_cricket_13223"
+  },
+  {
+    "sportId": "cricket",
+    "competitionId": "t20i_cricket_women",
+    "seasonId": "t20i_cricket_women_2026",
+    "date": "2026-09-15T00:00:00Z",
+    "title": "South Africa vs Zimbabwe",
+    "participants": [
+      "cricket_team_south_africa",
+      "cricket_team_zimbabwe"
+    ],
+    "sportData": {
+      "kind": "cricket_t20",
+      "matchFormat": "T20",
+      "round": "South Africa Women tour of Zimbabwe, Match 3",
+      "venue": "Queens Sports Club, Bulawayo",
+      "result": "South Africa won by 80 runs",
+      "toss": {
+        "winner": "South Africa",
+        "decision": "bat"
+      },
+      "playerOfMatch": "L Wolvaardt"
+    },
+    "dataQuality": "verified",
+    "externalIds": {
+      "cricsheetId": "1543889"
+    },
+    "id": "evt_cricket_13230"
+  },
+  {
+    "sportId": "cricket",
+    "competitionId": "t20i_cricket_men",
+    "seasonId": "t20i_cricket_men_2026",
+    "date": "2026-09-16T00:00:00Z",
+    "title": "Malaysia vs United Arab Emirates",
+    "participants": [
+      "cricket_team_malaysia",
+      "cricket_team_united_arab_emirates"
+    ],
+    "sportData": {
+      "kind": "cricket_t20",
+      "matchFormat": "T20",
+      "round": "United Arab Emirates tour of Malaysia, Match 2",
+      "venue": "Bayuemas Oval, Kuala Lumpur",
+      "result": "United Arab Emirates won by 7 wickets",
+      "toss": {
+        "winner": "Malaysia",
+        "decision": "bat"
+      },
+      "playerOfMatch": "Adeeb Usmani"
+    },
+    "dataQuality": "verified",
+    "externalIds": {
+      "cricsheetId": "1552896"
+    },
+    "id": "evt_cricket_13212"
+  },
+  {
+    "sportId": "cricket",
+    "competitionId": "t20i_cricket_men",
+    "seasonId": "t20i_cricket_men_2026",
+    "date": "2026-09-16T00:00:00Z",
+    "title": "Botswana vs Uganda",
+    "participants": [
+      "cricket_team_botswana",
+      "cricket_team_uganda"
+    ],
+    "sportData": {
+      "kind": "cricket_t20",
+      "matchFormat": "T20",
+      "round": "Africa Continental Cup, Match 15",
+      "venue": "Gahanga International Cricket Stadium, Rwanda",
+      "result": "Uganda won by 5 wickets",
+      "toss": {
+        "winner": "Uganda",
+        "decision": "field"
+      },
+      "playerOfMatch": "K Piet"
+    },
+    "dataQuality": "verified",
+    "externalIds": {
+      "cricsheetId": "1552920"
+    },
+    "id": "evt_cricket_13224"
+  },
+  {
+    "sportId": "cricket",
+    "competitionId": "t20i_cricket_men",
+    "seasonId": "t20i_cricket_men_2026",
+    "date": "2026-09-16T00:00:00Z",
+    "title": "Sierra Leone vs Rwanda",
+    "participants": [
+      "cricket_team_sierra_leone",
+      "cricket_team_rwanda"
+    ],
+    "sportData": {
+      "kind": "cricket_t20",
+      "matchFormat": "T20",
+      "round": "Africa Continental Cup, Match 16",
+      "venue": "Gahanga International Cricket Stadium, Rwanda",
+      "result": "Rwanda won by 6 wickets",
+      "toss": {
+        "winner": "Sierra Leone",
+        "decision": "bat"
+      },
+      "playerOfMatch": "E Kubwimana"
+    },
+    "dataQuality": "verified",
+    "externalIds": {
+      "cricsheetId": "1552921"
+    },
+    "id": "evt_cricket_13225"
+  },
+  {
+    "sportId": "cricket",
+    "competitionId": "t20i_cricket_men",
+    "seasonId": "t20i_cricket_men_2026",
+    "date": "2026-09-17T00:00:00Z",
+    "title": "Sri Lanka vs England",
+    "participants": [
+      "cricket_team_sri_lanka",
+      "cricket_team_england"
+    ],
+    "sportData": {
+      "kind": "cricket_t20",
+      "matchFormat": "T20",
+      "round": "Sri Lanka tour of England, Match 2",
+      "venue": "Sophia Gardens, Cardiff",
+      "result": "England won by 6 wickets",
+      "toss": {
+        "winner": "England",
+        "decision": "field"
+      },
+      "playerOfMatch": "LA Dawson"
+    },
+    "dataQuality": "verified",
+    "externalIds": {
+      "cricsheetId": "1496586"
+    },
+    "id": "evt_cricket_13210"
+  },
+  {
+    "sportId": "cricket",
+    "competitionId": "t20i_cricket_men",
+    "seasonId": "t20i_cricket_men_2026",
+    "date": "2026-09-17T00:00:00Z",
+    "title": "United Arab Emirates vs Malaysia",
+    "participants": [
+      "cricket_team_united_arab_emirates",
+      "cricket_team_malaysia"
+    ],
+    "sportData": {
+      "kind": "cricket_t20",
+      "matchFormat": "T20",
+      "round": "United Arab Emirates tour of Malaysia, Match 3",
+      "venue": "Bayuemas Oval, Kuala Lumpur",
+      "result": "United Arab Emirates won by 59 runs",
+      "toss": {
+        "winner": "Malaysia",
+        "decision": "field"
+      },
+      "playerOfMatch": "Adeeb Usmani"
+    },
+    "dataQuality": "verified",
+    "externalIds": {
+      "cricsheetId": "1552897"
+    },
+    "id": "evt_cricket_13213"
+  },
+  {
+    "sportId": "cricket",
+    "competitionId": "t20i_cricket_men",
+    "seasonId": "t20i_cricket_men_2026",
+    "date": "2026-09-17T00:00:00Z",
+    "title": "Uganda vs Rwanda",
+    "participants": [
+      "cricket_team_uganda",
+      "cricket_team_rwanda"
+    ],
+    "sportData": {
+      "kind": "cricket_t20",
+      "matchFormat": "T20",
+      "round": "Africa Continental Cup, Match 17",
+      "venue": "Gahanga International Cricket Stadium, Rwanda",
+      "result": "Uganda won by 72 runs",
+      "toss": {
+        "winner": "Uganda",
+        "decision": "bat"
+      },
+      "playerOfMatch": "R Obuya"
+    },
+    "dataQuality": "verified",
+    "externalIds": {
+      "cricsheetId": "1552922"
+    },
+    "id": "evt_cricket_13226"
+  },
+  {
+    "sportId": "cricket",
+    "competitionId": "t20i_cricket_men",
+    "seasonId": "t20i_cricket_men_2026",
+    "date": "2026-09-17T00:00:00Z",
+    "title": "Kenya vs Botswana",
+    "participants": [
+      "cricket_team_kenya",
+      "cricket_team_botswana"
+    ],
+    "sportData": {
+      "kind": "cricket_t20",
+      "matchFormat": "T20",
+      "round": "Africa Continental Cup, Match 18",
+      "venue": "Gahanga International Cricket Stadium, Rwanda",
+      "result": "Kenya won by 64 runs",
+      "toss": {
+        "winner": "Kenya",
+        "decision": "bat"
+      },
+      "playerOfMatch": "DM Gondaria"
+    },
+    "dataQuality": "verified",
+    "externalIds": {
+      "cricsheetId": "1552923"
+    },
+    "id": "evt_cricket_13227"
+  },
+  {
+    "sportId": "cricket",
+    "competitionId": "t20i_cricket_women",
+    "seasonId": "t20i_cricket_women_2026",
+    "date": "2026-09-17T00:00:00Z",
+    "title": "South Africa vs Zimbabwe",
+    "participants": [
+      "cricket_team_south_africa",
+      "cricket_team_zimbabwe"
+    ],
+    "sportData": {
+      "kind": "cricket_t20",
+      "matchFormat": "T20",
+      "round": "South Africa Women tour of Zimbabwe, Match 4",
+      "venue": "Queens Sports Club, Bulawayo",
+      "result": "South Africa won by 80 runs",
+      "toss": {
+        "winner": "South Africa",
+        "decision": "bat"
+      },
+      "playerOfMatch": "M Smit"
+    },
+    "dataQuality": "verified",
+    "externalIds": {
+      "cricsheetId": "1543890"
+    },
+    "id": "evt_cricket_13231"
+  },
+  {
+    "sportId": "cricket",
+    "competitionId": "t20i_cricket_women",
+    "seasonId": "t20i_cricket_women_2026",
+    "date": "2026-09-17T00:00:00Z",
+    "title": "Thailand vs Pakistan",
+    "participants": [
+      "cricket_team_thailand",
+      "cricket_team_pakistan"
+    ],
+    "sportData": {
+      "kind": "cricket_t20",
+      "matchFormat": "T20",
+      "round": "Asian Games Women's Cricket Competition",
+      "venue": "Korogi Sports Park, Nisshin",
+      "result": "Pakistan won by 3 wickets",
+      "toss": {
+        "winner": "Pakistan",
+        "decision": "field"
+      },
+      "playerOfMatch": null
+    },
+    "dataQuality": "verified",
+    "externalIds": {
+      "cricsheetId": "1550475"
+    },
+    "id": "evt_cricket_13235"
   }
 ]
