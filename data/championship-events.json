@@ -2153,7 +2153,7 @@
       "homeTeam": "team_wolverhampton_wanderers",
       "awayTeam": "team_west_bromwich_albion",
       "venue": null,
-      "result": null
+      "result": "1-0"
     },
     "dataQuality": "verified",
     "externalIds": {
@@ -2176,7 +2176,7 @@
       "homeTeam": "team_norwich_city",
       "awayTeam": "team_bolton_wanderers",
       "venue": null,
-      "result": null
+      "result": "3-4"
     },
     "dataQuality": "verified",
     "externalIds": {

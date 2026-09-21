@@ -1203,7 +1203,7 @@
       "homeTeam": "team_leeds_united",
       "awayTeam": "team_crystal_palace",
       "venue": null,
-      "result": null,
+      "result": "0-0",
       "kind": "football_match"
     },
     "dataQuality": "verified",
@@ -1226,7 +1226,7 @@
       "homeTeam": "team_afc_bournemouth",
       "awayTeam": "team_liverpool",
       "venue": null,
-      "result": null,
+      "result": "0-1",
       "kind": "football_match"
     },
     "dataQuality": "verified",
@@ -1249,7 +1249,7 @@
       "homeTeam": "team_manchester_city",
       "awayTeam": "team_sunderland",
       "venue": null,
-      "result": null
+      "result": "5-3"
     },
     "dataQuality": "verified",
     "externalIds": {
@@ -1272,7 +1272,7 @@
       "homeTeam": "team_fulham",
       "awayTeam": "team_manchester_united",
       "venue": null,
-      "result": null,
+      "result": "1-1",
       "kind": "football_match"
     },
     "dataQuality": "verified",
