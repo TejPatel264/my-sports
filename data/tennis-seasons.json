@@ -2555,6 +2555,16 @@
     "label": "2024"
   },
   {
+    "id": "tennis_atp_davis_cup_wg2_r1_ber_vs_mex_2026",
+    "competitionId": "tennis_atp_davis_cup_wg2_r1_ber_vs_mex",
+    "label": "2026"
+  },
+  {
+    "id": "tennis_atp_davis_cup_wg2_r1_bol_vs_hkg_2026",
+    "competitionId": "tennis_atp_davis_cup_wg2_r1_bol_vs_hkg",
+    "label": "2026"
+  },
+  {
     "id": "tennis_atp_davis_cup_wg2_r1_bol_vs_tha_2022",
     "competitionId": "tennis_atp_davis_cup_wg2_r1_bol_vs_tha",
     "label": "2022"
@@ -2575,9 +2585,19 @@
     "label": "2025"
   },
   {
+    "id": "tennis_atp_davis_cup_wg2_r1_cyp_vs_ukr_2026",
+    "competitionId": "tennis_atp_davis_cup_wg2_r1_cyp_vs_ukr",
+    "label": "2026"
+  },
+  {
     "id": "tennis_atp_davis_cup_wg2_r1_den_vs_esa_2022",
     "competitionId": "tennis_atp_davis_cup_wg2_r1_den_vs_esa",
     "label": "2022"
+  },
+  {
+    "id": "tennis_atp_davis_cup_wg2_r1_dom_vs_egy_2026",
+    "competitionId": "tennis_atp_davis_cup_wg2_r1_dom_vs_egy",
+    "label": "2026"
   },
   {
     "id": "tennis_atp_davis_cup_wg2_r1_dom_vs_lat_2022",
@@ -2593,6 +2613,11 @@
     "id": "tennis_atp_davis_cup_wg2_r1_esa_vs_irl_2023",
     "competitionId": "tennis_atp_davis_cup_wg2_r1_esa_vs_irl",
     "label": "2023"
+  },
+  {
+    "id": "tennis_atp_davis_cup_wg2_r1_esa_vs_por_2026",
+    "competitionId": "tennis_atp_davis_cup_wg2_r1_esa_vs_por",
+    "label": "2026"
   },
   {
     "id": "tennis_atp_davis_cup_wg2_r1_esa_vs_rou_2025",
@@ -2625,6 +2650,11 @@
     "label": "2025"
   },
   {
+    "id": "tennis_atp_davis_cup_wg2_r1_ina_vs_rou_2026",
+    "competitionId": "tennis_atp_davis_cup_wg2_r1_ina_vs_rou",
+    "label": "2026"
+  },
+  {
     "id": "tennis_atp_davis_cup_wg2_r1_ind_vs_mar_2023",
     "competitionId": "tennis_atp_davis_cup_wg2_r1_ind_vs_mar",
     "label": "2023"
@@ -2633,6 +2663,11 @@
     "id": "tennis_atp_davis_cup_wg2_r1_irl_vs_chn_2025",
     "competitionId": "tennis_atp_davis_cup_wg2_r1_irl_vs_chn",
     "label": "2025"
+  },
+  {
+    "id": "tennis_atp_davis_cup_wg2_r1_kaz_vs_tha_2026",
+    "competitionId": "tennis_atp_davis_cup_wg2_r1_kaz_vs_tha",
+    "label": "2026"
   },
   {
     "id": "tennis_atp_davis_cup_wg2_r1_lbn_vs_bar_2025",
@@ -2673,6 +2708,11 @@
     "id": "tennis_atp_davis_cup_wg2_r1_mar_vs_mon_2024",
     "competitionId": "tennis_atp_davis_cup_wg2_r1_mar_vs_mon",
     "label": "2024"
+  },
+  {
+    "id": "tennis_atp_davis_cup_wg2_r1_mar_vs_ngr_2026",
+    "competitionId": "tennis_atp_davis_cup_wg2_r1_mar_vs_ngr",
+    "label": "2026"
   },
   {
     "id": "tennis_atp_davis_cup_wg2_r1_mex_vs_bul_2021",
@@ -2725,6 +2765,11 @@
     "label": "2024"
   },
   {
+    "id": "tennis_atp_davis_cup_wg2_r1_rsa_vs_bih_2026",
+    "competitionId": "tennis_atp_davis_cup_wg2_r1_rsa_vs_bih",
+    "label": "2026"
+  },
+  {
     "id": "tennis_atp_davis_cup_wg2_r1_rsa_vs_bul_2022",
     "competitionId": "tennis_atp_davis_cup_wg2_r1_rsa_vs_bul",
     "label": "2022"
@@ -2743,6 +2788,11 @@
     "id": "tennis_atp_davis_cup_wg2_r1_slo_vs_est_2022",
     "competitionId": "tennis_atp_davis_cup_wg2_r1_slo_vs_est",
     "label": "2022"
+  },
+  {
+    "id": "tennis_atp_davis_cup_wg2_r1_slo_vs_isr_2026",
+    "competitionId": "tennis_atp_davis_cup_wg2_r1_slo_vs_isr",
+    "label": "2026"
   },
   {
     "id": "tennis_atp_davis_cup_wg2_r1_slo_vs_lux_2023",
@@ -2795,6 +2845,11 @@
     "label": "2024"
   },
   {
+    "id": "tennis_atp_davis_cup_wg2_r1_tun_vs_pak_2026",
+    "competitionId": "tennis_atp_davis_cup_wg2_r1_tun_vs_pak",
+    "label": "2026"
+  },
+  {
     "id": "tennis_atp_davis_cup_wg2_r1_tur_vs_lat_2021",
     "competitionId": "tennis_atp_davis_cup_wg2_r1_tur_vs_lat",
     "label": "2021"
@@ -2813,6 +2868,11 @@
     "id": "tennis_atp_davis_cup_wg2_r1_uru_vs_egy_2023",
     "competitionId": "tennis_atp_davis_cup_wg2_r1_uru_vs_egy",
     "label": "2023"
+  },
+  {
+    "id": "tennis_atp_davis_cup_wg2_r1_uru_vs_est_2026",
+    "competitionId": "tennis_atp_davis_cup_wg2_r1_uru_vs_est",
+    "label": "2026"
   },
   {
     "id": "tennis_atp_davis_cup_wg2_r1_uzb_vs_est_2024",
@@ -7460,6 +7520,11 @@
     "label": "2025"
   },
   {
+    "id": "tennis_wta_seoul_2026",
+    "competitionId": "tennis_wta_seoul",
+    "label": "2026"
+  },
+  {
     "id": "tennis_wta_shenzhen_2020",
     "competitionId": "tennis_wta_shenzhen",
     "label": "2020"
@@ -7468,6 +7533,11 @@
     "id": "tennis_wta_singapore_2025",
     "competitionId": "tennis_wta_singapore",
     "label": "2025"
+  },
+  {
+    "id": "tennis_wta_singapore_2026",
+    "competitionId": "tennis_wta_singapore",
+    "label": "2026"
   },
   {
     "id": "tennis_wta_st_petersburg_2020",

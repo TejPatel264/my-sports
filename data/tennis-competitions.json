@@ -4116,6 +4116,18 @@
     "shortName": "Davis Cup WG2 R1: BAR vs PAK"
   },
   {
+    "id": "tennis_atp_davis_cup_wg2_r1_ber_vs_mex",
+    "sportId": "tennis",
+    "name": "Davis Cup WG2 R1: BER vs MEX (ATP)",
+    "shortName": "Davis Cup WG2 R1: BER vs MEX"
+  },
+  {
+    "id": "tennis_atp_davis_cup_wg2_r1_bol_vs_hkg",
+    "sportId": "tennis",
+    "name": "Davis Cup WG2 R1: BOL vs HKG (ATP)",
+    "shortName": "Davis Cup WG2 R1: BOL vs HKG"
+  },
+  {
     "id": "tennis_atp_davis_cup_wg2_r1_bol_vs_tha",
     "sportId": "tennis",
     "name": "Davis Cup WG2 R1: BOL vs THA (ATP)",
@@ -4140,10 +4152,22 @@
     "shortName": "Davis Cup WG2 R1: CYP vs MON"
   },
   {
+    "id": "tennis_atp_davis_cup_wg2_r1_cyp_vs_ukr",
+    "sportId": "tennis",
+    "name": "Davis Cup WG2 R1: CYP vs UKR (ATP)",
+    "shortName": "Davis Cup WG2 R1: CYP vs UKR"
+  },
+  {
     "id": "tennis_atp_davis_cup_wg2_r1_den_vs_esa",
     "sportId": "tennis",
     "name": "Davis Cup WG2 R1: DEN vs ESA (ATP)",
     "shortName": "Davis Cup WG2 R1: DEN vs ESA"
+  },
+  {
+    "id": "tennis_atp_davis_cup_wg2_r1_dom_vs_egy",
+    "sportId": "tennis",
+    "name": "Davis Cup WG2 R1: DOM vs EGY (ATP)",
+    "shortName": "Davis Cup WG2 R1: DOM vs EGY"
   },
   {
     "id": "tennis_atp_davis_cup_wg2_r1_dom_vs_lat",
@@ -4162,6 +4186,12 @@
     "sportId": "tennis",
     "name": "Davis Cup WG2 R1: ESA vs IRL (ATP)",
     "shortName": "Davis Cup WG2 R1: ESA vs IRL"
+  },
+  {
+    "id": "tennis_atp_davis_cup_wg2_r1_esa_vs_por",
+    "sportId": "tennis",
+    "name": "Davis Cup WG2 R1: ESA vs POR (ATP)",
+    "shortName": "Davis Cup WG2 R1: ESA vs POR"
   },
   {
     "id": "tennis_atp_davis_cup_wg2_r1_esa_vs_rou",
@@ -4200,6 +4230,12 @@
     "shortName": "Davis Cup WG2 R1: HKG vs UZB"
   },
   {
+    "id": "tennis_atp_davis_cup_wg2_r1_ina_vs_rou",
+    "sportId": "tennis",
+    "name": "Davis Cup WG2 R1: INA vs ROU (ATP)",
+    "shortName": "Davis Cup WG2 R1: INA vs ROU"
+  },
+  {
     "id": "tennis_atp_davis_cup_wg2_r1_ind_vs_mar",
     "sportId": "tennis",
     "name": "Davis Cup WG2 R1: IND vs MAR (ATP)",
@@ -4210,6 +4246,12 @@
     "sportId": "tennis",
     "name": "Davis Cup WG2 R1: IRL vs CHN (ATP)",
     "shortName": "Davis Cup WG2 R1: IRL vs CHN"
+  },
+  {
+    "id": "tennis_atp_davis_cup_wg2_r1_kaz_vs_tha",
+    "sportId": "tennis",
+    "name": "Davis Cup WG2 R1: KAZ vs THA (ATP)",
+    "shortName": "Davis Cup WG2 R1: KAZ vs THA"
   },
   {
     "id": "tennis_atp_davis_cup_wg2_r1_lbn_vs_bar",
@@ -4258,6 +4300,12 @@
     "sportId": "tennis",
     "name": "Davis Cup WG2 R1: MAR vs MON (ATP)",
     "shortName": "Davis Cup WG2 R1: MAR vs MON"
+  },
+  {
+    "id": "tennis_atp_davis_cup_wg2_r1_mar_vs_ngr",
+    "sportId": "tennis",
+    "name": "Davis Cup WG2 R1: MAR vs NGR (ATP)",
+    "shortName": "Davis Cup WG2 R1: MAR vs NGR"
   },
   {
     "id": "tennis_atp_davis_cup_wg2_r1_mex_vs_bul",
@@ -4320,6 +4368,12 @@
     "shortName": "Davis Cup WG2 R1: ROU vs CHN"
   },
   {
+    "id": "tennis_atp_davis_cup_wg2_r1_rsa_vs_bih",
+    "sportId": "tennis",
+    "name": "Davis Cup WG2 R1: RSA vs BIH (ATP)",
+    "shortName": "Davis Cup WG2 R1: RSA vs BIH"
+  },
+  {
     "id": "tennis_atp_davis_cup_wg2_r1_rsa_vs_bul",
     "sportId": "tennis",
     "name": "Davis Cup WG2 R1: RSA vs BUL (ATP)",
@@ -4342,6 +4396,12 @@
     "sportId": "tennis",
     "name": "Davis Cup WG2 R1: SLO vs EST (ATP)",
     "shortName": "Davis Cup WG2 R1: SLO vs EST"
+  },
+  {
+    "id": "tennis_atp_davis_cup_wg2_r1_slo_vs_isr",
+    "sportId": "tennis",
+    "name": "Davis Cup WG2 R1: SLO vs ISR (ATP)",
+    "shortName": "Davis Cup WG2 R1: SLO vs ISR"
   },
   {
     "id": "tennis_atp_davis_cup_wg2_r1_slo_vs_lux",
@@ -4404,6 +4464,12 @@
     "shortName": "Davis Cup WG2 R1: TUN vs IRL"
   },
   {
+    "id": "tennis_atp_davis_cup_wg2_r1_tun_vs_pak",
+    "sportId": "tennis",
+    "name": "Davis Cup WG2 R1: TUN vs PAK (ATP)",
+    "shortName": "Davis Cup WG2 R1: TUN vs PAK"
+  },
+  {
     "id": "tennis_atp_davis_cup_wg2_r1_tur_vs_lat",
     "sportId": "tennis",
     "name": "Davis Cup WG2 R1: TUR vs LAT (ATP)",
@@ -4426,6 +4492,12 @@
     "sportId": "tennis",
     "name": "Davis Cup WG2 R1: URU vs EGY (ATP)",
     "shortName": "Davis Cup WG2 R1: URU vs EGY"
+  },
+  {
+    "id": "tennis_atp_davis_cup_wg2_r1_uru_vs_est",
+    "sportId": "tennis",
+    "name": "Davis Cup WG2 R1: URU vs EST (ATP)",
+    "shortName": "Davis Cup WG2 R1: URU vs EST"
   },
   {
     "id": "tennis_atp_davis_cup_wg2_r1_uzb_vs_est",
