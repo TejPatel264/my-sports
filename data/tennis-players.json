@@ -9060,6 +9060,11 @@
     "name": "Vittoria Paganetti"
   },
   {
+    "id": "tennis_player_wta_321837",
+    "sportId": "tennis",
+    "name": "Vivian Wolff"
+  },
+  {
     "id": "tennis_player_wta_223159",
     "sportId": "tennis",
     "name": "Vivian Yang"
@@ -9308,6 +9313,11 @@
     "id": "tennis_player_wta_220454",
     "sportId": "tennis",
     "name": "Yeon Woo Ku"
+  },
+  {
+    "id": "tennis_player_wta_327252",
+    "sportId": "tennis",
+    "name": "Yeonwoo Ku"
   },
   {
     "id": "tennis_player_atp_Z0CQ",
