@@ -2201,11 +2201,34 @@
     }
   },
   {
+    "sportId": "football",
+    "competitionId": "epl",
+    "seasonId": "epl_2026_27",
+    "date": "2026-11-06T20:00:00Z",
+    "title": "Everton vs Coventry City",
+    "participants": [
+      "team_everton",
+      "team_coventry_city"
+    ],
+    "sportData": {
+      "kind": "football_match",
+      "homeTeam": "team_everton",
+      "awayTeam": "team_coventry_city",
+      "venue": null,
+      "result": null
+    },
+    "dataQuality": "verified",
+    "externalIds": {
+      "footballDataOrgId": 560634
+    },
+    "id": "evt_epl_141"
+  },
+  {
     "id": "evt_epl_068",
     "sportId": "football",
     "competitionId": "epl",
     "seasonId": "epl_2026_27",
-    "date": "2026-11-07T15:00:00Z",
+    "date": "2026-11-07T12:30:00Z",
     "title": "Leeds United vs Tottenham Hotspur",
     "participants": [
       "team_leeds_united",
@@ -2221,29 +2244,6 @@
     "dataQuality": "verified",
     "externalIds": {
       "footballDataOrgId": 560632
-    }
-  },
-  {
-    "id": "evt_epl_069",
-    "sportId": "football",
-    "competitionId": "epl",
-    "seasonId": "epl_2026_27",
-    "date": "2026-11-07T15:00:00Z",
-    "title": "Manchester United vs Aston Villa",
-    "participants": [
-      "team_manchester_united",
-      "team_aston_villa"
-    ],
-    "sportData": {
-      "homeTeam": "team_manchester_united",
-      "awayTeam": "team_aston_villa",
-      "venue": null,
-      "result": null,
-      "kind": "football_match"
-    },
-    "dataQuality": "verified",
-    "externalIds": {
-      "footballDataOrgId": 560639
     }
   },
   {
@@ -2274,29 +2274,6 @@
     "competitionId": "epl",
     "seasonId": "epl_2026_27",
     "date": "2026-11-07T15:00:00Z",
-    "title": "Nottingham Forest vs Manchester City",
-    "participants": [
-      "team_nottingham_forest",
-      "team_manchester_city"
-    ],
-    "sportData": {
-      "kind": "football_match",
-      "homeTeam": "team_nottingham_forest",
-      "awayTeam": "team_manchester_city",
-      "venue": null,
-      "result": null
-    },
-    "dataQuality": "verified",
-    "externalIds": {
-      "footballDataOrgId": 560641
-    },
-    "id": "evt_epl_139"
-  },
-  {
-    "sportId": "football",
-    "competitionId": "epl",
-    "seasonId": "epl_2026_27",
-    "date": "2026-11-07T15:00:00Z",
     "title": "Fulham vs Newcastle United",
     "participants": [
       "team_fulham",
@@ -2319,30 +2296,30 @@
     "sportId": "football",
     "competitionId": "epl",
     "seasonId": "epl_2026_27",
-    "date": "2026-11-07T15:00:00Z",
-    "title": "Everton vs Coventry City",
+    "date": "2026-11-07T17:30:00Z",
+    "title": "Nottingham Forest vs Manchester City",
     "participants": [
-      "team_everton",
-      "team_coventry_city"
+      "team_nottingham_forest",
+      "team_manchester_city"
     ],
     "sportData": {
       "kind": "football_match",
-      "homeTeam": "team_everton",
-      "awayTeam": "team_coventry_city",
+      "homeTeam": "team_nottingham_forest",
+      "awayTeam": "team_manchester_city",
       "venue": null,
       "result": null
     },
     "dataQuality": "verified",
     "externalIds": {
-      "footballDataOrgId": 560634
+      "footballDataOrgId": 560641
     },
-    "id": "evt_epl_141"
+    "id": "evt_epl_139"
   },
   {
     "sportId": "football",
     "competitionId": "epl",
     "seasonId": "epl_2026_27",
-    "date": "2026-11-07T15:00:00Z",
+    "date": "2026-11-08T14:00:00Z",
     "title": "Crystal Palace vs Liverpool",
     "participants": [
       "team_crystal_palace",
@@ -2365,7 +2342,7 @@
     "sportId": "football",
     "competitionId": "epl",
     "seasonId": "epl_2026_27",
-    "date": "2026-11-07T15:00:00Z",
+    "date": "2026-11-08T14:00:00Z",
     "title": "Sunderland vs Chelsea",
     "participants": [
       "team_sunderland",
@@ -2388,7 +2365,7 @@
     "sportId": "football",
     "competitionId": "epl",
     "seasonId": "epl_2026_27",
-    "date": "2026-11-07T15:00:00Z",
+    "date": "2026-11-08T14:00:00Z",
     "title": "Ipswich Town vs AFC Bournemouth",
     "participants": [
       "team_ipswich_town",
@@ -2411,7 +2388,7 @@
     "sportId": "football",
     "competitionId": "epl",
     "seasonId": "epl_2026_27",
-    "date": "2026-11-07T15:00:00Z",
+    "date": "2026-11-08T14:00:00Z",
     "title": "Brighton & Hove Albion vs Brentford",
     "participants": [
       "team_brighton_and_hove_albion",
@@ -2429,6 +2406,52 @@
       "footballDataOrgId": 560638
     },
     "id": "evt_epl_145"
+  },
+  {
+    "id": "evt_epl_069",
+    "sportId": "football",
+    "competitionId": "epl",
+    "seasonId": "epl_2026_27",
+    "date": "2026-11-08T16:30:00Z",
+    "title": "Manchester United vs Aston Villa",
+    "participants": [
+      "team_manchester_united",
+      "team_aston_villa"
+    ],
+    "sportData": {
+      "homeTeam": "team_manchester_united",
+      "awayTeam": "team_aston_villa",
+      "venue": null,
+      "result": null,
+      "kind": "football_match"
+    },
+    "dataQuality": "verified",
+    "externalIds": {
+      "footballDataOrgId": 560639
+    }
+  },
+  {
+    "sportId": "football",
+    "competitionId": "epl",
+    "seasonId": "epl_2026_27",
+    "date": "2026-11-21T12:30:00Z",
+    "title": "Manchester City vs Fulham",
+    "participants": [
+      "team_manchester_city",
+      "team_fulham"
+    ],
+    "sportData": {
+      "kind": "football_match",
+      "homeTeam": "team_manchester_city",
+      "awayTeam": "team_fulham",
+      "venue": null,
+      "result": null
+    },
+    "dataQuality": "verified",
+    "externalIds": {
+      "footballDataOrgId": 560643
+    },
+    "id": "evt_epl_146"
   },
   {
     "id": "evt_epl_070",
@@ -2454,52 +2477,6 @@
     }
   },
   {
-    "id": "evt_epl_071",
-    "sportId": "football",
-    "competitionId": "epl",
-    "seasonId": "epl_2026_27",
-    "date": "2026-11-21T15:00:00Z",
-    "title": "Liverpool vs Manchester United",
-    "participants": [
-      "team_liverpool",
-      "team_manchester_united"
-    ],
-    "sportData": {
-      "homeTeam": "team_liverpool",
-      "awayTeam": "team_manchester_united",
-      "venue": null,
-      "result": null,
-      "kind": "football_match"
-    },
-    "dataQuality": "verified",
-    "externalIds": {
-      "footballDataOrgId": 560645
-    }
-  },
-  {
-    "sportId": "football",
-    "competitionId": "epl",
-    "seasonId": "epl_2026_27",
-    "date": "2026-11-21T15:00:00Z",
-    "title": "Manchester City vs Fulham",
-    "participants": [
-      "team_manchester_city",
-      "team_fulham"
-    ],
-    "sportData": {
-      "kind": "football_match",
-      "homeTeam": "team_manchester_city",
-      "awayTeam": "team_fulham",
-      "venue": null,
-      "result": null
-    },
-    "dataQuality": "verified",
-    "externalIds": {
-      "footballDataOrgId": 560643
-    },
-    "id": "evt_epl_146"
-  },
-  {
     "sportId": "football",
     "competitionId": "epl",
     "seasonId": "epl_2026_27",
@@ -2521,29 +2498,6 @@
       "footballDataOrgId": 560644
     },
     "id": "evt_epl_147"
-  },
-  {
-    "sportId": "football",
-    "competitionId": "epl",
-    "seasonId": "epl_2026_27",
-    "date": "2026-11-21T15:00:00Z",
-    "title": "Hull City vs Brighton & Hove Albion",
-    "participants": [
-      "team_hull_city",
-      "team_brighton_and_hove_albion"
-    ],
-    "sportData": {
-      "kind": "football_match",
-      "homeTeam": "team_hull_city",
-      "awayTeam": "team_brighton_and_hove_albion",
-      "venue": null,
-      "result": null
-    },
-    "dataQuality": "verified",
-    "externalIds": {
-      "footballDataOrgId": 560646
-    },
-    "id": "evt_epl_148"
   },
   {
     "sportId": "football",
@@ -2596,29 +2550,6 @@
     "competitionId": "epl",
     "seasonId": "epl_2026_27",
     "date": "2026-11-21T15:00:00Z",
-    "title": "Brentford vs Everton",
-    "participants": [
-      "team_brentford",
-      "team_everton"
-    ],
-    "sportData": {
-      "kind": "football_match",
-      "homeTeam": "team_brentford",
-      "awayTeam": "team_everton",
-      "venue": null,
-      "result": null
-    },
-    "dataQuality": "verified",
-    "externalIds": {
-      "footballDataOrgId": 560649
-    },
-    "id": "evt_epl_151"
-  },
-  {
-    "sportId": "football",
-    "competitionId": "epl",
-    "seasonId": "epl_2026_27",
-    "date": "2026-11-21T15:00:00Z",
     "title": "Coventry City vs Crystal Palace",
     "participants": [
       "team_coventry_city",
@@ -2641,7 +2572,7 @@
     "sportId": "football",
     "competitionId": "epl",
     "seasonId": "epl_2026_27",
-    "date": "2026-11-21T15:00:00Z",
+    "date": "2026-11-21T17:30:00Z",
     "title": "Newcastle United vs Arsenal",
     "participants": [
       "team_newcastle_united",
@@ -2661,50 +2592,96 @@
     "id": "evt_epl_153"
   },
   {
-    "id": "evt_epl_072",
     "sportId": "football",
     "competitionId": "epl",
     "seasonId": "epl_2026_27",
-    "date": "2026-11-28T15:00:00Z",
-    "title": "Arsenal vs Manchester City",
+    "date": "2026-11-22T14:00:00Z",
+    "title": "Hull City vs Brighton & Hove Albion",
     "participants": [
-      "team_arsenal",
-      "team_manchester_city"
+      "team_hull_city",
+      "team_brighton_and_hove_albion"
     ],
     "sportData": {
-      "homeTeam": "team_arsenal",
-      "awayTeam": "team_manchester_city",
+      "kind": "football_match",
+      "homeTeam": "team_hull_city",
+      "awayTeam": "team_brighton_and_hove_albion",
+      "venue": null,
+      "result": null
+    },
+    "dataQuality": "verified",
+    "externalIds": {
+      "footballDataOrgId": 560646
+    },
+    "id": "evt_epl_148"
+  },
+  {
+    "id": "evt_epl_071",
+    "sportId": "football",
+    "competitionId": "epl",
+    "seasonId": "epl_2026_27",
+    "date": "2026-11-22T16:30:00Z",
+    "title": "Liverpool vs Manchester United",
+    "participants": [
+      "team_liverpool",
+      "team_manchester_united"
+    ],
+    "sportData": {
+      "homeTeam": "team_liverpool",
+      "awayTeam": "team_manchester_united",
       "venue": null,
       "result": null,
       "kind": "football_match"
     },
     "dataQuality": "verified",
     "externalIds": {
-      "footballDataOrgId": 560654
+      "footballDataOrgId": 560645
     }
   },
   {
-    "id": "evt_epl_073",
     "sportId": "football",
     "competitionId": "epl",
     "seasonId": "epl_2026_27",
-    "date": "2026-11-28T15:00:00Z",
-    "title": "Everton vs Liverpool",
+    "date": "2026-11-23T20:00:00Z",
+    "title": "Brentford vs Everton",
     "participants": [
-      "team_everton",
-      "team_liverpool"
+      "team_brentford",
+      "team_everton"
     ],
     "sportData": {
-      "homeTeam": "team_everton",
-      "awayTeam": "team_liverpool",
+      "kind": "football_match",
+      "homeTeam": "team_brentford",
+      "awayTeam": "team_everton",
       "venue": null,
-      "result": null,
-      "kind": "football_match"
+      "result": null
     },
     "dataQuality": "verified",
     "externalIds": {
-      "footballDataOrgId": 560656
-    }
+      "footballDataOrgId": 560649
+    },
+    "id": "evt_epl_151"
+  },
+  {
+    "sportId": "football",
+    "competitionId": "epl",
+    "seasonId": "epl_2026_27",
+    "date": "2026-11-27T20:00:00Z",
+    "title": "Nottingham Forest vs Chelsea",
+    "participants": [
+      "team_nottingham_forest",
+      "team_chelsea"
+    ],
+    "sportData": {
+      "kind": "football_match",
+      "homeTeam": "team_nottingham_forest",
+      "awayTeam": "team_chelsea",
+      "venue": null,
+      "result": null
+    },
+    "dataQuality": "verified",
+    "externalIds": {
+      "footballDataOrgId": 560658
+    },
+    "id": "evt_epl_158"
   },
   {
     "sportId": "football",
@@ -2734,29 +2711,6 @@
     "competitionId": "epl",
     "seasonId": "epl_2026_27",
     "date": "2026-11-28T15:00:00Z",
-    "title": "Ipswich Town vs Aston Villa",
-    "participants": [
-      "team_ipswich_town",
-      "team_aston_villa"
-    ],
-    "sportData": {
-      "kind": "football_match",
-      "homeTeam": "team_ipswich_town",
-      "awayTeam": "team_aston_villa",
-      "venue": null,
-      "result": null
-    },
-    "dataQuality": "verified",
-    "externalIds": {
-      "footballDataOrgId": 560653
-    },
-    "id": "evt_epl_155"
-  },
-  {
-    "sportId": "football",
-    "competitionId": "epl",
-    "seasonId": "epl_2026_27",
-    "date": "2026-11-28T15:00:00Z",
     "title": "Manchester United vs Brentford",
     "participants": [
       "team_manchester_united",
@@ -2779,7 +2733,53 @@
     "sportId": "football",
     "competitionId": "epl",
     "seasonId": "epl_2026_27",
-    "date": "2026-11-28T15:00:00Z",
+    "date": "2026-11-28T17:30:00Z",
+    "title": "Ipswich Town vs Aston Villa",
+    "participants": [
+      "team_ipswich_town",
+      "team_aston_villa"
+    ],
+    "sportData": {
+      "kind": "football_match",
+      "homeTeam": "team_ipswich_town",
+      "awayTeam": "team_aston_villa",
+      "venue": null,
+      "result": null
+    },
+    "dataQuality": "verified",
+    "externalIds": {
+      "footballDataOrgId": 560653
+    },
+    "id": "evt_epl_155"
+  },
+  {
+    "id": "evt_epl_073",
+    "sportId": "football",
+    "competitionId": "epl",
+    "seasonId": "epl_2026_27",
+    "date": "2026-11-29T12:00:00Z",
+    "title": "Everton vs Liverpool",
+    "participants": [
+      "team_everton",
+      "team_liverpool"
+    ],
+    "sportData": {
+      "homeTeam": "team_everton",
+      "awayTeam": "team_liverpool",
+      "venue": null,
+      "result": null,
+      "kind": "football_match"
+    },
+    "dataQuality": "verified",
+    "externalIds": {
+      "footballDataOrgId": 560656
+    }
+  },
+  {
+    "sportId": "football",
+    "competitionId": "epl",
+    "seasonId": "epl_2026_27",
+    "date": "2026-11-29T14:05:00Z",
     "title": "Fulham vs AFC Bournemouth",
     "participants": [
       "team_fulham",
@@ -2802,30 +2802,7 @@
     "sportId": "football",
     "competitionId": "epl",
     "seasonId": "epl_2026_27",
-    "date": "2026-11-28T15:00:00Z",
-    "title": "Nottingham Forest vs Chelsea",
-    "participants": [
-      "team_nottingham_forest",
-      "team_chelsea"
-    ],
-    "sportData": {
-      "kind": "football_match",
-      "homeTeam": "team_nottingham_forest",
-      "awayTeam": "team_chelsea",
-      "venue": null,
-      "result": null
-    },
-    "dataQuality": "verified",
-    "externalIds": {
-      "footballDataOrgId": 560658
-    },
-    "id": "evt_epl_158"
-  },
-  {
-    "sportId": "football",
-    "competitionId": "epl",
-    "seasonId": "epl_2026_27",
-    "date": "2026-11-28T15:00:00Z",
+    "date": "2026-11-29T14:05:00Z",
     "title": "Brighton & Hove Albion vs Newcastle United",
     "participants": [
       "team_brighton_and_hove_albion",
@@ -2848,7 +2825,7 @@
     "sportId": "football",
     "competitionId": "epl",
     "seasonId": "epl_2026_27",
-    "date": "2026-11-28T15:00:00Z",
+    "date": "2026-11-29T14:05:00Z",
     "title": "Sunderland vs Tottenham Hotspur",
     "participants": [
       "team_sunderland",
@@ -2871,7 +2848,7 @@
     "sportId": "football",
     "competitionId": "epl",
     "seasonId": "epl_2026_27",
-    "date": "2026-11-28T15:00:00Z",
+    "date": "2026-11-29T14:05:00Z",
     "title": "Crystal Palace vs Hull City",
     "participants": [
       "team_crystal_palace",
@@ -2889,6 +2866,29 @@
       "footballDataOrgId": 560661
     },
     "id": "evt_epl_161"
+  },
+  {
+    "id": "evt_epl_072",
+    "sportId": "football",
+    "competitionId": "epl",
+    "seasonId": "epl_2026_27",
+    "date": "2026-11-29T16:30:00Z",
+    "title": "Arsenal vs Manchester City",
+    "participants": [
+      "team_arsenal",
+      "team_manchester_city"
+    ],
+    "sportData": {
+      "homeTeam": "team_arsenal",
+      "awayTeam": "team_manchester_city",
+      "venue": null,
+      "result": null,
+      "kind": "football_match"
+    },
+    "dataQuality": "verified",
+    "externalIds": {
+      "footballDataOrgId": 560654
+    }
   },
   {
     "sportId": "football",
