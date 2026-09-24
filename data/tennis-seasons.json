@@ -465,6 +465,11 @@
     "label": "2025"
   },
   {
+    "id": "tennis_atp_chengdu_2026",
+    "competitionId": "tennis_atp_chengdu",
+    "label": "2026"
+  },
+  {
     "id": "tennis_atp_cincinnati_masters_2020",
     "competitionId": "tennis_atp_cincinnati_masters",
     "label": "2020"
@@ -3190,6 +3195,11 @@
     "label": "2025"
   },
   {
+    "id": "tennis_atp_hangzhou_2026",
+    "competitionId": "tennis_atp_hangzhou",
+    "label": "2026"
+  },
+  {
     "id": "tennis_atp_hong_kong_2024",
     "competitionId": "tennis_atp_hong_kong",
     "label": "2024"
@@ -4753,6 +4763,11 @@
     "id": "tennis_wta_bjk_cup_finals_2025",
     "competitionId": "tennis_wta_bjk_cup_finals",
     "label": "2025"
+  },
+  {
+    "id": "tennis_wta_bjk_cup_finals_2026",
+    "competitionId": "tennis_wta_bjk_cup_finals",
+    "label": "2026"
   },
   {
     "id": "tennis_wta_bjk_cup_finals_f_rtf_vs_sui_2021",
