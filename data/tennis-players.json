@@ -4015,6 +4015,11 @@
     "name": "Jana Kovackova"
   },
   {
+    "id": "tennis_player_wta_260445",
+    "sportId": "tennis",
+    "name": "Jana Otzipka"
+  },
+  {
     "id": "tennis_player_wta_222145",
     "sportId": "tennis",
     "name": "Janice Tjen"
@@ -9323,6 +9328,11 @@
     "id": "tennis_player_wta_327252",
     "sportId": "tennis",
     "name": "Yeonwoo Ku"
+  },
+  {
+    "id": "tennis_player_wta_322417",
+    "sportId": "tennis",
+    "name": "Yexin Ma"
   },
   {
     "id": "tennis_player_atp_Z0CQ",
