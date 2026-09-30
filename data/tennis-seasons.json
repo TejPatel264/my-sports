@@ -4600,6 +4600,11 @@
     "label": "2025"
   },
   {
+    "id": "tennis_wta_beijing_2026",
+    "competitionId": "tennis_wta_beijing",
+    "label": "2026"
+  },
+  {
     "id": "tennis_wta_belgrade_2021",
     "competitionId": "tennis_wta_belgrade",
     "label": "2021"
