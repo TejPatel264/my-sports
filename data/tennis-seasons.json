@@ -335,6 +335,11 @@
     "label": "2025"
   },
   {
+    "id": "tennis_atp_beijing_2026",
+    "competitionId": "tennis_atp_beijing",
+    "label": "2026"
+  },
+  {
     "id": "tennis_atp_belgrade_2021",
     "competitionId": "tennis_atp_belgrade",
     "label": "2021"
@@ -4168,6 +4173,11 @@
     "id": "tennis_atp_tokyo_2025",
     "competitionId": "tennis_atp_tokyo",
     "label": "2025"
+  },
+  {
+    "id": "tennis_atp_tokyo_2026",
+    "competitionId": "tennis_atp_tokyo",
+    "label": "2026"
   },
   {
     "id": "tennis_atp_tokyo_olympics_2021",
