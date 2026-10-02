@@ -9185,6 +9185,11 @@
     "name": "Xin Tong Wang"
   },
   {
+    "id": "tennis_player_wta_335958",
+    "sportId": "tennis",
+    "name": "Xinran Sun"
+  },
+  {
     "id": "tennis_player_wta_252587",
     "sportId": "tennis",
     "name": "Xinxin Yao"
@@ -9345,6 +9350,11 @@
     "name": "Yibing Wu"
   },
   {
+    "id": "tennis_player_wta_333677",
+    "sportId": "tennis",
+    "name": "Yihan Qu"
+  },
+  {
     "id": "tennis_player_wta_202504",
     "sportId": "tennis",
     "name": "Ying Ying Duan"
@@ -9398,6 +9408,11 @@
     "id": "tennis_player_wta_204760",
     "sportId": "tennis",
     "name": "Yu Jin Wang"
+  },
+  {
+    "id": "tennis_player_wta_335197",
+    "sportId": "tennis",
+    "name": "Yu Jun Lin"
   },
   {
     "id": "tennis_player_wta_206294",
@@ -9478,6 +9493,11 @@
     "id": "tennis_player_wta_213908",
     "sportId": "tennis",
     "name": "Yuriko Miyazaki"
+  },
+  {
+    "id": "tennis_player_wta_335219",
+    "sportId": "tennis",
+    "name": "Yushan Shao"
   },
   {
     "id": "tennis_player_atp_S0AQ",
