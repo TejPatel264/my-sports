@@ -3707,29 +3707,6 @@
     "competitionId": "championship",
     "seasonId": "championship_2026_27",
     "date": "2026-11-03T19:45:00Z",
-    "title": "Birmingham City vs Millwall",
-    "participants": [
-      "team_birmingham_city",
-      "team_millwall"
-    ],
-    "sportData": {
-      "kind": "football_match",
-      "homeTeam": "team_birmingham_city",
-      "awayTeam": "team_millwall",
-      "venue": null,
-      "result": null
-    },
-    "dataQuality": "verified",
-    "externalIds": {
-      "footballDataOrgId": 561917
-    },
-    "id": "evt_championship_162"
-  },
-  {
-    "sportId": "football",
-    "competitionId": "championship",
-    "seasonId": "championship_2026_27",
-    "date": "2026-11-03T19:45:00Z",
     "title": "Portsmouth vs Swansea City",
     "participants": [
       "team_portsmouth",
@@ -3770,6 +3747,29 @@
       "footballDataOrgId": 561919
     },
     "id": "evt_championship_164"
+  },
+  {
+    "sportId": "football",
+    "competitionId": "championship",
+    "seasonId": "championship_2026_27",
+    "date": "2026-11-03T20:00:00Z",
+    "title": "Birmingham City vs Millwall",
+    "participants": [
+      "team_birmingham_city",
+      "team_millwall"
+    ],
+    "sportData": {
+      "kind": "football_match",
+      "homeTeam": "team_birmingham_city",
+      "awayTeam": "team_millwall",
+      "venue": null,
+      "result": null
+    },
+    "dataQuality": "verified",
+    "externalIds": {
+      "footballDataOrgId": 561917
+    },
+    "id": "evt_championship_162"
   },
   {
     "sportId": "football",
