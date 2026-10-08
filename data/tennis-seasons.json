@@ -4045,6 +4045,11 @@
     "label": "2025"
   },
   {
+    "id": "tennis_atp_shanghai_2026",
+    "competitionId": "tennis_atp_shanghai",
+    "label": "2026"
+  },
+  {
     "id": "tennis_atp_shanghai_masters_2023",
     "competitionId": "tennis_atp_shanghai_masters",
     "label": "2023"
