@@ -345373,7 +345373,7 @@
       "kind": "cricket_t20",
       "matchFormat": "T20",
       "round": "Sweden tour of Indonesia, Match 6",
-      "venue": "Udayana Cricket Ground",
+      "venue": "Udayana Cricket Ground, Bali",
       "result": "Sweden won by 87 runs",
       "toss": {
         "winner": "Sweden",
@@ -372472,5 +372472,1741 @@
       "cricsheetId": "1550475"
     },
     "id": "evt_cricket_13235"
+  },
+  {
+    "sportId": "cricket",
+    "competitionId": "odi_cricket_men",
+    "seasonId": "odi_cricket_men_2026",
+    "date": "2026-09-18T00:00:00Z",
+    "title": "Australia vs Zimbabwe",
+    "participants": [
+      "cricket_team_australia",
+      "cricket_team_zimbabwe"
+    ],
+    "sportData": {
+      "kind": "cricket_t20",
+      "matchFormat": "ODI",
+      "round": "Australia tour of Zimbabwe, Match 2",
+      "venue": "Harare Sports Club",
+      "result": "Australia won by 84 runs",
+      "toss": {
+        "winner": "Zimbabwe",
+        "decision": "field"
+      },
+      "playerOfMatch": "TM Head"
+    },
+    "dataQuality": "verified",
+    "externalIds": {
+      "cricsheetId": "1530204"
+    },
+    "id": "evt_cricket_13247"
+  },
+  {
+    "sportId": "cricket",
+    "competitionId": "t20i_cricket_men",
+    "seasonId": "t20i_cricket_men_2026",
+    "date": "2026-09-18T00:00:00Z",
+    "title": "Uganda vs Kenya",
+    "participants": [
+      "cricket_team_uganda",
+      "cricket_team_kenya"
+    ],
+    "sportData": {
+      "kind": "cricket_t20",
+      "matchFormat": "T20",
+      "round": "Africa Continental Cup, Match 19",
+      "venue": "Gahanga International Cricket Stadium",
+      "result": "Uganda won by 47 runs",
+      "toss": {
+        "winner": "Uganda",
+        "decision": "bat"
+      },
+      "playerOfMatch": "Olipa Gerald"
+    },
+    "dataQuality": "verified",
+    "externalIds": {
+      "cricsheetId": "1552924"
+    },
+    "id": "evt_cricket_13269"
+  },
+  {
+    "sportId": "cricket",
+    "competitionId": "t20i_cricket_men",
+    "seasonId": "t20i_cricket_men_2026",
+    "date": "2026-09-18T00:00:00Z",
+    "title": "Botswana vs Sierra Leone",
+    "participants": [
+      "cricket_team_botswana",
+      "cricket_team_sierra_leone"
+    ],
+    "sportData": {
+      "kind": "cricket_t20",
+      "matchFormat": "T20",
+      "round": "Africa Continental Cup, Match 20",
+      "venue": "Gahanga International Cricket Stadium",
+      "result": "Botswana won by 21 runs",
+      "toss": {
+        "winner": "Sierra Leone",
+        "decision": "field"
+      },
+      "playerOfMatch": "R Coker"
+    },
+    "dataQuality": "verified",
+    "externalIds": {
+      "cricsheetId": "1552925"
+    },
+    "id": "evt_cricket_13270"
+  },
+  {
+    "sportId": "cricket",
+    "competitionId": "t20i_cricket_women",
+    "seasonId": "t20i_cricket_women_2026",
+    "date": "2026-09-18T00:00:00Z",
+    "title": "Sri Lanka vs Malaysia",
+    "participants": [
+      "cricket_team_sri_lanka",
+      "cricket_team_malaysia"
+    ],
+    "sportData": {
+      "kind": "cricket_t20",
+      "matchFormat": "T20",
+      "round": "Asian Games Women's Cricket Competition",
+      "venue": "Korogi Sports Park",
+      "result": "Sri Lanka won by 86 runs",
+      "toss": {
+        "winner": "Sri Lanka",
+        "decision": "bat"
+      },
+      "playerOfMatch": null
+    },
+    "dataQuality": "verified",
+    "externalIds": {
+      "cricsheetId": "1550476"
+    },
+    "id": "evt_cricket_13289"
+  },
+  {
+    "sportId": "cricket",
+    "competitionId": "t20i_cricket_women",
+    "seasonId": "t20i_cricket_women_2026",
+    "date": "2026-09-18T00:00:00Z",
+    "title": "Japan vs India",
+    "participants": [
+      "cricket_team_japan",
+      "cricket_team_india"
+    ],
+    "sportData": {
+      "kind": "cricket_t20",
+      "matchFormat": "T20",
+      "round": "Asian Games Women's Cricket Competition",
+      "venue": "Korogi Sports Park",
+      "result": "India won by 8 wickets",
+      "toss": {
+        "winner": "India",
+        "decision": "field"
+      },
+      "playerOfMatch": null
+    },
+    "dataQuality": "verified",
+    "externalIds": {
+      "cricsheetId": "1550477"
+    },
+    "id": "evt_cricket_13290"
+  },
+  {
+    "sportId": "cricket",
+    "competitionId": "t20i_cricket_men",
+    "seasonId": "t20i_cricket_men_2026",
+    "date": "2026-09-19T00:00:00Z",
+    "title": "Sri Lanka vs England",
+    "participants": [
+      "cricket_team_sri_lanka",
+      "cricket_team_england"
+    ],
+    "sportData": {
+      "kind": "cricket_t20",
+      "matchFormat": "T20",
+      "round": "Sri Lanka tour of England, Match 3",
+      "venue": "Old Trafford",
+      "result": "England won by 8 wickets",
+      "toss": {
+        "winner": "England",
+        "decision": "field"
+      },
+      "playerOfMatch": "S Baker"
+    },
+    "dataQuality": "verified",
+    "externalIds": {
+      "cricsheetId": "1496587"
+    },
+    "id": "evt_cricket_13254"
+  },
+  {
+    "sportId": "cricket",
+    "competitionId": "t20i_cricket_men",
+    "seasonId": "t20i_cricket_men_2026",
+    "date": "2026-09-19T00:00:00Z",
+    "title": "Japan vs Hong Kong",
+    "participants": [
+      "cricket_team_japan",
+      "cricket_team_hong_kong"
+    ],
+    "sportData": {
+      "kind": "cricket_t20",
+      "matchFormat": "T20",
+      "round": "Hong Kong tour of Japan, Match 1",
+      "venue": "Sano International Cricket Ground",
+      "result": "Hong Kong won by 4 wickets",
+      "toss": {
+        "winner": "Japan",
+        "decision": "bat"
+      },
+      "playerOfMatch": "Ehsan Khan"
+    },
+    "dataQuality": "verified",
+    "externalIds": {
+      "cricsheetId": "1552306"
+    },
+    "id": "evt_cricket_13256"
+  },
+  {
+    "sportId": "cricket",
+    "competitionId": "t20i_cricket_men",
+    "seasonId": "t20i_cricket_men_2026",
+    "date": "2026-09-19T00:00:00Z",
+    "title": "Kenya vs Uganda",
+    "participants": [
+      "cricket_team_kenya",
+      "cricket_team_uganda"
+    ],
+    "sportData": {
+      "kind": "cricket_t20",
+      "matchFormat": "T20",
+      "round": "Africa Continental Cup",
+      "venue": "Gahanga International Cricket Stadium",
+      "result": "Kenya won by 39 runs",
+      "toss": {
+        "winner": "Kenya",
+        "decision": "bat"
+      },
+      "playerOfMatch": "Riazat Ali Shah"
+    },
+    "dataQuality": "verified",
+    "externalIds": {
+      "cricsheetId": "1552926"
+    },
+    "id": "evt_cricket_13271"
+  },
+  {
+    "sportId": "cricket",
+    "competitionId": "t20i_cricket_women",
+    "seasonId": "t20i_cricket_women_2026",
+    "date": "2026-09-19T00:00:00Z",
+    "title": "South Africa vs Zimbabwe",
+    "participants": [
+      "cricket_team_south_africa",
+      "cricket_team_zimbabwe"
+    ],
+    "sportData": {
+      "kind": "cricket_t20",
+      "matchFormat": "T20",
+      "round": "South Africa Women tour of Zimbabwe, Match 5",
+      "venue": "Queens Sports Club, Bulawayo",
+      "result": "South Africa won by 14 runs",
+      "toss": {
+        "winner": "South Africa",
+        "decision": "bat"
+      },
+      "playerOfMatch": "N Nini"
+    },
+    "dataQuality": "verified",
+    "externalIds": {
+      "cricsheetId": "1543891"
+    },
+    "id": "evt_cricket_13288"
+  },
+  {
+    "sportId": "cricket",
+    "competitionId": "odi_cricket_men",
+    "seasonId": "odi_cricket_men_2026",
+    "date": "2026-09-20T00:00:00Z",
+    "title": "Zimbabwe vs Australia",
+    "participants": [
+      "cricket_team_zimbabwe",
+      "cricket_team_australia"
+    ],
+    "sportData": {
+      "kind": "cricket_t20",
+      "matchFormat": "ODI",
+      "round": "Australia tour of Zimbabwe, Match 3",
+      "venue": "Harare Sports Club",
+      "result": "Australia won by 1 wicket",
+      "toss": {
+        "winner": "Zimbabwe",
+        "decision": "bat"
+      },
+      "playerOfMatch": "JP Inglis"
+    },
+    "dataQuality": "verified",
+    "externalIds": {
+      "cricsheetId": "1530205"
+    },
+    "id": "evt_cricket_13248"
+  },
+  {
+    "sportId": "cricket",
+    "competitionId": "t20i_cricket_women",
+    "seasonId": "t20i_cricket_women_2026",
+    "date": "2026-09-20T00:00:00Z",
+    "title": "Pakistan vs Sri Lanka",
+    "participants": [
+      "cricket_team_pakistan",
+      "cricket_team_sri_lanka"
+    ],
+    "sportData": {
+      "kind": "cricket_t20",
+      "matchFormat": "T20",
+      "round": "Asian Games Women's Cricket Competition",
+      "venue": "Korogi Sports Park",
+      "result": "Sri Lanka won by 8 wickets",
+      "toss": {
+        "winner": "Sri Lanka",
+        "decision": "field"
+      },
+      "playerOfMatch": null
+    },
+    "dataQuality": "verified",
+    "externalIds": {
+      "cricsheetId": "1550478"
+    },
+    "id": "evt_cricket_13291"
+  },
+  {
+    "sportId": "cricket",
+    "competitionId": "t20i_cricket_women",
+    "seasonId": "t20i_cricket_women_2026",
+    "date": "2026-09-20T00:00:00Z",
+    "title": "India vs Bangladesh",
+    "participants": [
+      "cricket_team_india",
+      "cricket_team_bangladesh"
+    ],
+    "sportData": {
+      "kind": "cricket_t20",
+      "matchFormat": "T20",
+      "round": "Asian Games Women's Cricket Competition",
+      "venue": "Korogi Sports Park",
+      "result": "India won by 114 runs",
+      "toss": {
+        "winner": "India",
+        "decision": "bat"
+      },
+      "playerOfMatch": null
+    },
+    "dataQuality": "verified",
+    "externalIds": {
+      "cricsheetId": "1550479"
+    },
+    "id": "evt_cricket_13292"
+  },
+  {
+    "sportId": "cricket",
+    "competitionId": "t20i_cricket_men",
+    "seasonId": "t20i_cricket_men_2026",
+    "date": "2026-09-21T00:00:00Z",
+    "title": "Ghana vs Nigeria",
+    "participants": [
+      "cricket_team_ghana",
+      "cricket_team_nigeria"
+    ],
+    "sportData": {
+      "kind": "cricket_t20",
+      "matchFormat": "T20",
+      "round": "Nigeria Quadrangular T20 Series, Match 2",
+      "venue": "Tafawa Balewa Square Cricket Oval, Lagos",
+      "result": "Nigeria won by 8 wickets",
+      "toss": {
+        "winner": "Ghana",
+        "decision": "bat"
+      },
+      "playerOfMatch": "M Akhigbe"
+    },
+    "dataQuality": "verified",
+    "externalIds": {
+      "cricsheetId": "1554583"
+    },
+    "id": "evt_cricket_13278"
+  },
+  {
+    "sportId": "cricket",
+    "competitionId": "odi_cricket_men",
+    "seasonId": "odi_cricket_men_2026",
+    "date": "2026-09-22T00:00:00Z",
+    "title": "England vs Sri Lanka",
+    "participants": [
+      "cricket_team_england",
+      "cricket_team_sri_lanka"
+    ],
+    "sportData": {
+      "kind": "cricket_t20",
+      "matchFormat": "ODI",
+      "round": "Sri Lanka tour of England, Match 1",
+      "venue": "Riverside Ground, Chester-le-Street",
+      "result": "England won by 89 runs",
+      "toss": {
+        "winner": "England",
+        "decision": "bat"
+      },
+      "playerOfMatch": "WG Jacks"
+    },
+    "dataQuality": "verified",
+    "externalIds": {
+      "cricsheetId": "1496588"
+    },
+    "id": "evt_cricket_13238"
+  },
+  {
+    "sportId": "cricket",
+    "competitionId": "t20i_cricket_men",
+    "seasonId": "t20i_cricket_men_2026",
+    "date": "2026-09-22T00:00:00Z",
+    "title": "India vs Japan",
+    "participants": [
+      "cricket_team_india",
+      "cricket_team_japan"
+    ],
+    "sportData": {
+      "kind": "cricket_t20",
+      "matchFormat": "T20",
+      "round": "India tour of Japan",
+      "venue": "Sano International Cricket Ground",
+      "result": "India won by 2 runs",
+      "toss": {
+        "winner": "India",
+        "decision": "bat"
+      },
+      "playerOfMatch": "SS Iyer"
+    },
+    "dataQuality": "verified",
+    "externalIds": {
+      "cricsheetId": "1552859"
+    },
+    "id": "evt_cricket_13268"
+  },
+  {
+    "sportId": "cricket",
+    "competitionId": "t20i_cricket_men",
+    "seasonId": "t20i_cricket_men_2026",
+    "date": "2026-09-22T00:00:00Z",
+    "title": "Ghana vs Sierra Leone",
+    "participants": [
+      "cricket_team_ghana",
+      "cricket_team_sierra_leone"
+    ],
+    "sportData": {
+      "kind": "cricket_t20",
+      "matchFormat": "T20",
+      "round": "Nigeria Quadrangular T20 Series, Match 3",
+      "venue": "Tafawa Balewa Square Cricket Oval, Lagos",
+      "result": "Sierra Leone won by 6 wickets",
+      "toss": {
+        "winner": "Ghana",
+        "decision": "bat"
+      },
+      "playerOfMatch": "AB Kamara"
+    },
+    "dataQuality": "verified",
+    "externalIds": {
+      "cricsheetId": "1554585"
+    },
+    "id": "evt_cricket_13279"
+  },
+  {
+    "sportId": "cricket",
+    "competitionId": "t20i_cricket_women",
+    "seasonId": "t20i_cricket_women_2026",
+    "date": "2026-09-22T00:00:00Z",
+    "title": "Pakistan vs Bangladesh",
+    "participants": [
+      "cricket_team_pakistan",
+      "cricket_team_bangladesh"
+    ],
+    "sportData": {
+      "kind": "cricket_t20",
+      "matchFormat": "T20",
+      "round": "Asian Games Women's Cricket Competition",
+      "venue": "Korogi Sports Park",
+      "result": "Pakistan won by 31 runs",
+      "toss": {
+        "winner": "Pakistan",
+        "decision": "bat"
+      },
+      "playerOfMatch": null
+    },
+    "dataQuality": "verified",
+    "externalIds": {
+      "cricsheetId": "1550480"
+    },
+    "id": "evt_cricket_13293"
+  },
+  {
+    "sportId": "cricket",
+    "competitionId": "t20i_cricket_women",
+    "seasonId": "t20i_cricket_women_2026",
+    "date": "2026-09-22T00:00:00Z",
+    "title": "India vs Sri Lanka",
+    "participants": [
+      "cricket_team_india",
+      "cricket_team_sri_lanka"
+    ],
+    "sportData": {
+      "kind": "cricket_t20",
+      "matchFormat": "T20",
+      "round": "Asian Games Women's Cricket Competition",
+      "venue": "Korogi Sports Park",
+      "result": "India won by 147 runs",
+      "toss": {
+        "winner": "India",
+        "decision": "bat"
+      },
+      "playerOfMatch": null
+    },
+    "dataQuality": "verified",
+    "externalIds": {
+      "cricsheetId": "1550481"
+    },
+    "id": "evt_cricket_13294"
+  },
+  {
+    "sportId": "cricket",
+    "competitionId": "t20i_cricket_men",
+    "seasonId": "t20i_cricket_men_2026",
+    "date": "2026-09-23T00:00:00Z",
+    "title": "Cayman Islands vs Bermuda",
+    "participants": [
+      "cricket_team_cayman_islands",
+      "cricket_team_bermuda"
+    ],
+    "sportData": {
+      "kind": "cricket_t20",
+      "matchFormat": "T20",
+      "round": "North America Cup, Match 2",
+      "venue": "Jimmy Powell Oval, Cayman Islands",
+      "result": "Bermuda won by 10 wickets",
+      "toss": {
+        "winner": "Cayman Islands",
+        "decision": "bat"
+      },
+      "playerOfMatch": "DMW Rawlins"
+    },
+    "dataQuality": "verified",
+    "externalIds": {
+      "cricsheetId": "1552797"
+    },
+    "id": "evt_cricket_13265"
+  },
+  {
+    "sportId": "cricket",
+    "competitionId": "t20i_cricket_men",
+    "seasonId": "t20i_cricket_men_2026",
+    "date": "2026-09-23T00:00:00Z",
+    "title": "Bermuda vs Cayman Islands",
+    "participants": [
+      "cricket_team_bermuda",
+      "cricket_team_cayman_islands"
+    ],
+    "sportData": {
+      "kind": "cricket_t20",
+      "matchFormat": "T20",
+      "round": "North America Cup, Match 1",
+      "venue": "Jimmy Powell Oval, Cayman Islands",
+      "result": "Cayman Islands won by 2 wickets",
+      "toss": {
+        "winner": "Bermuda",
+        "decision": "bat"
+      },
+      "playerOfMatch": null
+    },
+    "dataQuality": "verified",
+    "externalIds": {
+      "cricsheetId": "1555386"
+    },
+    "id": "evt_cricket_13287"
+  },
+  {
+    "sportId": "cricket",
+    "competitionId": "t20i_cricket_women",
+    "seasonId": "t20i_cricket_women_2026",
+    "date": "2026-09-23T00:00:00Z",
+    "title": "Chile vs Costa Rica",
+    "participants": [
+      "cricket_team_chile",
+      "cricket_team_costa_rica"
+    ],
+    "sportData": {
+      "kind": "cricket_t20",
+      "matchFormat": "T20",
+      "round": "South American Women's Championships, Match 2",
+      "venue": "Pocos Oval, Pocos de Caldas",
+      "result": "Costa Rica won by 9 wickets",
+      "toss": {
+        "winner": "Chile",
+        "decision": "bat"
+      },
+      "playerOfMatch": "MA Cano"
+    },
+    "dataQuality": "verified",
+    "externalIds": {
+      "cricsheetId": "1555256"
+    },
+    "id": "evt_cricket_13298"
+  },
+  {
+    "sportId": "cricket",
+    "competitionId": "odi_cricket_men",
+    "seasonId": "odi_cricket_men_2026",
+    "date": "2026-09-24T00:00:00Z",
+    "title": "Sri Lanka vs England",
+    "participants": [
+      "cricket_team_sri_lanka",
+      "cricket_team_england"
+    ],
+    "sportData": {
+      "kind": "cricket_t20",
+      "matchFormat": "ODI",
+      "round": "Sri Lanka tour of England, Match 2",
+      "venue": "Headingley",
+      "result": "Sri Lanka won by 16 runs",
+      "toss": {
+        "winner": "Sri Lanka",
+        "decision": "bat"
+      },
+      "playerOfMatch": "BKG Mendis"
+    },
+    "dataQuality": "verified",
+    "externalIds": {
+      "cricsheetId": "1496589"
+    },
+    "id": "evt_cricket_13239"
+  },
+  {
+    "sportId": "cricket",
+    "competitionId": "odi_cricket_men",
+    "seasonId": "odi_cricket_men_2026_27",
+    "date": "2026-09-24T00:00:00Z",
+    "title": "South Africa vs Australia",
+    "participants": [
+      "cricket_team_south_africa",
+      "cricket_team_australia"
+    ],
+    "sportData": {
+      "kind": "cricket_t20",
+      "matchFormat": "ODI",
+      "round": "Australia tour of South Africa, Match 1",
+      "venue": "Kingsmead, Durban",
+      "result": "South Africa won by 67 runs",
+      "toss": {
+        "winner": "Australia",
+        "decision": "field"
+      },
+      "playerOfMatch": "MP Breetzke"
+    },
+    "dataQuality": "verified",
+    "externalIds": {
+      "cricsheetId": "1525655"
+    },
+    "id": "evt_cricket_13241"
+  },
+  {
+    "sportId": "cricket",
+    "competitionId": "odi_cricket_women",
+    "seasonId": "odi_cricket_women_2026",
+    "date": "2026-09-24T00:00:00Z",
+    "title": "West Indies vs Zimbabwe",
+    "participants": [
+      "cricket_team_west_indies",
+      "cricket_team_zimbabwe"
+    ],
+    "sportData": {
+      "kind": "cricket_t20",
+      "matchFormat": "ODI",
+      "round": "West Indies Women tour of Zimbabwe, Match 1",
+      "venue": "Harare Sports Club",
+      "result": "West Indies won by 99 runs",
+      "toss": {
+        "winner": "West Indies",
+        "decision": "bat"
+      },
+      "playerOfMatch": "HK Matthews"
+    },
+    "dataQuality": "verified",
+    "externalIds": {
+      "cricsheetId": "1554975"
+    },
+    "id": "evt_cricket_13251"
+  },
+  {
+    "sportId": "cricket",
+    "competitionId": "t20i_cricket_men",
+    "seasonId": "t20i_cricket_men_2026",
+    "date": "2026-09-24T00:00:00Z",
+    "title": "Hong Kong vs Malaysia",
+    "participants": [
+      "cricket_team_hong_kong",
+      "cricket_team_malaysia"
+    ],
+    "sportData": {
+      "kind": "cricket_t20",
+      "matchFormat": "T20",
+      "round": "Asian Games Men's Cricket Competition, Match 2",
+      "venue": "Korogi Sports Park",
+      "result": "Malaysia won by 8 wickets",
+      "toss": {
+        "winner": "Hong Kong",
+        "decision": "bat"
+      },
+      "playerOfMatch": null
+    },
+    "dataQuality": "verified",
+    "externalIds": {
+      "cricsheetId": "1552767"
+    },
+    "id": "evt_cricket_13257"
+  },
+  {
+    "sportId": "cricket",
+    "competitionId": "t20i_cricket_men",
+    "seasonId": "t20i_cricket_men_2026",
+    "date": "2026-09-24T00:00:00Z",
+    "title": "Cayman Islands vs Bahamas",
+    "participants": [
+      "cricket_team_cayman_islands",
+      "cricket_team_bahamas"
+    ],
+    "sportData": {
+      "kind": "cricket_t20",
+      "matchFormat": "T20",
+      "round": "North America Cup, Match 3",
+      "venue": "Jimmy Powell Oval, Cayman Islands",
+      "result": "Cayman Islands won by 131 runs",
+      "toss": {
+        "winner": "Bahamas",
+        "decision": "field"
+      },
+      "playerOfMatch": "J Baker"
+    },
+    "dataQuality": "verified",
+    "externalIds": {
+      "cricsheetId": "1552795"
+    },
+    "id": "evt_cricket_13264"
+  },
+  {
+    "sportId": "cricket",
+    "competitionId": "t20i_cricket_men",
+    "seasonId": "t20i_cricket_men_2026",
+    "date": "2026-09-25T00:00:00Z",
+    "title": "Hong Kong vs Oman",
+    "participants": [
+      "cricket_team_hong_kong",
+      "cricket_team_oman"
+    ],
+    "sportData": {
+      "kind": "cricket_t20",
+      "matchFormat": "T20",
+      "round": "Asian Games Men's Cricket Competition, Match 3",
+      "venue": "Korogi Sports Park",
+      "result": "Hong Kong won by 41 runs",
+      "toss": {
+        "winner": "Hong Kong",
+        "decision": "bat"
+      },
+      "playerOfMatch": null
+    },
+    "dataQuality": "verified",
+    "externalIds": {
+      "cricsheetId": "1552768"
+    },
+    "id": "evt_cricket_13258"
+  },
+  {
+    "sportId": "cricket",
+    "competitionId": "t20i_cricket_men",
+    "seasonId": "t20i_cricket_men_2026",
+    "date": "2026-09-25T00:00:00Z",
+    "title": "Sierra Leone vs Ghana",
+    "participants": [
+      "cricket_team_sierra_leone",
+      "cricket_team_ghana"
+    ],
+    "sportData": {
+      "kind": "cricket_t20",
+      "matchFormat": "T20",
+      "round": "Nigeria Quadrangular T20 Series, Match 7",
+      "venue": "Tafawa Balewa Square Cricket Oval, Lagos",
+      "result": "Sierra Leone won by 13 runs (D/L)",
+      "toss": {
+        "winner": "Ghana",
+        "decision": "field"
+      },
+      "playerOfMatch": "AB Kamara"
+    },
+    "dataQuality": "verified",
+    "externalIds": {
+      "cricsheetId": "1554589"
+    },
+    "id": "evt_cricket_13280"
+  },
+  {
+    "sportId": "cricket",
+    "competitionId": "t20i_cricket_women",
+    "seasonId": "t20i_cricket_women_2026",
+    "date": "2026-09-25T00:00:00Z",
+    "title": "Chile vs Costa Rica",
+    "participants": [
+      "cricket_team_chile",
+      "cricket_team_costa_rica"
+    ],
+    "sportData": {
+      "kind": "cricket_t20",
+      "matchFormat": "T20",
+      "round": "South American Women's Championships, Match 5",
+      "venue": "Pocos Oval, Pocos de Caldas",
+      "result": "Costa Rica won by 8 wickets",
+      "toss": {
+        "winner": "Chile",
+        "decision": "bat"
+      },
+      "playerOfMatch": "YP Molina"
+    },
+    "dataQuality": "verified",
+    "externalIds": {
+      "cricsheetId": "1555259"
+    },
+    "id": "evt_cricket_13299"
+  },
+  {
+    "sportId": "cricket",
+    "competitionId": "t20i_cricket_men",
+    "seasonId": "t20i_cricket_men_2026",
+    "date": "2026-09-26T00:00:00Z",
+    "title": "Nepal vs Japan",
+    "participants": [
+      "cricket_team_nepal",
+      "cricket_team_japan"
+    ],
+    "sportData": {
+      "kind": "cricket_t20",
+      "matchFormat": "T20",
+      "round": "Asian Games Men's Cricket Competition, Match 5",
+      "venue": "Korogi Sports Park",
+      "result": "No result",
+      "toss": {
+        "winner": "Japan",
+        "decision": "field"
+      },
+      "playerOfMatch": null
+    },
+    "dataQuality": "verified",
+    "externalIds": {
+      "cricsheetId": "1552770"
+    },
+    "id": "evt_cricket_13259"
+  },
+  {
+    "sportId": "cricket",
+    "competitionId": "t20i_cricket_men",
+    "seasonId": "t20i_cricket_men_2026",
+    "date": "2026-09-26T00:00:00Z",
+    "title": "Bahamas vs Bermuda",
+    "participants": [
+      "cricket_team_bahamas",
+      "cricket_team_bermuda"
+    ],
+    "sportData": {
+      "kind": "cricket_t20",
+      "matchFormat": "T20",
+      "round": "North America Cup",
+      "venue": "Jimmy Powell Oval, Cayman Islands",
+      "result": "Bermuda won by 8 wickets",
+      "toss": {
+        "winner": "Bahamas",
+        "decision": "bat"
+      },
+      "playerOfMatch": "DMW Rawlins"
+    },
+    "dataQuality": "verified",
+    "externalIds": {
+      "cricsheetId": "1552800"
+    },
+    "id": "evt_cricket_13266"
+  },
+  {
+    "sportId": "cricket",
+    "competitionId": "t20i_cricket_men",
+    "seasonId": "t20i_cricket_men_2026",
+    "date": "2026-09-26T00:00:00Z",
+    "title": "Nigeria vs Ghana",
+    "participants": [
+      "cricket_team_nigeria",
+      "cricket_team_ghana"
+    ],
+    "sportData": {
+      "kind": "cricket_t20",
+      "matchFormat": "T20",
+      "round": "Nigeria Quadrangular T20 Series, Match 10",
+      "venue": "Tafawa Balewa Square Cricket Oval, Lagos",
+      "result": "Nigeria won by 91 runs",
+      "toss": {
+        "winner": "Nigeria",
+        "decision": "bat"
+      },
+      "playerOfMatch": "VD Adewoye"
+    },
+    "dataQuality": "verified",
+    "externalIds": {
+      "cricsheetId": "1554592"
+    },
+    "id": "evt_cricket_13281"
+  },
+  {
+    "sportId": "cricket",
+    "competitionId": "odi_cricket_men",
+    "seasonId": "odi_cricket_men_2026",
+    "date": "2026-09-27T00:00:00Z",
+    "title": "England vs Sri Lanka",
+    "participants": [
+      "cricket_team_england",
+      "cricket_team_sri_lanka"
+    ],
+    "sportData": {
+      "kind": "cricket_t20",
+      "matchFormat": "ODI",
+      "round": "Sri Lanka tour of England, Match 3",
+      "venue": "The Oval",
+      "result": "England won by 223 runs",
+      "toss": {
+        "winner": "England",
+        "decision": "bat"
+      },
+      "playerOfMatch": "T Banton"
+    },
+    "dataQuality": "verified",
+    "externalIds": {
+      "cricsheetId": "1496590"
+    },
+    "id": "evt_cricket_13240"
+  },
+  {
+    "sportId": "cricket",
+    "competitionId": "odi_cricket_men",
+    "seasonId": "odi_cricket_men_2026_27",
+    "date": "2026-09-27T00:00:00Z",
+    "title": "South Africa vs Australia",
+    "participants": [
+      "cricket_team_south_africa",
+      "cricket_team_australia"
+    ],
+    "sportData": {
+      "kind": "cricket_t20",
+      "matchFormat": "ODI",
+      "round": "Australia tour of South Africa, Match 2",
+      "venue": "Wanderers Stadium, Johannesburg",
+      "result": "South Africa won by 32 runs",
+      "toss": {
+        "winner": "Australia",
+        "decision": "field"
+      },
+      "playerOfMatch": "DA Miller"
+    },
+    "dataQuality": "verified",
+    "externalIds": {
+      "cricsheetId": "1525656"
+    },
+    "id": "evt_cricket_13242"
+  },
+  {
+    "sportId": "cricket",
+    "competitionId": "odi_cricket_men",
+    "seasonId": "odi_cricket_men_2026_27",
+    "date": "2026-09-27T00:00:00Z",
+    "title": "West Indies vs India",
+    "participants": [
+      "cricket_team_west_indies",
+      "cricket_team_india"
+    ],
+    "sportData": {
+      "kind": "cricket_t20",
+      "matchFormat": "ODI",
+      "round": "West Indies tour of India, Match 1",
+      "venue": "Greenfield International Stadium, Thiruvananthapuram",
+      "result": "India won by 8 wickets",
+      "toss": {
+        "winner": "India",
+        "decision": "field"
+      },
+      "playerOfMatch": "Kuldeep Yadav"
+    },
+    "dataQuality": "verified",
+    "externalIds": {
+      "cricsheetId": "1529227"
+    },
+    "id": "evt_cricket_13244"
+  },
+  {
+    "sportId": "cricket",
+    "competitionId": "odi_cricket_women",
+    "seasonId": "odi_cricket_women_2026",
+    "date": "2026-09-27T00:00:00Z",
+    "title": "West Indies vs Zimbabwe",
+    "participants": [
+      "cricket_team_west_indies",
+      "cricket_team_zimbabwe"
+    ],
+    "sportData": {
+      "kind": "cricket_t20",
+      "matchFormat": "ODI",
+      "round": "West Indies Women tour of Zimbabwe, Match 2",
+      "venue": "Harare Sports Club",
+      "result": "Zimbabwe won by 4 wickets",
+      "toss": {
+        "winner": "West Indies",
+        "decision": "bat"
+      },
+      "playerOfMatch": "N Gwanzura"
+    },
+    "dataQuality": "verified",
+    "externalIds": {
+      "cricsheetId": "1554976"
+    },
+    "id": "evt_cricket_13252"
+  },
+  {
+    "sportId": "cricket",
+    "competitionId": "t20i_cricket_men",
+    "seasonId": "t20i_cricket_men_2026",
+    "date": "2026-09-27T00:00:00Z",
+    "title": "Bermuda vs Cayman Islands",
+    "participants": [
+      "cricket_team_bermuda",
+      "cricket_team_cayman_islands"
+    ],
+    "sportData": {
+      "kind": "cricket_t20",
+      "matchFormat": "T20",
+      "round": "North America Cup",
+      "venue": "Jimmy Powell Oval, Cayman Islands",
+      "result": "Bermuda won by 42 runs",
+      "toss": {
+        "winner": "Cayman Islands",
+        "decision": "field"
+      },
+      "playerOfMatch": null
+    },
+    "dataQuality": "verified",
+    "externalIds": {
+      "cricsheetId": "1552801"
+    },
+    "id": "evt_cricket_13267"
+  },
+  {
+    "sportId": "cricket",
+    "competitionId": "t20i_cricket_men",
+    "seasonId": "t20i_cricket_men_2026",
+    "date": "2026-09-27T00:00:00Z",
+    "title": "Nigeria vs Sierra Leone",
+    "participants": [
+      "cricket_team_nigeria",
+      "cricket_team_sierra_leone"
+    ],
+    "sportData": {
+      "kind": "cricket_t20",
+      "matchFormat": "T20",
+      "round": "Nigeria Quadrangular T20 Series, Match 12",
+      "venue": "Tafawa Balewa Square Cricket Oval, Lagos",
+      "result": "Nigeria won by 71 runs",
+      "toss": {
+        "winner": "Sierra Leone",
+        "decision": "field"
+      },
+      "playerOfMatch": "Abdullahi Ismail"
+    },
+    "dataQuality": "verified",
+    "externalIds": {
+      "cricsheetId": "1554594"
+    },
+    "id": "evt_cricket_13282"
+  },
+  {
+    "sportId": "cricket",
+    "competitionId": "odi_cricket_men",
+    "seasonId": "odi_cricket_men_2026_27",
+    "date": "2026-09-30T00:00:00Z",
+    "title": "Australia vs South Africa",
+    "participants": [
+      "cricket_team_australia",
+      "cricket_team_south_africa"
+    ],
+    "sportData": {
+      "kind": "cricket_t20",
+      "matchFormat": "ODI",
+      "round": "Australia tour of South Africa, Match 3",
+      "venue": "Senwes Park, Potchefstroom",
+      "result": "Australia won by 45 runs (D/L)",
+      "toss": {
+        "winner": "South Africa",
+        "decision": "field"
+      },
+      "playerOfMatch": "AT Carey"
+    },
+    "dataQuality": "verified",
+    "externalIds": {
+      "cricsheetId": "1525657"
+    },
+    "id": "evt_cricket_13243"
+  },
+  {
+    "sportId": "cricket",
+    "competitionId": "odi_cricket_men",
+    "seasonId": "odi_cricket_men_2026_27",
+    "date": "2026-09-30T00:00:00Z",
+    "title": "West Indies vs India",
+    "participants": [
+      "cricket_team_west_indies",
+      "cricket_team_india"
+    ],
+    "sportData": {
+      "kind": "cricket_t20",
+      "matchFormat": "ODI",
+      "round": "West Indies tour of India, Match 2",
+      "venue": "Barsapara Cricket Stadium, Guwahati",
+      "result": "India won by 8 wickets",
+      "toss": {
+        "winner": "India",
+        "decision": "field"
+      },
+      "playerOfMatch": "Shubman Gill"
+    },
+    "dataQuality": "verified",
+    "externalIds": {
+      "cricsheetId": "1529228"
+    },
+    "id": "evt_cricket_13245"
+  },
+  {
+    "sportId": "cricket",
+    "competitionId": "odi_cricket_women",
+    "seasonId": "odi_cricket_women_2026",
+    "date": "2026-09-30T00:00:00Z",
+    "title": "West Indies vs Zimbabwe",
+    "participants": [
+      "cricket_team_west_indies",
+      "cricket_team_zimbabwe"
+    ],
+    "sportData": {
+      "kind": "cricket_t20",
+      "matchFormat": "ODI",
+      "round": "West Indies Women tour of Zimbabwe, Match 3",
+      "venue": "Harare Sports Club",
+      "result": "West Indies won by 91 runs",
+      "toss": {
+        "winner": "Zimbabwe",
+        "decision": "field"
+      },
+      "playerOfMatch": "HK Matthews"
+    },
+    "dataQuality": "verified",
+    "externalIds": {
+      "cricsheetId": "1554977"
+    },
+    "id": "evt_cricket_13253"
+  },
+  {
+    "sportId": "cricket",
+    "competitionId": "t20i_cricket_men",
+    "seasonId": "t20i_cricket_men_2026",
+    "date": "2026-10-01T00:00:00Z",
+    "title": "Bangladesh vs Pakistan",
+    "participants": [
+      "cricket_team_bangladesh",
+      "cricket_team_pakistan"
+    ],
+    "sportData": {
+      "kind": "cricket_t20",
+      "matchFormat": "T20",
+      "round": "Asian Games Men's Cricket Competition",
+      "venue": "Korogi Sports Park",
+      "result": "Pakistan won by 6 wickets",
+      "toss": {
+        "winner": "Pakistan",
+        "decision": "field"
+      },
+      "playerOfMatch": null
+    },
+    "dataQuality": "verified",
+    "externalIds": {
+      "cricsheetId": "1552776"
+    },
+    "id": "evt_cricket_13260"
+  },
+  {
+    "sportId": "cricket",
+    "competitionId": "t20i_cricket_men",
+    "seasonId": "t20i_cricket_men_2026",
+    "date": "2026-10-01T00:00:00Z",
+    "title": "India vs Sri Lanka",
+    "participants": [
+      "cricket_team_india",
+      "cricket_team_sri_lanka"
+    ],
+    "sportData": {
+      "kind": "cricket_t20",
+      "matchFormat": "T20",
+      "round": "Asian Games Men's Cricket Competition",
+      "venue": "Korogi Sports Park",
+      "result": "India won by 124 runs",
+      "toss": {
+        "winner": "Sri Lanka",
+        "decision": "field"
+      },
+      "playerOfMatch": null
+    },
+    "dataQuality": "verified",
+    "externalIds": {
+      "cricsheetId": "1552777"
+    },
+    "id": "evt_cricket_13261"
+  },
+  {
+    "sportId": "cricket",
+    "competitionId": "odi_cricket_men",
+    "seasonId": "odi_cricket_men_2026_27",
+    "date": "2026-10-03T00:00:00Z",
+    "title": "India vs West Indies",
+    "participants": [
+      "cricket_team_india",
+      "cricket_team_west_indies"
+    ],
+    "sportData": {
+      "kind": "cricket_t20",
+      "matchFormat": "ODI",
+      "round": "West Indies tour of India, Match 3",
+      "venue": "Maharaja Yadavindra Singh International Cricket Stadium, New Chandigarh",
+      "result": "West Indies won by 5 wickets",
+      "toss": {
+        "winner": "India",
+        "decision": "bat"
+      },
+      "playerOfMatch": "SD Hope"
+    },
+    "dataQuality": "verified",
+    "externalIds": {
+      "cricsheetId": "1529229"
+    },
+    "id": "evt_cricket_13246"
+  },
+  {
+    "sportId": "cricket",
+    "competitionId": "odi_cricket_men",
+    "seasonId": "odi_cricket_men_2026_27",
+    "date": "2026-10-03T00:00:00Z",
+    "title": "Namibia vs United Arab Emirates",
+    "participants": [
+      "cricket_team_namibia",
+      "cricket_team_united_arab_emirates"
+    ],
+    "sportData": {
+      "kind": "cricket_t20",
+      "matchFormat": "ODI",
+      "round": "ICC Men's Cricket World Cup League 2, Match 127",
+      "venue": "Grand Prairie Stadium, Dallas",
+      "result": "No result",
+      "toss": {
+        "winner": "United Arab Emirates",
+        "decision": "field"
+      },
+      "playerOfMatch": null
+    },
+    "dataQuality": "verified",
+    "externalIds": {
+      "cricsheetId": "1554409"
+    },
+    "id": "evt_cricket_13249"
+  },
+  {
+    "sportId": "cricket",
+    "competitionId": "t20i_cricket_men",
+    "seasonId": "t20i_cricket_men_2026",
+    "date": "2026-10-03T00:00:00Z",
+    "title": "Sri Lanka vs Bangladesh",
+    "participants": [
+      "cricket_team_sri_lanka",
+      "cricket_team_bangladesh"
+    ],
+    "sportData": {
+      "kind": "cricket_t20",
+      "matchFormat": "T20",
+      "round": "Asian Games Men's Cricket Competition",
+      "venue": "Korogi Sports Park",
+      "result": "Sri Lanka won by 63 runs",
+      "toss": {
+        "winner": "Sri Lanka",
+        "decision": "bat"
+      },
+      "playerOfMatch": null
+    },
+    "dataQuality": "verified",
+    "externalIds": {
+      "cricsheetId": "1552778"
+    },
+    "id": "evt_cricket_13262"
+  },
+  {
+    "sportId": "cricket",
+    "competitionId": "t20i_cricket_men",
+    "seasonId": "t20i_cricket_men_2026",
+    "date": "2026-10-03T00:00:00Z",
+    "title": "India vs Pakistan",
+    "participants": [
+      "cricket_team_india",
+      "cricket_team_pakistan"
+    ],
+    "sportData": {
+      "kind": "cricket_t20",
+      "matchFormat": "T20",
+      "round": "Asian Games Men's Cricket Competition",
+      "venue": "Korogi Sports Park",
+      "result": "India won by 19 runs",
+      "toss": {
+        "winner": "India",
+        "decision": "bat"
+      },
+      "playerOfMatch": null
+    },
+    "dataQuality": "verified",
+    "externalIds": {
+      "cricsheetId": "1552779"
+    },
+    "id": "evt_cricket_13263"
+  },
+  {
+    "sportId": "cricket",
+    "competitionId": "t20i_cricket_men",
+    "seasonId": "t20i_cricket_men_2026_27",
+    "date": "2026-10-03T00:00:00Z",
+    "title": "Indonesia vs South Korea",
+    "participants": [
+      "cricket_team_indonesia",
+      "cricket_team_south_korea"
+    ],
+    "sportData": {
+      "kind": "cricket_t20",
+      "matchFormat": "T20",
+      "round": "Indonesia tour of South Korea, Match 1",
+      "venue": "Yeonhui Cricket Ground, Incheon",
+      "result": "South Korea won by 7 wickets",
+      "toss": {
+        "winner": "Indonesia",
+        "decision": "bat"
+      },
+      "playerOfMatch": null
+    },
+    "dataQuality": "verified",
+    "externalIds": {
+      "cricsheetId": "1555135"
+    },
+    "id": "evt_cricket_13283"
+  },
+  {
+    "sportId": "cricket",
+    "competitionId": "t20i_cricket_women",
+    "seasonId": "t20i_cricket_women_2026",
+    "date": "2026-10-03T00:00:00Z",
+    "title": "Zimbabwe vs West Indies",
+    "participants": [
+      "cricket_team_zimbabwe",
+      "cricket_team_west_indies"
+    ],
+    "sportData": {
+      "kind": "cricket_t20",
+      "matchFormat": "T20",
+      "round": "West Indies Women tour of Zimbabwe, Match 1",
+      "venue": "Takashinga Sports Club, Highfield, Harare",
+      "result": "West Indies won by 8 wickets",
+      "toss": {
+        "winner": "West Indies",
+        "decision": "field"
+      },
+      "playerOfMatch": "JKC Claxton"
+    },
+    "dataQuality": "verified",
+    "externalIds": {
+      "cricsheetId": "1554978"
+    },
+    "id": "evt_cricket_13295"
+  },
+  {
+    "sportId": "cricket",
+    "competitionId": "t20i_cricket_men",
+    "seasonId": "t20i_cricket_men_2026_27",
+    "date": "2026-10-04T00:00:00Z",
+    "title": "Indonesia vs South Korea",
+    "participants": [
+      "cricket_team_indonesia",
+      "cricket_team_south_korea"
+    ],
+    "sportData": {
+      "kind": "cricket_t20",
+      "matchFormat": "T20",
+      "round": "Indonesia tour of South Korea, Match 2",
+      "venue": "Yeonhui Cricket Ground, Incheon",
+      "result": "South Korea won by 9 wickets",
+      "toss": {
+        "winner": "South Korea",
+        "decision": "field"
+      },
+      "playerOfMatch": null
+    },
+    "dataQuality": "verified",
+    "externalIds": {
+      "cricsheetId": "1555136"
+    },
+    "id": "evt_cricket_13284"
+  },
+  {
+    "sportId": "cricket",
+    "competitionId": "odi_cricket_men",
+    "seasonId": "odi_cricket_men_2026_27",
+    "date": "2026-10-05T00:00:00Z",
+    "title": "United Arab Emirates vs United States of America",
+    "participants": [
+      "cricket_team_united_arab_emirates",
+      "cricket_team_united_states_of_america"
+    ],
+    "sportData": {
+      "kind": "cricket_t20",
+      "matchFormat": "ODI",
+      "round": "ICC Men's Cricket World Cup League 2, Match 128",
+      "venue": "Grand Prairie Stadium, Dallas",
+      "result": "United States of America won by 6 wickets",
+      "toss": {
+        "winner": "United States of America",
+        "decision": "field"
+      },
+      "playerOfMatch": "Milind Kumar"
+    },
+    "dataQuality": "verified",
+    "externalIds": {
+      "cricsheetId": "1554410"
+    },
+    "id": "evt_cricket_13250"
+  },
+  {
+    "sportId": "cricket",
+    "competitionId": "t20i_cricket_men",
+    "seasonId": "t20i_cricket_men_2026_27",
+    "date": "2026-10-05T00:00:00Z",
+    "title": "Bhutan vs Myanmar",
+    "participants": [
+      "cricket_team_bhutan",
+      "cricket_team_myanmar"
+    ],
+    "sportData": {
+      "kind": "cricket_t20",
+      "matchFormat": "T20",
+      "round": "ICC Men's T20 World Cup Sub Regional Asia Qualifier A, Match 1",
+      "venue": "Bayuemas Oval, Kuala Lumpur",
+      "result": "Bhutan won by 27 runs",
+      "toss": {
+        "winner": "Bhutan",
+        "decision": "bat"
+      },
+      "playerOfMatch": "T Jamtsho"
+    },
+    "dataQuality": "verified",
+    "externalIds": {
+      "cricsheetId": "1554533"
+    },
+    "id": "evt_cricket_13272"
+  },
+  {
+    "sportId": "cricket",
+    "competitionId": "t20i_cricket_men",
+    "seasonId": "t20i_cricket_men_2026_27",
+    "date": "2026-10-05T00:00:00Z",
+    "title": "Bahrain vs Thailand",
+    "participants": [
+      "cricket_team_bahrain",
+      "cricket_team_thailand"
+    ],
+    "sportData": {
+      "kind": "cricket_t20",
+      "matchFormat": "T20",
+      "round": "ICC Men's T20 World Cup Sub Regional Asia Qualifier A, Match 2",
+      "venue": "YSD-UKM Cricket Oval, Bangi",
+      "result": "Bahrain won by 7 runs",
+      "toss": {
+        "winner": "Thailand",
+        "decision": "field"
+      },
+      "playerOfMatch": "Asif Javed"
+    },
+    "dataQuality": "verified",
+    "externalIds": {
+      "cricsheetId": "1554534"
+    },
+    "id": "evt_cricket_13273"
+  },
+  {
+    "sportId": "cricket",
+    "competitionId": "t20i_cricket_men",
+    "seasonId": "t20i_cricket_men_2026_27",
+    "date": "2026-10-05T00:00:00Z",
+    "title": "Kuwait vs Qatar",
+    "participants": [
+      "cricket_team_kuwait",
+      "cricket_team_qatar"
+    ],
+    "sportData": {
+      "kind": "cricket_t20",
+      "matchFormat": "T20",
+      "round": "ICC Men's T20 World Cup Sub Regional Asia Qualifier A, Match 3",
+      "venue": "Bayuemas Oval, Kuala Lumpur",
+      "result": "Kuwait won by 58 runs",
+      "toss": {
+        "winner": "Qatar",
+        "decision": "field"
+      },
+      "playerOfMatch": "Adnan Idrees"
+    },
+    "dataQuality": "verified",
+    "externalIds": {
+      "cricsheetId": "1554535"
+    },
+    "id": "evt_cricket_13274"
+  },
+  {
+    "sportId": "cricket",
+    "competitionId": "t20i_cricket_men",
+    "seasonId": "t20i_cricket_men_2026_27",
+    "date": "2026-10-05T00:00:00Z",
+    "title": "Indonesia vs South Korea",
+    "participants": [
+      "cricket_team_indonesia",
+      "cricket_team_south_korea"
+    ],
+    "sportData": {
+      "kind": "cricket_t20",
+      "matchFormat": "T20",
+      "round": "Indonesia tour of South Korea, Match 3",
+      "venue": "Yeonhui Cricket Ground, Incheon",
+      "result": "South Korea won by 8 wickets",
+      "toss": {
+        "winner": "South Korea",
+        "decision": "field"
+      },
+      "playerOfMatch": null
+    },
+    "dataQuality": "verified",
+    "externalIds": {
+      "cricsheetId": "1555137"
+    },
+    "id": "evt_cricket_13285"
+  },
+  {
+    "sportId": "cricket",
+    "competitionId": "t20i_cricket_men",
+    "seasonId": "t20i_cricket_men_2026_27",
+    "date": "2026-10-05T00:00:00Z",
+    "title": "South Korea vs Indonesia",
+    "participants": [
+      "cricket_team_south_korea",
+      "cricket_team_indonesia"
+    ],
+    "sportData": {
+      "kind": "cricket_t20",
+      "matchFormat": "T20",
+      "round": "Indonesia tour of South Korea, Match 4",
+      "venue": "Yeonhui Cricket Ground, Incheon",
+      "result": "South Korea won by 42 runs",
+      "toss": {
+        "winner": "Indonesia",
+        "decision": "field"
+      },
+      "playerOfMatch": null
+    },
+    "dataQuality": "verified",
+    "externalIds": {
+      "cricsheetId": "1555138"
+    },
+    "id": "evt_cricket_13286"
+  },
+  {
+    "sportId": "cricket",
+    "competitionId": "t20i_cricket_women",
+    "seasonId": "t20i_cricket_women_2026",
+    "date": "2026-10-05T00:00:00Z",
+    "title": "Zimbabwe vs West Indies",
+    "participants": [
+      "cricket_team_zimbabwe",
+      "cricket_team_west_indies"
+    ],
+    "sportData": {
+      "kind": "cricket_t20",
+      "matchFormat": "T20",
+      "round": "West Indies Women tour of Zimbabwe, Match 2",
+      "venue": "Takashinga Sports Club, Highfield, Harare",
+      "result": "West Indies won by 8 wickets",
+      "toss": {
+        "winner": "West Indies",
+        "decision": "field"
+      },
+      "playerOfMatch": "E Brathwaite"
+    },
+    "dataQuality": "verified",
+    "externalIds": {
+      "cricsheetId": "1554979"
+    },
+    "id": "evt_cricket_13296"
+  },
+  {
+    "sportId": "cricket",
+    "competitionId": "t20i_cricket_men",
+    "seasonId": "t20i_cricket_men_2026_27",
+    "date": "2026-10-06T00:00:00Z",
+    "title": "West Indies vs India",
+    "participants": [
+      "cricket_team_west_indies",
+      "cricket_team_india"
+    ],
+    "sportData": {
+      "kind": "cricket_t20",
+      "matchFormat": "T20",
+      "round": "West Indies tour of India, Match 1",
+      "venue": "Bharat Ratna Shri Atal Bihari Vajpayee Ekana Cricket Stadium, Lucknow",
+      "result": "India won by 8 wickets",
+      "toss": {
+        "winner": "India",
+        "decision": "field"
+      },
+      "playerOfMatch": "SS Iyer"
+    },
+    "dataQuality": "verified",
+    "externalIds": {
+      "cricsheetId": "1529230"
+    },
+    "id": "evt_cricket_13255"
+  },
+  {
+    "sportId": "cricket",
+    "competitionId": "t20i_cricket_men",
+    "seasonId": "t20i_cricket_men_2026_27",
+    "date": "2026-10-06T00:00:00Z",
+    "title": "Thailand vs Qatar",
+    "participants": [
+      "cricket_team_thailand",
+      "cricket_team_qatar"
+    ],
+    "sportData": {
+      "kind": "cricket_t20",
+      "matchFormat": "T20",
+      "round": "ICC Men's T20 World Cup Sub Regional Asia Qualifier A, Match 4",
+      "venue": "Bayuemas Oval, Kuala Lumpur",
+      "result": "Qatar won by 7 wickets",
+      "toss": {
+        "winner": "Qatar",
+        "decision": "field"
+      },
+      "playerOfMatch": "Zeeshan Haider"
+    },
+    "dataQuality": "verified",
+    "externalIds": {
+      "cricsheetId": "1554536"
+    },
+    "id": "evt_cricket_13275"
+  },
+  {
+    "sportId": "cricket",
+    "competitionId": "t20i_cricket_men",
+    "seasonId": "t20i_cricket_men_2026_27",
+    "date": "2026-10-06T00:00:00Z",
+    "title": "Bahrain vs Bhutan",
+    "participants": [
+      "cricket_team_bahrain",
+      "cricket_team_bhutan"
+    ],
+    "sportData": {
+      "kind": "cricket_t20",
+      "matchFormat": "T20",
+      "round": "ICC Men's T20 World Cup Sub Regional Asia Qualifier A, Match 5",
+      "venue": "Bayuemas Oval, Kuala Lumpur",
+      "result": "Bahrain won by 66 runs",
+      "toss": {
+        "winner": "Bahrain",
+        "decision": "bat"
+      },
+      "playerOfMatch": "Ali Dawood"
+    },
+    "dataQuality": "verified",
+    "externalIds": {
+      "cricsheetId": "1554537"
+    },
+    "id": "evt_cricket_13276"
+  },
+  {
+    "sportId": "cricket",
+    "competitionId": "t20i_cricket_men",
+    "seasonId": "t20i_cricket_men_2026_27",
+    "date": "2026-10-06T00:00:00Z",
+    "title": "Mongolia vs Kuwait",
+    "participants": [
+      "cricket_team_mongolia",
+      "cricket_team_kuwait"
+    ],
+    "sportData": {
+      "kind": "cricket_t20",
+      "matchFormat": "T20",
+      "round": "ICC Men's T20 World Cup Sub Regional Asia Qualifier A, Match 6",
+      "venue": "YSD-UKM Cricket Oval, Bangi",
+      "result": "Kuwait won by 10 wickets",
+      "toss": {
+        "winner": "Kuwait",
+        "decision": "field"
+      },
+      "playerOfMatch": "MNM Aslam"
+    },
+    "dataQuality": "verified",
+    "externalIds": {
+      "cricsheetId": "1554538"
+    },
+    "id": "evt_cricket_13277"
+  },
+  {
+    "sportId": "cricket",
+    "competitionId": "t20i_cricket_women",
+    "seasonId": "t20i_cricket_women_2026",
+    "date": "2026-10-07T00:00:00Z",
+    "title": "Zimbabwe vs West Indies",
+    "participants": [
+      "cricket_team_zimbabwe",
+      "cricket_team_west_indies"
+    ],
+    "sportData": {
+      "kind": "cricket_t20",
+      "matchFormat": "T20",
+      "round": "West Indies Women tour of Zimbabwe, Match 3",
+      "venue": "Takashinga Sports Club, Highfield, Harare",
+      "result": "West Indies won by 8 wickets",
+      "toss": {
+        "winner": "Zimbabwe",
+        "decision": "bat"
+      },
+      "playerOfMatch": "SR Taylor"
+    },
+    "dataQuality": "verified",
+    "externalIds": {
+      "cricsheetId": "1554980"
+    },
+    "id": "evt_cricket_13297"
   }
 ]
