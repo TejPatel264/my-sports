@@ -1295,7 +1295,7 @@
       "homeTeam": "team_arsenal",
       "awayTeam": "team_leeds_united",
       "venue": null,
-      "result": null,
+      "result": "2-1",
       "kind": "football_match"
     },
     "dataQuality": "verified",
@@ -1318,7 +1318,7 @@
       "homeTeam": "team_sunderland",
       "awayTeam": "team_brighton_and_hove_albion",
       "venue": null,
-      "result": null
+      "result": "0-2"
     },
     "dataQuality": "verified",
     "externalIds": {
@@ -1341,7 +1341,7 @@
       "homeTeam": "team_chelsea",
       "awayTeam": "team_afc_bournemouth",
       "venue": null,
-      "result": null
+      "result": "5-1"
     },
     "dataQuality": "verified",
     "externalIds": {
@@ -1364,7 +1364,7 @@
       "homeTeam": "team_ipswich_town",
       "awayTeam": "team_fulham",
       "venue": null,
-      "result": null
+      "result": "2-1"
     },
     "dataQuality": "verified",
     "externalIds": {
@@ -1387,7 +1387,7 @@
       "homeTeam": "team_aston_villa",
       "awayTeam": "team_brentford",
       "venue": null,
-      "result": null
+      "result": "2-2"
     },
     "dataQuality": "verified",
     "externalIds": {
@@ -1410,7 +1410,7 @@
       "homeTeam": "team_manchester_united",
       "awayTeam": "team_tottenham_hotspur",
       "venue": null,
-      "result": null
+      "result": "1-1"
     },
     "dataQuality": "verified",
     "externalIds": {
