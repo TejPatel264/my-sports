@@ -7840,6 +7840,11 @@
     "label": "2025"
   },
   {
+    "id": "tennis_wta_wuhan_2026",
+    "competitionId": "tennis_wta_wuhan",
+    "label": "2026"
+  },
+  {
     "id": "tennis_wta_yarra_valley_classic_2021",
     "competitionId": "tennis_wta_yarra_valley_classic",
     "label": "2021"
