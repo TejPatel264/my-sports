@@ -1433,7 +1433,7 @@
       "homeTeam": "team_hull_city",
       "awayTeam": "team_everton",
       "venue": null,
-      "result": null
+      "result": "2-2"
     },
     "dataQuality": "verified",
     "externalIds": {
@@ -1456,7 +1456,7 @@
       "homeTeam": "team_crystal_palace",
       "awayTeam": "team_nottingham_forest",
       "venue": null,
-      "result": null
+      "result": "3-1"
     },
     "dataQuality": "verified",
     "externalIds": {
@@ -1479,7 +1479,7 @@
       "homeTeam": "team_liverpool",
       "awayTeam": "team_manchester_city",
       "venue": null,
-      "result": null,
+      "result": "0-3",
       "kind": "football_match"
     },
     "dataQuality": "verified",
@@ -1502,7 +1502,7 @@
       "homeTeam": "team_coventry_city",
       "awayTeam": "team_newcastle_united",
       "venue": null,
-      "result": null
+      "result": "4-1"
     },
     "dataQuality": "verified",
     "externalIds": {
