@@ -834213,6 +834213,32 @@
     "sportId": "tennis",
     "competitionId": "tennis_atp_munich",
     "seasonId": "tennis_atp_munich_2026",
+    "date": "2026-04-13T00:00:00Z",
+    "title": "Ben Shelton vs Emilio Nava",
+    "participants": [
+      "tennis_player_atp_S0S1",
+      "tennis_player_atp_N0AM"
+    ],
+    "sportData": {
+      "kind": "tennis_match",
+      "round": "R32",
+      "surface": "Clay",
+      "tournamentLevel": "500",
+      "winner": "tennis_player_atp_S0S1",
+      "loser": "tennis_player_atp_N0AM",
+      "score": "7-6(4) 3-6 6-3",
+      "durationMinutes": 126
+    },
+    "dataQuality": "verified",
+    "externalIds": {
+      "tmlMatchId": "atp_2026-308_1"
+    },
+    "id": "evt_tennis_035201"
+  },
+  {
+    "sportId": "tennis",
+    "competitionId": "tennis_atp_munich",
+    "seasonId": "tennis_atp_munich_2026",
     "date": "2026-04-14T00:00:00Z",
     "title": "Alexander Zverev vs Miomir Kecmanovic",
     "participants": [
@@ -915097,6 +915123,370 @@
   },
   {
     "sportId": "tennis",
+    "competitionId": "tennis_wta_wuhan",
+    "seasonId": "tennis_wta_wuhan_2026",
+    "date": "2026-10-12T00:00:00Z",
+    "title": "Iga Swiatek vs Magdalena Frech",
+    "participants": [
+      "tennis_player_wta_216347",
+      "tennis_player_wta_211684"
+    ],
+    "sportData": {
+      "kind": "tennis_match",
+      "round": "R32",
+      "surface": "Hard",
+      "tournamentLevel": "1000",
+      "winner": "tennis_player_wta_216347",
+      "loser": "tennis_player_wta_211684",
+      "score": "6-2 6-1",
+      "durationMinutes": 103
+    },
+    "dataQuality": "verified",
+    "externalIds": {
+      "tmlMatchId": "wta_2026-1075_27"
+    },
+    "id": "evt_tennis_035206"
+  },
+  {
+    "sportId": "tennis",
+    "competitionId": "tennis_wta_wuhan",
+    "seasonId": "tennis_wta_wuhan_2026",
+    "date": "2026-10-12T00:00:00Z",
+    "title": "Sonay Kartal vs Belinda Bencic",
+    "participants": [
+      "tennis_player_wta_222661",
+      "tennis_player_wta_202505"
+    ],
+    "sportData": {
+      "kind": "tennis_match",
+      "round": "R32",
+      "surface": "Hard",
+      "tournamentLevel": "1000",
+      "winner": "tennis_player_wta_222661",
+      "loser": "tennis_player_wta_202505",
+      "score": "6-0 7-5",
+      "durationMinutes": 97
+    },
+    "dataQuality": "verified",
+    "externalIds": {
+      "tmlMatchId": "wta_2026-1075_28"
+    },
+    "id": "evt_tennis_035207"
+  },
+  {
+    "sportId": "tennis",
+    "competitionId": "tennis_wta_wuhan",
+    "seasonId": "tennis_wta_wuhan_2026",
+    "date": "2026-10-12T00:00:00Z",
+    "title": "Elina Svitolina vs Liudmila Samsonova",
+    "participants": [
+      "tennis_player_wta_202494",
+      "tennis_player_wta_214643"
+    ],
+    "sportData": {
+      "kind": "tennis_match",
+      "round": "R32",
+      "surface": "Hard",
+      "tournamentLevel": "1000",
+      "winner": "tennis_player_wta_202494",
+      "loser": "tennis_player_wta_214643",
+      "score": "6-2 5-7 6-2",
+      "durationMinutes": 131
+    },
+    "dataQuality": "verified",
+    "externalIds": {
+      "tmlMatchId": "wta_2026-1075_29"
+    },
+    "id": "evt_tennis_035208"
+  },
+  {
+    "sportId": "tennis",
+    "competitionId": "tennis_wta_wuhan",
+    "seasonId": "tennis_wta_wuhan_2026",
+    "date": "2026-10-12T00:00:00Z",
+    "title": "Maja Chwalinska vs Marie Bouzkova",
+    "participants": [
+      "tennis_player_wta_216081",
+      "tennis_player_wta_213631"
+    ],
+    "sportData": {
+      "kind": "tennis_match",
+      "round": "R32",
+      "surface": "Hard",
+      "tournamentLevel": "1000",
+      "winner": "tennis_player_wta_216081",
+      "loser": "tennis_player_wta_213631",
+      "score": "1-6 6-1 6-1",
+      "durationMinutes": 116
+    },
+    "dataQuality": "verified",
+    "externalIds": {
+      "tmlMatchId": "wta_2026-1075_30"
+    },
+    "id": "evt_tennis_035209"
+  },
+  {
+    "sportId": "tennis",
+    "competitionId": "tennis_wta_wuhan",
+    "seasonId": "tennis_wta_wuhan_2026",
+    "date": "2026-10-12T00:00:00Z",
+    "title": "Iva Jovic vs Dayana Yastremska",
+    "participants": [
+      "tennis_player_wta_260300",
+      "tennis_player_wta_215035"
+    ],
+    "sportData": {
+      "kind": "tennis_match",
+      "round": "R32",
+      "surface": "Hard",
+      "tournamentLevel": "1000",
+      "winner": "tennis_player_wta_260300",
+      "loser": "tennis_player_wta_215035",
+      "score": "6-4 6-1",
+      "durationMinutes": 102
+    },
+    "dataQuality": "verified",
+    "externalIds": {
+      "tmlMatchId": "wta_2026-1075_31"
+    },
+    "id": "evt_tennis_035210"
+  },
+  {
+    "sportId": "tennis",
+    "competitionId": "tennis_wta_wuhan",
+    "seasonId": "tennis_wta_wuhan_2026",
+    "date": "2026-10-12T00:00:00Z",
+    "title": "Karolina Muchova vs Caty McNally",
+    "participants": [
+      "tennis_player_wta_214096",
+      "tennis_player_wta_216083"
+    ],
+    "sportData": {
+      "kind": "tennis_match",
+      "round": "R32",
+      "surface": "Hard",
+      "tournamentLevel": "1000",
+      "winner": "tennis_player_wta_214096",
+      "loser": "tennis_player_wta_216083",
+      "score": "3-6 7-6(1) 7-6(4)",
+      "durationMinutes": 172
+    },
+    "dataQuality": "verified",
+    "externalIds": {
+      "tmlMatchId": "wta_2026-1075_32"
+    },
+    "id": "evt_tennis_035211"
+  },
+  {
+    "sportId": "tennis",
+    "competitionId": "tennis_wta_wuhan",
+    "seasonId": "tennis_wta_wuhan_2026",
+    "date": "2026-10-12T00:00:00Z",
+    "title": "Diana Shnaider vs Yulia Putintseva",
+    "participants": [
+      "tennis_player_wta_223670",
+      "tennis_player_wta_201709"
+    ],
+    "sportData": {
+      "kind": "tennis_match",
+      "round": "R32",
+      "surface": "Hard",
+      "tournamentLevel": "1000",
+      "winner": "tennis_player_wta_223670",
+      "loser": "tennis_player_wta_201709",
+      "score": "6-2 6-2",
+      "durationMinutes": 80
+    },
+    "dataQuality": "verified",
+    "externalIds": {
+      "tmlMatchId": "wta_2026-1075_33"
+    },
+    "id": "evt_tennis_035212"
+  },
+  {
+    "sportId": "tennis",
+    "competitionId": "tennis_wta_wuhan",
+    "seasonId": "tennis_wta_wuhan_2026",
+    "date": "2026-10-12T00:00:00Z",
+    "title": "Jasmine Paolini vs Nikola Bartunkova",
+    "participants": [
+      "tennis_player_wta_211148",
+      "tennis_player_wta_223360"
+    ],
+    "sportData": {
+      "kind": "tennis_match",
+      "round": "R32",
+      "surface": "Hard",
+      "tournamentLevel": "1000",
+      "winner": "tennis_player_wta_211148",
+      "loser": "tennis_player_wta_223360",
+      "score": "7-6(5) 6-3",
+      "durationMinutes": 113
+    },
+    "dataQuality": "verified",
+    "externalIds": {
+      "tmlMatchId": "wta_2026-1075_34"
+    },
+    "id": "evt_tennis_035213"
+  },
+  {
+    "sportId": "tennis",
+    "competitionId": "tennis_wta_wuhan",
+    "seasonId": "tennis_wta_wuhan_2026",
+    "date": "2026-10-12T00:00:00Z",
+    "title": "Janice Tjen vs Daria Snigur",
+    "participants": [
+      "tennis_player_wta_222145",
+      "tennis_player_wta_220750"
+    ],
+    "sportData": {
+      "kind": "tennis_match",
+      "round": "R32",
+      "surface": "Hard",
+      "tournamentLevel": "1000",
+      "winner": "tennis_player_wta_222145",
+      "loser": "tennis_player_wta_220750",
+      "score": "7-5 6-3",
+      "durationMinutes": 86
+    },
+    "dataQuality": "verified",
+    "externalIds": {
+      "tmlMatchId": "wta_2026-1075_35"
+    },
+    "id": "evt_tennis_035214"
+  },
+  {
+    "sportId": "tennis",
+    "competitionId": "tennis_wta_wuhan",
+    "seasonId": "tennis_wta_wuhan_2026",
+    "date": "2026-10-12T00:00:00Z",
+    "title": "Hanyu Guo vs Katie Volynets",
+    "participants": [
+      "tennis_player_wta_215250",
+      "tennis_player_wta_220465"
+    ],
+    "sportData": {
+      "kind": "tennis_match",
+      "round": "R32",
+      "surface": "Hard",
+      "tournamentLevel": "1000",
+      "winner": "tennis_player_wta_215250",
+      "loser": "tennis_player_wta_220465",
+      "score": "6-4 4-6 7-6(3)",
+      "durationMinutes": 184
+    },
+    "dataQuality": "verified",
+    "externalIds": {
+      "tmlMatchId": "wta_2026-1075_36"
+    },
+    "id": "evt_tennis_035215"
+  },
+  {
+    "sportId": "tennis",
+    "competitionId": "tennis_wta_wuhan",
+    "seasonId": "tennis_wta_wuhan_2026",
+    "date": "2026-10-12T00:00:00Z",
+    "title": "Jelena Ostapenko vs Jessica Pegula",
+    "participants": [
+      "tennis_player_wta_211533",
+      "tennis_player_wta_202468"
+    ],
+    "sportData": {
+      "kind": "tennis_match",
+      "round": "R32",
+      "surface": "Hard",
+      "tournamentLevel": "1000",
+      "winner": "tennis_player_wta_211533",
+      "loser": "tennis_player_wta_202468",
+      "score": "2-6 7-6(7) 6-3",
+      "durationMinutes": 143
+    },
+    "dataQuality": "verified",
+    "externalIds": {
+      "tmlMatchId": "wta_2026-1075_37"
+    },
+    "id": "evt_tennis_035216"
+  },
+  {
+    "sportId": "tennis",
+    "competitionId": "tennis_wta_wuhan",
+    "seasonId": "tennis_wta_wuhan_2026",
+    "date": "2026-10-12T00:00:00Z",
+    "title": "Ashlyn Krueger vs Lanlana Tararudee",
+    "participants": [
+      "tennis_player_wta_221909",
+      "tennis_player_wta_222290"
+    ],
+    "sportData": {
+      "kind": "tennis_match",
+      "round": "R32",
+      "surface": "Hard",
+      "tournamentLevel": "1000",
+      "winner": "tennis_player_wta_221909",
+      "loser": "tennis_player_wta_222290",
+      "score": "2-6 6-1 6-1",
+      "durationMinutes": 103
+    },
+    "dataQuality": "verified",
+    "externalIds": {
+      "tmlMatchId": "wta_2026-1075_38"
+    },
+    "id": "evt_tennis_035217"
+  },
+  {
+    "sportId": "tennis",
+    "competitionId": "tennis_wta_wuhan",
+    "seasonId": "tennis_wta_wuhan_2026",
+    "date": "2026-10-12T00:00:00Z",
+    "title": "Ann Li vs Aryna Sabalenka",
+    "participants": [
+      "tennis_player_wta_215983",
+      "tennis_player_wta_214544"
+    ],
+    "sportData": {
+      "kind": "tennis_match",
+      "round": "R32",
+      "surface": "Hard",
+      "tournamentLevel": "1000",
+      "winner": "tennis_player_wta_215983",
+      "loser": "tennis_player_wta_214544",
+      "score": "3-6 6-4 7-6(5)",
+      "durationMinutes": 147
+    },
+    "dataQuality": "verified",
+    "externalIds": {
+      "tmlMatchId": "wta_2026-1075_39"
+    },
+    "id": "evt_tennis_035218"
+  },
+  {
+    "sportId": "tennis",
+    "competitionId": "tennis_wta_wuhan",
+    "seasonId": "tennis_wta_wuhan_2026",
+    "date": "2026-10-12T00:00:00Z",
+    "title": "Leylah Fernandez vs Han Shi",
+    "participants": [
+      "tennis_player_wta_220367",
+      "tennis_player_wta_222559"
+    ],
+    "sportData": {
+      "kind": "tennis_match",
+      "round": "R32",
+      "surface": "Hard",
+      "tournamentLevel": "1000",
+      "winner": "tennis_player_wta_220367",
+      "loser": "tennis_player_wta_222559",
+      "score": "6-3 6-4",
+      "durationMinutes": 96
+    },
+    "dataQuality": "verified",
+    "externalIds": {
+      "tmlMatchId": "wta_2026-1075_40"
+    },
+    "id": "evt_tennis_035219"
+  },
+  {
+    "sportId": "tennis",
     "competitionId": "tennis_atp_shanghai",
     "seasonId": "tennis_atp_shanghai_2026",
     "date": "2026-10-13T00:00:00Z",
@@ -915198,5 +915588,109 @@
       "tmlMatchId": "atp_2026-5014_84"
     },
     "id": "evt_tennis_035188"
+  },
+  {
+    "sportId": "tennis",
+    "competitionId": "tennis_atp_shanghai",
+    "seasonId": "tennis_atp_shanghai_2026",
+    "date": "2026-10-14T00:00:00Z",
+    "title": "Rafael Jodar vs Botic van de Zandschulp",
+    "participants": [
+      "tennis_player_atp_J0DZ",
+      "tennis_player_atp_V812"
+    ],
+    "sportData": {
+      "kind": "tennis_match",
+      "round": "R16",
+      "surface": "Hard",
+      "tournamentLevel": "M",
+      "winner": "tennis_player_atp_J0DZ",
+      "loser": "tennis_player_atp_V812",
+      "score": "6-7(4) 6-4 6-2",
+      "durationMinutes": 150
+    },
+    "dataQuality": "verified",
+    "externalIds": {
+      "tmlMatchId": "atp_2026-5014_85"
+    },
+    "id": "evt_tennis_035202"
+  },
+  {
+    "sportId": "tennis",
+    "competitionId": "tennis_atp_shanghai",
+    "seasonId": "tennis_atp_shanghai_2026",
+    "date": "2026-10-14T00:00:00Z",
+    "title": "Casper Ruud vs Felix Auger-Aliassime",
+    "participants": [
+      "tennis_player_atp_RH16",
+      "tennis_player_atp_AG37"
+    ],
+    "sportData": {
+      "kind": "tennis_match",
+      "round": "R16",
+      "surface": "Hard",
+      "tournamentLevel": "M",
+      "winner": "tennis_player_atp_RH16",
+      "loser": "tennis_player_atp_AG37",
+      "score": "5-2 RET",
+      "durationMinutes": 35
+    },
+    "dataQuality": "verified",
+    "externalIds": {
+      "tmlMatchId": "atp_2026-5014_86"
+    },
+    "id": "evt_tennis_035203"
+  },
+  {
+    "sportId": "tennis",
+    "competitionId": "tennis_atp_shanghai",
+    "seasonId": "tennis_atp_shanghai_2026",
+    "date": "2026-10-14T00:00:00Z",
+    "title": "Daniil Medvedev vs Stefanos Tsitsipas",
+    "participants": [
+      "tennis_player_atp_MM58",
+      "tennis_player_atp_TE51"
+    ],
+    "sportData": {
+      "kind": "tennis_match",
+      "round": "R16",
+      "surface": "Hard",
+      "tournamentLevel": "M",
+      "winner": "tennis_player_atp_MM58",
+      "loser": "tennis_player_atp_TE51",
+      "score": "6-4 7-5",
+      "durationMinutes": 84
+    },
+    "dataQuality": "verified",
+    "externalIds": {
+      "tmlMatchId": "atp_2026-5014_87"
+    },
+    "id": "evt_tennis_035204"
+  },
+  {
+    "sportId": "tennis",
+    "competitionId": "tennis_atp_shanghai",
+    "seasonId": "tennis_atp_shanghai_2026",
+    "date": "2026-10-14T00:00:00Z",
+    "title": "Tommy Paul vs Zizou Bergs",
+    "participants": [
+      "tennis_player_atp_PL56",
+      "tennis_player_atp_BU13"
+    ],
+    "sportData": {
+      "kind": "tennis_match",
+      "round": "R16",
+      "surface": "Hard",
+      "tournamentLevel": "M",
+      "winner": "tennis_player_atp_PL56",
+      "loser": "tennis_player_atp_BU13",
+      "score": "7-6(5) 6-4",
+      "durationMinutes": 109
+    },
+    "dataQuality": "verified",
+    "externalIds": {
+      "tmlMatchId": "atp_2026-5014_88"
+    },
+    "id": "evt_tennis_035205"
   }
 ]
