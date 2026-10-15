@@ -2659,7 +2659,7 @@
       "homeTeam": "team_portsmouth",
       "awayTeam": "team_sheffield_united",
       "venue": null,
-      "result": null
+      "result": "3-2"
     },
     "dataQuality": "verified",
     "externalIds": {
@@ -2682,7 +2682,7 @@
       "homeTeam": "team_norwich_city",
       "awayTeam": "team_southampton",
       "venue": null,
-      "result": null
+      "result": "0-1"
     },
     "dataQuality": "verified",
     "externalIds": {
@@ -2705,7 +2705,7 @@
       "homeTeam": "team_queens_park_rangers",
       "awayTeam": "team_derby_county",
       "venue": null,
-      "result": null
+      "result": "4-1"
     },
     "dataQuality": "verified",
     "externalIds": {
@@ -2728,7 +2728,7 @@
       "homeTeam": "team_lincoln_city",
       "awayTeam": "team_west_ham_united",
       "venue": null,
-      "result": null
+      "result": "0-6"
     },
     "dataQuality": "verified",
     "externalIds": {
