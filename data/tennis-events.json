@@ -766465,7 +766465,7 @@
     ],
     "sportData": {
       "kind": "tennis_match",
-      "round": "QF",
+      "round": "RR",
       "surface": "Hard",
       "tournamentLevel": "D",
       "winner": "tennis_player_wta_220714",
@@ -766491,7 +766491,7 @@
     ],
     "sportData": {
       "kind": "tennis_match",
-      "round": "QF",
+      "round": "RR",
       "surface": "Hard",
       "tournamentLevel": "D",
       "winner": "tennis_player_wta_211148",
@@ -766517,7 +766517,7 @@
     ],
     "sportData": {
       "kind": "tennis_match",
-      "round": "QF",
+      "round": "RR",
       "surface": "Hard",
       "tournamentLevel": "D",
       "winner": "tennis_player_wta_216146",
@@ -766543,7 +766543,7 @@
     ],
     "sportData": {
       "kind": "tennis_match",
-      "round": "QF",
+      "round": "RR",
       "surface": "Hard",
       "tournamentLevel": "D",
       "winner": "tennis_player_wta_202494",
@@ -766569,7 +766569,7 @@
     ],
     "sportData": {
       "kind": "tennis_match",
-      "round": "QF",
+      "round": "RR",
       "surface": "Hard",
       "tournamentLevel": "D",
       "winner": "tennis_player_wta_215613",
@@ -766595,7 +766595,7 @@
     ],
     "sportData": {
       "kind": "tennis_match",
-      "round": "QF",
+      "round": "RR",
       "surface": "Hard",
       "tournamentLevel": "D",
       "winner": "tennis_player_wta_214981",
@@ -766621,7 +766621,7 @@
     ],
     "sportData": {
       "kind": "tennis_match",
-      "round": "QF",
+      "round": "RR",
       "surface": "Hard",
       "tournamentLevel": "D",
       "winner": "tennis_player_wta_222661",
@@ -766647,7 +766647,7 @@
     ],
     "sportData": {
       "kind": "tennis_match",
-      "round": "QF",
+      "round": "RR",
       "surface": "Hard",
       "tournamentLevel": "D",
       "winner": "tennis_player_wta_211107",
@@ -766673,7 +766673,7 @@
     ],
     "sportData": {
       "kind": "tennis_match",
-      "round": "SF",
+      "round": "RR",
       "surface": "Hard",
       "tournamentLevel": "D",
       "winner": "tennis_player_wta_216146",
@@ -766699,7 +766699,7 @@
     ],
     "sportData": {
       "kind": "tennis_match",
-      "round": "SF",
+      "round": "RR",
       "surface": "Hard",
       "tournamentLevel": "D",
       "winner": "tennis_player_wta_211148",
@@ -766725,7 +766725,7 @@
     ],
     "sportData": {
       "kind": "tennis_match",
-      "round": "SF",
+      "round": "RR",
       "surface": "Hard",
       "tournamentLevel": "D",
       "winner": "tennis_player_wta_215613",
@@ -766751,7 +766751,7 @@
     ],
     "sportData": {
       "kind": "tennis_match",
-      "round": "SF",
+      "round": "RR",
       "surface": "Hard",
       "tournamentLevel": "D",
       "winner": "tennis_player_wta_202468",
@@ -766777,7 +766777,7 @@
     ],
     "sportData": {
       "kind": "tennis_match",
-      "round": "F",
+      "round": "RR",
       "surface": "Hard",
       "tournamentLevel": "D",
       "winner": "tennis_player_wta_220714",
@@ -766803,7 +766803,7 @@
     ],
     "sportData": {
       "kind": "tennis_match",
-      "round": "F",
+      "round": "RR",
       "surface": "Hard",
       "tournamentLevel": "D",
       "winner": "tennis_player_wta_211148",
@@ -809254,7 +809254,7 @@
     "competitionId": "tennis_wta_dubai",
     "seasonId": "tennis_wta_dubai_2026",
     "date": "2026-02-15T00:00:00Z",
-    "title": "Sorana Cirstea vs Alexandra Eala",
+    "title": "Alexandra Eala vs Sorana Cirstea",
     "participants": [
       "tennis_player_wta_201514",
       "tennis_player_wta_223253"
@@ -809264,9 +809264,9 @@
       "round": "R16",
       "surface": "Hard",
       "tournamentLevel": "1000",
-      "winner": "tennis_player_wta_201514",
-      "loser": "tennis_player_wta_223253",
-      "score": "6-1 6-4",
+      "winner": "tennis_player_wta_223253",
+      "loser": "tennis_player_wta_201514",
+      "score": "7-5 6-4",
       "durationMinutes": 98
     },
     "dataQuality": "verified",
@@ -831782,7 +831782,7 @@
       "tournamentLevel": "D",
       "winner": "tennis_player_wta_210722",
       "loser": "tennis_player_wta_220520",
-      "score": "7-6(3) 2-6 3-3 RET",
+      "score": "7-6 2-6 3-3 RET",
       "durationMinutes": null
     },
     "dataQuality": "verified",
@@ -831990,7 +831990,7 @@
       "tournamentLevel": "D",
       "winner": "tennis_player_wta_269267",
       "loser": "tennis_player_wta_214461",
-      "score": "6-4 2-6 0-0 RET",
+      "score": "4-6 6-2 0-0 RET",
       "durationMinutes": null
     },
     "dataQuality": "verified",
@@ -833512,7 +833512,7 @@
     "competitionId": "tennis_wta_rouen",
     "seasonId": "tennis_wta_rouen_2026",
     "date": "2026-04-13T00:00:00Z",
-    "title": "Daria Kasatkina vs Ann Li",
+    "title": "Ann Li vs Daria Kasatkina",
     "participants": [
       "tennis_player_wta_214082",
       "tennis_player_wta_215983"
@@ -833522,9 +833522,9 @@
       "round": "R32",
       "surface": "Clay",
       "tournamentLevel": "250",
-      "winner": "tennis_player_wta_214082",
-      "loser": "tennis_player_wta_215983",
-      "score": "6-7(6),6-2 6-4",
+      "winner": "tennis_player_wta_215983",
+      "loser": "tennis_player_wta_214082",
+      "score": "6-7(6) 6-2 6-4",
       "durationMinutes": 130
     },
     "dataQuality": "verified",
@@ -833668,7 +833668,7 @@
     "competitionId": "tennis_wta_rouen",
     "seasonId": "tennis_wta_rouen_2026",
     "date": "2026-04-13T00:00:00Z",
-    "title": "Sloane Stephens vs Veronika Podrez",
+    "title": "Veronika Podrez vs Sloane Stephens",
     "participants": [
       "tennis_player_wta_201585",
       "tennis_player_wta_247669"
@@ -833678,9 +833678,9 @@
       "round": "R32",
       "surface": "Clay",
       "tournamentLevel": "250",
-      "winner": "tennis_player_wta_201585",
-      "loser": "tennis_player_wta_247669",
-      "score": " 6-2 6-1",
+      "winner": "tennis_player_wta_247669",
+      "loser": "tennis_player_wta_201585",
+      "score": "6-2 6-1",
       "durationMinutes": 71
     },
     "dataQuality": "verified",
@@ -833798,7 +833798,7 @@
     "competitionId": "tennis_wta_rouen",
     "seasonId": "tennis_wta_rouen_2026",
     "date": "2026-04-13T00:00:00Z",
-    "title": "Chloe Paquet vs Xiyu Wang",
+    "title": "Xiyu Wang vs Chloe Paquet",
     "participants": [
       "tennis_player_wta_203564",
       "tennis_player_wta_216016"
@@ -833808,9 +833808,9 @@
       "round": "R32",
       "surface": "Clay",
       "tournamentLevel": "250",
-      "winner": "tennis_player_wta_203564",
-      "loser": "tennis_player_wta_216016",
-      "score": " 3-6 6-4 6-3",
+      "winner": "tennis_player_wta_216016",
+      "loser": "tennis_player_wta_203564",
+      "score": "3-6 6-4 6-3",
       "durationMinutes": 138
     },
     "dataQuality": "verified",
@@ -833824,7 +833824,7 @@
     "competitionId": "tennis_wta_rouen",
     "seasonId": "tennis_wta_rouen_2026",
     "date": "2026-04-13T00:00:00Z",
-    "title": "Fiona Ferro vs Sorana Cirstea",
+    "title": "Sorana Cirstea vs Fiona Ferro",
     "participants": [
       "tennis_player_wta_211539",
       "tennis_player_wta_201514"
@@ -833834,9 +833834,9 @@
       "round": "R32",
       "surface": "Clay",
       "tournamentLevel": "250",
-      "winner": "tennis_player_wta_211539",
-      "loser": "tennis_player_wta_201514",
-      "score": " 6-3 6-7(5) 7-6(2)",
+      "winner": "tennis_player_wta_201514",
+      "loser": "tennis_player_wta_211539",
+      "score": "6-3 6-7(5) 7-6(2)",
       "durationMinutes": 150
     },
     "dataQuality": "verified",
@@ -833876,7 +833876,7 @@
     "competitionId": "tennis_wta_rouen",
     "seasonId": "tennis_wta_rouen_2026",
     "date": "2026-04-13T00:00:00Z",
-    "title": "Kamilla Rakhimova vs Ann Li",
+    "title": "Ann Li vs Kamilla Rakhimova",
     "participants": [
       "tennis_player_wta_215872",
       "tennis_player_wta_215983"
@@ -833886,9 +833886,9 @@
       "round": "R16",
       "surface": "Clay",
       "tournamentLevel": "250",
-      "winner": "tennis_player_wta_215872",
-      "loser": "tennis_player_wta_215983",
-      "score": " 4-6 6-2 6-3",
+      "winner": "tennis_player_wta_215983",
+      "loser": "tennis_player_wta_215872",
+      "score": "4-6 6-2 6-3",
       "durationMinutes": 128
     },
     "dataQuality": "verified",
@@ -833902,7 +833902,7 @@
     "competitionId": "tennis_wta_rouen",
     "seasonId": "tennis_wta_rouen_2026",
     "date": "2026-04-13T00:00:00Z",
-    "title": "Hailey Baptiste vs Iryna Shymanovich",
+    "title": "Iryna Shymanovich vs Hailey Baptiste",
     "participants": [
       "tennis_player_wta_221024",
       "tennis_player_wta_213576"
@@ -833912,9 +833912,9 @@
       "round": "R16",
       "surface": "Clay",
       "tournamentLevel": "250",
-      "winner": "tennis_player_wta_221024",
-      "loser": "tennis_player_wta_213576",
-      "score": " 6-3 5-7 6-3",
+      "winner": "tennis_player_wta_213576",
+      "loser": "tennis_player_wta_221024",
+      "score": "6-3 5-7 6-3",
       "durationMinutes": 141
     },
     "dataQuality": "verified",
@@ -833928,7 +833928,7 @@
     "competitionId": "tennis_wta_rouen",
     "seasonId": "tennis_wta_rouen_2026",
     "date": "2026-04-13T00:00:00Z",
-    "title": "Dominika Salkova vs Tatjana Maria",
+    "title": "Tatjana Maria vs Dominika Salkova",
     "participants": [
       "tennis_player_wta_222966",
       "tennis_player_wta_213583"
@@ -833938,9 +833938,9 @@
       "round": "R16",
       "surface": "Clay",
       "tournamentLevel": "250",
-      "winner": "tennis_player_wta_222966",
-      "loser": "tennis_player_wta_213583",
-      "score": " 6-3 6-2",
+      "winner": "tennis_player_wta_213583",
+      "loser": "tennis_player_wta_222966",
+      "score": "6-3 6-2",
       "durationMinutes": 71
     },
     "dataQuality": "verified",
@@ -833954,7 +833954,7 @@
     "competitionId": "tennis_wta_rouen",
     "seasonId": "tennis_wta_rouen_2026",
     "date": "2026-04-13T00:00:00Z",
-    "title": "Elisabetta Cocciaretto vs Veronika Podrez",
+    "title": "Veronika Podrez vs Elisabetta Cocciaretto",
     "participants": [
       "tennis_player_wta_220714",
       "tennis_player_wta_247669"
@@ -833964,9 +833964,9 @@
       "round": "R16",
       "surface": "Clay",
       "tournamentLevel": "250",
-      "winner": "tennis_player_wta_220714",
-      "loser": "tennis_player_wta_247669",
-      "score": " 7-6(5) 4-6 6-4",
+      "winner": "tennis_player_wta_247669",
+      "loser": "tennis_player_wta_220714",
+      "score": "7-6(5) 4-6 6-4",
       "durationMinutes": 159
     },
     "dataQuality": "verified",
@@ -834032,7 +834032,7 @@
     "competitionId": "tennis_wta_rouen",
     "seasonId": "tennis_wta_rouen_2026",
     "date": "2026-04-13T00:00:00Z",
-    "title": "Anna Bondar vs Sorana Cirstea",
+    "title": "Sorana Cirstea vs Anna Bondar",
     "participants": [
       "tennis_player_wta_214388",
       "tennis_player_wta_201514"
@@ -834042,9 +834042,9 @@
       "round": "QF",
       "surface": "Clay",
       "tournamentLevel": "250",
-      "winner": "tennis_player_wta_214388",
-      "loser": "tennis_player_wta_201514",
-      "score": " 7-6(2) 6-2",
+      "winner": "tennis_player_wta_201514",
+      "loser": "tennis_player_wta_214388",
+      "score": "7-6(2) 6-2",
       "durationMinutes": 99
     },
     "dataQuality": "verified",
@@ -834084,7 +834084,7 @@
     "competitionId": "tennis_wta_rouen",
     "seasonId": "tennis_wta_rouen_2026",
     "date": "2026-04-13T00:00:00Z",
-    "title": "Iryna Shymanovich vs Tatjana Maria",
+    "title": "Tatjana Maria vs Iryna Shymanovich",
     "participants": [
       "tennis_player_wta_213576",
       "tennis_player_wta_213583"
@@ -834094,9 +834094,9 @@
       "round": "QF",
       "surface": "Clay",
       "tournamentLevel": "250",
-      "winner": "tennis_player_wta_213576",
-      "loser": "tennis_player_wta_213583",
-      "score": " 7-6(5) 6-2",
+      "winner": "tennis_player_wta_213583",
+      "loser": "tennis_player_wta_213576",
+      "score": "7-6(5) 6-2",
       "durationMinutes": 110
     },
     "dataQuality": "verified",
@@ -875956,8 +875956,8 @@
       "tournamentLevel": "250",
       "winner": "tennis_player_wta_220589",
       "loser": "tennis_player_wta_220716",
-      "score": null,
-      "durationMinutes": 0
+      "score": "W/O",
+      "durationMinutes": null
     },
     "dataQuality": "verified",
     "externalIds": {
@@ -904265,7 +904265,7 @@
     ],
     "sportData": {
       "kind": "tennis_match",
-      "round": "QF",
+      "round": "RR",
       "surface": "Hard",
       "tournamentLevel": "D",
       "winner": "tennis_player_wta_213631",
@@ -904291,7 +904291,7 @@
     ],
     "sportData": {
       "kind": "tennis_match",
-      "round": "QF",
+      "round": "RR",
       "surface": "Hard",
       "tournamentLevel": "D",
       "winner": "tennis_player_wta_222328",
@@ -904421,7 +904421,7 @@
     ],
     "sportData": {
       "kind": "tennis_match",
-      "round": "QF",
+      "round": "RR",
       "surface": "Hard",
       "tournamentLevel": "D",
       "winner": "tennis_player_wta_222601",
@@ -904447,7 +904447,7 @@
     ],
     "sportData": {
       "kind": "tennis_match",
-      "round": "QF",
+      "round": "RR",
       "surface": "Hard",
       "tournamentLevel": "D",
       "winner": "tennis_player_wta_201709",
@@ -907489,7 +907489,7 @@
     ],
     "sportData": {
       "kind": "tennis_match",
-      "round": "QF",
+      "round": "RR",
       "surface": "Hard",
       "tournamentLevel": "D",
       "winner": "tennis_player_wta_211843",
@@ -907515,7 +907515,7 @@
     ],
     "sportData": {
       "kind": "tennis_match",
-      "round": "QF",
+      "round": "RR",
       "surface": "Hard",
       "tournamentLevel": "D",
       "winner": "tennis_player_wta_213889",
@@ -907541,7 +907541,7 @@
     ],
     "sportData": {
       "kind": "tennis_match",
-      "round": "QF",
+      "round": "RR",
       "surface": "Hard",
       "tournamentLevel": "D",
       "winner": "tennis_player_wta_201533",
@@ -907567,7 +907567,7 @@
     ],
     "sportData": {
       "kind": "tennis_match",
-      "round": "QF",
+      "round": "RR",
       "surface": "Hard",
       "tournamentLevel": "D",
       "winner": "tennis_player_wta_211148",
@@ -907749,7 +907749,7 @@
     ],
     "sportData": {
       "kind": "tennis_match",
-      "round": "SF",
+      "round": "RR",
       "surface": "Hard",
       "tournamentLevel": "D",
       "winner": "tennis_player_wta_214096",
@@ -907775,7 +907775,7 @@
     ],
     "sportData": {
       "kind": "tennis_match",
-      "round": "SF",
+      "round": "RR",
       "surface": "Hard",
       "tournamentLevel": "D",
       "winner": "tennis_player_wta_222328",
@@ -907983,7 +907983,7 @@
     ],
     "sportData": {
       "kind": "tennis_match",
-      "round": "SF",
+      "round": "RR",
       "surface": "Hard",
       "tournamentLevel": "D",
       "winner": "tennis_player_wta_211843",
@@ -908009,7 +908009,7 @@
     ],
     "sportData": {
       "kind": "tennis_match",
-      "round": "SF",
+      "round": "RR",
       "surface": "Hard",
       "tournamentLevel": "D",
       "winner": "tennis_player_wta_202494",
@@ -908165,7 +908165,7 @@
     ],
     "sportData": {
       "kind": "tennis_match",
-      "round": "F",
+      "round": "RR",
       "surface": "Hard",
       "tournamentLevel": "D",
       "winner": "tennis_player_wta_214096",
@@ -908191,7 +908191,7 @@
     ],
     "sportData": {
       "kind": "tennis_match",
-      "round": "F",
+      "round": "RR",
       "surface": "Hard",
       "tournamentLevel": "D",
       "winner": "tennis_player_wta_222328",
@@ -915695,6 +915695,110 @@
   },
   {
     "sportId": "tennis",
+    "competitionId": "tennis_wta_wuhan",
+    "seasonId": "tennis_wta_wuhan_2026",
+    "date": "2026-10-12T00:00:00Z",
+    "title": "Jelena Ostapenko vs Diana Shnaider",
+    "participants": [
+      "tennis_player_wta_211533",
+      "tennis_player_wta_223670"
+    ],
+    "sportData": {
+      "kind": "tennis_match",
+      "round": "QF",
+      "surface": "Hard",
+      "tournamentLevel": "1000",
+      "winner": "tennis_player_wta_211533",
+      "loser": "tennis_player_wta_223670",
+      "score": "7-6(6) 6-1",
+      "durationMinutes": 105
+    },
+    "dataQuality": "verified",
+    "externalIds": {
+      "tmlMatchId": "wta_2026-1075_49"
+    },
+    "id": "evt_tennis_035232"
+  },
+  {
+    "sportId": "tennis",
+    "competitionId": "tennis_wta_wuhan",
+    "seasonId": "tennis_wta_wuhan_2026",
+    "date": "2026-10-12T00:00:00Z",
+    "title": "Sonay Kartal vs Elina Svitolina",
+    "participants": [
+      "tennis_player_wta_222661",
+      "tennis_player_wta_202494"
+    ],
+    "sportData": {
+      "kind": "tennis_match",
+      "round": "QF",
+      "surface": "Hard",
+      "tournamentLevel": "1000",
+      "winner": "tennis_player_wta_222661",
+      "loser": "tennis_player_wta_202494",
+      "score": "6-2 2-6 6-4",
+      "durationMinutes": 123
+    },
+    "dataQuality": "verified",
+    "externalIds": {
+      "tmlMatchId": "wta_2026-1075_50"
+    },
+    "id": "evt_tennis_035233"
+  },
+  {
+    "sportId": "tennis",
+    "competitionId": "tennis_wta_wuhan",
+    "seasonId": "tennis_wta_wuhan_2026",
+    "date": "2026-10-12T00:00:00Z",
+    "title": "Maja Chwalinska vs Maria Sakkari",
+    "participants": [
+      "tennis_player_wta_216081",
+      "tennis_player_wta_206289"
+    ],
+    "sportData": {
+      "kind": "tennis_match",
+      "round": "QF",
+      "surface": "Hard",
+      "tournamentLevel": "1000",
+      "winner": "tennis_player_wta_216081",
+      "loser": "tennis_player_wta_206289",
+      "score": "6-0 3-6 7-5",
+      "durationMinutes": 155
+    },
+    "dataQuality": "verified",
+    "externalIds": {
+      "tmlMatchId": "wta_2026-1075_51"
+    },
+    "id": "evt_tennis_035234"
+  },
+  {
+    "sportId": "tennis",
+    "competitionId": "tennis_wta_wuhan",
+    "seasonId": "tennis_wta_wuhan_2026",
+    "date": "2026-10-12T00:00:00Z",
+    "title": "Iga Swiatek vs Ann Li",
+    "participants": [
+      "tennis_player_wta_216347",
+      "tennis_player_wta_215983"
+    ],
+    "sportData": {
+      "kind": "tennis_match",
+      "round": "QF",
+      "surface": "Hard",
+      "tournamentLevel": "1000",
+      "winner": "tennis_player_wta_216347",
+      "loser": "tennis_player_wta_215983",
+      "score": "6-4 6-1",
+      "durationMinutes": 93
+    },
+    "dataQuality": "verified",
+    "externalIds": {
+      "tmlMatchId": "wta_2026-1075_52"
+    },
+    "id": "evt_tennis_035235"
+  },
+  {
+    "sportId": "tennis",
     "competitionId": "tennis_atp_shanghai",
     "seasonId": "tennis_atp_shanghai_2026",
     "date": "2026-10-13T00:00:00Z",
@@ -915952,5 +916056,57 @@
       "tmlMatchId": "atp_2026-5014_90"
     },
     "id": "evt_tennis_035221"
+  },
+  {
+    "sportId": "tennis",
+    "competitionId": "tennis_atp_shanghai",
+    "seasonId": "tennis_atp_shanghai_2026",
+    "date": "2026-10-16T00:00:00Z",
+    "title": "Rafael Jodar vs Casper Ruud",
+    "participants": [
+      "tennis_player_atp_J0DZ",
+      "tennis_player_atp_RH16"
+    ],
+    "sportData": {
+      "kind": "tennis_match",
+      "round": "QF",
+      "surface": "Hard",
+      "tournamentLevel": "M",
+      "winner": "tennis_player_atp_J0DZ",
+      "loser": "tennis_player_atp_RH16",
+      "score": "4-6 6-4 6-3",
+      "durationMinutes": 140
+    },
+    "dataQuality": "verified",
+    "externalIds": {
+      "tmlMatchId": "atp_2026-5014_91"
+    },
+    "id": "evt_tennis_035230"
+  },
+  {
+    "sportId": "tennis",
+    "competitionId": "tennis_atp_shanghai",
+    "seasonId": "tennis_atp_shanghai_2026",
+    "date": "2026-10-16T00:00:00Z",
+    "title": "Daniil Medvedev vs Tommy Paul",
+    "participants": [
+      "tennis_player_atp_MM58",
+      "tennis_player_atp_PL56"
+    ],
+    "sportData": {
+      "kind": "tennis_match",
+      "round": "QF",
+      "surface": "Hard",
+      "tournamentLevel": "M",
+      "winner": "tennis_player_atp_MM58",
+      "loser": "tennis_player_atp_PL56",
+      "score": "6-3 1-6 6-3",
+      "durationMinutes": 128
+    },
+    "dataQuality": "verified",
+    "externalIds": {
+      "tmlMatchId": "atp_2026-5014_92"
+    },
+    "id": "evt_tennis_035231"
   }
 ]
