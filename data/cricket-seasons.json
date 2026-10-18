@@ -670,6 +670,11 @@
     "label": "2026"
   },
   {
+    "id": "odi_cricket_women_2026_27",
+    "competitionId": "odi_cricket_women",
+    "label": "2026/27"
+  },
+  {
     "id": "t20_world_cup_2013_14",
     "competitionId": "t20_world_cup",
     "label": "2013/14"
@@ -1338,6 +1343,11 @@
     "id": "test_cricket_men_2026",
     "competitionId": "test_cricket_men",
     "label": "2026"
+  },
+  {
+    "id": "test_cricket_men_2026_27",
+    "competitionId": "test_cricket_men",
+    "label": "2026/27"
   },
   {
     "id": "test_cricket_women_2002_03",

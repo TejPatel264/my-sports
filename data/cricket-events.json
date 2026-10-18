@@ -374208,5 +374208,1295 @@
       "cricsheetId": "1554980"
     },
     "id": "evt_cricket_13297"
+  },
+  {
+    "sportId": "cricket",
+    "competitionId": "odi_cricket_men",
+    "seasonId": "odi_cricket_men_2026_27",
+    "date": "2026-10-07T00:00:00Z",
+    "title": "Namibia vs United States of America",
+    "participants": [
+      "cricket_team_namibia",
+      "cricket_team_united_states_of_america"
+    ],
+    "sportData": {
+      "kind": "cricket_t20",
+      "matchFormat": "ODI",
+      "round": "ICC Men's Cricket World Cup League 2, Match 129",
+      "venue": "Grand Prairie Stadium, Dallas",
+      "result": "United States of America won by 4 wickets",
+      "toss": {
+        "winner": "Namibia",
+        "decision": "bat"
+      },
+      "playerOfMatch": "MD Patel"
+    },
+    "dataQuality": "verified",
+    "externalIds": {
+      "cricsheetId": "1554411"
+    },
+    "id": "evt_cricket_13301"
+  },
+  {
+    "sportId": "cricket",
+    "competitionId": "t20i_cricket_men",
+    "seasonId": "t20i_cricket_men_2026_27",
+    "date": "2026-10-08T00:00:00Z",
+    "title": "Thailand vs Kuwait",
+    "participants": [
+      "cricket_team_thailand",
+      "cricket_team_kuwait"
+    ],
+    "sportData": {
+      "kind": "cricket_t20",
+      "matchFormat": "T20",
+      "round": "ICC Men's T20 World Cup Sub Regional Asia Qualifier A, Match 7",
+      "venue": "Bayuemas Oval, Kuala Lumpur",
+      "result": "Kuwait won by 9 wickets",
+      "toss": {
+        "winner": "Kuwait",
+        "decision": "field"
+      },
+      "playerOfMatch": "R Sandaruwan"
+    },
+    "dataQuality": "verified",
+    "externalIds": {
+      "cricsheetId": "1554539"
+    },
+    "id": "evt_cricket_13316"
+  },
+  {
+    "sportId": "cricket",
+    "competitionId": "t20i_cricket_men",
+    "seasonId": "t20i_cricket_men_2026_27",
+    "date": "2026-10-08T00:00:00Z",
+    "title": "Bhutan vs Mongolia",
+    "participants": [
+      "cricket_team_bhutan",
+      "cricket_team_mongolia"
+    ],
+    "sportData": {
+      "kind": "cricket_t20",
+      "matchFormat": "T20",
+      "round": "ICC Men's T20 World Cup Sub Regional Asia Qualifier A, Match 8",
+      "venue": "YSD-UKM Cricket Oval, Bangi",
+      "result": "Bhutan won by 136 runs",
+      "toss": {
+        "winner": "Bhutan",
+        "decision": "bat"
+      },
+      "playerOfMatch": "Tenjin Rabgey"
+    },
+    "dataQuality": "verified",
+    "externalIds": {
+      "cricsheetId": "1554540"
+    },
+    "id": "evt_cricket_13317"
+  },
+  {
+    "sportId": "cricket",
+    "competitionId": "t20i_cricket_men",
+    "seasonId": "t20i_cricket_men_2026_27",
+    "date": "2026-10-08T00:00:00Z",
+    "title": "Myanmar vs Bahrain",
+    "participants": [
+      "cricket_team_myanmar",
+      "cricket_team_bahrain"
+    ],
+    "sportData": {
+      "kind": "cricket_t20",
+      "matchFormat": "T20",
+      "round": "ICC Men's T20 World Cup Sub Regional Asia Qualifier A, Match 9",
+      "venue": "Selangor Turf Club, Kuala Lumpur",
+      "result": "Bahrain won by 8 wickets",
+      "toss": {
+        "winner": "Bahrain",
+        "decision": "field"
+      },
+      "playerOfMatch": "Abdul Majid Abbasi"
+    },
+    "dataQuality": "verified",
+    "externalIds": {
+      "cricsheetId": "1554541"
+    },
+    "id": "evt_cricket_13318"
+  },
+  {
+    "sportId": "cricket",
+    "competitionId": "t20i_cricket_men",
+    "seasonId": "t20i_cricket_men_2026_27",
+    "date": "2026-10-08T00:00:00Z",
+    "title": "China vs Maldives",
+    "participants": [
+      "cricket_team_china",
+      "cricket_team_maldives"
+    ],
+    "sportData": {
+      "kind": "cricket_t20",
+      "matchFormat": "T20",
+      "round": "ICC Men's T20 World Cup Sub Regional Asia Qualifier B, Match 1",
+      "venue": "Bayuemas Oval, Kuala Lumpur",
+      "result": "Maldives won by 10 wickets",
+      "toss": {
+        "winner": "China",
+        "decision": "bat"
+      },
+      "playerOfMatch": "Azyan Farhath"
+    },
+    "dataQuality": "verified",
+    "externalIds": {
+      "cricsheetId": "1554568"
+    },
+    "id": "evt_cricket_13331"
+  },
+  {
+    "sportId": "cricket",
+    "competitionId": "t20i_cricket_men",
+    "seasonId": "t20i_cricket_men_2026_27",
+    "date": "2026-10-08T00:00:00Z",
+    "title": "Saudi Arabia vs Singapore",
+    "participants": [
+      "cricket_team_saudi_arabia",
+      "cricket_team_singapore"
+    ],
+    "sportData": {
+      "kind": "cricket_t20",
+      "matchFormat": "T20",
+      "round": "ICC Men's T20 World Cup Sub Regional Asia Qualifier B, Match 2",
+      "venue": "YSD-UKM Cricket Oval, Bangi",
+      "result": "Saudi Arabia won by 75 runs",
+      "toss": {
+        "winner": "Saudi Arabia",
+        "decision": "bat"
+      },
+      "playerOfMatch": "Abdul Waheed"
+    },
+    "dataQuality": "verified",
+    "externalIds": {
+      "cricsheetId": "1554569"
+    },
+    "id": "evt_cricket_13332"
+  },
+  {
+    "sportId": "cricket",
+    "competitionId": "t20i_cricket_men",
+    "seasonId": "t20i_cricket_men_2026_27",
+    "date": "2026-10-08T00:00:00Z",
+    "title": "Hong Kong vs Malaysia",
+    "participants": [
+      "cricket_team_hong_kong",
+      "cricket_team_malaysia"
+    ],
+    "sportData": {
+      "kind": "cricket_t20",
+      "matchFormat": "T20",
+      "round": "ICC Men's T20 World Cup Sub Regional Asia Qualifier B, Match 3",
+      "venue": "Selangor Turf Club, Kuala Lumpur",
+      "result": "Hong Kong won by 7 runs (D/L)",
+      "toss": {
+        "winner": "Hong Kong",
+        "decision": "bat"
+      },
+      "playerOfMatch": "A Shukla"
+    },
+    "dataQuality": "verified",
+    "externalIds": {
+      "cricsheetId": "1554570"
+    },
+    "id": "evt_cricket_13333"
+  },
+  {
+    "sportId": "cricket",
+    "competitionId": "test_cricket_men",
+    "seasonId": "test_cricket_men_2026_27",
+    "date": "2026-10-09T00:00:00Z",
+    "title": "Australia vs South Africa",
+    "participants": [
+      "cricket_team_australia",
+      "cricket_team_south_africa"
+    ],
+    "sportData": {
+      "kind": "cricket_test",
+      "matchFormat": "Test",
+      "round": "Australia tour of South Africa, Match 1",
+      "venue": "Kingsmead, Durban",
+      "result": "Australia won by 214 runs",
+      "toss": {
+        "winner": "Australia",
+        "decision": "bat"
+      },
+      "playerOfMatch": "MT Renshaw",
+      "actualDays": 5,
+      "scheduledDays": 5
+    },
+    "dataQuality": "verified",
+    "externalIds": {
+      "cricsheetId": "1525659"
+    },
+    "id": "evt_cricket_13300"
+  },
+  {
+    "sportId": "cricket",
+    "competitionId": "odi_cricket_men",
+    "seasonId": "odi_cricket_men_2026_27",
+    "date": "2026-10-09T00:00:00Z",
+    "title": "United Arab Emirates vs Namibia",
+    "participants": [
+      "cricket_team_united_arab_emirates",
+      "cricket_team_namibia"
+    ],
+    "sportData": {
+      "kind": "cricket_t20",
+      "matchFormat": "ODI",
+      "round": "ICC Men's Cricket World Cup League 2, Match 131",
+      "venue": "Grand Prairie Stadium, Dallas",
+      "result": "Namibia won by 8 wickets",
+      "toss": {
+        "winner": "Namibia",
+        "decision": "field"
+      },
+      "playerOfMatch": "JJ Smit"
+    },
+    "dataQuality": "verified",
+    "externalIds": {
+      "cricsheetId": "1554412"
+    },
+    "id": "evt_cricket_13302"
+  },
+  {
+    "sportId": "cricket",
+    "competitionId": "odi_cricket_men",
+    "seasonId": "odi_cricket_men_2026_27",
+    "date": "2026-10-09T00:00:00Z",
+    "title": "Oman vs Canada",
+    "participants": [
+      "cricket_team_oman",
+      "cricket_team_canada"
+    ],
+    "sportData": {
+      "kind": "cricket_t20",
+      "matchFormat": "ODI",
+      "round": "ICC Men's Cricket World Cup League 2, Match 130",
+      "venue": "Al Amerat Cricket Ground Oman Cricket (Ministry Turf 1)",
+      "result": "Oman won by 41 runs",
+      "toss": {
+        "winner": "Oman",
+        "decision": "bat"
+      },
+      "playerOfMatch": "Hasnain Ul Wahab"
+    },
+    "dataQuality": "verified",
+    "externalIds": {
+      "cricsheetId": "1554415"
+    },
+    "id": "evt_cricket_13305"
+  },
+  {
+    "sportId": "cricket",
+    "competitionId": "odi_cricket_women",
+    "seasonId": "odi_cricket_women_2026_27",
+    "date": "2026-10-09T00:00:00Z",
+    "title": "Bangladesh vs Australia",
+    "participants": [
+      "cricket_team_bangladesh",
+      "cricket_team_australia"
+    ],
+    "sportData": {
+      "kind": "cricket_t20",
+      "matchFormat": "ODI",
+      "round": "Bangladesh Women tour of Australia, Match 1",
+      "venue": "Allan Border Field, Brisbane",
+      "result": "Australia won by 7 wickets",
+      "toss": {
+        "winner": "Australia",
+        "decision": "field"
+      },
+      "playerOfMatch": "A Sutherland"
+    },
+    "dataQuality": "verified",
+    "externalIds": {
+      "cricsheetId": "1528716"
+    },
+    "id": "evt_cricket_13308"
+  },
+  {
+    "sportId": "cricket",
+    "competitionId": "t20i_cricket_men",
+    "seasonId": "t20i_cricket_men_2026_27",
+    "date": "2026-10-09T00:00:00Z",
+    "title": "India vs West Indies",
+    "participants": [
+      "cricket_team_india",
+      "cricket_team_west_indies"
+    ],
+    "sportData": {
+      "kind": "cricket_t20",
+      "matchFormat": "T20",
+      "round": "West Indies tour of India, Match 2",
+      "venue": "JSCA International Stadium Complex, Ranchi",
+      "result": "West Indies won by 6 wickets",
+      "toss": {
+        "winner": "West Indies",
+        "decision": "field"
+      },
+      "playerOfMatch": "SD Hope"
+    },
+    "dataQuality": "verified",
+    "externalIds": {
+      "cricsheetId": "1529231"
+    },
+    "id": "evt_cricket_13311"
+  },
+  {
+    "sportId": "cricket",
+    "competitionId": "t20i_cricket_men",
+    "seasonId": "t20i_cricket_men_2026_27",
+    "date": "2026-10-09T00:00:00Z",
+    "title": "Sri Lanka vs Pakistan",
+    "participants": [
+      "cricket_team_sri_lanka",
+      "cricket_team_pakistan"
+    ],
+    "sportData": {
+      "kind": "cricket_t20",
+      "matchFormat": "T20",
+      "round": "Sri Lanka tour of Pakistan, Match 1",
+      "venue": "Rawalpindi Cricket Stadium",
+      "result": "Pakistan won by 4 wickets",
+      "toss": {
+        "winner": "Sri Lanka",
+        "decision": "bat"
+      },
+      "playerOfMatch": "Sahibzada Farhan"
+    },
+    "dataQuality": "verified",
+    "externalIds": {
+      "cricsheetId": "1550708"
+    },
+    "id": "evt_cricket_13313"
+  },
+  {
+    "sportId": "cricket",
+    "competitionId": "t20i_cricket_men",
+    "seasonId": "t20i_cricket_men_2026_27",
+    "date": "2026-10-09T00:00:00Z",
+    "title": "Thailand vs Mongolia",
+    "participants": [
+      "cricket_team_thailand",
+      "cricket_team_mongolia"
+    ],
+    "sportData": {
+      "kind": "cricket_t20",
+      "matchFormat": "T20",
+      "round": "ICC Men's T20 World Cup Sub Regional Asia Qualifier A, Match 10",
+      "venue": "Bayuemas Oval, Kuala Lumpur",
+      "result": "Thailand won by 183 runs",
+      "toss": {
+        "winner": "Thailand",
+        "decision": "bat"
+      },
+      "playerOfMatch": "P Thongsa"
+    },
+    "dataQuality": "verified",
+    "externalIds": {
+      "cricsheetId": "1554542"
+    },
+    "id": "evt_cricket_13319"
+  },
+  {
+    "sportId": "cricket",
+    "competitionId": "t20i_cricket_men",
+    "seasonId": "t20i_cricket_men_2026_27",
+    "date": "2026-10-09T00:00:00Z",
+    "title": "Kuwait vs Bahrain",
+    "participants": [
+      "cricket_team_kuwait",
+      "cricket_team_bahrain"
+    ],
+    "sportData": {
+      "kind": "cricket_t20",
+      "matchFormat": "T20",
+      "round": "ICC Men's T20 World Cup Sub Regional Asia Qualifier A, Match 11",
+      "venue": "YSD-UKM Cricket Oval, Bangi",
+      "result": "Bahrain won by 6 wickets",
+      "toss": {
+        "winner": "Bahrain",
+        "decision": "field"
+      },
+      "playerOfMatch": "Asif Ali"
+    },
+    "dataQuality": "verified",
+    "externalIds": {
+      "cricsheetId": "1554543"
+    },
+    "id": "evt_cricket_13320"
+  },
+  {
+    "sportId": "cricket",
+    "competitionId": "t20i_cricket_men",
+    "seasonId": "t20i_cricket_men_2026_27",
+    "date": "2026-10-09T00:00:00Z",
+    "title": "Myanmar vs Qatar",
+    "participants": [
+      "cricket_team_myanmar",
+      "cricket_team_qatar"
+    ],
+    "sportData": {
+      "kind": "cricket_t20",
+      "matchFormat": "T20",
+      "round": "ICC Men's T20 World Cup Sub Regional Asia Qualifier A, Match 12",
+      "venue": "Selangor Turf Club, Kuala Lumpur",
+      "result": "Qatar won by 9 wickets",
+      "toss": {
+        "winner": "Myanmar",
+        "decision": "bat"
+      },
+      "playerOfMatch": "DAM Louis"
+    },
+    "dataQuality": "verified",
+    "externalIds": {
+      "cricsheetId": "1554544"
+    },
+    "id": "evt_cricket_13321"
+  },
+  {
+    "sportId": "cricket",
+    "competitionId": "t20i_cricket_men",
+    "seasonId": "t20i_cricket_men_2026_27",
+    "date": "2026-10-09T00:00:00Z",
+    "title": "Malaysia vs Saudi Arabia",
+    "participants": [
+      "cricket_team_malaysia",
+      "cricket_team_saudi_arabia"
+    ],
+    "sportData": {
+      "kind": "cricket_t20",
+      "matchFormat": "T20",
+      "round": "ICC Men's T20 World Cup Sub Regional Asia Qualifier B, Match 4",
+      "venue": "Bayuemas Oval, Kuala Lumpur",
+      "result": "Saudi Arabia won by 3 wickets",
+      "toss": {
+        "winner": "Malaysia",
+        "decision": "bat"
+      },
+      "playerOfMatch": "Abdul Waheed"
+    },
+    "dataQuality": "verified",
+    "externalIds": {
+      "cricsheetId": "1554571"
+    },
+    "id": "evt_cricket_13334"
+  },
+  {
+    "sportId": "cricket",
+    "competitionId": "t20i_cricket_men",
+    "seasonId": "t20i_cricket_men_2026_27",
+    "date": "2026-10-09T00:00:00Z",
+    "title": "China vs Hong Kong",
+    "participants": [
+      "cricket_team_china",
+      "cricket_team_hong_kong"
+    ],
+    "sportData": {
+      "kind": "cricket_t20",
+      "matchFormat": "T20",
+      "round": "ICC Men's T20 World Cup Sub Regional Asia Qualifier B, Match 5",
+      "venue": "YSD-UKM Cricket Oval, Bangi",
+      "result": "Hong Kong won by 8 wickets",
+      "toss": {
+        "winner": "China",
+        "decision": "bat"
+      },
+      "playerOfMatch": "Ehsan Khan"
+    },
+    "dataQuality": "verified",
+    "externalIds": {
+      "cricsheetId": "1554572"
+    },
+    "id": "evt_cricket_13335"
+  },
+  {
+    "sportId": "cricket",
+    "competitionId": "t20i_cricket_men",
+    "seasonId": "t20i_cricket_men_2026_27",
+    "date": "2026-10-09T00:00:00Z",
+    "title": "Singapore vs Maldives",
+    "participants": [
+      "cricket_team_singapore",
+      "cricket_team_maldives"
+    ],
+    "sportData": {
+      "kind": "cricket_t20",
+      "matchFormat": "T20",
+      "round": "ICC Men's T20 World Cup Sub Regional Asia Qualifier B, Match 6",
+      "venue": "Selangor Turf Club, Kuala Lumpur",
+      "result": "Singapore won by 33 runs",
+      "toss": {
+        "winner": "Singapore",
+        "decision": "bat"
+      },
+      "playerOfMatch": "S Chandramohan"
+    },
+    "dataQuality": "verified",
+    "externalIds": {
+      "cricsheetId": "1554573"
+    },
+    "id": "evt_cricket_13336"
+  },
+  {
+    "sportId": "cricket",
+    "competitionId": "odi_cricket_men",
+    "seasonId": "odi_cricket_men_2026_27",
+    "date": "2026-10-11T00:00:00Z",
+    "title": "United Arab Emirates vs United States of America",
+    "participants": [
+      "cricket_team_united_arab_emirates",
+      "cricket_team_united_states_of_america"
+    ],
+    "sportData": {
+      "kind": "cricket_t20",
+      "matchFormat": "ODI",
+      "round": "ICC Men's Cricket World Cup League 2, Match 133",
+      "venue": "Grand Prairie Stadium, Dallas",
+      "result": "United States of America won by 5 wickets",
+      "toss": {
+        "winner": "United States of America",
+        "decision": "field"
+      },
+      "playerOfMatch": "Shubham Ranjane"
+    },
+    "dataQuality": "verified",
+    "externalIds": {
+      "cricsheetId": "1554413"
+    },
+    "id": "evt_cricket_13303"
+  },
+  {
+    "sportId": "cricket",
+    "competitionId": "odi_cricket_men",
+    "seasonId": "odi_cricket_men_2026_27",
+    "date": "2026-10-11T00:00:00Z",
+    "title": "Nepal vs Canada",
+    "participants": [
+      "cricket_team_nepal",
+      "cricket_team_canada"
+    ],
+    "sportData": {
+      "kind": "cricket_t20",
+      "matchFormat": "ODI",
+      "round": "ICC Men's Cricket World Cup League 2, Match 132",
+      "venue": "Al Amerat Cricket Ground Oman Cricket (Ministry Turf 1)",
+      "result": "Nepal won by 24 runs",
+      "toss": {
+        "winner": "Canada",
+        "decision": "field"
+      },
+      "playerOfMatch": "RK Paudel"
+    },
+    "dataQuality": "verified",
+    "externalIds": {
+      "cricsheetId": "1554416"
+    },
+    "id": "evt_cricket_13306"
+  },
+  {
+    "sportId": "cricket",
+    "competitionId": "odi_cricket_women",
+    "seasonId": "odi_cricket_women_2026_27",
+    "date": "2026-10-11T00:00:00Z",
+    "title": "Bangladesh vs Australia",
+    "participants": [
+      "cricket_team_bangladesh",
+      "cricket_team_australia"
+    ],
+    "sportData": {
+      "kind": "cricket_t20",
+      "matchFormat": "ODI",
+      "round": "Bangladesh Women tour of Australia, Match 2",
+      "venue": "Allan Border Field, Brisbane",
+      "result": "Australia won by 9 wickets",
+      "toss": {
+        "winner": "Australia",
+        "decision": "field"
+      },
+      "playerOfMatch": "G Voll"
+    },
+    "dataQuality": "verified",
+    "externalIds": {
+      "cricsheetId": "1528717"
+    },
+    "id": "evt_cricket_13309"
+  },
+  {
+    "sportId": "cricket",
+    "competitionId": "t20i_cricket_men",
+    "seasonId": "t20i_cricket_men_2026_27",
+    "date": "2026-10-11T00:00:00Z",
+    "title": "India vs West Indies",
+    "participants": [
+      "cricket_team_india",
+      "cricket_team_west_indies"
+    ],
+    "sportData": {
+      "kind": "cricket_t20",
+      "matchFormat": "T20",
+      "round": "West Indies tour of India, Match 3",
+      "venue": "Holkar Cricket Stadium, Indore",
+      "result": "India won by 14 runs",
+      "toss": {
+        "winner": "West Indies",
+        "decision": "field"
+      },
+      "playerOfMatch": "Arshdeep Singh"
+    },
+    "dataQuality": "verified",
+    "externalIds": {
+      "cricsheetId": "1529232"
+    },
+    "id": "evt_cricket_13312"
+  },
+  {
+    "sportId": "cricket",
+    "competitionId": "t20i_cricket_men",
+    "seasonId": "t20i_cricket_men_2026_27",
+    "date": "2026-10-11T00:00:00Z",
+    "title": "Pakistan vs Sri Lanka",
+    "participants": [
+      "cricket_team_pakistan",
+      "cricket_team_sri_lanka"
+    ],
+    "sportData": {
+      "kind": "cricket_t20",
+      "matchFormat": "T20",
+      "round": "Sri Lanka tour of Pakistan, Match 2",
+      "venue": "Rawalpindi Cricket Stadium",
+      "result": "Pakistan won by 82 runs",
+      "toss": {
+        "winner": "Sri Lanka",
+        "decision": "field"
+      },
+      "playerOfMatch": "Maaz Sadaqat"
+    },
+    "dataQuality": "verified",
+    "externalIds": {
+      "cricsheetId": "1550709"
+    },
+    "id": "evt_cricket_13314"
+  },
+  {
+    "sportId": "cricket",
+    "competitionId": "t20i_cricket_men",
+    "seasonId": "t20i_cricket_men_2026_27",
+    "date": "2026-10-11T00:00:00Z",
+    "title": "Myanmar vs Kuwait",
+    "participants": [
+      "cricket_team_myanmar",
+      "cricket_team_kuwait"
+    ],
+    "sportData": {
+      "kind": "cricket_t20",
+      "matchFormat": "T20",
+      "round": "ICC Men's T20 World Cup Sub Regional Asia Qualifier A, Match 13",
+      "venue": "Bayuemas Oval, Kuala Lumpur",
+      "result": "Kuwait won by 9 wickets",
+      "toss": {
+        "winner": "Kuwait",
+        "decision": "field"
+      },
+      "playerOfMatch": "MNM Aslam"
+    },
+    "dataQuality": "verified",
+    "externalIds": {
+      "cricsheetId": "1554545"
+    },
+    "id": "evt_cricket_13322"
+  },
+  {
+    "sportId": "cricket",
+    "competitionId": "t20i_cricket_men",
+    "seasonId": "t20i_cricket_men_2026_27",
+    "date": "2026-10-11T00:00:00Z",
+    "title": "Bhutan vs Qatar",
+    "participants": [
+      "cricket_team_bhutan",
+      "cricket_team_qatar"
+    ],
+    "sportData": {
+      "kind": "cricket_t20",
+      "matchFormat": "T20",
+      "round": "ICC Men's T20 World Cup Sub Regional Asia Qualifier A, Match 14",
+      "venue": "YSD-UKM Cricket Oval, Bangi",
+      "result": "Qatar won by 9 wickets",
+      "toss": {
+        "winner": "Qatar",
+        "decision": "field"
+      },
+      "playerOfMatch": "Muhammad Asim"
+    },
+    "dataQuality": "verified",
+    "externalIds": {
+      "cricsheetId": "1554546"
+    },
+    "id": "evt_cricket_13323"
+  },
+  {
+    "sportId": "cricket",
+    "competitionId": "t20i_cricket_men",
+    "seasonId": "t20i_cricket_men_2026_27",
+    "date": "2026-10-11T00:00:00Z",
+    "title": "Mongolia vs Bahrain",
+    "participants": [
+      "cricket_team_mongolia",
+      "cricket_team_bahrain"
+    ],
+    "sportData": {
+      "kind": "cricket_t20",
+      "matchFormat": "T20",
+      "round": "ICC Men's T20 World Cup Sub Regional Asia Qualifier A, Match 15",
+      "venue": "Selangor Turf Club, Kuala Lumpur",
+      "result": "Bahrain won by 8 wickets",
+      "toss": {
+        "winner": "Bahrain",
+        "decision": "field"
+      },
+      "playerOfMatch": "Ali Dawood"
+    },
+    "dataQuality": "verified",
+    "externalIds": {
+      "cricsheetId": "1554547"
+    },
+    "id": "evt_cricket_13324"
+  },
+  {
+    "sportId": "cricket",
+    "competitionId": "t20i_cricket_men",
+    "seasonId": "t20i_cricket_men_2026_27",
+    "date": "2026-10-11T00:00:00Z",
+    "title": "Saudi Arabia vs Hong Kong",
+    "participants": [
+      "cricket_team_saudi_arabia",
+      "cricket_team_hong_kong"
+    ],
+    "sportData": {
+      "kind": "cricket_t20",
+      "matchFormat": "T20",
+      "round": "ICC Men's T20 World Cup Sub Regional Asia Qualifier B, Match 7",
+      "venue": "Bayuemas Oval, Kuala Lumpur",
+      "result": "Saudi Arabia won by 10 runs",
+      "toss": {
+        "winner": "Hong Kong",
+        "decision": "field"
+      },
+      "playerOfMatch": "Ishtiaq Ahmad"
+    },
+    "dataQuality": "verified",
+    "externalIds": {
+      "cricsheetId": "1554574"
+    },
+    "id": "evt_cricket_13337"
+  },
+  {
+    "sportId": "cricket",
+    "competitionId": "t20i_cricket_men",
+    "seasonId": "t20i_cricket_men_2026_27",
+    "date": "2026-10-11T00:00:00Z",
+    "title": "Maldives vs Malaysia",
+    "participants": [
+      "cricket_team_maldives",
+      "cricket_team_malaysia"
+    ],
+    "sportData": {
+      "kind": "cricket_t20",
+      "matchFormat": "T20",
+      "round": "ICC Men's T20 World Cup Sub Regional Asia Qualifier B, Match 8",
+      "venue": "YSD-UKM Cricket Oval, Bangi",
+      "result": "Malaysia won by 6 wickets",
+      "toss": {
+        "winner": "Malaysia",
+        "decision": "field"
+      },
+      "playerOfMatch": "Pavandeep Singh"
+    },
+    "dataQuality": "verified",
+    "externalIds": {
+      "cricsheetId": "1554575"
+    },
+    "id": "evt_cricket_13338"
+  },
+  {
+    "sportId": "cricket",
+    "competitionId": "t20i_cricket_men",
+    "seasonId": "t20i_cricket_men_2026_27",
+    "date": "2026-10-11T00:00:00Z",
+    "title": "Singapore vs China",
+    "participants": [
+      "cricket_team_singapore",
+      "cricket_team_china"
+    ],
+    "sportData": {
+      "kind": "cricket_t20",
+      "matchFormat": "T20",
+      "round": "ICC Men's T20 World Cup Sub Regional Asia Qualifier B, Match 9",
+      "venue": "Selangor Turf Club, Kuala Lumpur",
+      "result": "Singapore won by 50 runs",
+      "toss": {
+        "winner": "China",
+        "decision": "field"
+      },
+      "playerOfMatch": "Manpreet Singh"
+    },
+    "dataQuality": "verified",
+    "externalIds": {
+      "cricsheetId": "1554576"
+    },
+    "id": "evt_cricket_13339"
+  },
+  {
+    "sportId": "cricket",
+    "competitionId": "t20i_cricket_men",
+    "seasonId": "t20i_cricket_men_2026_27",
+    "date": "2026-10-12T00:00:00Z",
+    "title": "Qatar vs Mongolia",
+    "participants": [
+      "cricket_team_qatar",
+      "cricket_team_mongolia"
+    ],
+    "sportData": {
+      "kind": "cricket_t20",
+      "matchFormat": "T20",
+      "round": "ICC Men's T20 World Cup Sub Regional Asia Qualifier A, Match 16",
+      "venue": "Bayuemas Oval, Kuala Lumpur",
+      "result": "No result",
+      "toss": {
+        "winner": "Mongolia",
+        "decision": "field"
+      },
+      "playerOfMatch": null
+    },
+    "dataQuality": "verified",
+    "externalIds": {
+      "cricsheetId": "1554548"
+    },
+    "id": "evt_cricket_13325"
+  },
+  {
+    "sportId": "cricket",
+    "competitionId": "t20i_cricket_men",
+    "seasonId": "t20i_cricket_men_2026_27",
+    "date": "2026-10-12T00:00:00Z",
+    "title": "Myanmar vs Thailand",
+    "participants": [
+      "cricket_team_myanmar",
+      "cricket_team_thailand"
+    ],
+    "sportData": {
+      "kind": "cricket_t20",
+      "matchFormat": "T20",
+      "round": "ICC Men's T20 World Cup Sub Regional Asia Qualifier A, Match 17",
+      "venue": "YSD-UKM Cricket Oval, Bangi",
+      "result": "Thailand won by 9 wickets",
+      "toss": {
+        "winner": "Thailand",
+        "decision": "field"
+      },
+      "playerOfMatch": "P Thongsa"
+    },
+    "dataQuality": "verified",
+    "externalIds": {
+      "cricsheetId": "1554549"
+    },
+    "id": "evt_cricket_13326"
+  },
+  {
+    "sportId": "cricket",
+    "competitionId": "t20i_cricket_men",
+    "seasonId": "t20i_cricket_men_2026_27",
+    "date": "2026-10-12T00:00:00Z",
+    "title": "Bhutan vs Kuwait",
+    "participants": [
+      "cricket_team_bhutan",
+      "cricket_team_kuwait"
+    ],
+    "sportData": {
+      "kind": "cricket_t20",
+      "matchFormat": "T20",
+      "round": "ICC Men's T20 World Cup Sub Regional Asia Qualifier A, Match 18",
+      "venue": "Selangor Turf Club, Kuala Lumpur",
+      "result": "Kuwait won by 8 wickets",
+      "toss": {
+        "winner": "Kuwait",
+        "decision": "field"
+      },
+      "playerOfMatch": "Yasin Patel"
+    },
+    "dataQuality": "verified",
+    "externalIds": {
+      "cricsheetId": "1554550"
+    },
+    "id": "evt_cricket_13327"
+  },
+  {
+    "sportId": "cricket",
+    "competitionId": "t20i_cricket_men",
+    "seasonId": "t20i_cricket_men_2026_27",
+    "date": "2026-10-12T00:00:00Z",
+    "title": "Malaysia vs Singapore",
+    "participants": [
+      "cricket_team_malaysia",
+      "cricket_team_singapore"
+    ],
+    "sportData": {
+      "kind": "cricket_t20",
+      "matchFormat": "T20",
+      "round": "ICC Men's T20 World Cup Sub Regional Asia Qualifier B, Match 10",
+      "venue": "Bayuemas Oval, Kuala Lumpur",
+      "result": "Malaysia won by 37 runs",
+      "toss": {
+        "winner": "Singapore",
+        "decision": "field"
+      },
+      "playerOfMatch": "Virandeep Singh"
+    },
+    "dataQuality": "verified",
+    "externalIds": {
+      "cricsheetId": "1554577"
+    },
+    "id": "evt_cricket_13340"
+  },
+  {
+    "sportId": "cricket",
+    "competitionId": "t20i_cricket_men",
+    "seasonId": "t20i_cricket_men_2026_27",
+    "date": "2026-10-12T00:00:00Z",
+    "title": "Hong Kong vs Maldives",
+    "participants": [
+      "cricket_team_hong_kong",
+      "cricket_team_maldives"
+    ],
+    "sportData": {
+      "kind": "cricket_t20",
+      "matchFormat": "T20",
+      "round": "ICC Men's T20 World Cup Sub Regional Asia Qualifier B, Match 11",
+      "venue": "YSD-UKM Cricket Oval, Bangi",
+      "result": "No result",
+      "toss": {
+        "winner": "Maldives",
+        "decision": "field"
+      },
+      "playerOfMatch": null
+    },
+    "dataQuality": "verified",
+    "externalIds": {
+      "cricsheetId": "1554578"
+    },
+    "id": "evt_cricket_13341"
+  },
+  {
+    "sportId": "cricket",
+    "competitionId": "t20i_cricket_men",
+    "seasonId": "t20i_cricket_men_2026_27",
+    "date": "2026-10-12T00:00:00Z",
+    "title": "Saudi Arabia vs China",
+    "participants": [
+      "cricket_team_saudi_arabia",
+      "cricket_team_china"
+    ],
+    "sportData": {
+      "kind": "cricket_t20",
+      "matchFormat": "T20",
+      "round": "ICC Men's T20 World Cup Sub Regional Asia Qualifier B, Match 12",
+      "venue": "Selangor Turf Club, Kuala Lumpur",
+      "result": "Saudi Arabia won by 64 runs",
+      "toss": {
+        "winner": "China",
+        "decision": "field"
+      },
+      "playerOfMatch": "Usman Khalid"
+    },
+    "dataQuality": "verified",
+    "externalIds": {
+      "cricsheetId": "1554579"
+    },
+    "id": "evt_cricket_13342"
+  },
+  {
+    "sportId": "cricket",
+    "competitionId": "odi_cricket_men",
+    "seasonId": "odi_cricket_men_2026_27",
+    "date": "2026-10-13T00:00:00Z",
+    "title": "United States of America vs Namibia",
+    "participants": [
+      "cricket_team_united_states_of_america",
+      "cricket_team_namibia"
+    ],
+    "sportData": {
+      "kind": "cricket_t20",
+      "matchFormat": "ODI",
+      "round": "ICC Men's Cricket World Cup League 2, Match 135",
+      "venue": "Grand Prairie Stadium, Dallas",
+      "result": "Namibia won by 6 wickets",
+      "toss": {
+        "winner": "Namibia",
+        "decision": "field"
+      },
+      "playerOfMatch": "L Steenkamp"
+    },
+    "dataQuality": "verified",
+    "externalIds": {
+      "cricsheetId": "1554414"
+    },
+    "id": "evt_cricket_13304"
+  },
+  {
+    "sportId": "cricket",
+    "competitionId": "odi_cricket_men",
+    "seasonId": "odi_cricket_men_2026_27",
+    "date": "2026-10-13T00:00:00Z",
+    "title": "Nepal vs Oman",
+    "participants": [
+      "cricket_team_nepal",
+      "cricket_team_oman"
+    ],
+    "sportData": {
+      "kind": "cricket_t20",
+      "matchFormat": "ODI",
+      "round": "ICC Men's Cricket World Cup League 2, Match 134",
+      "venue": "Al Amerat Cricket Ground Oman Cricket (Ministry Turf 1)",
+      "result": "Nepal won by 113 runs",
+      "toss": {
+        "winner": "Nepal",
+        "decision": "bat"
+      },
+      "playerOfMatch": "Karan KC"
+    },
+    "dataQuality": "verified",
+    "externalIds": {
+      "cricsheetId": "1554417"
+    },
+    "id": "evt_cricket_13307"
+  },
+  {
+    "sportId": "cricket",
+    "competitionId": "t20i_cricket_men",
+    "seasonId": "t20i_cricket_men_2026_27",
+    "date": "2026-10-13T00:00:00Z",
+    "title": "Pakistan vs Sri Lanka",
+    "participants": [
+      "cricket_team_pakistan",
+      "cricket_team_sri_lanka"
+    ],
+    "sportData": {
+      "kind": "cricket_t20",
+      "matchFormat": "T20",
+      "round": "Sri Lanka tour of Pakistan, Match 3",
+      "venue": "Rawalpindi Cricket Stadium",
+      "result": "Sri Lanka won by 8 wickets",
+      "toss": {
+        "winner": "Sri Lanka",
+        "decision": "field"
+      },
+      "playerOfMatch": "BKG Mendis"
+    },
+    "dataQuality": "verified",
+    "externalIds": {
+      "cricsheetId": "1550710"
+    },
+    "id": "evt_cricket_13315"
+  },
+  {
+    "sportId": "cricket",
+    "competitionId": "odi_cricket_women",
+    "seasonId": "odi_cricket_women_2026_27",
+    "date": "2026-10-14T00:00:00Z",
+    "title": "Bangladesh vs Australia",
+    "participants": [
+      "cricket_team_bangladesh",
+      "cricket_team_australia"
+    ],
+    "sportData": {
+      "kind": "cricket_t20",
+      "matchFormat": "ODI",
+      "round": "Bangladesh Women tour of Australia, Match 3",
+      "venue": "Allan Border Field, Brisbane",
+      "result": "Australia won by 8 wickets",
+      "toss": {
+        "winner": "Australia",
+        "decision": "field"
+      },
+      "playerOfMatch": "ML Schutt"
+    },
+    "dataQuality": "verified",
+    "externalIds": {
+      "cricsheetId": "1528718"
+    },
+    "id": "evt_cricket_13310"
+  },
+  {
+    "sportId": "cricket",
+    "competitionId": "t20i_cricket_men",
+    "seasonId": "t20i_cricket_men_2026_27",
+    "date": "2026-10-14T00:00:00Z",
+    "title": "Mongolia vs Myanmar",
+    "participants": [
+      "cricket_team_mongolia",
+      "cricket_team_myanmar"
+    ],
+    "sportData": {
+      "kind": "cricket_t20",
+      "matchFormat": "T20",
+      "round": "ICC Men's T20 World Cup Sub Regional Asia Qualifier A, Match 19",
+      "venue": "YSD-UKM Cricket Oval, Bangi",
+      "result": "Myanmar won by 9 wickets",
+      "toss": {
+        "winner": "Myanmar",
+        "decision": "field"
+      },
+      "playerOfMatch": "Paing Danu"
+    },
+    "dataQuality": "verified",
+    "externalIds": {
+      "cricsheetId": "1554551"
+    },
+    "id": "evt_cricket_13328"
+  },
+  {
+    "sportId": "cricket",
+    "competitionId": "t20i_cricket_men",
+    "seasonId": "t20i_cricket_men_2026_27",
+    "date": "2026-10-14T00:00:00Z",
+    "title": "Bahrain vs Qatar",
+    "participants": [
+      "cricket_team_bahrain",
+      "cricket_team_qatar"
+    ],
+    "sportData": {
+      "kind": "cricket_t20",
+      "matchFormat": "T20",
+      "round": "ICC Men's T20 World Cup Sub Regional Asia Qualifier A, Match 20",
+      "venue": "Selangor Turf Club, Kuala Lumpur",
+      "result": "Qatar won by 2 wickets",
+      "toss": {
+        "winner": "Qatar",
+        "decision": "field"
+      },
+      "playerOfMatch": "Owais Ahmed"
+    },
+    "dataQuality": "verified",
+    "externalIds": {
+      "cricsheetId": "1554552"
+    },
+    "id": "evt_cricket_13329"
+  },
+  {
+    "sportId": "cricket",
+    "competitionId": "t20i_cricket_men",
+    "seasonId": "t20i_cricket_men_2026_27",
+    "date": "2026-10-14T00:00:00Z",
+    "title": "Thailand vs Bhutan",
+    "participants": [
+      "cricket_team_thailand",
+      "cricket_team_bhutan"
+    ],
+    "sportData": {
+      "kind": "cricket_t20",
+      "matchFormat": "T20",
+      "round": "ICC Men's T20 World Cup Sub Regional Asia Qualifier A, Match 21",
+      "venue": "Selangor Turf Club, Kuala Lumpur",
+      "result": "Thailand won by 37 runs",
+      "toss": {
+        "winner": "Thailand",
+        "decision": "bat"
+      },
+      "playerOfMatch": "N Senamontree"
+    },
+    "dataQuality": "verified",
+    "externalIds": {
+      "cricsheetId": "1554553"
+    },
+    "id": "evt_cricket_13330"
+  },
+  {
+    "sportId": "cricket",
+    "competitionId": "t20i_cricket_men",
+    "seasonId": "t20i_cricket_men_2026_27",
+    "date": "2026-10-14T00:00:00Z",
+    "title": "China vs Malaysia",
+    "participants": [
+      "cricket_team_china",
+      "cricket_team_malaysia"
+    ],
+    "sportData": {
+      "kind": "cricket_t20",
+      "matchFormat": "T20",
+      "round": "ICC Men's T20 World Cup Sub Regional Asia Qualifier B, Match 13",
+      "venue": "Bayuemas Oval, Kuala Lumpur",
+      "result": "Malaysia won by 6 wickets",
+      "toss": {
+        "winner": "Malaysia",
+        "decision": "field"
+      },
+      "playerOfMatch": "Syed Aziz"
+    },
+    "dataQuality": "verified",
+    "externalIds": {
+      "cricsheetId": "1554580"
+    },
+    "id": "evt_cricket_13343"
+  },
+  {
+    "sportId": "cricket",
+    "competitionId": "t20i_cricket_men",
+    "seasonId": "t20i_cricket_men_2026_27",
+    "date": "2026-10-14T00:00:00Z",
+    "title": "Hong Kong vs Singapore",
+    "participants": [
+      "cricket_team_hong_kong",
+      "cricket_team_singapore"
+    ],
+    "sportData": {
+      "kind": "cricket_t20",
+      "matchFormat": "T20",
+      "round": "ICC Men's T20 World Cup Sub Regional Asia Qualifier B, Match 14",
+      "venue": "Bayuemas Oval, Kuala Lumpur",
+      "result": "Hong Kong won by 38 runs",
+      "toss": {
+        "winner": "Hong Kong",
+        "decision": "bat"
+      },
+      "playerOfMatch": "Ehsan Khan"
+    },
+    "dataQuality": "verified",
+    "externalIds": {
+      "cricsheetId": "1554581"
+    },
+    "id": "evt_cricket_13344"
+  },
+  {
+    "sportId": "cricket",
+    "competitionId": "t20i_cricket_men",
+    "seasonId": "t20i_cricket_men_2026_27",
+    "date": "2026-10-14T00:00:00Z",
+    "title": "Saudi Arabia vs Maldives",
+    "participants": [
+      "cricket_team_saudi_arabia",
+      "cricket_team_maldives"
+    ],
+    "sportData": {
+      "kind": "cricket_t20",
+      "matchFormat": "T20",
+      "round": "ICC Men's T20 World Cup Sub Regional Asia Qualifier B, Match 15",
+      "venue": "YSD-UKM Cricket Oval, Bangi",
+      "result": "Saudi Arabia won by 125 runs",
+      "toss": {
+        "winner": "Saudi Arabia",
+        "decision": "bat"
+      },
+      "playerOfMatch": "Muhammad Atif"
+    },
+    "dataQuality": "verified",
+    "externalIds": {
+      "cricsheetId": "1554582"
+    },
+    "id": "evt_cricket_13345"
   }
 ]
