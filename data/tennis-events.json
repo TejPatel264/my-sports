@@ -834032,20 +834032,20 @@
     "competitionId": "tennis_wta_rouen",
     "seasonId": "tennis_wta_rouen_2026",
     "date": "2026-04-13T00:00:00Z",
-    "title": "Sorana Cirstea vs Anna Bondar",
+    "title": "Sorana Cirstea vs Xinyu Wang",
     "participants": [
       "tennis_player_wta_214388",
       "tennis_player_wta_201514"
     ],
     "sportData": {
       "kind": "tennis_match",
-      "round": "QF",
+      "round": "R16",
       "surface": "Clay",
       "tournamentLevel": "250",
       "winner": "tennis_player_wta_201514",
-      "loser": "tennis_player_wta_214388",
-      "score": "7-6(2) 6-2",
-      "durationMinutes": 99
+      "loser": "tennis_player_wta_216133",
+      "score": "5-3 RET",
+      "durationMinutes": 43
     },
     "dataQuality": "verified",
     "externalIds": {
@@ -834058,20 +834058,20 @@
     "competitionId": "tennis_wta_rouen",
     "seasonId": "tennis_wta_rouen_2026",
     "date": "2026-04-13T00:00:00Z",
-    "title": "Marta Kostyuk vs Tatjana Maria",
+    "title": "Marta Kostyuk vs Ann Li",
     "participants": [
       "tennis_player_wta_216146",
       "tennis_player_wta_213583"
     ],
     "sportData": {
       "kind": "tennis_match",
-      "round": "SF",
+      "round": "QF",
       "surface": "Clay",
       "tournamentLevel": "250",
       "winner": "tennis_player_wta_216146",
-      "loser": "tennis_player_wta_213583",
-      "score": " 6-3 6-0",
-      "durationMinutes": 59
+      "loser": "tennis_player_wta_215983",
+      "score": " 6-0 6-7(4) 6-3",
+      "durationMinutes": 123
     },
     "dataQuality": "verified",
     "externalIds": {
@@ -834136,7 +834136,7 @@
     "competitionId": "tennis_wta_rouen",
     "seasonId": "tennis_wta_rouen_2026",
     "date": "2026-04-13T00:00:00Z",
-    "title": "Marta Kostyuk vs Ann Li",
+    "title": "Sorana Cirstea vs Anna Bondar",
     "participants": [
       "tennis_player_wta_216146",
       "tennis_player_wta_215983"
@@ -834146,10 +834146,10 @@
       "round": "QF",
       "surface": "Clay",
       "tournamentLevel": "250",
-      "winner": "tennis_player_wta_216146",
-      "loser": "tennis_player_wta_215983",
-      "score": " 6-0 6-7(4) 6-3",
-      "durationMinutes": 123
+      "winner": "tennis_player_wta_201514",
+      "loser": "tennis_player_wta_214388",
+      "score": "7-6(2) 6-2",
+      "durationMinutes": 99
     },
     "dataQuality": "verified",
     "externalIds": {
@@ -834162,7 +834162,7 @@
     "competitionId": "tennis_wta_rouen",
     "seasonId": "tennis_wta_rouen_2026",
     "date": "2026-04-13T00:00:00Z",
-    "title": "Veronika Podrez vs Sorana Cirstea",
+    "title": "Marta Kostyuk vs Tatjana Maria",
     "participants": [
       "tennis_player_wta_247669",
       "tennis_player_wta_201514"
@@ -834172,10 +834172,10 @@
       "round": "SF",
       "surface": "Clay",
       "tournamentLevel": "250",
-      "winner": "tennis_player_wta_247669",
-      "loser": "tennis_player_wta_201514",
-      "score": "W/O",
-      "durationMinutes": null
+      "winner": "tennis_player_wta_216146",
+      "loser": "tennis_player_wta_213583",
+      "score": " 6-3 6-0",
+      "durationMinutes": 59
     },
     "dataQuality": "verified",
     "externalIds": {
@@ -834188,20 +834188,20 @@
     "competitionId": "tennis_wta_rouen",
     "seasonId": "tennis_wta_rouen_2026",
     "date": "2026-04-13T00:00:00Z",
-    "title": "Marta Kostyuk vs Veronika Podrez",
+    "title": "Veronika Podrez vs Sorana Cirstea",
     "participants": [
       "tennis_player_wta_216146",
       "tennis_player_wta_247669"
     ],
     "sportData": {
       "kind": "tennis_match",
-      "round": "F",
+      "round": "SF",
       "surface": "Clay",
       "tournamentLevel": "250",
-      "winner": "tennis_player_wta_216146",
-      "loser": "tennis_player_wta_247669",
-      "score": " 6-3 6-4",
-      "durationMinutes": 81
+      "winner": "tennis_player_wta_247669",
+      "loser": "tennis_player_wta_201514",
+      "score": "W/O",
+      "durationMinutes": null
     },
     "dataQuality": "verified",
     "externalIds": {
@@ -834234,6 +834234,32 @@
       "tmlMatchId": "atp_2026-308_1"
     },
     "id": "evt_tennis_035201"
+  },
+  {
+    "sportId": "tennis",
+    "competitionId": "tennis_wta_rouen",
+    "seasonId": "tennis_wta_rouen_2026",
+    "date": "2026-04-13T00:00:00Z",
+    "title": "Marta Kostyuk vs Veronika Podrez",
+    "participants": [
+      "tennis_player_wta_216146",
+      "tennis_player_wta_247669"
+    ],
+    "sportData": {
+      "kind": "tennis_match",
+      "round": "F",
+      "surface": "Clay",
+      "tournamentLevel": "250",
+      "winner": "tennis_player_wta_216146",
+      "loser": "tennis_player_wta_247669",
+      "score": " 6-3 6-4",
+      "durationMinutes": 81
+    },
+    "dataQuality": "verified",
+    "externalIds": {
+      "tmlMatchId": "wta_2026-2066_31"
+    },
+    "id": "evt_tennis_035238"
   },
   {
     "sportId": "tennis",
@@ -915799,6 +915825,58 @@
   },
   {
     "sportId": "tennis",
+    "competitionId": "tennis_wta_wuhan",
+    "seasonId": "tennis_wta_wuhan_2026",
+    "date": "2026-10-12T00:00:00Z",
+    "title": "Sonay Kartal vs Jelena Ostapenko",
+    "participants": [
+      "tennis_player_wta_222661",
+      "tennis_player_wta_211533"
+    ],
+    "sportData": {
+      "kind": "tennis_match",
+      "round": "SF",
+      "surface": "Hard",
+      "tournamentLevel": "1000",
+      "winner": "tennis_player_wta_222661",
+      "loser": "tennis_player_wta_211533",
+      "score": "7-6(9) 7-6(5)",
+      "durationMinutes": 132
+    },
+    "dataQuality": "verified",
+    "externalIds": {
+      "tmlMatchId": "wta_2026-1075_53"
+    },
+    "id": "evt_tennis_035239"
+  },
+  {
+    "sportId": "tennis",
+    "competitionId": "tennis_wta_wuhan",
+    "seasonId": "tennis_wta_wuhan_2026",
+    "date": "2026-10-12T00:00:00Z",
+    "title": "Maja Chwalinska vs Iga Swiatek",
+    "participants": [
+      "tennis_player_wta_216081",
+      "tennis_player_wta_216347"
+    ],
+    "sportData": {
+      "kind": "tennis_match",
+      "round": "SF",
+      "surface": "Hard",
+      "tournamentLevel": "1000",
+      "winner": "tennis_player_wta_216081",
+      "loser": "tennis_player_wta_216347",
+      "score": "7-5 6-1",
+      "durationMinutes": 128
+    },
+    "dataQuality": "verified",
+    "externalIds": {
+      "tmlMatchId": "wta_2026-1075_54"
+    },
+    "id": "evt_tennis_035240"
+  },
+  {
+    "sportId": "tennis",
     "competitionId": "tennis_atp_shanghai",
     "seasonId": "tennis_atp_shanghai_2026",
     "date": "2026-10-13T00:00:00Z",
@@ -916108,5 +916186,57 @@
       "tmlMatchId": "atp_2026-5014_92"
     },
     "id": "evt_tennis_035231"
+  },
+  {
+    "sportId": "tennis",
+    "competitionId": "tennis_atp_shanghai",
+    "seasonId": "tennis_atp_shanghai_2026",
+    "date": "2026-10-17T00:00:00Z",
+    "title": "Alejandro Davidovich Fokina vs Alexander Zverev",
+    "participants": [
+      "tennis_player_atp_DH50",
+      "tennis_player_atp_Z355"
+    ],
+    "sportData": {
+      "kind": "tennis_match",
+      "round": "SF",
+      "surface": "Hard",
+      "tournamentLevel": "M",
+      "winner": "tennis_player_atp_DH50",
+      "loser": "tennis_player_atp_Z355",
+      "score": "5-7 6-4 6-3",
+      "durationMinutes": 123
+    },
+    "dataQuality": "verified",
+    "externalIds": {
+      "tmlMatchId": "atp_2026-5014_93"
+    },
+    "id": "evt_tennis_035236"
+  },
+  {
+    "sportId": "tennis",
+    "competitionId": "tennis_atp_shanghai",
+    "seasonId": "tennis_atp_shanghai_2026",
+    "date": "2026-10-17T00:00:00Z",
+    "title": "Rafael Jodar vs Daniil Medvedev",
+    "participants": [
+      "tennis_player_atp_J0DZ",
+      "tennis_player_atp_MM58"
+    ],
+    "sportData": {
+      "kind": "tennis_match",
+      "round": "SF",
+      "surface": "Hard",
+      "tournamentLevel": "M",
+      "winner": "tennis_player_atp_J0DZ",
+      "loser": "tennis_player_atp_MM58",
+      "score": "6-3 6-4",
+      "durationMinutes": 104
+    },
+    "dataQuality": "verified",
+    "externalIds": {
+      "tmlMatchId": "atp_2026-5014_94"
+    },
+    "id": "evt_tennis_035237"
   }
 ]
