@@ -7250,6 +7250,11 @@
     "label": "2025"
   },
   {
+    "id": "tennis_wta_osaka_2026",
+    "competitionId": "tennis_wta_osaka",
+    "label": "2026"
+  },
+  {
     "id": "tennis_wta_ostrava_2020",
     "competitionId": "tennis_wta_ostrava",
     "label": "2020"

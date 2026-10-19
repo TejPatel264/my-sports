@@ -915877,6 +915877,32 @@
   },
   {
     "sportId": "tennis",
+    "competitionId": "tennis_wta_wuhan",
+    "seasonId": "tennis_wta_wuhan_2026",
+    "date": "2026-10-12T00:00:00Z",
+    "title": "Maja Chwalinska vs Sonay Kartal",
+    "participants": [
+      "tennis_player_wta_216081",
+      "tennis_player_wta_222661"
+    ],
+    "sportData": {
+      "kind": "tennis_match",
+      "round": "F",
+      "surface": "Hard",
+      "tournamentLevel": "1000",
+      "winner": "tennis_player_wta_216081",
+      "loser": "tennis_player_wta_222661",
+      "score": "2-6 6-4 6-2",
+      "durationMinutes": 163
+    },
+    "dataQuality": "verified",
+    "externalIds": {
+      "tmlMatchId": "wta_2026-1075_55"
+    },
+    "id": "evt_tennis_035245"
+  },
+  {
+    "sportId": "tennis",
     "competitionId": "tennis_atp_shanghai",
     "seasonId": "tennis_atp_shanghai_2026",
     "date": "2026-10-13T00:00:00Z",
@@ -916238,5 +916264,109 @@
       "tmlMatchId": "atp_2026-5014_94"
     },
     "id": "evt_tennis_035237"
+  },
+  {
+    "sportId": "tennis",
+    "competitionId": "tennis_atp_shanghai",
+    "seasonId": "tennis_atp_shanghai_2026",
+    "date": "2026-10-18T00:00:00Z",
+    "title": "Alejandro Davidovich Fokina vs Rafael Jodar",
+    "participants": [
+      "tennis_player_atp_DH50",
+      "tennis_player_atp_J0DZ"
+    ],
+    "sportData": {
+      "kind": "tennis_match",
+      "round": "F",
+      "surface": "Hard",
+      "tournamentLevel": "M",
+      "winner": "tennis_player_atp_DH50",
+      "loser": "tennis_player_atp_J0DZ",
+      "score": "1-6 7-6(5) 6-4",
+      "durationMinutes": 148
+    },
+    "dataQuality": "verified",
+    "externalIds": {
+      "tmlMatchId": "atp_2026-5014_95"
+    },
+    "id": "evt_tennis_035241"
+  },
+  {
+    "sportId": "tennis",
+    "competitionId": "tennis_wta_osaka",
+    "seasonId": "tennis_wta_osaka_2026",
+    "date": "2026-10-19T00:00:00Z",
+    "title": "Lilli Tagger vs Liudmila Samsonova",
+    "participants": [
+      "tennis_player_wta_260172",
+      "tennis_player_wta_214643"
+    ],
+    "sportData": {
+      "kind": "tennis_match",
+      "round": "R32",
+      "surface": "Hard",
+      "tournamentLevel": "250",
+      "winner": "tennis_player_wta_260172",
+      "loser": "tennis_player_wta_214643",
+      "score": "6-3 6-3",
+      "durationMinutes": 72
+    },
+    "dataQuality": "verified",
+    "externalIds": {
+      "tmlMatchId": "wta_2026-405_1"
+    },
+    "id": "evt_tennis_035242"
+  },
+  {
+    "sportId": "tennis",
+    "competitionId": "tennis_wta_osaka",
+    "seasonId": "tennis_wta_osaka_2026",
+    "date": "2026-10-19T00:00:00Z",
+    "title": "Viktorija Golubic vs Mai Hontama",
+    "participants": [
+      "tennis_player_wta_203530",
+      "tennis_player_wta_215988"
+    ],
+    "sportData": {
+      "kind": "tennis_match",
+      "round": "R32",
+      "surface": "Hard",
+      "tournamentLevel": "250",
+      "winner": "tennis_player_wta_203530",
+      "loser": "tennis_player_wta_215988",
+      "score": "6-3 6-1",
+      "durationMinutes": 81
+    },
+    "dataQuality": "verified",
+    "externalIds": {
+      "tmlMatchId": "wta_2026-405_2"
+    },
+    "id": "evt_tennis_035243"
+  },
+  {
+    "sportId": "tennis",
+    "competitionId": "tennis_wta_osaka",
+    "seasonId": "tennis_wta_osaka_2026",
+    "date": "2026-10-19T00:00:00Z",
+    "title": "Lanlana Tararudee vs Kaitlin Quevedo",
+    "participants": [
+      "tennis_player_wta_222290",
+      "tennis_player_wta_269267"
+    ],
+    "sportData": {
+      "kind": "tennis_match",
+      "round": "R32",
+      "surface": "Hard",
+      "tournamentLevel": "250",
+      "winner": "tennis_player_wta_222290",
+      "loser": "tennis_player_wta_269267",
+      "score": "7-5 6-3",
+      "durationMinutes": 81
+    },
+    "dataQuality": "verified",
+    "externalIds": {
+      "tmlMatchId": "wta_2026-405_3"
+    },
+    "id": "evt_tennis_035244"
   }
 ]
