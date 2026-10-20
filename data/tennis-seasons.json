@@ -85,6 +85,11 @@
     "label": "2025"
   },
   {
+    "id": "tennis_atp_almaty_2026",
+    "competitionId": "tennis_atp_almaty",
+    "label": "2026"
+  },
+  {
     "id": "tennis_atp_antalya_2021",
     "competitionId": "tennis_atp_antalya",
     "label": "2021"
@@ -368,6 +373,11 @@
     "id": "tennis_atp_brussels_2025",
     "competitionId": "tennis_atp_brussels",
     "label": "2025"
+  },
+  {
+    "id": "tennis_atp_brussels_2026",
+    "competitionId": "tennis_atp_brussels",
+    "label": "2026"
   },
   {
     "id": "tennis_atp_bucharest_2024",
@@ -3383,6 +3393,11 @@
     "id": "tennis_atp_lyon_2024",
     "competitionId": "tennis_atp_lyon",
     "label": "2024"
+  },
+  {
+    "id": "tennis_atp_lyon_2026",
+    "competitionId": "tennis_atp_lyon",
+    "label": "2026"
   },
   {
     "id": "tennis_atp_madrid_masters_2021",
@@ -7188,6 +7203,11 @@
     "id": "tennis_wta_ningbo_2025",
     "competitionId": "tennis_wta_ningbo",
     "label": "2025"
+  },
+  {
+    "id": "tennis_wta_ningbo_2026",
+    "competitionId": "tennis_wta_ningbo",
+    "label": "2026"
   },
   {
     "id": "tennis_wta_nottingham_2021",
