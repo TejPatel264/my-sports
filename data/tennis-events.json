@@ -35844,7 +35844,7 @@
       "tournamentLevel": "D",
       "winner": "tennis_player_atp_S483",
       "loser": "tennis_player_atp_GA71",
-      "score": "7-6(5) 5-7 [3-10]",
+      "score": "7-6(5) 5-7 [10-3]",
       "durationMinutes": 95
     },
     "dataQuality": "verified",
@@ -36806,7 +36806,7 @@
       "tournamentLevel": "D",
       "winner": "tennis_player_atp_G0BY",
       "loser": "tennis_player_atp_D0B5",
-      "score": "6-0 5-7 [3-10]",
+      "score": "6-0 5-7 [10-3]",
       "durationMinutes": null
     },
     "dataQuality": "verified",
@@ -73830,7 +73830,7 @@
       "tournamentLevel": "500",
       "winner": "tennis_player_wta_216146",
       "loser": "tennis_player_wta_201444",
-      "score": "6-3 6-7(4)",
+      "score": "6-3 6-7(4) 6-3",
       "durationMinutes": 134
     },
     "dataQuality": "verified",
@@ -73908,7 +73908,7 @@
       "tournamentLevel": "500",
       "winner": "tennis_player_wta_202460",
       "loser": "tennis_player_wta_201435",
-      "score": "5-7 6-3",
+      "score": "5-7 6-3 6-2",
       "durationMinutes": 116
     },
     "dataQuality": "verified",
@@ -74038,7 +74038,7 @@
       "tournamentLevel": "500",
       "winner": "tennis_player_wta_213550",
       "loser": "tennis_player_wta_201465",
-      "score": "5-7 5-4",
+      "score": "5-7 5-4 RET",
       "durationMinutes": 101
     },
     "dataQuality": "verified",
@@ -113636,7 +113636,7 @@
       "tournamentLevel": "W",
       "winner": "tennis_player_wta_215613",
       "loser": "tennis_player_wta_206124",
-      "score": "6-3 3-2",
+      "score": "6-3 3-2 RET",
       "durationMinutes": 76
     },
     "dataQuality": "verified",
@@ -170264,7 +170264,7 @@
       "tournamentLevel": "1000",
       "winner": "tennis_player_wta_211539",
       "loser": "tennis_player_wta_201548",
-      "score": "2-6 6-2",
+      "score": "2-6 6-2 RET",
       "durationMinutes": 84
     },
     "dataQuality": "verified",
@@ -185916,7 +185916,7 @@
       "tournamentLevel": "D",
       "winner": "tennis_player_atp_E09U",
       "loser": "tennis_player_atp_D0I0",
-      "score": "4-6 6-3 [7-10]",
+      "score": "4-6 6-3 [10-7]",
       "durationMinutes": 86
     },
     "dataQuality": "verified",
@@ -188984,7 +188984,7 @@
       "tournamentLevel": "A",
       "winner": "tennis_player_atp_Z355",
       "loser": "tennis_player_atp_I186",
-      "score": "7-6(5) 6-7(6) 1-0(5)",
+      "score": "7-6(5) 6-7(6) [10-5]",
       "durationMinutes": null
     },
     "dataQuality": "verified",
@@ -189010,7 +189010,7 @@
       "tournamentLevel": "A",
       "winner": "tennis_player_atp_BK40",
       "loser": "tennis_player_atp_AG37",
-      "score": "6-7(3) 7-5 1-0(8)",
+      "score": "6-7(3) 7-5 [10-8]",
       "durationMinutes": null
     },
     "dataQuality": "verified",
@@ -189036,7 +189036,7 @@
       "tournamentLevel": "A",
       "winner": "tennis_player_atp_RE44",
       "loser": "tennis_player_atp_SM37",
-      "score": "4-6 6-3 1-0(9)",
+      "score": "4-6 6-3 [11-9]",
       "durationMinutes": null
     },
     "dataQuality": "verified",
@@ -191792,7 +191792,7 @@
       "tournamentLevel": "500",
       "winner": "tennis_player_wta_214981",
       "loser": "tennis_player_wta_202505",
-      "score": "6-4 3-1",
+      "score": "6-4 3-1 RET",
       "durationMinutes": 68
     },
     "dataQuality": "verified",
@@ -232690,7 +232690,7 @@
       "tournamentLevel": "500",
       "winner": "tennis_player_wta_214954",
       "loser": "tennis_player_wta_203389",
-      "score": "2-6 3-0",
+      "score": "2-6 3-0 RET",
       "durationMinutes": 60
     },
     "dataQuality": "verified",
@@ -237916,7 +237916,7 @@
       "tournamentLevel": "250",
       "winner": "tennis_player_wta_201585",
       "loser": "tennis_player_wta_214939",
-      "score": "3-6 7-5",
+      "score": "3-6 7-5 RET",
       "durationMinutes": 112
     },
     "dataQuality": "verified",
@@ -244910,7 +244910,7 @@
       "tournamentLevel": "1000",
       "winner": "tennis_player_wta_220367",
       "loser": "tennis_player_wta_216153",
-      "score": "2-6 7-6(0)",
+      "score": "2-6 7-6(0) RET",
       "durationMinutes": 96
     },
     "dataQuality": "verified",
@@ -326160,7 +326160,7 @@
       "tournamentLevel": "250",
       "winner": "tennis_player_wta_221054",
       "loser": "tennis_player_wta_215035",
-      "score": "6-2 5-3",
+      "score": "6-2 5-3 RET",
       "durationMinutes": 83
     },
     "dataQuality": "verified",
@@ -328422,7 +328422,7 @@
       "tournamentLevel": "D",
       "winner": "tennis_player_atp_A0IY",
       "loser": "tennis_player_atp_N0DB",
-      "score": "6-2 5-7 [0-1]",
+      "score": "6-2 5-7 [10-8]",
       "durationMinutes": null
     },
     "dataQuality": "verified",
@@ -329202,7 +329202,7 @@
       "tournamentLevel": "D",
       "winner": "tennis_player_atp_BP79",
       "loser": "tennis_player_atp_O0BQ",
-      "score": "6-4 3-6 [0-1]",
+      "score": "6-4 3-6 [10-3]",
       "durationMinutes": null
     },
     "dataQuality": "verified",
@@ -333674,7 +333674,7 @@
       "tournamentLevel": "A",
       "winner": "tennis_player_atp_TD51",
       "loser": "tennis_player_atp_TE51",
-      "score": "1-6 7-6(11) 1-0(8)",
+      "score": "1-6 7-6(11) [10-8]",
       "durationMinutes": null
     },
     "dataQuality": "verified",
@@ -333700,7 +333700,7 @@
       "tournamentLevel": "A",
       "winner": "tennis_player_atp_BK40",
       "loser": "tennis_player_atp_AG37",
-      "score": "7-6(11) 4-6 1-0(7)",
+      "score": "7-6(11) 4-6 [10-7]",
       "durationMinutes": null
     },
     "dataQuality": "verified",
@@ -333752,7 +333752,7 @@
       "tournamentLevel": "A",
       "winner": "tennis_player_atp_FB98",
       "loser": "tennis_player_atp_N771",
-      "score": "6-1 4-6 1-0(8)",
+      "score": "6-1 4-6 [10-8]",
       "durationMinutes": null
     },
     "dataQuality": "verified",
@@ -333778,7 +333778,7 @@
       "tournamentLevel": "A",
       "winner": "tennis_player_atp_DH58",
       "loser": "tennis_player_atp_MC10",
-      "score": "5-7 6-3 1-0(7)",
+      "score": "5-7 6-3 [10-7]",
       "durationMinutes": null
     },
     "dataQuality": "verified",
@@ -333804,7 +333804,7 @@
       "tournamentLevel": "A",
       "winner": "tennis_player_atp_RH16",
       "loser": "tennis_player_atp_SM25",
-      "score": "6-4 5-7 1-0(7)",
+      "score": "6-4 5-7 [10-7]",
       "durationMinutes": null
     },
     "dataQuality": "verified",
@@ -370022,7 +370022,7 @@
       "tournamentLevel": "D",
       "winner": "tennis_player_atp_P0EA",
       "loser": "tennis_player_atp_P0IY",
-      "score": "6-7(3) 6-2 [1-0]",
+      "score": "6-7(3) 6-2 [10-7]",
       "durationMinutes": null
     },
     "dataQuality": "verified",
@@ -414560,7 +414560,7 @@
       "tournamentLevel": "1000",
       "winner": "tennis_player_wta_210886",
       "loser": "tennis_player_wta_202429",
-      "score": "4-6 6-4",
+      "score": "4-6 6-4 RET",
       "durationMinutes": 110
     },
     "dataQuality": "verified",
@@ -437128,7 +437128,7 @@
       "tournamentLevel": "500",
       "winner": "tennis_player_wta_215096",
       "loser": "tennis_player_wta_216133",
-      "score": "3-6 7-5",
+      "score": "3-6 7-5 RET",
       "durationMinutes": 106
     },
     "dataQuality": "verified",
@@ -479170,7 +479170,7 @@
       "tournamentLevel": "250",
       "winner": "tennis_player_wta_201709",
       "loser": "tennis_player_wta_220704",
-      "score": "3-6 7-6(5)",
+      "score": "3-6 7-6(5) RET",
       "durationMinutes": 116
     },
     "dataQuality": "verified",
@@ -479976,7 +479976,7 @@
       "tournamentLevel": "500",
       "winner": "tennis_player_wta_203500",
       "loser": "tennis_player_wta_203389",
-      "score": "7-6(7)",
+      "score": "7-6(7) RET",
       "durationMinutes": 67
     },
     "dataQuality": "verified",
@@ -490506,7 +490506,7 @@
       "tournamentLevel": "250",
       "winner": "tennis_player_wta_220367",
       "loser": "tennis_player_wta_201458",
-      "score": "2-6 6-3",
+      "score": "2-6 6-3 RET",
       "durationMinutes": 86
     },
     "dataQuality": "verified",
@@ -501946,7 +501946,7 @@
       "tournamentLevel": "D",
       "winner": "tennis_player_wta_201709",
       "loser": "tennis_player_wta_214461",
-      "score": "2-6 6-2",
+      "score": "2-6 6-2 RET",
       "durationMinutes": null
     },
     "dataQuality": "verified",
@@ -521550,7 +521550,7 @@
       "tournamentLevel": "D",
       "winner": "tennis_player_atp_AG08",
       "loser": "tennis_player_atp_B0LV",
-      "score": "4-6 7-5 [7-10]",
+      "score": "4-6 7-5 [10-7]",
       "durationMinutes": 109
     },
     "dataQuality": "verified",
@@ -522876,7 +522876,7 @@
       "tournamentLevel": "D",
       "winner": "tennis_player_atp_MO55",
       "loser": "tennis_player_atp_A0JA",
-      "score": "6-3 3-6 [8-10]",
+      "score": "6-3 3-6 [10-8]",
       "durationMinutes": 88
     },
     "dataQuality": "verified",
@@ -523370,7 +523370,7 @@
       "tournamentLevel": "D",
       "winner": "tennis_player_atp_B0VR",
       "loser": "tennis_player_atp_C0Q0",
-      "score": "6-7(5) 6-4 [6-10]",
+      "score": "6-7(5) 6-4 [10-6]",
       "durationMinutes": 119
     },
     "dataQuality": "verified",
@@ -573836,7 +573836,7 @@
       "tournamentLevel": "G",
       "winner": "tennis_player_atp_S0S1",
       "loser": "tennis_player_atp_N552",
-      "score": "7-6(7) 6-4",
+      "score": "7-6(7) 6-4 RET",
       "durationMinutes": 109
     },
     "dataQuality": "verified",
@@ -630204,7 +630204,7 @@
       "tournamentLevel": "A",
       "winner": "tennis_player_atp_S0S1",
       "loser": "tennis_player_atp_MM58",
-      "score": "6-7(6) 7-5 1-0(7)",
+      "score": "6-7(6) 7-5 [10-7]",
       "durationMinutes": 123
     },
     "dataQuality": "verified",
@@ -630230,7 +630230,7 @@
       "tournamentLevel": "A",
       "winner": "tennis_player_atp_Z355",
       "loser": "tennis_player_atp_TD51",
-      "score": "6-7(5) 7-5 1-0(5)",
+      "score": "6-7(5) 7-5 [10-5]",
       "durationMinutes": 154
     },
     "dataQuality": "verified",
@@ -630308,7 +630308,7 @@
       "tournamentLevel": "A",
       "winner": "tennis_player_atp_TD51",
       "loser": "tennis_player_atp_MM58",
-      "score": "3-6 6-4 1-0(5)",
+      "score": "3-6 6-4 [10-5]",
       "durationMinutes": 95
     },
     "dataQuality": "verified",
@@ -689822,7 +689822,7 @@
       "tournamentLevel": "1000",
       "winner": "tennis_player_wta_220714",
       "loser": "tennis_player_wta_213887",
-      "score": "6-4 1-0",
+      "score": "6-4 1-0 RET",
       "durationMinutes": 52
     },
     "dataQuality": "verified",
@@ -690108,7 +690108,7 @@
       "tournamentLevel": "1000",
       "winner": "tennis_player_wta_202505",
       "loser": "tennis_player_wta_216153",
-      "score": "6-4 6-7(6)",
+      "score": "6-4 6-7(3) 6-1",
       "durationMinutes": 144
     },
     "dataQuality": "verified",
@@ -690212,7 +690212,7 @@
       "tournamentLevel": "1000",
       "winner": "tennis_player_wta_211713",
       "loser": "tennis_player_wta_220367",
-      "score": "5-7 7-6(6)",
+      "score": "5-7 7-6(5) 6-3",
       "durationMinutes": 196
     },
     "dataQuality": "verified",
@@ -690238,7 +690238,7 @@
       "tournamentLevel": "1000",
       "winner": "tennis_player_wta_214643",
       "loser": "tennis_player_wta_216083",
-      "score": "7-6(8) RET",
+      "score": "7-6(8) 6-4",
       "durationMinutes": 107
     },
     "dataQuality": "verified",
@@ -698584,7 +698584,7 @@
       "tournamentLevel": "250",
       "winner": "tennis_player_atp_D923",
       "loser": "tennis_player_atp_MO44",
-      "score": "6-1 2-0",
+      "score": "6-1 2-0 RET",
       "durationMinutes": 54
     },
     "dataQuality": "verified",
@@ -723700,7 +723700,7 @@
       "tournamentLevel": "G",
       "winner": "tennis_player_atp_HB64",
       "loser": "tennis_player_atp_M0FH",
-      "score": "7-6(4) 4-1",
+      "score": "7-6(4) 4-1 RET",
       "durationMinutes": 66
     },
     "dataQuality": "verified",
@@ -728458,7 +728458,7 @@
       "tournamentLevel": "250",
       "winner": "tennis_player_wta_206420",
       "loser": "tennis_player_wta_215020",
-      "score": "5-7 6-4 6-2",
+      "score": "6-0 7-5",
       "durationMinutes": 78
     },
     "dataQuality": "verified",
@@ -763532,7 +763532,7 @@
       "tournamentLevel": "D",
       "winner": "tennis_player_atp_S0DE",
       "loser": "tennis_player_atp_K0EP",
-      "score": "5-7 6-3 6-3",
+      "score": "7-6(5) 6-3",
       "durationMinutes": 81
     },
     "dataQuality": "verified",
@@ -793770,7 +793770,7 @@
       "tournamentLevel": "G",
       "winner": "tennis_player_wta_221626",
       "loser": "tennis_player_wta_215936",
-      "score": "6-2 3-2 ab.",
+      "score": "6-2 3-2 RET",
       "durationMinutes": 64
     },
     "dataQuality": "verified",
@@ -825906,7 +825906,7 @@
       "tournamentLevel": "500",
       "winner": "tennis_player_wta_259857",
       "loser": "tennis_player_wta_221333",
-      "score": "7-5 3-0",
+      "score": "7-5 3-0 RET",
       "durationMinutes": 75
     },
     "dataQuality": "verified",
@@ -837320,7 +837320,7 @@
       "tournamentLevel": "1000",
       "winner": "tennis_player_wta_215983",
       "loser": "tennis_player_wta_216347",
-      "score": "7-6(4) 2-6 3-0",
+      "score": "7-6(4) 2-6 3-0 RET",
       "durationMinutes": 130
     },
     "dataQuality": "verified",
@@ -840518,7 +840518,7 @@
       "tournamentLevel": "1000",
       "winner": "tennis_player_wta_221012",
       "loser": "tennis_player_wta_214388",
-      "score": "6-3 3-6 4-6",
+      "score": "3-6 6-3 6-4",
       "durationMinutes": 138
     },
     "dataQuality": "verified",
@@ -840544,7 +840544,7 @@
       "tournamentLevel": "1000",
       "winner": "tennis_player_wta_220716",
       "loser": "tennis_player_wta_238075",
-      "score": "1-6 3-6",
+      "score": "6-1 6-3",
       "durationMinutes": 73
     },
     "dataQuality": "verified",
@@ -840570,7 +840570,7 @@
       "tournamentLevel": "1000",
       "winner": "tennis_player_wta_215370",
       "loser": "tennis_player_wta_213550",
-      "score": "4-6 5-7",
+      "score": "6-4 7-5",
       "durationMinutes": 106
     },
     "dataQuality": "verified",
@@ -840700,7 +840700,7 @@
       "tournamentLevel": "1000",
       "winner": "tennis_player_wta_221883",
       "loser": "tennis_player_wta_203354",
-      "score": "4-6 6-0 3-6",
+      "score": "6-4 0-6 6-3",
       "durationMinutes": 126
     },
     "dataQuality": "verified",
@@ -840804,7 +840804,7 @@
       "tournamentLevel": "1000",
       "winner": "tennis_player_wta_213583",
       "loser": "tennis_player_wta_202663",
-      "score": "0-6 3-6",
+      "score": "6-0 6-3",
       "durationMinutes": 77
     },
     "dataQuality": "verified",
@@ -840830,7 +840830,7 @@
       "tournamentLevel": "1000",
       "winner": "tennis_player_wta_211533",
       "loser": "tennis_player_wta_214593",
-      "score": "0-6 1-6",
+      "score": "6-0 6-1",
       "durationMinutes": 54
     },
     "dataQuality": "verified",
@@ -840908,7 +840908,7 @@
       "tournamentLevel": "1000",
       "winner": "tennis_player_wta_261972",
       "loser": "tennis_player_wta_221354",
-      "score": "6-1 2-6 4-6",
+      "score": "1-6 6-2 6-4",
       "durationMinutes": 122
     },
     "dataQuality": "verified",
@@ -841064,7 +841064,7 @@
       "tournamentLevel": "1000",
       "winner": "tennis_player_wta_206289",
       "loser": "tennis_player_wta_260172",
-      "score": "7-5 3-6 0-6",
+      "score": "5-7 6-3 6-0",
       "durationMinutes": 140
     },
     "dataQuality": "verified",
@@ -841090,7 +841090,7 @@
       "tournamentLevel": "1000",
       "winner": "tennis_player_wta_238184",
       "loser": "tennis_player_wta_201709",
-      "score": "3-6 2-6",
+      "score": "6-3 6-2",
       "durationMinutes": 79
     },
     "dataQuality": "verified",
@@ -841116,7 +841116,7 @@
       "tournamentLevel": "1000",
       "winner": "tennis_player_wta_214119",
       "loser": "tennis_player_wta_221407",
-      "score": "5-7 7-5 1-6",
+      "score": "7-5 5-7 6-1",
       "durationMinutes": 145
     },
     "dataQuality": "verified",
@@ -841142,7 +841142,7 @@
       "tournamentLevel": "1000",
       "winner": "tennis_player_wta_215713",
       "loser": "tennis_player_wta_213646",
-      "score": "7-5 2-6 4-6",
+      "score": "5-7 6-2 6-4",
       "durationMinutes": 153
     },
     "dataQuality": "verified",
@@ -841168,7 +841168,7 @@
       "tournamentLevel": "1000",
       "winner": "tennis_player_wta_220332",
       "loser": "tennis_player_wta_211107",
-      "score": "4-6 6-3 4-6",
+      "score": "6-4 3-6 6-4",
       "durationMinutes": 144
     },
     "dataQuality": "verified",
@@ -841194,7 +841194,7 @@
       "tournamentLevel": "1000",
       "winner": "tennis_player_wta_215899",
       "loser": "tennis_player_wta_263857",
-      "score": "5-7 6-4 1-6",
+      "score": "7-5 4-6 6-1",
       "durationMinutes": 176
     },
     "dataQuality": "verified",
@@ -841324,7 +841324,7 @@
       "tournamentLevel": "1000",
       "winner": "tennis_player_wta_210722",
       "loser": "tennis_player_wta_215910",
-      "score": "4-6 2-6",
+      "score": "6-4 6-2",
       "durationMinutes": 93
     },
     "dataQuality": "verified",
@@ -841350,7 +841350,7 @@
       "tournamentLevel": "1000",
       "winner": "tennis_player_wta_259799",
       "loser": "tennis_player_wta_222045",
-      "score": "1-6 0-6",
+      "score": "6-1 6-0",
       "durationMinutes": 66
     },
     "dataQuality": "verified",
@@ -841376,7 +841376,7 @@
       "tournamentLevel": "1000",
       "winner": "tennis_player_wta_221012",
       "loser": "tennis_player_wta_213710",
-      "score": "6-7(6) 2-6",
+      "score": "7-6(6) 6-2",
       "durationMinutes": 95
     },
     "dataQuality": "verified",
@@ -841428,7 +841428,7 @@
       "tournamentLevel": "1000",
       "winner": "tennis_player_wta_222328",
       "loser": "tennis_player_wta_220435",
-      "score": "4-6 1-6",
+      "score": "6-4 6-1",
       "durationMinutes": 82
     },
     "dataQuality": "verified",
@@ -841454,7 +841454,7 @@
       "tournamentLevel": "1000",
       "winner": "tennis_player_wta_201514",
       "loser": "tennis_player_wta_213583",
-      "score": "2-6 0-6",
+      "score": "6-2 6-0",
       "durationMinutes": 54
     },
     "dataQuality": "verified",
@@ -841480,7 +841480,7 @@
       "tournamentLevel": "1000",
       "winner": "tennis_player_wta_203530",
       "loser": "tennis_player_wta_233741",
-      "score": "5-7 2-6",
+      "score": "7-5 6-2",
       "durationMinutes": 98
     },
     "dataQuality": "verified",
@@ -841532,7 +841532,7 @@
       "tournamentLevel": "1000",
       "winner": "tennis_player_wta_214939",
       "loser": "tennis_player_wta_211701",
-      "score": "6-4 6-7(4) 5-7",
+      "score": "4-6 7-6(4) 7-5",
       "durationMinutes": 209
     },
     "dataQuality": "verified",
@@ -841636,7 +841636,7 @@
       "tournamentLevel": "1000",
       "winner": "tennis_player_wta_203501",
       "loser": "tennis_player_wta_213631",
-      "score": "3-6 5-7",
+      "score": "6-3 7-5",
       "durationMinutes": 105
     },
     "dataQuality": "verified",
@@ -841714,7 +841714,7 @@
       "tournamentLevel": "1000",
       "winner": "tennis_player_wta_260300",
       "loser": "tennis_player_wta_220520",
-      "score": "6-7(5) 6-7(4)",
+      "score": "7-6(5) 7-6(4)",
       "durationMinutes": 148
     },
     "dataQuality": "verified",
@@ -841766,7 +841766,7 @@
       "tournamentLevel": "1000",
       "winner": "tennis_player_wta_223670",
       "loser": "tennis_player_wta_221883",
-      "score": "7-5 1-6 1-6",
+      "score": "5-7 6-1 6-1",
       "durationMinutes": 128
     },
     "dataQuality": "verified",
@@ -841792,7 +841792,7 @@
       "tournamentLevel": "1000",
       "winner": "tennis_player_wta_223253",
       "loser": "tennis_player_wta_216133",
-      "score": "4-6 3-6",
+      "score": "6-4 6-3",
       "durationMinutes": 86
     },
     "dataQuality": "verified",
@@ -841818,7 +841818,7 @@
       "tournamentLevel": "1000",
       "winner": "tennis_player_wta_216347",
       "loser": "tennis_player_wta_216083",
-      "score": "1-6 7-6(5) 3-6",
+      "score": "6-1 6-7(5) 6-3",
       "durationMinutes": 163
     },
     "dataQuality": "verified",
@@ -841948,7 +841948,7 @@
       "tournamentLevel": "1000",
       "winner": "tennis_player_wta_201696",
       "loser": "tennis_player_wta_206420",
-      "score": "4-6 7-6(4) 1-6",
+      "score": "6-4 6-7(4) 6-1",
       "durationMinutes": 168
     },
     "dataQuality": "verified",
@@ -841974,7 +841974,7 @@
       "tournamentLevel": "1000",
       "winner": "tennis_player_wta_221024",
       "loser": "tennis_player_wta_215899",
-      "score": "7-6(9) 4-6 4-6",
+      "score": "6-7(9) 6-4 6-4",
       "durationMinutes": 174
     },
     "dataQuality": "verified",
@@ -842000,7 +842000,7 @@
       "tournamentLevel": "1000",
       "winner": "tennis_player_wta_223360",
       "loser": "tennis_player_wta_261972",
-      "score": "6-4 3-6 4-6",
+      "score": "4-6 6-3 6-4",
       "durationMinutes": 135
     },
     "dataQuality": "verified",
@@ -842104,7 +842104,7 @@
       "tournamentLevel": "1000",
       "winner": "tennis_player_wta_220714",
       "loser": "tennis_player_wta_215613",
-      "score": "3-6 3-6",
+      "score": "6-3 6-3",
       "durationMinutes": 91
     },
     "dataQuality": "verified",
@@ -842130,7 +842130,7 @@
       "tournamentLevel": "1000",
       "winner": "tennis_player_wta_214981",
       "loser": "tennis_player_wta_206289",
-      "score": "4-6 1-6",
+      "score": "6-4 6-1",
       "durationMinutes": 75
     },
     "dataQuality": "verified",
@@ -842182,7 +842182,7 @@
       "tournamentLevel": "1000",
       "winner": "tennis_player_wta_222328",
       "loser": "tennis_player_wta_220716",
-      "score": "1-6 3-6",
+      "score": "6-1 6-3",
       "durationMinutes": 70
     },
     "dataQuality": "verified",
@@ -842208,7 +842208,7 @@
       "tournamentLevel": "1000",
       "winner": "tennis_player_wta_210722",
       "loser": "tennis_player_wta_211148",
-      "score": "6-4 6-7(5) 3-6",
+      "score": "4-6 7-6(5) 6-3",
       "durationMinutes": 161
     },
     "dataQuality": "verified",
@@ -842234,7 +842234,7 @@
       "tournamentLevel": "1000",
       "winner": "tennis_player_wta_211533",
       "loser": "tennis_player_wta_221012",
-      "score": "6-4 4-6 4-6",
+      "score": "4-6 6-4 6-4",
       "durationMinutes": 149
     },
     "dataQuality": "verified",
@@ -842260,7 +842260,7 @@
       "tournamentLevel": "1000",
       "winner": "tennis_player_wta_201514",
       "loser": "tennis_player_wta_214544",
-      "score": "6-2 3-6 5-7",
+      "score": "2-6 6-3 7-5",
       "durationMinutes": 133
     },
     "dataQuality": "verified",
@@ -842286,7 +842286,7 @@
       "tournamentLevel": "1000",
       "winner": "tennis_player_wta_259799",
       "loser": "tennis_player_wta_203530",
-      "score": "1-6 6-4 0-6",
+      "score": "6-1 4-6 6-0",
       "durationMinutes": 117
     },
     "dataQuality": "verified",
@@ -842312,7 +842312,7 @@
       "tournamentLevel": "1000",
       "winner": "tennis_player_wta_214939",
       "loser": "tennis_player_wta_202505",
-      "score": "4-6 3-6",
+      "score": "6-4 6-3",
       "durationMinutes": 90
     },
     "dataQuality": "verified",
@@ -842338,7 +842338,7 @@
       "tournamentLevel": "1000",
       "winner": "tennis_player_wta_260300",
       "loser": "tennis_player_wta_203501",
-      "score": "5-7 2-6",
+      "score": "7-5 6-2",
       "durationMinutes": 88
     },
     "dataQuality": "verified",
@@ -842364,7 +842364,7 @@
       "tournamentLevel": "1000",
       "winner": "tennis_player_wta_223360",
       "loser": "tennis_player_wta_201619",
-      "score": "3-6 6-1 4-6",
+      "score": "6-3 1-6 6-4",
       "durationMinutes": 109
     },
     "dataQuality": "verified",
@@ -842442,7 +842442,7 @@
       "tournamentLevel": "1000",
       "winner": "tennis_player_wta_215713",
       "loser": "tennis_player_wta_214643",
-      "score": "3-6 2-6",
+      "score": "6-3 6-2",
       "durationMinutes": 87
     },
     "dataQuality": "verified",
@@ -842494,7 +842494,7 @@
       "tournamentLevel": "1000",
       "winner": "tennis_player_wta_214981",
       "loser": "tennis_player_wta_223253",
-      "score": "4-6 3-6",
+      "score": "6-4 6-3",
       "durationMinutes": 92
     },
     "dataQuality": "verified",
@@ -842520,7 +842520,7 @@
       "tournamentLevel": "1000",
       "winner": "tennis_player_wta_216347",
       "loser": "tennis_player_wta_220714",
-      "score": "1-6 0-6",
+      "score": "6-1 6-0",
       "durationMinutes": 65
     },
     "dataQuality": "verified",
@@ -842546,7 +842546,7 @@
       "tournamentLevel": "1000",
       "winner": "tennis_player_wta_201662",
       "loser": "tennis_player_wta_201696",
-      "score": "1-6 4-6",
+      "score": "6-1 6-4",
       "durationMinutes": 78
     },
     "dataQuality": "verified",
@@ -842624,7 +842624,7 @@
       "tournamentLevel": "1000",
       "winner": "tennis_player_wta_211533",
       "loser": "tennis_player_wta_214939",
-      "score": "1-6 2-6",
+      "score": "6-1 6-2",
       "durationMinutes": 70
     },
     "dataQuality": "verified",
@@ -842650,7 +842650,7 @@
       "tournamentLevel": "1000",
       "winner": "tennis_player_wta_259799",
       "loser": "tennis_player_wta_210722",
-      "score": "3-6 3-6",
+      "score": "6-3 6-3",
       "durationMinutes": 78
     },
     "dataQuality": "verified",
@@ -842728,7 +842728,7 @@
       "tournamentLevel": "1000",
       "winner": "tennis_player_wta_216347",
       "loser": "tennis_player_wta_211768",
-      "score": "2-6 1-6",
+      "score": "6-2 6-1",
       "durationMinutes": 80
     },
     "dataQuality": "verified",
@@ -842754,7 +842754,7 @@
       "tournamentLevel": "1000",
       "winner": "tennis_player_wta_214981",
       "loser": "tennis_player_wta_201662",
-      "score": "0-6 2-6",
+      "score": "6-0 6-2",
       "durationMinutes": 58
     },
     "dataQuality": "verified",
@@ -842832,7 +842832,7 @@
       "tournamentLevel": "1000",
       "winner": "tennis_player_wta_216347",
       "loser": "tennis_player_wta_202468",
-      "score": "1-6 2-6",
+      "score": "6-1 6-2",
       "durationMinutes": 67
     },
     "dataQuality": "verified",
@@ -842884,7 +842884,7 @@
       "tournamentLevel": "1000",
       "winner": "tennis_player_wta_221103",
       "loser": "tennis_player_wta_201514",
-      "score": "4-6 3-6",
+      "score": "6-4 6-3",
       "durationMinutes": 75
     },
     "dataQuality": "verified",
@@ -842910,7 +842910,7 @@
       "tournamentLevel": "1000",
       "winner": "tennis_player_wta_202494",
       "loser": "tennis_player_wta_216347",
-      "score": "4-6 6-2 2-6",
+      "score": "6-4 2-6 6-2",
       "durationMinutes": 134
     },
     "dataQuality": "verified",
@@ -842936,7 +842936,7 @@
       "tournamentLevel": "1000",
       "winner": "tennis_player_wta_202494",
       "loser": "tennis_player_wta_221103",
-      "score": "4-6 7-6(3) 2-6",
+      "score": "6-4 6-7(3) 6-2",
       "durationMinutes": 169
     },
     "dataQuality": "verified",
@@ -849227,8 +849227,8 @@
       "surface": "Clay",
       "tournamentLevel": "G",
       "winner": "tennis_player_wta_211684",
-      "loser": "tennis_player_wta_320408",
-      "score": "7-6(5) 2-1",
+      "loser": "tennis_player_wta_211817",
+      "score": "7-6(5) 2-1 RET",
       "durationMinutes": null
     },
     "dataQuality": "verified",
@@ -850892,7 +850892,7 @@
       "tournamentLevel": "G",
       "winner": "tennis_player_wta_216016",
       "loser": "tennis_player_wta_221024",
-      "score": "5-4",
+      "score": "5-4 RET",
       "durationMinutes": null
     },
     "dataQuality": "verified",
@@ -851256,7 +851256,7 @@
       "tournamentLevel": "G",
       "winner": "tennis_player_wta_216153",
       "loser": "tennis_player_wta_211814",
-      "score": "6-0",
+      "score": "6-0 RET",
       "durationMinutes": null
     },
     "dataQuality": "verified",
@@ -858198,7 +858198,7 @@
       "tournamentLevel": "250",
       "winner": "tennis_player_wta_215613",
       "loser": "tennis_player_wta_214388",
-      "score": "7-6(6) 3-6 2-6",
+      "score": "6-7(6) 6-3 6-2",
       "durationMinutes": 137
     },
     "dataQuality": "verified",
@@ -858224,7 +858224,7 @@
       "tournamentLevel": "250",
       "winner": "tennis_player_wta_263857",
       "loser": "tennis_player_wta_233741",
-      "score": "7-6(8) 5-7 4-6",
+      "score": "6-7(8) 7-5 6-4",
       "durationMinutes": 201
     },
     "dataQuality": "verified",
@@ -858276,7 +858276,7 @@
       "tournamentLevel": "250",
       "winner": "tennis_player_wta_222601",
       "loser": "tennis_player_wta_221124",
-      "score": "5-7 2-6",
+      "score": "7-5 6-2",
       "durationMinutes": 87
     },
     "dataQuality": "verified",
@@ -858302,7 +858302,7 @@
       "tournamentLevel": "250",
       "winner": "tennis_player_wta_223194",
       "loser": "tennis_player_wta_215020",
-      "score": "6-4 3-6 3-6",
+      "score": "4-6 6-3 6-3",
       "durationMinutes": 128
     },
     "dataQuality": "verified",
@@ -858354,7 +858354,7 @@
       "tournamentLevel": "250",
       "winner": "tennis_player_wta_220465",
       "loser": "tennis_player_wta_220520",
-      "score": "3-6 3-6",
+      "score": "6-3 6-3",
       "durationMinutes": 86
     },
     "dataQuality": "verified",
@@ -858405,8 +858405,8 @@
       "surface": "Grass",
       "tournamentLevel": "250",
       "winner": "tennis_player_wta_215035",
-      "loser": "tennis_player_wta_",
-      "score": "4-6 6-7(2)",
+      "loser": "tennis_player_wta_260206",
+      "score": "6-4 7-6(2)",
       "durationMinutes": 97
     },
     "dataQuality": "verified",
@@ -858458,7 +858458,7 @@
       "tournamentLevel": "250",
       "winner": "tennis_player_wta_263872",
       "loser": "tennis_player_wta_211279",
-      "score": "2-6 4-6",
+      "score": "6-2 6-4",
       "durationMinutes": 80
     },
     "dataQuality": "verified",
@@ -858510,7 +858510,7 @@
       "tournamentLevel": "250",
       "winner": "tennis_player_wta_201662",
       "loser": "tennis_player_wta_239383",
-      "score": "6-2 6-7(3) 2-6",
+      "score": "2-6 7-6(3) 6-2",
       "durationMinutes": 141
     },
     "dataQuality": "verified",
@@ -858536,7 +858536,7 @@
       "tournamentLevel": "250",
       "winner": "tennis_player_wta_215613",
       "loser": "tennis_player_wta_263857",
-      "score": "4-6 7-6(3) 4-6",
+      "score": "6-4 6-7(3) 6-4",
       "durationMinutes": 179
     },
     "dataQuality": "verified",
@@ -858588,7 +858588,7 @@
       "tournamentLevel": "250",
       "winner": "tennis_player_wta_213583",
       "loser": "tennis_player_wta_215035",
-      "score": "1-6 2-6",
+      "score": "6-1 6-2",
       "durationMinutes": 56
     },
     "dataQuality": "verified",
@@ -858796,7 +858796,7 @@
       "tournamentLevel": "250",
       "winner": "tennis_player_wta_215613",
       "loser": "tennis_player_wta_222601",
-      "score": "6-7(6) 2-6",
+      "score": "7-6(6) 6-2",
       "durationMinutes": 101
     },
     "dataQuality": "verified",
@@ -858822,7 +858822,7 @@
       "tournamentLevel": "250",
       "winner": "tennis_player_wta_203530",
       "loser": "tennis_player_wta_215983",
-      "score": "3-6 6-2 3-6",
+      "score": "6-3 2-6 6-3",
       "durationMinutes": 112
     },
     "dataQuality": "verified",
@@ -858848,7 +858848,7 @@
       "tournamentLevel": "250",
       "winner": "tennis_player_wta_213631",
       "loser": "tennis_player_wta_201662",
-      "score": "4-6 1-6",
+      "score": "6-4 6-1",
       "durationMinutes": 79
     },
     "dataQuality": "verified",
@@ -859030,7 +859030,7 @@
       "tournamentLevel": "500",
       "winner": "tennis_player_wta_220332",
       "loser": "tennis_player_wta_211684",
-      "score": "6-7(7) 3-6",
+      "score": "7-6(7) 6-3",
       "durationMinutes": 128
     },
     "dataQuality": "verified",
@@ -859082,7 +859082,7 @@
       "tournamentLevel": "500",
       "winner": "tennis_player_wta_214096",
       "loser": "tennis_player_wta_201533",
-      "score": "1-6 3-6",
+      "score": "6-1 6-3",
       "durationMinutes": 58
     },
     "dataQuality": "verified",
@@ -859160,7 +859160,7 @@
       "tournamentLevel": "500",
       "winner": "tennis_player_wta_220348",
       "loser": "tennis_player_wta_220704",
-      "score": "3-6 4-6",
+      "score": "6-3 6-4",
       "durationMinutes": 89
     },
     "dataQuality": "verified",
@@ -859186,7 +859186,7 @@
       "tournamentLevel": "500",
       "winner": "tennis_player_wta_211651",
       "loser": "tennis_player_wta_215480",
-      "score": "3-6 2-6",
+      "score": "6-3 6-2",
       "durationMinutes": 73
     },
     "dataQuality": "verified",
@@ -859212,7 +859212,7 @@
       "tournamentLevel": "500",
       "winner": "tennis_player_wta_223253",
       "loser": "tennis_player_wta_202499",
-      "score": "5-7 4-6",
+      "score": "7-5 6-4",
       "durationMinutes": 110
     },
     "dataQuality": "verified",
@@ -859238,7 +859238,7 @@
       "tournamentLevel": "500",
       "winner": "tennis_player_wta_223360",
       "loser": "tennis_player_wta_210722",
-      "score": "1-6 4-6",
+      "score": "6-1 6-4",
       "durationMinutes": 90
     },
     "dataQuality": "verified",
@@ -859524,7 +859524,7 @@
       "tournamentLevel": "500",
       "winner": "tennis_player_wta_223253",
       "loser": "tennis_player_wta_202494",
-      "score": "3-6 4-6",
+      "score": "6-3 6-4",
       "durationMinutes": 83
     },
     "dataQuality": "verified",
@@ -859550,7 +859550,7 @@
       "tournamentLevel": "500",
       "winner": "tennis_player_wta_202468",
       "loser": "tennis_player_wta_214544",
-      "score": "4-6 7-6(4) 0-6",
+      "score": "6-4 6-7(4) 6-0",
       "durationMinutes": 133
     },
     "dataQuality": "verified",
@@ -859602,7 +859602,7 @@
       "tournamentLevel": "500",
       "winner": "tennis_player_wta_222328",
       "loser": "tennis_player_wta_202468",
-      "score": "4-6 6-4 3-6",
+      "score": "6-4 4-6 6-3",
       "durationMinutes": 119
     },
     "dataQuality": "verified",
@@ -871925,8 +871925,8 @@
       "surface": "Clay",
       "tournamentLevel": "250",
       "winner": "tennis_player_wta_221039",
-      "loser": "tennis_player_wta_327490",
-      "score": "6-4 6-6",
+      "loser": "tennis_player_wta_221168",
+      "score": "6-4 7-6(5)",
       "durationMinutes": 189
     },
     "dataQuality": "verified",
@@ -875566,7 +875566,7 @@
       "tournamentLevel": "250",
       "winner": "tennis_player_wta_211337",
       "loser": "tennis_player_wta_223286",
-      "score": "4-6 7-5 1-0",
+      "score": "4-6 7-5 1-0 RET",
       "durationMinutes": 133
     },
     "dataQuality": "verified",
@@ -876060,7 +876060,7 @@
       "tournamentLevel": "250",
       "winner": "tennis_player_wta_211337",
       "loser": "tennis_player_wta_210886",
-      "score": "6-1 2-0",
+      "score": "6-1 2-0 RET",
       "durationMinutes": 44
     },
     "dataQuality": "verified",
@@ -896808,7 +896808,7 @@
       "tournamentLevel": "G",
       "winner": "tennis_player_atp_S0IA",
       "loser": "tennis_player_atp_MW02",
-      "score": "7-6(4) 6-4 3-0",
+      "score": "7-6(4) 6-4 3-0 RET",
       "durationMinutes": 155
     },
     "dataQuality": "verified",
@@ -898576,7 +898576,7 @@
       "tournamentLevel": "G",
       "winner": "tennis_player_atp_KE29",
       "loser": "tennis_player_atp_B0PG",
-      "score": "6-2 7-5 3-2",
+      "score": "6-2 7-5 3-2 RET",
       "durationMinutes": 98
     },
     "dataQuality": "verified",
@@ -904218,7 +904218,7 @@
       "tournamentLevel": "250",
       "winner": "tennis_player_wta_233741",
       "loser": "tennis_player_wta_252499",
-      "score": "6-2 1-0",
+      "score": "6-2 1-0 RET",
       "durationMinutes": 49
     },
     "dataQuality": "verified",
@@ -909338,9 +909338,9 @@
       "round": "R128",
       "surface": "Hard",
       "tournamentLevel": "1000",
-      "winner": "tennis_player_wta_335958",
+      "winner": "tennis_player_wta_266647",
       "loser": "tennis_player_wta_220332",
-      "score": "6-1 3-0",
+      "score": "6-1 3-0 RET",
       "durationMinutes": 43
     },
     "dataQuality": "verified",
@@ -909496,7 +909496,7 @@
       "tournamentLevel": "1000",
       "winner": "tennis_player_wta_221257",
       "loser": "tennis_player_wta_215713",
-      "score": "4-1",
+      "score": "4-1 RET",
       "durationMinutes": 24
     },
     "dataQuality": "verified",
@@ -910068,7 +910068,7 @@
       "tournamentLevel": "1000",
       "winner": "tennis_player_wta_221012",
       "loser": "tennis_player_wta_214939",
-      "score": "6-7(4) 6-4 3-0",
+      "score": "6-7(4) 6-4 3-0 RET",
       "durationMinutes": 142
     },
     "dataQuality": "verified",
@@ -914592,7 +914592,7 @@
       "tournamentLevel": "1000",
       "winner": "tennis_player_wta_213631",
       "loser": "tennis_player_wta_220704",
-      "score": "6-1 2-0",
+      "score": "6-1 2-0 RET",
       "durationMinutes": 42
     },
     "dataQuality": "verified",
@@ -915086,7 +915086,7 @@
       "tournamentLevel": "1000",
       "winner": "tennis_player_wta_215983",
       "loser": "tennis_player_wta_215785",
-      "score": "6-1 3-0",
+      "score": "6-1 3-0 RET",
       "durationMinutes": 44
     },
     "dataQuality": "verified",
@@ -917310,6 +917310,136 @@
     "competitionId": "tennis_wta_osaka",
     "seasonId": "tennis_wta_osaka_2026",
     "date": "2026-10-19T00:00:00Z",
+    "title": "Ann Li vs Zeynep Sonmez",
+    "participants": [
+      "tennis_player_wta_222045",
+      "tennis_player_wta_215037"
+    ],
+    "sportData": {
+      "kind": "tennis_match",
+      "round": "R16",
+      "surface": "Hard",
+      "tournamentLevel": "250",
+      "winner": "tennis_player_wta_215983",
+      "loser": "tennis_player_wta_220309",
+      "score": "6-3 6-1",
+      "durationMinutes": 88
+    },
+    "dataQuality": "verified",
+    "externalIds": {
+      "tmlMatchId": "wta_2026-405_21"
+    },
+    "id": "evt_tennis_035326"
+  },
+  {
+    "sportId": "tennis",
+    "competitionId": "tennis_wta_ningbo",
+    "seasonId": "tennis_wta_ningbo_2026",
+    "date": "2026-10-19T00:00:00Z",
+    "title": "Iva Jovic vs Jasmine Paolini",
+    "participants": [
+      "tennis_player_wta_260300",
+      "tennis_player_wta_211148"
+    ],
+    "sportData": {
+      "kind": "tennis_match",
+      "round": "R16",
+      "surface": "Hard",
+      "tournamentLevel": "500",
+      "winner": "tennis_player_wta_260300",
+      "loser": "tennis_player_wta_211148",
+      "score": "6-4 6-3",
+      "durationMinutes": 82
+    },
+    "dataQuality": "verified",
+    "externalIds": {
+      "tmlMatchId": "wta_2026-2092_17"
+    },
+    "id": "evt_tennis_035340"
+  },
+  {
+    "sportId": "tennis",
+    "competitionId": "tennis_wta_ningbo",
+    "seasonId": "tennis_wta_ningbo_2026",
+    "date": "2026-10-19T00:00:00Z",
+    "title": "Katarzyna Kawa vs Belinda Bencic",
+    "participants": [
+      "tennis_player_wta_203514",
+      "tennis_player_wta_202505"
+    ],
+    "sportData": {
+      "kind": "tennis_match",
+      "round": "R16",
+      "surface": "Hard",
+      "tournamentLevel": "500",
+      "winner": "tennis_player_wta_203514",
+      "loser": "tennis_player_wta_202505",
+      "score": "7-5 6-2",
+      "durationMinutes": 103
+    },
+    "dataQuality": "verified",
+    "externalIds": {
+      "tmlMatchId": "wta_2026-2092_18"
+    },
+    "id": "evt_tennis_035341"
+  },
+  {
+    "sportId": "tennis",
+    "competitionId": "tennis_wta_ningbo",
+    "seasonId": "tennis_wta_ningbo_2026",
+    "date": "2026-10-19T00:00:00Z",
+    "title": "Diana Shnaider vs Alexandra Eala",
+    "participants": [
+      "tennis_player_wta_223670",
+      "tennis_player_wta_223253"
+    ],
+    "sportData": {
+      "kind": "tennis_match",
+      "round": "R16",
+      "surface": "Hard",
+      "tournamentLevel": "500",
+      "winner": "tennis_player_wta_223670",
+      "loser": "tennis_player_wta_223253",
+      "score": "7-5 6-4",
+      "durationMinutes": 115
+    },
+    "dataQuality": "verified",
+    "externalIds": {
+      "tmlMatchId": "wta_2026-2092_19"
+    },
+    "id": "evt_tennis_035342"
+  },
+  {
+    "sportId": "tennis",
+    "competitionId": "tennis_wta_ningbo",
+    "seasonId": "tennis_wta_ningbo_2026",
+    "date": "2026-10-19T00:00:00Z",
+    "title": "Elena Rybakina vs Polina Kudermetova",
+    "participants": [
+      "tennis_player_wta_214981",
+      "tennis_player_wta_221236"
+    ],
+    "sportData": {
+      "kind": "tennis_match",
+      "round": "R16",
+      "surface": "Hard",
+      "tournamentLevel": "500",
+      "winner": "tennis_player_wta_214981",
+      "loser": "tennis_player_wta_221236",
+      "score": "5-0",
+      "durationMinutes": 30
+    },
+    "dataQuality": "verified",
+    "externalIds": {
+      "tmlMatchId": "wta_2026-2092_20"
+    },
+    "id": "evt_tennis_035343"
+  },
+  {
+    "sportId": "tennis",
+    "competitionId": "tennis_wta_osaka",
+    "seasonId": "tennis_wta_osaka_2026",
+    "date": "2026-10-19T00:00:00Z",
     "title": "Antonia Ruzic vs Kayla Day",
     "participants": [
       "tennis_player_wta_222045",
@@ -917327,9 +917457,61 @@
     },
     "dataQuality": "verified",
     "externalIds": {
-      "tmlMatchId": "wta_2026-405_21"
+      "tmlMatchId": "wta_2026-405_22"
     },
-    "id": "evt_tennis_035326"
+    "id": "evt_tennis_035344"
+  },
+  {
+    "sportId": "tennis",
+    "competitionId": "tennis_wta_osaka",
+    "seasonId": "tennis_wta_osaka_2026",
+    "date": "2026-10-19T00:00:00Z",
+    "title": "Mary Stoiana vs Moyuka Uchijima",
+    "participants": [
+      "tennis_player_wta_269265",
+      "tennis_player_wta_220416"
+    ],
+    "sportData": {
+      "kind": "tennis_match",
+      "round": "R16",
+      "surface": "Hard",
+      "tournamentLevel": "250",
+      "winner": "tennis_player_wta_269265",
+      "loser": "tennis_player_wta_220416",
+      "score": "6-2 2-6 6-3",
+      "durationMinutes": 121
+    },
+    "dataQuality": "verified",
+    "externalIds": {
+      "tmlMatchId": "wta_2026-405_23"
+    },
+    "id": "evt_tennis_035345"
+  },
+  {
+    "sportId": "tennis",
+    "competitionId": "tennis_wta_osaka",
+    "seasonId": "tennis_wta_osaka_2026",
+    "date": "2026-10-19T00:00:00Z",
+    "title": "Katerina Siniakova vs Magda Linette",
+    "participants": [
+      "tennis_player_wta_211701",
+      "tennis_player_wta_202663"
+    ],
+    "sportData": {
+      "kind": "tennis_match",
+      "round": "R16",
+      "surface": "Hard",
+      "tournamentLevel": "250",
+      "winner": "tennis_player_wta_211701",
+      "loser": "tennis_player_wta_202663",
+      "score": "6-4 6-1",
+      "durationMinutes": 83
+    },
+    "dataQuality": "verified",
+    "externalIds": {
+      "tmlMatchId": "wta_2026-405_24"
+    },
+    "id": "evt_tennis_035346"
   },
   {
     "sportId": "tennis",
@@ -917746,6 +917928,32 @@
       "tmlMatchId": "atp_2026-496_11"
     },
     "id": "evt_tennis_035284"
+  },
+  {
+    "sportId": "tennis",
+    "competitionId": "tennis_atp_brussels",
+    "seasonId": "tennis_atp_brussels_2026",
+    "date": "2026-10-20T00:00:00Z",
+    "title": "Arthur Fils vs Jaume Munar",
+    "participants": [
+      "tennis_player_atp_F0F1",
+      "tennis_player_atp_MU94"
+    ],
+    "sportData": {
+      "kind": "tennis_match",
+      "round": "R16",
+      "surface": "Hard",
+      "tournamentLevel": "250",
+      "winner": "tennis_player_atp_F0F1",
+      "loser": "tennis_player_atp_MU94",
+      "score": "W/O",
+      "durationMinutes": null
+    },
+    "dataQuality": "verified",
+    "externalIds": {
+      "tmlMatchId": "atp_2026-7485_20"
+    },
+    "id": "evt_tennis_035339"
   },
   {
     "sportId": "tennis",
@@ -918474,5 +918682,317 @@
       "tmlMatchId": "atp_2026-7485_16"
     },
     "id": "evt_tennis_035318"
+  },
+  {
+    "sportId": "tennis",
+    "competitionId": "tennis_atp_almaty",
+    "seasonId": "tennis_atp_almaty_2026",
+    "date": "2026-10-22T00:00:00Z",
+    "title": "Terence Atmane vs Mattia Bellucci",
+    "participants": [
+      "tennis_player_atp_A0GC",
+      "tennis_player_atp_B0GG"
+    ],
+    "sportData": {
+      "kind": "tennis_match",
+      "round": "R16",
+      "surface": "Hard",
+      "tournamentLevel": "250",
+      "winner": "tennis_player_atp_A0GC",
+      "loser": "tennis_player_atp_B0GG",
+      "score": "6-7(4) 7-6(2) 7-6(5)",
+      "durationMinutes": 170
+    },
+    "dataQuality": "verified",
+    "externalIds": {
+      "tmlMatchId": "atp_2026-9410_17"
+    },
+    "id": "evt_tennis_035327"
+  },
+  {
+    "sportId": "tennis",
+    "competitionId": "tennis_atp_almaty",
+    "seasonId": "tennis_atp_almaty_2026",
+    "date": "2026-10-22T00:00:00Z",
+    "title": "Karen Khachanov vs Tomas Machac",
+    "participants": [
+      "tennis_player_atp_KE29",
+      "tennis_player_atp_M0FH"
+    ],
+    "sportData": {
+      "kind": "tennis_match",
+      "round": "R16",
+      "surface": "Hard",
+      "tournamentLevel": "250",
+      "winner": "tennis_player_atp_KE29",
+      "loser": "tennis_player_atp_M0FH",
+      "score": "6-2 4-6 7-6(7)",
+      "durationMinutes": 151
+    },
+    "dataQuality": "verified",
+    "externalIds": {
+      "tmlMatchId": "atp_2026-9410_18"
+    },
+    "id": "evt_tennis_035328"
+  },
+  {
+    "sportId": "tennis",
+    "competitionId": "tennis_atp_brussels",
+    "seasonId": "tennis_atp_brussels_2026",
+    "date": "2026-10-22T00:00:00Z",
+    "title": "Jiri Lehecka vs Raphael Collignon",
+    "participants": [
+      "tennis_player_atp_L0BV",
+      "tennis_player_atp_C0JP"
+    ],
+    "sportData": {
+      "kind": "tennis_match",
+      "round": "R16",
+      "surface": "Hard",
+      "tournamentLevel": "250",
+      "winner": "tennis_player_atp_L0BV",
+      "loser": "tennis_player_atp_C0JP",
+      "score": "6-4 6-2",
+      "durationMinutes": 79
+    },
+    "dataQuality": "verified",
+    "externalIds": {
+      "tmlMatchId": "atp_2026-7485_17"
+    },
+    "id": "evt_tennis_035329"
+  },
+  {
+    "sportId": "tennis",
+    "competitionId": "tennis_atp_lyon",
+    "seasonId": "tennis_atp_lyon_2026",
+    "date": "2026-10-22T00:00:00Z",
+    "title": "Daniel Altmaier vs Borna Gojo",
+    "participants": [
+      "tennis_player_atp_AE14",
+      "tennis_player_atp_GH92"
+    ],
+    "sportData": {
+      "kind": "tennis_match",
+      "round": "R16",
+      "surface": "Hard",
+      "tournamentLevel": "250",
+      "winner": "tennis_player_atp_AE14",
+      "loser": "tennis_player_atp_GH92",
+      "score": "6-3 6-4",
+      "durationMinutes": 81
+    },
+    "dataQuality": "verified",
+    "externalIds": {
+      "tmlMatchId": "atp_2026-496_16"
+    },
+    "id": "evt_tennis_035330"
+  },
+  {
+    "sportId": "tennis",
+    "competitionId": "tennis_atp_almaty",
+    "seasonId": "tennis_atp_almaty_2026",
+    "date": "2026-10-22T00:00:00Z",
+    "title": "Daniil Medvedev vs Sho Shimabukuro",
+    "participants": [
+      "tennis_player_atp_MM58",
+      "tennis_player_atp_SY67"
+    ],
+    "sportData": {
+      "kind": "tennis_match",
+      "round": "R16",
+      "surface": "Hard",
+      "tournamentLevel": "250",
+      "winner": "tennis_player_atp_MM58",
+      "loser": "tennis_player_atp_SY67",
+      "score": "6-2 6-1",
+      "durationMinutes": 52
+    },
+    "dataQuality": "verified",
+    "externalIds": {
+      "tmlMatchId": "atp_2026-9410_19"
+    },
+    "id": "evt_tennis_035331"
+  },
+  {
+    "sportId": "tennis",
+    "competitionId": "tennis_atp_lyon",
+    "seasonId": "tennis_atp_lyon_2026",
+    "date": "2026-10-22T00:00:00Z",
+    "title": "Luca Van Assche vs Valentin Vacherot",
+    "participants": [
+      "tennis_player_atp_V0DZ",
+      "tennis_player_atp_VA25"
+    ],
+    "sportData": {
+      "kind": "tennis_match",
+      "round": "R16",
+      "surface": "Hard",
+      "tournamentLevel": "250",
+      "winner": "tennis_player_atp_V0DZ",
+      "loser": "tennis_player_atp_VA25",
+      "score": "2-6 6-4 6-4",
+      "durationMinutes": 127
+    },
+    "dataQuality": "verified",
+    "externalIds": {
+      "tmlMatchId": "atp_2026-496_17"
+    },
+    "id": "evt_tennis_035332"
+  },
+  {
+    "sportId": "tennis",
+    "competitionId": "tennis_atp_brussels",
+    "seasonId": "tennis_atp_brussels_2026",
+    "date": "2026-10-22T00:00:00Z",
+    "title": "Alex Michelsen vs David Goffin",
+    "participants": [
+      "tennis_player_atp_M0QI",
+      "tennis_player_atp_GB88"
+    ],
+    "sportData": {
+      "kind": "tennis_match",
+      "round": "R16",
+      "surface": "Hard",
+      "tournamentLevel": "250",
+      "winner": "tennis_player_atp_M0QI",
+      "loser": "tennis_player_atp_GB88",
+      "score": "6-3 6-4",
+      "durationMinutes": 88
+    },
+    "dataQuality": "verified",
+    "externalIds": {
+      "tmlMatchId": "atp_2026-7485_18"
+    },
+    "id": "evt_tennis_035333"
+  },
+  {
+    "sportId": "tennis",
+    "competitionId": "tennis_atp_lyon",
+    "seasonId": "tennis_atp_lyon_2026",
+    "date": "2026-10-22T00:00:00Z",
+    "title": "Taylor Fritz vs Pierre-Hugues Herbert",
+    "participants": [
+      "tennis_player_atp_FB98",
+      "tennis_player_atp_H996"
+    ],
+    "sportData": {
+      "kind": "tennis_match",
+      "round": "R16",
+      "surface": "Hard",
+      "tournamentLevel": "250",
+      "winner": "tennis_player_atp_FB98",
+      "loser": "tennis_player_atp_H996",
+      "score": "6-2 7-5",
+      "durationMinutes": 94
+    },
+    "dataQuality": "verified",
+    "externalIds": {
+      "tmlMatchId": "atp_2026-496_18"
+    },
+    "id": "evt_tennis_035334"
+  },
+  {
+    "sportId": "tennis",
+    "competitionId": "tennis_atp_brussels",
+    "seasonId": "tennis_atp_brussels_2026",
+    "date": "2026-10-22T00:00:00Z",
+    "title": "Zizou Bergs vs Damir Dzumhur",
+    "participants": [
+      "tennis_player_atp_BU13",
+      "tennis_player_atp_D923"
+    ],
+    "sportData": {
+      "kind": "tennis_match",
+      "round": "R16",
+      "surface": "Hard",
+      "tournamentLevel": "250",
+      "winner": "tennis_player_atp_BU13",
+      "loser": "tennis_player_atp_D923",
+      "score": "6-2 6-4",
+      "durationMinutes": 77
+    },
+    "dataQuality": "verified",
+    "externalIds": {
+      "tmlMatchId": "atp_2026-7485_19"
+    },
+    "id": "evt_tennis_035335"
+  },
+  {
+    "sportId": "tennis",
+    "competitionId": "tennis_atp_lyon",
+    "seasonId": "tennis_atp_lyon_2026",
+    "date": "2026-10-22T00:00:00Z",
+    "title": "Flavio Cobolli vs Stan Wawrinka",
+    "participants": [
+      "tennis_player_atp_C0E9",
+      "tennis_player_atp_W367"
+    ],
+    "sportData": {
+      "kind": "tennis_match",
+      "round": "R16",
+      "surface": "Hard",
+      "tournamentLevel": "250",
+      "winner": "tennis_player_atp_C0E9",
+      "loser": "tennis_player_atp_W367",
+      "score": "6-2 6-4",
+      "durationMinutes": 68
+    },
+    "dataQuality": "verified",
+    "externalIds": {
+      "tmlMatchId": "atp_2026-496_19"
+    },
+    "id": "evt_tennis_035336"
+  },
+  {
+    "sportId": "tennis",
+    "competitionId": "tennis_atp_lyon",
+    "seasonId": "tennis_atp_lyon_2026",
+    "date": "2026-10-22T00:00:00Z",
+    "title": "Brandon Nakashima vs Kyrian Jacquet",
+    "participants": [
+      "tennis_player_atp_N0AE",
+      "tennis_player_atp_J0AZ"
+    ],
+    "sportData": {
+      "kind": "tennis_match",
+      "round": "R16",
+      "surface": "Hard",
+      "tournamentLevel": "250",
+      "winner": "tennis_player_atp_N0AE",
+      "loser": "tennis_player_atp_J0AZ",
+      "score": "6-4 6-3",
+      "durationMinutes": 83
+    },
+    "dataQuality": "verified",
+    "externalIds": {
+      "tmlMatchId": "atp_2026-496_20"
+    },
+    "id": "evt_tennis_035337"
+  },
+  {
+    "sportId": "tennis",
+    "competitionId": "tennis_atp_almaty",
+    "seasonId": "tennis_atp_almaty_2026",
+    "date": "2026-10-22T00:00:00Z",
+    "title": "Alexander Bublik vs Fabian Marozsan",
+    "participants": [
+      "tennis_player_atp_BK92",
+      "tennis_player_atp_M0CI"
+    ],
+    "sportData": {
+      "kind": "tennis_match",
+      "round": "R16",
+      "surface": "Hard",
+      "tournamentLevel": "250",
+      "winner": "tennis_player_atp_BK92",
+      "loser": "tennis_player_atp_M0CI",
+      "score": "W/O",
+      "durationMinutes": null
+    },
+    "dataQuality": "verified",
+    "externalIds": {
+      "tmlMatchId": "atp_2026-9410_20"
+    },
+    "id": "evt_tennis_035338"
   }
 ]
