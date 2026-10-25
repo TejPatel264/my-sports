@@ -1085,6 +1085,11 @@
     "name": "Ariana Geerlings"
   },
   {
+    "id": "tennis_player_wta_222369",
+    "sportId": "tennis",
+    "name": "Arianna Zucchini"
+  },
+  {
     "id": "tennis_player_wta_215996",
     "sportId": "tennis",
     "name": "Arianne Hartono"
@@ -3553,6 +3558,11 @@
     "id": "tennis_player_wta_222559",
     "sportId": "tennis",
     "name": "Han Shi"
+  },
+  {
+    "id": "tennis_player_wta_213949",
+    "sportId": "tennis",
+    "name": "Hanna Chang"
   },
   {
     "id": "tennis_player_wta_263872",

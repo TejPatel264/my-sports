@@ -655944,7 +655944,7 @@
       "tournamentLevel": "A",
       "winner": "tennis_player_wta_216347",
       "loser": "tennis_player_wta_211107",
-      "score": "6-7 6-1 6-4",
+      "score": "6-7(4) 6-1 6-4",
       "durationMinutes": 177
     },
     "dataQuality": "verified",
@@ -660286,7 +660286,7 @@
       "tournamentLevel": "250",
       "winner": "tennis_player_wta_213887",
       "loser": "tennis_player_wta_214459",
-      "score": "6-4 4-3 RET",
+      "score": "6-4 6-3",
       "durationMinutes": 114
     },
     "dataQuality": "verified",
@@ -660650,7 +660650,7 @@
       "tournamentLevel": "250",
       "winner": "tennis_player_wta_215035",
       "loser": "tennis_player_wta_220465",
-      "score": "6-2 6-1",
+      "score": "2-6 6-4 6-1",
       "durationMinutes": 118
     },
     "dataQuality": "verified",
@@ -674872,7 +674872,7 @@
       "tournamentLevel": "500",
       "winner": "tennis_player_wta_202460",
       "loser": "tennis_player_wta_211533",
-      "score": "7-6(6) 7-5",
+      "score": "7-6(4) 7-5",
       "durationMinutes": 106
     },
     "dataQuality": "verified",
@@ -683154,36 +683154,10 @@
     "competitionId": "tennis_atp_dubai",
     "seasonId": "tennis_atp_dubai_2025",
     "date": "2025-02-24T00:00:00Z",
-    "title": "Luca Nardi vs Marton Fucsovics",
+    "title": "Stefanos Tsitsipas vs Lorenzo Sonego",
     "participants": [
       "tennis_player_atp_N0BG",
       "tennis_player_atp_F724"
-    ],
-    "sportData": {
-      "kind": "tennis_match",
-      "round": "R32",
-      "surface": "Hard",
-      "tournamentLevel": "500",
-      "winner": "tennis_player_atp_N0BG",
-      "loser": "tennis_player_atp_F724",
-      "score": "1-6 6-2 6-3",
-      "durationMinutes": 102
-    },
-    "dataQuality": "verified",
-    "externalIds": {
-      "tmlMatchId": "atp_2025-495_11"
-    },
-    "id": "evt_tennis_013825"
-  },
-  {
-    "sportId": "tennis",
-    "competitionId": "tennis_atp_dubai",
-    "seasonId": "tennis_atp_dubai_2025",
-    "date": "2025-02-24T00:00:00Z",
-    "title": "Stefanos Tsitsipas vs Lorenzo Sonego",
-    "participants": [
-      "tennis_player_atp_TE51",
-      "tennis_player_atp_SU87"
     ],
     "sportData": {
       "kind": "tennis_match",
@@ -683197,9 +683171,9 @@
     },
     "dataQuality": "verified",
     "externalIds": {
-      "tmlMatchId": "atp_2025-495_12"
+      "tmlMatchId": "atp_2025-495_11"
     },
-    "id": "evt_tennis_013826"
+    "id": "evt_tennis_013825"
   },
   {
     "sportId": "tennis",
@@ -683208,8 +683182,8 @@
     "date": "2025-02-24T00:00:00Z",
     "title": "Roberto Bautista Agut vs Fabian Marozsan",
     "participants": [
-      "tennis_player_atp_BD06",
-      "tennis_player_atp_M0CI"
+      "tennis_player_atp_TE51",
+      "tennis_player_atp_SU87"
     ],
     "sportData": {
       "kind": "tennis_match",
@@ -683223,9 +683197,9 @@
     },
     "dataQuality": "verified",
     "externalIds": {
-      "tmlMatchId": "atp_2025-495_13"
+      "tmlMatchId": "atp_2025-495_12"
     },
-    "id": "evt_tennis_013827"
+    "id": "evt_tennis_013826"
   },
   {
     "sportId": "tennis",
@@ -683234,8 +683208,8 @@
     "date": "2025-02-24T00:00:00Z",
     "title": "Zizou Bergs vs Aziz Dougaz",
     "participants": [
-      "tennis_player_atp_BU13",
-      "tennis_player_atp_DF88"
+      "tennis_player_atp_BD06",
+      "tennis_player_atp_M0CI"
     ],
     "sportData": {
       "kind": "tennis_match",
@@ -683249,9 +683223,9 @@
     },
     "dataQuality": "verified",
     "externalIds": {
-      "tmlMatchId": "atp_2025-495_14"
+      "tmlMatchId": "atp_2025-495_13"
     },
-    "id": "evt_tennis_013828"
+    "id": "evt_tennis_013827"
   },
   {
     "sportId": "tennis",
@@ -683260,8 +683234,8 @@
     "date": "2025-02-24T00:00:00Z",
     "title": "Karen Khachanov vs Daniel Evans",
     "participants": [
-      "tennis_player_atp_KE29",
-      "tennis_player_atp_E687"
+      "tennis_player_atp_BU13",
+      "tennis_player_atp_DF88"
     ],
     "sportData": {
       "kind": "tennis_match",
@@ -683275,9 +683249,9 @@
     },
     "dataQuality": "verified",
     "externalIds": {
-      "tmlMatchId": "atp_2025-495_15"
+      "tmlMatchId": "atp_2025-495_14"
     },
-    "id": "evt_tennis_013829"
+    "id": "evt_tennis_013828"
   },
   {
     "sportId": "tennis",
@@ -683286,8 +683260,8 @@
     "date": "2025-02-24T00:00:00Z",
     "title": "Giovanni Mpetshi Perricard vs Zhizhen Zhang",
     "participants": [
-      "tennis_player_atp_M0GZ",
-      "tennis_player_atp_Z371"
+      "tennis_player_atp_KE29",
+      "tennis_player_atp_E687"
     ],
     "sportData": {
       "kind": "tennis_match",
@@ -683301,9 +683275,9 @@
     },
     "dataQuality": "verified",
     "externalIds": {
-      "tmlMatchId": "atp_2025-495_16"
+      "tmlMatchId": "atp_2025-495_15"
     },
-    "id": "evt_tennis_013830"
+    "id": "evt_tennis_013829"
   },
   {
     "sportId": "tennis",
@@ -683312,8 +683286,8 @@
     "date": "2025-02-24T00:00:00Z",
     "title": "Alexei Popyrin vs Hady Habib",
     "participants": [
-      "tennis_player_atp_P09Z",
-      "tennis_player_atp_HF80"
+      "tennis_player_atp_M0GZ",
+      "tennis_player_atp_Z371"
     ],
     "sportData": {
       "kind": "tennis_match",
@@ -683327,9 +683301,9 @@
     },
     "dataQuality": "verified",
     "externalIds": {
-      "tmlMatchId": "atp_2025-495_17"
+      "tmlMatchId": "atp_2025-495_16"
     },
-    "id": "evt_tennis_013831"
+    "id": "evt_tennis_013830"
   },
   {
     "sportId": "tennis",
@@ -683338,8 +683312,8 @@
     "date": "2025-02-24T00:00:00Z",
     "title": "Daniil Medvedev vs Giovanni Mpetshi Perricard",
     "participants": [
-      "tennis_player_atp_MM58",
-      "tennis_player_atp_M0GZ"
+      "tennis_player_atp_P09Z",
+      "tennis_player_atp_HF80"
     ],
     "sportData": {
       "kind": "tennis_match",
@@ -683353,9 +683327,9 @@
     },
     "dataQuality": "verified",
     "externalIds": {
-      "tmlMatchId": "atp_2025-495_18"
+      "tmlMatchId": "atp_2025-495_17"
     },
-    "id": "evt_tennis_013832"
+    "id": "evt_tennis_013831"
   },
   {
     "sportId": "tennis",
@@ -683364,8 +683338,8 @@
     "date": "2025-02-24T00:00:00Z",
     "title": "Stefanos Tsitsipas vs Karen Khachanov",
     "participants": [
-      "tennis_player_atp_TE51",
-      "tennis_player_atp_KE29"
+      "tennis_player_atp_MM58",
+      "tennis_player_atp_M0GZ"
     ],
     "sportData": {
       "kind": "tennis_match",
@@ -683379,9 +683353,9 @@
     },
     "dataQuality": "verified",
     "externalIds": {
-      "tmlMatchId": "atp_2025-495_19"
+      "tmlMatchId": "atp_2025-495_18"
     },
-    "id": "evt_tennis_013833"
+    "id": "evt_tennis_013832"
   },
   {
     "sportId": "tennis",
@@ -683390,8 +683364,8 @@
     "date": "2025-02-24T00:00:00Z",
     "title": "Tallon Griekspoor vs Ugo Humbert",
     "participants": [
-      "tennis_player_atp_GJ37",
-      "tennis_player_atp_HH26"
+      "tennis_player_atp_TE51",
+      "tennis_player_atp_KE29"
     ],
     "sportData": {
       "kind": "tennis_match",
@@ -683405,9 +683379,9 @@
     },
     "dataQuality": "verified",
     "externalIds": {
-      "tmlMatchId": "atp_2025-495_20"
+      "tmlMatchId": "atp_2025-495_19"
     },
-    "id": "evt_tennis_013834"
+    "id": "evt_tennis_013833"
   },
   {
     "sportId": "tennis",
@@ -683416,8 +683390,8 @@
     "date": "2025-02-24T00:00:00Z",
     "title": "Felix Auger-Aliassime vs Nuno Borges",
     "participants": [
-      "tennis_player_atp_AG37",
-      "tennis_player_atp_BT72"
+      "tennis_player_atp_GJ37",
+      "tennis_player_atp_HH26"
     ],
     "sportData": {
       "kind": "tennis_match",
@@ -683431,9 +683405,9 @@
     },
     "dataQuality": "verified",
     "externalIds": {
-      "tmlMatchId": "atp_2025-495_21"
+      "tmlMatchId": "atp_2025-495_20"
     },
-    "id": "evt_tennis_013835"
+    "id": "evt_tennis_013834"
   },
   {
     "sportId": "tennis",
@@ -683442,8 +683416,8 @@
     "date": "2025-02-24T00:00:00Z",
     "title": "Matteo Berrettini vs Christopher O'Connell",
     "participants": [
-      "tennis_player_atp_BK40",
-      "tennis_player_atp_O483"
+      "tennis_player_atp_AG37",
+      "tennis_player_atp_BT72"
     ],
     "sportData": {
       "kind": "tennis_match",
@@ -683457,9 +683431,9 @@
     },
     "dataQuality": "verified",
     "externalIds": {
-      "tmlMatchId": "atp_2025-495_22"
+      "tmlMatchId": "atp_2025-495_21"
     },
-    "id": "evt_tennis_013836"
+    "id": "evt_tennis_013835"
   },
   {
     "sportId": "tennis",
@@ -683468,8 +683442,8 @@
     "date": "2025-02-24T00:00:00Z",
     "title": "Marin Cilic vs Alexei Popyrin",
     "participants": [
-      "tennis_player_atp_C977",
-      "tennis_player_atp_P09Z"
+      "tennis_player_atp_BK40",
+      "tennis_player_atp_O483"
     ],
     "sportData": {
       "kind": "tennis_match",
@@ -683483,9 +683457,9 @@
     },
     "dataQuality": "verified",
     "externalIds": {
-      "tmlMatchId": "atp_2025-495_23"
+      "tmlMatchId": "atp_2025-495_22"
     },
-    "id": "evt_tennis_013837"
+    "id": "evt_tennis_013836"
   },
   {
     "sportId": "tennis",
@@ -683494,8 +683468,8 @@
     "date": "2025-02-24T00:00:00Z",
     "title": "Quentin Halys vs Roberto Bautista Agut",
     "participants": [
-      "tennis_player_atp_HB64",
-      "tennis_player_atp_BD06"
+      "tennis_player_atp_C977",
+      "tennis_player_atp_P09Z"
     ],
     "sportData": {
       "kind": "tennis_match",
@@ -683509,9 +683483,9 @@
     },
     "dataQuality": "verified",
     "externalIds": {
-      "tmlMatchId": "atp_2025-495_24"
+      "tmlMatchId": "atp_2025-495_23"
     },
-    "id": "evt_tennis_013838"
+    "id": "evt_tennis_013837"
   },
   {
     "sportId": "tennis",
@@ -683520,8 +683494,8 @@
     "date": "2025-02-24T00:00:00Z",
     "title": "Luca Nardi vs Zizou Bergs",
     "participants": [
-      "tennis_player_atp_N0BG",
-      "tennis_player_atp_BU13"
+      "tennis_player_atp_HB64",
+      "tennis_player_atp_BD06"
     ],
     "sportData": {
       "kind": "tennis_match",
@@ -683535,9 +683509,9 @@
     },
     "dataQuality": "verified",
     "externalIds": {
-      "tmlMatchId": "atp_2025-495_25"
+      "tmlMatchId": "atp_2025-495_24"
     },
-    "id": "evt_tennis_013839"
+    "id": "evt_tennis_013838"
   },
   {
     "sportId": "tennis",
@@ -683546,8 +683520,8 @@
     "date": "2025-02-24T00:00:00Z",
     "title": "Tallon Griekspoor vs Daniil Medvedev",
     "participants": [
-      "tennis_player_atp_GJ37",
-      "tennis_player_atp_MM58"
+      "tennis_player_atp_N0BG",
+      "tennis_player_atp_BU13"
     ],
     "sportData": {
       "kind": "tennis_match",
@@ -683561,9 +683535,9 @@
     },
     "dataQuality": "verified",
     "externalIds": {
-      "tmlMatchId": "atp_2025-495_26"
+      "tmlMatchId": "atp_2025-495_25"
     },
-    "id": "evt_tennis_013840"
+    "id": "evt_tennis_013839"
   },
   {
     "sportId": "tennis",
@@ -683572,8 +683546,8 @@
     "date": "2025-02-24T00:00:00Z",
     "title": "Stefanos Tsitsipas vs Matteo Berrettini",
     "participants": [
-      "tennis_player_atp_TE51",
-      "tennis_player_atp_BK40"
+      "tennis_player_atp_GJ37",
+      "tennis_player_atp_MM58"
     ],
     "sportData": {
       "kind": "tennis_match",
@@ -683587,9 +683561,9 @@
     },
     "dataQuality": "verified",
     "externalIds": {
-      "tmlMatchId": "atp_2025-495_27"
+      "tmlMatchId": "atp_2025-495_26"
     },
-    "id": "evt_tennis_013841"
+    "id": "evt_tennis_013840"
   },
   {
     "sportId": "tennis",
@@ -683598,8 +683572,8 @@
     "date": "2025-02-24T00:00:00Z",
     "title": "Felix Auger-Aliassime vs Marin Cilic",
     "participants": [
-      "tennis_player_atp_AG37",
-      "tennis_player_atp_C977"
+      "tennis_player_atp_TE51",
+      "tennis_player_atp_BK40"
     ],
     "sportData": {
       "kind": "tennis_match",
@@ -683613,9 +683587,9 @@
     },
     "dataQuality": "verified",
     "externalIds": {
-      "tmlMatchId": "atp_2025-495_28"
+      "tmlMatchId": "atp_2025-495_27"
     },
-    "id": "evt_tennis_013842"
+    "id": "evt_tennis_013841"
   },
   {
     "sportId": "tennis",
@@ -683624,8 +683598,8 @@
     "date": "2025-02-24T00:00:00Z",
     "title": "Quentin Halys vs Luca Nardi",
     "participants": [
-      "tennis_player_atp_HB64",
-      "tennis_player_atp_N0BG"
+      "tennis_player_atp_AG37",
+      "tennis_player_atp_C977"
     ],
     "sportData": {
       "kind": "tennis_match",
@@ -683639,9 +683613,9 @@
     },
     "dataQuality": "verified",
     "externalIds": {
-      "tmlMatchId": "atp_2025-495_29"
+      "tmlMatchId": "atp_2025-495_28"
     },
-    "id": "evt_tennis_013843"
+    "id": "evt_tennis_013842"
   },
   {
     "sportId": "tennis",
@@ -683650,8 +683624,8 @@
     "date": "2025-02-24T00:00:00Z",
     "title": "Stefanos Tsitsipas vs Tallon Griekspoor",
     "participants": [
-      "tennis_player_atp_TE51",
-      "tennis_player_atp_GJ37"
+      "tennis_player_atp_HB64",
+      "tennis_player_atp_N0BG"
     ],
     "sportData": {
       "kind": "tennis_match",
@@ -683665,9 +683639,9 @@
     },
     "dataQuality": "verified",
     "externalIds": {
-      "tmlMatchId": "atp_2025-495_30"
+      "tmlMatchId": "atp_2025-495_29"
     },
-    "id": "evt_tennis_013844"
+    "id": "evt_tennis_013843"
   },
   {
     "sportId": "tennis",
@@ -683676,8 +683650,8 @@
     "date": "2025-02-24T00:00:00Z",
     "title": "Felix Auger-Aliassime vs Quentin Halys",
     "participants": [
-      "tennis_player_atp_AG37",
-      "tennis_player_atp_HB64"
+      "tennis_player_atp_TE51",
+      "tennis_player_atp_GJ37"
     ],
     "sportData": {
       "kind": "tennis_match",
@@ -683688,6 +683662,32 @@
       "loser": "tennis_player_atp_HB64",
       "score": "5-7 6-4 6-3",
       "durationMinutes": 136
+    },
+    "dataQuality": "verified",
+    "externalIds": {
+      "tmlMatchId": "atp_2025-495_30"
+    },
+    "id": "evt_tennis_013844"
+  },
+  {
+    "sportId": "tennis",
+    "competitionId": "tennis_atp_dubai",
+    "seasonId": "tennis_atp_dubai_2025",
+    "date": "2025-02-24T00:00:00Z",
+    "title": "Stefanos Tsitsipas vs Felix Auger-Aliassime",
+    "participants": [
+      "tennis_player_atp_AG37",
+      "tennis_player_atp_HB64"
+    ],
+    "sportData": {
+      "kind": "tennis_match",
+      "round": "F",
+      "surface": "Hard",
+      "tournamentLevel": "500",
+      "winner": "tennis_player_atp_TE51",
+      "loser": "tennis_player_atp_AG37",
+      "score": "6-3 6-3",
+      "durationMinutes": 88
     },
     "dataQuality": "verified",
     "externalIds": {
@@ -689380,7 +689380,7 @@
       "tournamentLevel": "1000",
       "winner": "tennis_player_wta_215713",
       "loser": "tennis_player_wta_222601",
-      "score": "6-7(7) 6-4 7-5",
+      "score": "6-7(5) 6-4 7-5",
       "durationMinutes": 160
     },
     "dataQuality": "verified",
@@ -689796,7 +689796,7 @@
       "tournamentLevel": "1000",
       "winner": "tennis_player_wta_222661",
       "loser": "tennis_player_wta_201478",
-      "score": "7-6(6) RET",
+      "score": "7-6(6) 6-2",
       "durationMinutes": 100
     },
     "dataQuality": "verified",
@@ -689952,7 +689952,7 @@
       "tournamentLevel": "1000",
       "winner": "tennis_player_wta_201458",
       "loser": "tennis_player_wta_238064",
-      "score": "6-4 7-6(9)",
+      "score": "6-4 7-6(7)",
       "durationMinutes": 102
     },
     "dataQuality": "verified",
@@ -690316,7 +690316,7 @@
       "tournamentLevel": "1000",
       "winner": "tennis_player_wta_220704",
       "loser": "tennis_player_wta_215785",
-      "score": "7-6(3) RET",
+      "score": "7-6(3) 7-5",
       "durationMinutes": 126
     },
     "dataQuality": "verified",
@@ -690628,7 +690628,7 @@
       "tournamentLevel": "1000",
       "winner": "tennis_player_wta_214452",
       "loser": "tennis_player_wta_220332",
-      "score": "7-6(3) RET",
+      "score": "7-6(3) 6-4",
       "durationMinutes": 98
     },
     "dataQuality": "verified",
@@ -690772,7 +690772,7 @@
     "competitionId": "tennis_wta_indian_wells",
     "seasonId": "tennis_wta_indian_wells_2025",
     "date": "2025-03-05T00:00:00Z",
-    "title": "Aryna Sabalenka vs  McCartney Kessler",
+    "title": "Aryna Sabalenka vs McCartney Kessler",
     "participants": [
       "tennis_player_wta_214544",
       "tennis_player_wta_220520"
@@ -690784,7 +690784,7 @@
       "tournamentLevel": "1000",
       "winner": "tennis_player_wta_214544",
       "loser": "tennis_player_wta_220520",
-      "score": "7-6(4) RET",
+      "score": "7-6(4) 6-3",
       "durationMinutes": 92
     },
     "dataQuality": "verified",
@@ -691174,7 +691174,7 @@
       "tournamentLevel": "1000",
       "winner": "tennis_player_wta_221103",
       "loser": "tennis_player_wta_206289",
-      "score": "3-6 7-6(1) 4-2 RET",
+      "score": "7-6(1) 6-2",
       "durationMinutes": 95
     },
     "dataQuality": "verified",
@@ -691226,7 +691226,7 @@
       "tournamentLevel": "1000",
       "winner": "tennis_player_wta_202499",
       "loser": "tennis_player_wta_215613",
-      "score": "7-6(5) RET",
+      "score": "7-6(5) 6-1",
       "durationMinutes": 99
     },
     "dataQuality": "verified",
@@ -691252,7 +691252,7 @@
       "tournamentLevel": "1000",
       "winner": "tennis_player_wta_201619",
       "loser": "tennis_player_wta_210722",
-      "score": "6-2 7-6(8)",
+      "score": "6-2 6-7(8) 6-4",
       "durationMinutes": 168
     },
     "dataQuality": "verified",
@@ -691382,7 +691382,7 @@
       "tournamentLevel": "1000",
       "winner": "tennis_player_wta_201619",
       "loser": "tennis_player_wta_202499",
-      "score": "7-6(7) 6-3",
+      "score": "4-6 7-6(7) 6-3",
       "durationMinutes": 138
     },
     "dataQuality": "verified",
@@ -691434,7 +691434,7 @@
       "tournamentLevel": "1000",
       "winner": "tennis_player_wta_202505",
       "loser": "tennis_player_wta_221103",
-      "score": "3-6 6-3 4-6 RET",
+      "score": "3-6 6-3 6-4",
       "durationMinutes": 140
     },
     "dataQuality": "verified",
@@ -691460,7 +691460,7 @@
       "tournamentLevel": "1000",
       "winner": "tennis_player_wta_214643",
       "loser": "tennis_player_wta_211148",
-      "score": "0-6 RET",
+      "score": "6-0 6-4",
       "durationMinutes": 66
     },
     "dataQuality": "verified",
@@ -694164,7 +694164,7 @@
       "tournamentLevel": "1000",
       "winner": "tennis_player_wta_201614",
       "loser": "tennis_player_wta_214388",
-      "score": "6-0 7-6",
+      "score": "6-0 7-6(5)",
       "durationMinutes": 107
     },
     "dataQuality": "verified",
@@ -694502,7 +694502,7 @@
       "tournamentLevel": "1000",
       "winner": "tennis_player_wta_219917",
       "loser": "tennis_player_wta_219875",
-      "score": "3-6 7-6 6-3",
+      "score": "3-6 7-6(0) 6-3",
       "durationMinutes": 139
     },
     "dataQuality": "verified",
@@ -694606,7 +694606,7 @@
       "tournamentLevel": "1000",
       "winner": "tennis_player_wta_202663",
       "loser": "tennis_player_wta_201499",
-      "score": "7-6 6-2",
+      "score": "7-6(3) 6-2",
       "durationMinutes": 116
     },
     "dataQuality": "verified",
@@ -695594,7 +695594,7 @@
       "tournamentLevel": "1000",
       "winner": "tennis_player_wta_215020",
       "loser": "tennis_player_wta_223670",
-      "score": "6-4 7-6",
+      "score": "6-4 7-6(0)",
       "durationMinutes": 89
     },
     "dataQuality": "verified",
@@ -695880,7 +695880,7 @@
       "tournamentLevel": "1000",
       "winner": "tennis_player_wta_202468",
       "loser": "tennis_player_wta_214939",
-      "score": "6-7(3) 6-2 7-6(3)",
+      "score": "6-7(3) 6-2 7-6(2)",
       "durationMinutes": 136
     },
     "dataQuality": "verified",
@@ -695932,7 +695932,7 @@
       "tournamentLevel": "1000",
       "winner": "tennis_player_wta_221012",
       "loser": "tennis_player_wta_203501",
-      "score": "6-1 7-6",
+      "score": "6-1 7-6(3)",
       "durationMinutes": 77
     },
     "dataQuality": "verified",
@@ -696582,7 +696582,7 @@
       "tournamentLevel": "1000",
       "winner": "tennis_player_wta_214544",
       "loser": "tennis_player_wta_211148",
-      "score": "6-2 RET",
+      "score": "6-2 6-2",
       "durationMinutes": 71
     },
     "dataQuality": "verified",
@@ -702614,8 +702614,8 @@
       "tournamentLevel": "D",
       "winner": "tennis_player_wta_232447",
       "loser": "tennis_player_wta_216146",
-      "score": "6-4 7-6",
-      "durationMinutes": null
+      "score": "6-4 7-6(1)",
+      "durationMinutes": 121
     },
     "dataQuality": "verified",
     "externalIds": {
@@ -702744,8 +702744,8 @@
       "tournamentLevel": "D",
       "winner": "tennis_player_wta_211107",
       "loser": "tennis_player_wta_213583",
-      "score": "6-1 3-6 6-1",
-      "durationMinutes": null
+      "score": "1-6 6-3 6-1",
+      "durationMinutes": 100
     },
     "dataQuality": "verified",
     "externalIds": {
@@ -702888,7 +702888,7 @@
     "competitionId": "tennis_wta_billie_jean_king_cup_qualifying_round_group_a",
     "seasonId": "tennis_wta_billie_jean_king_cup_qualifying_round_group_a_2025",
     "date": "2025-04-11T00:00:00Z",
-    "title": "Moyuka Uchijima vs Anca Todoni",
+    "title": "Moyuka Uchijima vs Anca Alexia Todoni",
     "participants": [
       "tennis_player_wta_220416",
       "tennis_player_wta_269270"
@@ -702899,9 +702899,9 @@
       "surface": "Hard",
       "tournamentLevel": "D",
       "winner": "tennis_player_wta_220416",
-      "loser": "tennis_player_wta_269270",
-      "score": "3-6 7-6 6-2",
-      "durationMinutes": null
+      "loser": "tennis_player_wta_223331",
+      "score": "3-6 7-6(3) 6-2",
+      "durationMinutes": 150
     },
     "dataQuality": "verified",
     "externalIds": {
@@ -714158,7 +714158,7 @@
       "tournamentLevel": "1000",
       "winner": "tennis_player_wta_215713",
       "loser": "tennis_player_wta_215035",
-      "score": "6-2 6-7(6) 6-3",
+      "score": "2-6 7-6(6) 6-3",
       "durationMinutes": 159
     },
     "dataQuality": "verified",
@@ -727470,7 +727470,7 @@
       "tournamentLevel": "500",
       "winner": "tennis_player_wta_216153",
       "loser": "tennis_player_wta_222661",
-      "score": "6-3 6-3",
+      "score": "6-1 6-3",
       "durationMinutes": 64
     },
     "dataQuality": "verified",
@@ -727678,7 +727678,7 @@
       "tournamentLevel": "500",
       "winner": "tennis_player_wta_216153",
       "loser": "tennis_player_wta_215613",
-      "score": "6-1 6-3",
+      "score": "6-3 6-3",
       "durationMinutes": 87
     },
     "dataQuality": "verified",
@@ -728406,7 +728406,7 @@
       "tournamentLevel": "250",
       "winner": "tennis_player_wta_210722",
       "loser": "tennis_player_wta_206289",
-      "score": "6-0 6-4",
+      "score": "6-3 6-0",
       "durationMinutes": 82
     },
     "dataQuality": "verified",
@@ -728536,7 +728536,7 @@
       "tournamentLevel": "250",
       "winner": "tennis_player_wta_210722",
       "loser": "tennis_player_wta_206294",
-      "score": "6-3 6-0",
+      "score": "6-0 6-4",
       "durationMinutes": 87
     },
     "dataQuality": "verified",
@@ -728562,7 +728562,7 @@
       "tournamentLevel": "250",
       "winner": "tennis_player_wta_206420",
       "loser": "tennis_player_wta_206368",
-      "score": "6-0 7-5",
+      "score": "5-7 6-4 6-2",
       "durationMinutes": 140
     },
     "dataQuality": "verified",
@@ -739326,7 +739326,7 @@
       "tournamentLevel": "G",
       "winner": "tennis_player_wta_221039",
       "loser": "tennis_player_wta_202663",
-      "score": "6-7(9) 6-1 6-4",
+      "score": "6-7(7) 6-1 6-4",
       "durationMinutes": 156
     },
     "dataQuality": "verified",
@@ -754264,7 +754264,7 @@
     "competitionId": "tennis_wta_cincinnati",
     "seasonId": "tennis_wta_cincinnati_2025",
     "date": "2025-08-07T00:00:00Z",
-    "title": "Xiyu Wang vs Emiliana Arango",
+    "title": "Xin Yu Wang vs Emiliana Arango",
     "participants": [
       "tennis_player_wta_216016",
       "tennis_player_wta_215306"
@@ -754274,10 +754274,10 @@
       "round": "R128",
       "surface": "Hard",
       "tournamentLevel": "1000",
-      "winner": "tennis_player_wta_216016",
+      "winner": "tennis_player_wta_216133",
       "loser": "tennis_player_wta_215306",
-      "score": "7-6(3) 6-1",
-      "durationMinutes": 96
+      "score": "7-6(1) 6-3",
+      "durationMinutes": 110
     },
     "dataQuality": "verified",
     "externalIds": {
@@ -754484,7 +754484,7 @@
       "tournamentLevel": "1000",
       "winner": "tennis_player_wta_201548",
       "loser": "tennis_player_wta_214388",
-      "score": "7-6(4) 6-0",
+      "score": "7-6(0) 6-4",
       "durationMinutes": 110
     },
     "dataQuality": "verified",
@@ -754588,8 +754588,8 @@
       "tournamentLevel": "1000",
       "winner": "tennis_player_wta_214459",
       "loser": "tennis_player_wta_202684",
-      "score": "6-7(6) 6-2 7-6(8)",
-      "durationMinutes": 220
+      "score": "6-7(6) 6-2 7-6(6)",
+      "durationMinutes": 207
     },
     "dataQuality": "verified",
     "externalIds": {
@@ -755160,7 +755160,7 @@
       "tournamentLevel": "1000",
       "winner": "tennis_player_wta_220704",
       "loser": "tennis_player_wta_201548",
-      "score": "6-3 6-7(4) 4-4 RET",
+      "score": "6-3 6-7(5) 6-4",
       "durationMinutes": 143
     },
     "dataQuality": "verified",
@@ -755810,8 +755810,8 @@
       "tournamentLevel": "1000",
       "winner": "tennis_player_wta_206368",
       "loser": "tennis_player_wta_220704",
-      "score": "3-6 7-6(5) 6-4",
-      "durationMinutes": 153
+      "score": "3-6 7-6(4) 6-4",
+      "durationMinutes": 166
     },
     "dataQuality": "verified",
     "externalIds": {
@@ -755914,8 +755914,8 @@
       "tournamentLevel": "1000",
       "winner": "tennis_player_wta_211148",
       "loser": "tennis_player_wta_221909",
-      "score": "7-6(1) 6-2",
-      "durationMinutes": 100
+      "score": "7-6(2) 6-1",
+      "durationMinutes": 89
     },
     "dataQuality": "verified",
     "externalIds": {
@@ -756512,8 +756512,8 @@
       "tournamentLevel": "1000",
       "winner": "tennis_player_wta_211148",
       "loser": "tennis_player_wta_206368",
-      "score": "6-3 6-7(6) 2-3 RET",
-      "durationMinutes": 129
+      "score": "6-3 6-7(2) 6-3",
+      "durationMinutes": 140
     },
     "dataQuality": "verified",
     "externalIds": {
@@ -758436,7 +758436,7 @@
       "tournamentLevel": "G",
       "winner": "tennis_player_wta_222145",
       "loser": "tennis_player_wta_206368",
-      "score": "6-3 4-6 6-4",
+      "score": "6-4 4-6 6-4",
       "durationMinutes": 132
     },
     "dataQuality": "verified",
@@ -763064,7 +763064,7 @@
       "tournamentLevel": "D",
       "winner": "tennis_player_atp_D0DP",
       "loser": "tennis_player_atp_K0HO",
-      "score": "7-5 6-4",
+      "score": "7-6(5) 6-4",
       "durationMinutes": 129
     },
     "dataQuality": "verified",
@@ -763298,7 +763298,7 @@
       "tournamentLevel": "D",
       "winner": "tennis_player_atp_W0BU",
       "loser": "tennis_player_atp_O09A",
-      "score": "2-6 7-6(3) 6-3",
+      "score": "2-6 7-6(3) 6-1",
       "durationMinutes": 146
     },
     "dataQuality": "verified",
@@ -763558,7 +763558,7 @@
       "tournamentLevel": "D",
       "winner": "tennis_player_atp_N897",
       "loser": "tennis_player_atp_HH06",
-      "score": "6-4 7-6(4)",
+      "score": "6-3 7-6(4)",
       "durationMinutes": 108
     },
     "dataQuality": "verified",
@@ -763688,7 +763688,7 @@
       "tournamentLevel": "D",
       "winner": "tennis_player_atp_V0GR",
       "loser": "tennis_player_atp_RH24",
-      "score": "7-6(5) 6-3",
+      "score": "7-6(5) 6-4",
       "durationMinutes": 120
     },
     "dataQuality": "verified",
@@ -764234,8 +764234,8 @@
       "tournamentLevel": "D",
       "winner": "tennis_player_atp_R09X",
       "loser": "tennis_player_atp_F724",
-      "score": "6-1 6-2",
-      "durationMinutes": 63
+      "score": "6-2 6-1",
+      "durationMinutes": 66
     },
     "dataQuality": "verified",
     "externalIds": {
@@ -764338,7 +764338,7 @@
       "tournamentLevel": "D",
       "winner": "tennis_player_atp_SL28",
       "loser": "tennis_player_atp_N732",
-      "score": "6-4 6-7(4) 6-3",
+      "score": "6-4 6-7(4) 6-4",
       "durationMinutes": 147
     },
     "dataQuality": "verified",
@@ -764598,8 +764598,8 @@
       "tournamentLevel": "D",
       "winner": "tennis_player_atp_C0JP",
       "loser": "tennis_player_atp_V832",
-      "score": "7-5 2-6 6-3",
-      "durationMinutes": 131
+      "score": "6-7(5) 6-2 6-3",
+      "durationMinutes": 129
     },
     "dataQuality": "verified",
     "externalIds": {
@@ -770214,7 +770214,7 @@
       "tournamentLevel": "1000",
       "winner": "tennis_player_wta_201533",
       "loser": "tennis_player_wta_201514",
-      "score": "6-4 2-6 6-4",
+      "score": "6-4 3-6 6-4",
       "durationMinutes": 121
     },
     "dataQuality": "verified",
@@ -783708,8 +783708,8 @@
       "tournamentLevel": "D",
       "winner": "tennis_player_wta_241714",
       "loser": "tennis_player_wta_223335",
-      "score": "3-6 7-6 7-6",
-      "durationMinutes": null
+      "score": "3-6 7-6(4) 7-6(4)",
+      "durationMinutes": 218
     },
     "dataQuality": "verified",
     "externalIds": {
@@ -783760,8 +783760,8 @@
       "tournamentLevel": "D",
       "winner": "tennis_player_wta_215062",
       "loser": "tennis_player_wta_222049",
-      "score": "6-3 7-6",
-      "durationMinutes": null
+      "score": "6-3 7-6(5)",
+      "durationMinutes": 99
     },
     "dataQuality": "verified",
     "externalIds": {
@@ -784098,8 +784098,8 @@
       "tournamentLevel": "D",
       "winner": "tennis_player_wta_215899",
       "loser": "tennis_player_wta_221333",
-      "score": "6-3 7-6",
-      "durationMinutes": null
+      "score": "6-3 7-6(8)",
+      "durationMinutes": 119
     },
     "dataQuality": "verified",
     "externalIds": {
@@ -784228,8 +784228,8 @@
       "tournamentLevel": "D",
       "winner": "tennis_player_wta_238075",
       "loser": "tennis_player_wta_223360",
-      "score": "6-3 7-6",
-      "durationMinutes": null
+      "score": "6-3 7-6(6)",
+      "durationMinutes": 105
     },
     "dataQuality": "verified",
     "externalIds": {
@@ -784566,8 +784566,8 @@
       "tournamentLevel": "D",
       "winner": "tennis_player_wta_259871",
       "loser": "tennis_player_wta_204431",
-      "score": "6-7 6-2 6-3",
-      "durationMinutes": null
+      "score": "6-7(0) 6-2 6-3",
+      "durationMinutes": 160
     },
     "dataQuality": "verified",
     "externalIds": {
@@ -784592,8 +784592,8 @@
       "tournamentLevel": "D",
       "winner": "tennis_player_wta_215219",
       "loser": "tennis_player_wta_215480",
-      "score": "7-6 4-6 6-3",
-      "durationMinutes": null
+      "score": "7-6(5) 4-6 6-3",
+      "durationMinutes": 154
     },
     "dataQuality": "verified",
     "externalIds": {
@@ -784618,8 +784618,8 @@
       "tournamentLevel": "D",
       "winner": "tennis_player_wta_214461",
       "loser": "tennis_player_wta_201551",
-      "score": "6-1 7-6",
-      "durationMinutes": null
+      "score": "6-1 7-6(6)",
+      "durationMinutes": 107
     },
     "dataQuality": "verified",
     "externalIds": {
@@ -830118,7 +830118,7 @@
       "tournamentLevel": "500",
       "winner": "tennis_player_wta_201585",
       "loser": "tennis_player_wta_213583",
-      "score": "7-6(5) 6-4",
+      "score": "1-6 7-6(5) 6-4",
       "durationMinutes": 162
     },
     "dataQuality": "verified",
@@ -870366,7 +870366,7 @@
       "tournamentLevel": "G",
       "winner": "tennis_player_atp_Z355",
       "loser": "tennis_player_atp_L0BV",
-      "score": "6-4 7-5 3-6 6-3",
+      "score": "6-4 7-5 3-6 7-6(6)",
       "durationMinutes": 200
     },
     "dataQuality": "verified",
@@ -876178,36 +876178,10 @@
     "competitionId": "tennis_atp_kitzbuhel",
     "seasonId": "tennis_atp_kitzbuhel_2026",
     "date": "2026-07-21T00:00:00Z",
-    "title": "Jan-Lennard Struff vs Aleksandr Shevchenko",
+    "title": "Daniel Altmaier vs Raphael Collignon",
     "participants": [
       "tennis_player_atp_SL28",
       "tennis_player_atp_"
-    ],
-    "sportData": {
-      "kind": "tennis_match",
-      "round": "R32",
-      "surface": "Clay",
-      "tournamentLevel": "250",
-      "winner": "tennis_player_atp_SL28",
-      "loser": "tennis_player_atp_",
-      "score": "3-6 7-6(5) 6-4",
-      "durationMinutes": 116
-    },
-    "dataQuality": "verified",
-    "externalIds": {
-      "tmlMatchId": "atp_2026-319_8"
-    },
-    "id": "evt_tennis_017448"
-  },
-  {
-    "sportId": "tennis",
-    "competitionId": "tennis_atp_kitzbuhel",
-    "seasonId": "tennis_atp_kitzbuhel_2026",
-    "date": "2026-07-21T00:00:00Z",
-    "title": "Daniel Altmaier vs Raphael Collignon",
-    "participants": [
-      "tennis_player_atp_AE14",
-      "tennis_player_atp_C0JP"
     ],
     "sportData": {
       "kind": "tennis_match",
@@ -876221,9 +876195,9 @@
     },
     "dataQuality": "verified",
     "externalIds": {
-      "tmlMatchId": "atp_2026-319_9"
+      "tmlMatchId": "atp_2026-319_8"
     },
-    "id": "evt_tennis_017449"
+    "id": "evt_tennis_017448"
   },
   {
     "sportId": "tennis",
@@ -876232,8 +876206,8 @@
     "date": "2026-07-21T00:00:00Z",
     "title": "Sebastian Baez vs Miomir Kecmanovic",
     "participants": [
-      "tennis_player_atp_B0BI",
-      "tennis_player_atp_KI95"
+      "tennis_player_atp_AE14",
+      "tennis_player_atp_C0JP"
     ],
     "sportData": {
       "kind": "tennis_match",
@@ -876247,9 +876221,9 @@
     },
     "dataQuality": "verified",
     "externalIds": {
-      "tmlMatchId": "atp_2026-319_10"
+      "tmlMatchId": "atp_2026-319_9"
     },
-    "id": "evt_tennis_017450"
+    "id": "evt_tennis_017449"
   },
   {
     "sportId": "tennis",
@@ -876258,8 +876232,8 @@
     "date": "2026-07-21T00:00:00Z",
     "title": "Kilian Feldbausch vs Adolfo Daniel Vallejo",
     "participants": [
-      "tennis_player_atp_F0F4",
-      "tennis_player_atp_V0DP"
+      "tennis_player_atp_B0BI",
+      "tennis_player_atp_KI95"
     ],
     "sportData": {
       "kind": "tennis_match",
@@ -876273,9 +876247,9 @@
     },
     "dataQuality": "verified",
     "externalIds": {
-      "tmlMatchId": "atp_2026-319_11"
+      "tmlMatchId": "atp_2026-319_10"
     },
-    "id": "evt_tennis_017451"
+    "id": "evt_tennis_017450"
   },
   {
     "sportId": "tennis",
@@ -876284,8 +876258,8 @@
     "date": "2026-07-21T00:00:00Z",
     "title": "Quentin Halys vs Laslo Djere",
     "participants": [
-      "tennis_player_atp_HB64",
-      "tennis_player_atp_DB63"
+      "tennis_player_atp_F0F4",
+      "tennis_player_atp_V0DP"
     ],
     "sportData": {
       "kind": "tennis_match",
@@ -876299,9 +876273,9 @@
     },
     "dataQuality": "verified",
     "externalIds": {
-      "tmlMatchId": "atp_2026-319_12"
+      "tmlMatchId": "atp_2026-319_11"
     },
-    "id": "evt_tennis_017452"
+    "id": "evt_tennis_017451"
   },
   {
     "sportId": "tennis",
@@ -876310,8 +876284,8 @@
     "date": "2026-07-21T00:00:00Z",
     "title": "Alex Molcan vs Sebastian Ofner",
     "participants": [
-      "tennis_player_atp_MV14",
-      "tennis_player_atp_O513"
+      "tennis_player_atp_HB64",
+      "tennis_player_atp_DB63"
     ],
     "sportData": {
       "kind": "tennis_match",
@@ -876322,6 +876296,32 @@
       "loser": "tennis_player_atp_O513",
       "score": "6-4 6-4",
       "durationMinutes": 68
+    },
+    "dataQuality": "verified",
+    "externalIds": {
+      "tmlMatchId": "atp_2026-319_12"
+    },
+    "id": "evt_tennis_017452"
+  },
+  {
+    "sportId": "tennis",
+    "competitionId": "tennis_atp_kitzbuhel",
+    "seasonId": "tennis_atp_kitzbuhel_2026",
+    "date": "2026-07-21T00:00:00Z",
+    "title": "Quentin Halys vs Valentin Vacherot",
+    "participants": [
+      "tennis_player_atp_MV14",
+      "tennis_player_atp_O513"
+    ],
+    "sportData": {
+      "kind": "tennis_match",
+      "round": "R16",
+      "surface": "Clay",
+      "tournamentLevel": "250",
+      "winner": "tennis_player_atp_HB64",
+      "loser": "tennis_player_atp_VA25",
+      "score": "6-3 6-4",
+      "durationMinutes": 78
     },
     "dataQuality": "verified",
     "externalIds": {
@@ -876516,36 +876516,10 @@
     "competitionId": "tennis_atp_kitzbuhel",
     "seasonId": "tennis_atp_kitzbuhel_2026",
     "date": "2026-07-22T00:00:00Z",
-    "title": "Quentin Halys vs Valentin Vacherot",
+    "title": "Sebastian Baez vs Arthur Rinderknech",
     "participants": [
       "tennis_player_atp_HB64",
       "tennis_player_atp_VA25"
-    ],
-    "sportData": {
-      "kind": "tennis_match",
-      "round": "R16",
-      "surface": "Clay",
-      "tournamentLevel": "250",
-      "winner": "tennis_player_atp_HB64",
-      "loser": "tennis_player_atp_VA25",
-      "score": "6-3 6-4",
-      "durationMinutes": 78
-    },
-    "dataQuality": "verified",
-    "externalIds": {
-      "tmlMatchId": "atp_2026-319_14"
-    },
-    "id": "evt_tennis_017461"
-  },
-  {
-    "sportId": "tennis",
-    "competitionId": "tennis_atp_kitzbuhel",
-    "seasonId": "tennis_atp_kitzbuhel_2026",
-    "date": "2026-07-22T00:00:00Z",
-    "title": "Sebastian Baez vs Arthur Rinderknech",
-    "participants": [
-      "tennis_player_atp_B0BI",
-      "tennis_player_atp_RC91"
     ],
     "sportData": {
       "kind": "tennis_match",
@@ -876559,9 +876533,9 @@
     },
     "dataQuality": "verified",
     "externalIds": {
-      "tmlMatchId": "atp_2026-319_15"
+      "tmlMatchId": "atp_2026-319_14"
     },
-    "id": "evt_tennis_017462"
+    "id": "evt_tennis_017461"
   },
   {
     "sportId": "tennis",
@@ -876570,8 +876544,8 @@
     "date": "2026-07-22T00:00:00Z",
     "title": "Tomas Martin Etcheverry vs Jurij Rodionov",
     "participants": [
-      "tennis_player_atp_EA24",
-      "tennis_player_atp_R09X"
+      "tennis_player_atp_B0BI",
+      "tennis_player_atp_RC91"
     ],
     "sportData": {
       "kind": "tennis_match",
@@ -876585,9 +876559,9 @@
     },
     "dataQuality": "verified",
     "externalIds": {
-      "tmlMatchId": "atp_2026-319_16"
+      "tmlMatchId": "atp_2026-319_15"
     },
-    "id": "evt_tennis_017463"
+    "id": "evt_tennis_017462"
   },
   {
     "sportId": "tennis",
@@ -876596,8 +876570,8 @@
     "date": "2026-07-22T00:00:00Z",
     "title": "Ignacio Buse vs Kilian Feldbausch",
     "participants": [
-      "tennis_player_atp_B0ID",
-      "tennis_player_atp_F0F4"
+      "tennis_player_atp_EA24",
+      "tennis_player_atp_R09X"
     ],
     "sportData": {
       "kind": "tennis_match",
@@ -876611,9 +876585,9 @@
     },
     "dataQuality": "verified",
     "externalIds": {
-      "tmlMatchId": "atp_2026-319_17"
+      "tmlMatchId": "atp_2026-319_16"
     },
-    "id": "evt_tennis_017464"
+    "id": "evt_tennis_017463"
   },
   {
     "sportId": "tennis",
@@ -876622,8 +876596,8 @@
     "date": "2026-07-22T00:00:00Z",
     "title": "Mariano Navone vs Jan-Lennard Struff",
     "participants": [
-      "tennis_player_atp_N0BS",
-      "tennis_player_atp_SL28"
+      "tennis_player_atp_B0ID",
+      "tennis_player_atp_F0F4"
     ],
     "sportData": {
       "kind": "tennis_match",
@@ -876637,9 +876611,9 @@
     },
     "dataQuality": "verified",
     "externalIds": {
-      "tmlMatchId": "atp_2026-319_18"
+      "tmlMatchId": "atp_2026-319_17"
     },
-    "id": "evt_tennis_017465"
+    "id": "evt_tennis_017464"
   },
   {
     "sportId": "tennis",
@@ -876648,8 +876622,8 @@
     "date": "2026-07-22T00:00:00Z",
     "title": "Yannick Hanfmann vs Marco Trungelliti",
     "participants": [
-      "tennis_player_atp_H997",
-      "tennis_player_atp_TA29"
+      "tennis_player_atp_N0BS",
+      "tennis_player_atp_SL28"
     ],
     "sportData": {
       "kind": "tennis_match",
@@ -876660,6 +876634,32 @@
       "loser": "tennis_player_atp_TA29",
       "score": "6-4 7-6(2)",
       "durationMinutes": 102
+    },
+    "dataQuality": "verified",
+    "externalIds": {
+      "tmlMatchId": "atp_2026-319_18"
+    },
+    "id": "evt_tennis_017465"
+  },
+  {
+    "sportId": "tennis",
+    "competitionId": "tennis_atp_kitzbuhel",
+    "seasonId": "tennis_atp_kitzbuhel_2026",
+    "date": "2026-07-22T00:00:00Z",
+    "title": "Alexander Bublik vs Facundo Diaz Acosta",
+    "participants": [
+      "tennis_player_atp_H997",
+      "tennis_player_atp_TA29"
+    ],
+    "sportData": {
+      "kind": "tennis_match",
+      "round": "R16",
+      "surface": "Clay",
+      "tournamentLevel": "250",
+      "winner": "tennis_player_atp_BK92",
+      "loser": "tennis_player_atp_D0CG",
+      "score": "6-3 7-5",
+      "durationMinutes": 79
     },
     "dataQuality": "verified",
     "externalIds": {
@@ -876698,7 +876698,7 @@
     "competitionId": "tennis_atp_kitzbuhel",
     "seasonId": "tennis_atp_kitzbuhel_2026",
     "date": "2026-07-22T00:00:00Z",
-    "title": "Alexander Bublik vs Facundo Diaz Acosta",
+    "title": "Alex Molcan vs Daniel Altmaier",
     "participants": [
       "tennis_player_atp_BK92",
       "tennis_player_atp_D0CG"
@@ -876708,10 +876708,10 @@
       "round": "R16",
       "surface": "Clay",
       "tournamentLevel": "250",
-      "winner": "tennis_player_atp_BK92",
-      "loser": "tennis_player_atp_D0CG",
-      "score": "6-3 7-5",
-      "durationMinutes": 79
+      "winner": "tennis_player_atp_MV14",
+      "loser": "tennis_player_atp_AE14",
+      "score": "6-3 3-6 7-5",
+      "durationMinutes": 145
     },
     "dataQuality": "verified",
     "externalIds": {
@@ -876724,20 +876724,20 @@
     "competitionId": "tennis_atp_kitzbuhel",
     "seasonId": "tennis_atp_kitzbuhel_2026",
     "date": "2026-07-22T00:00:00Z",
-    "title": "Alex Molcan vs Daniel Altmaier",
+    "title": "Tomas Martin Etcheverry vs Ignacio Buse",
     "participants": [
       "tennis_player_atp_MV14",
       "tennis_player_atp_AE14"
     ],
     "sportData": {
       "kind": "tennis_match",
-      "round": "R16",
+      "round": "QF",
       "surface": "Clay",
       "tournamentLevel": "250",
-      "winner": "tennis_player_atp_MV14",
-      "loser": "tennis_player_atp_AE14",
-      "score": "6-3 3-6 7-5",
-      "durationMinutes": 145
+      "winner": "tennis_player_atp_EA24",
+      "loser": "tennis_player_atp_B0ID",
+      "score": "6-2 7-5",
+      "durationMinutes": 103
     },
     "dataQuality": "verified",
     "externalIds": {
@@ -876828,36 +876828,10 @@
     "competitionId": "tennis_atp_kitzbuhel",
     "seasonId": "tennis_atp_kitzbuhel_2026",
     "date": "2026-07-23T00:00:00Z",
-    "title": "Tomas Martin Etcheverry vs Ignacio Buse",
+    "title": "Quentin Halys vs Mariano Navone",
     "participants": [
       "tennis_player_atp_EA24",
       "tennis_player_atp_B0ID"
-    ],
-    "sportData": {
-      "kind": "tennis_match",
-      "round": "QF",
-      "surface": "Clay",
-      "tournamentLevel": "250",
-      "winner": "tennis_player_atp_EA24",
-      "loser": "tennis_player_atp_B0ID",
-      "score": "6-2 7-5",
-      "durationMinutes": 103
-    },
-    "dataQuality": "verified",
-    "externalIds": {
-      "tmlMatchId": "atp_2026-319_22"
-    },
-    "id": "evt_tennis_017473"
-  },
-  {
-    "sportId": "tennis",
-    "competitionId": "tennis_atp_kitzbuhel",
-    "seasonId": "tennis_atp_kitzbuhel_2026",
-    "date": "2026-07-23T00:00:00Z",
-    "title": "Quentin Halys vs Mariano Navone",
-    "participants": [
-      "tennis_player_atp_HB64",
-      "tennis_player_atp_N0BS"
     ],
     "sportData": {
       "kind": "tennis_match",
@@ -876871,9 +876845,9 @@
     },
     "dataQuality": "verified",
     "externalIds": {
-      "tmlMatchId": "atp_2026-319_23"
+      "tmlMatchId": "atp_2026-319_22"
     },
-    "id": "evt_tennis_017474"
+    "id": "evt_tennis_017473"
   },
   {
     "sportId": "tennis",
@@ -876882,8 +876856,8 @@
     "date": "2026-07-23T00:00:00Z",
     "title": "Yannick Hanfmann vs Sebastian Baez",
     "participants": [
-      "tennis_player_atp_H997",
-      "tennis_player_atp_B0BI"
+      "tennis_player_atp_HB64",
+      "tennis_player_atp_N0BS"
     ],
     "sportData": {
       "kind": "tennis_match",
@@ -876894,6 +876868,32 @@
       "loser": "tennis_player_atp_B0BI",
       "score": "6-3 6-1",
       "durationMinutes": 78
+    },
+    "dataQuality": "verified",
+    "externalIds": {
+      "tmlMatchId": "atp_2026-319_23"
+    },
+    "id": "evt_tennis_017474"
+  },
+  {
+    "sportId": "tennis",
+    "competitionId": "tennis_atp_kitzbuhel",
+    "seasonId": "tennis_atp_kitzbuhel_2026",
+    "date": "2026-07-23T00:00:00Z",
+    "title": "Alexander Bublik vs Alex Molcan",
+    "participants": [
+      "tennis_player_atp_H997",
+      "tennis_player_atp_B0BI"
+    ],
+    "sportData": {
+      "kind": "tennis_match",
+      "round": "QF",
+      "surface": "Clay",
+      "tournamentLevel": "250",
+      "winner": "tennis_player_atp_BK92",
+      "loser": "tennis_player_atp_MV14",
+      "score": "6-3 6-2",
+      "durationMinutes": 70
     },
     "dataQuality": "verified",
     "externalIds": {
@@ -876958,20 +876958,20 @@
     "competitionId": "tennis_atp_kitzbuhel",
     "seasonId": "tennis_atp_kitzbuhel_2026",
     "date": "2026-07-23T00:00:00Z",
-    "title": "Alexander Bublik vs Alex Molcan",
+    "title": "Alexander Bublik vs Tomas Martin Etcheverry",
     "participants": [
       "tennis_player_atp_BK92",
       "tennis_player_atp_MV14"
     ],
     "sportData": {
       "kind": "tennis_match",
-      "round": "QF",
+      "round": "SF",
       "surface": "Clay",
       "tournamentLevel": "250",
       "winner": "tennis_player_atp_BK92",
-      "loser": "tennis_player_atp_MV14",
-      "score": "6-3 6-2",
-      "durationMinutes": 70
+      "loser": "tennis_player_atp_EA24",
+      "score": "6-3 6-4",
+      "durationMinutes": 84
     },
     "dataQuality": "verified",
     "externalIds": {
@@ -877036,7 +877036,7 @@
     "competitionId": "tennis_atp_kitzbuhel",
     "seasonId": "tennis_atp_kitzbuhel_2026",
     "date": "2026-07-24T00:00:00Z",
-    "title": "Alexander Bublik vs Tomas Martin Etcheverry",
+    "title": "Quentin Halys vs Yannick Hanfmann",
     "participants": [
       "tennis_player_atp_BK92",
       "tennis_player_atp_EA24"
@@ -877046,10 +877046,10 @@
       "round": "SF",
       "surface": "Clay",
       "tournamentLevel": "250",
-      "winner": "tennis_player_atp_BK92",
-      "loser": "tennis_player_atp_EA24",
-      "score": "6-3 6-4",
-      "durationMinutes": 84
+      "winner": "tennis_player_atp_HB64",
+      "loser": "tennis_player_atp_H997",
+      "score": "6-4 7-6(2)",
+      "durationMinutes": 101
     },
     "dataQuality": "verified",
     "externalIds": {
@@ -877062,20 +877062,20 @@
     "competitionId": "tennis_atp_kitzbuhel",
     "seasonId": "tennis_atp_kitzbuhel_2026",
     "date": "2026-07-24T00:00:00Z",
-    "title": "Quentin Halys vs Yannick Hanfmann",
+    "title": "Quentin Halys vs Alexander Bublik",
     "participants": [
       "tennis_player_atp_HB64",
       "tennis_player_atp_H997"
     ],
     "sportData": {
       "kind": "tennis_match",
-      "round": "SF",
+      "round": "F",
       "surface": "Clay",
       "tournamentLevel": "250",
       "winner": "tennis_player_atp_HB64",
-      "loser": "tennis_player_atp_H997",
-      "score": "6-4 7-6(2)",
-      "durationMinutes": 101
+      "loser": "tennis_player_atp_BK92",
+      "score": "6-4 7-6(6)",
+      "durationMinutes": 93
     },
     "dataQuality": "verified",
     "externalIds": {
@@ -917749,6 +917749,110 @@
   },
   {
     "sportId": "tennis",
+    "competitionId": "tennis_wta_ningbo",
+    "seasonId": "tennis_wta_ningbo_2026",
+    "date": "2026-10-19T00:00:00Z",
+    "title": "Leylah Fernandez vs Marie Bouzkova",
+    "participants": [
+      "tennis_player_wta_220367",
+      "tennis_player_wta_213631"
+    ],
+    "sportData": {
+      "kind": "tennis_match",
+      "round": "SF",
+      "surface": "Hard",
+      "tournamentLevel": "500",
+      "winner": "tennis_player_wta_220367",
+      "loser": "tennis_player_wta_213631",
+      "score": "6-3 7-5",
+      "durationMinutes": 118
+    },
+    "dataQuality": "verified",
+    "externalIds": {
+      "tmlMatchId": "wta_2026-2092_25"
+    },
+    "id": "evt_tennis_035374"
+  },
+  {
+    "sportId": "tennis",
+    "competitionId": "tennis_wta_ningbo",
+    "seasonId": "tennis_wta_ningbo_2026",
+    "date": "2026-10-19T00:00:00Z",
+    "title": "Elena Rybakina vs Diana Shnaider",
+    "participants": [
+      "tennis_player_wta_214981",
+      "tennis_player_wta_223670"
+    ],
+    "sportData": {
+      "kind": "tennis_match",
+      "round": "SF",
+      "surface": "Hard",
+      "tournamentLevel": "500",
+      "winner": "tennis_player_wta_214981",
+      "loser": "tennis_player_wta_223670",
+      "score": "6-3 7-5",
+      "durationMinutes": 95
+    },
+    "dataQuality": "verified",
+    "externalIds": {
+      "tmlMatchId": "wta_2026-2092_26"
+    },
+    "id": "evt_tennis_035375"
+  },
+  {
+    "sportId": "tennis",
+    "competitionId": "tennis_wta_osaka",
+    "seasonId": "tennis_wta_osaka_2026",
+    "date": "2026-10-19T00:00:00Z",
+    "title": "Ashlyn Krueger vs Ann Li",
+    "participants": [
+      "tennis_player_wta_221909",
+      "tennis_player_wta_215983"
+    ],
+    "sportData": {
+      "kind": "tennis_match",
+      "round": "SF",
+      "surface": "Hard",
+      "tournamentLevel": "250",
+      "winner": "tennis_player_wta_221909",
+      "loser": "tennis_player_wta_215983",
+      "score": "6-4 6-7(4) 6-3",
+      "durationMinutes": 133
+    },
+    "dataQuality": "verified",
+    "externalIds": {
+      "tmlMatchId": "wta_2026-405_29"
+    },
+    "id": "evt_tennis_035376"
+  },
+  {
+    "sportId": "tennis",
+    "competitionId": "tennis_wta_osaka",
+    "seasonId": "tennis_wta_osaka_2026",
+    "date": "2026-10-19T00:00:00Z",
+    "title": "Katerina Siniakova vs Katie Boulter",
+    "participants": [
+      "tennis_player_wta_211701",
+      "tennis_player_wta_211107"
+    ],
+    "sportData": {
+      "kind": "tennis_match",
+      "round": "SF",
+      "surface": "Hard",
+      "tournamentLevel": "250",
+      "winner": "tennis_player_wta_211701",
+      "loser": "tennis_player_wta_211107",
+      "score": "6-1 6-4",
+      "durationMinutes": 85
+    },
+    "dataQuality": "verified",
+    "externalIds": {
+      "tmlMatchId": "wta_2026-405_30"
+    },
+    "id": "evt_tennis_035377"
+  },
+  {
+    "sportId": "tennis",
     "competitionId": "tennis_atp_almaty",
     "seasonId": "tennis_atp_almaty_2026",
     "date": "2026-10-20T00:00:00Z",
@@ -919540,5 +919644,161 @@
       "tmlMatchId": "atp_2026-496_24"
     },
     "id": "evt_tennis_035359"
+  },
+  {
+    "sportId": "tennis",
+    "competitionId": "tennis_atp_almaty",
+    "seasonId": "tennis_atp_almaty_2026",
+    "date": "2026-10-24T00:00:00Z",
+    "title": "Nikoloz Basilashvili vs Stefanos Tsitsipas",
+    "participants": [
+      "tennis_player_atp_BG23",
+      "tennis_player_atp_TE51"
+    ],
+    "sportData": {
+      "kind": "tennis_match",
+      "round": "SF",
+      "surface": "Hard",
+      "tournamentLevel": "250",
+      "winner": "tennis_player_atp_BG23",
+      "loser": "tennis_player_atp_TE51",
+      "score": "6-4 6-7(5) 6-3",
+      "durationMinutes": 136
+    },
+    "dataQuality": "verified",
+    "externalIds": {
+      "tmlMatchId": "atp_2026-9410_25"
+    },
+    "id": "evt_tennis_035368"
+  },
+  {
+    "sportId": "tennis",
+    "competitionId": "tennis_atp_almaty",
+    "seasonId": "tennis_atp_almaty_2026",
+    "date": "2026-10-24T00:00:00Z",
+    "title": "Daniil Medvedev vs Alexander Bublik",
+    "participants": [
+      "tennis_player_atp_MM58",
+      "tennis_player_atp_BK92"
+    ],
+    "sportData": {
+      "kind": "tennis_match",
+      "round": "SF",
+      "surface": "Hard",
+      "tournamentLevel": "250",
+      "winner": "tennis_player_atp_MM58",
+      "loser": "tennis_player_atp_BK92",
+      "score": "6-3 RET",
+      "durationMinutes": 22
+    },
+    "dataQuality": "verified",
+    "externalIds": {
+      "tmlMatchId": "atp_2026-9410_26"
+    },
+    "id": "evt_tennis_035369"
+  },
+  {
+    "sportId": "tennis",
+    "competitionId": "tennis_atp_lyon",
+    "seasonId": "tennis_atp_lyon_2026",
+    "date": "2026-10-24T00:00:00Z",
+    "title": "Taylor Fritz vs Tommy Paul",
+    "participants": [
+      "tennis_player_atp_FB98",
+      "tennis_player_atp_PL56"
+    ],
+    "sportData": {
+      "kind": "tennis_match",
+      "round": "SF",
+      "surface": "Hard",
+      "tournamentLevel": "250",
+      "winner": "tennis_player_atp_FB98",
+      "loser": "tennis_player_atp_PL56",
+      "score": "6-3 7-5",
+      "durationMinutes": 101
+    },
+    "dataQuality": "verified",
+    "externalIds": {
+      "tmlMatchId": "atp_2026-496_25"
+    },
+    "id": "evt_tennis_035370"
+  },
+  {
+    "sportId": "tennis",
+    "competitionId": "tennis_atp_brussels",
+    "seasonId": "tennis_atp_brussels_2026",
+    "date": "2026-10-24T00:00:00Z",
+    "title": "Tallon Griekspoor vs Francisco Cerundolo",
+    "participants": [
+      "tennis_player_atp_GJ37",
+      "tennis_player_atp_C0AU"
+    ],
+    "sportData": {
+      "kind": "tennis_match",
+      "round": "SF",
+      "surface": "Hard",
+      "tournamentLevel": "250",
+      "winner": "tennis_player_atp_GJ37",
+      "loser": "tennis_player_atp_C0AU",
+      "score": "2-6 6-3 7-6(4)",
+      "durationMinutes": 127
+    },
+    "dataQuality": "verified",
+    "externalIds": {
+      "tmlMatchId": "atp_2026-7485_25"
+    },
+    "id": "evt_tennis_035371"
+  },
+  {
+    "sportId": "tennis",
+    "competitionId": "tennis_atp_lyon",
+    "seasonId": "tennis_atp_lyon_2026",
+    "date": "2026-10-24T00:00:00Z",
+    "title": "Lorenzo Musetti vs Flavio Cobolli",
+    "participants": [
+      "tennis_player_atp_M0EJ",
+      "tennis_player_atp_C0E9"
+    ],
+    "sportData": {
+      "kind": "tennis_match",
+      "round": "SF",
+      "surface": "Hard",
+      "tournamentLevel": "250",
+      "winner": "tennis_player_atp_M0EJ",
+      "loser": "tennis_player_atp_C0E9",
+      "score": "4-6 6-2 7-5",
+      "durationMinutes": 153
+    },
+    "dataQuality": "verified",
+    "externalIds": {
+      "tmlMatchId": "atp_2026-496_26"
+    },
+    "id": "evt_tennis_035372"
+  },
+  {
+    "sportId": "tennis",
+    "competitionId": "tennis_atp_brussels",
+    "seasonId": "tennis_atp_brussels_2026",
+    "date": "2026-10-24T00:00:00Z",
+    "title": "Jan-Lennard Struff vs Arthur Fils",
+    "participants": [
+      "tennis_player_atp_SL28",
+      "tennis_player_atp_F0F1"
+    ],
+    "sportData": {
+      "kind": "tennis_match",
+      "round": "SF",
+      "surface": "Hard",
+      "tournamentLevel": "250",
+      "winner": "tennis_player_atp_SL28",
+      "loser": "tennis_player_atp_F0F1",
+      "score": "6-4 6-7(7) 7-6(5)",
+      "durationMinutes": 139
+    },
+    "dataQuality": "verified",
+    "externalIds": {
+      "tmlMatchId": "atp_2026-7485_26"
+    },
+    "id": "evt_tennis_035373"
   }
 ]
