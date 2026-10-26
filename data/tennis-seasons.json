@@ -7720,6 +7720,11 @@
     "label": "2025"
   },
   {
+    "id": "tennis_wta_tokyo_2026",
+    "competitionId": "tennis_wta_tokyo",
+    "label": "2026"
+  },
+  {
     "id": "tennis_wta_toronto_2022",
     "competitionId": "tennis_wta_toronto",
     "label": "2022"
