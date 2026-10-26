@@ -1778,7 +1778,7 @@
       "homeTeam": "team_aston_villa",
       "awayTeam": "team_manchester_city",
       "venue": null,
-      "result": null
+      "result": "2-1"
     },
     "dataQuality": "verified",
     "externalIds": {
@@ -1801,7 +1801,7 @@
       "homeTeam": "team_arsenal",
       "awayTeam": "team_everton",
       "venue": null,
-      "result": null,
+      "result": "2-0",
       "kind": "football_match"
     },
     "dataQuality": "verified",
@@ -1824,7 +1824,7 @@
       "homeTeam": "team_coventry_city",
       "awayTeam": "team_fulham",
       "venue": null,
-      "result": null
+      "result": "0-1"
     },
     "dataQuality": "verified",
     "externalIds": {
@@ -1847,7 +1847,7 @@
       "homeTeam": "team_chelsea",
       "awayTeam": "team_tottenham_hotspur",
       "venue": null,
-      "result": null,
+      "result": "0-2",
       "kind": "football_match"
     },
     "dataQuality": "verified",
