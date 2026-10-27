@@ -295,6 +295,11 @@
     "label": "2025"
   },
   {
+    "id": "tennis_atp_basel_2026",
+    "competitionId": "tennis_atp_basel",
+    "label": "2026"
+  },
+  {
     "id": "tennis_atp_bastad_2021",
     "competitionId": "tennis_atp_bastad",
     "label": "2021"
@@ -4335,6 +4340,11 @@
     "label": "2025"
   },
   {
+    "id": "tennis_atp_vienna_2026",
+    "competitionId": "tennis_atp_vienna",
+    "label": "2026"
+  },
+  {
     "id": "tennis_atp_washington_2021",
     "competitionId": "tennis_atp_washington",
     "label": "2021"
@@ -6788,6 +6798,11 @@
     "id": "tennis_wta_guangzhou_2025",
     "competitionId": "tennis_wta_guangzhou",
     "label": "2025"
+  },
+  {
+    "id": "tennis_wta_guangzhou_2026",
+    "competitionId": "tennis_wta_guangzhou",
+    "label": "2026"
   },
   {
     "id": "tennis_wta_hamburg_2021",
