@@ -1870,7 +1870,7 @@
       "homeTeam": "team_liverpool",
       "awayTeam": "team_brighton_and_hove_albion",
       "venue": null,
-      "result": null
+      "result": "2-0"
     },
     "dataQuality": "verified",
     "externalIds": {
@@ -1893,7 +1893,7 @@
       "homeTeam": "team_crystal_palace",
       "awayTeam": "team_newcastle_united",
       "venue": null,
-      "result": null
+      "result": "0-2"
     },
     "dataQuality": "verified",
     "externalIds": {
@@ -1916,7 +1916,7 @@
       "homeTeam": "team_manchester_united",
       "awayTeam": "team_afc_bournemouth",
       "venue": null,
-      "result": null
+      "result": "0-3"
     },
     "dataQuality": "verified",
     "externalIds": {
@@ -1939,7 +1939,7 @@
       "homeTeam": "team_hull_city",
       "awayTeam": "team_brentford",
       "venue": null,
-      "result": null
+      "result": "1-1"
     },
     "dataQuality": "verified",
     "externalIds": {
@@ -1962,7 +1962,7 @@
       "homeTeam": "team_sunderland",
       "awayTeam": "team_leeds_united",
       "venue": null,
-      "result": null,
+      "result": "0-0",
       "kind": "football_match"
     },
     "dataQuality": "verified",
