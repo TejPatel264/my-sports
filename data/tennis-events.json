@@ -936287,6 +936287,214 @@
   },
   {
     "sportId": "tennis",
+    "competitionId": "tennis_wta_tokyo",
+    "seasonId": "tennis_wta_tokyo_2026",
+    "date": "2026-10-26T00:00:00Z",
+    "title": "Leylah Fernandez vs Elise Mertens",
+    "participants": [
+      "tennis_player_wta_220367",
+      "tennis_player_wta_210722"
+    ],
+    "sportData": {
+      "kind": "tennis_match",
+      "round": "R16",
+      "surface": "Hard",
+      "tournamentLevel": "500",
+      "winner": "tennis_player_wta_220367",
+      "loser": "tennis_player_wta_210722",
+      "score": "6-2 7-6(8)",
+      "durationMinutes": 132
+    },
+    "dataQuality": "verified",
+    "externalIds": {
+      "tmlMatchId": "wta_2026-1056_18"
+    },
+    "id": "evt_tennis_036049"
+  },
+  {
+    "sportId": "tennis",
+    "competitionId": "tennis_wta_tokyo",
+    "seasonId": "tennis_wta_tokyo_2026",
+    "date": "2026-10-26T00:00:00Z",
+    "title": "Mia Pohankova vs Naomi Osaka",
+    "participants": [
+      "tennis_player_wta_266376",
+      "tennis_player_wta_211768"
+    ],
+    "sportData": {
+      "kind": "tennis_match",
+      "round": "R16",
+      "surface": "Hard",
+      "tournamentLevel": "500",
+      "winner": "tennis_player_wta_266376",
+      "loser": "tennis_player_wta_211768",
+      "score": "6-3 7-5",
+      "durationMinutes": 95
+    },
+    "dataQuality": "verified",
+    "externalIds": {
+      "tmlMatchId": "wta_2026-1056_19"
+    },
+    "id": "evt_tennis_036050"
+  },
+  {
+    "sportId": "tennis",
+    "competitionId": "tennis_wta_tokyo",
+    "seasonId": "tennis_wta_tokyo_2026",
+    "date": "2026-10-26T00:00:00Z",
+    "title": "Elena Rybakina vs Yulia Putintseva",
+    "participants": [
+      "tennis_player_wta_214981",
+      "tennis_player_wta_201709"
+    ],
+    "sportData": {
+      "kind": "tennis_match",
+      "round": "R16",
+      "surface": "Hard",
+      "tournamentLevel": "500",
+      "winner": "tennis_player_wta_214981",
+      "loser": "tennis_player_wta_201709",
+      "score": "6-2 6-3",
+      "durationMinutes": 70
+    },
+    "dataQuality": "verified",
+    "externalIds": {
+      "tmlMatchId": "wta_2026-1056_20"
+    },
+    "id": "evt_tennis_036051"
+  },
+  {
+    "sportId": "tennis",
+    "competitionId": "tennis_wta_tokyo",
+    "seasonId": "tennis_wta_tokyo_2026",
+    "date": "2026-10-26T00:00:00Z",
+    "title": "Kamilla Rakhimova vs Maya Joint",
+    "participants": [
+      "tennis_player_wta_215872",
+      "tennis_player_wta_233741"
+    ],
+    "sportData": {
+      "kind": "tennis_match",
+      "round": "QF",
+      "surface": "Hard",
+      "tournamentLevel": "500",
+      "winner": "tennis_player_wta_215872",
+      "loser": "tennis_player_wta_233741",
+      "score": "7-5 5-7 6-1",
+      "durationMinutes": 143
+    },
+    "dataQuality": "verified",
+    "externalIds": {
+      "tmlMatchId": "wta_2026-1056_21"
+    },
+    "id": "evt_tennis_036052"
+  },
+  {
+    "sportId": "tennis",
+    "competitionId": "tennis_wta_guangzhou",
+    "seasonId": "tennis_wta_guangzhou_2026",
+    "date": "2026-10-26T00:00:00Z",
+    "title": "Jil Teichmann vs Zeynep Sonmez",
+    "participants": [
+      "tennis_player_wta_213525",
+      "tennis_player_wta_220309"
+    ],
+    "sportData": {
+      "kind": "tennis_match",
+      "round": "R16",
+      "surface": "Hard",
+      "tournamentLevel": "250",
+      "winner": "tennis_player_wta_213525",
+      "loser": "tennis_player_wta_220309",
+      "score": "4-6 6-3 6-1",
+      "durationMinutes": 115
+    },
+    "dataQuality": "verified",
+    "externalIds": {
+      "tmlMatchId": "wta_2026-1023_21"
+    },
+    "id": "evt_tennis_036053"
+  },
+  {
+    "sportId": "tennis",
+    "competitionId": "tennis_wta_guangzhou",
+    "seasonId": "tennis_wta_guangzhou_2026",
+    "date": "2026-10-26T00:00:00Z",
+    "title": "Xinran Sun vs Maria Timofeeva",
+    "participants": [
+      "tennis_player_wta_335958",
+      "tennis_player_wta_221237"
+    ],
+    "sportData": {
+      "kind": "tennis_match",
+      "round": "R16",
+      "surface": "Hard",
+      "tournamentLevel": "250",
+      "winner": "tennis_player_wta_335958",
+      "loser": "tennis_player_wta_221237",
+      "score": "6-3 4-6 7-6(3)",
+      "durationMinutes": 161
+    },
+    "dataQuality": "verified",
+    "externalIds": {
+      "tmlMatchId": "wta_2026-1023_22"
+    },
+    "id": "evt_tennis_036054"
+  },
+  {
+    "sportId": "tennis",
+    "competitionId": "tennis_wta_guangzhou",
+    "seasonId": "tennis_wta_guangzhou_2026",
+    "date": "2026-10-26T00:00:00Z",
+    "title": "Kaitlin Quevedo vs Anna Bondar",
+    "participants": [
+      "tennis_player_wta_269267",
+      "tennis_player_wta_214388"
+    ],
+    "sportData": {
+      "kind": "tennis_match",
+      "round": "R16",
+      "surface": "Hard",
+      "tournamentLevel": "250",
+      "winner": "tennis_player_wta_269267",
+      "loser": "tennis_player_wta_214388",
+      "score": "7-5 6-3",
+      "durationMinutes": 109
+    },
+    "dataQuality": "verified",
+    "externalIds": {
+      "tmlMatchId": "wta_2026-1023_23"
+    },
+    "id": "evt_tennis_036055"
+  },
+  {
+    "sportId": "tennis",
+    "competitionId": "tennis_wta_guangzhou",
+    "seasonId": "tennis_wta_guangzhou_2026",
+    "date": "2026-10-26T00:00:00Z",
+    "title": "Lilli Tagger vs Magda Linette",
+    "participants": [
+      "tennis_player_wta_260172",
+      "tennis_player_wta_202663"
+    ],
+    "sportData": {
+      "kind": "tennis_match",
+      "round": "R16",
+      "surface": "Hard",
+      "tournamentLevel": "250",
+      "winner": "tennis_player_wta_260172",
+      "loser": "tennis_player_wta_202663",
+      "score": "6-2 6-2",
+      "durationMinutes": 67
+    },
+    "dataQuality": "verified",
+    "externalIds": {
+      "tmlMatchId": "wta_2026-1023_24"
+    },
+    "id": "evt_tennis_036056"
+  },
+  {
+    "sportId": "tennis",
     "competitionId": "tennis_atp_basel",
     "seasonId": "tennis_atp_basel_2026",
     "date": "2026-10-27T00:00:00Z",
@@ -936934,5 +937142,317 @@
       "tmlMatchId": "atp_2026-328_18"
     },
     "id": "evt_tennis_036027"
+  },
+  {
+    "sportId": "tennis",
+    "competitionId": "tennis_atp_vienna",
+    "seasonId": "tennis_atp_vienna_2026",
+    "date": "2026-10-29T00:00:00Z",
+    "title": "Tommy Paul vs Luciano Darderi",
+    "participants": [
+      "tennis_player_atp_PL56",
+      "tennis_player_atp_D0FJ"
+    ],
+    "sportData": {
+      "kind": "tennis_match",
+      "round": "R16",
+      "surface": "Hard",
+      "tournamentLevel": "500",
+      "winner": "tennis_player_atp_PL56",
+      "loser": "tennis_player_atp_D0FJ",
+      "score": "6-1 6-1",
+      "durationMinutes": 49
+    },
+    "dataQuality": "verified",
+    "externalIds": {
+      "tmlMatchId": "atp_2026-337_19"
+    },
+    "id": "evt_tennis_036037"
+  },
+  {
+    "sportId": "tennis",
+    "competitionId": "tennis_atp_basel",
+    "seasonId": "tennis_atp_basel_2026",
+    "date": "2026-10-29T00:00:00Z",
+    "title": "Valentin Vacherot vs Rafael Jodar",
+    "participants": [
+      "tennis_player_atp_VA25",
+      "tennis_player_atp_J0DZ"
+    ],
+    "sportData": {
+      "kind": "tennis_match",
+      "round": "R16",
+      "surface": "Hard",
+      "tournamentLevel": "500",
+      "winner": "tennis_player_atp_VA25",
+      "loser": "tennis_player_atp_J0DZ",
+      "score": "7-6(4) 2-6 7-6(5)",
+      "durationMinutes": 151
+    },
+    "dataQuality": "verified",
+    "externalIds": {
+      "tmlMatchId": "atp_2026-328_19"
+    },
+    "id": "evt_tennis_036038"
+  },
+  {
+    "sportId": "tennis",
+    "competitionId": "tennis_atp_vienna",
+    "seasonId": "tennis_atp_vienna_2026",
+    "date": "2026-10-29T00:00:00Z",
+    "title": "Daniil Medvedev vs Cameron Norrie",
+    "participants": [
+      "tennis_player_atp_MM58",
+      "tennis_player_atp_N771"
+    ],
+    "sportData": {
+      "kind": "tennis_match",
+      "round": "R16",
+      "surface": "Hard",
+      "tournamentLevel": "500",
+      "winner": "tennis_player_atp_MM58",
+      "loser": "tennis_player_atp_N771",
+      "score": "4-6 6-3 7-6(1)",
+      "durationMinutes": 151
+    },
+    "dataQuality": "verified",
+    "externalIds": {
+      "tmlMatchId": "atp_2026-337_20"
+    },
+    "id": "evt_tennis_036039"
+  },
+  {
+    "sportId": "tennis",
+    "competitionId": "tennis_atp_basel",
+    "seasonId": "tennis_atp_basel_2026",
+    "date": "2026-10-29T00:00:00Z",
+    "title": "Arthur Fils vs Alex Michelsen",
+    "participants": [
+      "tennis_player_atp_F0F1",
+      "tennis_player_atp_M0QI"
+    ],
+    "sportData": {
+      "kind": "tennis_match",
+      "round": "R16",
+      "surface": "Hard",
+      "tournamentLevel": "500",
+      "winner": "tennis_player_atp_F0F1",
+      "loser": "tennis_player_atp_M0QI",
+      "score": "4-6 6-3 7-6(5)",
+      "durationMinutes": 140
+    },
+    "dataQuality": "verified",
+    "externalIds": {
+      "tmlMatchId": "atp_2026-328_20"
+    },
+    "id": "evt_tennis_036040"
+  },
+  {
+    "sportId": "tennis",
+    "competitionId": "tennis_atp_vienna",
+    "seasonId": "tennis_atp_vienna_2026",
+    "date": "2026-10-29T00:00:00Z",
+    "title": "Carlos Alcaraz vs Nikoloz Basilashvili",
+    "participants": [
+      "tennis_player_atp_A0E2",
+      "tennis_player_atp_BG23"
+    ],
+    "sportData": {
+      "kind": "tennis_match",
+      "round": "R16",
+      "surface": "Hard",
+      "tournamentLevel": "500",
+      "winner": "tennis_player_atp_A0E2",
+      "loser": "tennis_player_atp_BG23",
+      "score": "6-1 7-6(11)",
+      "durationMinutes": 101
+    },
+    "dataQuality": "verified",
+    "externalIds": {
+      "tmlMatchId": "atp_2026-337_21"
+    },
+    "id": "evt_tennis_036041"
+  },
+  {
+    "sportId": "tennis",
+    "competitionId": "tennis_atp_basel",
+    "seasonId": "tennis_atp_basel_2026",
+    "date": "2026-10-29T00:00:00Z",
+    "title": "Taylor Fritz vs Denis Shapovalov",
+    "participants": [
+      "tennis_player_atp_FB98",
+      "tennis_player_atp_SU55"
+    ],
+    "sportData": {
+      "kind": "tennis_match",
+      "round": "R16",
+      "surface": "Hard",
+      "tournamentLevel": "500",
+      "winner": "tennis_player_atp_FB98",
+      "loser": "tennis_player_atp_SU55",
+      "score": "6-4 6-3",
+      "durationMinutes": 78
+    },
+    "dataQuality": "verified",
+    "externalIds": {
+      "tmlMatchId": "atp_2026-328_21"
+    },
+    "id": "evt_tennis_036042"
+  },
+  {
+    "sportId": "tennis",
+    "competitionId": "tennis_atp_basel",
+    "seasonId": "tennis_atp_basel_2026",
+    "date": "2026-10-29T00:00:00Z",
+    "title": "Jiri Lehecka vs Daniel Altmaier",
+    "participants": [
+      "tennis_player_atp_L0BV",
+      "tennis_player_atp_AE14"
+    ],
+    "sportData": {
+      "kind": "tennis_match",
+      "round": "R16",
+      "surface": "Hard",
+      "tournamentLevel": "500",
+      "winner": "tennis_player_atp_L0BV",
+      "loser": "tennis_player_atp_AE14",
+      "score": "7-5 6-4",
+      "durationMinutes": 103
+    },
+    "dataQuality": "verified",
+    "externalIds": {
+      "tmlMatchId": "atp_2026-328_22"
+    },
+    "id": "evt_tennis_036043"
+  },
+  {
+    "sportId": "tennis",
+    "competitionId": "tennis_atp_vienna",
+    "seasonId": "tennis_atp_vienna_2026",
+    "date": "2026-10-29T00:00:00Z",
+    "title": "Arthur Fery vs Lorenzo Musetti",
+    "participants": [
+      "tennis_player_atp_F0DM",
+      "tennis_player_atp_M0EJ"
+    ],
+    "sportData": {
+      "kind": "tennis_match",
+      "round": "R16",
+      "surface": "Hard",
+      "tournamentLevel": "500",
+      "winner": "tennis_player_atp_F0DM",
+      "loser": "tennis_player_atp_M0EJ",
+      "score": "6-4 5-7 6-4",
+      "durationMinutes": 165
+    },
+    "dataQuality": "verified",
+    "externalIds": {
+      "tmlMatchId": "atp_2026-337_22"
+    },
+    "id": "evt_tennis_036044"
+  },
+  {
+    "sportId": "tennis",
+    "competitionId": "tennis_atp_vienna",
+    "seasonId": "tennis_atp_vienna_2026",
+    "date": "2026-10-29T00:00:00Z",
+    "title": "Alexander Zverev vs Tallon Griekspoor",
+    "participants": [
+      "tennis_player_atp_Z355",
+      "tennis_player_atp_GJ37"
+    ],
+    "sportData": {
+      "kind": "tennis_match",
+      "round": "R16",
+      "surface": "Hard",
+      "tournamentLevel": "500",
+      "winner": "tennis_player_atp_Z355",
+      "loser": "tennis_player_atp_GJ37",
+      "score": "6-4 7-5",
+      "durationMinutes": 96
+    },
+    "dataQuality": "verified",
+    "externalIds": {
+      "tmlMatchId": "atp_2026-337_23"
+    },
+    "id": "evt_tennis_036045"
+  },
+  {
+    "sportId": "tennis",
+    "competitionId": "tennis_atp_vienna",
+    "seasonId": "tennis_atp_vienna_2026",
+    "date": "2026-10-29T00:00:00Z",
+    "title": "Matteo Berrettini vs Flavio Cobolli",
+    "participants": [
+      "tennis_player_atp_BK40",
+      "tennis_player_atp_C0E9"
+    ],
+    "sportData": {
+      "kind": "tennis_match",
+      "round": "R16",
+      "surface": "Hard",
+      "tournamentLevel": "500",
+      "winner": "tennis_player_atp_BK40",
+      "loser": "tennis_player_atp_C0E9",
+      "score": "5-2 RET",
+      "durationMinutes": 40
+    },
+    "dataQuality": "verified",
+    "externalIds": {
+      "tmlMatchId": "atp_2026-337_24"
+    },
+    "id": "evt_tennis_036046"
+  },
+  {
+    "sportId": "tennis",
+    "competitionId": "tennis_atp_basel",
+    "seasonId": "tennis_atp_basel_2026",
+    "date": "2026-10-29T00:00:00Z",
+    "title": "Jan-Lennard Struff vs Novak Djokovic",
+    "participants": [
+      "tennis_player_atp_SL28",
+      "tennis_player_atp_D643"
+    ],
+    "sportData": {
+      "kind": "tennis_match",
+      "round": "R16",
+      "surface": "Hard",
+      "tournamentLevel": "500",
+      "winner": "tennis_player_atp_SL28",
+      "loser": "tennis_player_atp_D643",
+      "score": "6-7(4) 7-5 7-6(5)",
+      "durationMinutes": 156
+    },
+    "dataQuality": "verified",
+    "externalIds": {
+      "tmlMatchId": "atp_2026-328_23"
+    },
+    "id": "evt_tennis_036047"
+  },
+  {
+    "sportId": "tennis",
+    "competitionId": "tennis_atp_basel",
+    "seasonId": "tennis_atp_basel_2026",
+    "date": "2026-10-29T00:00:00Z",
+    "title": "Jerome Kym vs Ben Shelton",
+    "participants": [
+      "tennis_player_atp_K0EP",
+      "tennis_player_atp_S0S1"
+    ],
+    "sportData": {
+      "kind": "tennis_match",
+      "round": "R16",
+      "surface": "Hard",
+      "tournamentLevel": "500",
+      "winner": "tennis_player_atp_K0EP",
+      "loser": "tennis_player_atp_S0S1",
+      "score": "6-3 6-7(4) 7-6(1)",
+      "durationMinutes": 141
+    },
+    "dataQuality": "verified",
+    "externalIds": {
+      "tmlMatchId": "atp_2026-328_24"
+    },
+    "id": "evt_tennis_036048"
   }
 ]
