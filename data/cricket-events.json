@@ -375498,5 +375498,1379 @@
       "cricsheetId": "1554582"
     },
     "id": "evt_cricket_13345"
+  },
+  {
+    "sportId": "cricket",
+    "competitionId": "t20i_cricket_men",
+    "seasonId": "t20i_cricket_men_2026_27",
+    "date": "2026-10-14T00:00:00Z",
+    "title": "West Indies vs India",
+    "participants": [
+      "cricket_team_west_indies",
+      "cricket_team_india"
+    ],
+    "sportData": {
+      "kind": "cricket_t20",
+      "matchFormat": "T20",
+      "round": "West Indies tour of India, Match 4",
+      "venue": "Rajiv Gandhi International Stadium, Uppal",
+      "result": "West Indies won by 24 runs",
+      "toss": {
+        "winner": "India",
+        "decision": "field"
+      },
+      "playerOfMatch": "SD Hope"
+    },
+    "dataQuality": "verified",
+    "externalIds": {
+      "cricsheetId": "1529233"
+    },
+    "id": "evt_cricket_13360"
+  },
+  {
+    "sportId": "cricket",
+    "competitionId": "odi_cricket_men",
+    "seasonId": "odi_cricket_men_2026_27",
+    "date": "2026-10-15T00:00:00Z",
+    "title": "Canada vs Oman",
+    "participants": [
+      "cricket_team_canada",
+      "cricket_team_oman"
+    ],
+    "sportData": {
+      "kind": "cricket_t20",
+      "matchFormat": "ODI",
+      "round": "ICC Men's Cricket World Cup League 2, Match 136",
+      "venue": "Al Amerat Cricket Ground Oman Cricket (Ministry Turf 1)",
+      "result": "Canada won by 58 runs",
+      "toss": {
+        "winner": "Canada",
+        "decision": "bat"
+      },
+      "playerOfMatch": "Sheel Patel"
+    },
+    "dataQuality": "verified",
+    "externalIds": {
+      "cricsheetId": "1554418"
+    },
+    "id": "evt_cricket_13351"
+  },
+  {
+    "sportId": "cricket",
+    "competitionId": "t20i_cricket_women",
+    "seasonId": "t20i_cricket_women_2026_27",
+    "date": "2026-10-15T00:00:00Z",
+    "title": "Austria vs Sweden",
+    "participants": [
+      "cricket_team_austria",
+      "cricket_team_sweden"
+    ],
+    "sportData": {
+      "kind": "cricket_t20",
+      "matchFormat": "T20",
+      "round": "ECA Women's European Cup, Match 1",
+      "venue": "Moara Vlasiei Cricket Ground, Ilfov County",
+      "result": "Sweden won by 9 wickets",
+      "toss": {
+        "winner": "Sweden",
+        "decision": "field"
+      },
+      "playerOfMatch": "Malyun Yusuf"
+    },
+    "dataQuality": "verified",
+    "externalIds": {
+      "cricsheetId": "1558244"
+    },
+    "id": "evt_cricket_13385"
+  },
+  {
+    "sportId": "cricket",
+    "competitionId": "t20i_cricket_women",
+    "seasonId": "t20i_cricket_women_2026_27",
+    "date": "2026-10-15T00:00:00Z",
+    "title": "Bulgaria vs Sweden",
+    "participants": [
+      "cricket_team_bulgaria",
+      "cricket_team_sweden"
+    ],
+    "sportData": {
+      "kind": "cricket_t20",
+      "matchFormat": "T20",
+      "round": "ECA Women's European Cup, Match 2",
+      "venue": "Moara Vlasiei Cricket Ground, Ilfov County",
+      "result": "Sweden won by 10 wickets",
+      "toss": {
+        "winner": "Bulgaria",
+        "decision": "bat"
+      },
+      "playerOfMatch": "A Vaidya"
+    },
+    "dataQuality": "verified",
+    "externalIds": {
+      "cricsheetId": "1558245"
+    },
+    "id": "evt_cricket_13386"
+  },
+  {
+    "sportId": "cricket",
+    "competitionId": "t20i_cricket_women",
+    "seasonId": "t20i_cricket_women_2026_27",
+    "date": "2026-10-16T00:00:00Z",
+    "title": "Zimbabwe vs India",
+    "participants": [
+      "cricket_team_zimbabwe",
+      "cricket_team_india"
+    ],
+    "sportData": {
+      "kind": "cricket_t20",
+      "matchFormat": "T20",
+      "round": "Zimbabwe Women tour of India, Match 1",
+      "venue": "Shaheed Veer Narayan Singh International Stadium, Raipur",
+      "result": "India won by 4 wickets",
+      "toss": {
+        "winner": "India",
+        "decision": "field"
+      },
+      "playerOfMatch": "DB Sharma"
+    },
+    "dataQuality": "verified",
+    "externalIds": {
+      "cricsheetId": "1535652"
+    },
+    "id": "evt_cricket_13382"
+  },
+  {
+    "sportId": "cricket",
+    "competitionId": "t20i_cricket_women",
+    "seasonId": "t20i_cricket_women_2026_27",
+    "date": "2026-10-16T00:00:00Z",
+    "title": "Romania vs Bulgaria",
+    "participants": [
+      "cricket_team_romania",
+      "cricket_team_bulgaria"
+    ],
+    "sportData": {
+      "kind": "cricket_t20",
+      "matchFormat": "T20",
+      "round": "ECA Women's European Cup, Match 3",
+      "venue": "Moara Vlasiei Cricket Ground, Ilfov County",
+      "result": "Bulgaria won by 2 wickets",
+      "toss": {
+        "winner": "Romania",
+        "decision": "bat"
+      },
+      "playerOfMatch": "Deya Stefanova"
+    },
+    "dataQuality": "verified",
+    "externalIds": {
+      "cricsheetId": "1558246"
+    },
+    "id": "evt_cricket_13387"
+  },
+  {
+    "sportId": "cricket",
+    "competitionId": "t20i_cricket_women",
+    "seasonId": "t20i_cricket_women_2026_27",
+    "date": "2026-10-16T00:00:00Z",
+    "title": "Bulgaria vs Austria",
+    "participants": [
+      "cricket_team_bulgaria",
+      "cricket_team_austria"
+    ],
+    "sportData": {
+      "kind": "cricket_t20",
+      "matchFormat": "T20",
+      "round": "ECA Women's European Cup, Match 4",
+      "venue": "Moara Vlasiei Cricket Ground, Ilfov County",
+      "result": "Austria won by 10 wickets (D/L)",
+      "toss": {
+        "winner": "Bulgaria",
+        "decision": "bat"
+      },
+      "playerOfMatch": null
+    },
+    "dataQuality": "verified",
+    "externalIds": {
+      "cricsheetId": "1558247"
+    },
+    "id": "evt_cricket_13388"
+  },
+  {
+    "sportId": "cricket",
+    "competitionId": "odi_cricket_men",
+    "seasonId": "odi_cricket_men_2026_27",
+    "date": "2026-10-17T00:00:00Z",
+    "title": "Canada vs Nepal",
+    "participants": [
+      "cricket_team_canada",
+      "cricket_team_nepal"
+    ],
+    "sportData": {
+      "kind": "cricket_t20",
+      "matchFormat": "ODI",
+      "round": "ICC Men's Cricket World Cup League 2, Match 137",
+      "venue": "Al Amerat Cricket Ground Oman Cricket (Ministry Turf 1)",
+      "result": "Canada won by 24 runs",
+      "toss": {
+        "winner": "Canada",
+        "decision": "bat"
+      },
+      "playerOfMatch": "YS Samra"
+    },
+    "dataQuality": "verified",
+    "externalIds": {
+      "cricsheetId": "1554419"
+    },
+    "id": "evt_cricket_13352"
+  },
+  {
+    "sportId": "cricket",
+    "competitionId": "odi_cricket_men",
+    "seasonId": "odi_cricket_men_2026_27",
+    "date": "2026-10-17T00:00:00Z",
+    "title": "Zimbabwe vs Bangladesh",
+    "participants": [
+      "cricket_team_zimbabwe",
+      "cricket_team_bangladesh"
+    ],
+    "sportData": {
+      "kind": "cricket_t20",
+      "matchFormat": "ODI",
+      "round": "UAE ODI Tri-Series, Match 1",
+      "venue": "Sheikh Zayed Stadium, Abu Dhabi",
+      "result": "Zimbabwe won by 99 runs",
+      "toss": {
+        "winner": "Zimbabwe",
+        "decision": "bat"
+      },
+      "playerOfMatch": "CR Ervine"
+    },
+    "dataQuality": "verified",
+    "externalIds": {
+      "cricsheetId": "1555117"
+    },
+    "id": "evt_cricket_13354"
+  },
+  {
+    "sportId": "cricket",
+    "competitionId": "t20i_cricket_men",
+    "seasonId": "t20i_cricket_men_2026_27",
+    "date": "2026-10-17T00:00:00Z",
+    "title": "India vs West Indies",
+    "participants": [
+      "cricket_team_india",
+      "cricket_team_west_indies"
+    ],
+    "sportData": {
+      "kind": "cricket_t20",
+      "matchFormat": "T20",
+      "round": "West Indies tour of India, Match 5",
+      "venue": "M Chinnaswamy Stadium, Bengaluru",
+      "result": "No result",
+      "toss": {
+        "winner": "West Indies",
+        "decision": "field"
+      },
+      "playerOfMatch": null
+    },
+    "dataQuality": "verified",
+    "externalIds": {
+      "cricsheetId": "1529234"
+    },
+    "id": "evt_cricket_13361"
+  },
+  {
+    "sportId": "cricket",
+    "competitionId": "t20i_cricket_women",
+    "seasonId": "t20i_cricket_women_2026_27",
+    "date": "2026-10-17T00:00:00Z",
+    "title": "Romania vs Austria",
+    "participants": [
+      "cricket_team_romania",
+      "cricket_team_austria"
+    ],
+    "sportData": {
+      "kind": "cricket_t20",
+      "matchFormat": "T20",
+      "round": "ECA Women's European Cup, Match 5",
+      "venue": "Moara Vlasiei Cricket Ground, Ilfov County",
+      "result": "Austria won by 7 wickets",
+      "toss": {
+        "winner": "Austria",
+        "decision": "field"
+      },
+      "playerOfMatch": "SK Reddy"
+    },
+    "dataQuality": "verified",
+    "externalIds": {
+      "cricsheetId": "1558248"
+    },
+    "id": "evt_cricket_13389"
+  },
+  {
+    "sportId": "cricket",
+    "competitionId": "t20i_cricket_women",
+    "seasonId": "t20i_cricket_women_2026_27",
+    "date": "2026-10-17T00:00:00Z",
+    "title": "Romania vs Sweden",
+    "participants": [
+      "cricket_team_romania",
+      "cricket_team_sweden"
+    ],
+    "sportData": {
+      "kind": "cricket_t20",
+      "matchFormat": "T20",
+      "round": "ECA Women's European Cup, Match 6",
+      "venue": "Moara Vlasiei Cricket Ground, Ilfov County",
+      "result": "Sweden won by 10 wickets",
+      "toss": {
+        "winner": "Romania",
+        "decision": "bat"
+      },
+      "playerOfMatch": "J Sasi Rekha"
+    },
+    "dataQuality": "verified",
+    "externalIds": {
+      "cricsheetId": "1558249"
+    },
+    "id": "evt_cricket_13390"
+  },
+  {
+    "sportId": "cricket",
+    "competitionId": "test_cricket_men",
+    "seasonId": "test_cricket_men_2026_27",
+    "date": "2026-10-18T00:00:00Z",
+    "title": "South Africa vs Australia",
+    "participants": [
+      "cricket_team_south_africa",
+      "cricket_team_australia"
+    ],
+    "sportData": {
+      "kind": "cricket_test",
+      "matchFormat": "Test",
+      "round": "Australia tour of South Africa, Match 2",
+      "venue": "St George's Park, Gqeberha",
+      "result": "South Africa won by an innings and 31 runs",
+      "toss": {
+        "winner": "Australia",
+        "decision": "field"
+      },
+      "playerOfMatch": "T Bavuma",
+      "actualDays": 5,
+      "scheduledDays": 5
+    },
+    "dataQuality": "verified",
+    "externalIds": {
+      "cricsheetId": "1525660"
+    },
+    "id": "evt_cricket_13346"
+  },
+  {
+    "sportId": "cricket",
+    "competitionId": "odi_cricket_men",
+    "seasonId": "odi_cricket_men_2026_27",
+    "date": "2026-10-18T00:00:00Z",
+    "title": "Pakistan vs Sri Lanka",
+    "participants": [
+      "cricket_team_pakistan",
+      "cricket_team_sri_lanka"
+    ],
+    "sportData": {
+      "kind": "cricket_t20",
+      "matchFormat": "ODI",
+      "round": "Pakistan ODI Tri-Series, Match 1",
+      "venue": "Rawalpindi Cricket Stadium",
+      "result": "Pakistan won by 37 runs",
+      "toss": {
+        "winner": "Sri Lanka",
+        "decision": "field"
+      },
+      "playerOfMatch": "Agha Salman"
+    },
+    "dataQuality": "verified",
+    "externalIds": {
+      "cricsheetId": "1550713"
+    },
+    "id": "evt_cricket_13347"
+  },
+  {
+    "sportId": "cricket",
+    "competitionId": "t20i_cricket_women",
+    "seasonId": "t20i_cricket_women_2026_27",
+    "date": "2026-10-18T00:00:00Z",
+    "title": "New Zealand vs Australia",
+    "participants": [
+      "cricket_team_new_zealand",
+      "cricket_team_australia"
+    ],
+    "sportData": {
+      "kind": "cricket_t20",
+      "matchFormat": "T20",
+      "round": "New Zealand Women tour of Australia, Match 1",
+      "venue": "North Sydney Oval",
+      "result": "Australia won by 2 wickets",
+      "toss": {
+        "winner": "Australia",
+        "decision": "field"
+      },
+      "playerOfMatch": "GE Plimmer"
+    },
+    "dataQuality": "verified",
+    "externalIds": {
+      "cricsheetId": "1528722"
+    },
+    "id": "evt_cricket_13379"
+  },
+  {
+    "sportId": "cricket",
+    "competitionId": "t20i_cricket_women",
+    "seasonId": "t20i_cricket_women_2026_27",
+    "date": "2026-10-18T00:00:00Z",
+    "title": "Zimbabwe vs India",
+    "participants": [
+      "cricket_team_zimbabwe",
+      "cricket_team_india"
+    ],
+    "sportData": {
+      "kind": "cricket_t20",
+      "matchFormat": "T20",
+      "round": "Zimbabwe Women tour of India, Match 2",
+      "venue": "Shaheed Veer Narayan Singh International Stadium, Raipur",
+      "result": "India won by 9 wickets",
+      "toss": {
+        "winner": "Zimbabwe",
+        "decision": "bat"
+      },
+      "playerOfMatch": "Shafali Verma"
+    },
+    "dataQuality": "verified",
+    "externalIds": {
+      "cricsheetId": "1535653"
+    },
+    "id": "evt_cricket_13383"
+  },
+  {
+    "sportId": "cricket",
+    "competitionId": "t20i_cricket_women",
+    "seasonId": "t20i_cricket_women_2026_27",
+    "date": "2026-10-18T00:00:00Z",
+    "title": "Sweden vs Austria",
+    "participants": [
+      "cricket_team_sweden",
+      "cricket_team_austria"
+    ],
+    "sportData": {
+      "kind": "cricket_t20",
+      "matchFormat": "T20",
+      "round": "ECA Women's European Cup",
+      "venue": "Moara Vlasiei Cricket Ground, Ilfov County",
+      "result": "Sweden won by 64 runs",
+      "toss": {
+        "winner": "Austria",
+        "decision": "field"
+      },
+      "playerOfMatch": "H Shreya"
+    },
+    "dataQuality": "verified",
+    "externalIds": {
+      "cricsheetId": "1558250"
+    },
+    "id": "evt_cricket_13391"
+  },
+  {
+    "sportId": "cricket",
+    "competitionId": "t20i_cricket_women",
+    "seasonId": "t20i_cricket_women_2026_27",
+    "date": "2026-10-18T00:00:00Z",
+    "title": "Romania vs Bulgaria",
+    "participants": [
+      "cricket_team_romania",
+      "cricket_team_bulgaria"
+    ],
+    "sportData": {
+      "kind": "cricket_t20",
+      "matchFormat": "T20",
+      "round": "ECA Women's European Cup",
+      "venue": "Moara Vlasiei Cricket Ground, Ilfov County",
+      "result": "Bulgaria won by 5 wickets",
+      "toss": {
+        "winner": "Romania",
+        "decision": "bat"
+      },
+      "playerOfMatch": "T Dissanayake"
+    },
+    "dataQuality": "verified",
+    "externalIds": {
+      "cricsheetId": "1558251"
+    },
+    "id": "evt_cricket_13392"
+  },
+  {
+    "sportId": "cricket",
+    "competitionId": "odi_cricket_men",
+    "seasonId": "odi_cricket_men_2026_27",
+    "date": "2026-10-19T00:00:00Z",
+    "title": "Nepal vs Oman",
+    "participants": [
+      "cricket_team_nepal",
+      "cricket_team_oman"
+    ],
+    "sportData": {
+      "kind": "cricket_t20",
+      "matchFormat": "ODI",
+      "round": "ICC Men's Cricket World Cup League 2, Match 138",
+      "venue": "Al Amerat Cricket Ground Oman Cricket (Ministry Turf 1)",
+      "result": "Nepal won by 10 runs",
+      "toss": {
+        "winner": "Nepal",
+        "decision": "bat"
+      },
+      "playerOfMatch": "DS Airee"
+    },
+    "dataQuality": "verified",
+    "externalIds": {
+      "cricsheetId": "1554420"
+    },
+    "id": "evt_cricket_13353"
+  },
+  {
+    "sportId": "cricket",
+    "competitionId": "odi_cricket_men",
+    "seasonId": "odi_cricket_men_2026_27",
+    "date": "2026-10-20T00:00:00Z",
+    "title": "Pakistan vs England",
+    "participants": [
+      "cricket_team_pakistan",
+      "cricket_team_england"
+    ],
+    "sportData": {
+      "kind": "cricket_t20",
+      "matchFormat": "ODI",
+      "round": "Pakistan ODI Tri-Series, Match 2",
+      "venue": "Rawalpindi Cricket Stadium",
+      "result": "Pakistan won by 87 runs",
+      "toss": {
+        "winner": "England",
+        "decision": "field"
+      },
+      "playerOfMatch": "Arafat Minhas"
+    },
+    "dataQuality": "verified",
+    "externalIds": {
+      "cricsheetId": "1550714"
+    },
+    "id": "evt_cricket_13348"
+  },
+  {
+    "sportId": "cricket",
+    "competitionId": "t20i_cricket_men",
+    "seasonId": "t20i_cricket_men_2026_27",
+    "date": "2026-10-20T00:00:00Z",
+    "title": "Uganda vs Zambia",
+    "participants": [
+      "cricket_team_uganda",
+      "cricket_team_zambia"
+    ],
+    "sportData": {
+      "kind": "cricket_t20",
+      "matchFormat": "T20",
+      "round": "ICC Men's T20 World Cup Africa Sub Regional Qualifier C, Match 1",
+      "venue": "Nigeria Cricket Federation Oval 1, Abuja",
+      "result": "Uganda won by 87 runs",
+      "toss": {
+        "winner": "Uganda",
+        "decision": "bat"
+      },
+      "playerOfMatch": "Olipa Gerald"
+    },
+    "dataQuality": "verified",
+    "externalIds": {
+      "cricsheetId": "1557520"
+    },
+    "id": "evt_cricket_13364"
+  },
+  {
+    "sportId": "cricket",
+    "competitionId": "t20i_cricket_men",
+    "seasonId": "t20i_cricket_men_2026_27",
+    "date": "2026-10-20T00:00:00Z",
+    "title": "Lesotho vs Mozambique",
+    "participants": [
+      "cricket_team_lesotho",
+      "cricket_team_mozambique"
+    ],
+    "sportData": {
+      "kind": "cricket_t20",
+      "matchFormat": "T20",
+      "round": "ICC Men's T20 World Cup Africa Sub Regional Qualifier C, Match 2",
+      "venue": "Nigeria Cricket Federation Oval 1, Abuja",
+      "result": "Lesotho won by 74 runs",
+      "toss": {
+        "winner": "Lesotho",
+        "decision": "bat"
+      },
+      "playerOfMatch": null
+    },
+    "dataQuality": "verified",
+    "externalIds": {
+      "cricsheetId": "1557521"
+    },
+    "id": "evt_cricket_13365"
+  },
+  {
+    "sportId": "cricket",
+    "competitionId": "t20i_cricket_men",
+    "seasonId": "t20i_cricket_men_2026_27",
+    "date": "2026-10-20T00:00:00Z",
+    "title": "Nigeria vs Gambia",
+    "participants": [
+      "cricket_team_nigeria",
+      "cricket_team_gambia"
+    ],
+    "sportData": {
+      "kind": "cricket_t20",
+      "matchFormat": "T20",
+      "round": "ICC Men's T20 World Cup Africa Sub Regional Qualifier C, Match 3",
+      "venue": "Nigeria Cricket Federation Oval 2, Abuja",
+      "result": "Nigeria won by 160 runs",
+      "toss": {
+        "winner": "Nigeria",
+        "decision": "bat"
+      },
+      "playerOfMatch": "Selim Salau"
+    },
+    "dataQuality": "verified",
+    "externalIds": {
+      "cricsheetId": "1557522"
+    },
+    "id": "evt_cricket_13366"
+  },
+  {
+    "sportId": "cricket",
+    "competitionId": "t20i_cricket_women",
+    "seasonId": "t20i_cricket_women_2026_27",
+    "date": "2026-10-20T00:00:00Z",
+    "title": "Australia vs New Zealand",
+    "participants": [
+      "cricket_team_australia",
+      "cricket_team_new_zealand"
+    ],
+    "sportData": {
+      "kind": "cricket_t20",
+      "matchFormat": "T20",
+      "round": "New Zealand Women tour of Australia, Match 2",
+      "venue": "North Sydney Oval",
+      "result": "Australia won by 40 runs",
+      "toss": {
+        "winner": "New Zealand",
+        "decision": "field"
+      },
+      "playerOfMatch": "A Gardner"
+    },
+    "dataQuality": "verified",
+    "externalIds": {
+      "cricsheetId": "1528723"
+    },
+    "id": "evt_cricket_13380"
+  },
+  {
+    "sportId": "cricket",
+    "competitionId": "t20i_cricket_women",
+    "seasonId": "t20i_cricket_women_2026_27",
+    "date": "2026-10-20T00:00:00Z",
+    "title": "India vs Zimbabwe",
+    "participants": [
+      "cricket_team_india",
+      "cricket_team_zimbabwe"
+    ],
+    "sportData": {
+      "kind": "cricket_t20",
+      "matchFormat": "T20",
+      "round": "Zimbabwe Women tour of India, Match 3",
+      "venue": "Shaheed Veer Narayan Singh International Stadium, Raipur",
+      "result": "India won by 92 runs",
+      "toss": {
+        "winner": "India",
+        "decision": "bat"
+      },
+      "playerOfMatch": "H Kaur"
+    },
+    "dataQuality": "verified",
+    "externalIds": {
+      "cricsheetId": "1535654"
+    },
+    "id": "evt_cricket_13384"
+  },
+  {
+    "sportId": "cricket",
+    "competitionId": "t20i_cricket_men",
+    "seasonId": "t20i_cricket_men_2026_27",
+    "date": "2026-10-21T00:00:00Z",
+    "title": "Mozambique vs Gambia",
+    "participants": [
+      "cricket_team_mozambique",
+      "cricket_team_gambia"
+    ],
+    "sportData": {
+      "kind": "cricket_t20",
+      "matchFormat": "T20",
+      "round": "ICC Men's T20 World Cup Africa Sub Regional Qualifier C, Match 4",
+      "venue": "Nigeria Cricket Federation Oval 1, Abuja",
+      "result": "Mozambique won by 28 runs",
+      "toss": {
+        "winner": "Mozambique",
+        "decision": "bat"
+      },
+      "playerOfMatch": "AA Navicha"
+    },
+    "dataQuality": "verified",
+    "externalIds": {
+      "cricsheetId": "1557523"
+    },
+    "id": "evt_cricket_13367"
+  },
+  {
+    "sportId": "cricket",
+    "competitionId": "t20i_cricket_men",
+    "seasonId": "t20i_cricket_men_2026_27",
+    "date": "2026-10-21T00:00:00Z",
+    "title": "Lesotho vs Uganda",
+    "participants": [
+      "cricket_team_lesotho",
+      "cricket_team_uganda"
+    ],
+    "sportData": {
+      "kind": "cricket_t20",
+      "matchFormat": "T20",
+      "round": "ICC Men's T20 World Cup Africa Sub Regional Qualifier C, Match 5",
+      "venue": "Nigeria Cricket Federation Oval 2, Abuja",
+      "result": "Uganda won by 5 wickets",
+      "toss": {
+        "winner": "Lesotho",
+        "decision": "bat"
+      },
+      "playerOfMatch": "K Waiswa"
+    },
+    "dataQuality": "verified",
+    "externalIds": {
+      "cricsheetId": "1557524"
+    },
+    "id": "evt_cricket_13368"
+  },
+  {
+    "sportId": "cricket",
+    "competitionId": "t20i_cricket_men",
+    "seasonId": "t20i_cricket_men_2026_27",
+    "date": "2026-10-21T00:00:00Z",
+    "title": "Zambia vs Nigeria",
+    "participants": [
+      "cricket_team_zambia",
+      "cricket_team_nigeria"
+    ],
+    "sportData": {
+      "kind": "cricket_t20",
+      "matchFormat": "T20",
+      "round": "ICC Men's T20 World Cup Africa Sub Regional Qualifier C, Match 6",
+      "venue": "Nigeria Cricket Federation Oval 1, Abuja",
+      "result": "Nigeria won by 9 wickets",
+      "toss": {
+        "winner": "Zambia",
+        "decision": "bat"
+      },
+      "playerOfMatch": "I Danladi"
+    },
+    "dataQuality": "verified",
+    "externalIds": {
+      "cricsheetId": "1557525"
+    },
+    "id": "evt_cricket_13369"
+  },
+  {
+    "sportId": "cricket",
+    "competitionId": "odi_cricket_men",
+    "seasonId": "odi_cricket_men_2026_27",
+    "date": "2026-10-22T00:00:00Z",
+    "title": "England vs Sri Lanka",
+    "participants": [
+      "cricket_team_england",
+      "cricket_team_sri_lanka"
+    ],
+    "sportData": {
+      "kind": "cricket_t20",
+      "matchFormat": "ODI",
+      "round": "Pakistan ODI Tri-Series, Match 3",
+      "venue": "Rawalpindi Cricket Stadium",
+      "result": "Sri Lanka won by 2 wickets",
+      "toss": {
+        "winner": "Sri Lanka",
+        "decision": "field"
+      },
+      "playerOfMatch": "P Rathnayake"
+    },
+    "dataQuality": "verified",
+    "externalIds": {
+      "cricsheetId": "1550715"
+    },
+    "id": "evt_cricket_13349"
+  },
+  {
+    "sportId": "cricket",
+    "competitionId": "odi_cricket_men",
+    "seasonId": "odi_cricket_men_2026_27",
+    "date": "2026-10-22T00:00:00Z",
+    "title": "Ireland vs Namibia",
+    "participants": [
+      "cricket_team_ireland",
+      "cricket_team_namibia"
+    ],
+    "sportData": {
+      "kind": "cricket_t20",
+      "matchFormat": "ODI",
+      "round": "Ireland tour of Namibia, Match 1",
+      "venue": "High Performance Oval, Windhoek",
+      "result": "Ireland won by 55 runs",
+      "toss": {
+        "winner": "Namibia",
+        "decision": "field"
+      },
+      "playerOfMatch": "G Hoey"
+    },
+    "dataQuality": "verified",
+    "externalIds": {
+      "cricsheetId": "1558231"
+    },
+    "id": "evt_cricket_13355"
+  },
+  {
+    "sportId": "cricket",
+    "competitionId": "t20i_cricket_men",
+    "seasonId": "t20i_cricket_men_2026_27",
+    "date": "2026-10-22T00:00:00Z",
+    "title": "New Zealand vs India",
+    "participants": [
+      "cricket_team_new_zealand",
+      "cricket_team_india"
+    ],
+    "sportData": {
+      "kind": "cricket_t20",
+      "matchFormat": "T20",
+      "round": "India tour of New Zealand, Match 1",
+      "venue": "Hagley Oval, Christchurch",
+      "result": "India won by 4 wickets",
+      "toss": {
+        "winner": "India",
+        "decision": "field"
+      },
+      "playerOfMatch": "SV Samson"
+    },
+    "dataQuality": "verified",
+    "externalIds": {
+      "cricsheetId": "1539432"
+    },
+    "id": "evt_cricket_13362"
+  },
+  {
+    "sportId": "cricket",
+    "competitionId": "t20i_cricket_women",
+    "seasonId": "t20i_cricket_women_2026_27",
+    "date": "2026-10-22T00:00:00Z",
+    "title": "New Zealand vs Australia",
+    "participants": [
+      "cricket_team_new_zealand",
+      "cricket_team_australia"
+    ],
+    "sportData": {
+      "kind": "cricket_t20",
+      "matchFormat": "T20",
+      "round": "New Zealand Women tour of Australia, Match 3",
+      "venue": "North Sydney Oval",
+      "result": "No result",
+      "toss": {
+        "winner": "Australia",
+        "decision": "field"
+      },
+      "playerOfMatch": null
+    },
+    "dataQuality": "verified",
+    "externalIds": {
+      "cricsheetId": "1528724"
+    },
+    "id": "evt_cricket_13381"
+  },
+  {
+    "sportId": "cricket",
+    "competitionId": "odi_cricket_women",
+    "seasonId": "odi_cricket_women_2026_27",
+    "date": "2026-10-23T00:00:00Z",
+    "title": "Zimbabwe vs India",
+    "participants": [
+      "cricket_team_zimbabwe",
+      "cricket_team_india"
+    ],
+    "sportData": {
+      "kind": "cricket_t20",
+      "matchFormat": "ODI",
+      "round": "Zimbabwe Women tour of India, Match 1",
+      "venue": "Kotambi Stadium, Vadodara",
+      "result": "India won by 9 wickets",
+      "toss": {
+        "winner": "Zimbabwe",
+        "decision": "bat"
+      },
+      "playerOfMatch": "Pratika Rawal"
+    },
+    "dataQuality": "verified",
+    "externalIds": {
+      "cricsheetId": "1535655"
+    },
+    "id": "evt_cricket_13358"
+  },
+  {
+    "sportId": "cricket",
+    "competitionId": "t20i_cricket_men",
+    "seasonId": "t20i_cricket_men_2026_27",
+    "date": "2026-10-23T00:00:00Z",
+    "title": "Mozambique vs Nigeria",
+    "participants": [
+      "cricket_team_mozambique",
+      "cricket_team_nigeria"
+    ],
+    "sportData": {
+      "kind": "cricket_t20",
+      "matchFormat": "T20",
+      "round": "ICC Men's T20 World Cup Africa Sub Regional Qualifier C, Match 7",
+      "venue": "Nigeria Cricket Federation Oval 1, Abuja",
+      "result": "Nigeria won by 7 wickets",
+      "toss": {
+        "winner": "Mozambique",
+        "decision": "bat"
+      },
+      "playerOfMatch": "IO Okpe"
+    },
+    "dataQuality": "verified",
+    "externalIds": {
+      "cricsheetId": "1557526"
+    },
+    "id": "evt_cricket_13370"
+  },
+  {
+    "sportId": "cricket",
+    "competitionId": "t20i_cricket_men",
+    "seasonId": "t20i_cricket_men_2026_27",
+    "date": "2026-10-23T00:00:00Z",
+    "title": "Lesotho vs Zambia",
+    "participants": [
+      "cricket_team_lesotho",
+      "cricket_team_zambia"
+    ],
+    "sportData": {
+      "kind": "cricket_t20",
+      "matchFormat": "T20",
+      "round": "ICC Men's T20 World Cup Africa Sub Regional Qualifier C, Match 8",
+      "venue": "Nigeria Cricket Federation Oval 2, Abuja",
+      "result": "Zambia won by 7 wickets",
+      "toss": {
+        "winner": "Lesotho",
+        "decision": "bat"
+      },
+      "playerOfMatch": "Zahirbhai Patel"
+    },
+    "dataQuality": "verified",
+    "externalIds": {
+      "cricsheetId": "1557527"
+    },
+    "id": "evt_cricket_13371"
+  },
+  {
+    "sportId": "cricket",
+    "competitionId": "t20i_cricket_men",
+    "seasonId": "t20i_cricket_men_2026_27",
+    "date": "2026-10-23T00:00:00Z",
+    "title": "Gambia vs Uganda",
+    "participants": [
+      "cricket_team_gambia",
+      "cricket_team_uganda"
+    ],
+    "sportData": {
+      "kind": "cricket_t20",
+      "matchFormat": "T20",
+      "round": "ICC Men's T20 World Cup Africa Sub Regional Qualifier C, Match 9",
+      "venue": "Nigeria Cricket Federation Oval 2, Abuja",
+      "result": "Uganda won by 10 wickets",
+      "toss": {
+        "winner": "Gambia",
+        "decision": "bat"
+      },
+      "playerOfMatch": "Riazat Ali Shah"
+    },
+    "dataQuality": "verified",
+    "externalIds": {
+      "cricsheetId": "1557528"
+    },
+    "id": "evt_cricket_13372"
+  },
+  {
+    "sportId": "cricket",
+    "competitionId": "odi_cricket_men",
+    "seasonId": "odi_cricket_men_2026_27",
+    "date": "2026-10-24T00:00:00Z",
+    "title": "Namibia vs Ireland",
+    "participants": [
+      "cricket_team_namibia",
+      "cricket_team_ireland"
+    ],
+    "sportData": {
+      "kind": "cricket_t20",
+      "matchFormat": "ODI",
+      "round": "Ireland tour of Namibia, Match 2",
+      "venue": "High Performance Oval, Windhoek",
+      "result": "Namibia won by 31 runs",
+      "toss": {
+        "winner": "Ireland",
+        "decision": "field"
+      },
+      "playerOfMatch": "MG Erasmus"
+    },
+    "dataQuality": "verified",
+    "externalIds": {
+      "cricsheetId": "1558232"
+    },
+    "id": "evt_cricket_13356"
+  },
+  {
+    "sportId": "cricket",
+    "competitionId": "t20i_cricket_men",
+    "seasonId": "t20i_cricket_men_2026_27",
+    "date": "2026-10-24T00:00:00Z",
+    "title": "New Zealand vs India",
+    "participants": [
+      "cricket_team_new_zealand",
+      "cricket_team_india"
+    ],
+    "sportData": {
+      "kind": "cricket_t20",
+      "matchFormat": "T20",
+      "round": "India tour of New Zealand, Match 2",
+      "venue": "Hagley Oval, Christchurch",
+      "result": "India won by 4 wickets",
+      "toss": {
+        "winner": "India",
+        "decision": "field"
+      },
+      "playerOfMatch": "Tilak Varma"
+    },
+    "dataQuality": "verified",
+    "externalIds": {
+      "cricsheetId": "1539433"
+    },
+    "id": "evt_cricket_13363"
+  },
+  {
+    "sportId": "cricket",
+    "competitionId": "t20i_cricket_men",
+    "seasonId": "t20i_cricket_men_2026_27",
+    "date": "2026-10-24T00:00:00Z",
+    "title": "Mozambique vs Uganda",
+    "participants": [
+      "cricket_team_mozambique",
+      "cricket_team_uganda"
+    ],
+    "sportData": {
+      "kind": "cricket_t20",
+      "matchFormat": "T20",
+      "round": "ICC Men's T20 World Cup Africa Sub Regional Qualifier C, Match 10",
+      "venue": "Nigeria Cricket Federation Oval 2, Abuja",
+      "result": "Uganda won by 10 wickets",
+      "toss": {
+        "winner": "Mozambique",
+        "decision": "bat"
+      },
+      "playerOfMatch": "J Miyaji"
+    },
+    "dataQuality": "verified",
+    "externalIds": {
+      "cricsheetId": "1557529"
+    },
+    "id": "evt_cricket_13373"
+  },
+  {
+    "sportId": "cricket",
+    "competitionId": "t20i_cricket_men",
+    "seasonId": "t20i_cricket_men_2026_27",
+    "date": "2026-10-24T00:00:00Z",
+    "title": "Gambia vs Zambia",
+    "participants": [
+      "cricket_team_gambia",
+      "cricket_team_zambia"
+    ],
+    "sportData": {
+      "kind": "cricket_t20",
+      "matchFormat": "T20",
+      "round": "ICC Men's T20 World Cup Africa Sub Regional Qualifier C, Match 11",
+      "venue": "Nigeria Cricket Federation Oval 1, Abuja",
+      "result": "Zambia won by 8 wickets",
+      "toss": {
+        "winner": "Gambia",
+        "decision": "bat"
+      },
+      "playerOfMatch": "Ayaz Dadabhai"
+    },
+    "dataQuality": "verified",
+    "externalIds": {
+      "cricsheetId": "1557530"
+    },
+    "id": "evt_cricket_13374"
+  },
+  {
+    "sportId": "cricket",
+    "competitionId": "t20i_cricket_men",
+    "seasonId": "t20i_cricket_men_2026_27",
+    "date": "2026-10-24T00:00:00Z",
+    "title": "Lesotho vs Nigeria",
+    "participants": [
+      "cricket_team_lesotho",
+      "cricket_team_nigeria"
+    ],
+    "sportData": {
+      "kind": "cricket_t20",
+      "matchFormat": "T20",
+      "round": "ICC Men's T20 World Cup Africa Sub Regional Qualifier C, Match 12",
+      "venue": "Nigeria Cricket Federation Oval 2, Abuja",
+      "result": "Nigeria won by 7 wickets",
+      "toss": {
+        "winner": "Lesotho",
+        "decision": "bat"
+      },
+      "playerOfMatch": "CM Akachukwu"
+    },
+    "dataQuality": "verified",
+    "externalIds": {
+      "cricsheetId": "1557531"
+    },
+    "id": "evt_cricket_13375"
+  },
+  {
+    "sportId": "cricket",
+    "competitionId": "t20i_cricket_women",
+    "seasonId": "t20i_cricket_women_2026_27",
+    "date": "2026-10-24T00:00:00Z",
+    "title": "Argentina vs Mexico",
+    "participants": [
+      "cricket_team_argentina",
+      "cricket_team_mexico"
+    ],
+    "sportData": {
+      "kind": "cricket_t20",
+      "matchFormat": "T20",
+      "round": "Argentina Women tour of Mexico, Match 1",
+      "venue": "Complejo Municipal de Beisbol de Texcoco",
+      "result": "Argentina won by 223 runs",
+      "toss": {
+        "winner": "Mexico",
+        "decision": "field"
+      },
+      "playerOfMatch": null
+    },
+    "dataQuality": "verified",
+    "externalIds": {
+      "cricsheetId": "1558571"
+    },
+    "id": "evt_cricket_13393"
+  },
+  {
+    "sportId": "cricket",
+    "competitionId": "t20i_cricket_women",
+    "seasonId": "t20i_cricket_women_2026_27",
+    "date": "2026-10-24T00:00:00Z",
+    "title": "Argentina vs Mexico",
+    "participants": [
+      "cricket_team_argentina",
+      "cricket_team_mexico"
+    ],
+    "sportData": {
+      "kind": "cricket_t20",
+      "matchFormat": "T20",
+      "round": "Argentina Women tour of Mexico, Match 2",
+      "venue": "Complejo Municipal de Beisbol de Texcoco",
+      "result": "Argentina won by 165 runs",
+      "toss": {
+        "winner": "Argentina",
+        "decision": "bat"
+      },
+      "playerOfMatch": "Francesca Galan"
+    },
+    "dataQuality": "verified",
+    "externalIds": {
+      "cricsheetId": "1558572"
+    },
+    "id": "evt_cricket_13394"
+  },
+  {
+    "sportId": "cricket",
+    "competitionId": "odi_cricket_men",
+    "seasonId": "odi_cricket_men_2026_27",
+    "date": "2026-10-25T00:00:00Z",
+    "title": "England vs Pakistan",
+    "participants": [
+      "cricket_team_england",
+      "cricket_team_pakistan"
+    ],
+    "sportData": {
+      "kind": "cricket_t20",
+      "matchFormat": "ODI",
+      "round": "Pakistan ODI Tri-Series, Match 4",
+      "venue": "Gaddafi Stadium, Lahore",
+      "result": "Pakistan won by 1 wicket",
+      "toss": {
+        "winner": "Pakistan",
+        "decision": "field"
+      },
+      "playerOfMatch": "Shadab Khan"
+    },
+    "dataQuality": "verified",
+    "externalIds": {
+      "cricsheetId": "1550716"
+    },
+    "id": "evt_cricket_13350"
+  },
+  {
+    "sportId": "cricket",
+    "competitionId": "odi_cricket_men",
+    "seasonId": "odi_cricket_men_2026_27",
+    "date": "2026-10-25T00:00:00Z",
+    "title": "United Arab Emirates vs Netherlands",
+    "participants": [
+      "cricket_team_united_arab_emirates",
+      "cricket_team_netherlands"
+    ],
+    "sportData": {
+      "kind": "cricket_t20",
+      "matchFormat": "ODI",
+      "round": "ICC Men's Cricket World Cup League 2, Match 139",
+      "venue": "ICC Academy, Dubai",
+      "result": "Netherlands won by 3 wickets",
+      "toss": {
+        "winner": "United Arab Emirates",
+        "decision": "bat"
+      },
+      "playerOfMatch": "MP O'Dowd"
+    },
+    "dataQuality": "verified",
+    "externalIds": {
+      "cricsheetId": "1559563"
+    },
+    "id": "evt_cricket_13357"
+  },
+  {
+    "sportId": "cricket",
+    "competitionId": "odi_cricket_women",
+    "seasonId": "odi_cricket_women_2026_27",
+    "date": "2026-10-25T00:00:00Z",
+    "title": "India vs Zimbabwe",
+    "participants": [
+      "cricket_team_india",
+      "cricket_team_zimbabwe"
+    ],
+    "sportData": {
+      "kind": "cricket_t20",
+      "matchFormat": "ODI",
+      "round": "Zimbabwe Women tour of India, Match 2",
+      "venue": "Kotambi Stadium, Vadodara",
+      "result": "India won by 121 runs",
+      "toss": {
+        "winner": "India",
+        "decision": "bat"
+      },
+      "playerOfMatch": "H Kaur"
+    },
+    "dataQuality": "verified",
+    "externalIds": {
+      "cricsheetId": "1535656"
+    },
+    "id": "evt_cricket_13359"
+  },
+  {
+    "sportId": "cricket",
+    "competitionId": "t20i_cricket_men",
+    "seasonId": "t20i_cricket_men_2026_27",
+    "date": "2026-10-25T00:00:00Z",
+    "title": "Gambia vs Lesotho",
+    "participants": [
+      "cricket_team_gambia",
+      "cricket_team_lesotho"
+    ],
+    "sportData": {
+      "kind": "cricket_t20",
+      "matchFormat": "T20",
+      "round": "ICC Men's T20 World Cup Africa Sub Regional Qualifier C, Match 13",
+      "venue": "Nigeria Cricket Federation Oval 1, Abuja",
+      "result": "Gambia won by 3 runs",
+      "toss": {
+        "winner": "Gambia",
+        "decision": "bat"
+      },
+      "playerOfMatch": null
+    },
+    "dataQuality": "verified",
+    "externalIds": {
+      "cricsheetId": "1557532"
+    },
+    "id": "evt_cricket_13376"
+  },
+  {
+    "sportId": "cricket",
+    "competitionId": "t20i_cricket_men",
+    "seasonId": "t20i_cricket_men_2026_27",
+    "date": "2026-10-25T00:00:00Z",
+    "title": "Zambia vs Mozambique",
+    "participants": [
+      "cricket_team_zambia",
+      "cricket_team_mozambique"
+    ],
+    "sportData": {
+      "kind": "cricket_t20",
+      "matchFormat": "T20",
+      "round": "ICC Men's T20 World Cup Africa Sub Regional Qualifier C, Match 14",
+      "venue": "Nigeria Cricket Federation Oval 2, Abuja",
+      "result": "Mozambique won by 3 wickets",
+      "toss": {
+        "winner": "Mozambique",
+        "decision": "field"
+      },
+      "playerOfMatch": "AA Navicha"
+    },
+    "dataQuality": "verified",
+    "externalIds": {
+      "cricsheetId": "1557533"
+    },
+    "id": "evt_cricket_13377"
+  },
+  {
+    "sportId": "cricket",
+    "competitionId": "t20i_cricket_men",
+    "seasonId": "t20i_cricket_men_2026_27",
+    "date": "2026-10-25T00:00:00Z",
+    "title": "Nigeria vs Uganda",
+    "participants": [
+      "cricket_team_nigeria",
+      "cricket_team_uganda"
+    ],
+    "sportData": {
+      "kind": "cricket_t20",
+      "matchFormat": "T20",
+      "round": "ICC Men's T20 World Cup Africa Sub Regional Qualifier C, Match 15",
+      "venue": "Nigeria Cricket Federation Oval 1, Abuja",
+      "result": "Nigeria won by 1 run",
+      "toss": {
+        "winner": "Nigeria",
+        "decision": "bat"
+      },
+      "playerOfMatch": "I Danladi"
+    },
+    "dataQuality": "verified",
+    "externalIds": {
+      "cricsheetId": "1557534"
+    },
+    "id": "evt_cricket_13378"
   }
 ]

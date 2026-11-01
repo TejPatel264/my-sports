@@ -1100,6 +1100,11 @@
     "label": "2026"
   },
   {
+    "id": "t20i_cricket_women_2026_27",
+    "competitionId": "t20i_cricket_women",
+    "label": "2026/27"
+  },
+  {
     "id": "test_cricket_men_2001_02",
     "competitionId": "test_cricket_men",
     "label": "2001/02"
