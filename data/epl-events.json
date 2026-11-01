@@ -1985,7 +1985,7 @@
       "homeTeam": "team_chelsea",
       "awayTeam": "team_manchester_united",
       "venue": null,
-      "result": null,
+      "result": "2-0",
       "kind": "football_match"
     },
     "dataQuality": "verified",
@@ -2008,7 +2008,7 @@
       "homeTeam": "team_manchester_city",
       "awayTeam": "team_brighton_and_hove_albion",
       "venue": null,
-      "result": null
+      "result": "0-1"
     },
     "dataQuality": "verified",
     "externalIds": {
@@ -2031,7 +2031,7 @@
       "homeTeam": "team_afc_bournemouth",
       "awayTeam": "team_leeds_united",
       "venue": null,
-      "result": null
+      "result": "2-0"
     },
     "dataQuality": "verified",
     "externalIds": {
@@ -2054,7 +2054,7 @@
       "homeTeam": "team_coventry_city",
       "awayTeam": "team_sunderland",
       "venue": null,
-      "result": null
+      "result": "3-1"
     },
     "dataQuality": "verified",
     "externalIds": {
@@ -2077,7 +2077,7 @@
       "homeTeam": "team_hull_city",
       "awayTeam": "team_ipswich_town",
       "venue": null,
-      "result": null
+      "result": "2-2"
     },
     "dataQuality": "verified",
     "externalIds": {
@@ -2100,7 +2100,7 @@
       "homeTeam": "team_brentford",
       "awayTeam": "team_nottingham_forest",
       "venue": null,
-      "result": null
+      "result": "2-0"
     },
     "dataQuality": "verified",
     "externalIds": {
@@ -2123,7 +2123,7 @@
       "homeTeam": "team_tottenham_hotspur",
       "awayTeam": "team_crystal_palace",
       "venue": null,
-      "result": null,
+      "result": "2-0",
       "kind": "football_match"
     },
     "dataQuality": "verified",
@@ -2146,7 +2146,7 @@
       "homeTeam": "team_aston_villa",
       "awayTeam": "team_fulham",
       "venue": null,
-      "result": null
+      "result": "1-1"
     },
     "dataQuality": "verified",
     "externalIds": {
