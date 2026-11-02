@@ -936807,6 +936807,32 @@
   },
   {
     "sportId": "tennis",
+    "competitionId": "tennis_wta_guangzhou",
+    "seasonId": "tennis_wta_guangzhou_2026",
+    "date": "2026-10-26T00:00:00Z",
+    "title": "Harriet Dart vs Lilli Tagger",
+    "participants": [
+      "tennis_player_wta_211279",
+      "tennis_player_wta_260172"
+    ],
+    "sportData": {
+      "kind": "tennis_match",
+      "round": "F",
+      "surface": "Hard",
+      "tournamentLevel": "250",
+      "winner": "tennis_player_wta_211279",
+      "loser": "tennis_player_wta_260172",
+      "score": "4-6 6-3 6-4",
+      "durationMinutes": 136
+    },
+    "dataQuality": "verified",
+    "externalIds": {
+      "tmlMatchId": "wta_2026-1023_31"
+    },
+    "id": "evt_tennis_036083"
+  },
+  {
+    "sportId": "tennis",
     "competitionId": "tennis_atp_basel",
     "seasonId": "tennis_atp_basel_2026",
     "date": "2026-10-27T00:00:00Z",
@@ -938078,5 +938104,57 @@
       "tmlMatchId": "atp_2026-337_30"
     },
     "id": "evt_tennis_036075"
+  },
+  {
+    "sportId": "tennis",
+    "competitionId": "tennis_atp_vienna",
+    "seasonId": "tennis_atp_vienna_2026",
+    "date": "2026-11-01T00:00:00Z",
+    "title": "Carlos Alcaraz vs Alex de Minaur",
+    "participants": [
+      "tennis_player_atp_A0E2",
+      "tennis_player_atp_DH58"
+    ],
+    "sportData": {
+      "kind": "tennis_match",
+      "round": "F",
+      "surface": "Hard",
+      "tournamentLevel": "500",
+      "winner": "tennis_player_atp_A0E2",
+      "loser": "tennis_player_atp_DH58",
+      "score": "6-1 6-4",
+      "durationMinutes": 87
+    },
+    "dataQuality": "verified",
+    "externalIds": {
+      "tmlMatchId": "atp_2026-337_31"
+    },
+    "id": "evt_tennis_036081"
+  },
+  {
+    "sportId": "tennis",
+    "competitionId": "tennis_atp_basel",
+    "seasonId": "tennis_atp_basel_2026",
+    "date": "2026-11-01T00:00:00Z",
+    "title": "Valentin Vacherot vs Jiri Lehecka",
+    "participants": [
+      "tennis_player_atp_VA25",
+      "tennis_player_atp_L0BV"
+    ],
+    "sportData": {
+      "kind": "tennis_match",
+      "round": "F",
+      "surface": "Hard",
+      "tournamentLevel": "500",
+      "winner": "tennis_player_atp_VA25",
+      "loser": "tennis_player_atp_L0BV",
+      "score": "2-6 6-3 6-3",
+      "durationMinutes": 114
+    },
+    "dataQuality": "verified",
+    "externalIds": {
+      "tmlMatchId": "atp_2026-328_31"
+    },
+    "id": "evt_tennis_036082"
   }
 ]
