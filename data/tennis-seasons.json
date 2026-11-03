@@ -3785,6 +3785,11 @@
     "label": "2025"
   },
   {
+    "id": "tennis_atp_paris_masters_2026",
+    "competitionId": "tennis_atp_paris_masters",
+    "label": "2026"
+  },
+  {
     "id": "tennis_atp_paris_olympics_2024",
     "competitionId": "tennis_atp_paris_olympics",
     "label": "2024"
@@ -6868,6 +6873,11 @@
     "id": "tennis_wta_hong_kong_2025",
     "competitionId": "tennis_wta_hong_kong",
     "label": "2025"
+  },
+  {
+    "id": "tennis_wta_hong_kong_2026",
+    "competitionId": "tennis_wta_hong_kong",
+    "label": "2026"
   },
   {
     "id": "tennis_wta_hua_hin_2_2024",
