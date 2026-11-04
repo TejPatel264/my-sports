@@ -405,6 +405,11 @@
     "name": "Alexandra Eala"
   },
   {
+    "id": "tennis_player_wta_332168",
+    "sportId": "tennis",
+    "name": "Alexandra Shubladze"
+  },
+  {
     "id": "tennis_player_atp_MP20",
     "sportId": "tennis",
     "name": "Alexandre Muller"
@@ -7523,6 +7528,11 @@
     "id": "tennis_player_atp_VA16",
     "sportId": "tennis",
     "name": "Quinton Vega"
+  },
+  {
+    "id": "tennis_player_wta_332888",
+    "sportId": "tennis",
+    "name": "Rada Zolotareva"
   },
   {
     "id": "tennis_player_atp_A829",

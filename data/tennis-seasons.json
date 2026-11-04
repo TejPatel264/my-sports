@@ -6075,6 +6075,11 @@
     "label": "2025"
   },
   {
+    "id": "tennis_wta_chennai_2026",
+    "competitionId": "tennis_wta_chennai",
+    "label": "2026"
+  },
+  {
     "id": "tennis_wta_chicago_1_2021",
     "competitionId": "tennis_wta_chicago_1",
     "label": "2021"
