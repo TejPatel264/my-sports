@@ -1026,7 +1026,7 @@
       "homeTeam": "team_galatasaray",
       "awayTeam": "team_stuttgart",
       "venue": null,
-      "result": null
+      "result": "2-0"
     },
     "dataQuality": "verified",
     "externalIds": {
@@ -1049,7 +1049,7 @@
       "homeTeam": "team_feyenoord",
       "awayTeam": "team_inter_milan",
       "venue": null,
-      "result": null
+      "result": "0-3"
     },
     "dataQuality": "verified",
     "externalIds": {
@@ -1072,7 +1072,7 @@
       "homeTeam": "team_barcelona",
       "awayTeam": "team_aston_villa",
       "venue": null,
-      "result": null
+      "result": "3-0"
     },
     "dataQuality": "verified",
     "externalIds": {
@@ -1095,7 +1095,7 @@
       "homeTeam": "team_atletico_madrid",
       "awayTeam": "team_bayern_munich",
       "venue": null,
-      "result": null
+      "result": "0-2"
     },
     "dataQuality": "verified",
     "externalIds": {
@@ -1118,7 +1118,7 @@
       "homeTeam": "team_villarreal",
       "awayTeam": "team_paris_saint_germain",
       "venue": null,
-      "result": null
+      "result": "0-6"
     },
     "dataQuality": "verified",
     "externalIds": {
@@ -1141,7 +1141,7 @@
       "homeTeam": "team_manchester_united",
       "awayTeam": "team_roma",
       "venue": null,
-      "result": null
+      "result": "3-2"
     },
     "dataQuality": "verified",
     "externalIds": {
@@ -1164,7 +1164,7 @@
       "homeTeam": "team_fenerbahce",
       "awayTeam": "team_liverpool",
       "venue": null,
-      "result": null
+      "result": "3-2"
     },
     "dataQuality": "verified",
     "externalIds": {
@@ -1187,7 +1187,7 @@
       "homeTeam": "team_rb_leipzig",
       "awayTeam": "team_manchester_city",
       "venue": null,
-      "result": null
+      "result": "2-3"
     },
     "dataQuality": "verified",
     "externalIds": {
@@ -1210,7 +1210,7 @@
       "homeTeam": "team_slavia_prague",
       "awayTeam": "team_arsenal",
       "venue": null,
-      "result": null
+      "result": "1-2"
     },
     "dataQuality": "verified",
     "externalIds": {
@@ -1233,7 +1233,7 @@
       "homeTeam": "team_psv_eindhoven",
       "awayTeam": "team_club_brugge",
       "venue": null,
-      "result": null
+      "result": "1-2"
     },
     "dataQuality": "verified",
     "externalIds": {
@@ -1256,7 +1256,7 @@
       "homeTeam": "team_borussia_dortmund",
       "awayTeam": "team_real_betis",
       "venue": null,
-      "result": null
+      "result": "2-1"
     },
     "dataQuality": "verified",
     "externalIds": {
@@ -1279,7 +1279,7 @@
       "homeTeam": "team_porto",
       "awayTeam": "team_napoli",
       "venue": null,
-      "result": null
+      "result": "4-1"
     },
     "dataQuality": "verified",
     "externalIds": {
@@ -1302,7 +1302,7 @@
       "homeTeam": "team_lens",
       "awayTeam": "team_como",
       "venue": null,
-      "result": null
+      "result": "1-9"
     },
     "dataQuality": "verified",
     "externalIds": {
@@ -1325,7 +1325,7 @@
       "homeTeam": "team_viking_fk",
       "awayTeam": "team_sabah_fk",
       "venue": null,
-      "result": null
+      "result": "4-1"
     },
     "dataQuality": "verified",
     "externalIds": {
