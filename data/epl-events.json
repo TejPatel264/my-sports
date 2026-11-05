@@ -3631,29 +3631,6 @@
     "competitionId": "epl",
     "seasonId": "epl_2026_27",
     "date": "2026-12-19T15:00:00Z",
-    "title": "Nottingham Forest vs Everton",
-    "participants": [
-      "team_nottingham_forest",
-      "team_everton"
-    ],
-    "sportData": {
-      "kind": "football_match",
-      "homeTeam": "team_nottingham_forest",
-      "awayTeam": "team_everton",
-      "venue": null,
-      "result": null
-    },
-    "dataQuality": "verified",
-    "externalIds": {
-      "footballDataOrgId": 560694
-    },
-    "id": "evt_epl_190"
-  },
-  {
-    "sportId": "football",
-    "competitionId": "epl",
-    "seasonId": "epl_2026_27",
-    "date": "2026-12-19T15:00:00Z",
     "title": "Manchester City vs Hull City",
     "participants": [
       "team_manchester_city",
@@ -3717,6 +3694,29 @@
     "externalIds": {
       "footballDataOrgId": 560700
     }
+  },
+  {
+    "sportId": "football",
+    "competitionId": "epl",
+    "seasonId": "epl_2026_27",
+    "date": "2026-12-20T14:00:00Z",
+    "title": "Nottingham Forest vs Everton",
+    "participants": [
+      "team_nottingham_forest",
+      "team_everton"
+    ],
+    "sportData": {
+      "kind": "football_match",
+      "homeTeam": "team_nottingham_forest",
+      "awayTeam": "team_everton",
+      "venue": null,
+      "result": null
+    },
+    "dataQuality": "verified",
+    "externalIds": {
+      "footballDataOrgId": 560694
+    },
+    "id": "evt_epl_190"
   },
   {
     "sportId": "football",

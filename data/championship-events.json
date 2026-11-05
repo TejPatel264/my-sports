@@ -3809,7 +3809,7 @@
       "homeTeam": "team_cardiff_city",
       "awayTeam": "team_west_ham_united",
       "venue": null,
-      "result": null
+      "result": "3-3"
     },
     "dataQuality": "verified",
     "externalIds": {
@@ -3832,7 +3832,7 @@
       "homeTeam": "team_wrexham",
       "awayTeam": "team_middlesbrough",
       "venue": null,
-      "result": null
+      "result": "2-0"
     },
     "dataQuality": "verified",
     "externalIds": {
@@ -3855,7 +3855,7 @@
       "homeTeam": "team_bristol_city",
       "awayTeam": "team_wolverhampton_wanderers",
       "venue": null,
-      "result": null
+      "result": "1-2"
     },
     "dataQuality": "verified",
     "externalIds": {
