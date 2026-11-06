@@ -938991,6 +938991,136 @@
   },
   {
     "sportId": "tennis",
+    "competitionId": "tennis_wta_hong_kong",
+    "seasonId": "tennis_wta_hong_kong_2026",
+    "date": "2026-11-02T00:00:00Z",
+    "title": "Antonia Ruzic vs Xinyu Wang",
+    "participants": [
+      "tennis_player_wta_222045",
+      "tennis_player_wta_216133"
+    ],
+    "sportData": {
+      "kind": "tennis_match",
+      "round": "R16",
+      "surface": "Hard",
+      "tournamentLevel": "250",
+      "winner": "tennis_player_wta_222045",
+      "loser": "tennis_player_wta_216133",
+      "score": "6-3 4-6 6-2",
+      "durationMinutes": 134
+    },
+    "dataQuality": "verified",
+    "externalIds": {
+      "tmlMatchId": "wta_2026-1074_20"
+    },
+    "id": "evt_tennis_036171"
+  },
+  {
+    "sportId": "tennis",
+    "competitionId": "tennis_wta_hong_kong",
+    "seasonId": "tennis_wta_hong_kong_2026",
+    "date": "2026-11-02T00:00:00Z",
+    "title": "Alexandra Shubladze vs Elena Pridankina",
+    "participants": [
+      "tennis_player_wta_332168",
+      "tennis_player_wta_239389"
+    ],
+    "sportData": {
+      "kind": "tennis_match",
+      "round": "R16",
+      "surface": "Hard",
+      "tournamentLevel": "250",
+      "winner": "tennis_player_wta_332168",
+      "loser": "tennis_player_wta_239389",
+      "score": "6-7(6) 6-1 6-3",
+      "durationMinutes": 165
+    },
+    "dataQuality": "verified",
+    "externalIds": {
+      "tmlMatchId": "wta_2026-1074_21"
+    },
+    "id": "evt_tennis_036172"
+  },
+  {
+    "sportId": "tennis",
+    "competitionId": "tennis_wta_hong_kong",
+    "seasonId": "tennis_wta_hong_kong_2026",
+    "date": "2026-11-02T00:00:00Z",
+    "title": "Zeynep Sonmez vs Mika Stojsavljevic",
+    "participants": [
+      "tennis_player_wta_220309",
+      "tennis_player_wta_261963"
+    ],
+    "sportData": {
+      "kind": "tennis_match",
+      "round": "R16",
+      "surface": "Hard",
+      "tournamentLevel": "250",
+      "winner": "tennis_player_wta_220309",
+      "loser": "tennis_player_wta_261963",
+      "score": "7-6(5) 6-4",
+      "durationMinutes": 125
+    },
+    "dataQuality": "verified",
+    "externalIds": {
+      "tmlMatchId": "wta_2026-1074_22"
+    },
+    "id": "evt_tennis_036173"
+  },
+  {
+    "sportId": "tennis",
+    "competitionId": "tennis_wta_hong_kong",
+    "seasonId": "tennis_wta_hong_kong_2026",
+    "date": "2026-11-02T00:00:00Z",
+    "title": "Alexandra Eala vs Tereza Valentova",
+    "participants": [
+      "tennis_player_wta_223253",
+      "tennis_player_wta_238184"
+    ],
+    "sportData": {
+      "kind": "tennis_match",
+      "round": "R16",
+      "surface": "Hard",
+      "tournamentLevel": "250",
+      "winner": "tennis_player_wta_223253",
+      "loser": "tennis_player_wta_238184",
+      "score": "6-4 7-6(7)",
+      "durationMinutes": 116
+    },
+    "dataQuality": "verified",
+    "externalIds": {
+      "tmlMatchId": "wta_2026-1074_23"
+    },
+    "id": "evt_tennis_036174"
+  },
+  {
+    "sportId": "tennis",
+    "competitionId": "tennis_wta_hong_kong",
+    "seasonId": "tennis_wta_hong_kong_2026",
+    "date": "2026-11-02T00:00:00Z",
+    "title": "Sorana Cirstea vs Mary Stoiana",
+    "participants": [
+      "tennis_player_wta_201514",
+      "tennis_player_wta_269265"
+    ],
+    "sportData": {
+      "kind": "tennis_match",
+      "round": "R16",
+      "surface": "Hard",
+      "tournamentLevel": "250",
+      "winner": "tennis_player_wta_201514",
+      "loser": "tennis_player_wta_269265",
+      "score": "7-5 6-1",
+      "durationMinutes": 103
+    },
+    "dataQuality": "verified",
+    "externalIds": {
+      "tmlMatchId": "wta_2026-1074_24"
+    },
+    "id": "evt_tennis_036175"
+  },
+  {
+    "sportId": "tennis",
     "competitionId": "tennis_atp_paris_masters",
     "seasonId": "tennis_atp_paris_masters_2026",
     "date": "2026-11-03T00:00:00Z",
@@ -939849,6 +939979,110 @@
   },
   {
     "sportId": "tennis",
+    "competitionId": "tennis_wta_chennai",
+    "seasonId": "tennis_wta_chennai_2026",
+    "date": "2026-11-03T00:00:00Z",
+    "title": "Magda Linette vs Moyuka Uchijima",
+    "participants": [
+      "tennis_player_wta_202663",
+      "tennis_player_wta_220416"
+    ],
+    "sportData": {
+      "kind": "tennis_match",
+      "round": "R16",
+      "surface": "Hard",
+      "tournamentLevel": "250",
+      "winner": "tennis_player_wta_202663",
+      "loser": "tennis_player_wta_220416",
+      "score": "7-6(5) 6-0",
+      "durationMinutes": 101
+    },
+    "dataQuality": "verified",
+    "externalIds": {
+      "tmlMatchId": "wta_2026-1148_21"
+    },
+    "id": "evt_tennis_036176"
+  },
+  {
+    "sportId": "tennis",
+    "competitionId": "tennis_wta_chennai",
+    "seasonId": "tennis_wta_chennai_2026",
+    "date": "2026-11-03T00:00:00Z",
+    "title": "Mai Hontama vs Zhibek Kulambayeva",
+    "participants": [
+      "tennis_player_wta_215988",
+      "tennis_player_wta_214992"
+    ],
+    "sportData": {
+      "kind": "tennis_match",
+      "round": "R16",
+      "surface": "Hard",
+      "tournamentLevel": "250",
+      "winner": "tennis_player_wta_215988",
+      "loser": "tennis_player_wta_214992",
+      "score": "4-6 6-4 7-5",
+      "durationMinutes": 187
+    },
+    "dataQuality": "verified",
+    "externalIds": {
+      "tmlMatchId": "wta_2026-1148_22"
+    },
+    "id": "evt_tennis_036177"
+  },
+  {
+    "sportId": "tennis",
+    "competitionId": "tennis_wta_chennai",
+    "seasonId": "tennis_wta_chennai_2026",
+    "date": "2026-11-03T00:00:00Z",
+    "title": "Lucrezia Stefanini vs Simona Waltert",
+    "participants": [
+      "tennis_player_wta_214593",
+      "tennis_player_wta_215899"
+    ],
+    "sportData": {
+      "kind": "tennis_match",
+      "round": "R16",
+      "surface": "Hard",
+      "tournamentLevel": "250",
+      "winner": "tennis_player_wta_214593",
+      "loser": "tennis_player_wta_215899",
+      "score": "6-2 6-3",
+      "durationMinutes": 92
+    },
+    "dataQuality": "verified",
+    "externalIds": {
+      "tmlMatchId": "wta_2026-1148_23"
+    },
+    "id": "evt_tennis_036178"
+  },
+  {
+    "sportId": "tennis",
+    "competitionId": "tennis_wta_chennai",
+    "seasonId": "tennis_wta_chennai_2026",
+    "date": "2026-11-03T00:00:00Z",
+    "title": "Anastasia Zakharova vs Vaishnavi Adkar",
+    "participants": [
+      "tennis_player_wta_220435",
+      "tennis_player_wta_261038"
+    ],
+    "sportData": {
+      "kind": "tennis_match",
+      "round": "R16",
+      "surface": "Hard",
+      "tournamentLevel": "250",
+      "winner": "tennis_player_wta_220435",
+      "loser": "tennis_player_wta_261038",
+      "score": "6-3 6-0",
+      "durationMinutes": 82
+    },
+    "dataQuality": "verified",
+    "externalIds": {
+      "tmlMatchId": "wta_2026-1148_24"
+    },
+    "id": "evt_tennis_036179"
+  },
+  {
+    "sportId": "tennis",
     "competitionId": "tennis_atp_paris_masters",
     "seasonId": "tennis_atp_paris_masters_2026",
     "date": "2026-11-04T00:00:00Z",
@@ -940210,5 +940444,213 @@
       "tmlMatchId": "atp_2026-352_40"
     },
     "id": "evt_tennis_036153"
+  },
+  {
+    "sportId": "tennis",
+    "competitionId": "tennis_atp_paris_masters",
+    "seasonId": "tennis_atp_paris_masters_2026",
+    "date": "2026-11-05T00:00:00Z",
+    "title": "Carlos Alcaraz vs Matteo Berrettini",
+    "participants": [
+      "tennis_player_atp_A0E2",
+      "tennis_player_atp_BK40"
+    ],
+    "sportData": {
+      "kind": "tennis_match",
+      "round": "R16",
+      "surface": "Hard",
+      "tournamentLevel": "M",
+      "winner": "tennis_player_atp_A0E2",
+      "loser": "tennis_player_atp_BK40",
+      "score": "W/O",
+      "durationMinutes": null
+    },
+    "dataQuality": "verified",
+    "externalIds": {
+      "tmlMatchId": "atp_2026-352_41"
+    },
+    "id": "evt_tennis_036163"
+  },
+  {
+    "sportId": "tennis",
+    "competitionId": "tennis_atp_paris_masters",
+    "seasonId": "tennis_atp_paris_masters_2026",
+    "date": "2026-11-05T00:00:00Z",
+    "title": "Tommy Paul vs Quentin Halys",
+    "participants": [
+      "tennis_player_atp_PL56",
+      "tennis_player_atp_HB64"
+    ],
+    "sportData": {
+      "kind": "tennis_match",
+      "round": "R16",
+      "surface": "Hard",
+      "tournamentLevel": "M",
+      "winner": "tennis_player_atp_PL56",
+      "loser": "tennis_player_atp_HB64",
+      "score": "7-6(3) 6-4",
+      "durationMinutes": 95
+    },
+    "dataQuality": "verified",
+    "externalIds": {
+      "tmlMatchId": "atp_2026-352_42"
+    },
+    "id": "evt_tennis_036164"
+  },
+  {
+    "sportId": "tennis",
+    "competitionId": "tennis_atp_paris_masters",
+    "seasonId": "tennis_atp_paris_masters_2026",
+    "date": "2026-11-05T00:00:00Z",
+    "title": "Ben Shelton vs Arthur Rinderknech",
+    "participants": [
+      "tennis_player_atp_S0S1",
+      "tennis_player_atp_RC91"
+    ],
+    "sportData": {
+      "kind": "tennis_match",
+      "round": "R16",
+      "surface": "Hard",
+      "tournamentLevel": "M",
+      "winner": "tennis_player_atp_S0S1",
+      "loser": "tennis_player_atp_RC91",
+      "score": "3-6 6-4 7-6(5)",
+      "durationMinutes": 124
+    },
+    "dataQuality": "verified",
+    "externalIds": {
+      "tmlMatchId": "atp_2026-352_43"
+    },
+    "id": "evt_tennis_036165"
+  },
+  {
+    "sportId": "tennis",
+    "competitionId": "tennis_atp_paris_masters",
+    "seasonId": "tennis_atp_paris_masters_2026",
+    "date": "2026-11-05T00:00:00Z",
+    "title": "Rinky Hijikata vs Tomas Martin Etcheverry",
+    "participants": [
+      "tennis_player_atp_H0BH",
+      "tennis_player_atp_EA24"
+    ],
+    "sportData": {
+      "kind": "tennis_match",
+      "round": "R16",
+      "surface": "Hard",
+      "tournamentLevel": "M",
+      "winner": "tennis_player_atp_H0BH",
+      "loser": "tennis_player_atp_EA24",
+      "score": "2-6 6-3 7-5",
+      "durationMinutes": 127
+    },
+    "dataQuality": "verified",
+    "externalIds": {
+      "tmlMatchId": "atp_2026-352_44"
+    },
+    "id": "evt_tennis_036166"
+  },
+  {
+    "sportId": "tennis",
+    "competitionId": "tennis_atp_paris_masters",
+    "seasonId": "tennis_atp_paris_masters_2026",
+    "date": "2026-11-05T00:00:00Z",
+    "title": "Luca Van Assche vs Lorenzo Musetti",
+    "participants": [
+      "tennis_player_atp_V0DZ",
+      "tennis_player_atp_M0EJ"
+    ],
+    "sportData": {
+      "kind": "tennis_match",
+      "round": "R16",
+      "surface": "Hard",
+      "tournamentLevel": "M",
+      "winner": "tennis_player_atp_V0DZ",
+      "loser": "tennis_player_atp_M0EJ",
+      "score": "7-5 3-6 6-4",
+      "durationMinutes": 159
+    },
+    "dataQuality": "verified",
+    "externalIds": {
+      "tmlMatchId": "atp_2026-352_45"
+    },
+    "id": "evt_tennis_036167"
+  },
+  {
+    "sportId": "tennis",
+    "competitionId": "tennis_atp_paris_masters",
+    "seasonId": "tennis_atp_paris_masters_2026",
+    "date": "2026-11-05T00:00:00Z",
+    "title": "Nuno Borges vs Ignacio Buse",
+    "participants": [
+      "tennis_player_atp_BT72",
+      "tennis_player_atp_B0ID"
+    ],
+    "sportData": {
+      "kind": "tennis_match",
+      "round": "R16",
+      "surface": "Hard",
+      "tournamentLevel": "M",
+      "winner": "tennis_player_atp_BT72",
+      "loser": "tennis_player_atp_B0ID",
+      "score": "6-0 6-2",
+      "durationMinutes": 72
+    },
+    "dataQuality": "verified",
+    "externalIds": {
+      "tmlMatchId": "atp_2026-352_46"
+    },
+    "id": "evt_tennis_036168"
+  },
+  {
+    "sportId": "tennis",
+    "competitionId": "tennis_atp_paris_masters",
+    "seasonId": "tennis_atp_paris_masters_2026",
+    "date": "2026-11-05T00:00:00Z",
+    "title": "Taylor Fritz vs Arthur Fils",
+    "participants": [
+      "tennis_player_atp_FB98",
+      "tennis_player_atp_F0F1"
+    ],
+    "sportData": {
+      "kind": "tennis_match",
+      "round": "R16",
+      "surface": "Hard",
+      "tournamentLevel": "M",
+      "winner": "tennis_player_atp_FB98",
+      "loser": "tennis_player_atp_F0F1",
+      "score": "6-3 6-4",
+      "durationMinutes": 72
+    },
+    "dataQuality": "verified",
+    "externalIds": {
+      "tmlMatchId": "atp_2026-352_47"
+    },
+    "id": "evt_tennis_036169"
+  },
+  {
+    "sportId": "tennis",
+    "competitionId": "tennis_atp_paris_masters",
+    "seasonId": "tennis_atp_paris_masters_2026",
+    "date": "2026-11-05T00:00:00Z",
+    "title": "Casper Ruud vs Jan-Lennard Struff",
+    "participants": [
+      "tennis_player_atp_RH16",
+      "tennis_player_atp_SL28"
+    ],
+    "sportData": {
+      "kind": "tennis_match",
+      "round": "R16",
+      "surface": "Hard",
+      "tournamentLevel": "M",
+      "winner": "tennis_player_atp_RH16",
+      "loser": "tennis_player_atp_SL28",
+      "score": "6-3 6-3",
+      "durationMinutes": 63
+    },
+    "dataQuality": "verified",
+    "externalIds": {
+      "tmlMatchId": "atp_2026-352_48"
+    },
+    "id": "evt_tennis_036170"
   }
 ]
