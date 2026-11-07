@@ -3878,7 +3878,7 @@
       "homeTeam": "team_derby_county",
       "awayTeam": "team_bolton_wanderers",
       "venue": null,
-      "result": null
+      "result": "3-1"
     },
     "dataQuality": "verified",
     "externalIds": {
@@ -4144,29 +4144,6 @@
     "competitionId": "championship",
     "seasonId": "championship_2026_27",
     "date": "2026-11-21T12:30:00Z",
-    "title": "Sheffield United vs Watford",
-    "participants": [
-      "team_sheffield_united",
-      "team_watford"
-    ],
-    "sportData": {
-      "kind": "football_match",
-      "homeTeam": "team_sheffield_united",
-      "awayTeam": "team_watford",
-      "venue": null,
-      "result": null
-    },
-    "dataQuality": "verified",
-    "externalIds": {
-      "footballDataOrgId": 561941
-    },
-    "id": "evt_championship_181"
-  },
-  {
-    "sportId": "football",
-    "competitionId": "championship",
-    "seasonId": "championship_2026_27",
-    "date": "2026-11-21T12:30:00Z",
     "title": "Southampton vs Derby County",
     "participants": [
       "team_southampton",
@@ -4207,6 +4184,52 @@
       "footballDataOrgId": 561950
     },
     "id": "evt_championship_183"
+  },
+  {
+    "sportId": "football",
+    "competitionId": "championship",
+    "seasonId": "championship_2026_27",
+    "date": "2026-11-21T12:30:00Z",
+    "title": "Norwich City vs Cardiff City",
+    "participants": [
+      "team_norwich_city",
+      "team_cardiff_city"
+    ],
+    "sportData": {
+      "kind": "football_match",
+      "homeTeam": "team_norwich_city",
+      "awayTeam": "team_cardiff_city",
+      "venue": null,
+      "result": null
+    },
+    "dataQuality": "verified",
+    "externalIds": {
+      "footballDataOrgId": 561948
+    },
+    "id": "evt_championship_188"
+  },
+  {
+    "sportId": "football",
+    "competitionId": "championship",
+    "seasonId": "championship_2026_27",
+    "date": "2026-11-21T15:00:00Z",
+    "title": "Sheffield United vs Watford",
+    "participants": [
+      "team_sheffield_united",
+      "team_watford"
+    ],
+    "sportData": {
+      "kind": "football_match",
+      "homeTeam": "team_sheffield_united",
+      "awayTeam": "team_watford",
+      "venue": null,
+      "result": null
+    },
+    "dataQuality": "verified",
+    "externalIds": {
+      "footballDataOrgId": 561941
+    },
+    "id": "evt_championship_181"
   },
   {
     "sportId": "football",
@@ -4299,29 +4322,6 @@
       "footballDataOrgId": 561946
     },
     "id": "evt_championship_187"
-  },
-  {
-    "sportId": "football",
-    "competitionId": "championship",
-    "seasonId": "championship_2026_27",
-    "date": "2026-11-21T15:00:00Z",
-    "title": "Norwich City vs Cardiff City",
-    "participants": [
-      "team_norwich_city",
-      "team_cardiff_city"
-    ],
-    "sportData": {
-      "kind": "football_match",
-      "homeTeam": "team_norwich_city",
-      "awayTeam": "team_cardiff_city",
-      "venue": null,
-      "result": null
-    },
-    "dataQuality": "verified",
-    "externalIds": {
-      "footballDataOrgId": 561948
-    },
-    "id": "evt_championship_188"
   },
   {
     "sportId": "football",
@@ -5063,6 +5063,29 @@
     "sportId": "football",
     "competitionId": "championship",
     "seasonId": "championship_2026_27",
+    "date": "2026-12-05T12:30:00Z",
+    "title": "Watford vs Millwall",
+    "participants": [
+      "team_watford",
+      "team_millwall"
+    ],
+    "sportData": {
+      "kind": "football_match",
+      "homeTeam": "team_watford",
+      "awayTeam": "team_millwall",
+      "venue": null,
+      "result": null
+    },
+    "dataQuality": "verified",
+    "externalIds": {
+      "footballDataOrgId": 561984
+    },
+    "id": "evt_championship_225"
+  },
+  {
+    "sportId": "football",
+    "competitionId": "championship",
+    "seasonId": "championship_2026_27",
     "date": "2026-12-05T15:00:00Z",
     "title": "Cardiff City vs Lincoln City",
     "participants": [
@@ -5150,29 +5173,6 @@
       "footballDataOrgId": 561982
     },
     "id": "evt_championship_224"
-  },
-  {
-    "sportId": "football",
-    "competitionId": "championship",
-    "seasonId": "championship_2026_27",
-    "date": "2026-12-05T15:00:00Z",
-    "title": "Watford vs Millwall",
-    "participants": [
-      "team_watford",
-      "team_millwall"
-    ],
-    "sportData": {
-      "kind": "football_match",
-      "homeTeam": "team_watford",
-      "awayTeam": "team_millwall",
-      "venue": null,
-      "result": null
-    },
-    "dataQuality": "verified",
-    "externalIds": {
-      "footballDataOrgId": 561984
-    },
-    "id": "evt_championship_225"
   },
   {
     "sportId": "football",
@@ -5385,7 +5385,7 @@
     "sportId": "football",
     "competitionId": "championship",
     "seasonId": "championship_2026_27",
-    "date": "2026-12-08T19:45:00Z",
+    "date": "2026-12-08T20:00:00Z",
     "title": "Birmingham City vs Watford",
     "participants": [
       "team_birmingham_city",
@@ -5408,7 +5408,7 @@
     "sportId": "football",
     "competitionId": "championship",
     "seasonId": "championship_2026_27",
-    "date": "2026-12-08T20:45:00Z",
+    "date": "2026-12-08T20:00:00Z",
     "title": "West Ham United vs Middlesbrough",
     "participants": [
       "team_west_ham_united",
@@ -5662,29 +5662,6 @@
     "competitionId": "championship",
     "seasonId": "championship_2026_27",
     "date": "2026-12-12T15:00:00Z",
-    "title": "Lincoln City vs Norwich City",
-    "participants": [
-      "team_lincoln_city",
-      "team_norwich_city"
-    ],
-    "sportData": {
-      "kind": "football_match",
-      "homeTeam": "team_lincoln_city",
-      "awayTeam": "team_norwich_city",
-      "venue": null,
-      "result": null
-    },
-    "dataQuality": "verified",
-    "externalIds": {
-      "footballDataOrgId": 562007
-    },
-    "id": "evt_championship_247"
-  },
-  {
-    "sportId": "football",
-    "competitionId": "championship",
-    "seasonId": "championship_2026_27",
-    "date": "2026-12-12T15:00:00Z",
     "title": "Blackburn Rovers vs Derby County",
     "participants": [
       "team_blackburn_rovers",
@@ -5794,6 +5771,29 @@
       "footballDataOrgId": 562012
     },
     "id": "evt_championship_252"
+  },
+  {
+    "sportId": "football",
+    "competitionId": "championship",
+    "seasonId": "championship_2026_27",
+    "date": "2026-12-13T14:00:00Z",
+    "title": "Lincoln City vs Norwich City",
+    "participants": [
+      "team_lincoln_city",
+      "team_norwich_city"
+    ],
+    "sportData": {
+      "kind": "football_match",
+      "homeTeam": "team_lincoln_city",
+      "awayTeam": "team_norwich_city",
+      "venue": null,
+      "result": null
+    },
+    "dataQuality": "verified",
+    "externalIds": {
+      "footballDataOrgId": 562007
+    },
+    "id": "evt_championship_247"
   },
   {
     "sportId": "football",
@@ -6513,29 +6513,6 @@
     "competitionId": "championship",
     "seasonId": "championship_2026_27",
     "date": "2026-12-29T19:45:00Z",
-    "title": "Birmingham City vs Cardiff City",
-    "participants": [
-      "team_birmingham_city",
-      "team_cardiff_city"
-    ],
-    "sportData": {
-      "kind": "football_match",
-      "homeTeam": "team_birmingham_city",
-      "awayTeam": "team_cardiff_city",
-      "venue": null,
-      "result": null
-    },
-    "dataQuality": "verified",
-    "externalIds": {
-      "footballDataOrgId": 562045
-    },
-    "id": "evt_championship_284"
-  },
-  {
-    "sportId": "football",
-    "competitionId": "championship",
-    "seasonId": "championship_2026_27",
-    "date": "2026-12-29T19:45:00Z",
     "title": "Middlesbrough vs Bolton Wanderers",
     "participants": [
       "team_middlesbrough",
@@ -6604,6 +6581,29 @@
     "sportId": "football",
     "competitionId": "championship",
     "seasonId": "championship_2026_27",
+    "date": "2026-12-29T20:00:00Z",
+    "title": "Birmingham City vs Cardiff City",
+    "participants": [
+      "team_birmingham_city",
+      "team_cardiff_city"
+    ],
+    "sportData": {
+      "kind": "football_match",
+      "homeTeam": "team_birmingham_city",
+      "awayTeam": "team_cardiff_city",
+      "venue": null,
+      "result": null
+    },
+    "dataQuality": "verified",
+    "externalIds": {
+      "footballDataOrgId": 562045
+    },
+    "id": "evt_championship_284"
+  },
+  {
+    "sportId": "football",
+    "competitionId": "championship",
+    "seasonId": "championship_2026_27",
     "date": "2026-12-29T20:15:00Z",
     "title": "Southampton vs West Ham United",
     "participants": [
@@ -6627,7 +6627,7 @@
     "sportId": "football",
     "competitionId": "championship",
     "seasonId": "championship_2026_27",
-    "date": "2027-01-01T00:00:00Z",
+    "date": "2027-01-01T12:00:00Z",
     "title": "Middlesbrough vs Preston North End",
     "participants": [
       "team_middlesbrough",
@@ -6650,7 +6650,7 @@
     "sportId": "football",
     "competitionId": "championship",
     "seasonId": "championship_2026_27",
-    "date": "2027-01-01T00:00:00Z",
+    "date": "2027-01-01T12:00:00Z",
     "title": "Southampton vs Cardiff City",
     "participants": [
       "team_southampton",
@@ -6673,7 +6673,7 @@
     "sportId": "football",
     "competitionId": "championship",
     "seasonId": "championship_2026_27",
-    "date": "2027-01-01T00:00:00Z",
+    "date": "2027-01-01T12:00:00Z",
     "title": "Watford vs Queens Park Rangers",
     "participants": [
       "team_watford",
@@ -6696,7 +6696,7 @@
     "sportId": "football",
     "competitionId": "championship",
     "seasonId": "championship_2026_27",
-    "date": "2027-01-01T00:00:00Z",
+    "date": "2027-01-01T12:00:00Z",
     "title": "Burnley vs Sheffield United",
     "participants": [
       "team_burnley",
@@ -6719,7 +6719,7 @@
     "sportId": "football",
     "competitionId": "championship",
     "seasonId": "championship_2026_27",
-    "date": "2027-01-01T00:00:00Z",
+    "date": "2027-01-01T12:00:00Z",
     "title": "Derby County vs Blackburn Rovers",
     "participants": [
       "team_derby_county",
@@ -6742,7 +6742,7 @@
     "sportId": "football",
     "competitionId": "championship",
     "seasonId": "championship_2026_27",
-    "date": "2027-01-01T00:00:00Z",
+    "date": "2027-01-01T12:00:00Z",
     "title": "Birmingham City vs Portsmouth",
     "participants": [
       "team_birmingham_city",
@@ -6765,7 +6765,7 @@
     "sportId": "football",
     "competitionId": "championship",
     "seasonId": "championship_2026_27",
-    "date": "2027-01-01T00:00:00Z",
+    "date": "2027-01-01T12:00:00Z",
     "title": "West Bromwich Albion vs Stoke City",
     "participants": [
       "team_west_bromwich_albion",
@@ -6788,7 +6788,7 @@
     "sportId": "football",
     "competitionId": "championship",
     "seasonId": "championship_2026_27",
-    "date": "2027-01-01T00:00:00Z",
+    "date": "2027-01-01T12:00:00Z",
     "title": "Norwich City vs Lincoln City",
     "participants": [
       "team_norwich_city",
@@ -6811,7 +6811,7 @@
     "sportId": "football",
     "competitionId": "championship",
     "seasonId": "championship_2026_27",
-    "date": "2027-01-01T00:00:00Z",
+    "date": "2027-01-01T12:00:00Z",
     "title": "Swansea City vs Charlton Athletic",
     "participants": [
       "team_swansea_city",
@@ -6834,7 +6834,7 @@
     "sportId": "football",
     "competitionId": "championship",
     "seasonId": "championship_2026_27",
-    "date": "2027-01-01T00:00:00Z",
+    "date": "2027-01-01T12:00:00Z",
     "title": "Wrexham vs Bolton Wanderers",
     "participants": [
       "team_wrexham",
@@ -6857,7 +6857,7 @@
     "sportId": "football",
     "competitionId": "championship",
     "seasonId": "championship_2026_27",
-    "date": "2027-01-01T00:00:00Z",
+    "date": "2027-01-01T12:00:00Z",
     "title": "Millwall vs Wolverhampton Wanderers",
     "participants": [
       "team_millwall",
@@ -6880,7 +6880,7 @@
     "sportId": "football",
     "competitionId": "championship",
     "seasonId": "championship_2026_27",
-    "date": "2027-01-01T00:00:00Z",
+    "date": "2027-01-01T12:00:00Z",
     "title": "Bristol City vs West Ham United",
     "participants": [
       "team_bristol_city",
@@ -6903,214 +6903,7 @@
     "sportId": "football",
     "competitionId": "championship",
     "seasonId": "championship_2026_27",
-    "date": "2027-01-16T00:00:00Z",
-    "title": "Stoke City vs Derby County",
-    "participants": [
-      "team_stoke_city",
-      "team_derby_county"
-    ],
-    "sportData": {
-      "kind": "football_match",
-      "homeTeam": "team_stoke_city",
-      "awayTeam": "team_derby_county",
-      "venue": null,
-      "result": null
-    },
-    "dataQuality": "verified",
-    "externalIds": {
-      "footballDataOrgId": 562061
-    },
-    "id": "evt_championship_301"
-  },
-  {
-    "sportId": "football",
-    "competitionId": "championship",
-    "seasonId": "championship_2026_27",
-    "date": "2027-01-16T00:00:00Z",
-    "title": "Charlton Athletic vs Watford",
-    "participants": [
-      "team_charlton_athletic",
-      "team_watford"
-    ],
-    "sportData": {
-      "kind": "football_match",
-      "homeTeam": "team_charlton_athletic",
-      "awayTeam": "team_watford",
-      "venue": null,
-      "result": null
-    },
-    "dataQuality": "verified",
-    "externalIds": {
-      "footballDataOrgId": 562062
-    },
-    "id": "evt_championship_302"
-  },
-  {
-    "sportId": "football",
-    "competitionId": "championship",
-    "seasonId": "championship_2026_27",
-    "date": "2027-01-16T00:00:00Z",
-    "title": "Wolverhampton Wanderers vs Burnley",
-    "participants": [
-      "team_wolverhampton_wanderers",
-      "team_burnley"
-    ],
-    "sportData": {
-      "kind": "football_match",
-      "homeTeam": "team_wolverhampton_wanderers",
-      "awayTeam": "team_burnley",
-      "venue": null,
-      "result": null
-    },
-    "dataQuality": "verified",
-    "externalIds": {
-      "footballDataOrgId": 562063
-    },
-    "id": "evt_championship_303"
-  },
-  {
-    "sportId": "football",
-    "competitionId": "championship",
-    "seasonId": "championship_2026_27",
-    "date": "2027-01-16T00:00:00Z",
-    "title": "Preston North End vs Wrexham",
-    "participants": [
-      "team_preston_north_end",
-      "team_wrexham"
-    ],
-    "sportData": {
-      "kind": "football_match",
-      "homeTeam": "team_preston_north_end",
-      "awayTeam": "team_wrexham",
-      "venue": null,
-      "result": null
-    },
-    "dataQuality": "verified",
-    "externalIds": {
-      "footballDataOrgId": 562064
-    },
-    "id": "evt_championship_304"
-  },
-  {
-    "sportId": "football",
-    "competitionId": "championship",
-    "seasonId": "championship_2026_27",
-    "date": "2027-01-16T00:00:00Z",
-    "title": "Cardiff City vs Middlesbrough",
-    "participants": [
-      "team_cardiff_city",
-      "team_middlesbrough"
-    ],
-    "sportData": {
-      "kind": "football_match",
-      "homeTeam": "team_cardiff_city",
-      "awayTeam": "team_middlesbrough",
-      "venue": null,
-      "result": null
-    },
-    "dataQuality": "verified",
-    "externalIds": {
-      "footballDataOrgId": 562065
-    },
-    "id": "evt_championship_305"
-  },
-  {
-    "sportId": "football",
-    "competitionId": "championship",
-    "seasonId": "championship_2026_27",
-    "date": "2027-01-16T00:00:00Z",
-    "title": "Lincoln City vs Millwall",
-    "participants": [
-      "team_lincoln_city",
-      "team_millwall"
-    ],
-    "sportData": {
-      "kind": "football_match",
-      "homeTeam": "team_lincoln_city",
-      "awayTeam": "team_millwall",
-      "venue": null,
-      "result": null
-    },
-    "dataQuality": "verified",
-    "externalIds": {
-      "footballDataOrgId": 562066
-    },
-    "id": "evt_championship_306"
-  },
-  {
-    "sportId": "football",
-    "competitionId": "championship",
-    "seasonId": "championship_2026_27",
-    "date": "2027-01-16T00:00:00Z",
-    "title": "Portsmouth vs Norwich City",
-    "participants": [
-      "team_portsmouth",
-      "team_norwich_city"
-    ],
-    "sportData": {
-      "kind": "football_match",
-      "homeTeam": "team_portsmouth",
-      "awayTeam": "team_norwich_city",
-      "venue": null,
-      "result": null
-    },
-    "dataQuality": "verified",
-    "externalIds": {
-      "footballDataOrgId": 562067
-    },
-    "id": "evt_championship_307"
-  },
-  {
-    "sportId": "football",
-    "competitionId": "championship",
-    "seasonId": "championship_2026_27",
-    "date": "2027-01-16T00:00:00Z",
-    "title": "Queens Park Rangers vs Birmingham City",
-    "participants": [
-      "team_queens_park_rangers",
-      "team_birmingham_city"
-    ],
-    "sportData": {
-      "kind": "football_match",
-      "homeTeam": "team_queens_park_rangers",
-      "awayTeam": "team_birmingham_city",
-      "venue": null,
-      "result": null
-    },
-    "dataQuality": "verified",
-    "externalIds": {
-      "footballDataOrgId": 562068
-    },
-    "id": "evt_championship_308"
-  },
-  {
-    "sportId": "football",
-    "competitionId": "championship",
-    "seasonId": "championship_2026_27",
-    "date": "2027-01-16T00:00:00Z",
-    "title": "Sheffield United vs Bristol City",
-    "participants": [
-      "team_sheffield_united",
-      "team_bristol_city"
-    ],
-    "sportData": {
-      "kind": "football_match",
-      "homeTeam": "team_sheffield_united",
-      "awayTeam": "team_bristol_city",
-      "venue": null,
-      "result": null
-    },
-    "dataQuality": "verified",
-    "externalIds": {
-      "footballDataOrgId": 562069
-    },
-    "id": "evt_championship_309"
-  },
-  {
-    "sportId": "football",
-    "competitionId": "championship",
-    "seasonId": "championship_2026_27",
-    "date": "2027-01-16T00:00:00Z",
+    "date": "2027-01-15T12:00:00Z",
     "title": "West Ham United vs Swansea City",
     "participants": [
       "team_west_ham_united",
@@ -7133,7 +6926,191 @@
     "sportId": "football",
     "competitionId": "championship",
     "seasonId": "championship_2026_27",
-    "date": "2027-01-16T00:00:00Z",
+    "date": "2027-01-16T12:00:00Z",
+    "title": "Stoke City vs Derby County",
+    "participants": [
+      "team_stoke_city",
+      "team_derby_county"
+    ],
+    "sportData": {
+      "kind": "football_match",
+      "homeTeam": "team_stoke_city",
+      "awayTeam": "team_derby_county",
+      "venue": null,
+      "result": null
+    },
+    "dataQuality": "verified",
+    "externalIds": {
+      "footballDataOrgId": 562061
+    },
+    "id": "evt_championship_301"
+  },
+  {
+    "sportId": "football",
+    "competitionId": "championship",
+    "seasonId": "championship_2026_27",
+    "date": "2027-01-16T12:00:00Z",
+    "title": "Wolverhampton Wanderers vs Burnley",
+    "participants": [
+      "team_wolverhampton_wanderers",
+      "team_burnley"
+    ],
+    "sportData": {
+      "kind": "football_match",
+      "homeTeam": "team_wolverhampton_wanderers",
+      "awayTeam": "team_burnley",
+      "venue": null,
+      "result": null
+    },
+    "dataQuality": "verified",
+    "externalIds": {
+      "footballDataOrgId": 562063
+    },
+    "id": "evt_championship_303"
+  },
+  {
+    "sportId": "football",
+    "competitionId": "championship",
+    "seasonId": "championship_2026_27",
+    "date": "2027-01-16T12:00:00Z",
+    "title": "Preston North End vs Wrexham",
+    "participants": [
+      "team_preston_north_end",
+      "team_wrexham"
+    ],
+    "sportData": {
+      "kind": "football_match",
+      "homeTeam": "team_preston_north_end",
+      "awayTeam": "team_wrexham",
+      "venue": null,
+      "result": null
+    },
+    "dataQuality": "verified",
+    "externalIds": {
+      "footballDataOrgId": 562064
+    },
+    "id": "evt_championship_304"
+  },
+  {
+    "sportId": "football",
+    "competitionId": "championship",
+    "seasonId": "championship_2026_27",
+    "date": "2027-01-16T12:00:00Z",
+    "title": "Cardiff City vs Middlesbrough",
+    "participants": [
+      "team_cardiff_city",
+      "team_middlesbrough"
+    ],
+    "sportData": {
+      "kind": "football_match",
+      "homeTeam": "team_cardiff_city",
+      "awayTeam": "team_middlesbrough",
+      "venue": null,
+      "result": null
+    },
+    "dataQuality": "verified",
+    "externalIds": {
+      "footballDataOrgId": 562065
+    },
+    "id": "evt_championship_305"
+  },
+  {
+    "sportId": "football",
+    "competitionId": "championship",
+    "seasonId": "championship_2026_27",
+    "date": "2027-01-16T12:00:00Z",
+    "title": "Lincoln City vs Millwall",
+    "participants": [
+      "team_lincoln_city",
+      "team_millwall"
+    ],
+    "sportData": {
+      "kind": "football_match",
+      "homeTeam": "team_lincoln_city",
+      "awayTeam": "team_millwall",
+      "venue": null,
+      "result": null
+    },
+    "dataQuality": "verified",
+    "externalIds": {
+      "footballDataOrgId": 562066
+    },
+    "id": "evt_championship_306"
+  },
+  {
+    "sportId": "football",
+    "competitionId": "championship",
+    "seasonId": "championship_2026_27",
+    "date": "2027-01-16T12:00:00Z",
+    "title": "Portsmouth vs Norwich City",
+    "participants": [
+      "team_portsmouth",
+      "team_norwich_city"
+    ],
+    "sportData": {
+      "kind": "football_match",
+      "homeTeam": "team_portsmouth",
+      "awayTeam": "team_norwich_city",
+      "venue": null,
+      "result": null
+    },
+    "dataQuality": "verified",
+    "externalIds": {
+      "footballDataOrgId": 562067
+    },
+    "id": "evt_championship_307"
+  },
+  {
+    "sportId": "football",
+    "competitionId": "championship",
+    "seasonId": "championship_2026_27",
+    "date": "2027-01-16T12:00:00Z",
+    "title": "Queens Park Rangers vs Birmingham City",
+    "participants": [
+      "team_queens_park_rangers",
+      "team_birmingham_city"
+    ],
+    "sportData": {
+      "kind": "football_match",
+      "homeTeam": "team_queens_park_rangers",
+      "awayTeam": "team_birmingham_city",
+      "venue": null,
+      "result": null
+    },
+    "dataQuality": "verified",
+    "externalIds": {
+      "footballDataOrgId": 562068
+    },
+    "id": "evt_championship_308"
+  },
+  {
+    "sportId": "football",
+    "competitionId": "championship",
+    "seasonId": "championship_2026_27",
+    "date": "2027-01-16T12:00:00Z",
+    "title": "Sheffield United vs Bristol City",
+    "participants": [
+      "team_sheffield_united",
+      "team_bristol_city"
+    ],
+    "sportData": {
+      "kind": "football_match",
+      "homeTeam": "team_sheffield_united",
+      "awayTeam": "team_bristol_city",
+      "venue": null,
+      "result": null
+    },
+    "dataQuality": "verified",
+    "externalIds": {
+      "footballDataOrgId": 562069
+    },
+    "id": "evt_championship_309"
+  },
+  {
+    "sportId": "football",
+    "competitionId": "championship",
+    "seasonId": "championship_2026_27",
+    "date": "2027-01-16T12:00:00Z",
     "title": "Bolton Wanderers vs Southampton",
     "participants": [
       "team_bolton_wanderers",
@@ -7156,7 +7133,7 @@
     "sportId": "football",
     "competitionId": "championship",
     "seasonId": "championship_2026_27",
-    "date": "2027-01-16T00:00:00Z",
+    "date": "2027-01-16T12:00:00Z",
     "title": "Blackburn Rovers vs West Bromwich Albion",
     "participants": [
       "team_blackburn_rovers",
@@ -7179,30 +7156,30 @@
     "sportId": "football",
     "competitionId": "championship",
     "seasonId": "championship_2026_27",
-    "date": "2027-01-23T00:00:00Z",
-    "title": "Wrexham vs Sheffield United",
+    "date": "2027-01-17T12:00:00Z",
+    "title": "Charlton Athletic vs Watford",
     "participants": [
-      "team_wrexham",
-      "team_sheffield_united"
+      "team_charlton_athletic",
+      "team_watford"
     ],
     "sportData": {
       "kind": "football_match",
-      "homeTeam": "team_wrexham",
-      "awayTeam": "team_sheffield_united",
+      "homeTeam": "team_charlton_athletic",
+      "awayTeam": "team_watford",
       "venue": null,
       "result": null
     },
     "dataQuality": "verified",
     "externalIds": {
-      "footballDataOrgId": 562073
+      "footballDataOrgId": 562062
     },
-    "id": "evt_championship_313"
+    "id": "evt_championship_302"
   },
   {
     "sportId": "football",
     "competitionId": "championship",
     "seasonId": "championship_2026_27",
-    "date": "2027-01-23T00:00:00Z",
+    "date": "2027-01-22T12:00:00Z",
     "title": "Preston North End vs Stoke City",
     "participants": [
       "team_preston_north_end",
@@ -7225,30 +7202,30 @@
     "sportId": "football",
     "competitionId": "championship",
     "seasonId": "championship_2026_27",
-    "date": "2027-01-23T00:00:00Z",
-    "title": "Cardiff City vs Wolverhampton Wanderers",
+    "date": "2027-01-23T12:00:00Z",
+    "title": "Wrexham vs Sheffield United",
     "participants": [
-      "team_cardiff_city",
-      "team_wolverhampton_wanderers"
+      "team_wrexham",
+      "team_sheffield_united"
     ],
     "sportData": {
       "kind": "football_match",
-      "homeTeam": "team_cardiff_city",
-      "awayTeam": "team_wolverhampton_wanderers",
+      "homeTeam": "team_wrexham",
+      "awayTeam": "team_sheffield_united",
       "venue": null,
       "result": null
     },
     "dataQuality": "verified",
     "externalIds": {
-      "footballDataOrgId": 562075
+      "footballDataOrgId": 562073
     },
-    "id": "evt_championship_315"
+    "id": "evt_championship_313"
   },
   {
     "sportId": "football",
     "competitionId": "championship",
     "seasonId": "championship_2026_27",
-    "date": "2027-01-23T00:00:00Z",
+    "date": "2027-01-23T12:00:00Z",
     "title": "Queens Park Rangers vs Southampton",
     "participants": [
       "team_queens_park_rangers",
@@ -7271,7 +7248,7 @@
     "sportId": "football",
     "competitionId": "championship",
     "seasonId": "championship_2026_27",
-    "date": "2027-01-23T00:00:00Z",
+    "date": "2027-01-23T12:00:00Z",
     "title": "Bristol City vs Bolton Wanderers",
     "participants": [
       "team_bristol_city",
@@ -7294,7 +7271,7 @@
     "sportId": "football",
     "competitionId": "championship",
     "seasonId": "championship_2026_27",
-    "date": "2027-01-23T00:00:00Z",
+    "date": "2027-01-23T12:00:00Z",
     "title": "Derby County vs Millwall",
     "participants": [
       "team_derby_county",
@@ -7317,7 +7294,7 @@
     "sportId": "football",
     "competitionId": "championship",
     "seasonId": "championship_2026_27",
-    "date": "2027-01-23T00:00:00Z",
+    "date": "2027-01-23T12:00:00Z",
     "title": "Portsmouth vs Burnley",
     "participants": [
       "team_portsmouth",
@@ -7340,7 +7317,7 @@
     "sportId": "football",
     "competitionId": "championship",
     "seasonId": "championship_2026_27",
-    "date": "2027-01-23T00:00:00Z",
+    "date": "2027-01-23T12:00:00Z",
     "title": "Charlton Athletic vs Middlesbrough",
     "participants": [
       "team_charlton_athletic",
@@ -7363,7 +7340,7 @@
     "sportId": "football",
     "competitionId": "championship",
     "seasonId": "championship_2026_27",
-    "date": "2027-01-23T00:00:00Z",
+    "date": "2027-01-23T12:00:00Z",
     "title": "Birmingham City vs Lincoln City",
     "participants": [
       "team_birmingham_city",
@@ -7386,7 +7363,7 @@
     "sportId": "football",
     "competitionId": "championship",
     "seasonId": "championship_2026_27",
-    "date": "2027-01-23T00:00:00Z",
+    "date": "2027-01-23T12:00:00Z",
     "title": "Watford vs Norwich City",
     "participants": [
       "team_watford",
@@ -7409,7 +7386,7 @@
     "sportId": "football",
     "competitionId": "championship",
     "seasonId": "championship_2026_27",
-    "date": "2027-01-23T00:00:00Z",
+    "date": "2027-01-23T12:00:00Z",
     "title": "West Bromwich Albion vs West Ham United",
     "participants": [
       "team_west_bromwich_albion",
@@ -7432,7 +7409,7 @@
     "sportId": "football",
     "competitionId": "championship",
     "seasonId": "championship_2026_27",
-    "date": "2027-01-23T00:00:00Z",
+    "date": "2027-01-23T12:00:00Z",
     "title": "Blackburn Rovers vs Swansea City",
     "participants": [
       "team_blackburn_rovers",
@@ -7455,7 +7432,30 @@
     "sportId": "football",
     "competitionId": "championship",
     "seasonId": "championship_2026_27",
-    "date": "2027-01-26T00:00:00Z",
+    "date": "2027-01-24T12:00:00Z",
+    "title": "Cardiff City vs Wolverhampton Wanderers",
+    "participants": [
+      "team_cardiff_city",
+      "team_wolverhampton_wanderers"
+    ],
+    "sportData": {
+      "kind": "football_match",
+      "homeTeam": "team_cardiff_city",
+      "awayTeam": "team_wolverhampton_wanderers",
+      "venue": null,
+      "result": null
+    },
+    "dataQuality": "verified",
+    "externalIds": {
+      "footballDataOrgId": 562075
+    },
+    "id": "evt_championship_315"
+  },
+  {
+    "sportId": "football",
+    "competitionId": "championship",
+    "seasonId": "championship_2026_27",
+    "date": "2027-01-26T12:00:00Z",
     "title": "Bolton Wanderers vs Charlton Athletic",
     "participants": [
       "team_bolton_wanderers",
@@ -7478,7 +7478,7 @@
     "sportId": "football",
     "competitionId": "championship",
     "seasonId": "championship_2026_27",
-    "date": "2027-01-26T00:00:00Z",
+    "date": "2027-01-26T12:00:00Z",
     "title": "Norwich City vs Derby County",
     "participants": [
       "team_norwich_city",
@@ -7501,7 +7501,7 @@
     "sportId": "football",
     "competitionId": "championship",
     "seasonId": "championship_2026_27",
-    "date": "2027-01-26T00:00:00Z",
+    "date": "2027-01-26T12:00:00Z",
     "title": "Lincoln City vs Watford",
     "participants": [
       "team_lincoln_city",
@@ -7524,7 +7524,7 @@
     "sportId": "football",
     "competitionId": "championship",
     "seasonId": "championship_2026_27",
-    "date": "2027-01-26T00:00:00Z",
+    "date": "2027-01-26T12:00:00Z",
     "title": "Sheffield United vs Preston North End",
     "participants": [
       "team_sheffield_united",
@@ -7547,7 +7547,7 @@
     "sportId": "football",
     "competitionId": "championship",
     "seasonId": "championship_2026_27",
-    "date": "2027-01-26T00:00:00Z",
+    "date": "2027-01-26T12:00:00Z",
     "title": "Southampton vs West Bromwich Albion",
     "participants": [
       "team_southampton",
@@ -7570,7 +7570,7 @@
     "sportId": "football",
     "competitionId": "championship",
     "seasonId": "championship_2026_27",
-    "date": "2027-01-26T00:00:00Z",
+    "date": "2027-01-26T12:00:00Z",
     "title": "Millwall vs Birmingham City",
     "participants": [
       "team_millwall",
@@ -7593,7 +7593,7 @@
     "sportId": "football",
     "competitionId": "championship",
     "seasonId": "championship_2026_27",
-    "date": "2027-01-26T00:00:00Z",
+    "date": "2027-01-26T12:00:00Z",
     "title": "Stoke City vs Blackburn Rovers",
     "participants": [
       "team_stoke_city",
@@ -7616,7 +7616,7 @@
     "sportId": "football",
     "competitionId": "championship",
     "seasonId": "championship_2026_27",
-    "date": "2027-01-26T00:00:00Z",
+    "date": "2027-01-26T12:00:00Z",
     "title": "Burnley vs Queens Park Rangers",
     "participants": [
       "team_burnley",
@@ -7639,7 +7639,7 @@
     "sportId": "football",
     "competitionId": "championship",
     "seasonId": "championship_2026_27",
-    "date": "2027-01-27T00:00:00Z",
+    "date": "2027-01-27T12:00:00Z",
     "title": "Wolverhampton Wanderers vs Bristol City",
     "participants": [
       "team_wolverhampton_wanderers",
@@ -7662,7 +7662,7 @@
     "sportId": "football",
     "competitionId": "championship",
     "seasonId": "championship_2026_27",
-    "date": "2027-01-27T00:00:00Z",
+    "date": "2027-01-27T12:00:00Z",
     "title": "Swansea City vs Portsmouth",
     "participants": [
       "team_swansea_city",
@@ -7685,7 +7685,7 @@
     "sportId": "football",
     "competitionId": "championship",
     "seasonId": "championship_2026_27",
-    "date": "2027-01-27T00:00:00Z",
+    "date": "2027-01-27T12:00:00Z",
     "title": "West Ham United vs Cardiff City",
     "participants": [
       "team_west_ham_united",
@@ -7708,7 +7708,7 @@
     "sportId": "football",
     "competitionId": "championship",
     "seasonId": "championship_2026_27",
-    "date": "2027-01-27T00:00:00Z",
+    "date": "2027-01-27T12:00:00Z",
     "title": "Middlesbrough vs Wrexham",
     "participants": [
       "team_middlesbrough",
@@ -7731,122 +7731,7 @@
     "sportId": "football",
     "competitionId": "championship",
     "seasonId": "championship_2026_27",
-    "date": "2027-01-30T00:00:00Z",
-    "title": "Burnley vs Cardiff City",
-    "participants": [
-      "team_burnley",
-      "team_cardiff_city"
-    ],
-    "sportData": {
-      "kind": "football_match",
-      "homeTeam": "team_burnley",
-      "awayTeam": "team_cardiff_city",
-      "venue": null,
-      "result": null
-    },
-    "dataQuality": "verified",
-    "externalIds": {
-      "footballDataOrgId": 562097
-    },
-    "id": "evt_championship_337"
-  },
-  {
-    "sportId": "football",
-    "competitionId": "championship",
-    "seasonId": "championship_2026_27",
-    "date": "2027-01-30T00:00:00Z",
-    "title": "Swansea City vs Birmingham City",
-    "participants": [
-      "team_swansea_city",
-      "team_birmingham_city"
-    ],
-    "sportData": {
-      "kind": "football_match",
-      "homeTeam": "team_swansea_city",
-      "awayTeam": "team_birmingham_city",
-      "venue": null,
-      "result": null
-    },
-    "dataQuality": "verified",
-    "externalIds": {
-      "footballDataOrgId": 562098
-    },
-    "id": "evt_championship_338"
-  },
-  {
-    "sportId": "football",
-    "competitionId": "championship",
-    "seasonId": "championship_2026_27",
-    "date": "2027-01-30T00:00:00Z",
-    "title": "Southampton vs Preston North End",
-    "participants": [
-      "team_southampton",
-      "team_preston_north_end"
-    ],
-    "sportData": {
-      "kind": "football_match",
-      "homeTeam": "team_southampton",
-      "awayTeam": "team_preston_north_end",
-      "venue": null,
-      "result": null
-    },
-    "dataQuality": "verified",
-    "externalIds": {
-      "footballDataOrgId": 562099
-    },
-    "id": "evt_championship_339"
-  },
-  {
-    "sportId": "football",
-    "competitionId": "championship",
-    "seasonId": "championship_2026_27",
-    "date": "2027-01-30T00:00:00Z",
-    "title": "Millwall vs West Bromwich Albion",
-    "participants": [
-      "team_millwall",
-      "team_west_bromwich_albion"
-    ],
-    "sportData": {
-      "kind": "football_match",
-      "homeTeam": "team_millwall",
-      "awayTeam": "team_west_bromwich_albion",
-      "venue": null,
-      "result": null
-    },
-    "dataQuality": "verified",
-    "externalIds": {
-      "footballDataOrgId": 562100
-    },
-    "id": "evt_championship_340"
-  },
-  {
-    "sportId": "football",
-    "competitionId": "championship",
-    "seasonId": "championship_2026_27",
-    "date": "2027-01-30T00:00:00Z",
-    "title": "Wolverhampton Wanderers vs Wrexham",
-    "participants": [
-      "team_wolverhampton_wanderers",
-      "team_wrexham"
-    ],
-    "sportData": {
-      "kind": "football_match",
-      "homeTeam": "team_wolverhampton_wanderers",
-      "awayTeam": "team_wrexham",
-      "venue": null,
-      "result": null
-    },
-    "dataQuality": "verified",
-    "externalIds": {
-      "footballDataOrgId": 562101
-    },
-    "id": "evt_championship_341"
-  },
-  {
-    "sportId": "football",
-    "competitionId": "championship",
-    "seasonId": "championship_2026_27",
-    "date": "2027-01-30T00:00:00Z",
+    "date": "2027-01-29T12:00:00Z",
     "title": "Lincoln City vs Queens Park Rangers",
     "participants": [
       "team_lincoln_city",
@@ -7869,7 +7754,122 @@
     "sportId": "football",
     "competitionId": "championship",
     "seasonId": "championship_2026_27",
-    "date": "2027-01-30T00:00:00Z",
+    "date": "2027-01-30T12:00:00Z",
+    "title": "Burnley vs Cardiff City",
+    "participants": [
+      "team_burnley",
+      "team_cardiff_city"
+    ],
+    "sportData": {
+      "kind": "football_match",
+      "homeTeam": "team_burnley",
+      "awayTeam": "team_cardiff_city",
+      "venue": null,
+      "result": null
+    },
+    "dataQuality": "verified",
+    "externalIds": {
+      "footballDataOrgId": 562097
+    },
+    "id": "evt_championship_337"
+  },
+  {
+    "sportId": "football",
+    "competitionId": "championship",
+    "seasonId": "championship_2026_27",
+    "date": "2027-01-30T12:00:00Z",
+    "title": "Swansea City vs Birmingham City",
+    "participants": [
+      "team_swansea_city",
+      "team_birmingham_city"
+    ],
+    "sportData": {
+      "kind": "football_match",
+      "homeTeam": "team_swansea_city",
+      "awayTeam": "team_birmingham_city",
+      "venue": null,
+      "result": null
+    },
+    "dataQuality": "verified",
+    "externalIds": {
+      "footballDataOrgId": 562098
+    },
+    "id": "evt_championship_338"
+  },
+  {
+    "sportId": "football",
+    "competitionId": "championship",
+    "seasonId": "championship_2026_27",
+    "date": "2027-01-30T12:00:00Z",
+    "title": "Southampton vs Preston North End",
+    "participants": [
+      "team_southampton",
+      "team_preston_north_end"
+    ],
+    "sportData": {
+      "kind": "football_match",
+      "homeTeam": "team_southampton",
+      "awayTeam": "team_preston_north_end",
+      "venue": null,
+      "result": null
+    },
+    "dataQuality": "verified",
+    "externalIds": {
+      "footballDataOrgId": 562099
+    },
+    "id": "evt_championship_339"
+  },
+  {
+    "sportId": "football",
+    "competitionId": "championship",
+    "seasonId": "championship_2026_27",
+    "date": "2027-01-30T12:00:00Z",
+    "title": "Millwall vs West Bromwich Albion",
+    "participants": [
+      "team_millwall",
+      "team_west_bromwich_albion"
+    ],
+    "sportData": {
+      "kind": "football_match",
+      "homeTeam": "team_millwall",
+      "awayTeam": "team_west_bromwich_albion",
+      "venue": null,
+      "result": null
+    },
+    "dataQuality": "verified",
+    "externalIds": {
+      "footballDataOrgId": 562100
+    },
+    "id": "evt_championship_340"
+  },
+  {
+    "sportId": "football",
+    "competitionId": "championship",
+    "seasonId": "championship_2026_27",
+    "date": "2027-01-30T12:00:00Z",
+    "title": "Wolverhampton Wanderers vs Wrexham",
+    "participants": [
+      "team_wolverhampton_wanderers",
+      "team_wrexham"
+    ],
+    "sportData": {
+      "kind": "football_match",
+      "homeTeam": "team_wolverhampton_wanderers",
+      "awayTeam": "team_wrexham",
+      "venue": null,
+      "result": null
+    },
+    "dataQuality": "verified",
+    "externalIds": {
+      "footballDataOrgId": 562101
+    },
+    "id": "evt_championship_341"
+  },
+  {
+    "sportId": "football",
+    "competitionId": "championship",
+    "seasonId": "championship_2026_27",
+    "date": "2027-01-30T12:00:00Z",
     "title": "Stoke City vs Portsmouth",
     "participants": [
       "team_stoke_city",
@@ -7892,7 +7892,7 @@
     "sportId": "football",
     "competitionId": "championship",
     "seasonId": "championship_2026_27",
-    "date": "2027-01-30T00:00:00Z",
+    "date": "2027-01-30T12:00:00Z",
     "title": "Bolton Wanderers vs Derby County",
     "participants": [
       "team_bolton_wanderers",
@@ -7915,7 +7915,7 @@
     "sportId": "football",
     "competitionId": "championship",
     "seasonId": "championship_2026_27",
-    "date": "2027-01-30T00:00:00Z",
+    "date": "2027-01-30T12:00:00Z",
     "title": "West Ham United vs Blackburn Rovers",
     "participants": [
       "team_west_ham_united",
@@ -7938,7 +7938,7 @@
     "sportId": "football",
     "competitionId": "championship",
     "seasonId": "championship_2026_27",
-    "date": "2027-01-30T00:00:00Z",
+    "date": "2027-01-30T12:00:00Z",
     "title": "Middlesbrough vs Watford",
     "participants": [
       "team_middlesbrough",
@@ -7961,7 +7961,7 @@
     "sportId": "football",
     "competitionId": "championship",
     "seasonId": "championship_2026_27",
-    "date": "2027-01-30T00:00:00Z",
+    "date": "2027-01-30T12:00:00Z",
     "title": "Sheffield United vs Charlton Athletic",
     "participants": [
       "team_sheffield_united",
@@ -7984,7 +7984,7 @@
     "sportId": "football",
     "competitionId": "championship",
     "seasonId": "championship_2026_27",
-    "date": "2027-01-30T00:00:00Z",
+    "date": "2027-01-31T12:00:00Z",
     "title": "Norwich City vs Bristol City",
     "participants": [
       "team_norwich_city",
@@ -8007,260 +8007,7 @@
     "sportId": "football",
     "competitionId": "championship",
     "seasonId": "championship_2026_27",
-    "date": "2027-02-06T00:00:00Z",
-    "title": "West Bromwich Albion vs Swansea City",
-    "participants": [
-      "team_west_bromwich_albion",
-      "team_swansea_city"
-    ],
-    "sportData": {
-      "kind": "football_match",
-      "homeTeam": "team_west_bromwich_albion",
-      "awayTeam": "team_swansea_city",
-      "venue": null,
-      "result": null
-    },
-    "dataQuality": "verified",
-    "externalIds": {
-      "footballDataOrgId": 562109
-    },
-    "id": "evt_championship_349"
-  },
-  {
-    "sportId": "football",
-    "competitionId": "championship",
-    "seasonId": "championship_2026_27",
-    "date": "2027-02-06T00:00:00Z",
-    "title": "Derby County vs Southampton",
-    "participants": [
-      "team_derby_county",
-      "team_southampton"
-    ],
-    "sportData": {
-      "kind": "football_match",
-      "homeTeam": "team_derby_county",
-      "awayTeam": "team_southampton",
-      "venue": null,
-      "result": null
-    },
-    "dataQuality": "verified",
-    "externalIds": {
-      "footballDataOrgId": 562110
-    },
-    "id": "evt_championship_350"
-  },
-  {
-    "sportId": "football",
-    "competitionId": "championship",
-    "seasonId": "championship_2026_27",
-    "date": "2027-02-06T00:00:00Z",
-    "title": "Watford vs Sheffield United",
-    "participants": [
-      "team_watford",
-      "team_sheffield_united"
-    ],
-    "sportData": {
-      "kind": "football_match",
-      "homeTeam": "team_watford",
-      "awayTeam": "team_sheffield_united",
-      "venue": null,
-      "result": null
-    },
-    "dataQuality": "verified",
-    "externalIds": {
-      "footballDataOrgId": 562111
-    },
-    "id": "evt_championship_351"
-  },
-  {
-    "sportId": "football",
-    "competitionId": "championship",
-    "seasonId": "championship_2026_27",
-    "date": "2027-02-06T00:00:00Z",
-    "title": "Preston North End vs West Ham United",
-    "participants": [
-      "team_preston_north_end",
-      "team_west_ham_united"
-    ],
-    "sportData": {
-      "kind": "football_match",
-      "homeTeam": "team_preston_north_end",
-      "awayTeam": "team_west_ham_united",
-      "venue": null,
-      "result": null
-    },
-    "dataQuality": "verified",
-    "externalIds": {
-      "footballDataOrgId": 562112
-    },
-    "id": "evt_championship_352"
-  },
-  {
-    "sportId": "football",
-    "competitionId": "championship",
-    "seasonId": "championship_2026_27",
-    "date": "2027-02-06T00:00:00Z",
-    "title": "Portsmouth vs Bolton Wanderers",
-    "participants": [
-      "team_portsmouth",
-      "team_bolton_wanderers"
-    ],
-    "sportData": {
-      "kind": "football_match",
-      "homeTeam": "team_portsmouth",
-      "awayTeam": "team_bolton_wanderers",
-      "venue": null,
-      "result": null
-    },
-    "dataQuality": "verified",
-    "externalIds": {
-      "footballDataOrgId": 562113
-    },
-    "id": "evt_championship_353"
-  },
-  {
-    "sportId": "football",
-    "competitionId": "championship",
-    "seasonId": "championship_2026_27",
-    "date": "2027-02-06T00:00:00Z",
-    "title": "Queens Park Rangers vs Millwall",
-    "participants": [
-      "team_queens_park_rangers",
-      "team_millwall"
-    ],
-    "sportData": {
-      "kind": "football_match",
-      "homeTeam": "team_queens_park_rangers",
-      "awayTeam": "team_millwall",
-      "venue": null,
-      "result": null
-    },
-    "dataQuality": "verified",
-    "externalIds": {
-      "footballDataOrgId": 562114
-    },
-    "id": "evt_championship_354"
-  },
-  {
-    "sportId": "football",
-    "competitionId": "championship",
-    "seasonId": "championship_2026_27",
-    "date": "2027-02-06T00:00:00Z",
-    "title": "Charlton Athletic vs Wolverhampton Wanderers",
-    "participants": [
-      "team_charlton_athletic",
-      "team_wolverhampton_wanderers"
-    ],
-    "sportData": {
-      "kind": "football_match",
-      "homeTeam": "team_charlton_athletic",
-      "awayTeam": "team_wolverhampton_wanderers",
-      "venue": null,
-      "result": null
-    },
-    "dataQuality": "verified",
-    "externalIds": {
-      "footballDataOrgId": 562115
-    },
-    "id": "evt_championship_355"
-  },
-  {
-    "sportId": "football",
-    "competitionId": "championship",
-    "seasonId": "championship_2026_27",
-    "date": "2027-02-06T00:00:00Z",
-    "title": "Wrexham vs Lincoln City",
-    "participants": [
-      "team_wrexham",
-      "team_lincoln_city"
-    ],
-    "sportData": {
-      "kind": "football_match",
-      "homeTeam": "team_wrexham",
-      "awayTeam": "team_lincoln_city",
-      "venue": null,
-      "result": null
-    },
-    "dataQuality": "verified",
-    "externalIds": {
-      "footballDataOrgId": 562116
-    },
-    "id": "evt_championship_356"
-  },
-  {
-    "sportId": "football",
-    "competitionId": "championship",
-    "seasonId": "championship_2026_27",
-    "date": "2027-02-06T00:00:00Z",
-    "title": "Blackburn Rovers vs Burnley",
-    "participants": [
-      "team_blackburn_rovers",
-      "team_burnley"
-    ],
-    "sportData": {
-      "kind": "football_match",
-      "homeTeam": "team_blackburn_rovers",
-      "awayTeam": "team_burnley",
-      "venue": null,
-      "result": null
-    },
-    "dataQuality": "verified",
-    "externalIds": {
-      "footballDataOrgId": 562117
-    },
-    "id": "evt_championship_357"
-  },
-  {
-    "sportId": "football",
-    "competitionId": "championship",
-    "seasonId": "championship_2026_27",
-    "date": "2027-02-06T00:00:00Z",
-    "title": "Cardiff City vs Norwich City",
-    "participants": [
-      "team_cardiff_city",
-      "team_norwich_city"
-    ],
-    "sportData": {
-      "kind": "football_match",
-      "homeTeam": "team_cardiff_city",
-      "awayTeam": "team_norwich_city",
-      "venue": null,
-      "result": null
-    },
-    "dataQuality": "verified",
-    "externalIds": {
-      "footballDataOrgId": 562118
-    },
-    "id": "evt_championship_358"
-  },
-  {
-    "sportId": "football",
-    "competitionId": "championship",
-    "seasonId": "championship_2026_27",
-    "date": "2027-02-06T00:00:00Z",
-    "title": "Birmingham City vs Stoke City",
-    "participants": [
-      "team_birmingham_city",
-      "team_stoke_city"
-    ],
-    "sportData": {
-      "kind": "football_match",
-      "homeTeam": "team_birmingham_city",
-      "awayTeam": "team_stoke_city",
-      "venue": null,
-      "result": null
-    },
-    "dataQuality": "verified",
-    "externalIds": {
-      "footballDataOrgId": 562119
-    },
-    "id": "evt_championship_359"
-  },
-  {
-    "sportId": "football",
-    "competitionId": "championship",
-    "seasonId": "championship_2026_27",
-    "date": "2027-02-06T00:00:00Z",
+    "date": "2027-02-05T12:00:00Z",
     "title": "Bristol City vs Middlesbrough",
     "participants": [
       "team_bristol_city",
@@ -8283,76 +8030,260 @@
     "sportId": "football",
     "competitionId": "championship",
     "seasonId": "championship_2026_27",
-    "date": "2027-02-13T00:00:00Z",
-    "title": "Bristol City vs Southampton",
+    "date": "2027-02-06T12:00:00Z",
+    "title": "West Bromwich Albion vs Swansea City",
     "participants": [
-      "team_bristol_city",
+      "team_west_bromwich_albion",
+      "team_swansea_city"
+    ],
+    "sportData": {
+      "kind": "football_match",
+      "homeTeam": "team_west_bromwich_albion",
+      "awayTeam": "team_swansea_city",
+      "venue": null,
+      "result": null
+    },
+    "dataQuality": "verified",
+    "externalIds": {
+      "footballDataOrgId": 562109
+    },
+    "id": "evt_championship_349"
+  },
+  {
+    "sportId": "football",
+    "competitionId": "championship",
+    "seasonId": "championship_2026_27",
+    "date": "2027-02-06T12:00:00Z",
+    "title": "Derby County vs Southampton",
+    "participants": [
+      "team_derby_county",
       "team_southampton"
     ],
     "sportData": {
       "kind": "football_match",
-      "homeTeam": "team_bristol_city",
+      "homeTeam": "team_derby_county",
       "awayTeam": "team_southampton",
       "venue": null,
       "result": null
     },
     "dataQuality": "verified",
     "externalIds": {
-      "footballDataOrgId": 562121
+      "footballDataOrgId": 562110
     },
-    "id": "evt_championship_361"
+    "id": "evt_championship_350"
   },
   {
     "sportId": "football",
     "competitionId": "championship",
     "seasonId": "championship_2026_27",
-    "date": "2027-02-13T00:00:00Z",
-    "title": "Queens Park Rangers vs West Bromwich Albion",
+    "date": "2027-02-06T12:00:00Z",
+    "title": "Watford vs Sheffield United",
+    "participants": [
+      "team_watford",
+      "team_sheffield_united"
+    ],
+    "sportData": {
+      "kind": "football_match",
+      "homeTeam": "team_watford",
+      "awayTeam": "team_sheffield_united",
+      "venue": null,
+      "result": null
+    },
+    "dataQuality": "verified",
+    "externalIds": {
+      "footballDataOrgId": 562111
+    },
+    "id": "evt_championship_351"
+  },
+  {
+    "sportId": "football",
+    "competitionId": "championship",
+    "seasonId": "championship_2026_27",
+    "date": "2027-02-06T12:00:00Z",
+    "title": "Preston North End vs West Ham United",
+    "participants": [
+      "team_preston_north_end",
+      "team_west_ham_united"
+    ],
+    "sportData": {
+      "kind": "football_match",
+      "homeTeam": "team_preston_north_end",
+      "awayTeam": "team_west_ham_united",
+      "venue": null,
+      "result": null
+    },
+    "dataQuality": "verified",
+    "externalIds": {
+      "footballDataOrgId": 562112
+    },
+    "id": "evt_championship_352"
+  },
+  {
+    "sportId": "football",
+    "competitionId": "championship",
+    "seasonId": "championship_2026_27",
+    "date": "2027-02-06T12:00:00Z",
+    "title": "Portsmouth vs Bolton Wanderers",
+    "participants": [
+      "team_portsmouth",
+      "team_bolton_wanderers"
+    ],
+    "sportData": {
+      "kind": "football_match",
+      "homeTeam": "team_portsmouth",
+      "awayTeam": "team_bolton_wanderers",
+      "venue": null,
+      "result": null
+    },
+    "dataQuality": "verified",
+    "externalIds": {
+      "footballDataOrgId": 562113
+    },
+    "id": "evt_championship_353"
+  },
+  {
+    "sportId": "football",
+    "competitionId": "championship",
+    "seasonId": "championship_2026_27",
+    "date": "2027-02-06T12:00:00Z",
+    "title": "Queens Park Rangers vs Millwall",
     "participants": [
       "team_queens_park_rangers",
-      "team_west_bromwich_albion"
+      "team_millwall"
     ],
     "sportData": {
       "kind": "football_match",
       "homeTeam": "team_queens_park_rangers",
-      "awayTeam": "team_west_bromwich_albion",
+      "awayTeam": "team_millwall",
       "venue": null,
       "result": null
     },
     "dataQuality": "verified",
     "externalIds": {
-      "footballDataOrgId": 562122
+      "footballDataOrgId": 562114
     },
-    "id": "evt_championship_362"
+    "id": "evt_championship_354"
   },
   {
     "sportId": "football",
     "competitionId": "championship",
     "seasonId": "championship_2026_27",
-    "date": "2027-02-13T00:00:00Z",
-    "title": "Lincoln City vs Preston North End",
+    "date": "2027-02-06T12:00:00Z",
+    "title": "Charlton Athletic vs Wolverhampton Wanderers",
     "participants": [
-      "team_lincoln_city",
-      "team_preston_north_end"
+      "team_charlton_athletic",
+      "team_wolverhampton_wanderers"
     ],
     "sportData": {
       "kind": "football_match",
-      "homeTeam": "team_lincoln_city",
-      "awayTeam": "team_preston_north_end",
+      "homeTeam": "team_charlton_athletic",
+      "awayTeam": "team_wolverhampton_wanderers",
       "venue": null,
       "result": null
     },
     "dataQuality": "verified",
     "externalIds": {
-      "footballDataOrgId": 562123
+      "footballDataOrgId": 562115
     },
-    "id": "evt_championship_363"
+    "id": "evt_championship_355"
   },
   {
     "sportId": "football",
     "competitionId": "championship",
     "seasonId": "championship_2026_27",
-    "date": "2027-02-13T00:00:00Z",
+    "date": "2027-02-06T12:00:00Z",
+    "title": "Wrexham vs Lincoln City",
+    "participants": [
+      "team_wrexham",
+      "team_lincoln_city"
+    ],
+    "sportData": {
+      "kind": "football_match",
+      "homeTeam": "team_wrexham",
+      "awayTeam": "team_lincoln_city",
+      "venue": null,
+      "result": null
+    },
+    "dataQuality": "verified",
+    "externalIds": {
+      "footballDataOrgId": 562116
+    },
+    "id": "evt_championship_356"
+  },
+  {
+    "sportId": "football",
+    "competitionId": "championship",
+    "seasonId": "championship_2026_27",
+    "date": "2027-02-06T12:00:00Z",
+    "title": "Cardiff City vs Norwich City",
+    "participants": [
+      "team_cardiff_city",
+      "team_norwich_city"
+    ],
+    "sportData": {
+      "kind": "football_match",
+      "homeTeam": "team_cardiff_city",
+      "awayTeam": "team_norwich_city",
+      "venue": null,
+      "result": null
+    },
+    "dataQuality": "verified",
+    "externalIds": {
+      "footballDataOrgId": 562118
+    },
+    "id": "evt_championship_358"
+  },
+  {
+    "sportId": "football",
+    "competitionId": "championship",
+    "seasonId": "championship_2026_27",
+    "date": "2027-02-06T12:00:00Z",
+    "title": "Birmingham City vs Stoke City",
+    "participants": [
+      "team_birmingham_city",
+      "team_stoke_city"
+    ],
+    "sportData": {
+      "kind": "football_match",
+      "homeTeam": "team_birmingham_city",
+      "awayTeam": "team_stoke_city",
+      "venue": null,
+      "result": null
+    },
+    "dataQuality": "verified",
+    "externalIds": {
+      "footballDataOrgId": 562119
+    },
+    "id": "evt_championship_359"
+  },
+  {
+    "sportId": "football",
+    "competitionId": "championship",
+    "seasonId": "championship_2026_27",
+    "date": "2027-02-07T12:00:00Z",
+    "title": "Blackburn Rovers vs Burnley",
+    "participants": [
+      "team_blackburn_rovers",
+      "team_burnley"
+    ],
+    "sportData": {
+      "kind": "football_match",
+      "homeTeam": "team_blackburn_rovers",
+      "awayTeam": "team_burnley",
+      "venue": null,
+      "result": null
+    },
+    "dataQuality": "verified",
+    "externalIds": {
+      "footballDataOrgId": 562117
+    },
+    "id": "evt_championship_357"
+  },
+  {
+    "sportId": "football",
+    "competitionId": "championship",
+    "seasonId": "championship_2026_27",
+    "date": "2027-02-12T12:00:00Z",
     "title": "Birmingham City vs Derby County",
     "participants": [
       "team_birmingham_city",
@@ -8375,7 +8306,76 @@
     "sportId": "football",
     "competitionId": "championship",
     "seasonId": "championship_2026_27",
-    "date": "2027-02-13T00:00:00Z",
+    "date": "2027-02-13T12:00:00Z",
+    "title": "Bristol City vs Southampton",
+    "participants": [
+      "team_bristol_city",
+      "team_southampton"
+    ],
+    "sportData": {
+      "kind": "football_match",
+      "homeTeam": "team_bristol_city",
+      "awayTeam": "team_southampton",
+      "venue": null,
+      "result": null
+    },
+    "dataQuality": "verified",
+    "externalIds": {
+      "footballDataOrgId": 562121
+    },
+    "id": "evt_championship_361"
+  },
+  {
+    "sportId": "football",
+    "competitionId": "championship",
+    "seasonId": "championship_2026_27",
+    "date": "2027-02-13T12:00:00Z",
+    "title": "Queens Park Rangers vs West Bromwich Albion",
+    "participants": [
+      "team_queens_park_rangers",
+      "team_west_bromwich_albion"
+    ],
+    "sportData": {
+      "kind": "football_match",
+      "homeTeam": "team_queens_park_rangers",
+      "awayTeam": "team_west_bromwich_albion",
+      "venue": null,
+      "result": null
+    },
+    "dataQuality": "verified",
+    "externalIds": {
+      "footballDataOrgId": 562122
+    },
+    "id": "evt_championship_362"
+  },
+  {
+    "sportId": "football",
+    "competitionId": "championship",
+    "seasonId": "championship_2026_27",
+    "date": "2027-02-13T12:00:00Z",
+    "title": "Lincoln City vs Preston North End",
+    "participants": [
+      "team_lincoln_city",
+      "team_preston_north_end"
+    ],
+    "sportData": {
+      "kind": "football_match",
+      "homeTeam": "team_lincoln_city",
+      "awayTeam": "team_preston_north_end",
+      "venue": null,
+      "result": null
+    },
+    "dataQuality": "verified",
+    "externalIds": {
+      "footballDataOrgId": 562123
+    },
+    "id": "evt_championship_363"
+  },
+  {
+    "sportId": "football",
+    "competitionId": "championship",
+    "seasonId": "championship_2026_27",
+    "date": "2027-02-13T12:00:00Z",
     "title": "Norwich City vs Middlesbrough",
     "participants": [
       "team_norwich_city",
@@ -8398,30 +8398,7 @@
     "sportId": "football",
     "competitionId": "championship",
     "seasonId": "championship_2026_27",
-    "date": "2027-02-13T00:00:00Z",
-    "title": "Cardiff City vs Bolton Wanderers",
-    "participants": [
-      "team_cardiff_city",
-      "team_bolton_wanderers"
-    ],
-    "sportData": {
-      "kind": "football_match",
-      "homeTeam": "team_cardiff_city",
-      "awayTeam": "team_bolton_wanderers",
-      "venue": null,
-      "result": null
-    },
-    "dataQuality": "verified",
-    "externalIds": {
-      "footballDataOrgId": 562126
-    },
-    "id": "evt_championship_366"
-  },
-  {
-    "sportId": "football",
-    "competitionId": "championship",
-    "seasonId": "championship_2026_27",
-    "date": "2027-02-13T00:00:00Z",
+    "date": "2027-02-13T12:00:00Z",
     "title": "Wolverhampton Wanderers vs Sheffield United",
     "participants": [
       "team_wolverhampton_wanderers",
@@ -8444,7 +8421,7 @@
     "sportId": "football",
     "competitionId": "championship",
     "seasonId": "championship_2026_27",
-    "date": "2027-02-13T00:00:00Z",
+    "date": "2027-02-13T12:00:00Z",
     "title": "Stoke City vs Watford",
     "participants": [
       "team_stoke_city",
@@ -8467,7 +8444,7 @@
     "sportId": "football",
     "competitionId": "championship",
     "seasonId": "championship_2026_27",
-    "date": "2027-02-13T00:00:00Z",
+    "date": "2027-02-13T12:00:00Z",
     "title": "Wrexham vs West Ham United",
     "participants": [
       "team_wrexham",
@@ -8490,7 +8467,7 @@
     "sportId": "football",
     "competitionId": "championship",
     "seasonId": "championship_2026_27",
-    "date": "2027-02-13T00:00:00Z",
+    "date": "2027-02-13T12:00:00Z",
     "title": "Burnley vs Swansea City",
     "participants": [
       "team_burnley",
@@ -8513,7 +8490,7 @@
     "sportId": "football",
     "competitionId": "championship",
     "seasonId": "championship_2026_27",
-    "date": "2027-02-13T00:00:00Z",
+    "date": "2027-02-13T12:00:00Z",
     "title": "Portsmouth vs Charlton Athletic",
     "participants": [
       "team_portsmouth",
@@ -8536,7 +8513,7 @@
     "sportId": "football",
     "competitionId": "championship",
     "seasonId": "championship_2026_27",
-    "date": "2027-02-13T00:00:00Z",
+    "date": "2027-02-13T12:00:00Z",
     "title": "Millwall vs Blackburn Rovers",
     "participants": [
       "team_millwall",
@@ -8559,7 +8536,30 @@
     "sportId": "football",
     "competitionId": "championship",
     "seasonId": "championship_2026_27",
-    "date": "2027-02-16T00:00:00Z",
+    "date": "2027-02-14T12:00:00Z",
+    "title": "Cardiff City vs Bolton Wanderers",
+    "participants": [
+      "team_cardiff_city",
+      "team_bolton_wanderers"
+    ],
+    "sportData": {
+      "kind": "football_match",
+      "homeTeam": "team_cardiff_city",
+      "awayTeam": "team_bolton_wanderers",
+      "venue": null,
+      "result": null
+    },
+    "dataQuality": "verified",
+    "externalIds": {
+      "footballDataOrgId": 562126
+    },
+    "id": "evt_championship_366"
+  },
+  {
+    "sportId": "football",
+    "competitionId": "championship",
+    "seasonId": "championship_2026_27",
+    "date": "2027-02-16T12:00:00Z",
     "title": "Blackburn Rovers vs Bristol City",
     "participants": [
       "team_blackburn_rovers",
@@ -8582,7 +8582,7 @@
     "sportId": "football",
     "competitionId": "championship",
     "seasonId": "championship_2026_27",
-    "date": "2027-02-16T00:00:00Z",
+    "date": "2027-02-16T12:00:00Z",
     "title": "Sheffield United vs Portsmouth",
     "participants": [
       "team_sheffield_united",
@@ -8605,7 +8605,7 @@
     "sportId": "football",
     "competitionId": "championship",
     "seasonId": "championship_2026_27",
-    "date": "2027-02-16T00:00:00Z",
+    "date": "2027-02-16T12:00:00Z",
     "title": "West Ham United vs Lincoln City",
     "participants": [
       "team_west_ham_united",
@@ -8628,7 +8628,7 @@
     "sportId": "football",
     "competitionId": "championship",
     "seasonId": "championship_2026_27",
-    "date": "2027-02-16T00:00:00Z",
+    "date": "2027-02-16T12:00:00Z",
     "title": "Charlton Athletic vs Burnley",
     "participants": [
       "team_charlton_athletic",
@@ -8651,7 +8651,7 @@
     "sportId": "football",
     "competitionId": "championship",
     "seasonId": "championship_2026_27",
-    "date": "2027-02-16T00:00:00Z",
+    "date": "2027-02-16T12:00:00Z",
     "title": "Preston North End vs Birmingham City",
     "participants": [
       "team_preston_north_end",
@@ -8674,30 +8674,7 @@
     "sportId": "football",
     "competitionId": "championship",
     "seasonId": "championship_2026_27",
-    "date": "2027-02-16T00:00:00Z",
-    "title": "Watford vs Cardiff City",
-    "participants": [
-      "team_watford",
-      "team_cardiff_city"
-    ],
-    "sportData": {
-      "kind": "football_match",
-      "homeTeam": "team_watford",
-      "awayTeam": "team_cardiff_city",
-      "venue": null,
-      "result": null
-    },
-    "dataQuality": "verified",
-    "externalIds": {
-      "footballDataOrgId": 562138
-    },
-    "id": "evt_championship_378"
-  },
-  {
-    "sportId": "football",
-    "competitionId": "championship",
-    "seasonId": "championship_2026_27",
-    "date": "2027-02-16T00:00:00Z",
+    "date": "2027-02-16T12:00:00Z",
     "title": "West Bromwich Albion vs Wrexham",
     "participants": [
       "team_west_bromwich_albion",
@@ -8720,7 +8697,7 @@
     "sportId": "football",
     "competitionId": "championship",
     "seasonId": "championship_2026_27",
-    "date": "2027-02-16T00:00:00Z",
+    "date": "2027-02-16T12:00:00Z",
     "title": "Derby County vs Queens Park Rangers",
     "participants": [
       "team_derby_county",
@@ -8743,76 +8720,7 @@
     "sportId": "football",
     "competitionId": "championship",
     "seasonId": "championship_2026_27",
-    "date": "2027-02-17T00:00:00Z",
-    "title": "Bolton Wanderers vs Wolverhampton Wanderers",
-    "participants": [
-      "team_bolton_wanderers",
-      "team_wolverhampton_wanderers"
-    ],
-    "sportData": {
-      "kind": "football_match",
-      "homeTeam": "team_bolton_wanderers",
-      "awayTeam": "team_wolverhampton_wanderers",
-      "venue": null,
-      "result": null
-    },
-    "dataQuality": "verified",
-    "externalIds": {
-      "footballDataOrgId": 562141
-    },
-    "id": "evt_championship_381"
-  },
-  {
-    "sportId": "football",
-    "competitionId": "championship",
-    "seasonId": "championship_2026_27",
-    "date": "2027-02-17T00:00:00Z",
-    "title": "Swansea City vs Millwall",
-    "participants": [
-      "team_swansea_city",
-      "team_millwall"
-    ],
-    "sportData": {
-      "kind": "football_match",
-      "homeTeam": "team_swansea_city",
-      "awayTeam": "team_millwall",
-      "venue": null,
-      "result": null
-    },
-    "dataQuality": "verified",
-    "externalIds": {
-      "footballDataOrgId": 562142
-    },
-    "id": "evt_championship_382"
-  },
-  {
-    "sportId": "football",
-    "competitionId": "championship",
-    "seasonId": "championship_2026_27",
-    "date": "2027-02-17T00:00:00Z",
-    "title": "Southampton vs Norwich City",
-    "participants": [
-      "team_southampton",
-      "team_norwich_city"
-    ],
-    "sportData": {
-      "kind": "football_match",
-      "homeTeam": "team_southampton",
-      "awayTeam": "team_norwich_city",
-      "venue": null,
-      "result": null
-    },
-    "dataQuality": "verified",
-    "externalIds": {
-      "footballDataOrgId": 562143
-    },
-    "id": "evt_championship_383"
-  },
-  {
-    "sportId": "football",
-    "competitionId": "championship",
-    "seasonId": "championship_2026_27",
-    "date": "2027-02-17T00:00:00Z",
+    "date": "2027-02-16T12:00:00Z",
     "title": "Middlesbrough vs Stoke City",
     "participants": [
       "team_middlesbrough",
@@ -8835,145 +8743,99 @@
     "sportId": "football",
     "competitionId": "championship",
     "seasonId": "championship_2026_27",
-    "date": "2027-02-20T00:00:00Z",
-    "title": "Southampton vs Wrexham",
+    "date": "2027-02-17T12:00:00Z",
+    "title": "Watford vs Cardiff City",
     "participants": [
-      "team_southampton",
-      "team_wrexham"
-    ],
-    "sportData": {
-      "kind": "football_match",
-      "homeTeam": "team_southampton",
-      "awayTeam": "team_wrexham",
-      "venue": null,
-      "result": null
-    },
-    "dataQuality": "verified",
-    "externalIds": {
-      "footballDataOrgId": 562145
-    },
-    "id": "evt_championship_385"
-  },
-  {
-    "sportId": "football",
-    "competitionId": "championship",
-    "seasonId": "championship_2026_27",
-    "date": "2027-02-20T00:00:00Z",
-    "title": "Charlton Athletic vs Cardiff City",
-    "participants": [
-      "team_charlton_athletic",
+      "team_watford",
       "team_cardiff_city"
     ],
     "sportData": {
       "kind": "football_match",
-      "homeTeam": "team_charlton_athletic",
+      "homeTeam": "team_watford",
       "awayTeam": "team_cardiff_city",
       "venue": null,
       "result": null
     },
     "dataQuality": "verified",
     "externalIds": {
-      "footballDataOrgId": 562146
+      "footballDataOrgId": 562138
     },
-    "id": "evt_championship_386"
+    "id": "evt_championship_378"
   },
   {
     "sportId": "football",
     "competitionId": "championship",
     "seasonId": "championship_2026_27",
-    "date": "2027-02-20T00:00:00Z",
-    "title": "Swansea City vs Lincoln City",
+    "date": "2027-02-17T12:00:00Z",
+    "title": "Bolton Wanderers vs Wolverhampton Wanderers",
+    "participants": [
+      "team_bolton_wanderers",
+      "team_wolverhampton_wanderers"
+    ],
+    "sportData": {
+      "kind": "football_match",
+      "homeTeam": "team_bolton_wanderers",
+      "awayTeam": "team_wolverhampton_wanderers",
+      "venue": null,
+      "result": null
+    },
+    "dataQuality": "verified",
+    "externalIds": {
+      "footballDataOrgId": 562141
+    },
+    "id": "evt_championship_381"
+  },
+  {
+    "sportId": "football",
+    "competitionId": "championship",
+    "seasonId": "championship_2026_27",
+    "date": "2027-02-17T12:00:00Z",
+    "title": "Swansea City vs Millwall",
     "participants": [
       "team_swansea_city",
-      "team_lincoln_city"
+      "team_millwall"
     ],
     "sportData": {
       "kind": "football_match",
       "homeTeam": "team_swansea_city",
-      "awayTeam": "team_lincoln_city",
+      "awayTeam": "team_millwall",
       "venue": null,
       "result": null
     },
     "dataQuality": "verified",
     "externalIds": {
-      "footballDataOrgId": 562147
+      "footballDataOrgId": 562142
     },
-    "id": "evt_championship_387"
+    "id": "evt_championship_382"
   },
   {
     "sportId": "football",
     "competitionId": "championship",
     "seasonId": "championship_2026_27",
-    "date": "2027-02-20T00:00:00Z",
-    "title": "Sheffield United vs Stoke City",
+    "date": "2027-02-17T12:00:00Z",
+    "title": "Southampton vs Norwich City",
     "participants": [
-      "team_sheffield_united",
-      "team_stoke_city"
+      "team_southampton",
+      "team_norwich_city"
     ],
     "sportData": {
       "kind": "football_match",
-      "homeTeam": "team_sheffield_united",
-      "awayTeam": "team_stoke_city",
+      "homeTeam": "team_southampton",
+      "awayTeam": "team_norwich_city",
       "venue": null,
       "result": null
     },
     "dataQuality": "verified",
     "externalIds": {
-      "footballDataOrgId": 562148
+      "footballDataOrgId": 562143
     },
-    "id": "evt_championship_388"
+    "id": "evt_championship_383"
   },
   {
     "sportId": "football",
     "competitionId": "championship",
     "seasonId": "championship_2026_27",
-    "date": "2027-02-20T00:00:00Z",
-    "title": "Preston North End vs Queens Park Rangers",
-    "participants": [
-      "team_preston_north_end",
-      "team_queens_park_rangers"
-    ],
-    "sportData": {
-      "kind": "football_match",
-      "homeTeam": "team_preston_north_end",
-      "awayTeam": "team_queens_park_rangers",
-      "venue": null,
-      "result": null
-    },
-    "dataQuality": "verified",
-    "externalIds": {
-      "footballDataOrgId": 562149
-    },
-    "id": "evt_championship_389"
-  },
-  {
-    "sportId": "football",
-    "competitionId": "championship",
-    "seasonId": "championship_2026_27",
-    "date": "2027-02-20T00:00:00Z",
-    "title": "Derby County vs Burnley",
-    "participants": [
-      "team_derby_county",
-      "team_burnley"
-    ],
-    "sportData": {
-      "kind": "football_match",
-      "homeTeam": "team_derby_county",
-      "awayTeam": "team_burnley",
-      "venue": null,
-      "result": null
-    },
-    "dataQuality": "verified",
-    "externalIds": {
-      "footballDataOrgId": 562150
-    },
-    "id": "evt_championship_390"
-  },
-  {
-    "sportId": "football",
-    "competitionId": "championship",
-    "seasonId": "championship_2026_27",
-    "date": "2027-02-20T00:00:00Z",
+    "date": "2027-02-19T12:00:00Z",
     "title": "Middlesbrough vs Birmingham City",
     "participants": [
       "team_middlesbrough",
@@ -8996,7 +8858,145 @@
     "sportId": "football",
     "competitionId": "championship",
     "seasonId": "championship_2026_27",
-    "date": "2027-02-20T00:00:00Z",
+    "date": "2027-02-20T12:00:00Z",
+    "title": "Southampton vs Wrexham",
+    "participants": [
+      "team_southampton",
+      "team_wrexham"
+    ],
+    "sportData": {
+      "kind": "football_match",
+      "homeTeam": "team_southampton",
+      "awayTeam": "team_wrexham",
+      "venue": null,
+      "result": null
+    },
+    "dataQuality": "verified",
+    "externalIds": {
+      "footballDataOrgId": 562145
+    },
+    "id": "evt_championship_385"
+  },
+  {
+    "sportId": "football",
+    "competitionId": "championship",
+    "seasonId": "championship_2026_27",
+    "date": "2027-02-20T12:00:00Z",
+    "title": "Charlton Athletic vs Cardiff City",
+    "participants": [
+      "team_charlton_athletic",
+      "team_cardiff_city"
+    ],
+    "sportData": {
+      "kind": "football_match",
+      "homeTeam": "team_charlton_athletic",
+      "awayTeam": "team_cardiff_city",
+      "venue": null,
+      "result": null
+    },
+    "dataQuality": "verified",
+    "externalIds": {
+      "footballDataOrgId": 562146
+    },
+    "id": "evt_championship_386"
+  },
+  {
+    "sportId": "football",
+    "competitionId": "championship",
+    "seasonId": "championship_2026_27",
+    "date": "2027-02-20T12:00:00Z",
+    "title": "Swansea City vs Lincoln City",
+    "participants": [
+      "team_swansea_city",
+      "team_lincoln_city"
+    ],
+    "sportData": {
+      "kind": "football_match",
+      "homeTeam": "team_swansea_city",
+      "awayTeam": "team_lincoln_city",
+      "venue": null,
+      "result": null
+    },
+    "dataQuality": "verified",
+    "externalIds": {
+      "footballDataOrgId": 562147
+    },
+    "id": "evt_championship_387"
+  },
+  {
+    "sportId": "football",
+    "competitionId": "championship",
+    "seasonId": "championship_2026_27",
+    "date": "2027-02-20T12:00:00Z",
+    "title": "Sheffield United vs Stoke City",
+    "participants": [
+      "team_sheffield_united",
+      "team_stoke_city"
+    ],
+    "sportData": {
+      "kind": "football_match",
+      "homeTeam": "team_sheffield_united",
+      "awayTeam": "team_stoke_city",
+      "venue": null,
+      "result": null
+    },
+    "dataQuality": "verified",
+    "externalIds": {
+      "footballDataOrgId": 562148
+    },
+    "id": "evt_championship_388"
+  },
+  {
+    "sportId": "football",
+    "competitionId": "championship",
+    "seasonId": "championship_2026_27",
+    "date": "2027-02-20T12:00:00Z",
+    "title": "Preston North End vs Queens Park Rangers",
+    "participants": [
+      "team_preston_north_end",
+      "team_queens_park_rangers"
+    ],
+    "sportData": {
+      "kind": "football_match",
+      "homeTeam": "team_preston_north_end",
+      "awayTeam": "team_queens_park_rangers",
+      "venue": null,
+      "result": null
+    },
+    "dataQuality": "verified",
+    "externalIds": {
+      "footballDataOrgId": 562149
+    },
+    "id": "evt_championship_389"
+  },
+  {
+    "sportId": "football",
+    "competitionId": "championship",
+    "seasonId": "championship_2026_27",
+    "date": "2027-02-20T12:00:00Z",
+    "title": "Derby County vs Burnley",
+    "participants": [
+      "team_derby_county",
+      "team_burnley"
+    ],
+    "sportData": {
+      "kind": "football_match",
+      "homeTeam": "team_derby_county",
+      "awayTeam": "team_burnley",
+      "venue": null,
+      "result": null
+    },
+    "dataQuality": "verified",
+    "externalIds": {
+      "footballDataOrgId": 562150
+    },
+    "id": "evt_championship_390"
+  },
+  {
+    "sportId": "football",
+    "competitionId": "championship",
+    "seasonId": "championship_2026_27",
+    "date": "2027-02-20T12:00:00Z",
     "title": "Watford vs Bristol City",
     "participants": [
       "team_watford",
@@ -9019,7 +9019,7 @@
     "sportId": "football",
     "competitionId": "championship",
     "seasonId": "championship_2026_27",
-    "date": "2027-02-20T00:00:00Z",
+    "date": "2027-02-20T12:00:00Z",
     "title": "Blackburn Rovers vs Portsmouth",
     "participants": [
       "team_blackburn_rovers",
@@ -9042,30 +9042,7 @@
     "sportId": "football",
     "competitionId": "championship",
     "seasonId": "championship_2026_27",
-    "date": "2027-02-20T00:00:00Z",
-    "title": "West Ham United vs Millwall",
-    "participants": [
-      "team_west_ham_united",
-      "team_millwall"
-    ],
-    "sportData": {
-      "kind": "football_match",
-      "homeTeam": "team_west_ham_united",
-      "awayTeam": "team_millwall",
-      "venue": null,
-      "result": null
-    },
-    "dataQuality": "verified",
-    "externalIds": {
-      "footballDataOrgId": 562154
-    },
-    "id": "evt_championship_394"
-  },
-  {
-    "sportId": "football",
-    "competitionId": "championship",
-    "seasonId": "championship_2026_27",
-    "date": "2027-02-20T00:00:00Z",
+    "date": "2027-02-20T12:00:00Z",
     "title": "Bolton Wanderers vs Norwich City",
     "participants": [
       "team_bolton_wanderers",
@@ -9088,7 +9065,7 @@
     "sportId": "football",
     "competitionId": "championship",
     "seasonId": "championship_2026_27",
-    "date": "2027-02-20T00:00:00Z",
+    "date": "2027-02-20T12:00:00Z",
     "title": "West Bromwich Albion vs Wolverhampton Wanderers",
     "participants": [
       "team_west_bromwich_albion",
@@ -9111,168 +9088,30 @@
     "sportId": "football",
     "competitionId": "championship",
     "seasonId": "championship_2026_27",
-    "date": "2027-02-27T00:00:00Z",
-    "title": "Queens Park Rangers vs West Ham United",
+    "date": "2027-02-21T12:00:00Z",
+    "title": "West Ham United vs Millwall",
     "participants": [
-      "team_queens_park_rangers",
-      "team_west_ham_united"
+      "team_west_ham_united",
+      "team_millwall"
     ],
     "sportData": {
       "kind": "football_match",
-      "homeTeam": "team_queens_park_rangers",
-      "awayTeam": "team_west_ham_united",
+      "homeTeam": "team_west_ham_united",
+      "awayTeam": "team_millwall",
       "venue": null,
       "result": null
     },
     "dataQuality": "verified",
     "externalIds": {
-      "footballDataOrgId": 562157
+      "footballDataOrgId": 562154
     },
-    "id": "evt_championship_397"
+    "id": "evt_championship_394"
   },
   {
     "sportId": "football",
     "competitionId": "championship",
     "seasonId": "championship_2026_27",
-    "date": "2027-02-27T00:00:00Z",
-    "title": "Portsmouth vs Southampton",
-    "participants": [
-      "team_portsmouth",
-      "team_southampton"
-    ],
-    "sportData": {
-      "kind": "football_match",
-      "homeTeam": "team_portsmouth",
-      "awayTeam": "team_southampton",
-      "venue": null,
-      "result": null
-    },
-    "dataQuality": "verified",
-    "externalIds": {
-      "footballDataOrgId": 562158
-    },
-    "id": "evt_championship_398"
-  },
-  {
-    "sportId": "football",
-    "competitionId": "championship",
-    "seasonId": "championship_2026_27",
-    "date": "2027-02-27T00:00:00Z",
-    "title": "Stoke City vs Bolton Wanderers",
-    "participants": [
-      "team_stoke_city",
-      "team_bolton_wanderers"
-    ],
-    "sportData": {
-      "kind": "football_match",
-      "homeTeam": "team_stoke_city",
-      "awayTeam": "team_bolton_wanderers",
-      "venue": null,
-      "result": null
-    },
-    "dataQuality": "verified",
-    "externalIds": {
-      "footballDataOrgId": 562159
-    },
-    "id": "evt_championship_399"
-  },
-  {
-    "sportId": "football",
-    "competitionId": "championship",
-    "seasonId": "championship_2026_27",
-    "date": "2027-02-27T00:00:00Z",
-    "title": "Norwich City vs Swansea City",
-    "participants": [
-      "team_norwich_city",
-      "team_swansea_city"
-    ],
-    "sportData": {
-      "kind": "football_match",
-      "homeTeam": "team_norwich_city",
-      "awayTeam": "team_swansea_city",
-      "venue": null,
-      "result": null
-    },
-    "dataQuality": "verified",
-    "externalIds": {
-      "footballDataOrgId": 562160
-    },
-    "id": "evt_championship_400"
-  },
-  {
-    "sportId": "football",
-    "competitionId": "championship",
-    "seasonId": "championship_2026_27",
-    "date": "2027-02-27T00:00:00Z",
-    "title": "Wrexham vs Derby County",
-    "participants": [
-      "team_wrexham",
-      "team_derby_county"
-    ],
-    "sportData": {
-      "kind": "football_match",
-      "homeTeam": "team_wrexham",
-      "awayTeam": "team_derby_county",
-      "venue": null,
-      "result": null
-    },
-    "dataQuality": "verified",
-    "externalIds": {
-      "footballDataOrgId": 562161
-    },
-    "id": "evt_championship_401"
-  },
-  {
-    "sportId": "football",
-    "competitionId": "championship",
-    "seasonId": "championship_2026_27",
-    "date": "2027-02-27T00:00:00Z",
-    "title": "Wolverhampton Wanderers vs Middlesbrough",
-    "participants": [
-      "team_wolverhampton_wanderers",
-      "team_middlesbrough"
-    ],
-    "sportData": {
-      "kind": "football_match",
-      "homeTeam": "team_wolverhampton_wanderers",
-      "awayTeam": "team_middlesbrough",
-      "venue": null,
-      "result": null
-    },
-    "dataQuality": "verified",
-    "externalIds": {
-      "footballDataOrgId": 562162
-    },
-    "id": "evt_championship_402"
-  },
-  {
-    "sportId": "football",
-    "competitionId": "championship",
-    "seasonId": "championship_2026_27",
-    "date": "2027-02-27T00:00:00Z",
-    "title": "Bristol City vs Charlton Athletic",
-    "participants": [
-      "team_bristol_city",
-      "team_charlton_athletic"
-    ],
-    "sportData": {
-      "kind": "football_match",
-      "homeTeam": "team_bristol_city",
-      "awayTeam": "team_charlton_athletic",
-      "venue": null,
-      "result": null
-    },
-    "dataQuality": "verified",
-    "externalIds": {
-      "footballDataOrgId": 562163
-    },
-    "id": "evt_championship_403"
-  },
-  {
-    "sportId": "football",
-    "competitionId": "championship",
-    "seasonId": "championship_2026_27",
-    "date": "2027-02-27T00:00:00Z",
+    "date": "2027-02-26T12:00:00Z",
     "title": "Birmingham City vs West Bromwich Albion",
     "participants": [
       "team_birmingham_city",
@@ -9295,7 +9134,145 @@
     "sportId": "football",
     "competitionId": "championship",
     "seasonId": "championship_2026_27",
-    "date": "2027-02-27T00:00:00Z",
+    "date": "2027-02-27T12:00:00Z",
+    "title": "Queens Park Rangers vs West Ham United",
+    "participants": [
+      "team_queens_park_rangers",
+      "team_west_ham_united"
+    ],
+    "sportData": {
+      "kind": "football_match",
+      "homeTeam": "team_queens_park_rangers",
+      "awayTeam": "team_west_ham_united",
+      "venue": null,
+      "result": null
+    },
+    "dataQuality": "verified",
+    "externalIds": {
+      "footballDataOrgId": 562157
+    },
+    "id": "evt_championship_397"
+  },
+  {
+    "sportId": "football",
+    "competitionId": "championship",
+    "seasonId": "championship_2026_27",
+    "date": "2027-02-27T12:00:00Z",
+    "title": "Stoke City vs Bolton Wanderers",
+    "participants": [
+      "team_stoke_city",
+      "team_bolton_wanderers"
+    ],
+    "sportData": {
+      "kind": "football_match",
+      "homeTeam": "team_stoke_city",
+      "awayTeam": "team_bolton_wanderers",
+      "venue": null,
+      "result": null
+    },
+    "dataQuality": "verified",
+    "externalIds": {
+      "footballDataOrgId": 562159
+    },
+    "id": "evt_championship_399"
+  },
+  {
+    "sportId": "football",
+    "competitionId": "championship",
+    "seasonId": "championship_2026_27",
+    "date": "2027-02-27T12:00:00Z",
+    "title": "Norwich City vs Swansea City",
+    "participants": [
+      "team_norwich_city",
+      "team_swansea_city"
+    ],
+    "sportData": {
+      "kind": "football_match",
+      "homeTeam": "team_norwich_city",
+      "awayTeam": "team_swansea_city",
+      "venue": null,
+      "result": null
+    },
+    "dataQuality": "verified",
+    "externalIds": {
+      "footballDataOrgId": 562160
+    },
+    "id": "evt_championship_400"
+  },
+  {
+    "sportId": "football",
+    "competitionId": "championship",
+    "seasonId": "championship_2026_27",
+    "date": "2027-02-27T12:00:00Z",
+    "title": "Wrexham vs Derby County",
+    "participants": [
+      "team_wrexham",
+      "team_derby_county"
+    ],
+    "sportData": {
+      "kind": "football_match",
+      "homeTeam": "team_wrexham",
+      "awayTeam": "team_derby_county",
+      "venue": null,
+      "result": null
+    },
+    "dataQuality": "verified",
+    "externalIds": {
+      "footballDataOrgId": 562161
+    },
+    "id": "evt_championship_401"
+  },
+  {
+    "sportId": "football",
+    "competitionId": "championship",
+    "seasonId": "championship_2026_27",
+    "date": "2027-02-27T12:00:00Z",
+    "title": "Wolverhampton Wanderers vs Middlesbrough",
+    "participants": [
+      "team_wolverhampton_wanderers",
+      "team_middlesbrough"
+    ],
+    "sportData": {
+      "kind": "football_match",
+      "homeTeam": "team_wolverhampton_wanderers",
+      "awayTeam": "team_middlesbrough",
+      "venue": null,
+      "result": null
+    },
+    "dataQuality": "verified",
+    "externalIds": {
+      "footballDataOrgId": 562162
+    },
+    "id": "evt_championship_402"
+  },
+  {
+    "sportId": "football",
+    "competitionId": "championship",
+    "seasonId": "championship_2026_27",
+    "date": "2027-02-27T12:00:00Z",
+    "title": "Bristol City vs Charlton Athletic",
+    "participants": [
+      "team_bristol_city",
+      "team_charlton_athletic"
+    ],
+    "sportData": {
+      "kind": "football_match",
+      "homeTeam": "team_bristol_city",
+      "awayTeam": "team_charlton_athletic",
+      "venue": null,
+      "result": null
+    },
+    "dataQuality": "verified",
+    "externalIds": {
+      "footballDataOrgId": 562163
+    },
+    "id": "evt_championship_403"
+  },
+  {
+    "sportId": "football",
+    "competitionId": "championship",
+    "seasonId": "championship_2026_27",
+    "date": "2027-02-27T12:00:00Z",
     "title": "Lincoln City vs Sheffield United",
     "participants": [
       "team_lincoln_city",
@@ -9318,7 +9295,7 @@
     "sportId": "football",
     "competitionId": "championship",
     "seasonId": "championship_2026_27",
-    "date": "2027-02-27T00:00:00Z",
+    "date": "2027-02-27T12:00:00Z",
     "title": "Burnley vs Watford",
     "participants": [
       "team_burnley",
@@ -9341,7 +9318,7 @@
     "sportId": "football",
     "competitionId": "championship",
     "seasonId": "championship_2026_27",
-    "date": "2027-02-27T00:00:00Z",
+    "date": "2027-02-27T12:00:00Z",
     "title": "Cardiff City vs Blackburn Rovers",
     "participants": [
       "team_cardiff_city",
@@ -9364,7 +9341,7 @@
     "sportId": "football",
     "competitionId": "championship",
     "seasonId": "championship_2026_27",
-    "date": "2027-02-27T00:00:00Z",
+    "date": "2027-02-27T12:00:00Z",
     "title": "Millwall vs Preston North End",
     "participants": [
       "team_millwall",
@@ -9387,7 +9364,30 @@
     "sportId": "football",
     "competitionId": "championship",
     "seasonId": "championship_2026_27",
-    "date": "2027-03-02T00:00:00Z",
+    "date": "2027-02-28T12:00:00Z",
+    "title": "Portsmouth vs Southampton",
+    "participants": [
+      "team_portsmouth",
+      "team_southampton"
+    ],
+    "sportData": {
+      "kind": "football_match",
+      "homeTeam": "team_portsmouth",
+      "awayTeam": "team_southampton",
+      "venue": null,
+      "result": null
+    },
+    "dataQuality": "verified",
+    "externalIds": {
+      "footballDataOrgId": 562158
+    },
+    "id": "evt_championship_398"
+  },
+  {
+    "sportId": "football",
+    "competitionId": "championship",
+    "seasonId": "championship_2026_27",
+    "date": "2027-03-02T12:00:00Z",
     "title": "Middlesbrough vs Blackburn Rovers",
     "participants": [
       "team_middlesbrough",
@@ -9410,7 +9410,7 @@
     "sportId": "football",
     "competitionId": "championship",
     "seasonId": "championship_2026_27",
-    "date": "2027-03-02T00:00:00Z",
+    "date": "2027-03-02T12:00:00Z",
     "title": "Norwich City vs Millwall",
     "participants": [
       "team_norwich_city",
@@ -9433,7 +9433,7 @@
     "sportId": "football",
     "competitionId": "championship",
     "seasonId": "championship_2026_27",
-    "date": "2027-03-02T00:00:00Z",
+    "date": "2027-03-02T12:00:00Z",
     "title": "Burnley vs West Bromwich Albion",
     "participants": [
       "team_burnley",
@@ -9456,7 +9456,7 @@
     "sportId": "football",
     "competitionId": "championship",
     "seasonId": "championship_2026_27",
-    "date": "2027-03-02T00:00:00Z",
+    "date": "2027-03-02T12:00:00Z",
     "title": "Watford vs Wrexham",
     "participants": [
       "team_watford",
@@ -9479,7 +9479,7 @@
     "sportId": "football",
     "competitionId": "championship",
     "seasonId": "championship_2026_27",
-    "date": "2027-03-02T00:00:00Z",
+    "date": "2027-03-02T12:00:00Z",
     "title": "Charlton Athletic vs West Ham United",
     "participants": [
       "team_charlton_athletic",
@@ -9502,7 +9502,7 @@
     "sportId": "football",
     "competitionId": "championship",
     "seasonId": "championship_2026_27",
-    "date": "2027-03-02T00:00:00Z",
+    "date": "2027-03-02T12:00:00Z",
     "title": "Bolton Wanderers vs Queens Park Rangers",
     "participants": [
       "team_bolton_wanderers",
@@ -9525,7 +9525,7 @@
     "sportId": "football",
     "competitionId": "championship",
     "seasonId": "championship_2026_27",
-    "date": "2027-03-02T00:00:00Z",
+    "date": "2027-03-02T12:00:00Z",
     "title": "Bristol City vs Birmingham City",
     "participants": [
       "team_bristol_city",
@@ -9548,7 +9548,7 @@
     "sportId": "football",
     "competitionId": "championship",
     "seasonId": "championship_2026_27",
-    "date": "2027-03-02T00:00:00Z",
+    "date": "2027-03-02T12:00:00Z",
     "title": "Cardiff City vs Derby County",
     "participants": [
       "team_cardiff_city",
@@ -9571,7 +9571,7 @@
     "sportId": "football",
     "competitionId": "championship",
     "seasonId": "championship_2026_27",
-    "date": "2027-03-03T00:00:00Z",
+    "date": "2027-03-03T12:00:00Z",
     "title": "Portsmouth vs Lincoln City",
     "participants": [
       "team_portsmouth",
@@ -9594,7 +9594,7 @@
     "sportId": "football",
     "competitionId": "championship",
     "seasonId": "championship_2026_27",
-    "date": "2027-03-03T00:00:00Z",
+    "date": "2027-03-03T12:00:00Z",
     "title": "Wolverhampton Wanderers vs Preston North End",
     "participants": [
       "team_wolverhampton_wanderers",
@@ -9617,7 +9617,7 @@
     "sportId": "football",
     "competitionId": "championship",
     "seasonId": "championship_2026_27",
-    "date": "2027-03-03T00:00:00Z",
+    "date": "2027-03-03T12:00:00Z",
     "title": "Sheffield United vs Swansea City",
     "participants": [
       "team_sheffield_united",
@@ -9640,7 +9640,7 @@
     "sportId": "football",
     "competitionId": "championship",
     "seasonId": "championship_2026_27",
-    "date": "2027-03-03T00:00:00Z",
+    "date": "2027-03-03T12:00:00Z",
     "title": "Stoke City vs Southampton",
     "participants": [
       "team_stoke_city",
@@ -9663,7 +9663,7 @@
     "sportId": "football",
     "competitionId": "championship",
     "seasonId": "championship_2026_27",
-    "date": "2027-03-06T00:00:00Z",
+    "date": "2027-03-06T12:00:00Z",
     "title": "Derby County vs Charlton Athletic",
     "participants": [
       "team_derby_county",
@@ -9686,7 +9686,7 @@
     "sportId": "football",
     "competitionId": "championship",
     "seasonId": "championship_2026_27",
-    "date": "2027-03-06T00:00:00Z",
+    "date": "2027-03-06T12:00:00Z",
     "title": "Blackburn Rovers vs Wolverhampton Wanderers",
     "participants": [
       "team_blackburn_rovers",
@@ -9709,7 +9709,7 @@
     "sportId": "football",
     "competitionId": "championship",
     "seasonId": "championship_2026_27",
-    "date": "2027-03-06T00:00:00Z",
+    "date": "2027-03-06T12:00:00Z",
     "title": "Southampton vs Watford",
     "participants": [
       "team_southampton",
@@ -9732,7 +9732,7 @@
     "sportId": "football",
     "competitionId": "championship",
     "seasonId": "championship_2026_27",
-    "date": "2027-03-06T00:00:00Z",
+    "date": "2027-03-06T12:00:00Z",
     "title": "Wrexham vs Cardiff City",
     "participants": [
       "team_wrexham",
@@ -9755,7 +9755,7 @@
     "sportId": "football",
     "competitionId": "championship",
     "seasonId": "championship_2026_27",
-    "date": "2027-03-06T00:00:00Z",
+    "date": "2027-03-06T12:00:00Z",
     "title": "Swansea City vs Stoke City",
     "participants": [
       "team_swansea_city",
@@ -9778,7 +9778,7 @@
     "sportId": "football",
     "competitionId": "championship",
     "seasonId": "championship_2026_27",
-    "date": "2027-03-06T00:00:00Z",
+    "date": "2027-03-06T12:00:00Z",
     "title": "Preston North End vs Bolton Wanderers",
     "participants": [
       "team_preston_north_end",
@@ -9801,7 +9801,7 @@
     "sportId": "football",
     "competitionId": "championship",
     "seasonId": "championship_2026_27",
-    "date": "2027-03-06T00:00:00Z",
+    "date": "2027-03-06T12:00:00Z",
     "title": "Lincoln City vs Middlesbrough",
     "participants": [
       "team_lincoln_city",
@@ -9824,7 +9824,7 @@
     "sportId": "football",
     "competitionId": "championship",
     "seasonId": "championship_2026_27",
-    "date": "2027-03-06T00:00:00Z",
+    "date": "2027-03-06T12:00:00Z",
     "title": "Millwall vs Bristol City",
     "participants": [
       "team_millwall",
@@ -9847,7 +9847,7 @@
     "sportId": "football",
     "competitionId": "championship",
     "seasonId": "championship_2026_27",
-    "date": "2027-03-06T00:00:00Z",
+    "date": "2027-03-06T12:00:00Z",
     "title": "Queens Park Rangers vs Portsmouth",
     "participants": [
       "team_queens_park_rangers",
@@ -9870,7 +9870,7 @@
     "sportId": "football",
     "competitionId": "championship",
     "seasonId": "championship_2026_27",
-    "date": "2027-03-06T00:00:00Z",
+    "date": "2027-03-06T12:00:00Z",
     "title": "West Bromwich Albion vs Norwich City",
     "participants": [
       "team_west_bromwich_albion",
@@ -9893,7 +9893,7 @@
     "sportId": "football",
     "competitionId": "championship",
     "seasonId": "championship_2026_27",
-    "date": "2027-03-06T00:00:00Z",
+    "date": "2027-03-06T12:00:00Z",
     "title": "Birmingham City vs Sheffield United",
     "participants": [
       "team_birmingham_city",
@@ -9916,7 +9916,7 @@
     "sportId": "football",
     "competitionId": "championship",
     "seasonId": "championship_2026_27",
-    "date": "2027-03-06T00:00:00Z",
+    "date": "2027-03-06T12:00:00Z",
     "title": "West Ham United vs Burnley",
     "participants": [
       "team_west_ham_united",
@@ -9939,7 +9939,7 @@
     "sportId": "football",
     "competitionId": "championship",
     "seasonId": "championship_2026_27",
-    "date": "2027-03-13T00:00:00Z",
+    "date": "2027-03-13T12:00:00Z",
     "title": "Watford vs Derby County",
     "participants": [
       "team_watford",
@@ -9962,7 +9962,7 @@
     "sportId": "football",
     "competitionId": "championship",
     "seasonId": "championship_2026_27",
-    "date": "2027-03-13T00:00:00Z",
+    "date": "2027-03-13T12:00:00Z",
     "title": "Burnley vs Millwall",
     "participants": [
       "team_burnley",
@@ -9985,7 +9985,7 @@
     "sportId": "football",
     "competitionId": "championship",
     "seasonId": "championship_2026_27",
-    "date": "2027-03-13T00:00:00Z",
+    "date": "2027-03-13T12:00:00Z",
     "title": "Portsmouth vs Wrexham",
     "participants": [
       "team_portsmouth",
@@ -10008,7 +10008,7 @@
     "sportId": "football",
     "competitionId": "championship",
     "seasonId": "championship_2026_27",
-    "date": "2027-03-13T00:00:00Z",
+    "date": "2027-03-13T12:00:00Z",
     "title": "Middlesbrough vs Southampton",
     "participants": [
       "team_middlesbrough",
@@ -10031,7 +10031,7 @@
     "sportId": "football",
     "competitionId": "championship",
     "seasonId": "championship_2026_27",
-    "date": "2027-03-13T00:00:00Z",
+    "date": "2027-03-13T12:00:00Z",
     "title": "Sheffield United vs Queens Park Rangers",
     "participants": [
       "team_sheffield_united",
@@ -10054,7 +10054,7 @@
     "sportId": "football",
     "competitionId": "championship",
     "seasonId": "championship_2026_27",
-    "date": "2027-03-13T00:00:00Z",
+    "date": "2027-03-13T12:00:00Z",
     "title": "Bristol City vs West Bromwich Albion",
     "participants": [
       "team_bristol_city",
@@ -10077,7 +10077,7 @@
     "sportId": "football",
     "competitionId": "championship",
     "seasonId": "championship_2026_27",
-    "date": "2027-03-13T00:00:00Z",
+    "date": "2027-03-13T12:00:00Z",
     "title": "Charlton Athletic vs Blackburn Rovers",
     "participants": [
       "team_charlton_athletic",
@@ -10100,7 +10100,7 @@
     "sportId": "football",
     "competitionId": "championship",
     "seasonId": "championship_2026_27",
-    "date": "2027-03-13T00:00:00Z",
+    "date": "2027-03-13T12:00:00Z",
     "title": "Stoke City vs West Ham United",
     "participants": [
       "team_stoke_city",
@@ -10123,7 +10123,7 @@
     "sportId": "football",
     "competitionId": "championship",
     "seasonId": "championship_2026_27",
-    "date": "2027-03-13T00:00:00Z",
+    "date": "2027-03-13T12:00:00Z",
     "title": "Norwich City vs Preston North End",
     "participants": [
       "team_norwich_city",
@@ -10146,7 +10146,7 @@
     "sportId": "football",
     "competitionId": "championship",
     "seasonId": "championship_2026_27",
-    "date": "2027-03-13T00:00:00Z",
+    "date": "2027-03-13T12:00:00Z",
     "title": "Cardiff City vs Swansea City",
     "participants": [
       "team_cardiff_city",
@@ -10169,7 +10169,7 @@
     "sportId": "football",
     "competitionId": "championship",
     "seasonId": "championship_2026_27",
-    "date": "2027-03-13T00:00:00Z",
+    "date": "2027-03-13T12:00:00Z",
     "title": "Bolton Wanderers vs Birmingham City",
     "participants": [
       "team_bolton_wanderers",
@@ -10192,7 +10192,7 @@
     "sportId": "football",
     "competitionId": "championship",
     "seasonId": "championship_2026_27",
-    "date": "2027-03-13T00:00:00Z",
+    "date": "2027-03-13T12:00:00Z",
     "title": "Wolverhampton Wanderers vs Lincoln City",
     "participants": [
       "team_wolverhampton_wanderers",
@@ -10215,7 +10215,7 @@
     "sportId": "football",
     "competitionId": "championship",
     "seasonId": "championship_2026_27",
-    "date": "2027-03-16T00:00:00Z",
+    "date": "2027-03-16T12:00:00Z",
     "title": "Preston North End vs Burnley",
     "participants": [
       "team_preston_north_end",
@@ -10238,7 +10238,7 @@
     "sportId": "football",
     "competitionId": "championship",
     "seasonId": "championship_2026_27",
-    "date": "2027-03-16T00:00:00Z",
+    "date": "2027-03-16T12:00:00Z",
     "title": "Swansea City vs Bristol City",
     "participants": [
       "team_swansea_city",
@@ -10261,7 +10261,7 @@
     "sportId": "football",
     "competitionId": "championship",
     "seasonId": "championship_2026_27",
-    "date": "2027-03-16T00:00:00Z",
+    "date": "2027-03-16T12:00:00Z",
     "title": "Queens Park Rangers vs Stoke City",
     "participants": [
       "team_queens_park_rangers",
@@ -10284,7 +10284,7 @@
     "sportId": "football",
     "competitionId": "championship",
     "seasonId": "championship_2026_27",
-    "date": "2027-03-16T00:00:00Z",
+    "date": "2027-03-16T12:00:00Z",
     "title": "West Bromwich Albion vs Portsmouth",
     "participants": [
       "team_west_bromwich_albion",
@@ -10307,7 +10307,7 @@
     "sportId": "football",
     "competitionId": "championship",
     "seasonId": "championship_2026_27",
-    "date": "2027-03-16T00:00:00Z",
+    "date": "2027-03-16T12:00:00Z",
     "title": "Wrexham vs Norwich City",
     "participants": [
       "team_wrexham",
@@ -10330,7 +10330,7 @@
     "sportId": "football",
     "competitionId": "championship",
     "seasonId": "championship_2026_27",
-    "date": "2027-03-16T00:00:00Z",
+    "date": "2027-03-16T12:00:00Z",
     "title": "Lincoln City vs Cardiff City",
     "participants": [
       "team_lincoln_city",
@@ -10353,7 +10353,7 @@
     "sportId": "football",
     "competitionId": "championship",
     "seasonId": "championship_2026_27",
-    "date": "2027-03-16T00:00:00Z",
+    "date": "2027-03-16T12:00:00Z",
     "title": "Derby County vs Middlesbrough",
     "participants": [
       "team_derby_county",
@@ -10376,7 +10376,7 @@
     "sportId": "football",
     "competitionId": "championship",
     "seasonId": "championship_2026_27",
-    "date": "2027-03-16T00:00:00Z",
+    "date": "2027-03-16T12:00:00Z",
     "title": "Southampton vs Wolverhampton Wanderers",
     "participants": [
       "team_southampton",
@@ -10399,7 +10399,7 @@
     "sportId": "football",
     "competitionId": "championship",
     "seasonId": "championship_2026_27",
-    "date": "2027-03-17T00:00:00Z",
+    "date": "2027-03-17T12:00:00Z",
     "title": "West Ham United vs Sheffield United",
     "participants": [
       "team_west_ham_united",
@@ -10422,7 +10422,7 @@
     "sportId": "football",
     "competitionId": "championship",
     "seasonId": "championship_2026_27",
-    "date": "2027-03-17T00:00:00Z",
+    "date": "2027-03-17T12:00:00Z",
     "title": "Millwall vs Watford",
     "participants": [
       "team_millwall",
@@ -10445,7 +10445,7 @@
     "sportId": "football",
     "competitionId": "championship",
     "seasonId": "championship_2026_27",
-    "date": "2027-03-17T00:00:00Z",
+    "date": "2027-03-17T12:00:00Z",
     "title": "Blackburn Rovers vs Bolton Wanderers",
     "participants": [
       "team_blackburn_rovers",
@@ -10468,7 +10468,7 @@
     "sportId": "football",
     "competitionId": "championship",
     "seasonId": "championship_2026_27",
-    "date": "2027-03-17T00:00:00Z",
+    "date": "2027-03-17T12:00:00Z",
     "title": "Birmingham City vs Charlton Athletic",
     "participants": [
       "team_birmingham_city",
@@ -10491,7 +10491,7 @@
     "sportId": "football",
     "competitionId": "championship",
     "seasonId": "championship_2026_27",
-    "date": "2027-03-20T00:00:00Z",
+    "date": "2027-03-20T12:00:00Z",
     "title": "Swansea City vs Wolverhampton Wanderers",
     "participants": [
       "team_swansea_city",
@@ -10514,7 +10514,7 @@
     "sportId": "football",
     "competitionId": "championship",
     "seasonId": "championship_2026_27",
-    "date": "2027-03-20T00:00:00Z",
+    "date": "2027-03-20T12:00:00Z",
     "title": "Millwall vs Cardiff City",
     "participants": [
       "team_millwall",
@@ -10537,7 +10537,7 @@
     "sportId": "football",
     "competitionId": "championship",
     "seasonId": "championship_2026_27",
-    "date": "2027-03-20T00:00:00Z",
+    "date": "2027-03-20T12:00:00Z",
     "title": "Wrexham vs Stoke City",
     "participants": [
       "team_wrexham",
@@ -10560,7 +10560,7 @@
     "sportId": "football",
     "competitionId": "championship",
     "seasonId": "championship_2026_27",
-    "date": "2027-03-20T00:00:00Z",
+    "date": "2027-03-20T12:00:00Z",
     "title": "Bristol City vs Queens Park Rangers",
     "participants": [
       "team_bristol_city",
@@ -10583,7 +10583,7 @@
     "sportId": "football",
     "competitionId": "championship",
     "seasonId": "championship_2026_27",
-    "date": "2027-03-20T00:00:00Z",
+    "date": "2027-03-20T12:00:00Z",
     "title": "Watford vs Portsmouth",
     "participants": [
       "team_watford",
@@ -10606,7 +10606,7 @@
     "sportId": "football",
     "competitionId": "championship",
     "seasonId": "championship_2026_27",
-    "date": "2027-03-20T00:00:00Z",
+    "date": "2027-03-20T12:00:00Z",
     "title": "Southampton vs Charlton Athletic",
     "participants": [
       "team_southampton",
@@ -10629,7 +10629,7 @@
     "sportId": "football",
     "competitionId": "championship",
     "seasonId": "championship_2026_27",
-    "date": "2027-03-20T00:00:00Z",
+    "date": "2027-03-20T12:00:00Z",
     "title": "Birmingham City vs Blackburn Rovers",
     "participants": [
       "team_birmingham_city",
@@ -10652,7 +10652,7 @@
     "sportId": "football",
     "competitionId": "championship",
     "seasonId": "championship_2026_27",
-    "date": "2027-03-20T00:00:00Z",
+    "date": "2027-03-20T12:00:00Z",
     "title": "Burnley vs Bolton Wanderers",
     "participants": [
       "team_burnley",
@@ -10675,7 +10675,7 @@
     "sportId": "football",
     "competitionId": "championship",
     "seasonId": "championship_2026_27",
-    "date": "2027-03-20T00:00:00Z",
+    "date": "2027-03-20T12:00:00Z",
     "title": "Middlesbrough vs Sheffield United",
     "participants": [
       "team_middlesbrough",
@@ -10698,7 +10698,7 @@
     "sportId": "football",
     "competitionId": "championship",
     "seasonId": "championship_2026_27",
-    "date": "2027-03-20T00:00:00Z",
+    "date": "2027-03-20T12:00:00Z",
     "title": "West Bromwich Albion vs Lincoln City",
     "participants": [
       "team_west_bromwich_albion",
@@ -10721,7 +10721,7 @@
     "sportId": "football",
     "competitionId": "championship",
     "seasonId": "championship_2026_27",
-    "date": "2027-03-20T00:00:00Z",
+    "date": "2027-03-20T12:00:00Z",
     "title": "Norwich City vs West Ham United",
     "participants": [
       "team_norwich_city",
@@ -10744,7 +10744,7 @@
     "sportId": "football",
     "competitionId": "championship",
     "seasonId": "championship_2026_27",
-    "date": "2027-03-20T00:00:00Z",
+    "date": "2027-03-20T12:00:00Z",
     "title": "Derby County vs Preston North End",
     "participants": [
       "team_derby_county",
@@ -10767,7 +10767,7 @@
     "sportId": "football",
     "competitionId": "championship",
     "seasonId": "championship_2026_27",
-    "date": "2027-04-03T00:00:00Z",
+    "date": "2027-04-03T12:00:00Z",
     "title": "Stoke City vs Burnley",
     "participants": [
       "team_stoke_city",
@@ -10790,7 +10790,7 @@
     "sportId": "football",
     "competitionId": "championship",
     "seasonId": "championship_2026_27",
-    "date": "2027-04-03T00:00:00Z",
+    "date": "2027-04-03T12:00:00Z",
     "title": "Portsmouth vs Middlesbrough",
     "participants": [
       "team_portsmouth",
@@ -10813,7 +10813,7 @@
     "sportId": "football",
     "competitionId": "championship",
     "seasonId": "championship_2026_27",
-    "date": "2027-04-03T00:00:00Z",
+    "date": "2027-04-03T12:00:00Z",
     "title": "Cardiff City vs Bristol City",
     "participants": [
       "team_cardiff_city",
@@ -10836,7 +10836,7 @@
     "sportId": "football",
     "competitionId": "championship",
     "seasonId": "championship_2026_27",
-    "date": "2027-04-03T00:00:00Z",
+    "date": "2027-04-03T12:00:00Z",
     "title": "Bolton Wanderers vs Watford",
     "participants": [
       "team_bolton_wanderers",
@@ -10859,7 +10859,7 @@
     "sportId": "football",
     "competitionId": "championship",
     "seasonId": "championship_2026_27",
-    "date": "2027-04-03T00:00:00Z",
+    "date": "2027-04-03T12:00:00Z",
     "title": "Charlton Athletic vs Millwall",
     "participants": [
       "team_charlton_athletic",
@@ -10882,7 +10882,7 @@
     "sportId": "football",
     "competitionId": "championship",
     "seasonId": "championship_2026_27",
-    "date": "2027-04-03T00:00:00Z",
+    "date": "2027-04-03T12:00:00Z",
     "title": "West Ham United vs Birmingham City",
     "participants": [
       "team_west_ham_united",
@@ -10905,7 +10905,7 @@
     "sportId": "football",
     "competitionId": "championship",
     "seasonId": "championship_2026_27",
-    "date": "2027-04-03T00:00:00Z",
+    "date": "2027-04-03T12:00:00Z",
     "title": "Lincoln City vs Derby County",
     "participants": [
       "team_lincoln_city",
@@ -10928,7 +10928,7 @@
     "sportId": "football",
     "competitionId": "championship",
     "seasonId": "championship_2026_27",
-    "date": "2027-04-03T00:00:00Z",
+    "date": "2027-04-03T12:00:00Z",
     "title": "Wolverhampton Wanderers vs Norwich City",
     "participants": [
       "team_wolverhampton_wanderers",
@@ -10951,7 +10951,7 @@
     "sportId": "football",
     "competitionId": "championship",
     "seasonId": "championship_2026_27",
-    "date": "2027-04-03T00:00:00Z",
+    "date": "2027-04-03T12:00:00Z",
     "title": "Sheffield United vs West Bromwich Albion",
     "participants": [
       "team_sheffield_united",
@@ -10974,7 +10974,7 @@
     "sportId": "football",
     "competitionId": "championship",
     "seasonId": "championship_2026_27",
-    "date": "2027-04-03T00:00:00Z",
+    "date": "2027-04-03T12:00:00Z",
     "title": "Blackburn Rovers vs Southampton",
     "participants": [
       "team_blackburn_rovers",
@@ -10997,7 +10997,7 @@
     "sportId": "football",
     "competitionId": "championship",
     "seasonId": "championship_2026_27",
-    "date": "2027-04-03T00:00:00Z",
+    "date": "2027-04-03T12:00:00Z",
     "title": "Queens Park Rangers vs Wrexham",
     "participants": [
       "team_queens_park_rangers",
@@ -11020,7 +11020,7 @@
     "sportId": "football",
     "competitionId": "championship",
     "seasonId": "championship_2026_27",
-    "date": "2027-04-03T00:00:00Z",
+    "date": "2027-04-03T12:00:00Z",
     "title": "Preston North End vs Swansea City",
     "participants": [
       "team_preston_north_end",
@@ -11043,7 +11043,7 @@
     "sportId": "football",
     "competitionId": "championship",
     "seasonId": "championship_2026_27",
-    "date": "2027-04-06T00:00:00Z",
+    "date": "2027-04-06T12:00:00Z",
     "title": "Lincoln City vs Bristol City",
     "participants": [
       "team_lincoln_city",
@@ -11066,7 +11066,7 @@
     "sportId": "football",
     "competitionId": "championship",
     "seasonId": "championship_2026_27",
-    "date": "2027-04-06T00:00:00Z",
+    "date": "2027-04-06T12:00:00Z",
     "title": "Millwall vs Middlesbrough",
     "participants": [
       "team_millwall",
@@ -11089,7 +11089,7 @@
     "sportId": "football",
     "competitionId": "championship",
     "seasonId": "championship_2026_27",
-    "date": "2027-04-06T00:00:00Z",
+    "date": "2027-04-06T12:00:00Z",
     "title": "West Ham United vs Bolton Wanderers",
     "participants": [
       "team_west_ham_united",
@@ -11112,7 +11112,7 @@
     "sportId": "football",
     "competitionId": "championship",
     "seasonId": "championship_2026_27",
-    "date": "2027-04-06T00:00:00Z",
+    "date": "2027-04-06T12:00:00Z",
     "title": "Queens Park Rangers vs Charlton Athletic",
     "participants": [
       "team_queens_park_rangers",
@@ -11135,7 +11135,7 @@
     "sportId": "football",
     "competitionId": "championship",
     "seasonId": "championship_2026_27",
-    "date": "2027-04-06T00:00:00Z",
+    "date": "2027-04-06T12:00:00Z",
     "title": "Stoke City vs Cardiff City",
     "participants": [
       "team_stoke_city",
@@ -11158,7 +11158,7 @@
     "sportId": "football",
     "competitionId": "championship",
     "seasonId": "championship_2026_27",
-    "date": "2027-04-06T00:00:00Z",
+    "date": "2027-04-06T12:00:00Z",
     "title": "Portsmouth vs Wolverhampton Wanderers",
     "participants": [
       "team_portsmouth",
@@ -11181,7 +11181,7 @@
     "sportId": "football",
     "competitionId": "championship",
     "seasonId": "championship_2026_27",
-    "date": "2027-04-06T00:00:00Z",
+    "date": "2027-04-06T12:00:00Z",
     "title": "Swansea City vs Southampton",
     "participants": [
       "team_swansea_city",
@@ -11204,7 +11204,7 @@
     "sportId": "football",
     "competitionId": "championship",
     "seasonId": "championship_2026_27",
-    "date": "2027-04-06T00:00:00Z",
+    "date": "2027-04-06T12:00:00Z",
     "title": "Burnley vs Wrexham",
     "participants": [
       "team_burnley",
@@ -11227,7 +11227,7 @@
     "sportId": "football",
     "competitionId": "championship",
     "seasonId": "championship_2026_27",
-    "date": "2027-04-07T00:00:00Z",
+    "date": "2027-04-07T12:00:00Z",
     "title": "Preston North End vs Watford",
     "participants": [
       "team_preston_north_end",
@@ -11250,7 +11250,7 @@
     "sportId": "football",
     "competitionId": "championship",
     "seasonId": "championship_2026_27",
-    "date": "2027-04-07T00:00:00Z",
+    "date": "2027-04-07T12:00:00Z",
     "title": "West Bromwich Albion vs Derby County",
     "participants": [
       "team_west_bromwich_albion",
@@ -11273,7 +11273,7 @@
     "sportId": "football",
     "competitionId": "championship",
     "seasonId": "championship_2026_27",
-    "date": "2027-04-07T00:00:00Z",
+    "date": "2027-04-07T12:00:00Z",
     "title": "Birmingham City vs Norwich City",
     "participants": [
       "team_birmingham_city",
@@ -11296,7 +11296,7 @@
     "sportId": "football",
     "competitionId": "championship",
     "seasonId": "championship_2026_27",
-    "date": "2027-04-07T00:00:00Z",
+    "date": "2027-04-07T12:00:00Z",
     "title": "Sheffield United vs Blackburn Rovers",
     "participants": [
       "team_sheffield_united",
@@ -11319,7 +11319,7 @@
     "sportId": "football",
     "competitionId": "championship",
     "seasonId": "championship_2026_27",
-    "date": "2027-04-10T00:00:00Z",
+    "date": "2027-04-10T12:00:00Z",
     "title": "Wrexham vs Swansea City",
     "participants": [
       "team_wrexham",
@@ -11342,7 +11342,7 @@
     "sportId": "football",
     "competitionId": "championship",
     "seasonId": "championship_2026_27",
-    "date": "2027-04-10T00:00:00Z",
+    "date": "2027-04-10T12:00:00Z",
     "title": "Wolverhampton Wanderers vs Birmingham City",
     "participants": [
       "team_wolverhampton_wanderers",
@@ -11365,7 +11365,7 @@
     "sportId": "football",
     "competitionId": "championship",
     "seasonId": "championship_2026_27",
-    "date": "2027-04-10T00:00:00Z",
+    "date": "2027-04-10T12:00:00Z",
     "title": "Watford vs West Bromwich Albion",
     "participants": [
       "team_watford",
@@ -11388,7 +11388,7 @@
     "sportId": "football",
     "competitionId": "championship",
     "seasonId": "championship_2026_27",
-    "date": "2027-04-10T00:00:00Z",
+    "date": "2027-04-10T12:00:00Z",
     "title": "Blackburn Rovers vs Preston North End",
     "participants": [
       "team_blackburn_rovers",
@@ -11411,7 +11411,7 @@
     "sportId": "football",
     "competitionId": "championship",
     "seasonId": "championship_2026_27",
-    "date": "2027-04-10T00:00:00Z",
+    "date": "2027-04-10T12:00:00Z",
     "title": "Bolton Wanderers vs Millwall",
     "participants": [
       "team_bolton_wanderers",
@@ -11434,7 +11434,7 @@
     "sportId": "football",
     "competitionId": "championship",
     "seasonId": "championship_2026_27",
-    "date": "2027-04-10T00:00:00Z",
+    "date": "2027-04-10T12:00:00Z",
     "title": "Norwich City vs Sheffield United",
     "participants": [
       "team_norwich_city",
@@ -11457,7 +11457,7 @@
     "sportId": "football",
     "competitionId": "championship",
     "seasonId": "championship_2026_27",
-    "date": "2027-04-10T00:00:00Z",
+    "date": "2027-04-10T12:00:00Z",
     "title": "Middlesbrough vs Queens Park Rangers",
     "participants": [
       "team_middlesbrough",
@@ -11480,7 +11480,7 @@
     "sportId": "football",
     "competitionId": "championship",
     "seasonId": "championship_2026_27",
-    "date": "2027-04-10T00:00:00Z",
+    "date": "2027-04-10T12:00:00Z",
     "title": "Cardiff City vs Portsmouth",
     "participants": [
       "team_cardiff_city",
@@ -11503,7 +11503,7 @@
     "sportId": "football",
     "competitionId": "championship",
     "seasonId": "championship_2026_27",
-    "date": "2027-04-10T00:00:00Z",
+    "date": "2027-04-10T12:00:00Z",
     "title": "Southampton vs Lincoln City",
     "participants": [
       "team_southampton",
@@ -11526,7 +11526,7 @@
     "sportId": "football",
     "competitionId": "championship",
     "seasonId": "championship_2026_27",
-    "date": "2027-04-10T00:00:00Z",
+    "date": "2027-04-10T12:00:00Z",
     "title": "Charlton Athletic vs Stoke City",
     "participants": [
       "team_charlton_athletic",
@@ -11549,7 +11549,7 @@
     "sportId": "football",
     "competitionId": "championship",
     "seasonId": "championship_2026_27",
-    "date": "2027-04-10T00:00:00Z",
+    "date": "2027-04-10T12:00:00Z",
     "title": "Bristol City vs Burnley",
     "participants": [
       "team_bristol_city",
@@ -11572,7 +11572,7 @@
     "sportId": "football",
     "competitionId": "championship",
     "seasonId": "championship_2026_27",
-    "date": "2027-04-10T00:00:00Z",
+    "date": "2027-04-10T12:00:00Z",
     "title": "Derby County vs West Ham United",
     "participants": [
       "team_derby_county",
@@ -11595,7 +11595,7 @@
     "sportId": "football",
     "competitionId": "championship",
     "seasonId": "championship_2026_27",
-    "date": "2027-04-17T00:00:00Z",
+    "date": "2027-04-17T12:00:00Z",
     "title": "Preston North End vs Charlton Athletic",
     "participants": [
       "team_preston_north_end",
@@ -11618,7 +11618,7 @@
     "sportId": "football",
     "competitionId": "championship",
     "seasonId": "championship_2026_27",
-    "date": "2027-04-17T00:00:00Z",
+    "date": "2027-04-17T12:00:00Z",
     "title": "Portsmouth vs Bristol City",
     "participants": [
       "team_portsmouth",
@@ -11641,7 +11641,7 @@
     "sportId": "football",
     "competitionId": "championship",
     "seasonId": "championship_2026_27",
-    "date": "2027-04-17T00:00:00Z",
+    "date": "2027-04-17T12:00:00Z",
     "title": "Birmingham City vs Wrexham",
     "participants": [
       "team_birmingham_city",
@@ -11664,7 +11664,7 @@
     "sportId": "football",
     "competitionId": "championship",
     "seasonId": "championship_2026_27",
-    "date": "2027-04-17T00:00:00Z",
+    "date": "2027-04-17T12:00:00Z",
     "title": "Stoke City vs Wolverhampton Wanderers",
     "participants": [
       "team_stoke_city",
@@ -11687,7 +11687,7 @@
     "sportId": "football",
     "competitionId": "championship",
     "seasonId": "championship_2026_27",
-    "date": "2027-04-17T00:00:00Z",
+    "date": "2027-04-17T12:00:00Z",
     "title": "Lincoln City vs Bolton Wanderers",
     "participants": [
       "team_lincoln_city",
@@ -11710,7 +11710,7 @@
     "sportId": "football",
     "competitionId": "championship",
     "seasonId": "championship_2026_27",
-    "date": "2027-04-17T00:00:00Z",
+    "date": "2027-04-17T12:00:00Z",
     "title": "West Bromwich Albion vs Middlesbrough",
     "participants": [
       "team_west_bromwich_albion",
@@ -11733,7 +11733,7 @@
     "sportId": "football",
     "competitionId": "championship",
     "seasonId": "championship_2026_27",
-    "date": "2027-04-17T00:00:00Z",
+    "date": "2027-04-17T12:00:00Z",
     "title": "Queens Park Rangers vs Blackburn Rovers",
     "participants": [
       "team_queens_park_rangers",
@@ -11756,7 +11756,7 @@
     "sportId": "football",
     "competitionId": "championship",
     "seasonId": "championship_2026_27",
-    "date": "2027-04-17T00:00:00Z",
+    "date": "2027-04-17T12:00:00Z",
     "title": "West Ham United vs Watford",
     "participants": [
       "team_west_ham_united",
@@ -11779,7 +11779,7 @@
     "sportId": "football",
     "competitionId": "championship",
     "seasonId": "championship_2026_27",
-    "date": "2027-04-17T00:00:00Z",
+    "date": "2027-04-17T12:00:00Z",
     "title": "Burnley vs Norwich City",
     "participants": [
       "team_burnley",
@@ -11802,7 +11802,7 @@
     "sportId": "football",
     "competitionId": "championship",
     "seasonId": "championship_2026_27",
-    "date": "2027-04-17T00:00:00Z",
+    "date": "2027-04-17T12:00:00Z",
     "title": "Millwall vs Southampton",
     "participants": [
       "team_millwall",
@@ -11825,7 +11825,7 @@
     "sportId": "football",
     "competitionId": "championship",
     "seasonId": "championship_2026_27",
-    "date": "2027-04-17T00:00:00Z",
+    "date": "2027-04-17T12:00:00Z",
     "title": "Swansea City vs Derby County",
     "participants": [
       "team_swansea_city",
@@ -11848,7 +11848,7 @@
     "sportId": "football",
     "competitionId": "championship",
     "seasonId": "championship_2026_27",
-    "date": "2027-04-17T00:00:00Z",
+    "date": "2027-04-17T12:00:00Z",
     "title": "Sheffield United vs Cardiff City",
     "participants": [
       "team_sheffield_united",
@@ -11871,7 +11871,7 @@
     "sportId": "football",
     "competitionId": "championship",
     "seasonId": "championship_2026_27",
-    "date": "2027-04-20T00:00:00Z",
+    "date": "2027-04-20T12:00:00Z",
     "title": "Bolton Wanderers vs Sheffield United",
     "participants": [
       "team_bolton_wanderers",
@@ -11894,7 +11894,7 @@
     "sportId": "football",
     "competitionId": "championship",
     "seasonId": "championship_2026_27",
-    "date": "2027-04-20T00:00:00Z",
+    "date": "2027-04-20T12:00:00Z",
     "title": "Norwich City vs Stoke City",
     "participants": [
       "team_norwich_city",
@@ -11917,7 +11917,7 @@
     "sportId": "football",
     "competitionId": "championship",
     "seasonId": "championship_2026_27",
-    "date": "2027-04-20T00:00:00Z",
+    "date": "2027-04-20T12:00:00Z",
     "title": "Middlesbrough vs Burnley",
     "participants": [
       "team_middlesbrough",
@@ -11940,7 +11940,7 @@
     "sportId": "football",
     "competitionId": "championship",
     "seasonId": "championship_2026_27",
-    "date": "2027-04-20T00:00:00Z",
+    "date": "2027-04-20T12:00:00Z",
     "title": "Derby County vs Portsmouth",
     "participants": [
       "team_derby_county",
@@ -11963,7 +11963,7 @@
     "sportId": "football",
     "competitionId": "championship",
     "seasonId": "championship_2026_27",
-    "date": "2027-04-20T00:00:00Z",
+    "date": "2027-04-20T12:00:00Z",
     "title": "Wolverhampton Wanderers vs West Ham United",
     "participants": [
       "team_wolverhampton_wanderers",
@@ -11986,7 +11986,7 @@
     "sportId": "football",
     "competitionId": "championship",
     "seasonId": "championship_2026_27",
-    "date": "2027-04-20T00:00:00Z",
+    "date": "2027-04-20T12:00:00Z",
     "title": "Wrexham vs Millwall",
     "participants": [
       "team_wrexham",
@@ -12009,7 +12009,7 @@
     "sportId": "football",
     "competitionId": "championship",
     "seasonId": "championship_2026_27",
-    "date": "2027-04-20T00:00:00Z",
+    "date": "2027-04-20T12:00:00Z",
     "title": "Southampton vs Birmingham City",
     "participants": [
       "team_southampton",
@@ -12032,7 +12032,7 @@
     "sportId": "football",
     "competitionId": "championship",
     "seasonId": "championship_2026_27",
-    "date": "2027-04-20T00:00:00Z",
+    "date": "2027-04-20T12:00:00Z",
     "title": "Charlton Athletic vs West Bromwich Albion",
     "participants": [
       "team_charlton_athletic",
@@ -12055,7 +12055,7 @@
     "sportId": "football",
     "competitionId": "championship",
     "seasonId": "championship_2026_27",
-    "date": "2027-04-21T00:00:00Z",
+    "date": "2027-04-21T12:00:00Z",
     "title": "Bristol City vs Preston North End",
     "participants": [
       "team_bristol_city",
@@ -12078,7 +12078,7 @@
     "sportId": "football",
     "competitionId": "championship",
     "seasonId": "championship_2026_27",
-    "date": "2027-04-21T00:00:00Z",
+    "date": "2027-04-21T12:00:00Z",
     "title": "Blackburn Rovers vs Lincoln City",
     "participants": [
       "team_blackburn_rovers",
@@ -12101,7 +12101,7 @@
     "sportId": "football",
     "competitionId": "championship",
     "seasonId": "championship_2026_27",
-    "date": "2027-04-21T00:00:00Z",
+    "date": "2027-04-21T12:00:00Z",
     "title": "Cardiff City vs Queens Park Rangers",
     "participants": [
       "team_cardiff_city",
@@ -12124,7 +12124,7 @@
     "sportId": "football",
     "competitionId": "championship",
     "seasonId": "championship_2026_27",
-    "date": "2027-04-21T00:00:00Z",
+    "date": "2027-04-21T12:00:00Z",
     "title": "Watford vs Swansea City",
     "participants": [
       "team_watford",
@@ -12147,7 +12147,7 @@
     "sportId": "football",
     "competitionId": "championship",
     "seasonId": "championship_2026_27",
-    "date": "2027-04-24T00:00:00Z",
+    "date": "2027-04-24T12:00:00Z",
     "title": "Watford vs Birmingham City",
     "participants": [
       "team_watford",
@@ -12170,7 +12170,7 @@
     "sportId": "football",
     "competitionId": "championship",
     "seasonId": "championship_2026_27",
-    "date": "2027-04-24T00:00:00Z",
+    "date": "2027-04-24T12:00:00Z",
     "title": "Middlesbrough vs West Ham United",
     "participants": [
       "team_middlesbrough",
@@ -12193,7 +12193,7 @@
     "sportId": "football",
     "competitionId": "championship",
     "seasonId": "championship_2026_27",
-    "date": "2027-04-24T00:00:00Z",
+    "date": "2027-04-24T12:00:00Z",
     "title": "Stoke City vs Lincoln City",
     "participants": [
       "team_stoke_city",
@@ -12216,7 +12216,7 @@
     "sportId": "football",
     "competitionId": "championship",
     "seasonId": "championship_2026_27",
-    "date": "2027-04-24T00:00:00Z",
+    "date": "2027-04-24T12:00:00Z",
     "title": "Burnley vs Southampton",
     "participants": [
       "team_burnley",
@@ -12239,7 +12239,7 @@
     "sportId": "football",
     "competitionId": "championship",
     "seasonId": "championship_2026_27",
-    "date": "2027-04-24T00:00:00Z",
+    "date": "2027-04-24T12:00:00Z",
     "title": "Bolton Wanderers vs Swansea City",
     "participants": [
       "team_bolton_wanderers",
@@ -12262,7 +12262,7 @@
     "sportId": "football",
     "competitionId": "championship",
     "seasonId": "championship_2026_27",
-    "date": "2027-04-24T00:00:00Z",
+    "date": "2027-04-24T12:00:00Z",
     "title": "Sheffield United vs Millwall",
     "participants": [
       "team_sheffield_united",
@@ -12285,7 +12285,7 @@
     "sportId": "football",
     "competitionId": "championship",
     "seasonId": "championship_2026_27",
-    "date": "2027-04-24T00:00:00Z",
+    "date": "2027-04-24T12:00:00Z",
     "title": "Wolverhampton Wanderers vs Queens Park Rangers",
     "participants": [
       "team_wolverhampton_wanderers",
@@ -12308,7 +12308,7 @@
     "sportId": "football",
     "competitionId": "championship",
     "seasonId": "championship_2026_27",
-    "date": "2027-04-24T00:00:00Z",
+    "date": "2027-04-24T12:00:00Z",
     "title": "Bristol City vs Derby County",
     "participants": [
       "team_bristol_city",
@@ -12331,7 +12331,7 @@
     "sportId": "football",
     "competitionId": "championship",
     "seasonId": "championship_2026_27",
-    "date": "2027-04-24T00:00:00Z",
+    "date": "2027-04-24T12:00:00Z",
     "title": "Charlton Athletic vs Wrexham",
     "participants": [
       "team_charlton_athletic",
@@ -12354,7 +12354,7 @@
     "sportId": "football",
     "competitionId": "championship",
     "seasonId": "championship_2026_27",
-    "date": "2027-04-24T00:00:00Z",
+    "date": "2027-04-24T12:00:00Z",
     "title": "Norwich City vs Blackburn Rovers",
     "participants": [
       "team_norwich_city",
@@ -12377,7 +12377,7 @@
     "sportId": "football",
     "competitionId": "championship",
     "seasonId": "championship_2026_27",
-    "date": "2027-04-24T00:00:00Z",
+    "date": "2027-04-24T12:00:00Z",
     "title": "Cardiff City vs West Bromwich Albion",
     "participants": [
       "team_cardiff_city",
@@ -12400,7 +12400,7 @@
     "sportId": "football",
     "competitionId": "championship",
     "seasonId": "championship_2026_27",
-    "date": "2027-04-24T00:00:00Z",
+    "date": "2027-04-24T12:00:00Z",
     "title": "Portsmouth vs Preston North End",
     "participants": [
       "team_portsmouth",
@@ -12423,7 +12423,7 @@
     "sportId": "football",
     "competitionId": "championship",
     "seasonId": "championship_2026_27",
-    "date": "2027-05-01T00:00:00Z",
+    "date": "2027-05-01T12:00:00Z",
     "title": "Queens Park Rangers vs Norwich City",
     "participants": [
       "team_queens_park_rangers",
@@ -12446,7 +12446,7 @@
     "sportId": "football",
     "competitionId": "championship",
     "seasonId": "championship_2026_27",
-    "date": "2027-05-01T00:00:00Z",
+    "date": "2027-05-01T12:00:00Z",
     "title": "West Ham United vs Portsmouth",
     "participants": [
       "team_west_ham_united",
@@ -12469,7 +12469,7 @@
     "sportId": "football",
     "competitionId": "championship",
     "seasonId": "championship_2026_27",
-    "date": "2027-05-01T00:00:00Z",
+    "date": "2027-05-01T12:00:00Z",
     "title": "West Bromwich Albion vs Bolton Wanderers",
     "participants": [
       "team_west_bromwich_albion",
@@ -12492,7 +12492,7 @@
     "sportId": "football",
     "competitionId": "championship",
     "seasonId": "championship_2026_27",
-    "date": "2027-05-01T00:00:00Z",
+    "date": "2027-05-01T12:00:00Z",
     "title": "Southampton vs Sheffield United",
     "participants": [
       "team_southampton",
@@ -12515,7 +12515,7 @@
     "sportId": "football",
     "competitionId": "championship",
     "seasonId": "championship_2026_27",
-    "date": "2027-05-01T00:00:00Z",
+    "date": "2027-05-01T12:00:00Z",
     "title": "Birmingham City vs Burnley",
     "participants": [
       "team_birmingham_city",
@@ -12538,7 +12538,7 @@
     "sportId": "football",
     "competitionId": "championship",
     "seasonId": "championship_2026_27",
-    "date": "2027-05-01T00:00:00Z",
+    "date": "2027-05-01T12:00:00Z",
     "title": "Millwall vs Stoke City",
     "participants": [
       "team_millwall",
@@ -12561,7 +12561,7 @@
     "sportId": "football",
     "competitionId": "championship",
     "seasonId": "championship_2026_27",
-    "date": "2027-05-01T00:00:00Z",
+    "date": "2027-05-01T12:00:00Z",
     "title": "Wrexham vs Bristol City",
     "participants": [
       "team_wrexham",
@@ -12584,7 +12584,7 @@
     "sportId": "football",
     "competitionId": "championship",
     "seasonId": "championship_2026_27",
-    "date": "2027-05-01T00:00:00Z",
+    "date": "2027-05-01T12:00:00Z",
     "title": "Blackburn Rovers vs Watford",
     "participants": [
       "team_blackburn_rovers",
@@ -12607,7 +12607,7 @@
     "sportId": "football",
     "competitionId": "championship",
     "seasonId": "championship_2026_27",
-    "date": "2027-05-01T00:00:00Z",
+    "date": "2027-05-01T12:00:00Z",
     "title": "Lincoln City vs Charlton Athletic",
     "participants": [
       "team_lincoln_city",
@@ -12630,7 +12630,7 @@
     "sportId": "football",
     "competitionId": "championship",
     "seasonId": "championship_2026_27",
-    "date": "2027-05-01T00:00:00Z",
+    "date": "2027-05-01T12:00:00Z",
     "title": "Preston North End vs Cardiff City",
     "participants": [
       "team_preston_north_end",
@@ -12653,7 +12653,7 @@
     "sportId": "football",
     "competitionId": "championship",
     "seasonId": "championship_2026_27",
-    "date": "2027-05-01T00:00:00Z",
+    "date": "2027-05-01T12:00:00Z",
     "title": "Derby County vs Wolverhampton Wanderers",
     "participants": [
       "team_derby_county",
@@ -12676,7 +12676,7 @@
     "sportId": "football",
     "competitionId": "championship",
     "seasonId": "championship_2026_27",
-    "date": "2027-05-01T00:00:00Z",
+    "date": "2027-05-01T12:00:00Z",
     "title": "Swansea City vs Middlesbrough",
     "participants": [
       "team_swansea_city",
