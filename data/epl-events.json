@@ -2238,7 +2238,7 @@
       "homeTeam": "team_leeds_united",
       "awayTeam": "team_tottenham_hotspur",
       "venue": null,
-      "result": null,
+      "result": "1-0",
       "kind": "football_match"
     },
     "dataQuality": "verified",
@@ -2261,7 +2261,7 @@
       "homeTeam": "team_arsenal",
       "awayTeam": "team_hull_city",
       "venue": null,
-      "result": null
+      "result": "1-0"
     },
     "dataQuality": "verified",
     "externalIds": {
@@ -2284,7 +2284,7 @@
       "homeTeam": "team_fulham",
       "awayTeam": "team_newcastle_united",
       "venue": null,
-      "result": null
+      "result": "1-1"
     },
     "dataQuality": "verified",
     "externalIds": {
@@ -2307,7 +2307,7 @@
       "homeTeam": "team_nottingham_forest",
       "awayTeam": "team_manchester_city",
       "venue": null,
-      "result": null
+      "result": "3-1"
     },
     "dataQuality": "verified",
     "externalIds": {
