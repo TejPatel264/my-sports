@@ -4145,6 +4145,11 @@
     "label": "2025"
   },
   {
+    "id": "tennis_atp_stockholm_2026",
+    "competitionId": "tennis_atp_stockholm",
+    "label": "2026"
+  },
+  {
     "id": "tennis_atp_stuttgart_2021",
     "competitionId": "tennis_atp_stuttgart",
     "label": "2021"
@@ -7888,6 +7893,11 @@
     "id": "tennis_wta_wta_finals_2025",
     "competitionId": "tennis_wta_wta_finals",
     "label": "2025"
+  },
+  {
+    "id": "tennis_wta_wta_finals_2026",
+    "competitionId": "tennis_wta_wta_finals",
+    "label": "2026"
   },
   {
     "id": "tennis_wta_wuhan_2024",
