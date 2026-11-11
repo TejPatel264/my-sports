@@ -941357,6 +941357,58 @@
   },
   {
     "sportId": "tennis",
+    "competitionId": "tennis_wta_wta_finals",
+    "seasonId": "tennis_wta_wta_finals_2026",
+    "date": "2026-11-08T00:00:00Z",
+    "title": "Jessica Pegula vs Marta Kostyuk",
+    "participants": [
+      "tennis_player_wta_202468",
+      "tennis_player_wta_216146"
+    ],
+    "sportData": {
+      "kind": "tennis_match",
+      "round": "RR",
+      "surface": "Hard",
+      "tournamentLevel": "F",
+      "winner": "tennis_player_wta_202468",
+      "loser": "tennis_player_wta_216146",
+      "score": "6-2 7-5",
+      "durationMinutes": 88
+    },
+    "dataQuality": "verified",
+    "externalIds": {
+      "tmlMatchId": "wta_2026-808_5"
+    },
+    "id": "evt_tennis_036220"
+  },
+  {
+    "sportId": "tennis",
+    "competitionId": "tennis_wta_wta_finals",
+    "seasonId": "tennis_wta_wta_finals_2026",
+    "date": "2026-11-08T00:00:00Z",
+    "title": "Linda Noskova vs Coco Gauff",
+    "participants": [
+      "tennis_player_wta_222328",
+      "tennis_player_wta_221103"
+    ],
+    "sportData": {
+      "kind": "tennis_match",
+      "round": "RR",
+      "surface": "Hard",
+      "tournamentLevel": "F",
+      "winner": "tennis_player_wta_222328",
+      "loser": "tennis_player_wta_221103",
+      "score": "6-3 6-3",
+      "durationMinutes": 75
+    },
+    "dataQuality": "verified",
+    "externalIds": {
+      "tmlMatchId": "wta_2026-808_6"
+    },
+    "id": "evt_tennis_036221"
+  },
+  {
+    "sportId": "tennis",
     "competitionId": "tennis_atp_stockholm",
     "seasonId": "tennis_atp_stockholm_2026",
     "date": "2026-11-09T00:00:00Z",
@@ -941510,5 +941562,187 @@
       "tmlMatchId": "atp_2026-429_35"
     },
     "id": "evt_tennis_036209"
+  },
+  {
+    "sportId": "tennis",
+    "competitionId": "tennis_atp_stockholm",
+    "seasonId": "tennis_atp_stockholm_2026",
+    "date": "2026-11-10T00:00:00Z",
+    "title": "Alexander Shevchenko vs Adrian Mannarino",
+    "participants": [
+      "tennis_player_atp_S0H2",
+      "tennis_player_atp_ME82"
+    ],
+    "sportData": {
+      "kind": "tennis_match",
+      "round": "R32",
+      "surface": "Hard",
+      "tournamentLevel": "250",
+      "winner": "tennis_player_atp_S0H2",
+      "loser": "tennis_player_atp_ME82",
+      "score": "6-1 6-3",
+      "durationMinutes": 69
+    },
+    "dataQuality": "verified",
+    "externalIds": {
+      "tmlMatchId": "atp_2026-429_36"
+    },
+    "id": "evt_tennis_036213"
+  },
+  {
+    "sportId": "tennis",
+    "competitionId": "tennis_atp_stockholm",
+    "seasonId": "tennis_atp_stockholm_2026",
+    "date": "2026-11-10T00:00:00Z",
+    "title": "Thiago Agustin Tirante vs Tomas Martin Etcheverry",
+    "participants": [
+      "tennis_player_atp_T0A1",
+      "tennis_player_atp_EA24"
+    ],
+    "sportData": {
+      "kind": "tennis_match",
+      "round": "R16",
+      "surface": "Hard",
+      "tournamentLevel": "250",
+      "winner": "tennis_player_atp_T0A1",
+      "loser": "tennis_player_atp_EA24",
+      "score": "W/O",
+      "durationMinutes": null
+    },
+    "dataQuality": "verified",
+    "externalIds": {
+      "tmlMatchId": "atp_2026-429_37"
+    },
+    "id": "evt_tennis_036214"
+  },
+  {
+    "sportId": "tennis",
+    "competitionId": "tennis_atp_stockholm",
+    "seasonId": "tennis_atp_stockholm_2026",
+    "date": "2026-11-10T00:00:00Z",
+    "title": "Alex Michelsen vs Juan Manuel Cerundolo",
+    "participants": [
+      "tennis_player_atp_M0QI",
+      "tennis_player_atp_C0C8"
+    ],
+    "sportData": {
+      "kind": "tennis_match",
+      "round": "R16",
+      "surface": "Hard",
+      "tournamentLevel": "250",
+      "winner": "tennis_player_atp_M0QI",
+      "loser": "tennis_player_atp_C0C8",
+      "score": "6-3 6-2",
+      "durationMinutes": 76
+    },
+    "dataQuality": "verified",
+    "externalIds": {
+      "tmlMatchId": "atp_2026-429_38"
+    },
+    "id": "evt_tennis_036215"
+  },
+  {
+    "sportId": "tennis",
+    "competitionId": "tennis_atp_stockholm",
+    "seasonId": "tennis_atp_stockholm_2026",
+    "date": "2026-11-10T00:00:00Z",
+    "title": "Lorenzo Sonego vs Quentin Halys",
+    "participants": [
+      "tennis_player_atp_SU87",
+      "tennis_player_atp_HB64"
+    ],
+    "sportData": {
+      "kind": "tennis_match",
+      "round": "R32",
+      "surface": "Hard",
+      "tournamentLevel": "250",
+      "winner": "tennis_player_atp_SU87",
+      "loser": "tennis_player_atp_HB64",
+      "score": "6-4 7-6(4)",
+      "durationMinutes": 89
+    },
+    "dataQuality": "verified",
+    "externalIds": {
+      "tmlMatchId": "atp_2026-429_39"
+    },
+    "id": "evt_tennis_036216"
+  },
+  {
+    "sportId": "tennis",
+    "competitionId": "tennis_atp_stockholm",
+    "seasonId": "tennis_atp_stockholm_2026",
+    "date": "2026-11-10T00:00:00Z",
+    "title": "Miomir Kecmanovic vs Arthur Rinderknech",
+    "participants": [
+      "tennis_player_atp_KI95",
+      "tennis_player_atp_RC91"
+    ],
+    "sportData": {
+      "kind": "tennis_match",
+      "round": "R32",
+      "surface": "Hard",
+      "tournamentLevel": "250",
+      "winner": "tennis_player_atp_KI95",
+      "loser": "tennis_player_atp_RC91",
+      "score": "7-6(4) 4-6 6-4",
+      "durationMinutes": 144
+    },
+    "dataQuality": "verified",
+    "externalIds": {
+      "tmlMatchId": "atp_2026-429_40"
+    },
+    "id": "evt_tennis_036217"
+  },
+  {
+    "sportId": "tennis",
+    "competitionId": "tennis_atp_stockholm",
+    "seasonId": "tennis_atp_stockholm_2026",
+    "date": "2026-11-10T00:00:00Z",
+    "title": "Holger Rune vs Zizou Bergs",
+    "participants": [
+      "tennis_player_atp_R0DG",
+      "tennis_player_atp_BU13"
+    ],
+    "sportData": {
+      "kind": "tennis_match",
+      "round": "R32",
+      "surface": "Hard",
+      "tournamentLevel": "250",
+      "winner": "tennis_player_atp_R0DG",
+      "loser": "tennis_player_atp_BU13",
+      "score": "6-3 6-4",
+      "durationMinutes": 87
+    },
+    "dataQuality": "verified",
+    "externalIds": {
+      "tmlMatchId": "atp_2026-429_41"
+    },
+    "id": "evt_tennis_036218"
+  },
+  {
+    "sportId": "tennis",
+    "competitionId": "tennis_atp_stockholm",
+    "seasonId": "tennis_atp_stockholm_2026",
+    "date": "2026-11-10T00:00:00Z",
+    "title": "Lorenzo Musetti vs Toby Samuel",
+    "participants": [
+      "tennis_player_atp_M0EJ",
+      "tennis_player_atp_S0TM"
+    ],
+    "sportData": {
+      "kind": "tennis_match",
+      "round": "R16",
+      "surface": "Hard",
+      "tournamentLevel": "250",
+      "winner": "tennis_player_atp_M0EJ",
+      "loser": "tennis_player_atp_S0TM",
+      "score": "6-1 6-4",
+      "durationMinutes": 71
+    },
+    "dataQuality": "verified",
+    "externalIds": {
+      "tmlMatchId": "atp_2026-429_42"
+    },
+    "id": "evt_tennis_036219"
   }
 ]
