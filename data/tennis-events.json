@@ -941461,6 +941461,58 @@
   },
   {
     "sportId": "tennis",
+    "competitionId": "tennis_wta_wta_finals",
+    "seasonId": "tennis_wta_wta_finals_2026",
+    "date": "2026-11-08T00:00:00Z",
+    "title": "Coco Gauff vs Marta Kostyuk",
+    "participants": [
+      "tennis_player_wta_221103",
+      "tennis_player_wta_216146"
+    ],
+    "sportData": {
+      "kind": "tennis_match",
+      "round": "RR",
+      "surface": "Hard",
+      "tournamentLevel": "F",
+      "winner": "tennis_player_wta_221103",
+      "loser": "tennis_player_wta_216146",
+      "score": "6-4 7-5",
+      "durationMinutes": 99
+    },
+    "dataQuality": "verified",
+    "externalIds": {
+      "tmlMatchId": "wta_2026-808_9"
+    },
+    "id": "evt_tennis_036233"
+  },
+  {
+    "sportId": "tennis",
+    "competitionId": "tennis_wta_wta_finals",
+    "seasonId": "tennis_wta_wta_finals_2026",
+    "date": "2026-11-08T00:00:00Z",
+    "title": "Jessica Pegula vs Linda Noskova",
+    "participants": [
+      "tennis_player_wta_202468",
+      "tennis_player_wta_222328"
+    ],
+    "sportData": {
+      "kind": "tennis_match",
+      "round": "RR",
+      "surface": "Hard",
+      "tournamentLevel": "F",
+      "winner": "tennis_player_wta_202468",
+      "loser": "tennis_player_wta_222328",
+      "score": "7-6(2) 4-6 7-5",
+      "durationMinutes": 165
+    },
+    "dataQuality": "verified",
+    "externalIds": {
+      "tmlMatchId": "wta_2026-808_10"
+    },
+    "id": "evt_tennis_036234"
+  },
+  {
+    "sportId": "tennis",
     "competitionId": "tennis_atp_stockholm",
     "seasonId": "tennis_atp_stockholm_2026",
     "date": "2026-11-09T00:00:00Z",
@@ -941926,5 +941978,109 @@
       "tmlMatchId": "atp_2026-429_47"
     },
     "id": "evt_tennis_036226"
+  },
+  {
+    "sportId": "tennis",
+    "competitionId": "tennis_atp_stockholm",
+    "seasonId": "tennis_atp_stockholm_2026",
+    "date": "2026-11-12T00:00:00Z",
+    "title": "Alejandro Tabilo vs Alex Michelsen",
+    "participants": [
+      "tennis_player_atp_TE30",
+      "tennis_player_atp_M0QI"
+    ],
+    "sportData": {
+      "kind": "tennis_match",
+      "round": "QF",
+      "surface": "Hard",
+      "tournamentLevel": "250",
+      "winner": "tennis_player_atp_TE30",
+      "loser": "tennis_player_atp_M0QI",
+      "score": "7-5 7-6(2)",
+      "durationMinutes": 115
+    },
+    "dataQuality": "verified",
+    "externalIds": {
+      "tmlMatchId": "atp_2026-429_48"
+    },
+    "id": "evt_tennis_036229"
+  },
+  {
+    "sportId": "tennis",
+    "competitionId": "tennis_atp_stockholm",
+    "seasonId": "tennis_atp_stockholm_2026",
+    "date": "2026-11-12T00:00:00Z",
+    "title": "Thiago Agustin Tirante vs Alexander Shevchenko",
+    "participants": [
+      "tennis_player_atp_T0A1",
+      "tennis_player_atp_S0H2"
+    ],
+    "sportData": {
+      "kind": "tennis_match",
+      "round": "QF",
+      "surface": "Hard",
+      "tournamentLevel": "250",
+      "winner": "tennis_player_atp_T0A1",
+      "loser": "tennis_player_atp_S0H2",
+      "score": "7-6(5) 6-7(5) 6-3",
+      "durationMinutes": 169
+    },
+    "dataQuality": "verified",
+    "externalIds": {
+      "tmlMatchId": "atp_2026-429_49"
+    },
+    "id": "evt_tennis_036230"
+  },
+  {
+    "sportId": "tennis",
+    "competitionId": "tennis_atp_stockholm",
+    "seasonId": "tennis_atp_stockholm_2026",
+    "date": "2026-11-12T00:00:00Z",
+    "title": "Taylor Fritz vs Holger Rune",
+    "participants": [
+      "tennis_player_atp_FB98",
+      "tennis_player_atp_R0DG"
+    ],
+    "sportData": {
+      "kind": "tennis_match",
+      "round": "QF",
+      "surface": "Hard",
+      "tournamentLevel": "250",
+      "winner": "tennis_player_atp_FB98",
+      "loser": "tennis_player_atp_R0DG",
+      "score": "W/O",
+      "durationMinutes": null
+    },
+    "dataQuality": "verified",
+    "externalIds": {
+      "tmlMatchId": "atp_2026-429_50"
+    },
+    "id": "evt_tennis_036231"
+  },
+  {
+    "sportId": "tennis",
+    "competitionId": "tennis_atp_stockholm",
+    "seasonId": "tennis_atp_stockholm_2026",
+    "date": "2026-11-12T00:00:00Z",
+    "title": "Lorenzo Musetti vs Ugo Humbert",
+    "participants": [
+      "tennis_player_atp_M0EJ",
+      "tennis_player_atp_HH26"
+    ],
+    "sportData": {
+      "kind": "tennis_match",
+      "round": "QF",
+      "surface": "Hard",
+      "tournamentLevel": "250",
+      "winner": "tennis_player_atp_M0EJ",
+      "loser": "tennis_player_atp_HH26",
+      "score": "7-6(5) 3-6 6-4",
+      "durationMinutes": 150
+    },
+    "dataQuality": "verified",
+    "externalIds": {
+      "tmlMatchId": "atp_2026-429_51"
+    },
+    "id": "evt_tennis_036232"
   }
 ]
