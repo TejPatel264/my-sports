@@ -969,6 +969,29 @@
     "sportId": "football",
     "competitionId": "championship",
     "seasonId": "championship_2026_27",
+    "date": "2026-09-01T18:45:00Z",
+    "title": "Birmingham City vs Southampton",
+    "participants": [
+      "team_birmingham_city",
+      "team_southampton"
+    ],
+    "sportData": {
+      "kind": "football_match",
+      "homeTeam": "team_birmingham_city",
+      "awayTeam": "team_southampton",
+      "venue": null,
+      "result": "1-1"
+    },
+    "dataQuality": "verified",
+    "externalIds": {
+      "footballDataOrgId": 561803
+    },
+    "id": "evt_championship_044"
+  },
+  {
+    "sportId": "football",
+    "competitionId": "championship",
+    "seasonId": "championship_2026_27",
     "date": "2026-09-01T19:00:00Z",
     "title": "Stoke City vs Norwich City",
     "participants": [
@@ -987,29 +1010,6 @@
       "footballDataOrgId": 561797
     },
     "id": "evt_championship_043"
-  },
-  {
-    "sportId": "football",
-    "competitionId": "championship",
-    "seasonId": "championship_2026_27",
-    "date": "2026-09-01T19:00:00Z",
-    "title": "Birmingham City vs Southampton",
-    "participants": [
-      "team_birmingham_city",
-      "team_southampton"
-    ],
-    "sportData": {
-      "kind": "football_match",
-      "homeTeam": "team_birmingham_city",
-      "awayTeam": "team_southampton",
-      "venue": null,
-      "result": "1-1"
-    },
-    "dataQuality": "verified",
-    "externalIds": {
-      "footballDataOrgId": 561803
-    },
-    "id": "evt_championship_044"
   },
   {
     "sportId": "football",
