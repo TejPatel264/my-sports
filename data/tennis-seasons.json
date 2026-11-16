@@ -175,6 +175,11 @@
     "label": "2025"
   },
   {
+    "id": "tennis_atp_atp_finals_2026",
+    "competitionId": "tennis_atp_atp_finals",
+    "label": "2026"
+  },
+  {
     "id": "tennis_atp_atp_tour_finals_2024",
     "competitionId": "tennis_atp_atp_tour_finals",
     "label": "2024"
