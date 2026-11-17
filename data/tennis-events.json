@@ -942342,5 +942342,57 @@
       "tmlMatchId": "atp_2026-605_2"
     },
     "id": "evt_tennis_036243"
+  },
+  {
+    "sportId": "tennis",
+    "competitionId": "tennis_atp_atp_finals",
+    "seasonId": "tennis_atp_atp_finals_2026",
+    "date": "2026-11-16T00:00:00Z",
+    "title": "Carlos Alcaraz vs Frances Tiafoe",
+    "participants": [
+      "tennis_player_atp_A0E2",
+      "tennis_player_atp_TD51"
+    ],
+    "sportData": {
+      "kind": "tennis_match",
+      "round": "RR",
+      "surface": "Hard",
+      "tournamentLevel": "F",
+      "winner": "tennis_player_atp_A0E2",
+      "loser": "tennis_player_atp_TD51",
+      "score": "6-2 6-2",
+      "durationMinutes": 69
+    },
+    "dataQuality": "verified",
+    "externalIds": {
+      "tmlMatchId": "atp_2026-605_3"
+    },
+    "id": "evt_tennis_036245"
+  },
+  {
+    "sportId": "tennis",
+    "competitionId": "tennis_atp_atp_finals",
+    "seasonId": "tennis_atp_atp_finals_2026",
+    "date": "2026-11-16T00:00:00Z",
+    "title": "Daniil Medvedev vs Flavio Cobolli",
+    "participants": [
+      "tennis_player_atp_MM58",
+      "tennis_player_atp_C0E9"
+    ],
+    "sportData": {
+      "kind": "tennis_match",
+      "round": "RR",
+      "surface": "Hard",
+      "tournamentLevel": "F",
+      "winner": "tennis_player_atp_MM58",
+      "loser": "tennis_player_atp_C0E9",
+      "score": "7-6(4) 6-3",
+      "durationMinutes": 85
+    },
+    "dataQuality": "verified",
+    "externalIds": {
+      "tmlMatchId": "atp_2026-605_4"
+    },
+    "id": "evt_tennis_036246"
   }
 ]
