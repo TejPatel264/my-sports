@@ -942394,5 +942394,57 @@
       "tmlMatchId": "atp_2026-605_4"
     },
     "id": "evt_tennis_036246"
+  },
+  {
+    "sportId": "tennis",
+    "competitionId": "tennis_atp_atp_finals",
+    "seasonId": "tennis_atp_atp_finals_2026",
+    "date": "2026-11-17T00:00:00Z",
+    "title": "Arthur Fils vs Rafael Jodar",
+    "participants": [
+      "tennis_player_atp_F0F1",
+      "tennis_player_atp_J0DZ"
+    ],
+    "sportData": {
+      "kind": "tennis_match",
+      "round": "RR",
+      "surface": "Hard",
+      "tournamentLevel": "F",
+      "winner": "tennis_player_atp_F0F1",
+      "loser": "tennis_player_atp_J0DZ",
+      "score": "4-6 6-2 6-2",
+      "durationMinutes": 112
+    },
+    "dataQuality": "verified",
+    "externalIds": {
+      "tmlMatchId": "atp_2026-605_5"
+    },
+    "id": "evt_tennis_036247"
+  },
+  {
+    "sportId": "tennis",
+    "competitionId": "tennis_atp_atp_finals",
+    "seasonId": "tennis_atp_atp_finals_2026",
+    "date": "2026-11-17T00:00:00Z",
+    "title": "Alexander Zverev vs Ben Shelton",
+    "participants": [
+      "tennis_player_atp_Z355",
+      "tennis_player_atp_S0S1"
+    ],
+    "sportData": {
+      "kind": "tennis_match",
+      "round": "RR",
+      "surface": "Hard",
+      "tournamentLevel": "F",
+      "winner": "tennis_player_atp_Z355",
+      "loser": "tennis_player_atp_S0S1",
+      "score": "6-2 7-6(4)",
+      "durationMinutes": 95
+    },
+    "dataQuality": "verified",
+    "externalIds": {
+      "tmlMatchId": "atp_2026-605_6"
+    },
+    "id": "evt_tennis_036248"
   }
 ]
