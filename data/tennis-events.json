@@ -672480,7 +672480,7 @@
       "tournamentLevel": "D",
       "winner": "tennis_player_atp_S0V8",
       "loser": "tennis_player_atp_MN20",
-      "score": "7-6(2) 3-6 [10-8]",
+      "score": "6-7(2) 6-3 [10-8]",
       "durationMinutes": null
     },
     "dataQuality": "verified",
@@ -942602,5 +942602,499 @@
       "tmlMatchId": "atp_2026-605_12"
     },
     "id": "evt_tennis_036254"
+  },
+  {
+    "sportId": "tennis",
+    "competitionId": "tennis_wta_billie_jean_king_cup_play_offs_canada_vs_brazil",
+    "seasonId": "tennis_wta_billie_jean_king_cup_play_offs_canada_vs_brazil_2026",
+    "date": "2026-11-20T00:00:00Z",
+    "title": "Bianca Andreescu vs Nauhany Vitoria Leme Da Silva",
+    "participants": [
+      "tennis_player_wta_215370",
+      "tennis_player_wta_267382"
+    ],
+    "sportData": {
+      "kind": "tennis_match",
+      "round": "RR",
+      "surface": "Clay",
+      "tournamentLevel": "D",
+      "winner": "tennis_player_wta_215370",
+      "loser": "tennis_player_wta_267382",
+      "score": "6-3 6-1",
+      "durationMinutes": 71
+    },
+    "dataQuality": "verified",
+    "externalIds": {
+      "tmlMatchId": "wta_W-FC-2026-POS-M-CAN-BRA-01_1"
+    },
+    "id": "evt_tennis_036257"
+  },
+  {
+    "sportId": "tennis",
+    "competitionId": "tennis_wta_billie_jean_king_cup_play_offs_canada_vs_brazil",
+    "seasonId": "tennis_wta_billie_jean_king_cup_play_offs_canada_vs_brazil_2026",
+    "date": "2026-11-20T00:00:00Z",
+    "title": "Gabriela Ce vs Kayla Cross",
+    "participants": [
+      "tennis_player_wta_206194",
+      "tennis_player_wta_239436"
+    ],
+    "sportData": {
+      "kind": "tennis_match",
+      "round": "RR",
+      "surface": "Clay",
+      "tournamentLevel": "D",
+      "winner": "tennis_player_wta_206194",
+      "loser": "tennis_player_wta_239436",
+      "score": "6-2 7-5",
+      "durationMinutes": 101
+    },
+    "dataQuality": "verified",
+    "externalIds": {
+      "tmlMatchId": "wta_W-FC-2026-POS-M-CAN-BRA-01_2"
+    },
+    "id": "evt_tennis_036258"
+  },
+  {
+    "sportId": "tennis",
+    "competitionId": "tennis_wta_billie_jean_king_cup_play_offs_poland_vs_sweden",
+    "seasonId": "tennis_wta_billie_jean_king_cup_play_offs_poland_vs_sweden_2026",
+    "date": "2026-11-20T00:00:00Z",
+    "title": "Kajsa Rinaldo Persson vs Gina Feistel",
+    "participants": [
+      "tennis_player_wta_211643",
+      "tennis_player_wta_331290"
+    ],
+    "sportData": {
+      "kind": "tennis_match",
+      "round": "RR",
+      "surface": "Hard",
+      "tournamentLevel": "D",
+      "winner": "tennis_player_wta_211643",
+      "loser": "tennis_player_wta_331290",
+      "score": "6-4 6-2",
+      "durationMinutes": 114
+    },
+    "dataQuality": "verified",
+    "externalIds": {
+      "tmlMatchId": "wta_W-FC-2026-POS-M-POL-SWE-01_1"
+    },
+    "id": "evt_tennis_036259"
+  },
+  {
+    "sportId": "tennis",
+    "competitionId": "tennis_wta_billie_jean_king_cup_play_offs_poland_vs_sweden",
+    "seasonId": "tennis_wta_billie_jean_king_cup_play_offs_poland_vs_sweden_2026",
+    "date": "2026-11-20T00:00:00Z",
+    "title": "Martyna Kubka vs Caijsa Wilda Hennemann",
+    "participants": [
+      "tennis_player_wta_221243",
+      "tennis_player_wta_216385"
+    ],
+    "sportData": {
+      "kind": "tennis_match",
+      "round": "RR",
+      "surface": "Hard",
+      "tournamentLevel": "D",
+      "winner": "tennis_player_wta_221243",
+      "loser": "tennis_player_wta_216385",
+      "score": "7-5 6-1",
+      "durationMinutes": 96
+    },
+    "dataQuality": "verified",
+    "externalIds": {
+      "tmlMatchId": "wta_W-FC-2026-POS-M-POL-SWE-01_2"
+    },
+    "id": "evt_tennis_036260"
+  },
+  {
+    "sportId": "tennis",
+    "competitionId": "tennis_wta_billie_jean_king_cup_play_offs_slovenia_vs_indonesia",
+    "seasonId": "tennis_wta_billie_jean_king_cup_play_offs_slovenia_vs_indonesia_2026",
+    "date": "2026-11-20T00:00:00Z",
+    "title": "Dalila Jakupovic vs Mischka Sinclaire Goenadi",
+    "participants": [
+      "tennis_player_wta_203435",
+      "tennis_player_wta_333314"
+    ],
+    "sportData": {
+      "kind": "tennis_match",
+      "round": "RR",
+      "surface": "Clay",
+      "tournamentLevel": "D",
+      "winner": "tennis_player_wta_203435",
+      "loser": "tennis_player_wta_333314",
+      "score": "6-0 6-4",
+      "durationMinutes": 69
+    },
+    "dataQuality": "verified",
+    "externalIds": {
+      "tmlMatchId": "wta_W-FC-2026-POS-M-SLO-INA-01_1"
+    },
+    "id": "evt_tennis_036261"
+  },
+  {
+    "sportId": "tennis",
+    "competitionId": "tennis_wta_billie_jean_king_cup_play_offs_slovenia_vs_indonesia",
+    "seasonId": "tennis_wta_billie_jean_king_cup_play_offs_slovenia_vs_indonesia_2026",
+    "date": "2026-11-20T00:00:00Z",
+    "title": "Tamara Zidansek vs Lulwa Naswardhani",
+    "participants": [
+      "tennis_player_wta_214461",
+      "tennis_player_wta_337423"
+    ],
+    "sportData": {
+      "kind": "tennis_match",
+      "round": "RR",
+      "surface": "Clay",
+      "tournamentLevel": "D",
+      "winner": "tennis_player_wta_214461",
+      "loser": "tennis_player_wta_337423",
+      "score": "6-1 6-0",
+      "durationMinutes": 53
+    },
+    "dataQuality": "verified",
+    "externalIds": {
+      "tmlMatchId": "wta_W-FC-2026-POS-M-SLO-INA-01_2"
+    },
+    "id": "evt_tennis_036262"
+  },
+  {
+    "sportId": "tennis",
+    "competitionId": "tennis_atp_atp_finals",
+    "seasonId": "tennis_atp_atp_finals_2026",
+    "date": "2026-11-21T00:00:00Z",
+    "title": "Carlos Alcaraz vs Ben Shelton",
+    "participants": [
+      "tennis_player_atp_A0E2",
+      "tennis_player_atp_S0S1"
+    ],
+    "sportData": {
+      "kind": "tennis_match",
+      "round": "SF",
+      "surface": "Hard",
+      "tournamentLevel": "F",
+      "winner": "tennis_player_atp_A0E2",
+      "loser": "tennis_player_atp_S0S1",
+      "score": "3-6 6-3 7-6(1)",
+      "durationMinutes": 119
+    },
+    "dataQuality": "verified",
+    "externalIds": {
+      "tmlMatchId": "atp_2026-605_13"
+    },
+    "id": "evt_tennis_036255"
+  },
+  {
+    "sportId": "tennis",
+    "competitionId": "tennis_atp_atp_finals",
+    "seasonId": "tennis_atp_atp_finals_2026",
+    "date": "2026-11-21T00:00:00Z",
+    "title": "Alexander Zverev vs Daniil Medvedev",
+    "participants": [
+      "tennis_player_atp_Z355",
+      "tennis_player_atp_MM58"
+    ],
+    "sportData": {
+      "kind": "tennis_match",
+      "round": "SF",
+      "surface": "Hard",
+      "tournamentLevel": "F",
+      "winner": "tennis_player_atp_Z355",
+      "loser": "tennis_player_atp_MM58",
+      "score": "7-6(0) 6-4",
+      "durationMinutes": 87
+    },
+    "dataQuality": "verified",
+    "externalIds": {
+      "tmlMatchId": "atp_2026-605_14"
+    },
+    "id": "evt_tennis_036256"
+  },
+  {
+    "sportId": "tennis",
+    "competitionId": "tennis_wta_billie_jean_king_cup_play_offs_australia_vs_france",
+    "seasonId": "tennis_wta_billie_jean_king_cup_play_offs_australia_vs_france_2026",
+    "date": "2026-11-21T00:00:00Z",
+    "title": "Talia Gibson vs Clara Burel",
+    "participants": [
+      "tennis_player_wta_221883",
+      "tennis_player_wta_216262"
+    ],
+    "sportData": {
+      "kind": "tennis_match",
+      "round": "RR",
+      "surface": "Clay",
+      "tournamentLevel": "D",
+      "winner": "tennis_player_wta_221883",
+      "loser": "tennis_player_wta_216262",
+      "score": "6-2 6-1",
+      "durationMinutes": 71
+    },
+    "dataQuality": "verified",
+    "externalIds": {
+      "tmlMatchId": "wta_W-FC-2026-POS-M-AUS-FRA-01_1"
+    },
+    "id": "evt_tennis_036263"
+  },
+  {
+    "sportId": "tennis",
+    "competitionId": "tennis_wta_billie_jean_king_cup_play_offs_australia_vs_france",
+    "seasonId": "tennis_wta_billie_jean_king_cup_play_offs_australia_vs_france_2026",
+    "date": "2026-11-21T00:00:00Z",
+    "title": "Storm Hunter vs Diane Parry",
+    "participants": [
+      "tennis_player_wta_204411",
+      "tennis_player_wta_220348"
+    ],
+    "sportData": {
+      "kind": "tennis_match",
+      "round": "RR",
+      "surface": "Clay",
+      "tournamentLevel": "D",
+      "winner": "tennis_player_wta_204411",
+      "loser": "tennis_player_wta_220348",
+      "score": "6-3 6-4",
+      "durationMinutes": 85
+    },
+    "dataQuality": "verified",
+    "externalIds": {
+      "tmlMatchId": "wta_W-FC-2026-POS-M-AUS-FRA-01_2"
+    },
+    "id": "evt_tennis_036264"
+  },
+  {
+    "sportId": "tennis",
+    "competitionId": "tennis_wta_billie_jean_king_cup_play_offs_canada_vs_brazil",
+    "seasonId": "tennis_wta_billie_jean_king_cup_play_offs_canada_vs_brazil_2026",
+    "date": "2026-11-21T00:00:00Z",
+    "title": "Bianca Andreescu vs Gabriela Ce",
+    "participants": [
+      "tennis_player_wta_215370",
+      "tennis_player_wta_206194"
+    ],
+    "sportData": {
+      "kind": "tennis_match",
+      "round": "RR",
+      "surface": "Clay",
+      "tournamentLevel": "D",
+      "winner": "tennis_player_wta_215370",
+      "loser": "tennis_player_wta_206194",
+      "score": "6-2 6-1",
+      "durationMinutes": 92
+    },
+    "dataQuality": "verified",
+    "externalIds": {
+      "tmlMatchId": "wta_W-FC-2026-POS-M-CAN-BRA-01_4"
+    },
+    "id": "evt_tennis_036265"
+  },
+  {
+    "sportId": "tennis",
+    "competitionId": "tennis_wta_billie_jean_king_cup_play_offs_canada_vs_brazil",
+    "seasonId": "tennis_wta_billie_jean_king_cup_play_offs_canada_vs_brazil_2026",
+    "date": "2026-11-21T00:00:00Z",
+    "title": "Nauhany Vitoria Leme Da Silva vs Clemence Mercier",
+    "participants": [
+      "tennis_player_wta_267382",
+      "tennis_player_wta_332797"
+    ],
+    "sportData": {
+      "kind": "tennis_match",
+      "round": "RR",
+      "surface": "Clay",
+      "tournamentLevel": "D",
+      "winner": "tennis_player_wta_267382",
+      "loser": "tennis_player_wta_332797",
+      "score": "6-2 6-4",
+      "durationMinutes": 81
+    },
+    "dataQuality": "verified",
+    "externalIds": {
+      "tmlMatchId": "wta_W-FC-2026-POS-M-CAN-BRA-01_5"
+    },
+    "id": "evt_tennis_036266"
+  },
+  {
+    "sportId": "tennis",
+    "competitionId": "tennis_wta_billie_jean_king_cup_play_offs_japan_vs_argentina",
+    "seasonId": "tennis_wta_billie_jean_king_cup_play_offs_japan_vs_argentina_2026",
+    "date": "2026-11-21T00:00:00Z",
+    "title": "Mai Hontama vs Justina Maria Gonzalez Daniele",
+    "participants": [
+      "tennis_player_wta_215988",
+      "tennis_player_wta_332726"
+    ],
+    "sportData": {
+      "kind": "tennis_match",
+      "round": "RR",
+      "surface": "Hard",
+      "tournamentLevel": "D",
+      "winner": "tennis_player_wta_215988",
+      "loser": "tennis_player_wta_332726",
+      "score": "7-6(4) 6-3",
+      "durationMinutes": 130
+    },
+    "dataQuality": "verified",
+    "externalIds": {
+      "tmlMatchId": "wta_W-FC-2026-POS-M-JPN-ARG-01_1"
+    },
+    "id": "evt_tennis_036267"
+  },
+  {
+    "sportId": "tennis",
+    "competitionId": "tennis_wta_billie_jean_king_cup_play_offs_japan_vs_argentina",
+    "seasonId": "tennis_wta_billie_jean_king_cup_play_offs_japan_vs_argentina_2026",
+    "date": "2026-11-21T00:00:00Z",
+    "title": "Himeno Sakatsume vs Maria Florencia Urrutia",
+    "participants": [
+      "tennis_player_wta_221124",
+      "tennis_player_wta_325373"
+    ],
+    "sportData": {
+      "kind": "tennis_match",
+      "round": "RR",
+      "surface": "Hard",
+      "tournamentLevel": "D",
+      "winner": "tennis_player_wta_221124",
+      "loser": "tennis_player_wta_325373",
+      "score": "6-0 6-4",
+      "durationMinutes": 72
+    },
+    "dataQuality": "verified",
+    "externalIds": {
+      "tmlMatchId": "wta_W-FC-2026-POS-M-JPN-ARG-01_2"
+    },
+    "id": "evt_tennis_036268"
+  },
+  {
+    "sportId": "tennis",
+    "competitionId": "tennis_wta_billie_jean_king_cup_play_offs_poland_vs_sweden",
+    "seasonId": "tennis_wta_billie_jean_king_cup_play_offs_poland_vs_sweden_2026",
+    "date": "2026-11-21T00:00:00Z",
+    "title": "Lisa Zaar vs Martyna Kubka",
+    "participants": [
+      "tennis_player_wta_323018",
+      "tennis_player_wta_221243"
+    ],
+    "sportData": {
+      "kind": "tennis_match",
+      "round": "RR",
+      "surface": "Hard",
+      "tournamentLevel": "D",
+      "winner": "tennis_player_wta_323018",
+      "loser": "tennis_player_wta_221243",
+      "score": "3-6 6-1 7-6(4)",
+      "durationMinutes": 138
+    },
+    "dataQuality": "verified",
+    "externalIds": {
+      "tmlMatchId": "wta_W-FC-2026-POS-M-POL-SWE-01_4"
+    },
+    "id": "evt_tennis_036269"
+  },
+  {
+    "sportId": "tennis",
+    "competitionId": "tennis_wta_billie_jean_king_cup_play_offs_poland_vs_sweden",
+    "seasonId": "tennis_wta_billie_jean_king_cup_play_offs_poland_vs_sweden_2026",
+    "date": "2026-11-21T00:00:00Z",
+    "title": "Linda Klimovicova vs Caijsa Wilda Hennemann",
+    "participants": [
+      "tennis_player_wta_221626",
+      "tennis_player_wta_216385"
+    ],
+    "sportData": {
+      "kind": "tennis_match",
+      "round": "RR",
+      "surface": "Hard",
+      "tournamentLevel": "D",
+      "winner": "tennis_player_wta_221626",
+      "loser": "tennis_player_wta_216385",
+      "score": "6-4 6-3 4-6",
+      "durationMinutes": 167
+    },
+    "dataQuality": "verified",
+    "externalIds": {
+      "tmlMatchId": "wta_W-FC-2026-POS-M-POL-SWE-01_5"
+    },
+    "id": "evt_tennis_036270"
+  },
+  {
+    "sportId": "tennis",
+    "competitionId": "tennis_wta_billie_jean_king_cup_play_offs_slovenia_vs_indonesia",
+    "seasonId": "tennis_wta_billie_jean_king_cup_play_offs_slovenia_vs_indonesia_2026",
+    "date": "2026-11-21T00:00:00Z",
+    "title": "Alja Senica vs Meydiana Laviola Reinnamah",
+    "participants": [
+      "tennis_player_wta_333337",
+      "tennis_player_wta_336864"
+    ],
+    "sportData": {
+      "kind": "tennis_match",
+      "round": "RR",
+      "surface": "Clay",
+      "tournamentLevel": "D",
+      "winner": "tennis_player_wta_333337",
+      "loser": "tennis_player_wta_336864",
+      "score": "6-1 6-0",
+      "durationMinutes": 49
+    },
+    "dataQuality": "verified",
+    "externalIds": {
+      "tmlMatchId": "wta_W-FC-2026-POS-M-SLO-INA-01_4"
+    },
+    "id": "evt_tennis_036271"
+  },
+  {
+    "sportId": "tennis",
+    "competitionId": "tennis_wta_billie_jean_king_cup_play_offs_switzerland_vs_thailand",
+    "seasonId": "tennis_wta_billie_jean_king_cup_play_offs_switzerland_vs_thailand_2026",
+    "date": "2026-11-21T00:00:00Z",
+    "title": "Mananchaya Sawangkaew vs Simona Waltert",
+    "participants": [
+      "tennis_player_wta_216566",
+      "tennis_player_wta_215899"
+    ],
+    "sportData": {
+      "kind": "tennis_match",
+      "round": "RR",
+      "surface": "Hard",
+      "tournamentLevel": "D",
+      "winner": "tennis_player_wta_216566",
+      "loser": "tennis_player_wta_215899",
+      "score": "6-3 5-7 6-4",
+      "durationMinutes": 165
+    },
+    "dataQuality": "verified",
+    "externalIds": {
+      "tmlMatchId": "wta_W-FC-2026-POS-M-SUI-THA-01_1"
+    },
+    "id": "evt_tennis_036272"
+  },
+  {
+    "sportId": "tennis",
+    "competitionId": "tennis_wta_billie_jean_king_cup_play_offs_switzerland_vs_thailand",
+    "seasonId": "tennis_wta_billie_jean_king_cup_play_offs_switzerland_vs_thailand_2026",
+    "date": "2026-11-21T00:00:00Z",
+    "title": "Lanlana Tararudee vs Jil Teichmann",
+    "participants": [
+      "tennis_player_wta_222290",
+      "tennis_player_wta_213525"
+    ],
+    "sportData": {
+      "kind": "tennis_match",
+      "round": "RR",
+      "surface": "Hard",
+      "tournamentLevel": "D",
+      "winner": "tennis_player_wta_222290",
+      "loser": "tennis_player_wta_213525",
+      "score": "1-6 6-4 6-4",
+      "durationMinutes": 129
+    },
+    "dataQuality": "verified",
+    "externalIds": {
+      "tmlMatchId": "wta_W-FC-2026-POS-M-SUI-THA-01_2"
+    },
+    "id": "evt_tennis_036273"
   }
 ]

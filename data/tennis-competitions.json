@@ -258,6 +258,42 @@
     "shortName": "Billie Jean King Cup Play-offs - Group G"
   },
   {
+    "id": "tennis_wta_billie_jean_king_cup_play_offs_australia_vs_france",
+    "sportId": "tennis",
+    "name": "Billie Jean King Cup play-offs: Australia vs. France (WTA)",
+    "shortName": "Billie Jean King Cup play-offs: Australia vs. France"
+  },
+  {
+    "id": "tennis_wta_billie_jean_king_cup_play_offs_canada_vs_brazil",
+    "sportId": "tennis",
+    "name": "Billie Jean King Cup play-offs: Canada vs. Brazil (WTA)",
+    "shortName": "Billie Jean King Cup play-offs: Canada vs. Brazil"
+  },
+  {
+    "id": "tennis_wta_billie_jean_king_cup_play_offs_japan_vs_argentina",
+    "sportId": "tennis",
+    "name": "Billie Jean King Cup play-offs: Japan vs. Argentina (WTA)",
+    "shortName": "Billie Jean King Cup play-offs: Japan vs. Argentina"
+  },
+  {
+    "id": "tennis_wta_billie_jean_king_cup_play_offs_poland_vs_sweden",
+    "sportId": "tennis",
+    "name": "Billie Jean King Cup play-offs: Poland vs. Sweden (WTA)",
+    "shortName": "Billie Jean King Cup play-offs: Poland vs. Sweden"
+  },
+  {
+    "id": "tennis_wta_billie_jean_king_cup_play_offs_slovenia_vs_indonesia",
+    "sportId": "tennis",
+    "name": "Billie Jean King Cup play-offs: Slovenia vs. Indonesia (WTA)",
+    "shortName": "Billie Jean King Cup play-offs: Slovenia vs. Indonesia"
+  },
+  {
+    "id": "tennis_wta_billie_jean_king_cup_play_offs_switzerland_vs_thailand",
+    "sportId": "tennis",
+    "name": "Billie Jean King Cup play-offs: Switzerland vs. Thailand (WTA)",
+    "shortName": "Billie Jean King Cup play-offs: Switzerland vs. Thailand"
+  },
+  {
     "id": "tennis_wta_billie_jean_king_cup_qualifying_round_group_a",
     "sportId": "tennis",
     "name": "Billie Jean King Cup Qualifying Round - Group A (WTA)",

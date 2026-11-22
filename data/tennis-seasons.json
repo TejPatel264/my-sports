@@ -4695,6 +4695,16 @@
     "label": "2026"
   },
   {
+    "id": "tennis_wta_billie_jean_king_cup_play_offs_australia_vs_france_2026",
+    "competitionId": "tennis_wta_billie_jean_king_cup_play_offs_australia_vs_france",
+    "label": "2026"
+  },
+  {
+    "id": "tennis_wta_billie_jean_king_cup_play_offs_canada_vs_brazil_2026",
+    "competitionId": "tennis_wta_billie_jean_king_cup_play_offs_canada_vs_brazil",
+    "label": "2026"
+  },
+  {
     "id": "tennis_wta_billie_jean_king_cup_play_offs_group_a_2025",
     "competitionId": "tennis_wta_billie_jean_king_cup_play_offs_group_a",
     "label": "2025"
@@ -4728,6 +4738,26 @@
     "id": "tennis_wta_billie_jean_king_cup_play_offs_group_g_2025",
     "competitionId": "tennis_wta_billie_jean_king_cup_play_offs_group_g",
     "label": "2025"
+  },
+  {
+    "id": "tennis_wta_billie_jean_king_cup_play_offs_japan_vs_argentina_2026",
+    "competitionId": "tennis_wta_billie_jean_king_cup_play_offs_japan_vs_argentina",
+    "label": "2026"
+  },
+  {
+    "id": "tennis_wta_billie_jean_king_cup_play_offs_poland_vs_sweden_2026",
+    "competitionId": "tennis_wta_billie_jean_king_cup_play_offs_poland_vs_sweden",
+    "label": "2026"
+  },
+  {
+    "id": "tennis_wta_billie_jean_king_cup_play_offs_slovenia_vs_indonesia_2026",
+    "competitionId": "tennis_wta_billie_jean_king_cup_play_offs_slovenia_vs_indonesia",
+    "label": "2026"
+  },
+  {
+    "id": "tennis_wta_billie_jean_king_cup_play_offs_switzerland_vs_thailand_2026",
+    "competitionId": "tennis_wta_billie_jean_king_cup_play_offs_switzerland_vs_thailand",
+    "label": "2026"
   },
   {
     "id": "tennis_wta_billie_jean_king_cup_qualifying_round_australia_vs_great_britain_2026",

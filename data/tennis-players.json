@@ -535,6 +535,11 @@
     "name": "Alize Cornet"
   },
   {
+    "id": "tennis_player_wta_333337",
+    "sportId": "tennis",
+    "name": "Alja Senica"
+  },
+  {
     "id": "tennis_player_atp_BH09",
     "sportId": "tennis",
     "name": "Aljaz Bedene"
@@ -1853,6 +1858,11 @@
     "id": "tennis_player_atp_H0D9",
     "sportId": "tennis",
     "name": "Cleeve Harper"
+  },
+  {
+    "id": "tennis_player_wta_332797",
+    "sportId": "tennis",
+    "name": "Clemence Mercier"
   },
   {
     "id": "tennis_player_atp_C0BH",
@@ -3420,6 +3430,11 @@
     "name": "Gillian Osmont"
   },
   {
+    "id": "tennis_player_wta_331290",
+    "sportId": "tennis",
+    "name": "Gina Feistel"
+  },
+  {
     "id": "tennis_player_atp_M0GZ",
     "sportId": "tennis",
     "name": "Giovanni Mpetshi Perricard"
@@ -4620,6 +4635,11 @@
     "name": "Justin Engel"
   },
   {
+    "id": "tennis_player_wta_332726",
+    "sportId": "tennis",
+    "name": "Justina Maria Gonzalez Daniele"
+  },
+  {
     "id": "tennis_player_wta_212303",
     "sportId": "tennis",
     "name": "Justina Mikulskyte"
@@ -5355,6 +5375,11 @@
     "name": "Lisa Zaar"
   },
   {
+    "id": "tennis_player_wta_323018",
+    "sportId": "tennis",
+    "name": "Lisa Zaar"
+  },
+  {
     "id": "tennis_player_wta_214643",
     "sportId": "tennis",
     "name": "Liudmila Samsonova"
@@ -5595,6 +5620,11 @@
     "name": "Lulu Sun"
   },
   {
+    "id": "tennis_player_wta_337423",
+    "sportId": "tennis",
+    "name": "Lulwa Naswardhani"
+  },
+  {
     "id": "tennis_player_wta_248660",
     "sportId": "tennis",
     "name": "Lya Fernandez"
@@ -5828,6 +5858,11 @@
     "id": "tennis_player_wta_211864",
     "sportId": "tennis",
     "name": "Maria Fernanda Herazo Gonzalez"
+  },
+  {
+    "id": "tennis_player_wta_325373",
+    "sportId": "tennis",
+    "name": "Maria Florencia Urrutia"
   },
   {
     "id": "tennis_player_wta_221235",
@@ -6380,6 +6415,11 @@
     "name": "Mert Naci Turker"
   },
   {
+    "id": "tennis_player_wta_336864",
+    "sportId": "tennis",
+    "name": "Meydiana Laviola Reinnamah"
+  },
+  {
     "id": "tennis_player_wta_266376",
     "sportId": "tennis",
     "name": "Mia Pohankova"
@@ -6578,6 +6618,11 @@
     "id": "tennis_player_atp_Z168",
     "sportId": "tennis",
     "name": "Mischa Zverev"
+  },
+  {
+    "id": "tennis_player_wta_333314",
+    "sportId": "tennis",
+    "name": "Mischka Sinclaire Goenadi"
   },
   {
     "id": "tennis_player_atp_KC12",
