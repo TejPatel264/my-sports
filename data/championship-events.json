@@ -4154,7 +4154,7 @@
       "homeTeam": "team_southampton",
       "awayTeam": "team_derby_county",
       "venue": null,
-      "result": null
+      "result": "2-0"
     },
     "dataQuality": "verified",
     "externalIds": {
@@ -4177,7 +4177,7 @@
       "homeTeam": "team_millwall",
       "awayTeam": "team_queens_park_rangers",
       "venue": null,
-      "result": null
+      "result": "0-1"
     },
     "dataQuality": "verified",
     "externalIds": {
@@ -4200,7 +4200,7 @@
       "homeTeam": "team_norwich_city",
       "awayTeam": "team_cardiff_city",
       "venue": null,
-      "result": null
+      "result": "2-1"
     },
     "dataQuality": "verified",
     "externalIds": {
@@ -4223,7 +4223,7 @@
       "homeTeam": "team_sheffield_united",
       "awayTeam": "team_watford",
       "venue": null,
-      "result": null
+      "result": "4-0"
     },
     "dataQuality": "verified",
     "externalIds": {
@@ -4246,7 +4246,7 @@
       "homeTeam": "team_swansea_city",
       "awayTeam": "team_west_bromwich_albion",
       "venue": null,
-      "result": null
+      "result": "2-2"
     },
     "dataQuality": "verified",
     "externalIds": {
@@ -4269,7 +4269,7 @@
       "homeTeam": "team_middlesbrough",
       "awayTeam": "team_bristol_city",
       "venue": null,
-      "result": null
+      "result": "2-0"
     },
     "dataQuality": "verified",
     "externalIds": {
@@ -4292,7 +4292,7 @@
       "homeTeam": "team_bolton_wanderers",
       "awayTeam": "team_portsmouth",
       "venue": null,
-      "result": null
+      "result": "1-1"
     },
     "dataQuality": "verified",
     "externalIds": {
@@ -4315,7 +4315,7 @@
       "homeTeam": "team_stoke_city",
       "awayTeam": "team_birmingham_city",
       "venue": null,
-      "result": null
+      "result": "1-0"
     },
     "dataQuality": "verified",
     "externalIds": {
@@ -4338,7 +4338,7 @@
       "homeTeam": "team_lincoln_city",
       "awayTeam": "team_wrexham",
       "venue": null,
-      "result": null
+      "result": "0-1"
     },
     "dataQuality": "verified",
     "externalIds": {
@@ -4361,7 +4361,7 @@
       "homeTeam": "team_west_ham_united",
       "awayTeam": "team_preston_north_end",
       "venue": null,
-      "result": null
+      "result": "1-1"
     },
     "dataQuality": "verified",
     "externalIds": {
@@ -4384,7 +4384,7 @@
       "homeTeam": "team_wolverhampton_wanderers",
       "awayTeam": "team_charlton_athletic",
       "venue": null,
-      "result": null
+      "result": "2-1"
     },
     "dataQuality": "verified",
     "externalIds": {
