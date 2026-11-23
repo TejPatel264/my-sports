@@ -674285,6 +674285,84 @@
   },
   {
     "sportId": "tennis",
+    "competitionId": "tennis_atp_davis_cup_qls_r1_swe_vs_aus",
+    "seasonId": "tennis_atp_davis_cup_qls_r1_swe_vs_aus_2025",
+    "date": "2025-01-31T00:00:00Z",
+    "title": "Alex de Minaur vs Mikael Ymer",
+    "participants": [
+      "tennis_player_atp_DH58",
+      "tennis_player_atp_Y268"
+    ],
+    "sportData": {
+      "kind": "tennis_match",
+      "round": "RR",
+      "surface": "Hard",
+      "tournamentLevel": "D",
+      "winner": "tennis_player_atp_DH58",
+      "loser": "tennis_player_atp_Y268",
+      "score": "7-5 6-1",
+      "durationMinutes": null
+    },
+    "dataQuality": "verified",
+    "externalIds": {
+      "tmlMatchId": "atp_2025-M-DC-2025-QLS-M-SWE-AUS-01_1"
+    },
+    "id": "evt_tennis_036274"
+  },
+  {
+    "sportId": "tennis",
+    "competitionId": "tennis_atp_davis_cup_qls_r1_swe_vs_aus",
+    "seasonId": "tennis_atp_davis_cup_qls_r1_swe_vs_aus_2025",
+    "date": "2025-01-31T00:00:00Z",
+    "title": "Aleksandar Vukic vs Leo Borg",
+    "participants": [
+      "tennis_player_atp_V832",
+      "tennis_player_atp_B0JG"
+    ],
+    "sportData": {
+      "kind": "tennis_match",
+      "round": "RR",
+      "surface": "Hard",
+      "tournamentLevel": "D",
+      "winner": "tennis_player_atp_V832",
+      "loser": "tennis_player_atp_B0JG",
+      "score": "6-4 6-4",
+      "durationMinutes": null
+    },
+    "dataQuality": "verified",
+    "externalIds": {
+      "tmlMatchId": "atp_2025-M-DC-2025-QLS-M-SWE-AUS-01_2"
+    },
+    "id": "evt_tennis_036275"
+  },
+  {
+    "sportId": "tennis",
+    "competitionId": "tennis_atp_davis_cup_qls_r1_swe_vs_aus",
+    "seasonId": "tennis_atp_davis_cup_qls_r1_swe_vs_aus_2025",
+    "date": "2025-01-31T00:00:00Z",
+    "title": "Leo Borg vs John Peers",
+    "participants": [
+      "tennis_player_atp_B0JG",
+      "tennis_player_atp_PC96"
+    ],
+    "sportData": {
+      "kind": "tennis_match",
+      "round": "RR",
+      "surface": "Hard",
+      "tournamentLevel": "D",
+      "winner": "tennis_player_atp_B0JG",
+      "loser": "tennis_player_atp_PC96",
+      "score": "7-5 6-4",
+      "durationMinutes": null
+    },
+    "dataQuality": "verified",
+    "externalIds": {
+      "tmlMatchId": "atp_2025-M-DC-2025-QLS-M-SWE-AUS-01_3"
+    },
+    "id": "evt_tennis_036276"
+  },
+  {
+    "sportId": "tennis",
     "competitionId": "tennis_atp_davis_cup_wg1_po_ecu_vs_uru",
     "seasonId": "tennis_atp_davis_cup_wg1_po_ecu_vs_uru_2025",
     "date": "2025-02-01T00:00:00Z",
@@ -773230,7 +773308,7 @@
       "tournamentLevel": "D",
       "winner": "tennis_player_atp_N0BU",
       "loser": "tennis_player_atp_V0AS",
-      "score": "7-6(4) 4-6 [10-4]",
+      "score": "7-6(2) 4-6 [10-4]",
       "durationMinutes": 103
     },
     "dataQuality": "verified",
@@ -943096,5 +943174,187 @@
       "tmlMatchId": "wta_W-FC-2026-POS-M-SUI-THA-01_2"
     },
     "id": "evt_tennis_036273"
+  },
+  {
+    "sportId": "tennis",
+    "competitionId": "tennis_wta_billie_jean_king_cup_play_offs_united_states_vs_hungary",
+    "seasonId": "tennis_wta_billie_jean_king_cup_play_offs_united_states_vs_hungary_2026",
+    "date": "2026-11-21T00:00:00Z",
+    "title": "Coco Gauff vs Dalma Galfi",
+    "participants": [
+      "tennis_player_wta_221103",
+      "tennis_player_wta_213646"
+    ],
+    "sportData": {
+      "kind": "tennis_match",
+      "round": "RR",
+      "surface": "Hard",
+      "tournamentLevel": "D",
+      "winner": "tennis_player_wta_221103",
+      "loser": "tennis_player_wta_213646",
+      "score": "6-1 6-1",
+      "durationMinutes": 66
+    },
+    "dataQuality": "verified",
+    "externalIds": {
+      "tmlMatchId": "wta_W-FC-2026-POS-M-USA-HUN-01_1"
+    },
+    "id": "evt_tennis_036278"
+  },
+  {
+    "sportId": "tennis",
+    "competitionId": "tennis_wta_billie_jean_king_cup_play_offs_united_states_vs_hungary",
+    "seasonId": "tennis_wta_billie_jean_king_cup_play_offs_united_states_vs_hungary_2026",
+    "date": "2026-11-21T00:00:00Z",
+    "title": "Ann Li vs Anna Bondar",
+    "participants": [
+      "tennis_player_wta_215983",
+      "tennis_player_wta_214388"
+    ],
+    "sportData": {
+      "kind": "tennis_match",
+      "round": "RR",
+      "surface": "Hard",
+      "tournamentLevel": "D",
+      "winner": "tennis_player_wta_215983",
+      "loser": "tennis_player_wta_214388",
+      "score": "6-1 6-4",
+      "durationMinutes": 62
+    },
+    "dataQuality": "verified",
+    "externalIds": {
+      "tmlMatchId": "wta_W-FC-2026-POS-M-USA-HUN-01_2"
+    },
+    "id": "evt_tennis_036279"
+  },
+  {
+    "sportId": "tennis",
+    "competitionId": "tennis_atp_atp_finals",
+    "seasonId": "tennis_atp_atp_finals_2026",
+    "date": "2026-11-22T00:00:00Z",
+    "title": "Carlos Alcaraz vs Alexander Zverev",
+    "participants": [
+      "tennis_player_atp_A0E2",
+      "tennis_player_atp_Z355"
+    ],
+    "sportData": {
+      "kind": "tennis_match",
+      "round": "F",
+      "surface": "Hard",
+      "tournamentLevel": "F",
+      "winner": "tennis_player_atp_A0E2",
+      "loser": "tennis_player_atp_Z355",
+      "score": "6-2 7-6(7)",
+      "durationMinutes": 122
+    },
+    "dataQuality": "verified",
+    "externalIds": {
+      "tmlMatchId": "atp_2026-605_15"
+    },
+    "id": "evt_tennis_036277"
+  },
+  {
+    "sportId": "tennis",
+    "competitionId": "tennis_wta_billie_jean_king_cup_play_offs_australia_vs_france",
+    "seasonId": "tennis_wta_billie_jean_king_cup_play_offs_australia_vs_france_2026",
+    "date": "2026-11-22T00:00:00Z",
+    "title": "Maya Joint vs Elsa Jacquemot",
+    "participants": [
+      "tennis_player_wta_233741",
+      "tennis_player_wta_221039"
+    ],
+    "sportData": {
+      "kind": "tennis_match",
+      "round": "RR",
+      "surface": "Clay",
+      "tournamentLevel": "D",
+      "winner": "tennis_player_wta_233741",
+      "loser": "tennis_player_wta_221039",
+      "score": "6-1 6-3",
+      "durationMinutes": 57
+    },
+    "dataQuality": "verified",
+    "externalIds": {
+      "tmlMatchId": "wta_W-FC-2026-POS-M-AUS-FRA-01_4"
+    },
+    "id": "evt_tennis_036280"
+  },
+  {
+    "sportId": "tennis",
+    "competitionId": "tennis_wta_billie_jean_king_cup_play_offs_japan_vs_argentina",
+    "seasonId": "tennis_wta_billie_jean_king_cup_play_offs_japan_vs_argentina_2026",
+    "date": "2026-11-22T00:00:00Z",
+    "title": "Ena Shibahara vs Luciana Moyano",
+    "participants": [
+      "tennis_player_wta_214262",
+      "tennis_player_wta_330756"
+    ],
+    "sportData": {
+      "kind": "tennis_match",
+      "round": "RR",
+      "surface": "Hard",
+      "tournamentLevel": "D",
+      "winner": "tennis_player_wta_214262",
+      "loser": "tennis_player_wta_330756",
+      "score": "6-2 6-1",
+      "durationMinutes": 54
+    },
+    "dataQuality": "verified",
+    "externalIds": {
+      "tmlMatchId": "wta_W-FC-2026-POS-M-JPN-ARG-01_4"
+    },
+    "id": "evt_tennis_036281"
+  },
+  {
+    "sportId": "tennis",
+    "competitionId": "tennis_wta_billie_jean_king_cup_play_offs_switzerland_vs_thailand",
+    "seasonId": "tennis_wta_billie_jean_king_cup_play_offs_switzerland_vs_thailand_2026",
+    "date": "2026-11-22T00:00:00Z",
+    "title": "Susan Bandecchi vs Anchisa Chanta",
+    "participants": [
+      "tennis_player_wta_214826",
+      "tennis_player_wta_223005"
+    ],
+    "sportData": {
+      "kind": "tennis_match",
+      "round": "RR",
+      "surface": "Hard",
+      "tournamentLevel": "D",
+      "winner": "tennis_player_wta_214826",
+      "loser": "tennis_player_wta_223005",
+      "score": "7-5 6-3",
+      "durationMinutes": 102
+    },
+    "dataQuality": "verified",
+    "externalIds": {
+      "tmlMatchId": "wta_W-FC-2026-POS-M-SUI-THA-01_4"
+    },
+    "id": "evt_tennis_036282"
+  },
+  {
+    "sportId": "tennis",
+    "competitionId": "tennis_wta_billie_jean_king_cup_play_offs_united_states_vs_hungary",
+    "seasonId": "tennis_wta_billie_jean_king_cup_play_offs_united_states_vs_hungary_2026",
+    "date": "2026-11-22T00:00:00Z",
+    "title": "Ashlyn Krueger vs Adrienn Nagy",
+    "participants": [
+      "tennis_player_wta_221909",
+      "tennis_player_wta_215909"
+    ],
+    "sportData": {
+      "kind": "tennis_match",
+      "round": "RR",
+      "surface": "Hard",
+      "tournamentLevel": "D",
+      "winner": "tennis_player_wta_221909",
+      "loser": "tennis_player_wta_215909",
+      "score": "6-2 6-1",
+      "durationMinutes": 58
+    },
+    "dataQuality": "verified",
+    "externalIds": {
+      "tmlMatchId": "wta_W-FC-2026-POS-M-USA-HUN-01_4"
+    },
+    "id": "evt_tennis_036283"
   }
 ]

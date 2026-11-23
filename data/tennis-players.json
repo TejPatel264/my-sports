@@ -80,6 +80,11 @@
     "name": "Adrian Mannarino"
   },
   {
+    "id": "tennis_player_wta_215909",
+    "sportId": "tennis",
+    "name": "Adrienn Nagy"
+  },
+  {
     "id": "tennis_player_wta_211977",
     "sportId": "tennis",
     "name": "Adrijana Lekaj"
@@ -5498,6 +5503,11 @@
     "id": "tennis_player_wta_214459",
     "sportId": "tennis",
     "name": "Lucia Bronzetti"
+  },
+  {
+    "id": "tennis_player_wta_330756",
+    "sportId": "tennis",
+    "name": "Luciana Moyano"
   },
   {
     "id": "tennis_player_atp_D0FJ",

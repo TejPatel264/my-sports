@@ -294,6 +294,12 @@
     "shortName": "Billie Jean King Cup play-offs: Switzerland vs. Thailand"
   },
   {
+    "id": "tennis_wta_billie_jean_king_cup_play_offs_united_states_vs_hungary",
+    "sportId": "tennis",
+    "name": "Billie Jean King Cup play-offs: United States vs. Hungary (WTA)",
+    "shortName": "Billie Jean King Cup play-offs: United States vs. Hungary"
+  },
+  {
     "id": "tennis_wta_billie_jean_king_cup_qualifying_round_group_a",
     "sportId": "tennis",
     "name": "Billie Jean King Cup Qualifying Round - Group A (WTA)",
@@ -2920,6 +2926,12 @@
     "sportId": "tennis",
     "name": "Davis Cup QLS R1: SWE vs ARG (ATP)",
     "shortName": "Davis Cup QLS R1: SWE vs ARG"
+  },
+  {
+    "id": "tennis_atp_davis_cup_qls_r1_swe_vs_aus",
+    "sportId": "tennis",
+    "name": "Davis Cup QLS R1: SWE vs AUS (ATP)",
+    "shortName": "Davis Cup QLS R1: SWE vs AUS"
   },
   {
     "id": "tennis_atp_davis_cup_qls_r1_swe_vs_bih",

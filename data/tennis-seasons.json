@@ -1540,6 +1540,11 @@
     "label": "2025"
   },
   {
+    "id": "tennis_atp_davis_cup_qls_r1_swe_vs_aus_2025",
+    "competitionId": "tennis_atp_davis_cup_qls_r1_swe_vs_aus",
+    "label": "2025"
+  },
+  {
     "id": "tennis_atp_davis_cup_qls_r1_swe_vs_bih_2023",
     "competitionId": "tennis_atp_davis_cup_qls_r1_swe_vs_bih",
     "label": "2023"
@@ -4757,6 +4762,11 @@
   {
     "id": "tennis_wta_billie_jean_king_cup_play_offs_switzerland_vs_thailand_2026",
     "competitionId": "tennis_wta_billie_jean_king_cup_play_offs_switzerland_vs_thailand",
+    "label": "2026"
+  },
+  {
+    "id": "tennis_wta_billie_jean_king_cup_play_offs_united_states_vs_hungary_2026",
+    "competitionId": "tennis_wta_billie_jean_king_cup_play_offs_united_states_vs_hungary",
     "label": "2026"
   },
   {
