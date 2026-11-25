@@ -1884,6 +1884,12 @@
     "shortName": "Davis Cup Finals QF: CZE vs AUS"
   },
   {
+    "id": "tennis_atp_davis_cup_finals_qf_cze_vs_can",
+    "sportId": "tennis",
+    "name": "Davis Cup Finals QF: CZE vs CAN (ATP)",
+    "shortName": "Davis Cup Finals QF: CZE vs CAN"
+  },
+  {
     "id": "tennis_atp_davis_cup_finals_qf_esp_vs_cze",
     "sportId": "tennis",
     "name": "Davis Cup Finals QF: ESP vs CZE (ATP)",

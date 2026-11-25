@@ -640,6 +640,11 @@
     "label": "2023"
   },
   {
+    "id": "tennis_atp_davis_cup_finals_qf_cze_vs_can_2026",
+    "competitionId": "tennis_atp_davis_cup_finals_qf_cze_vs_can",
+    "label": "2026"
+  },
+  {
     "id": "tennis_atp_davis_cup_finals_qf_esp_vs_cze_2025",
     "competitionId": "tennis_atp_davis_cup_finals_qf_esp_vs_cze",
     "label": "2025"

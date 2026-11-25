@@ -943356,5 +943356,57 @@
       "tmlMatchId": "wta_W-FC-2026-POS-M-USA-HUN-01_4"
     },
     "id": "evt_tennis_036283"
+  },
+  {
+    "sportId": "tennis",
+    "competitionId": "tennis_atp_davis_cup_finals_qf_cze_vs_can",
+    "seasonId": "tennis_atp_davis_cup_finals_qf_cze_vs_can_2026",
+    "date": "2026-11-24T00:00:00Z",
+    "title": "Tomas Machac vs Liam Draxl",
+    "participants": [
+      "tennis_player_atp_M0FH",
+      "tennis_player_atp_D0DP"
+    ],
+    "sportData": {
+      "kind": "tennis_match",
+      "round": "RR",
+      "surface": "Hard",
+      "tournamentLevel": "D",
+      "winner": "tennis_player_atp_M0FH",
+      "loser": "tennis_player_atp_D0DP",
+      "score": "6-2 3-6 6-2",
+      "durationMinutes": 116
+    },
+    "dataQuality": "verified",
+    "externalIds": {
+      "tmlMatchId": "atp_2026-M-DC-2026-FLS-M-CZE-CAN-01_1"
+    },
+    "id": "evt_tennis_036284"
+  },
+  {
+    "sportId": "tennis",
+    "competitionId": "tennis_atp_davis_cup_finals_qf_cze_vs_can",
+    "seasonId": "tennis_atp_davis_cup_finals_qf_cze_vs_can_2026",
+    "date": "2026-11-24T00:00:00Z",
+    "title": "Jiri Lehecka vs Felix Auger-Aliassime",
+    "participants": [
+      "tennis_player_atp_L0BV",
+      "tennis_player_atp_AG37"
+    ],
+    "sportData": {
+      "kind": "tennis_match",
+      "round": "RR",
+      "surface": "Hard",
+      "tournamentLevel": "D",
+      "winner": "tennis_player_atp_L0BV",
+      "loser": "tennis_player_atp_AG37",
+      "score": "7-6(4) 6-2",
+      "durationMinutes": 123
+    },
+    "dataQuality": "verified",
+    "externalIds": {
+      "tmlMatchId": "atp_2026-M-DC-2026-FLS-M-CZE-CAN-01_2"
+    },
+    "id": "evt_tennis_036285"
   }
 ]
