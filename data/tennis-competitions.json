@@ -1932,6 +1932,12 @@
     "shortName": "Davis Cup Finals QF: ITA vs CRO"
   },
   {
+    "id": "tennis_atp_davis_cup_finals_qf_ita_vs_kor",
+    "sportId": "tennis",
+    "name": "Davis Cup Finals QF: ITA vs KOR (ATP)",
+    "shortName": "Davis Cup Finals QF: ITA vs KOR"
+  },
+  {
     "id": "tennis_atp_davis_cup_finals_qf_ita_vs_ned",
     "sportId": "tennis",
     "name": "Davis Cup Finals QF: ITA vs NED (ATP)",

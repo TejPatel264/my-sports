@@ -943408,5 +943408,57 @@
       "tmlMatchId": "atp_2026-M-DC-2026-FLS-M-CZE-CAN-01_2"
     },
     "id": "evt_tennis_036285"
+  },
+  {
+    "sportId": "tennis",
+    "competitionId": "tennis_atp_davis_cup_finals_qf_ita_vs_kor",
+    "seasonId": "tennis_atp_davis_cup_finals_qf_ita_vs_kor_2026",
+    "date": "2026-11-25T00:00:00Z",
+    "title": "Lorenzo Musetti vs Seongchan Hong",
+    "participants": [
+      "tennis_player_atp_M0EJ",
+      "tennis_player_atp_HC21"
+    ],
+    "sportData": {
+      "kind": "tennis_match",
+      "round": "RR",
+      "surface": "Hard",
+      "tournamentLevel": "D",
+      "winner": "tennis_player_atp_M0EJ",
+      "loser": "tennis_player_atp_HC21",
+      "score": "6-0 7-6(5)",
+      "durationMinutes": 91
+    },
+    "dataQuality": "verified",
+    "externalIds": {
+      "tmlMatchId": "atp_2026-M-DC-2026-FLS-M-ITA-KOR-01_1"
+    },
+    "id": "evt_tennis_036286"
+  },
+  {
+    "sportId": "tennis",
+    "competitionId": "tennis_atp_davis_cup_finals_qf_ita_vs_kor",
+    "seasonId": "tennis_atp_davis_cup_finals_qf_ita_vs_kor_2026",
+    "date": "2026-11-25T00:00:00Z",
+    "title": "Soonwoo Kwon vs Flavio Cobolli",
+    "participants": [
+      "tennis_player_atp_KF17",
+      "tennis_player_atp_C0E9"
+    ],
+    "sportData": {
+      "kind": "tennis_match",
+      "round": "RR",
+      "surface": "Hard",
+      "tournamentLevel": "D",
+      "winner": "tennis_player_atp_KF17",
+      "loser": "tennis_player_atp_C0E9",
+      "score": "3-6 7-6(3) 7-6(5)",
+      "durationMinutes": 170
+    },
+    "dataQuality": "verified",
+    "externalIds": {
+      "tmlMatchId": "atp_2026-M-DC-2026-FLS-M-ITA-KOR-01_2"
+    },
+    "id": "evt_tennis_036287"
   }
 ]

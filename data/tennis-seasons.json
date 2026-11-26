@@ -685,6 +685,11 @@
     "label": "2021"
   },
   {
+    "id": "tennis_atp_davis_cup_finals_qf_ita_vs_kor_2026",
+    "competitionId": "tennis_atp_davis_cup_finals_qf_ita_vs_kor",
+    "label": "2026"
+  },
+  {
     "id": "tennis_atp_davis_cup_finals_qf_ita_vs_ned_2023",
     "competitionId": "tennis_atp_davis_cup_finals_qf_ita_vs_ned",
     "label": "2023"
