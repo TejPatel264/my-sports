@@ -1866,6 +1866,12 @@
     "shortName": "Davis Cup Finals QF: AUS vs NED"
   },
   {
+    "id": "tennis_atp_davis_cup_finals_qf_aut_vs_esp",
+    "sportId": "tennis",
+    "name": "Davis Cup Finals QF: AUT vs ESP (ATP)",
+    "shortName": "Davis Cup Finals QF: AUT vs ESP"
+  },
+  {
     "id": "tennis_atp_davis_cup_finals_qf_can_vs_fin",
     "sportId": "tennis",
     "name": "Davis Cup Finals QF: CAN vs FIN (ATP)",

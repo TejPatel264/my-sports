@@ -625,6 +625,11 @@
     "label": "2022"
   },
   {
+    "id": "tennis_atp_davis_cup_finals_qf_aut_vs_esp_2026",
+    "competitionId": "tennis_atp_davis_cup_finals_qf_aut_vs_esp",
+    "label": "2026"
+  },
+  {
     "id": "tennis_atp_davis_cup_finals_qf_can_vs_fin_2023",
     "competitionId": "tennis_atp_davis_cup_finals_qf_can_vs_fin",
     "label": "2023"
@@ -658,6 +663,11 @@
     "id": "tennis_atp_davis_cup_finals_qf_gbr_vs_ger_2021",
     "competitionId": "tennis_atp_davis_cup_finals_qf_gbr_vs_ger",
     "label": "2021"
+  },
+  {
+    "id": "tennis_atp_davis_cup_finals_qf_gbr_vs_ger_2026",
+    "competitionId": "tennis_atp_davis_cup_finals_qf_gbr_vs_ger",
+    "label": "2026"
   },
   {
     "id": "tennis_atp_davis_cup_finals_qf_ger_vs_can_2022",

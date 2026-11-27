@@ -943460,5 +943460,109 @@
       "tmlMatchId": "atp_2026-M-DC-2026-FLS-M-ITA-KOR-01_2"
     },
     "id": "evt_tennis_036287"
+  },
+  {
+    "sportId": "tennis",
+    "competitionId": "tennis_atp_davis_cup_finals_qf_gbr_vs_ger",
+    "seasonId": "tennis_atp_davis_cup_finals_qf_gbr_vs_ger_2026",
+    "date": "2026-11-26T00:00:00Z",
+    "title": "Cameron Norrie vs Jan-Lennard Struff",
+    "participants": [
+      "tennis_player_atp_N771",
+      "tennis_player_atp_SL28"
+    ],
+    "sportData": {
+      "kind": "tennis_match",
+      "round": "RR",
+      "surface": "Hard",
+      "tournamentLevel": "D",
+      "winner": "tennis_player_atp_N771",
+      "loser": "tennis_player_atp_SL28",
+      "score": "6-3 3-6 6-2",
+      "durationMinutes": 94
+    },
+    "dataQuality": "verified",
+    "externalIds": {
+      "tmlMatchId": "atp_2026-M-DC-2026-FLS-M-GBR-GER-01_1"
+    },
+    "id": "evt_tennis_036288"
+  },
+  {
+    "sportId": "tennis",
+    "competitionId": "tennis_atp_davis_cup_finals_qf_gbr_vs_ger",
+    "seasonId": "tennis_atp_davis_cup_finals_qf_gbr_vs_ger_2026",
+    "date": "2026-11-26T00:00:00Z",
+    "title": "Alexander Zverev vs Arthur Fery",
+    "participants": [
+      "tennis_player_atp_Z355",
+      "tennis_player_atp_F0DM"
+    ],
+    "sportData": {
+      "kind": "tennis_match",
+      "round": "RR",
+      "surface": "Hard",
+      "tournamentLevel": "D",
+      "winner": "tennis_player_atp_Z355",
+      "loser": "tennis_player_atp_F0DM",
+      "score": "6-3 6-2",
+      "durationMinutes": 71
+    },
+    "dataQuality": "verified",
+    "externalIds": {
+      "tmlMatchId": "atp_2026-M-DC-2026-FLS-M-GBR-GER-01_2"
+    },
+    "id": "evt_tennis_036289"
+  },
+  {
+    "sportId": "tennis",
+    "competitionId": "tennis_atp_davis_cup_finals_qf_aut_vs_esp",
+    "seasonId": "tennis_atp_davis_cup_finals_qf_aut_vs_esp_2026",
+    "date": "2026-11-26T00:00:00Z",
+    "title": "Daniel Merida vs Joel Schwaerzler",
+    "participants": [
+      "tennis_player_atp_M0N7",
+      "tennis_player_atp_S0WT"
+    ],
+    "sportData": {
+      "kind": "tennis_match",
+      "round": "RR",
+      "surface": "Hard",
+      "tournamentLevel": "D",
+      "winner": "tennis_player_atp_M0N7",
+      "loser": "tennis_player_atp_S0WT",
+      "score": "6-4 6-4",
+      "durationMinutes": 80
+    },
+    "dataQuality": "verified",
+    "externalIds": {
+      "tmlMatchId": "atp_2026-M-DC-2026-FLS-M-AUT-ESP-01_1"
+    },
+    "id": "evt_tennis_036290"
+  },
+  {
+    "sportId": "tennis",
+    "competitionId": "tennis_atp_davis_cup_finals_qf_aut_vs_esp",
+    "seasonId": "tennis_atp_davis_cup_finals_qf_aut_vs_esp_2026",
+    "date": "2026-11-26T00:00:00Z",
+    "title": "Rafael Jodar vs Jurij Rodionov",
+    "participants": [
+      "tennis_player_atp_J0DZ",
+      "tennis_player_atp_R09X"
+    ],
+    "sportData": {
+      "kind": "tennis_match",
+      "round": "RR",
+      "surface": "Hard",
+      "tournamentLevel": "D",
+      "winner": "tennis_player_atp_J0DZ",
+      "loser": "tennis_player_atp_R09X",
+      "score": "2-6 6-0 6-1",
+      "durationMinutes": null
+    },
+    "dataQuality": "verified",
+    "externalIds": {
+      "tmlMatchId": "atp_2026-M-DC-2026-FLS-M-AUT-ESP-01_2"
+    },
+    "id": "evt_tennis_036291"
   }
 ]
