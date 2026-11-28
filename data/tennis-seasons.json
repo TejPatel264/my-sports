@@ -1225,6 +1225,11 @@
     "label": "2022"
   },
   {
+    "id": "tennis_atp_davis_cup_finals_sf_ita_vs_cze_2026",
+    "competitionId": "tennis_atp_davis_cup_finals_sf_ita_vs_cze",
+    "label": "2026"
+  },
+  {
     "id": "tennis_atp_davis_cup_finals_sf_ita_vs_srb_2023",
     "competitionId": "tennis_atp_davis_cup_finals_sf_ita_vs_srb",
     "label": "2023"

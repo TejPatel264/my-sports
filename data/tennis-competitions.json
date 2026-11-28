@@ -2544,6 +2544,12 @@
     "shortName": "Davis Cup Finals SF: ITA vs CAN"
   },
   {
+    "id": "tennis_atp_davis_cup_finals_sf_ita_vs_cze",
+    "sportId": "tennis",
+    "name": "Davis Cup Finals SF: ITA vs CZE (ATP)",
+    "shortName": "Davis Cup Finals SF: ITA vs CZE"
+  },
+  {
     "id": "tennis_atp_davis_cup_finals_sf_ita_vs_srb",
     "sportId": "tennis",
     "name": "Davis Cup Finals SF: ITA vs SRB (ATP)",

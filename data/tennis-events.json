@@ -943564,5 +943564,57 @@
       "tmlMatchId": "atp_2026-M-DC-2026-FLS-M-AUT-ESP-01_2"
     },
     "id": "evt_tennis_036291"
+  },
+  {
+    "sportId": "tennis",
+    "competitionId": "tennis_atp_davis_cup_finals_sf_ita_vs_cze",
+    "seasonId": "tennis_atp_davis_cup_finals_sf_ita_vs_cze_2026",
+    "date": "2026-11-27T00:00:00Z",
+    "title": "Lorenzo Musetti vs Jakub Mensik",
+    "participants": [
+      "tennis_player_atp_M0EJ",
+      "tennis_player_atp_M0NI"
+    ],
+    "sportData": {
+      "kind": "tennis_match",
+      "round": "RR",
+      "surface": "Hard",
+      "tournamentLevel": "D",
+      "winner": "tennis_player_atp_M0EJ",
+      "loser": "tennis_player_atp_M0NI",
+      "score": "6-3 6-4",
+      "durationMinutes": 86
+    },
+    "dataQuality": "verified",
+    "externalIds": {
+      "tmlMatchId": "atp_2026-M-DC-2026-FLS-M-ITA-CZE-01_1"
+    },
+    "id": "evt_tennis_036292"
+  },
+  {
+    "sportId": "tennis",
+    "competitionId": "tennis_atp_davis_cup_finals_sf_ita_vs_cze",
+    "seasonId": "tennis_atp_davis_cup_finals_sf_ita_vs_cze_2026",
+    "date": "2026-11-27T00:00:00Z",
+    "title": "Jiri Lehecka vs Flavio Cobolli",
+    "participants": [
+      "tennis_player_atp_L0BV",
+      "tennis_player_atp_C0E9"
+    ],
+    "sportData": {
+      "kind": "tennis_match",
+      "round": "RR",
+      "surface": "Hard",
+      "tournamentLevel": "D",
+      "winner": "tennis_player_atp_L0BV",
+      "loser": "tennis_player_atp_C0E9",
+      "score": "6-2 1-6 6-3",
+      "durationMinutes": 100
+    },
+    "dataQuality": "verified",
+    "externalIds": {
+      "tmlMatchId": "atp_2026-M-DC-2026-FLS-M-ITA-CZE-01_2"
+    },
+    "id": "evt_tennis_036293"
   }
 ]
